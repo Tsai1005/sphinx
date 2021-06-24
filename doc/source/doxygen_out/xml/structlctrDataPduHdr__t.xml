@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structlctrDataPduHdr__t" kind="struct" language="C++" prot="public">
+    <compoundname>lctrDataPduHdr_t</compoundname>
+    <includes refid="ll__defines_8h" local="no">ll_defines.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlctrDataPduHdr__t_1acd50b0f5f4db1c70f4a6e01cbef91885" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lctrDataPduHdr_t::llid</definition>
+        <argsstring></argsstring>
+        <name>llid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>PDU type. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="815" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="815" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrDataPduHdr__t_1ac9276e78629146ba4e8c19aeeb7e5565" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lctrDataPduHdr_t::nesn</definition>
+        <argsstring></argsstring>
+        <name>nesn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Next Expected Sequence Number. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="816" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="816" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrDataPduHdr__t_1ac090f373b132a894d414a7c77c7d34a6" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lctrDataPduHdr_t::sn</definition>
+        <argsstring></argsstring>
+        <name>sn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sequence Number. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="817" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="817" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrDataPduHdr__t_1a6d892844980918b270467ecdeb0a4b15" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lctrDataPduHdr_t::md</definition>
+        <argsstring></argsstring>
+        <name>md</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>More Data. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="818" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="818" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrDataPduHdr__t_1aa041975e26129376a14e9b38051ac6ac" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lctrDataPduHdr_t::len</definition>
+        <argsstring></argsstring>
+        <name>len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Payload length. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="819" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="819" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data channel PDU header. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="814" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="814" bodyend="820"/>
+    <listofallmembers>
+      <member refid="structlctrDataPduHdr__t_1aa041975e26129376a14e9b38051ac6ac" prot="public" virt="non-virtual"><scope>lctrDataPduHdr_t</scope><name>len</name></member>
+      <member refid="structlctrDataPduHdr__t_1acd50b0f5f4db1c70f4a6e01cbef91885" prot="public" virt="non-virtual"><scope>lctrDataPduHdr_t</scope><name>llid</name></member>
+      <member refid="structlctrDataPduHdr__t_1a6d892844980918b270467ecdeb0a4b15" prot="public" virt="non-virtual"><scope>lctrDataPduHdr_t</scope><name>md</name></member>
+      <member refid="structlctrDataPduHdr__t_1ac9276e78629146ba4e8c19aeeb7e5565" prot="public" virt="non-virtual"><scope>lctrDataPduHdr_t</scope><name>nesn</name></member>
+      <member refid="structlctrDataPduHdr__t_1ac090f373b132a894d414a7c77c7d34a6" prot="public" virt="non-virtual"><scope>lctrDataPduHdr_t</scope><name>sn</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

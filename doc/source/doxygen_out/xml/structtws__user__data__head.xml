@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structtws__user__data__head" kind="struct" language="C++" prot="public">
+    <compoundname>tws_user_data_head</compoundname>
+    <includes refid="tws__conn_8h" local="no">tws_conn.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtws__user__data__head_1a56a949e0f55500b6ff21d5aa902abc6a" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structtws__channel__head" kindref="compound">tws_channel_head</ref></type>
+        <definition>struct tws_channel_head tws_user_data_head::head</definition>
+        <argsstring></argsstring>
+        <name>head</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="109" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__user__data__head_1a6539a5aea996b40f744d436f4a7ba1c1" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tws_user_data_head::func_id</definition>
+        <argsstring></argsstring>
+        <name>func_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="114" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__user__data__head_1a491a04d64303b3d068391447dd7191d2" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tws_user_data_head::data[0]</definition>
+        <argsstring>[0]</argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="115" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1733">
+        <label>tws_channel_head</label>
+        <link refid="structtws__channel__head"/>
+      </node>
+      <node id="1732">
+        <label>tws_user_data_head</label>
+        <link refid="structtws__user__data__head"/>
+        <childnode refid="1733" relation="usage">
+          <edgelabel>head</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="112" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="112" bodyend="116"/>
+    <listofallmembers>
+      <member refid="structtws__user__data__head_1a491a04d64303b3d068391447dd7191d2" prot="public" virt="non-virtual"><scope>tws_user_data_head</scope><name>data</name></member>
+      <member refid="structtws__user__data__head_1a6539a5aea996b40f744d436f4a7ba1c1" prot="public" virt="non-virtual"><scope>tws_user_data_head</scope><name>func_id</name></member>
+      <member refid="structtws__user__data__head_1a56a949e0f55500b6ff21d5aa902abc6a" prot="public" virt="non-virtual"><scope>tws_user_data_head</scope><name>head</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structlctrVerInd__t" kind="struct" language="C++" prot="public">
+    <compoundname>lctrVerInd_t</compoundname>
+    <includes refid="ll__defines_8h" local="no">ll_defines.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlctrVerInd__t_1a78ccbd8dd72506b0ac126193f417f1c5" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lctrVerInd_t::versNr</definition>
+        <argsstring></argsstring>
+        <name>versNr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Bluetooth controller specification version. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="880" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="880" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrVerInd__t_1a9753550fd714322bd82499c229d8a655" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lctrVerInd_t::compId</definition>
+        <argsstring></argsstring>
+        <name>compId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Company identifier. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="881" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="881" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrVerInd__t_1a809f8f081147b52eabd0b7f1282003a8" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lctrVerInd_t::subVersNr</definition>
+        <argsstring></argsstring>
+        <name>subVersNr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sub-Version number. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="882" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="882" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Version indication control PDU. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="879" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="879" bodyend="883"/>
+    <listofallmembers>
+      <member refid="structlctrVerInd__t_1a9753550fd714322bd82499c229d8a655" prot="public" virt="non-virtual"><scope>lctrVerInd_t</scope><name>compId</name></member>
+      <member refid="structlctrVerInd__t_1a809f8f081147b52eabd0b7f1282003a8" prot="public" virt="non-virtual"><scope>lctrVerInd_t</scope><name>subVersNr</name></member>
+      <member refid="structlctrVerInd__t_1a78ccbd8dd72506b0ac126193f417f1c5" prot="public" virt="non-virtual"><scope>lctrVerInd_t</scope><name>versNr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

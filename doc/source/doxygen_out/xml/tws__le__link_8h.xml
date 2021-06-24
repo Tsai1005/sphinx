@@ -1,0 +1,406 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="tws__le__link_8h" kind="file" language="C++">
+    <compoundname>tws_le_link.h</compoundname>
+    <includes local="yes">typedef.h</includes>
+    <includes local="yes">ble/ble_interface.h</includes>
+    <includedby refid="tws__le__acc_8c" local="yes">/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_acc.c</includedby>
+    <includedby refid="tws__le__link_8c" local="yes">/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c</includedby>
+    <incdepgraph>
+      <node id="5342">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/tws_le_link.h</label>
+        <link refid="tws_le_link.h"/>
+        <childnode refid="5343" relation="include">
+        </childnode>
+        <childnode refid="5344" relation="include">
+        </childnode>
+      </node>
+      <node id="5343">
+        <label>typedef.h</label>
+      </node>
+      <node id="5344">
+        <label>ble/ble_interface.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5345">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/tws_le_link.h</label>
+        <link refid="tws_le_link.h"/>
+        <childnode refid="5346" relation="include">
+        </childnode>
+        <childnode refid="5347" relation="include">
+        </childnode>
+      </node>
+      <node id="5346">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_acc.c</label>
+        <link refid="tws__le__acc_8c"/>
+      </node>
+      <node id="5347">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c</label>
+        <link refid="tws__le__link_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="tws__le__link_8h_1a70ad55be767ca0a42c9150d24618e4ca" prot="public" static="no">
+        <name>@79</name>
+        <enumvalue id="tws__le__link_8h_1a70ad55be767ca0a42c9150d24618e4caa08e335ae0c4e8100d6d8587e2277944e" prot="public">
+          <name>TWS_BLE_SEARCH</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tws__le__link_8h_1a70ad55be767ca0a42c9150d24618e4caaad2907dc8030d31ea3ec3a84ff3c5c2e" prot="public">
+          <name>TWS_BLE_CONNECT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tws__le__link_8h_1a70ad55be767ca0a42c9150d24618e4caa52416435074d17eb1261a9dd5ff976cf" prot="public">
+          <name>TWS_BLE_ESCO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tws__le__link_8h_1a70ad55be767ca0a42c9150d24618e4caa9097533aefcc1b0f30e3ca0b311d168a" prot="public">
+          <name>TWS_BLE_PHONE_CONNECTED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/tws_le_link.h" line="22" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/tws_le_link.h" bodystart="22" bodyend="27"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="tws__le__link_8h_1a42ead98a88d460e2ba5076f73cdf92ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int link_le_adv_enable</definition>
+        <argsstring>(u32 aa, u8 channel_map, u16 timeout, u8 type, u8 search_en, u8 role_type, u8 task_type, int(*completed)(struct ble_rx *, u8 role))</argsstring>
+        <name>link_le_adv_enable</name>
+        <param>
+          <type>u32</type>
+          <declname>aa</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>channel_map</declname>
+        </param>
+        <param>
+          <type>u16</type>
+          <declname>timeout</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>search_en</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>role_type</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>task_type</declname>
+        </param>
+        <param>
+          <type>int(*)(struct ble_rx *, u8 role)</type>
+          <declname>completed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/tws_le_link.h" line="30" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c" bodystart="852" bodyend="856"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__le__link_8h_1a9c04c0ace767f31044a93368b5f6602c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int link_le_adv_try_start_enable</definition>
+        <argsstring>(u32 aa, u8 channel_map, u16 timeout, u8 type, u8 search_en, u8 role_type, u8 task_type, int(*completed)(struct ble_rx *, u8 role))</argsstring>
+        <name>link_le_adv_try_start_enable</name>
+        <param>
+          <type>u32</type>
+          <declname>aa</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>channel_map</declname>
+        </param>
+        <param>
+          <type>u16</type>
+          <declname>timeout</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>search_en</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>role_type</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>task_type</declname>
+        </param>
+        <param>
+          <type>int(*)(struct ble_rx *, u8 role)</type>
+          <declname>completed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/tws_le_link.h" line="33" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c" bodystart="899" bodyend="916"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__le__link_8h_1a9f036a850995feeb1ff40023f0bcf622" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void link_le_adv_disable</definition>
+        <argsstring>()</argsstring>
+        <name>link_le_adv_disable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/tws_le_link.h" line="36" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__le__link_8h_1af93f76daee5da9c1418ad86dd27092b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void link_le_adv_try_start_disable</definition>
+        <argsstring>()</argsstring>
+        <name>link_le_adv_try_start_disable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/tws_le_link.h" line="37" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__le__link_8h_1ab36c04d2449db2ccd5bc8bdab050a449" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int link_le_scan_try_start_enable</definition>
+        <argsstring>(u32 aa, u8 channel_map, u16 timeout, u8 type, u8 role_type, u8 task_type, int(*completed)(struct ble_rx *, u8 role))</argsstring>
+        <name>link_le_scan_try_start_enable</name>
+        <param>
+          <type>u32</type>
+          <declname>aa</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>channel_map</declname>
+        </param>
+        <param>
+          <type>u16</type>
+          <declname>timeout</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>role_type</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>task_type</declname>
+        </param>
+        <param>
+          <type>int(*)(struct ble_rx *, u8 role)</type>
+          <declname>completed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/tws_le_link.h" line="39" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c" bodystart="1153" bodyend="1169"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__le__link_8h_1ac59e66bf4e8de3a2c98aef62dd7a912a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void link_le_scan_try_start_disable</definition>
+        <argsstring>()</argsstring>
+        <name>link_le_scan_try_start_disable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/tws_le_link.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__le__link_8h_1a78ad75be6051aeb025eabc661a2a30c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int link_le_adv_esco_enable</definition>
+        <argsstring>(u32 aa, u8 channel_map, u16 timeout, u8 type, u8 search_en, u8 role_type, u8 task_type, int(*completed)(struct ble_rx *, u8 role))</argsstring>
+        <name>link_le_adv_esco_enable</name>
+        <param>
+          <type>u32</type>
+          <declname>aa</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>channel_map</declname>
+        </param>
+        <param>
+          <type>u16</type>
+          <declname>timeout</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>search_en</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>role_type</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>task_type</declname>
+        </param>
+        <param>
+          <type>int(*)(struct ble_rx *, u8 role)</type>
+          <declname>completed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/tws_le_link.h" line="45" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c" bodystart="870" bodyend="874"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__le__link_8h_1ae056c298241865715ab2001864258383" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int link_le_adv_esco_try_start_enable</definition>
+        <argsstring>(u32 aa, u8 channel_map, u16 timeout, u8 type, u8 search_en, u8 role_type, u8 task_type, int(*completed)(struct ble_rx *, u8 role))</argsstring>
+        <name>link_le_adv_esco_try_start_enable</name>
+        <param>
+          <type>u32</type>
+          <declname>aa</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>channel_map</declname>
+        </param>
+        <param>
+          <type>u16</type>
+          <declname>timeout</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>search_en</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>role_type</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>task_type</declname>
+        </param>
+        <param>
+          <type>int(*)(struct ble_rx *, u8 role)</type>
+          <declname>completed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/tws_le_link.h" line="48" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c" bodystart="928" bodyend="945"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*********************************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/>Filename<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>tws_le_link.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/>Description<sp/><sp/><sp/><sp/><sp/>:</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"></highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/>Author<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>Bingquan</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"></highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/>Email<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>caibingquan@zh-jieli.com</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/>Last<sp/>modifiled<sp/><sp/>:<sp/>2019-04-24<sp/>14:23</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"></highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/>Copyright:(c)JIELI<sp/><sp/>2011-2019<sp/><sp/>@<sp/>,<sp/>All<sp/>Rights<sp/>Reserved.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">*********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_TWS_LE_API_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_TWS_LE_API_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;typedef.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ble/ble_interface.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="23" refid="tws__le__link_8h_1a70ad55be767ca0a42c9150d24618e4caa08e335ae0c4e8100d6d8587e2277944e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="tws__le__link_8h_1a70ad55be767ca0a42c9150d24618e4caa08e335ae0c4e8100d6d8587e2277944e" kindref="member">TWS_BLE_SEARCH</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="24" refid="tws__le__link_8h_1a70ad55be767ca0a42c9150d24618e4caaad2907dc8030d31ea3ec3a84ff3c5c2e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="tws__le__link_8h_1a70ad55be767ca0a42c9150d24618e4caaad2907dc8030d31ea3ec3a84ff3c5c2e" kindref="member">TWS_BLE_CONNECT</ref>,</highlight></codeline>
+<codeline lineno="25" refid="tws__le__link_8h_1a70ad55be767ca0a42c9150d24618e4caa52416435074d17eb1261a9dd5ff976cf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="tws__le__link_8h_1a70ad55be767ca0a42c9150d24618e4caa52416435074d17eb1261a9dd5ff976cf" kindref="member">TWS_BLE_ESCO</ref>,</highlight></codeline>
+<codeline lineno="26" refid="tws__le__link_8h_1a70ad55be767ca0a42c9150d24618e4caa9097533aefcc1b0f30e3ca0b311d168a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="tws__le__link_8h_1a70ad55be767ca0a42c9150d24618e4caa9097533aefcc1b0f30e3ca0b311d168a" kindref="member">TWS_BLE_PHONE_CONNECTED</ref>,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="tws__le__link_8h_1a42ead98a88d460e2ba5076f73cdf92ea" kindref="member">link_le_adv_enable</ref>(u32<sp/>aa,<sp/>u8<sp/>channel_map,<sp/>u16<sp/>timeout,<sp/>u8<sp/>type,<sp/>u8<sp/>search_en,<sp/>u8<sp/>role_type,<sp/>u8<sp/>task_type,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>(*completed)(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>ble_rx<sp/>*,<sp/>u8<sp/>role));</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="tws__le__link_8h_1a9c04c0ace767f31044a93368b5f6602c" kindref="member">link_le_adv_try_start_enable</ref>(u32<sp/>aa,<sp/>u8<sp/>channel_map,<sp/>u16<sp/>timeout,<sp/>u8<sp/>type,<sp/>u8<sp/>search_en,<sp/>u8<sp/>role_type,<sp/>u8<sp/>task_type,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>(*completed)(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>ble_rx<sp/>*,<sp/>u8<sp/>role));</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__le__link_8h_1a9f036a850995feeb1ff40023f0bcf622" kindref="member">link_le_adv_disable</ref>();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__le__link_8h_1af93f76daee5da9c1418ad86dd27092b5" kindref="member">link_le_adv_try_start_disable</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="tws__le__link_8h_1ab36c04d2449db2ccd5bc8bdab050a449" kindref="member">link_le_scan_try_start_enable</ref>(u32<sp/>aa,<sp/>u8<sp/>channel_map,<sp/>u16<sp/>timeout,<sp/>u8<sp/>type,<sp/>u8<sp/>role_type,<sp/>u8<sp/>task_type,</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>(*completed)(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>ble_rx<sp/>*,<sp/>u8<sp/>role));</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__le__link_8h_1ac59e66bf4e8de3a2c98aef62dd7a912a" kindref="member">link_le_scan_try_start_disable</ref>();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="tws__le__link_8h_1a78ad75be6051aeb025eabc661a2a30c5" kindref="member">link_le_adv_esco_enable</ref>(u32<sp/>aa,<sp/>u8<sp/>channel_map,<sp/>u16<sp/>timeout,<sp/>u8<sp/>type,<sp/>u8<sp/>search_en,<sp/>u8<sp/>role_type,<sp/>u8<sp/>task_type,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>(*completed)(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>ble_rx<sp/>*,<sp/>u8<sp/>role));</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="tws__le__link_8h_1ae056c298241865715ab2001864258383" kindref="member">link_le_adv_esco_try_start_enable</ref>(u32<sp/>aa,<sp/>u8<sp/>channel_map,<sp/>u16<sp/>timeout,<sp/>u8<sp/>type,<sp/>u8<sp/>search_en,<sp/>u8<sp/>role_type,<sp/>u8<sp/>task_type,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>(*completed)(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>ble_rx<sp/>*,<sp/>u8<sp/>role));</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/tws_le_link.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structLlBigCreateSync__t" kind="struct" language="C++" prot="public">
+    <compoundname>LlBigCreateSync_t</compoundname>
+    <includes refid="ll__bis_8h" local="no">ll_bis.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structLlBigCreateSync__t_1a127dd9494393ce775e97b63974fa83f7" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t LlBigCreateSync_t::bigHandle</definition>
+        <argsstring></argsstring>
+        <name>bigHandle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Used to identify the BIG. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="86" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLlBigCreateSync__t_1ab7e3e05afec9203f3f2f2f2bce0337fd" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t LlBigCreateSync_t::syncHandle</definition>
+        <argsstring></argsstring>
+        <name>syncHandle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Periodic advertising train handle. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="87" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLlBigCreateSync__t_1a23ca4d8537d96b887b2950c8f3ca0f39" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t LlBigCreateSync_t::encrypt</definition>
+        <argsstring></argsstring>
+        <name>encrypt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Unencrypted or Encrypted. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="88" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLlBigCreateSync__t_1a33f5d42aaeebbb608b49f4e357cd4d90" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t LlBigCreateSync_t::bcstCode[LL_BC_LEN]</definition>
+        <argsstring>[LL_BC_LEN]</argsstring>
+        <name>bcstCode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Session key code for encrypt and decrypt BIS payloads. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="89" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLlBigCreateSync__t_1a9399780c7d91c3090a37c3c2dc609bed" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t LlBigCreateSync_t::mse</definition>
+        <argsstring></argsstring>
+        <name>mse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum number of subevents. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="90" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLlBigCreateSync__t_1adb6fa7ed9a83f8c88514c99edb45e69a" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t LlBigCreateSync_t::bigSyncTimeout</definition>
+        <argsstring></argsstring>
+        <name>bigSyncTimeout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Synchronization timeout for the BIS, in the units of 10ms. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="91" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLlBigCreateSync__t_1a4fb7361882738135d3ea71018f57e3a5" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t LlBigCreateSync_t::numBis</definition>
+        <argsstring></argsstring>
+        <name>numBis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Total number of BISes in the BIG. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="92" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLlBigCreateSync__t_1ad746e57954331783427217a18279fdeb" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t LlBigCreateSync_t::bis[LL_MAX_BIS]</definition>
+        <argsstring>[LL_MAX_BIS]</argsstring>
+        <name>bis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>List of indices of BISes. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="93" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>BIG Create Sync message. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="85" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="85" bodyend="94"/>
+    <listofallmembers>
+      <member refid="structLlBigCreateSync__t_1a33f5d42aaeebbb608b49f4e357cd4d90" prot="public" virt="non-virtual"><scope>LlBigCreateSync_t</scope><name>bcstCode</name></member>
+      <member refid="structLlBigCreateSync__t_1a127dd9494393ce775e97b63974fa83f7" prot="public" virt="non-virtual"><scope>LlBigCreateSync_t</scope><name>bigHandle</name></member>
+      <member refid="structLlBigCreateSync__t_1adb6fa7ed9a83f8c88514c99edb45e69a" prot="public" virt="non-virtual"><scope>LlBigCreateSync_t</scope><name>bigSyncTimeout</name></member>
+      <member refid="structLlBigCreateSync__t_1ad746e57954331783427217a18279fdeb" prot="public" virt="non-virtual"><scope>LlBigCreateSync_t</scope><name>bis</name></member>
+      <member refid="structLlBigCreateSync__t_1a23ca4d8537d96b887b2950c8f3ca0f39" prot="public" virt="non-virtual"><scope>LlBigCreateSync_t</scope><name>encrypt</name></member>
+      <member refid="structLlBigCreateSync__t_1a9399780c7d91c3090a37c3c2dc609bed" prot="public" virt="non-virtual"><scope>LlBigCreateSync_t</scope><name>mse</name></member>
+      <member refid="structLlBigCreateSync__t_1a4fb7361882738135d3ea71018f57e3a5" prot="public" virt="non-virtual"><scope>LlBigCreateSync_t</scope><name>numBis</name></member>
+      <member refid="structLlBigCreateSync__t_1ab7e3e05afec9203f3f2f2f2bce0337fd" prot="public" virt="non-virtual"><scope>LlBigCreateSync_t</scope><name>syncHandle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

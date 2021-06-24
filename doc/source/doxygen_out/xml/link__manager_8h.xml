@@ -1,0 +1,300 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="link__manager_8h" kind="file" language="C++">
+    <compoundname>link_manager.h</compoundname>
+    <includes local="yes">typedef.h</includes>
+    <includes refid="link__layer_8h" local="yes">ble/link_layer.h</includes>
+    <incdepgraph>
+      <node id="5708">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_manager.h</label>
+        <link refid="link_manager.h"/>
+        <childnode refid="5709" relation="include">
+        </childnode>
+        <childnode refid="5710" relation="include">
+        </childnode>
+      </node>
+      <node id="5718">
+        <label>os/os_type.h</label>
+      </node>
+      <node id="5714">
+        <label>common/atomic.h</label>
+      </node>
+      <node id="5728">
+        <label>common/lbuf.h</label>
+      </node>
+      <node id="5711">
+        <label>common/list.h</label>
+      </node>
+      <node id="5717">
+        <label>common/thread.h</label>
+      </node>
+      <node id="5720">
+        <label>ble/ll_adv.h</label>
+        <link refid="ll__adv_8h"/>
+        <childnode refid="5712" relation="include">
+        </childnode>
+      </node>
+      <node id="5722">
+        <label>ble/ll_init.h</label>
+        <link refid="ll__init_8h"/>
+        <childnode refid="5712" relation="include">
+        </childnode>
+      </node>
+      <node id="5724">
+        <label>data_extension.h</label>
+        <link refid="data__extension_8h"/>
+        <childnode refid="5709" relation="include">
+        </childnode>
+      </node>
+      <node id="5727">
+        <label>ble/ll_iso.h</label>
+        <link refid="ll__iso_8h"/>
+        <childnode refid="5715" relation="include">
+        </childnode>
+        <childnode refid="5728" relation="include">
+        </childnode>
+        <childnode refid="5717" relation="include">
+        </childnode>
+      </node>
+      <node id="5709">
+        <label>typedef.h</label>
+      </node>
+      <node id="5716">
+        <label>white_list.h</label>
+        <link refid="white__list_8h"/>
+        <childnode refid="5709" relation="include">
+        </childnode>
+      </node>
+      <node id="5730">
+        <label>audio_codec.h</label>
+        <link refid="audio__codec_8h"/>
+        <childnode refid="5715" relation="include">
+        </childnode>
+      </node>
+      <node id="5721">
+        <label>ble/ll_scan.h</label>
+        <link refid="ll__scan_8h"/>
+        <childnode refid="5712" relation="include">
+        </childnode>
+      </node>
+      <node id="5719">
+        <label>ble/llcp.h</label>
+        <link refid="llcp_8h"/>
+        <childnode refid="5709" relation="include">
+        </childnode>
+        <childnode refid="5715" relation="include">
+        </childnode>
+      </node>
+      <node id="5725">
+        <label>multiple_phys.h</label>
+        <link refid="multiple__phys_8h"/>
+        <childnode refid="5709" relation="include">
+        </childnode>
+      </node>
+      <node id="5723">
+        <label>resolve_list.h</label>
+        <link refid="resolve__list_8h"/>
+        <childnode refid="5709" relation="include">
+        </childnode>
+      </node>
+      <node id="5712">
+        <label>ble_interface.h</label>
+      </node>
+      <node id="5726">
+        <label>ble/ll_cte.h</label>
+        <link refid="ll__cte_8h"/>
+        <childnode refid="5715" relation="include">
+        </childnode>
+      </node>
+      <node id="5713">
+        <label>common/sys_timer.h</label>
+      </node>
+      <node id="5710">
+        <label>ble/link_layer.h</label>
+        <link refid="link__layer_8h"/>
+        <childnode refid="5709" relation="include">
+        </childnode>
+        <childnode refid="5711" relation="include">
+        </childnode>
+        <childnode refid="5712" relation="include">
+        </childnode>
+        <childnode refid="5713" relation="include">
+        </childnode>
+        <childnode refid="5714" relation="include">
+        </childnode>
+        <childnode refid="5715" relation="include">
+        </childnode>
+        <childnode refid="5716" relation="include">
+        </childnode>
+        <childnode refid="5717" relation="include">
+        </childnode>
+        <childnode refid="5718" relation="include">
+        </childnode>
+        <childnode refid="5719" relation="include">
+        </childnode>
+        <childnode refid="5720" relation="include">
+        </childnode>
+        <childnode refid="5721" relation="include">
+        </childnode>
+        <childnode refid="5722" relation="include">
+        </childnode>
+        <childnode refid="5723" relation="include">
+        </childnode>
+        <childnode refid="5724" relation="include">
+        </childnode>
+        <childnode refid="5725" relation="include">
+        </childnode>
+        <childnode refid="5726" relation="include">
+        </childnode>
+        <childnode refid="5727" relation="include">
+        </childnode>
+        <childnode refid="5729" relation="include">
+        </childnode>
+        <childnode refid="5731" relation="include">
+        </childnode>
+        <childnode refid="5732" relation="include">
+        </childnode>
+      </node>
+      <node id="5715">
+        <label>ll_defines.h</label>
+        <link refid="ll__defines_8h"/>
+        <childnode refid="5709" relation="include">
+        </childnode>
+      </node>
+      <node id="5731">
+        <label>ble/ll_cis.h</label>
+        <link refid="ll__cis_8h"/>
+        <childnode refid="5727" relation="include">
+        </childnode>
+        <childnode refid="5710" relation="include">
+        </childnode>
+      </node>
+      <node id="5729">
+        <label>ble/ll_bis.h</label>
+        <link refid="ll__bis_8h"/>
+        <childnode refid="5727" relation="include">
+        </childnode>
+        <childnode refid="5730" relation="include">
+        </childnode>
+      </node>
+      <node id="5732">
+        <label>ble/ll_pc.h</label>
+        <link refid="ll__pc_8h"/>
+        <childnode refid="5715" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structlogic__link" prot="public">logic_link</innerclass>
+    <innerclass refid="unionlogic__link_8____unnamed____" prot="public">logic_link.__unnamed__</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="link__manager_8h_1a024a536642a4a0e426ef6518f1bc2fbb" prot="public" static="no">
+        <name>link_type_t</name>
+        <enumvalue id="link__manager_8h_1a024a536642a4a0e426ef6518f1bc2fbbad7f2f27e620addf19ddbf298e708f79a" prot="public">
+          <name>LINK_TYPE_CLASSIC</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="link__manager_8h_1a024a536642a4a0e426ef6518f1bc2fbbaead7ee5bcdb60a3fe0664776fb7af420" prot="public">
+          <name>LINK_TYPE_LE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="link__manager_8h_1a024a536642a4a0e426ef6518f1bc2fbbae4636feed1b2319d7cdf75eaf5f38ca9" prot="public">
+          <name>LINK_TYPE_UNKNOWN</name>
+          <initializer>= 0xfe</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_manager.h" line="11" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_manager.h" bodystart="11" bodyend="15"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="link__manager_8h_1adcad25cd75f20bd4bee3069defb74837" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool logic_link_is_le</definition>
+        <argsstring>(struct logic_link *link)</argsstring>
+        <name>logic_link_is_le</name>
+        <param>
+          <type>struct <ref refid="structlogic__link" kindref="compound">logic_link</ref> *</type>
+          <declname>link</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_manager.h" line="28" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__manager_8h_1afb4a9cb081788aa79f5a2e7eab935692" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structlogic__link" kindref="compound">logic_link</ref> *</type>
+        <definition>struct logic_link* logic_link_by_handle</definition>
+        <argsstring>(u16 handle)</argsstring>
+        <name>logic_link_by_handle</name>
+        <param>
+          <type>u16</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_manager.h" line="30" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>_LINK_MANAGER_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_LINK_MANAGER_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;typedef.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//support<sp/>Classic</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#include<sp/>&quot;lmp.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//support<sp/>LE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="link__layer_8h" kindref="compound">ble/link_layer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="link__manager_8h_1a024a536642a4a0e426ef6518f1bc2fbb" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="12" refid="link__manager_8h_1a024a536642a4a0e426ef6518f1bc2fbbad7f2f27e620addf19ddbf298e708f79a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="link__manager_8h_1a024a536642a4a0e426ef6518f1bc2fbbad7f2f27e620addf19ddbf298e708f79a" kindref="member">LINK_TYPE_CLASSIC</ref><sp/><sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="13" refid="link__manager_8h_1a024a536642a4a0e426ef6518f1bc2fbbaead7ee5bcdb60a3fe0664776fb7af420" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="link__manager_8h_1a024a536642a4a0e426ef6518f1bc2fbbaead7ee5bcdb60a3fe0664776fb7af420" kindref="member">LINK_TYPE_LE</ref>,</highlight></codeline>
+<codeline lineno="14" refid="link__manager_8h_1a024a536642a4a0e426ef6518f1bc2fbbae4636feed1b2319d7cdf75eaf5f38ca9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="link__manager_8h_1a024a536642a4a0e426ef6518f1bc2fbbae4636feed1b2319d7cdf75eaf5f38ca9" kindref="member">LINK_TYPE_UNKNOWN</ref><sp/><sp/><sp/>=<sp/>0xfe</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}<sp/><ref refid="link__manager_8h_1a024a536642a4a0e426ef6518f1bc2fbb" kindref="member">link_type_t</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="structlogic__link" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structlogic__link" kindref="compound">logic_link</ref><sp/>{</highlight></codeline>
+<codeline lineno="18" refid="structlogic__link_1a30c53a8a42a8adc184ac2339e0cc024a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">list_head<sp/><sp/><sp/><sp/><ref refid="structlogic__link_1a30c53a8a42a8adc184ac2339e0cc024a" kindref="member">entry</ref>;</highlight></codeline>
+<codeline lineno="19" refid="structlogic__link_1a955b994f1c6a3ac9d74b121d544d833a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="link__manager_8h_1a024a536642a4a0e426ef6518f1bc2fbb" kindref="member">link_type_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlogic__link_1a955b994f1c6a3ac9d74b121d544d833a" kindref="member">type</ref>;</highlight></codeline>
+<codeline lineno="20" refid="structlogic__link_1a1850f7bcf73f04fa27ae1d904b2beb52" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlogic__link_1a1850f7bcf73f04fa27ae1d904b2beb52" kindref="member">conn_handle</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="unionlogic__link_8____unnamed____" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structle__link" kindref="compound">le_link</ref><sp/>le;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>struct<sp/>classic_link<sp/>classic;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="link__manager_8h_1adcad25cd75f20bd4bee3069defb74837" kindref="member">logic_link_is_le</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structlogic__link" kindref="compound">logic_link</ref><sp/>*link);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structlogic__link" kindref="compound">logic_link</ref><sp/>*<ref refid="link__manager_8h_1afb4a9cb081788aa79f5a2e7eab935692" kindref="member">logic_link_by_handle</ref>(u16<sp/>handle);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_manager.h"/>
+  </compounddef>
+</doxygen>

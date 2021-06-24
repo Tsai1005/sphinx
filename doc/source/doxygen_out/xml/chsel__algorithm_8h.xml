@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="chsel__algorithm_8h" kind="file" language="C++">
+    <compoundname>chsel_algorithm.h</compoundname>
+    <includes local="yes">typedef.h</includes>
+    <incdepgraph>
+      <node id="4475">
+        <label>typedef.h</label>
+      </node>
+      <node id="4474">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/chsel_algorithm.h</label>
+        <link refid="chsel_algorithm.h"/>
+        <childnode refid="4475" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="chsel__algorithm_8h_1a6d31cf28bc7490d43417ec9c8c3f8b07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void le_channel_selection_algorithm_event</definition>
+        <argsstring>(struct le_link *link, u8 algorithm)</argsstring>
+        <name>le_channel_selection_algorithm_event</name>
+        <param>
+          <type>struct <ref refid="structle__link" kindref="compound">le_link</ref> *</type>
+          <declname>link</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>algorithm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/chsel_algorithm.h" line="10" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>__CHSEL_ALGORITHM_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__CHSEL_ALGORITHM_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;typedef.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">/********************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL<sp/>Internal<sp/>API<sp/>(Must<sp/>not<sp/>callby<sp/>upper<sp/>layer)</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="chsel__algorithm_8h_1a6d31cf28bc7490d43417ec9c8c3f8b07" kindref="member">le_channel_selection_algorithm_event</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structle__link" kindref="compound">le_link</ref><sp/>*link,<sp/>u8<sp/>algorithm);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__CHSEL_ALGORITHM_H__<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/chsel_algorithm.h"/>
+  </compounddef>
+</doxygen>

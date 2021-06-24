@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structll__msg__cte__respond__t" kind="struct" language="C++" prot="public">
+    <compoundname>ll_msg_cte_respond_t</compoundname>
+    <includes refid="llcp_8h" local="no">llcp.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structll__msg__cte__respond__t_1a5b7c3956f2a5b016317671cf86cf4764" prot="public" static="no" mutable="no">
+        <type><ref refid="structll__msg__hdr__t" kindref="compound">ll_msg_hdr_t</ref></type>
+        <definition>ll_msg_hdr_t ll_msg_cte_respond_t::hdr</definition>
+        <argsstring></argsstring>
+        <name>hdr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="171" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__msg__cte__respond__t_1a6543d207bb4a46cb1a395e1939c14f9c" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 ll_msg_cte_respond_t::enable</definition>
+        <argsstring></argsstring>
+        <name>enable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="173" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1475">
+        <label>ll_msg_cte_respond_t</label>
+        <link refid="structll__msg__cte__respond__t"/>
+        <childnode refid="1476" relation="usage">
+          <edgelabel>hdr</edgelabel>
+        </childnode>
+      </node>
+      <node id="1476">
+        <label>ll_msg_hdr_t</label>
+        <link refid="structll__msg__hdr__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="170" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="170" bodyend="174"/>
+    <listofallmembers>
+      <member refid="structll__msg__cte__respond__t_1a6543d207bb4a46cb1a395e1939c14f9c" prot="public" virt="non-virtual"><scope>ll_msg_cte_respond_t</scope><name>enable</name></member>
+      <member refid="structll__msg__cte__respond__t_1a5b7c3956f2a5b016317671cf86cf4764" prot="public" virt="non-virtual"><scope>ll_msg_cte_respond_t</scope><name>hdr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

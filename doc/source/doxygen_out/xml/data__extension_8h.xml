@@ -1,0 +1,473 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="data__extension_8h" kind="file" language="C++">
+    <compoundname>data_extension.h</compoundname>
+    <includes local="yes">typedef.h</includes>
+    <includedby refid="link__layer_8h" local="yes">/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h</includedby>
+    <incdepgraph>
+      <node id="4477">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/data_extension.h</label>
+        <link refid="data_extension.h"/>
+        <childnode refid="4478" relation="include">
+        </childnode>
+      </node>
+      <node id="4478">
+        <label>typedef.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4511">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_vendor.c</label>
+        <link refid="ll__vendor_8c"/>
+      </node>
+      <node id="4532">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_manager.h</label>
+        <link refid="link__manager_8h"/>
+      </node>
+      <node id="4482">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/hci_ll_cmds.c</label>
+        <link refid="hci__ll__cmds_8c"/>
+      </node>
+      <node id="4506">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_pc.c</label>
+        <link refid="ll__pc_8c"/>
+      </node>
+      <node id="4521">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_pc.c</label>
+        <link refid="llcp__sm__pc_8c"/>
+      </node>
+      <node id="4492">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_common_iso.c</label>
+        <link refid="ll__common__iso_8c"/>
+      </node>
+      <node id="4510">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_slave.c</label>
+        <link refid="ll__slave_8c"/>
+      </node>
+      <node id="4502">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_keys.c</label>
+        <link refid="ll__keys_8c"/>
+      </node>
+      <node id="4499">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_extended_advertising.c</label>
+        <link refid="ll__extended__advertising_8c"/>
+      </node>
+      <node id="4517">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_conn_update.c</label>
+        <link refid="llcp__sm__conn__update_8c"/>
+      </node>
+      <node id="4483">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/link_layer.c</label>
+        <link refid="link__layer_8c"/>
+      </node>
+      <node id="4524">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_sca.c</label>
+        <link refid="llcp__sm__sca_8c"/>
+      </node>
+      <node id="4486">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c</label>
+        <link refid="ll__bis_8c"/>
+      </node>
+      <node id="4487">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis_master.c</label>
+        <link refid="ll__bis__master_8c"/>
+      </node>
+      <node id="4496">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_ext_adv.c</label>
+        <link refid="ll__ext__adv_8c"/>
+      </node>
+      <node id="4516">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_common.c</label>
+        <link refid="llcp__sm__common_8c"/>
+      </node>
+      <node id="4497">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_ext_init.c</label>
+        <link refid="ll__ext__init_8c"/>
+      </node>
+      <node id="4494">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_data_extension.c</label>
+        <link refid="ll__data__extension_8c"/>
+      </node>
+      <node id="4479">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/data_extension.h</label>
+        <link refid="data_extension.h"/>
+        <childnode refid="4480" relation="include">
+        </childnode>
+      </node>
+      <node id="4489">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis.c</label>
+        <link refid="ll__cis_8c"/>
+      </node>
+      <node id="4484">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_adv.c</label>
+        <link refid="ll__adv_8c"/>
+      </node>
+      <node id="4493">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cte.c</label>
+        <link refid="ll__cte_8c"/>
+      </node>
+      <node id="4527">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_acc.c</label>
+        <link refid="tws__le__acc_8c"/>
+      </node>
+      <node id="4503">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_master.c</label>
+        <link refid="ll__master_8c"/>
+      </node>
+      <node id="4522">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_phy_update.c</label>
+        <link refid="llcp__sm__phy__update_8c"/>
+      </node>
+      <node id="4481">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/hci_ll.c</label>
+        <link refid="hci__ll_8c"/>
+      </node>
+      <node id="4530">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_scan.c</label>
+        <link refid="tws__ll__scan_8c"/>
+      </node>
+      <node id="4508">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_resolve_list.c</label>
+        <link refid="ll__resolve__list_8c"/>
+      </node>
+      <node id="4515">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_cis_terminate.c</label>
+        <link refid="llcp__sm__cis__terminate_8c"/>
+      </node>
+      <node id="4525">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_template.c</label>
+        <link refid="llcp__sm__template_8c"/>
+      </node>
+      <node id="4512">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_white_list.c</label>
+        <link refid="ll__white__list_8c"/>
+      </node>
+      <node id="4500">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_init.c</label>
+        <link refid="ll__init_8c"/>
+      </node>
+      <node id="4495">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_events.c</label>
+        <link refid="ll__events_8c"/>
+      </node>
+      <node id="4526">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_vendor_jl.c</label>
+        <link refid="llcp__sm__vendor__jl_8c"/>
+      </node>
+      <node id="4514">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_cis.c</label>
+        <link refid="llcp__sm__cis_8c"/>
+      </node>
+      <node id="4528">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c</label>
+        <link refid="tws__le__link_8c"/>
+      </node>
+      <node id="4513">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_bis.c</label>
+        <link refid="llcp__sm__bis_8c"/>
+      </node>
+      <node id="4488">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis_slave.c</label>
+        <link refid="ll__bis__slave_8c"/>
+      </node>
+      <node id="4518">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_cte.c</label>
+        <link refid="llcp__sm__cte_8c"/>
+      </node>
+      <node id="4529">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_adv.c</label>
+        <link refid="tws__ll__adv_8c"/>
+      </node>
+      <node id="4523">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_ping.c</label>
+        <link refid="llcp__sm__ping_8c"/>
+      </node>
+      <node id="4491">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis_slave.c</label>
+        <link refid="ll__cis__slave_8c"/>
+      </node>
+      <node id="4504">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_msg.c</label>
+        <link refid="ll__msg_8c"/>
+      </node>
+      <node id="4480">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h</label>
+        <link refid="link__layer_8h"/>
+        <childnode refid="4481" relation="include">
+        </childnode>
+        <childnode refid="4482" relation="include">
+        </childnode>
+        <childnode refid="4483" relation="include">
+        </childnode>
+        <childnode refid="4484" relation="include">
+        </childnode>
+        <childnode refid="4485" relation="include">
+        </childnode>
+        <childnode refid="4486" relation="include">
+        </childnode>
+        <childnode refid="4487" relation="include">
+        </childnode>
+        <childnode refid="4488" relation="include">
+        </childnode>
+        <childnode refid="4489" relation="include">
+        </childnode>
+        <childnode refid="4490" relation="include">
+        </childnode>
+        <childnode refid="4491" relation="include">
+        </childnode>
+        <childnode refid="4492" relation="include">
+        </childnode>
+        <childnode refid="4493" relation="include">
+        </childnode>
+        <childnode refid="4494" relation="include">
+        </childnode>
+        <childnode refid="4495" relation="include">
+        </childnode>
+        <childnode refid="4496" relation="include">
+        </childnode>
+        <childnode refid="4497" relation="include">
+        </childnode>
+        <childnode refid="4498" relation="include">
+        </childnode>
+        <childnode refid="4499" relation="include">
+        </childnode>
+        <childnode refid="4500" relation="include">
+        </childnode>
+        <childnode refid="4501" relation="include">
+        </childnode>
+        <childnode refid="4502" relation="include">
+        </childnode>
+        <childnode refid="4503" relation="include">
+        </childnode>
+        <childnode refid="4504" relation="include">
+        </childnode>
+        <childnode refid="4505" relation="include">
+        </childnode>
+        <childnode refid="4506" relation="include">
+        </childnode>
+        <childnode refid="4507" relation="include">
+        </childnode>
+        <childnode refid="4508" relation="include">
+        </childnode>
+        <childnode refid="4509" relation="include">
+        </childnode>
+        <childnode refid="4510" relation="include">
+        </childnode>
+        <childnode refid="4511" relation="include">
+        </childnode>
+        <childnode refid="4512" relation="include">
+        </childnode>
+        <childnode refid="4513" relation="include">
+        </childnode>
+        <childnode refid="4514" relation="include">
+        </childnode>
+        <childnode refid="4515" relation="include">
+        </childnode>
+        <childnode refid="4516" relation="include">
+        </childnode>
+        <childnode refid="4517" relation="include">
+        </childnode>
+        <childnode refid="4518" relation="include">
+        </childnode>
+        <childnode refid="4519" relation="include">
+        </childnode>
+        <childnode refid="4520" relation="include">
+        </childnode>
+        <childnode refid="4521" relation="include">
+        </childnode>
+        <childnode refid="4522" relation="include">
+        </childnode>
+        <childnode refid="4523" relation="include">
+        </childnode>
+        <childnode refid="4524" relation="include">
+        </childnode>
+        <childnode refid="4525" relation="include">
+        </childnode>
+        <childnode refid="4526" relation="include">
+        </childnode>
+        <childnode refid="4527" relation="include">
+        </childnode>
+        <childnode refid="4528" relation="include">
+        </childnode>
+        <childnode refid="4529" relation="include">
+        </childnode>
+        <childnode refid="4530" relation="include">
+        </childnode>
+        <childnode refid="4531" relation="include">
+        </childnode>
+        <childnode refid="4532" relation="include">
+        </childnode>
+      </node>
+      <node id="4531">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h</label>
+        <link refid="ll__cis_8h"/>
+        <childnode refid="4480" relation="include">
+        </childnode>
+      </node>
+      <node id="4498">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_ext_scan.c</label>
+        <link refid="ll__ext__scan_8c"/>
+      </node>
+      <node id="4519">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_data_extension.c</label>
+        <link refid="llcp__sm__data__extension_8c"/>
+      </node>
+      <node id="4509">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_scan.c</label>
+        <link refid="ll__scan_8c"/>
+      </node>
+      <node id="4505">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_multiple_phys.c</label>
+        <link refid="ll__multiple__phys_8c"/>
+      </node>
+      <node id="4485">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_afh.c</label>
+        <link refid="ll__afh_8c"/>
+      </node>
+      <node id="4501">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_isoal.c</label>
+        <link refid="ll__isoal_8c"/>
+      </node>
+      <node id="4490">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis_master.c</label>
+        <link refid="ll__cis__master_8c"/>
+      </node>
+      <node id="4507">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_periodic_advertising.c</label>
+        <link refid="ll__periodic__advertising_8c"/>
+      </node>
+      <node id="4520">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_encrypt.c</label>
+        <link refid="llcp__sm__encrypt_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structdata__length" prot="public">data_length</innerclass>
+    <innerclass refid="structll__data__pdu__length" prot="public">ll_data_pdu_length</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="data__extension_8h_1a752f4f01fb39bbed01db4d4680b3b717" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ll_data_extension_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>ll_data_extension_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/data_extension.h" line="44" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_data_extension.c" bodystart="87" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="data__extension_8h_1aecce5f21cf00cebb679690a1d1a35866" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structll__data__pdu__length" kindref="compound">ll_data_pdu_length</ref> *</type>
+        <definition>struct ll_data_pdu_length* ll_read_suggested_default_data_length</definition>
+        <argsstring>(void)</argsstring>
+        <name>ll_read_suggested_default_data_length</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/data_extension.h" line="46" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_data_extension.c" bodystart="49" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="data__extension_8h_1a1e7b807c8291268f1936bfbef60ce535" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structll__data__pdu__length" kindref="compound">ll_data_pdu_length</ref> *</type>
+        <definition>struct ll_data_pdu_length* ll_read_maximum_data_length</definition>
+        <argsstring>(void)</argsstring>
+        <name>ll_read_maximum_data_length</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/data_extension.h" line="48" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_data_extension.c" bodystart="44" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="data__extension_8h_1a49e12ff02d495c12c62e9b38dc327d28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ll_write_suggested_default_data_length</definition>
+        <argsstring>(const u8 *data)</argsstring>
+        <name>ll_write_suggested_default_data_length</name>
+        <param>
+          <type>const u8 *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/data_extension.h" line="50" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_data_extension.c" bodystart="56" bodyend="65"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>DATA_EXTENSION_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DATA_EXTENSION_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;typedef.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="structdata__length" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdata__length" kindref="compound">data_length</ref><sp/>{</highlight></codeline>
+<codeline lineno="8" refid="structdata__length_1ae1e6159e577c5a4284ae0efb19e58f2d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structdata__length_1ae1e6159e577c5a4284ae0efb19e58f2d" kindref="member">connMaxTxOctets</ref>;</highlight></codeline>
+<codeline lineno="9" refid="structdata__length_1a395ee13e4ab5c53e94eb2bb28b8e509e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structdata__length_1a395ee13e4ab5c53e94eb2bb28b8e509e" kindref="member">connMaxRxOctets</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="structdata__length_1a285243feaf1b3c79126f8c4893d8b2a3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structdata__length_1a285243feaf1b3c79126f8c4893d8b2a3" kindref="member">connRemoteMaxTxOctets</ref>;</highlight></codeline>
+<codeline lineno="12" refid="structdata__length_1a39ebc4f1ef5fb0cc014417fa139c9d0d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structdata__length_1a39ebc4f1ef5fb0cc014417fa139c9d0d" kindref="member">connRemoteMaxRxOctets</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="structdata__length_1ad924d638718839a2ca759107de1758fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structdata__length_1ad924d638718839a2ca759107de1758fc" kindref="member">connEffectiveMaxTxOctets</ref>;</highlight></codeline>
+<codeline lineno="15" refid="structdata__length_1af630bfadfa0768fb17f4bff5f3998a81" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structdata__length_1af630bfadfa0768fb17f4bff5f3998a81" kindref="member">connEffectiveMaxRxOctets</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="structdata__length_1af407e8fff10623b5a5a3adeb12f16fdd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structdata__length_1af407e8fff10623b5a5a3adeb12f16fdd" kindref="member">connMaxTxTime</ref>;</highlight></codeline>
+<codeline lineno="18" refid="structdata__length_1a82da312d21fce630c01b0c02d6dacff8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structdata__length_1a82da312d21fce630c01b0c02d6dacff8" kindref="member">connMaxRxTime</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="structdata__length_1acd3492b0af1425215d1ef722b4c4fd03" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structdata__length_1acd3492b0af1425215d1ef722b4c4fd03" kindref="member">connRemoteMaxTxTime</ref>;</highlight></codeline>
+<codeline lineno="21" refid="structdata__length_1a837a73fb4f535d05ec15af39686fc2e4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structdata__length_1a837a73fb4f535d05ec15af39686fc2e4" kindref="member">connRemoteMaxRxTime</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="structdata__length_1a1252ab31a3ceb8fb74bde2e6185e0ba9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structdata__length_1a1252ab31a3ceb8fb74bde2e6185e0ba9" kindref="member">connEffectiveMaxTxTime</ref>;</highlight></codeline>
+<codeline lineno="24" refid="structdata__length_1a52a5516dbbfd6c524fd253c7227522ac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structdata__length_1a52a5516dbbfd6c524fd253c7227522ac" kindref="member">connEffectiveMaxRxTime</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="structdata__length_1af1bd52f4629173cdf5e7ac02e17bc788" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structdata__length_1af1bd52f4629173cdf5e7ac02e17bc788" kindref="member">PreConnEffectiveTxOctets</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="structll__data__pdu__length" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structll__data__pdu__length" kindref="compound">ll_data_pdu_length</ref><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//read<sp/>only</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="structll__data__pdu__length_1a84273369d3b40891ecbd52ba584b7e32" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structll__data__pdu__length_1a84273369d3b40891ecbd52ba584b7e32" kindref="member">supportedMaxTxOctets</ref>;</highlight></codeline>
+<codeline lineno="32" refid="structll__data__pdu__length_1a49550e7c3952f13ccc68766acb745bd7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structll__data__pdu__length_1a49550e7c3952f13ccc68766acb745bd7" kindref="member">supportedMaxTxTime</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="structll__data__pdu__length_1a9e1285ea1a9ce7b2123a2c3cdd1766f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structll__data__pdu__length_1a9e1285ea1a9ce7b2123a2c3cdd1766f5" kindref="member">supportedMaxRxOctets</ref>;</highlight></codeline>
+<codeline lineno="35" refid="structll__data__pdu__length_1aebff7b6d016c0cdb6fc9c47178238837" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structll__data__pdu__length_1aebff7b6d016c0cdb6fc9c47178238837" kindref="member">supportedMaxRxTime</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="structll__data__pdu__length_1acbc7e890e1da1aa8c269d5c14b17e1d6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structll__data__pdu__length_1acbc7e890e1da1aa8c269d5c14b17e1d6" kindref="member">suggestedMaxTxOctets</ref>;</highlight></codeline>
+<codeline lineno="38" refid="structll__data__pdu__length_1a869c2fe4781b2d62e9571fee9acd3792" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structll__data__pdu__length_1a869c2fe4781b2d62e9571fee9acd3792" kindref="member">suggestedMaxTxTime</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="structll__data__pdu__length_1a261c9e1a460bfa25044f91c694477363" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structll__data__pdu__length_1a261c9e1a460bfa25044f91c694477363" kindref="member">connInitialMaxTxOctets</ref>;</highlight></codeline>
+<codeline lineno="41" refid="structll__data__pdu__length_1aee66eff5934f2d2516f77359e0f48ca2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structll__data__pdu__length_1aee66eff5934f2d2516f77359e0f48ca2" kindref="member">connInitialMaxTxTime</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="data__extension_8h_1a752f4f01fb39bbed01db4d4680b3b717" kindref="member">ll_data_extension_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structll__data__pdu__length" kindref="compound">ll_data_pdu_length</ref><sp/>*<ref refid="data__extension_8h_1aecce5f21cf00cebb679690a1d1a35866" kindref="member">ll_read_suggested_default_data_length</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structll__data__pdu__length" kindref="compound">ll_data_pdu_length</ref><sp/>*<ref refid="data__extension_8h_1a1e7b807c8291268f1936bfbef60ce535" kindref="member">ll_read_maximum_data_length</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="data__extension_8h_1a49e12ff02d495c12c62e9b38dc327d28" kindref="member">ll_write_suggested_default_data_length</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>*data);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/data_extension.h"/>
+  </compounddef>
+</doxygen>

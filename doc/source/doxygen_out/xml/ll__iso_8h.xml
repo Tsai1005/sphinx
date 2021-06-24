@@ -1,0 +1,1199 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="ll__iso_8h" kind="file" language="C++">
+    <compoundname>ll_iso.h</compoundname>
+    <includes refid="ll__defines_8h" local="yes">ll_defines.h</includes>
+    <includes local="yes">common/lbuf.h</includes>
+    <includes local="yes">common/thread.h</includes>
+    <includedby refid="link__layer_8h" local="yes">/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h</includedby>
+    <includedby refid="ll__bis_8h" local="yes">/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h</includedby>
+    <includedby refid="ll__cis_8h" local="yes">/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h</includedby>
+    <incdepgraph>
+      <node id="5000">
+        <label>common/lbuf.h</label>
+      </node>
+      <node id="5001">
+        <label>common/thread.h</label>
+      </node>
+      <node id="4997">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h</label>
+        <link refid="ll_iso.h"/>
+        <childnode refid="4998" relation="include">
+        </childnode>
+        <childnode refid="5000" relation="include">
+        </childnode>
+        <childnode refid="5001" relation="include">
+        </childnode>
+      </node>
+      <node id="4999">
+        <label>typedef.h</label>
+      </node>
+      <node id="4998">
+        <label>ll_defines.h</label>
+        <link refid="ll__defines_8h"/>
+        <childnode refid="4999" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5034">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_vendor.c</label>
+        <link refid="ll__vendor_8c"/>
+      </node>
+      <node id="5055">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_manager.h</label>
+        <link refid="link__manager_8h"/>
+      </node>
+      <node id="5005">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/hci_ll_cmds.c</label>
+        <link refid="hci__ll__cmds_8c"/>
+      </node>
+      <node id="5029">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_pc.c</label>
+        <link refid="ll__pc_8c"/>
+      </node>
+      <node id="5044">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_pc.c</label>
+        <link refid="llcp__sm__pc_8c"/>
+      </node>
+      <node id="5015">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_common_iso.c</label>
+        <link refid="ll__common__iso_8c"/>
+      </node>
+      <node id="5033">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_slave.c</label>
+        <link refid="ll__slave_8c"/>
+      </node>
+      <node id="5025">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_keys.c</label>
+        <link refid="ll__keys_8c"/>
+      </node>
+      <node id="5022">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_extended_advertising.c</label>
+        <link refid="ll__extended__advertising_8c"/>
+      </node>
+      <node id="5040">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_conn_update.c</label>
+        <link refid="llcp__sm__conn__update_8c"/>
+      </node>
+      <node id="5006">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/link_layer.c</label>
+        <link refid="link__layer_8c"/>
+      </node>
+      <node id="5047">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_sca.c</label>
+        <link refid="llcp__sm__sca_8c"/>
+      </node>
+      <node id="5009">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c</label>
+        <link refid="ll__bis_8c"/>
+      </node>
+      <node id="5010">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis_master.c</label>
+        <link refid="ll__bis__master_8c"/>
+      </node>
+      <node id="5019">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_ext_adv.c</label>
+        <link refid="ll__ext__adv_8c"/>
+      </node>
+      <node id="5039">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_common.c</label>
+        <link refid="llcp__sm__common_8c"/>
+      </node>
+      <node id="5020">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_ext_init.c</label>
+        <link refid="ll__ext__init_8c"/>
+      </node>
+      <node id="5017">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_data_extension.c</label>
+        <link refid="ll__data__extension_8c"/>
+      </node>
+      <node id="5012">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis.c</label>
+        <link refid="ll__cis_8c"/>
+      </node>
+      <node id="5002">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h</label>
+        <link refid="ll_iso.h"/>
+        <childnode refid="5003" relation="include">
+        </childnode>
+        <childnode refid="5056" relation="include">
+        </childnode>
+        <childnode refid="5054" relation="include">
+        </childnode>
+      </node>
+      <node id="5007">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_adv.c</label>
+        <link refid="ll__adv_8c"/>
+      </node>
+      <node id="5016">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cte.c</label>
+        <link refid="ll__cte_8c"/>
+      </node>
+      <node id="5050">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_acc.c</label>
+        <link refid="tws__le__acc_8c"/>
+      </node>
+      <node id="5026">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_master.c</label>
+        <link refid="ll__master_8c"/>
+      </node>
+      <node id="5045">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_phy_update.c</label>
+        <link refid="llcp__sm__phy__update_8c"/>
+      </node>
+      <node id="5004">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/hci_ll.c</label>
+        <link refid="hci__ll_8c"/>
+      </node>
+      <node id="5053">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_scan.c</label>
+        <link refid="tws__ll__scan_8c"/>
+      </node>
+      <node id="5031">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_resolve_list.c</label>
+        <link refid="ll__resolve__list_8c"/>
+      </node>
+      <node id="5038">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_cis_terminate.c</label>
+        <link refid="llcp__sm__cis__terminate_8c"/>
+      </node>
+      <node id="5048">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_template.c</label>
+        <link refid="llcp__sm__template_8c"/>
+      </node>
+      <node id="5035">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_white_list.c</label>
+        <link refid="ll__white__list_8c"/>
+      </node>
+      <node id="5023">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_init.c</label>
+        <link refid="ll__init_8c"/>
+      </node>
+      <node id="5018">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_events.c</label>
+        <link refid="ll__events_8c"/>
+      </node>
+      <node id="5049">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_vendor_jl.c</label>
+        <link refid="llcp__sm__vendor__jl_8c"/>
+      </node>
+      <node id="5037">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_cis.c</label>
+        <link refid="llcp__sm__cis_8c"/>
+      </node>
+      <node id="5051">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c</label>
+        <link refid="tws__le__link_8c"/>
+      </node>
+      <node id="5036">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_bis.c</label>
+        <link refid="llcp__sm__bis_8c"/>
+      </node>
+      <node id="5011">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis_slave.c</label>
+        <link refid="ll__bis__slave_8c"/>
+      </node>
+      <node id="5041">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_cte.c</label>
+        <link refid="llcp__sm__cte_8c"/>
+      </node>
+      <node id="5052">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_adv.c</label>
+        <link refid="tws__ll__adv_8c"/>
+      </node>
+      <node id="5046">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_ping.c</label>
+        <link refid="llcp__sm__ping_8c"/>
+      </node>
+      <node id="5014">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis_slave.c</label>
+        <link refid="ll__cis__slave_8c"/>
+      </node>
+      <node id="5027">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_msg.c</label>
+        <link refid="ll__msg_8c"/>
+      </node>
+      <node id="5003">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h</label>
+        <link refid="link__layer_8h"/>
+        <childnode refid="5004" relation="include">
+        </childnode>
+        <childnode refid="5005" relation="include">
+        </childnode>
+        <childnode refid="5006" relation="include">
+        </childnode>
+        <childnode refid="5007" relation="include">
+        </childnode>
+        <childnode refid="5008" relation="include">
+        </childnode>
+        <childnode refid="5009" relation="include">
+        </childnode>
+        <childnode refid="5010" relation="include">
+        </childnode>
+        <childnode refid="5011" relation="include">
+        </childnode>
+        <childnode refid="5012" relation="include">
+        </childnode>
+        <childnode refid="5013" relation="include">
+        </childnode>
+        <childnode refid="5014" relation="include">
+        </childnode>
+        <childnode refid="5015" relation="include">
+        </childnode>
+        <childnode refid="5016" relation="include">
+        </childnode>
+        <childnode refid="5017" relation="include">
+        </childnode>
+        <childnode refid="5018" relation="include">
+        </childnode>
+        <childnode refid="5019" relation="include">
+        </childnode>
+        <childnode refid="5020" relation="include">
+        </childnode>
+        <childnode refid="5021" relation="include">
+        </childnode>
+        <childnode refid="5022" relation="include">
+        </childnode>
+        <childnode refid="5023" relation="include">
+        </childnode>
+        <childnode refid="5024" relation="include">
+        </childnode>
+        <childnode refid="5025" relation="include">
+        </childnode>
+        <childnode refid="5026" relation="include">
+        </childnode>
+        <childnode refid="5027" relation="include">
+        </childnode>
+        <childnode refid="5028" relation="include">
+        </childnode>
+        <childnode refid="5029" relation="include">
+        </childnode>
+        <childnode refid="5030" relation="include">
+        </childnode>
+        <childnode refid="5031" relation="include">
+        </childnode>
+        <childnode refid="5032" relation="include">
+        </childnode>
+        <childnode refid="5033" relation="include">
+        </childnode>
+        <childnode refid="5034" relation="include">
+        </childnode>
+        <childnode refid="5035" relation="include">
+        </childnode>
+        <childnode refid="5036" relation="include">
+        </childnode>
+        <childnode refid="5037" relation="include">
+        </childnode>
+        <childnode refid="5038" relation="include">
+        </childnode>
+        <childnode refid="5039" relation="include">
+        </childnode>
+        <childnode refid="5040" relation="include">
+        </childnode>
+        <childnode refid="5041" relation="include">
+        </childnode>
+        <childnode refid="5042" relation="include">
+        </childnode>
+        <childnode refid="5043" relation="include">
+        </childnode>
+        <childnode refid="5044" relation="include">
+        </childnode>
+        <childnode refid="5045" relation="include">
+        </childnode>
+        <childnode refid="5046" relation="include">
+        </childnode>
+        <childnode refid="5047" relation="include">
+        </childnode>
+        <childnode refid="5048" relation="include">
+        </childnode>
+        <childnode refid="5049" relation="include">
+        </childnode>
+        <childnode refid="5050" relation="include">
+        </childnode>
+        <childnode refid="5051" relation="include">
+        </childnode>
+        <childnode refid="5052" relation="include">
+        </childnode>
+        <childnode refid="5053" relation="include">
+        </childnode>
+        <childnode refid="5054" relation="include">
+        </childnode>
+        <childnode refid="5055" relation="include">
+        </childnode>
+      </node>
+      <node id="5054">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h</label>
+        <link refid="ll__cis_8h"/>
+        <childnode refid="5003" relation="include">
+        </childnode>
+      </node>
+      <node id="5021">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_ext_scan.c</label>
+        <link refid="ll__ext__scan_8c"/>
+      </node>
+      <node id="5042">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_data_extension.c</label>
+        <link refid="llcp__sm__data__extension_8c"/>
+      </node>
+      <node id="5056">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h</label>
+        <link refid="ll__bis_8h"/>
+        <childnode refid="5003" relation="include">
+        </childnode>
+      </node>
+      <node id="5032">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_scan.c</label>
+        <link refid="ll__scan_8c"/>
+      </node>
+      <node id="5028">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_multiple_phys.c</label>
+        <link refid="ll__multiple__phys_8c"/>
+      </node>
+      <node id="5008">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_afh.c</label>
+        <link refid="ll__afh_8c"/>
+      </node>
+      <node id="5024">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_isoal.c</label>
+        <link refid="ll__isoal_8c"/>
+      </node>
+      <node id="5013">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis_master.c</label>
+        <link refid="ll__cis__master_8c"/>
+      </node>
+      <node id="5030">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_periodic_advertising.c</label>
+        <link refid="ll__periodic__advertising_8c"/>
+      </node>
+      <node id="5043">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_encrypt.c</label>
+        <link refid="llcp__sm__encrypt_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structLlIsoSetupDataPath__t" prot="public">LlIsoSetupDataPath_t</innerclass>
+    <innerclass refid="structLlIsoTestCtrs__t" prot="public">LlIsoTestCtrs_t</innerclass>
+    <innerclass refid="structLlIsoLinkQual__t" prot="public">LlIsoLinkQual_t</innerclass>
+    <innerclass refid="structlctrIsoHdr__t" prot="public">lctrIsoHdr_t</innerclass>
+    <innerclass refid="structlctrSduDesc__t" prot="public">lctrSduDesc_t</innerclass>
+    <innerclass refid="structlctrCisDataPduHdr__t" prot="public">lctrCisDataPduHdr_t</innerclass>
+    <innerclass refid="structlctrBisDataPduHdr__t" prot="public">lctrBisDataPduHdr_t</innerclass>
+    <innerclass refid="structlctrIsoSegHdr__t" prot="public">lctrIsoSegHdr_t</innerclass>
+    <innerclass refid="structlctrInDataPathCtx__t" prot="public">lctrInDataPathCtx_t</innerclass>
+    <innerclass refid="structlctrOutDataPathCtx__t" prot="public">lctrOutDataPathCtx_t</innerclass>
+    <innerclass refid="unionlctrDataPathCtx__t" prot="public">lctrDataPathCtx_t</innerclass>
+    <innerclass refid="structlctrIsoalTxCtx__t" prot="public">lctrIsoalTxCtx_t</innerclass>
+    <innerclass refid="structlctrIsoalRxCtx__t" prot="public">lctrIsoalRxCtx_t</innerclass>
+    <innerclass refid="structll__iso__rt__cfg__t" prot="public">ll_iso_rt_cfg_t</innerclass>
+    <innerclass refid="structlctrCreateCisPend__t" prot="public">lctrCreateCisPend_t</innerclass>
+    <innerclass refid="structhci__iso__hdr__t" prot="public">hci_iso_hdr_t</innerclass>
+    <innerclass refid="structll__iso__handle__t" prot="public">ll_iso_handle_t</innerclass>
+    <innerclass refid="unionlctrOutDataPathCtx__t_8cfg" prot="public">lctrOutDataPathCtx_t.cfg</innerclass>
+    <innerclass refid="structlctrOutDataPathCtx__t_8cfg_8hci" prot="public">lctrOutDataPathCtx_t.cfg.hci</innerclass>
+    <innerclass refid="unionlctrIsoalRxCtx__t_8data" prot="public">lctrIsoalRxCtx_t.data</innerclass>
+    <innerclass refid="structlctrIsoalRxCtx__t_8data_8framed" prot="public">lctrIsoalRxCtx_t.data.framed</innerclass>
+    <innerclass refid="structlctrIsoalRxCtx__t_8data_8unframed" prot="public">lctrIsoalRxCtx_t.data.unframed</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="ll__iso_8h_1a369f1868f70b66730f4270ceaac285a6" prot="public" static="no">
+        <name>LCTR_GET_ISO_DATA_HDR_LEN</name>
+        <param><defname>pIsoHdr</defname></param>
+        <initializer>(HCI_ISO_HDR_LEN + (((pIsoHdr)-&gt;tsFlag) ? HCI_ISO_DL_MAX_LEN : HCI_ISO_DL_MIN_LEN))</initializer>
+        <briefdescription>
+<para>Get length of ISO Header. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="14" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="ll__iso_8h_1a2d4d28b1b8f95adc53d75af60dab9d31" prot="public" static="no">
+        <name>lctrPktBoundary_t</name>
+        <enumvalue id="ll__iso_8h_1a2d4d28b1b8f95adc53d75af60dab9d31a81de545d3ee6f7acfeeebc60884b4db2" prot="public">
+          <name>LCTR_PB_FIRST</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Data is the first fragment of a fragmented SDU. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ll__iso_8h_1a2d4d28b1b8f95adc53d75af60dab9d31aa53ad684c46120397c244b1c8be56292" prot="public">
+          <name>LCTR_PB_CONT</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Data is a continuation fragment of a fragmented SDU. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ll__iso_8h_1a2d4d28b1b8f95adc53d75af60dab9d31a7ea152d6b30da5e5fa7b6a5f1d3297b4" prot="public">
+          <name>LCTR_PB_COMP</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Data is a complete SDU. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ll__iso_8h_1a2d4d28b1b8f95adc53d75af60dab9d31a8ea2ef18717eb2e2ebf63cb7086dfe04" prot="public">
+          <name>LCTR_PB_LAST</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Data is the last fragment of a fragmented SDU. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Packet boundary flags. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="25" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="25" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="enum" id="ll__iso_8h_1a716508f72fa43fe601994cc2835e5a0a" prot="public" static="no">
+        <name>lctrPktStatus_t</name>
+        <enumvalue id="ll__iso_8h_1a716508f72fa43fe601994cc2835e5a0aab8c91eb014d7b37e7927ab5da1c3f96d" prot="public">
+          <name>LCTR_PS_VALID</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Data is received correctly. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ll__iso_8h_1a716508f72fa43fe601994cc2835e5a0aac71a6e7f9312088515270a37da522582" prot="public">
+          <name>LCTR_PS_INVALID</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Data with possible errors. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ll__iso_8h_1a716508f72fa43fe601994cc2835e5a0aa7bb005fe314544739fc9c72642ceb5c9" prot="public">
+          <name>LCTR_PS_LOST</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Data with lost data. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Packet status flags. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="33" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="33" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="enum" id="ll__iso_8h_1a670cd0842150eedf5fa09adca1f054b2" prot="public" static="no">
+        <name>LlPacking_t</name>
+        <enumvalue id="ll__iso_8h_1a670cd0842150eedf5fa09adca1f054b2ae56f4cd28497ee1121f9e9927e8bf5f6" prot="public">
+          <name>LL_PACKING_SEQUENTIAL</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Sequential. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ll__iso_8h_1a670cd0842150eedf5fa09adca1f054b2a19a507f7f9d98cdf2ac3ab0ee51ccf26" prot="public">
+          <name>LL_PACKING_INTERLEAVED</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Interleaved. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Packing scheme. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="40" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="40" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="enum" id="ll__iso_8h_1ac6b0e5b32a70e2319903fb13194e7666" prot="public" static="no">
+        <name>LlIsoDataPathDir_t</name>
+        <enumvalue id="ll__iso_8h_1ac6b0e5b32a70e2319903fb13194e7666a0d80d43ea3519e84815ad5efc06a7520" prot="public">
+          <name>LL_ISO_DATA_DIR_INPUT</name>
+          <initializer>= 0x00</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Input data path. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ll__iso_8h_1ac6b0e5b32a70e2319903fb13194e7666af27f48a01364df1851e192e237106148" prot="public">
+          <name>LL_ISO_DATA_DIR_OUTPUT</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Output data path. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>ISO data path direction. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="46" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="46" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="enum" id="ll__iso_8h_1ad4a7049340ee84c0b78deb08a375078e" prot="public" static="no">
+        <name>LlIsoDataPath_t</name>
+        <enumvalue id="ll__iso_8h_1ad4a7049340ee84c0b78deb08a375078ea8ff1da2638ff7d0be0a7f70bf2fe1dca" prot="public">
+          <name>LL_ISO_DATA_PATH_HCI</name>
+          <initializer>= 0x00</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ll__iso_8h_1ad4a7049340ee84c0b78deb08a375078ea6d04eaee61592dd2024de537a4ca67d7" prot="public">
+          <name>LL_ISO_DATA_PATH_VS</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Vendor Specific. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ll__iso_8h_1ad4a7049340ee84c0b78deb08a375078eae79ab217361f5e1b7a0176a8a8659c80" prot="public">
+          <name>LL_ISO_DATA_PATH_TOTAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Total number of data path methods. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ll__iso_8h_1ad4a7049340ee84c0b78deb08a375078eaf76206cbde4d9f6e9c7db594ad1ecb83" prot="public">
+          <name>LL_ISO_DATA_PATH_DISABLED</name>
+          <initializer>= 0xFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Data path is disabled. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>ISO data path. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="52" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="52" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="enum" id="ll__iso_8h_1a9e93d8eae633734dfeb29e24a1f3a7c0" prot="public" static="no">
+        <name>@67</name>
+        <enumvalue id="ll__iso_8h_1a9e93d8eae633734dfeb29e24a1f3a7c0aee14fe0662f593dc9f5288dceb92781f" prot="public">
+          <name>LL_ISO_DATA_PATH_INPUT_BIT</name>
+          <initializer>= (1 &lt;&lt; 0)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Data path input bit. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ll__iso_8h_1a9e93d8eae633734dfeb29e24a1f3a7c0aa93e31e0c9ffe7ad65388d898addd39d" prot="public">
+          <name>LL_ISO_DATA_PATH_OUTPUT_BIT</name>
+          <initializer>= (1 &lt;&lt; 1)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Data path output bit. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>ISO data path direction bit. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="62" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="62" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="enum" id="ll__iso_8h_1a7fd3a11b71f060e138c02f9594b7188d" prot="public" static="no">
+        <name>LlIsoPldType_t</name>
+        <enumvalue id="ll__iso_8h_1a7fd3a11b71f060e138c02f9594b7188daa8d9f902030b4be966cb4c2763edaf50" prot="public">
+          <name>LL_ISO_PLD_TYPE_ZERO_LEN</name>
+          <initializer>= 0x00</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Zero length payload. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ll__iso_8h_1a7fd3a11b71f060e138c02f9594b7188dacc2d94ed45ef6301ee42410bb1bb7fdf" prot="public">
+          <name>LL_ISO_PLD_TYPE_VAR_LEN</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Variable length payload. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ll__iso_8h_1a7fd3a11b71f060e138c02f9594b7188da92e3a526075575831162d1e3c8985a09" prot="public">
+          <name>LL_ISO_PLD_TYPE_MAX_LEN</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Maximum length payload. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>ISO test packet payload type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="81" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="81" bodyend="85"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="ll__iso_8h_1a935e0247fb944b4be8cb8723e638e7c7" prot="public" static="no" mutable="no">
+        <type><ref refid="structll__iso__rt__cfg__t" kindref="compound">ll_iso_rt_cfg_t</ref></type>
+        <definition>ll_iso_rt_cfg_t ll_iso_rt_cfg</definition>
+        <argsstring></argsstring>
+        <name>ll_iso_rt_cfg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="330" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_common_iso.c" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="ll__iso_8h_1affc326042b3a59d0434f6ce05a70d930" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_iso_unpack_hdr</definition>
+        <argsstring>(const uint8_t *sdu, hci_iso_hdr_t *hdr)</argsstring>
+        <name>ll_iso_unpack_hdr</name>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>sdu</declname>
+        </param>
+        <param>
+          <type><ref refid="structhci__iso__hdr__t" kindref="compound">hci_iso_hdr_t</ref> *</type>
+          <declname>hdr</declname>
+        </param>
+        <briefdescription>
+<para>Unpack an ISO header. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sdu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SDU context </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hdr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ISO Data Load Header.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Header length. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="336" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_isoal.c" bodystart="115" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__iso_8h_1a8f2d7816f90d628ce81f2425491f090d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_iso_pack_hdr</definition>
+        <argsstring>(uint8_t *sdu, const hci_iso_hdr_t *hdr)</argsstring>
+        <name>ll_iso_pack_hdr</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>sdu</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structhci__iso__hdr__t" kindref="compound">hci_iso_hdr_t</ref> *</type>
+          <declname>hdr</declname>
+        </param>
+        <briefdescription>
+<para>Pack an ISO header. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sdu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SDU context </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hdr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ISO Data Load Header.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Header length. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="338" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_isoal.c" bodystart="63" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__iso_8h_1ab5a97cbba3c50cca0ef55e13e6d4c1dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int le_cmd_set_iso</definition>
+        <argsstring>(u16 opcode, const u8 *data, u32 size)</argsstring>
+        <name>le_cmd_set_iso</name>
+        <param>
+          <type>u16</type>
+          <declname>opcode</declname>
+        </param>
+        <param>
+          <type>const u8 *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Common ISO command packet decode. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>opcode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Opcode </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>*data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the command packet </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the command packet</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status command match. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="340" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_common_iso.c" bodystart="533" bodyend="640"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__iso_8h_1a50c2eabdddb63705bdfd638a208eb73a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lctrIsoSendCodecSdu</definition>
+        <argsstring>(uint16_t handle)</argsstring>
+        <name>lctrIsoSendCodecSdu</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+<para>Send Codec SDU data. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Stream ID. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="342" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_common_iso.c" bodystart="206" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__iso_8h_1aef585efcb3745391e704ecf47fab8b3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ll_iso_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>ll_iso_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="344" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_common_iso.c" bodystart="701" bodyend="733"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__iso_8h_1aa9927ae58774746ed7e9e2cb6278c53c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ll_iso_destroy</definition>
+        <argsstring>(void)</argsstring>
+        <name>ll_iso_destroy</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="346" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_common_iso.c" bodystart="735" bodyend="754"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__iso_8h_1a966b2ce1847ef9469802ff762c46e2ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ll_isoal_test</definition>
+        <argsstring>(void)</argsstring>
+        <name>ll_isoal_test</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="348" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_common_iso.c" bodystart="1748" bodyend="1766"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__iso_8h_1a3c2701aff88af47c4b9e15297655b75d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hci_push_iso_sdu</definition>
+        <argsstring>(uint8_t *packet, uint16_t size)</argsstring>
+        <name>hci_push_iso_sdu</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>packet</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>: hci_push_iso_sdu</para><para>: packet  : size </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="350" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_isoal.c" bodystart="1044" bodyend="1097"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>_LL_ISO_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_LL_ISO_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ll__defines_8h" kindref="compound">ll_defines.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;common/lbuf.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;common/thread.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">/**************************************************************************************************</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/>Macros</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">**************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="ll__iso_8h_1a369f1868f70b66730f4270ceaac285a6" refkind="member"><highlight class="preprocessor">#define<sp/>LCTR_GET_ISO_DATA_HDR_LEN(pIsoHdr)<sp/><sp/><sp/><sp/><sp/><sp/>(HCI_ISO_HDR_LEN<sp/>+<sp/>(((pIsoHdr)-&gt;tsFlag)<sp/>?<sp/>HCI_ISO_DL_MAX_LEN<sp/>:<sp/>HCI_ISO_DL_MIN_LEN))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">/**************************************************************************************************</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/>Constants</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">**************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">/**************************************************************************************************</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/>Data<sp/>Types</highlight></codeline>
+<codeline lineno="23"><highlight class="comment">**************************************************************************************************/</highlight></codeline>
+<codeline lineno="25" refid="ll__iso_8h_1a2d4d28b1b8f95adc53d75af60dab9d31" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="26" refid="ll__iso_8h_1a2d4d28b1b8f95adc53d75af60dab9d31a81de545d3ee6f7acfeeebc60884b4db2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__iso_8h_1a2d4d28b1b8f95adc53d75af60dab9d31a81de545d3ee6f7acfeeebc60884b4db2" kindref="member">LCTR_PB_FIRST</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="27" refid="ll__iso_8h_1a2d4d28b1b8f95adc53d75af60dab9d31aa53ad684c46120397c244b1c8be56292" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__iso_8h_1a2d4d28b1b8f95adc53d75af60dab9d31aa53ad684c46120397c244b1c8be56292" kindref="member">LCTR_PB_CONT</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="28" refid="ll__iso_8h_1a2d4d28b1b8f95adc53d75af60dab9d31a7ea152d6b30da5e5fa7b6a5f1d3297b4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__iso_8h_1a2d4d28b1b8f95adc53d75af60dab9d31a7ea152d6b30da5e5fa7b6a5f1d3297b4" kindref="member">LCTR_PB_COMP</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="29" refid="ll__iso_8h_1a2d4d28b1b8f95adc53d75af60dab9d31a8ea2ef18717eb2e2ebf63cb7086dfe04" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__iso_8h_1a2d4d28b1b8f95adc53d75af60dab9d31a8ea2ef18717eb2e2ebf63cb7086dfe04" kindref="member">LCTR_PB_LAST</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}<sp/><ref refid="ll__iso_8h_1a2d4d28b1b8f95adc53d75af60dab9d31" kindref="member">lctrPktBoundary_t</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="ll__iso_8h_1a716508f72fa43fe601994cc2835e5a0a" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="34" refid="ll__iso_8h_1a716508f72fa43fe601994cc2835e5a0aab8c91eb014d7b37e7927ab5da1c3f96d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__iso_8h_1a716508f72fa43fe601994cc2835e5a0aab8c91eb014d7b37e7927ab5da1c3f96d" kindref="member">LCTR_PS_VALID</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="35" refid="ll__iso_8h_1a716508f72fa43fe601994cc2835e5a0aac71a6e7f9312088515270a37da522582" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__iso_8h_1a716508f72fa43fe601994cc2835e5a0aac71a6e7f9312088515270a37da522582" kindref="member">LCTR_PS_INVALID</ref><sp/><sp/><sp/>=<sp/>1,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="36" refid="ll__iso_8h_1a716508f72fa43fe601994cc2835e5a0aa7bb005fe314544739fc9c72642ceb5c9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__iso_8h_1a716508f72fa43fe601994cc2835e5a0aa7bb005fe314544739fc9c72642ceb5c9" kindref="member">LCTR_PS_LOST</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}<sp/><ref refid="ll__iso_8h_1a716508f72fa43fe601994cc2835e5a0a" kindref="member">lctrPktStatus_t</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="ll__iso_8h_1a670cd0842150eedf5fa09adca1f054b2" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="41" refid="ll__iso_8h_1a670cd0842150eedf5fa09adca1f054b2ae56f4cd28497ee1121f9e9927e8bf5f6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__iso_8h_1a670cd0842150eedf5fa09adca1f054b2ae56f4cd28497ee1121f9e9927e8bf5f6" kindref="member">LL_PACKING_SEQUENTIAL</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="42" refid="ll__iso_8h_1a670cd0842150eedf5fa09adca1f054b2a19a507f7f9d98cdf2ac3ab0ee51ccf26" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__iso_8h_1a670cd0842150eedf5fa09adca1f054b2a19a507f7f9d98cdf2ac3ab0ee51ccf26" kindref="member">LL_PACKING_INTERLEAVED</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}<sp/><ref refid="ll__iso_8h_1a670cd0842150eedf5fa09adca1f054b2" kindref="member">LlPacking_t</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="ll__iso_8h_1ac6b0e5b32a70e2319903fb13194e7666" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="47" refid="ll__iso_8h_1ac6b0e5b32a70e2319903fb13194e7666a0d80d43ea3519e84815ad5efc06a7520" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__iso_8h_1ac6b0e5b32a70e2319903fb13194e7666a0d80d43ea3519e84815ad5efc06a7520" kindref="member">LL_ISO_DATA_DIR_INPUT</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x00,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="48" refid="ll__iso_8h_1ac6b0e5b32a70e2319903fb13194e7666af27f48a01364df1851e192e237106148" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__iso_8h_1ac6b0e5b32a70e2319903fb13194e7666af27f48a01364df1851e192e237106148" kindref="member">LL_ISO_DATA_DIR_OUTPUT</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x01<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}<sp/><ref refid="ll__iso_8h_1ac6b0e5b32a70e2319903fb13194e7666" kindref="member">LlIsoDataPathDir_t</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="ll__iso_8h_1ad4a7049340ee84c0b78deb08a375078e" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="53" refid="ll__iso_8h_1ad4a7049340ee84c0b78deb08a375078ea8ff1da2638ff7d0be0a7f70bf2fe1dca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__iso_8h_1ad4a7049340ee84c0b78deb08a375078ea8ff1da2638ff7d0be0a7f70bf2fe1dca" kindref="member">LL_ISO_DATA_PATH_HCI</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x00,</highlight></codeline>
+<codeline lineno="54" refid="ll__iso_8h_1ad4a7049340ee84c0b78deb08a375078ea6d04eaee61592dd2024de537a4ca67d7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__iso_8h_1ad4a7049340ee84c0b78deb08a375078ea6d04eaee61592dd2024de537a4ca67d7" kindref="member">LL_ISO_DATA_PATH_VS</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x01,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="56" refid="ll__iso_8h_1ad4a7049340ee84c0b78deb08a375078eae79ab217361f5e1b7a0176a8a8659c80" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__iso_8h_1ad4a7049340ee84c0b78deb08a375078eae79ab217361f5e1b7a0176a8a8659c80" kindref="member">LL_ISO_DATA_PATH_TOTAL</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="58" refid="ll__iso_8h_1ad4a7049340ee84c0b78deb08a375078eaf76206cbde4d9f6e9c7db594ad1ecb83" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__iso_8h_1ad4a7049340ee84c0b78deb08a375078eaf76206cbde4d9f6e9c7db594ad1ecb83" kindref="member">LL_ISO_DATA_PATH_DISABLED</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>0xFF,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}<sp/><ref refid="ll__iso_8h_1ad4a7049340ee84c0b78deb08a375078e" kindref="member">LlIsoDataPath_t</ref>;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="63" refid="ll__iso_8h_1a9e93d8eae633734dfeb29e24a1f3a7c0aee14fe0662f593dc9f5288dceb92781f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__iso_8h_1a9e93d8eae633734dfeb29e24a1f3a7c0aee14fe0662f593dc9f5288dceb92781f" kindref="member">LL_ISO_DATA_PATH_INPUT_BIT</ref><sp/><sp/><sp/><sp/>=<sp/>(1<sp/>&lt;&lt;<sp/>0),<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64" refid="ll__iso_8h_1a9e93d8eae633734dfeb29e24a1f3a7c0aa93e31e0c9ffe7ad65388d898addd39d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__iso_8h_1a9e93d8eae633734dfeb29e24a1f3a7c0aa93e31e0c9ffe7ad65388d898addd39d" kindref="member">LL_ISO_DATA_PATH_OUTPUT_BIT</ref><sp/><sp/><sp/>=<sp/>(1<sp/>&lt;&lt;<sp/>1)<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="65"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="structLlIsoSetupDataPath__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="69" refid="structLlIsoSetupDataPath__t_1a615d459130c030b3334b486cf96447e7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structLlIsoSetupDataPath__t_1a615d459130c030b3334b486cf96447e7" kindref="member">handle</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="70" refid="structLlIsoSetupDataPath__t_1a3a401d3146d399dbad21a682c28e6a39" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__iso_8h_1ac6b0e5b32a70e2319903fb13194e7666" kindref="member">LlIsoDataPathDir_t</ref><sp/>dpDir:<sp/>8;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="71" refid="structLlIsoSetupDataPath__t_1af91cdd02fd4ae16d5aaa30670f128b65" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structLlIsoSetupDataPath__t_1af91cdd02fd4ae16d5aaa30670f128b65" kindref="member">dpId</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="72" refid="structLlIsoSetupDataPath__t_1a05c599e84b19c45fa53e07d7ce3d0a36" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structLlIsoSetupDataPath__t_1a05c599e84b19c45fa53e07d7ce3d0a36" kindref="member">codecFormat</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="73" refid="structLlIsoSetupDataPath__t_1a6e48944592d45b185d8c33c29578a1f4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structLlIsoSetupDataPath__t_1a6e48944592d45b185d8c33c29578a1f4" kindref="member">codecCompId</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="74" refid="structLlIsoSetupDataPath__t_1a940f4a694fe1e13f219f13047eccd138" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structLlIsoSetupDataPath__t_1a940f4a694fe1e13f219f13047eccd138" kindref="member">codecId</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="75" refid="structLlIsoSetupDataPath__t_1aae0ef20f39fd9576b65ed2083725ef32" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structLlIsoSetupDataPath__t_1aae0ef20f39fd9576b65ed2083725ef32" kindref="member">ctrDly</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="76" refid="structLlIsoSetupDataPath__t_1a9c56f2f7da5b0c099c117e7c32410e45" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structLlIsoSetupDataPath__t_1a9c56f2f7da5b0c099c117e7c32410e45" kindref="member">codecConfigLen</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="77" refid="structLlIsoSetupDataPath__t_1a85a6ca41144ce0fe57661144dfdc61e8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structLlIsoSetupDataPath__t_1a85a6ca41144ce0fe57661144dfdc61e8" kindref="member">pCodecConfig</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="78"><highlight class="normal">}<sp/><ref refid="structLlIsoSetupDataPath__t" kindref="compound">LlIsoSetupDataPath_t</ref>;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="ll__iso_8h_1a7fd3a11b71f060e138c02f9594b7188d" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="82" refid="ll__iso_8h_1a7fd3a11b71f060e138c02f9594b7188daa8d9f902030b4be966cb4c2763edaf50" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__iso_8h_1a7fd3a11b71f060e138c02f9594b7188daa8d9f902030b4be966cb4c2763edaf50" kindref="member">LL_ISO_PLD_TYPE_ZERO_LEN</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x00,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="83" refid="ll__iso_8h_1a7fd3a11b71f060e138c02f9594b7188dacc2d94ed45ef6301ee42410bb1bb7fdf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__iso_8h_1a7fd3a11b71f060e138c02f9594b7188dacc2d94ed45ef6301ee42410bb1bb7fdf" kindref="member">LL_ISO_PLD_TYPE_VAR_LEN</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x01,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="84" refid="ll__iso_8h_1a7fd3a11b71f060e138c02f9594b7188da92e3a526075575831162d1e3c8985a09" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__iso_8h_1a7fd3a11b71f060e138c02f9594b7188da92e3a526075575831162d1e3c8985a09" kindref="member">LL_ISO_PLD_TYPE_MAX_LEN</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x02<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}<sp/><ref refid="ll__iso_8h_1a7fd3a11b71f060e138c02f9594b7188d" kindref="member">LlIsoPldType_t</ref>;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="structLlIsoTestCtrs__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="89" refid="structLlIsoTestCtrs__t_1ae3e20393333b245d9af857e9dcf46a3b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structLlIsoTestCtrs__t_1ae3e20393333b245d9af857e9dcf46a3b" kindref="member">numSuccess</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="90" refid="structLlIsoTestCtrs__t_1a5d571fc08fb0ecfc1e48c50ebeed27ef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structLlIsoTestCtrs__t_1a5d571fc08fb0ecfc1e48c50ebeed27ef" kindref="member">numMissed</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="91" refid="structLlIsoTestCtrs__t_1a3740510c3cfbacc7521913c11a960b41" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structLlIsoTestCtrs__t_1a3740510c3cfbacc7521913c11a960b41" kindref="member">numFailed</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="92"><highlight class="normal">}<sp/><ref refid="structLlIsoTestCtrs__t" kindref="compound">LlIsoTestCtrs_t</ref>;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="structLlIsoLinkQual__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="96" refid="structLlIsoLinkQual__t_1a77911513487fce2078d313825ef89e7a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structLlIsoLinkQual__t_1a77911513487fce2078d313825ef89e7a" kindref="member">txUnAckPkt</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="97" refid="structLlIsoLinkQual__t_1a13442a44cacf643dfbcb0e0f3b70d0cc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structLlIsoLinkQual__t_1a13442a44cacf643dfbcb0e0f3b70d0cc" kindref="member">txFlushedPkt</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="98" refid="structLlIsoLinkQual__t_1a83e4405a9d3470648cf2cd37f4c3eba9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structLlIsoLinkQual__t_1a83e4405a9d3470648cf2cd37f4c3eba9" kindref="member">txLastSubEventPkt</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="99" refid="structLlIsoLinkQual__t_1a2638ed5d9cdb7fe1ab3eaf291443009c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structLlIsoLinkQual__t_1a2638ed5d9cdb7fe1ab3eaf291443009c" kindref="member">retransmitPkt</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="100" refid="structLlIsoLinkQual__t_1af44368490390780d94817a46b177b486" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structLlIsoLinkQual__t_1af44368490390780d94817a46b177b486" kindref="member">crcErrPkt</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="101" refid="structLlIsoLinkQual__t_1ad77626cd732e0f3f15e48835f0ebd477" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structLlIsoLinkQual__t_1ad77626cd732e0f3f15e48835f0ebd477" kindref="member">rxUnreceivedPkt</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="102" refid="structLlIsoLinkQual__t_1a5bbce64916a775e8807ea40377954405" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structLlIsoLinkQual__t_1a5bbce64916a775e8807ea40377954405" kindref="member">duplicatePkt</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="103"><highlight class="normal">}<sp/><ref refid="structLlIsoLinkQual__t" kindref="compound">LlIsoLinkQual_t</ref>;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="structlctrIsoHdr__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>ISO<sp/>header<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="structlctrIsoHdr__t_1a88d9f8d79504c4d5b06e2be0b4502fd1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlctrIsoHdr__t_1a88d9f8d79504c4d5b06e2be0b4502fd1" kindref="member">handle</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="111" refid="structlctrIsoHdr__t_1a7f2989a6dbebb36a58ed8efba8f14425" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__iso_8h_1a2d4d28b1b8f95adc53d75af60dab9d31" kindref="member">lctrPktBoundary_t</ref><sp/>pb:<sp/>8;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="112" refid="structlctrIsoHdr__t_1a3e57c881bd9dd53e278aa09290d72bb4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlctrIsoHdr__t_1a3e57c881bd9dd53e278aa09290d72bb4" kindref="member">tsFlag</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="113" refid="structlctrIsoHdr__t_1a1dfb3856aea0c4f562c18eb9e430b5b3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlctrIsoHdr__t_1a1dfb3856aea0c4f562c18eb9e430b5b3" kindref="member">len</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>ISO<sp/>Data<sp/>Load<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116" refid="structlctrIsoHdr__t_1aca224c340a81849df424bb4fed4d7b0c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlctrIsoHdr__t_1aca224c340a81849df424bb4fed4d7b0c" kindref="member">ts</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="117" refid="structlctrIsoHdr__t_1ab1e18b3928ffa086e909a59f3b6aad40" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlctrIsoHdr__t_1ab1e18b3928ffa086e909a59f3b6aad40" kindref="member">pktSn</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="118" refid="structlctrIsoHdr__t_1a63da319c2133e19e448a3df22fa70927" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlctrIsoHdr__t_1a63da319c2133e19e448a3df22fa70927" kindref="member">sduLen</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="119" refid="structlctrIsoHdr__t_1ab715d686c81e188a690be3e638c09999" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__iso_8h_1a716508f72fa43fe601994cc2835e5a0a" kindref="member">lctrPktStatus_t</ref><sp/><sp/><sp/>ps:<sp/>8;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="120" refid="structlctrIsoHdr__t_1a8999c74bb2b1ab66d0390d88bd193155" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/>*<ref refid="structlctrIsoHdr__t_1a8999c74bb2b1ab66d0390d88bd193155" kindref="member">pSdu</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="121"><highlight class="normal">}<sp/><ref refid="structlctrIsoHdr__t" kindref="compound">lctrIsoHdr_t</ref>;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124" refid="structlctrSduDesc__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="125" refid="structlctrSduDesc__t_1af2560c57093a1780e4c53e78597c7d4e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlctrIsoHdr__t" kindref="compound">lctrIsoHdr_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlctrSduDesc__t_1af2560c57093a1780e4c53e78597c7d4e" kindref="member">hdr</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="126" refid="structlctrSduDesc__t_1a69b0c52fd11371850aa94a59999d2053" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlctrSduDesc__t_1a69b0c52fd11371850aa94a59999d2053" kindref="member">ts</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="127" refid="structlctrSduDesc__t_1a35eef55a1e5969229596529298529573" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlctrSduDesc__t_1a35eef55a1e5969229596529298529573" kindref="member">data</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="128"><highlight class="normal">}<sp/><ref refid="structlctrSduDesc__t" kindref="compound">lctrSduDesc_t</ref>;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="structlctrCisDataPduHdr__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="132" refid="structlctrCisDataPduHdr__t_1aaa3a34c39b78424bc553aa0762070663" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlctrCisDataPduHdr__t_1aaa3a34c39b78424bc553aa0762070663" kindref="member">llid</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="133" refid="structlctrCisDataPduHdr__t_1ac9f92713b9343aad816c97f57a881a6f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlctrCisDataPduHdr__t_1ac9f92713b9343aad816c97f57a881a6f" kindref="member">nesn</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="134" refid="structlctrCisDataPduHdr__t_1a48151b8a13efa7a6dc030a0644676b5d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlctrCisDataPduHdr__t_1a48151b8a13efa7a6dc030a0644676b5d" kindref="member">sn</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="135" refid="structlctrCisDataPduHdr__t_1a0f40bc8eaab6dc12dfd8f8a2d0d0ca14" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlctrCisDataPduHdr__t_1a0f40bc8eaab6dc12dfd8f8a2d0d0ca14" kindref="member">cie</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="136" refid="structlctrCisDataPduHdr__t_1a01928ac999bc0c172b6a86376bd56cb2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlctrCisDataPduHdr__t_1a01928ac999bc0c172b6a86376bd56cb2" kindref="member">np</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="137" refid="structlctrCisDataPduHdr__t_1a3a53f28fdc7f464a00b479780014d095" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlctrCisDataPduHdr__t_1a3a53f28fdc7f464a00b479780014d095" kindref="member">len</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="138"><highlight class="normal">}<sp/><ref refid="structlctrCisDataPduHdr__t" kindref="compound">lctrCisDataPduHdr_t</ref>;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="structlctrBisDataPduHdr__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="142" refid="structlctrBisDataPduHdr__t_1afe06c1b1d398987f5ea1e92219b26207" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__defines_8h_1aa7ad7b5c0167e18a1dd88b4f72431428" kindref="member">LlIsoLlid_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>llid:<sp/>8;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="143" refid="structlctrBisDataPduHdr__t_1a6c59709a3d59e709b9055ffdfc6cb3c5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlctrBisDataPduHdr__t_1a6c59709a3d59e709b9055ffdfc6cb3c5" kindref="member">cssn</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="144" refid="structlctrBisDataPduHdr__t_1a5b96a385bb003d42bd3feaf5a8128234" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlctrBisDataPduHdr__t_1a5b96a385bb003d42bd3feaf5a8128234" kindref="member">cstf</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="145" refid="structlctrBisDataPduHdr__t_1aa00130d31d1f8e7d75378c6010a094d0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlctrBisDataPduHdr__t_1aa00130d31d1f8e7d75378c6010a094d0" kindref="member">len</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="146"><highlight class="normal">}<sp/><ref refid="structlctrBisDataPduHdr__t" kindref="compound">lctrBisDataPduHdr_t</ref>;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149" refid="structlctrIsoSegHdr__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="150" refid="structlctrIsoSegHdr__t_1a96be3cbbeaf349d685dcf422c9e4113d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlctrIsoSegHdr__t_1a96be3cbbeaf349d685dcf422c9e4113d" kindref="member">sc</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="151" refid="structlctrIsoSegHdr__t_1a739867946fb463188e7e566ce8ae0ef3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlctrIsoSegHdr__t_1a739867946fb463188e7e566ce8ae0ef3" kindref="member">cmplt</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="152" refid="structlctrIsoSegHdr__t_1a7ee038d9b10c009a324a41dffdbabb6e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlctrIsoSegHdr__t_1a7ee038d9b10c009a324a41dffdbabb6e" kindref="member">len</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="153" refid="structlctrIsoSegHdr__t_1afdcb4c8f2e10d8905f7444ec06913051" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlctrIsoSegHdr__t_1afdcb4c8f2e10d8905f7444ec06913051" kindref="member">toffs</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="154"><highlight class="normal">}<sp/><ref refid="structlctrIsoSegHdr__t" kindref="compound">lctrIsoSegHdr_t</ref>;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157" refid="structlctrInDataPathCtx__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="158" refid="structlctrInDataPathCtx__t_1a72e64b84aa309446261044707868e48a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__iso_8h_1ad4a7049340ee84c0b78deb08a375078e" kindref="member">LlIsoDataPath_t</ref><sp/><sp/><sp/><ref refid="structlctrInDataPathCtx__t_1a72e64b84aa309446261044707868e48a" kindref="member">id</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="159"><highlight class="normal">}<sp/><ref refid="structlctrInDataPathCtx__t" kindref="compound">lctrInDataPathCtx_t</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="162" refid="structlctrOutDataPathCtx__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="163" refid="structlctrOutDataPathCtx__t_1abebf0bbddd08a0a9368961094d8497c1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__iso_8h_1ad4a7049340ee84c0b78deb08a375078e" kindref="member">LlIsoDataPath_t</ref><sp/><sp/><sp/><ref refid="structlctrOutDataPathCtx__t_1abebf0bbddd08a0a9368961094d8497c1" kindref="member">id</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="165" refid="unionlctrOutDataPathCtx__t_8cfg" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="166" refid="structlctrOutDataPathCtx__t_8cfg_8hci" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>wsfQueue_t<sp/><sp/><sp/><sp/>rxDataQ;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[&gt;!&lt;<sp/>Receive<sp/>data<sp/>pending<sp/>queue.<sp/>&lt;]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/>numRxPend;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>hci;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>cfg;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="171"><highlight class="normal">}<sp/><ref refid="structlctrOutDataPathCtx__t" kindref="compound">lctrOutDataPathCtx_t</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="174" refid="unionlctrDataPathCtx__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="175" refid="unionlctrDataPathCtx__t_1a107403f0fe33a5d3077a72e81330c0cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlctrInDataPathCtx__t" kindref="compound">lctrInDataPathCtx_t</ref><sp/><sp/><ref refid="unionlctrDataPathCtx__t_1a107403f0fe33a5d3077a72e81330c0cb" kindref="member">in</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="176" refid="unionlctrDataPathCtx__t_1a65bd4dc4a58be13b337134ba55cee36e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlctrOutDataPathCtx__t" kindref="compound">lctrOutDataPathCtx_t</ref><sp/><ref refid="unionlctrDataPathCtx__t_1a65bd4dc4a58be13b337134ba55cee36e" kindref="member">out</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="177"><highlight class="normal">}<sp/><ref refid="unionlctrDataPathCtx__t" kindref="compound">lctrDataPathCtx_t</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="180" refid="structlctrIsoalTxCtx__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="181" refid="structlctrIsoalTxCtx__t_1a82346f29528550357b51b96e73f18a29" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">lbuff_head<sp/>*<ref refid="structlctrIsoalTxCtx__t_1a82346f29528550357b51b96e73f18a29" kindref="member">pendSduQ</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="182" refid="structlctrIsoalTxCtx__t_1a18ffd27442346da2da866fe7ed10fa4a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlctrIsoalTxCtx__t_1a18ffd27442346da2da866fe7ed10fa4a" kindref="member">pendQueueSize</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="183" refid="structlctrIsoalTxCtx__t_1a9af1c3fd1de3c3ec3ba6d7bc5d327990" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlctrIsoalTxCtx__t_1a9af1c3fd1de3c3ec3ba6d7bc5d327990" kindref="member">compSdu</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="184" refid="structlctrIsoalTxCtx__t_1aac32dab437c32a4f4c1321fbf2bb2a22" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structlctrIsoalTxCtx__t_1aac32dab437c32a4f4c1321fbf2bb2a22" kindref="member">pPendPduBuf</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="185" refid="structlctrIsoalTxCtx__t_1a493f3d6ee2c339e32a14b17e36628d63" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlctrIsoalTxCtx__t_1a493f3d6ee2c339e32a14b17e36628d63" kindref="member">pduOffset</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="186"><highlight class="normal">}<sp/><ref refid="structlctrIsoalTxCtx__t" kindref="compound">lctrIsoalTxCtx_t</ref>;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189" refid="structlctrIsoalRxCtx__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="190" refid="structlctrIsoalRxCtx__t_1a35b9f0c6bd71d28e1ebcd4fc77f1d6f4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structlctrIsoalRxCtx__t_1a35b9f0c6bd71d28e1ebcd4fc77f1d6f4" kindref="member">pPendSduBuf</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="191" refid="structlctrIsoalRxCtx__t_1af7f7d95319c2279cbad7d998d2a139fd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlctrIsoalRxCtx__t_1af7f7d95319c2279cbad7d998d2a139fd" kindref="member">rxSduOffset</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="192" refid="structlctrIsoalRxCtx__t_1ae582702a5db3e8aeecf5e8ed8a1610be" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlctrIsoalRxCtx__t_1ae582702a5db3e8aeecf5e8ed8a1610be" kindref="member">pduFlushed</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="193" refid="structlctrIsoalRxCtx__t_1a3928b0ce9fff0f2d45d5e2a71619cd0f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlctrIsoalRxCtx__t_1a3928b0ce9fff0f2d45d5e2a71619cd0f" kindref="member">rxState</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="194" refid="structlctrIsoalRxCtx__t_1afdb8e2a09119e4907bd8d6f414961029" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlctrIsoalRxCtx__t_1afdb8e2a09119e4907bd8d6f414961029" kindref="member">packetSequence</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="196" refid="unionlctrIsoalRxCtx__t_8data" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="197" refid="structlctrIsoalRxCtx__t_8data_8framed" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/>timeOffset;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>framed;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="201" refid="structlctrIsoalRxCtx__t_8data_8unframed" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">list_head<sp/>pendSduQ;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/>curLen;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/>ps;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>unframed;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>data;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="207"><highlight class="normal">}<sp/><ref refid="structlctrIsoalRxCtx__t" kindref="compound">lctrIsoalRxCtx_t</ref>;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210" refid="structll__iso__rt__cfg__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>ISO<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="212" refid="structll__iso__rt__cfg__t_1a32d08d0e93665fb39effdeed2196af20" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><ref refid="structll__iso__rt__cfg__t_1a32d08d0e93665fb39effdeed2196af20" kindref="member">numIsoTxBuf</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="213" refid="structll__iso__rt__cfg__t_1a11ec47b66a784fb2bac9a0c05baa0e94" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><ref refid="structll__iso__rt__cfg__t_1a11ec47b66a784fb2bac9a0c05baa0e94" kindref="member">numIsoRxBuf</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="214" refid="structll__iso__rt__cfg__t_1ad692e4aacb1c82f4c1150e5a931732e7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><ref refid="structll__iso__rt__cfg__t_1ad692e4aacb1c82f4c1150e5a931732e7" kindref="member">maxIsoSduLen</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="215" refid="structll__iso__rt__cfg__t_1ad894eb16a4365d0a777cca7e69b63952" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><ref refid="structll__iso__rt__cfg__t_1ad894eb16a4365d0a777cca7e69b63952" kindref="member">maxIsoPduLen</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>CIS<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217" refid="structll__iso__rt__cfg__t_1a7ca353c3787b674b0ec6698e8ce79533" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><ref refid="structll__iso__rt__cfg__t_1a7ca353c3787b674b0ec6698e8ce79533" kindref="member">maxCig</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="218" refid="structll__iso__rt__cfg__t_1af647a062ee9bd551d188de1ceccc26c7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><ref refid="structll__iso__rt__cfg__t_1af647a062ee9bd551d188de1ceccc26c7" kindref="member">maxCis</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="219" refid="structll__iso__rt__cfg__t_1a3564c496b419bf56950a4c59fcdcdb8e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><ref refid="structll__iso__rt__cfg__t_1a3564c496b419bf56950a4c59fcdcdb8e" kindref="member">cisSubEvtSpaceDelay</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>BIS<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="221" refid="structll__iso__rt__cfg__t_1a163b797cd0b7cbaf4b908cd063d7f7f2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><ref refid="structll__iso__rt__cfg__t_1a163b797cd0b7cbaf4b908cd063d7f7f2" kindref="member">maxBig</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="222" refid="structll__iso__rt__cfg__t_1aec8792bc6211573594a658932a5929ca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><ref refid="structll__iso__rt__cfg__t_1aec8792bc6211573594a658932a5929ca" kindref="member">maxBis</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>DTM<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224" refid="structll__iso__rt__cfg__t_1ac2769ecf3c5c7944eeedbbaa017fa34d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><ref refid="structll__iso__rt__cfg__t_1ac2769ecf3c5c7944eeedbbaa017fa34d" kindref="member">dtmRxSyncMs</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="225"><highlight class="normal">}<sp/><ref refid="structll__iso__rt__cfg__t" kindref="compound">ll_iso_rt_cfg_t</ref><sp/>;</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228" refid="structlctrCreateCisPend__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="229" refid="structlctrCreateCisPend__t_1a634e459898ceed90c5434606abdde653" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlctrCreateCisPend__t_1a634e459898ceed90c5434606abdde653" kindref="member">numCis</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="230" refid="structlctrCreateCisPend__t_1ab4657081c6102987d00ba2329dd30374" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cisHandle[<ref refid="ll__defines_8h_1ac3ef4b4b7eb348b812e5f098e40a5b68" kindref="member">LL_MAX_CIS</ref>];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="231" refid="structlctrCreateCisPend__t_1acfdca76530f09e456ecbebdb32b4d249" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>aclHandle[<ref refid="ll__defines_8h_1ac3ef4b4b7eb348b812e5f098e40a5b68" kindref="member">LL_MAX_CIS</ref>];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="232" refid="structlctrCreateCisPend__t_1ad49c2f579fdd6b51a691968374520607" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>isCreateCisDone[<ref refid="ll__defines_8h_1ac3ef4b4b7eb348b812e5f098e40a5b68" kindref="member">LL_MAX_CIS</ref>];<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="233"><highlight class="normal">}<sp/><ref refid="structlctrCreateCisPend__t" kindref="compound">lctrCreateCisPend_t</ref>;</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight><highlight class="comment">//Core<sp/>V5.2<sp/>|<sp/>Vol<sp/>4<sp/>|<sp/>Part<sp/>E<sp/>|<sp/>5.4.5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="236" refid="structhci__iso__hdr__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="237" refid="structhci__iso__hdr__t_1ab6411ca501b348706934c9a9a569063f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>handle<sp/><sp/>:<sp/>12;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//0b00<sp/>frist<sp/>fragment<sp/>of<sp/>a<sp/>fragmented<sp/>SDU</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//0b01<sp/>a<sp/>continuation<sp/>fragment<sp/>of<sp/>a<sp/>fragmented<sp/>SDU</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//0b10<sp/>a<sp/>complete<sp/>SDU</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//0b11<sp/>the<sp/>last<sp/>fragment<sp/>of<sp/>an<sp/>SDU</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="242" refid="structhci__iso__hdr__t_1a9eb5dc235805bb3beb9a9e115cd51d90" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>pb_flag<sp/>:<sp/>2;</highlight></codeline>
+<codeline lineno="243" refid="structhci__iso__hdr__t_1a09943049b6a6ddd0b30bd5bf66ec5204" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>ts_flag<sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="244" refid="structhci__iso__hdr__t_1a5bb82e1f6282ecde9bdcdb5106b1ea1a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>rfu<sp/><sp/><sp/><sp/><sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="245" refid="structhci__iso__hdr__t_1ab516b151e70097656e6d98197fd74fbe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>iso_data_load_length<sp/>:<sp/>14;</highlight></codeline>
+<codeline lineno="246" refid="structhci__iso__hdr__t_1a25e71d570c48d4fce2b419bb224641bd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>rfu2<sp/><sp/><sp/><sp/>:<sp/>2;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248" refid="structhci__iso__hdr__t_1af9d008f73ab3bbdc7a5a4029805e3da3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/><ref refid="structhci__iso__hdr__t_1af9d008f73ab3bbdc7a5a4029805e3da3" kindref="member">time_stamp</ref>;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250" refid="structhci__iso__hdr__t_1a26ea77e253611b5b7df360541fb6294c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>packet_sequence_num<sp/>:<sp/>16;</highlight></codeline>
+<codeline lineno="251" refid="structhci__iso__hdr__t_1a545dff8af110e6ee347aff3d83ceadeb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>iso_sdu_length<sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>12;</highlight></codeline>
+<codeline lineno="252" refid="structhci__iso__hdr__t_1aa93e66e6f947d446eed34912ca1667b6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>rfu3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>2;</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//0b00<sp/>Valid<sp/>data.<sp/>The<sp/>complete<sp/>ISO_SDU<sp/>was<sp/>received<sp/>correctly.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//0b01<sp/>Possibly<sp/>invalid<sp/>data.<sp/>The<sp/>contents<sp/>of<sp/>the<sp/>ISO_SDU<sp/>may<sp/>contain<sp/>errors<sp/>or</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>part<sp/>of<sp/>the<sp/>ISO_SDU<sp/>may<sp/>be<sp/>missing.<sp/>This<sp/>is<sp/>reported<sp/>as<sp/>&quot;data<sp/>with<sp/>possible</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>errors&quot;.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//0b10<sp/>Part(s)<sp/>of<sp/>the<sp/>ISO_SDU<sp/>were<sp/>not<sp/>received<sp/>correctly.<sp/>This<sp/>is<sp/>reported<sp/>as</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>&quot;lost<sp/>data&quot;.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259" refid="structhci__iso__hdr__t_1a2ed5faed500798347b1cb60a8cbf9c8a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>packet_status_flag<sp/><sp/>:<sp/>2;</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261" refid="structhci__iso__hdr__t_1afc15d07b2a5ca9463127cf0077178f3c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>*<ref refid="structhci__iso__hdr__t_1afc15d07b2a5ca9463127cf0077178f3c" kindref="member">iso_sdu</ref>;</highlight></codeline>
+<codeline lineno="262"><highlight class="normal">}<sp/><ref refid="structhci__iso__hdr__t" kindref="compound">hci_iso_hdr_t</ref><sp/>;</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="266"><highlight class="comment"><sp/>*<sp/><sp/>Topology</highlight></codeline>
+<codeline lineno="267"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="268"><highlight class="comment"><sp/>*<sp/><sp/>CONN<sp/>----&gt;ACL-----&gt;CIS[0]</highlight></codeline>
+<codeline lineno="269"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="270"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="271"><highlight class="comment"><sp/>*<sp/><sp/>ISO<sp/>----&gt;CIG-----&gt;CIS[0]<sp/>-&gt;<sp/>HW</highlight></codeline>
+<codeline lineno="272"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="273"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/>|-&gt;CIG</highlight></codeline>
+<codeline lineno="274"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="275"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/>|-&gt;ACL[0]</highlight></codeline>
+<codeline lineno="276"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="277"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|--&gt;CIS[1]</highlight></codeline>
+<codeline lineno="278"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="279"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|-&gt;CIG</highlight></codeline>
+<codeline lineno="280"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="281"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|-&gt;ACL[1]</highlight></codeline>
+<codeline lineno="282"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="283"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="284"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>|---&gt;BIG-----&gt;BIS[0]</highlight></codeline>
+<codeline lineno="285"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="286"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|--&gt;BIS[1]</highlight></codeline>
+<codeline lineno="287"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="288"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="289"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="290"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="291" refid="structll__iso__handle__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>CIG<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="293" refid="structll__iso__handle__t_1af7a9ff304aaf2c9bcc7968c7d943267e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">list_head<sp/>cig_head;</highlight></codeline>
+<codeline lineno="294" refid="structll__iso__handle__t_1aeb58d3e2feec771d9bfc5e8c77833053" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structll__iso__handle__t_1aeb58d3e2feec771d9bfc5e8c77833053" kindref="member">max_cig_number</ref>;</highlight></codeline>
+<codeline lineno="295" refid="structll__iso__handle__t_1aad5308da45d9904ab77b987497078d73" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structll__iso__handle__t_1aad5308da45d9904ab77b987497078d73" kindref="member">cig_number</ref>;</highlight></codeline>
+<codeline lineno="296" refid="structll__iso__handle__t_1aa43ece2c2d51006265afe9ae46fb16b8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structll__iso__handle__t_1aa43ece2c2d51006265afe9ae46fb16b8" kindref="member">cig_bitmap</ref>;</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>CIS<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="299" refid="structll__iso__handle__t_1a7667b5c8b47cb685bc444d9d767716bf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">list_head<sp/>cis_head;</highlight></codeline>
+<codeline lineno="300" refid="structll__iso__handle__t_1a7e93ec999645da73e94f77e790eeb963" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structll__iso__handle__t_1a7e93ec999645da73e94f77e790eeb963" kindref="member">max_cis_number</ref>;</highlight></codeline>
+<codeline lineno="301" refid="structll__iso__handle__t_1a26e2da2d943adc9f1dbad71a6076ad83" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structll__iso__handle__t_1a26e2da2d943adc9f1dbad71a6076ad83" kindref="member">cis_number</ref>;</highlight></codeline>
+<codeline lineno="302" refid="structll__iso__handle__t_1a55d9eff9bed62670d5702b5bf9a90b4c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structll__iso__handle__t_1a55d9eff9bed62670d5702b5bf9a90b4c" kindref="member">cis_bitmap</ref>;</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>BIG<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="305" refid="structll__iso__handle__t_1a4315ed604bbd59a77fda2fca325f5fcd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">list_head<sp/>big_head;</highlight></codeline>
+<codeline lineno="306" refid="structll__iso__handle__t_1ab9e67726587ec1a9a25c2253de13ce0e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structll__iso__handle__t_1ab9e67726587ec1a9a25c2253de13ce0e" kindref="member">max_big_number</ref>;</highlight></codeline>
+<codeline lineno="307" refid="structll__iso__handle__t_1ae9645419d3dd36d33a7789c64518bb7d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structll__iso__handle__t_1ae9645419d3dd36d33a7789c64518bb7d" kindref="member">big_number</ref>;</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>BIS<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="310" refid="structll__iso__handle__t_1afbdc59a3d9009155e4f275da8a86e68f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">list_head<sp/>bis_head;</highlight></codeline>
+<codeline lineno="311" refid="structll__iso__handle__t_1a485ec59699d663ef50bd5481393fc41d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structll__iso__handle__t_1a485ec59699d663ef50bd5481393fc41d" kindref="member">max_bis_number</ref>;</highlight></codeline>
+<codeline lineno="312" refid="structll__iso__handle__t_1afbf606f2e99a9b951f56e0855b423240" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structll__iso__handle__t_1afbf606f2e99a9b951f56e0855b423240" kindref="member">bis_number</ref>;</highlight></codeline>
+<codeline lineno="313" refid="structll__iso__handle__t_1a0486eae296ca73cb45ee54440e57bea1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structll__iso__handle__t_1a0486eae296ca73cb45ee54440e57bea1" kindref="member">bis_bitmap</ref>;</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight></codeline>
+<codeline lineno="315" refid="structll__iso__handle__t_1ac57c00cec28f6594574cbc7444b68541" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">thread<sp/>thread;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="317" refid="structll__iso__handle__t_1a4504eda3bdbeecee6cc764e41ff36e6a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structll__iso__handle__t_1a4504eda3bdbeecee6cc764e41ff36e6a" kindref="member">createCisPend</ref>;</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>ISO<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="320" refid="structll__iso__handle__t_1a849f6abc895c31d11f459ec7f7f92119" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><ref refid="structll__iso__handle__t_1a849f6abc895c31d11f459ec7f7f92119" kindref="member">numIsoTxBuf</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="321" refid="structll__iso__handle__t_1ad2f62b21eef0c650e33c4be3416fe132" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><ref refid="structll__iso__handle__t_1ad2f62b21eef0c650e33c4be3416fe132" kindref="member">numIsoRxBuf</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="322" refid="structll__iso__handle__t_1a8782933b8c6fce7dd09ac04dd7fb352a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structll__iso__handle__t_1a8782933b8c6fce7dd09ac04dd7fb352a" kindref="member">maxIsoSduLen</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="323" refid="structll__iso__handle__t_1a93427ddb47630d2b3cf341de553b27b0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structll__iso__handle__t_1a93427ddb47630d2b3cf341de553b27b0" kindref="member">maxIsoPduLen</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="325" refid="structll__iso__handle__t_1a21d47e0ebf1f1b202e06e2ffe7d80a7b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><ref refid="structll__iso__handle__t_1a21d47e0ebf1f1b202e06e2ffe7d80a7b" kindref="member">cisSubEvtSpaceDelay</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="327" refid="structll__iso__handle__t_1ab2dd840e7b24ff867caeedfa50a4334a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlctrCreateCisPend__t" kindref="compound">lctrCreateCisPend_t</ref><sp/><ref refid="structll__iso__handle__t_1ab2dd840e7b24ff867caeedfa50a4334a" kindref="member">lctrMstCreateCisPend</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="328"><highlight class="normal">}<sp/><ref refid="structll__iso__handle__t" kindref="compound">ll_iso_handle_t</ref>;</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"></highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="structll__iso__rt__cfg__t" kindref="compound">ll_iso_rt_cfg_t</ref><sp/><ref refid="ll__iso_8h_1a935e0247fb944b4be8cb8723e638e7c7" kindref="member">ll_iso_rt_cfg</ref>;</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight></codeline>
+<codeline lineno="332"><highlight class="normal"></highlight><highlight class="comment">/**************************************************************************************************</highlight></codeline>
+<codeline lineno="333"><highlight class="comment"><sp/><sp/>Function<sp/>Declarations</highlight></codeline>
+<codeline lineno="334"><highlight class="comment">**************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight></codeline>
+<codeline lineno="336"><highlight class="normal">uint8_t<sp/><ref refid="ll__iso_8h_1affc326042b3a59d0434f6ce05a70d930" kindref="member">ll_iso_unpack_hdr</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*sdu,<sp/><ref refid="structhci__iso__hdr__t" kindref="compound">hci_iso_hdr_t</ref><sp/>*hdr);</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"></highlight></codeline>
+<codeline lineno="338"><highlight class="normal">uint8_t<sp/><ref refid="ll__iso_8h_1a8f2d7816f90d628ce81f2425491f090d" kindref="member">ll_iso_pack_hdr</ref>(uint8_t<sp/>*sdu,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structhci__iso__hdr__t" kindref="compound">hci_iso_hdr_t</ref><sp/>*hdr);</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"></highlight></codeline>
+<codeline lineno="340"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ll__iso_8h_1ab5a97cbba3c50cca0ef55e13e6d4c1dc" kindref="member">le_cmd_set_iso</ref>(u16<sp/>opcode,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>*data,<sp/>u32<sp/>size);</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"></highlight></codeline>
+<codeline lineno="342"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__iso_8h_1a50c2eabdddb63705bdfd638a208eb73a" kindref="member">lctrIsoSendCodecSdu</ref>(uint16_t<sp/>handle);</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"></highlight></codeline>
+<codeline lineno="344"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__iso_8h_1aef585efcb3745391e704ecf47fab8b3e" kindref="member">ll_iso_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"></highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__iso_8h_1aa9927ae58774746ed7e9e2cb6278c53c" kindref="member">ll_iso_destroy</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"></highlight></codeline>
+<codeline lineno="348"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__iso_8h_1a966b2ce1847ef9469802ff762c46e2ec" kindref="member">ll_isoal_test</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"></highlight></codeline>
+<codeline lineno="350"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__iso_8h_1a3c2701aff88af47c4b9e15297655b75d" kindref="member">hci_push_iso_sdu</ref>(uint8_t<sp/>*packet,<sp/>uint16_t<sp/>size);</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"></highlight></codeline>
+<codeline lineno="352"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="353"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h"/>
+  </compounddef>
+</doxygen>

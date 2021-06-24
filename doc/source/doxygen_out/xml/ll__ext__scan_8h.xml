@@ -1,0 +1,495 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="ll__ext__scan_8h" kind="file" language="C++">
+    <compoundname>ll_ext_scan.h</compoundname>
+    <includes local="yes">typedef.h</includes>
+    <includedby refid="extended__advertising_8h" local="yes">/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/extended_advertising.h</includedby>
+    <incdepgraph>
+      <node id="4938">
+        <label>typedef.h</label>
+      </node>
+      <node id="4937">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_scan.h</label>
+        <link refid="ll_ext_scan.h"/>
+        <childnode refid="4938" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4940">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/extended_advertising.h</label>
+        <link refid="extended__advertising_8h"/>
+      </node>
+      <node id="4939">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_scan.h</label>
+        <link refid="ll_ext_scan.h"/>
+        <childnode refid="4940" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="union____ExtAdv__EventType" prot="public">__ExtAdv_EventType</innerclass>
+    <innerclass refid="struct____ext__adv__report__event" prot="public">__ext_adv_report_event</innerclass>
+    <innerclass refid="structle__ext__adv__report" prot="public">le_ext_adv_report</innerclass>
+    <innerclass refid="structle__ext__scan__link" prot="public">le_ext_scan_link</innerclass>
+    <innerclass refid="struct____ExtAdv__EventType_8____unnamed____" prot="public">__ExtAdv_EventType.__unnamed__</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="ll__ext__scan_8h_1a2b5c7ef5af92b367d121312c78628cdd" prot="public" static="no">
+        <name>EXT_SCAN_DURATION_UNIT_MS</name>
+        <initializer>10L</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_scan.h" line="6" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_scan.h" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__ext__scan_8h_1a028a8ab6611a0cdec1bcbf8a675d72dc" prot="public" static="no">
+        <name>EXT_SCAN_PERIOD_UNIT_MS</name>
+        <initializer>1280L</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_scan.h" line="7" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_scan.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__ext__scan_8h_1a77eb2e1fc1adf9d966a9b49cf8739a09" prot="public" static="no">
+        <name>GET_SYNC_INFO</name>
+        <param></param>
+        <initializer>ext_adv_hdr_t  ext_adv_hdr = { \
+        .ext_hdr_len = rx-&gt;data[0] &amp; EXT_HEADER_LEN_MASK, \
+    }; \
+    if (ext_adv_hdr.ext_hdr_len) { \
+        ext_flag = rx-&gt;data[1]; \
+        if (ext_flag &amp; FLAG_SYNCINFO) { \
+            <ref refid="ll__ext__scan_8h_1afa8428cfa3a9fb61b026d517abd908e4" kindref="member">MAKE_REPORT</ref>(FLAG_SYNCINFO, &amp;sync_info); \
+            link-&gt;ext_adv_report.periodic_adv_interval = sync_info.interval; \
+        } \
+    }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_scan.h" line="9" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_scan.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__ext__scan_8h_1afa8428cfa3a9fb61b026d517abd908e4" prot="public" static="no">
+        <name>MAKE_REPORT</name>
+        <param><defname>x</defname></param>
+        <param><defname>y</defname></param>
+        <initializer>__ble5_ops-&gt;ext_ioctrl(NULL, BLE_GET_EXT_HEADER_RESOLVE, ext_flag, &amp;rx-&gt;data[2], x, y)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_scan.h" line="21" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_scan.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__ext__scan_8h_1a31edb8834d915e6d288298493ba1c6b7" prot="public" static="no">
+        <name>SET_BIT</name>
+        <param><defname>value</defname></param>
+        <param><defname>start</defname></param>
+        <param><defname>len</defname></param>
+        <param><defname>dat</defname></param>
+        <initializer>(value = (value &amp; ~((~(0xffffffff &lt;&lt; (len))) &lt;&lt; (start))) | (((dat) &amp; (~(0xffffffff &lt;&lt; (len)))) &lt;&lt; (start)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_scan.h" line="23" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_scan.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__ext__scan_8h_1a2c4399aafaff083644508e724756c134" prot="public" static="no">
+        <name>LL_EXT_PUBLIC_PRIMARY_SCAN_CREAT_PROCEDURE</name>
+        <param></param>
+        <initializer>link-&gt;primary_legacy_hw = __ble_ops-&gt;open(); \
+    ASSERT(link-&gt;primary_legacy_hw != NULL, &quot;%s/n&quot;, &quot;hw legacy open error&quot;); \
+    __ble5_ops-&gt;ext_adv_ctrl(link-&gt;hw, BLE_SET_EXT_CORRELATED_HW, link-&gt;primary_legacy_hw); \
+    __ble5_ops-&gt;ext_adv_ctrl(link-&gt;primary_legacy_hw, BLE_SET_EXT_CORRELATED_HW, link-&gt;hw);</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_scan.h" line="25" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_scan.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__ext__scan_8h_1a7d55e23de39519e4fb9b904df0876790" prot="public" static="no">
+        <name>LL_EXT_PUBLIC_PRIMARY_SCAN_DESTROY_PROCEDURE</name>
+        <param><defname>x</defname></param>
+        <initializer>__ble5_ops-&gt;legacy_close(x);</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_scan.h" line="31" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_scan.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__ext__scan_8h_1aa94aeb30150d5436d38dd0b2aef2fc27" prot="public" static="no">
+        <name>EXT_REPORT_EVENT_MAX_DATA_LEN</name>
+        <initializer>( 0xff - sizeof(struct __ext_adv_report_event) )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_scan.h" line="34" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_scan.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="ll__ext__scan_8h_1a8f5e0748087b87d63826c26de3e9ab94" prot="public" static="no">
+        <name>__report_event_type</name>
+        <enumvalue id="ll__ext__scan_8h_1a8f5e0748087b87d63826c26de3e9ab94a0942121ad971374a0a42662db4e9ccdd" prot="public">
+          <name>REPORT_CONNECTABLE_ADV</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ll__ext__scan_8h_1a8f5e0748087b87d63826c26de3e9ab94a22e2f447fdae8ae5ed8084bec1c5f557" prot="public">
+          <name>REPORT_SCANNABLE_ADV</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ll__ext__scan_8h_1a8f5e0748087b87d63826c26de3e9ab94aeebedd486df2e1f5a4a2202dbd14a816" prot="public">
+          <name>REPORT_DIRECTED_ADV</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ll__ext__scan_8h_1a8f5e0748087b87d63826c26de3e9ab94ac2b98df6f424919de4036e3e0814020f" prot="public">
+          <name>REPORT_SCAN_RSP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ll__ext__scan_8h_1a8f5e0748087b87d63826c26de3e9ab94a491a3dd7c0cdad7d591db104e73508ff" prot="public">
+          <name>REPORT_LEGACY_ADV</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_scan.h" line="36" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_scan.h" bodystart="36" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="enum" id="ll__ext__scan_8h_1a24734c34558385990915f413953c6a12" prot="public" static="no">
+        <name>__ext_sync_filter_policy</name>
+        <enumvalue id="ll__ext__scan_8h_1a24734c34558385990915f413953c6a12a9c851e958a51c43a9cb08c9cbd7515be" prot="public">
+          <name>NOT_USE_PERIODIC_ADV_LIST</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ll__ext__scan_8h_1a24734c34558385990915f413953c6a12a1858dc01ce82cad717613bc361102200" prot="public">
+          <name>USE_PERIODIC_ADV_LIST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_scan.h" line="44" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_scan.h" bodystart="44" bodyend="47"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="ll__ext__scan_8h_1aa4dd745a3521839a479790391389c1bf" prot="public" static="no" mutable="no">
+        <type>union <ref refid="union____ExtAdv__EventType" kindref="compound">__ExtAdv_EventType</ref></type>
+        <definition>struct __ext_adv_report_event  _GNU_PACKED_</definition>
+        <argsstring></argsstring>
+        <name>_GNU_PACKED_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_scan.h" line="62" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="ll__ext__scan_8h_1a221c4b601e98bc1d1ca824ebb153c862" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool build_ext_aux_adv_report</definition>
+        <argsstring>(struct le_ext_scan_link *link, struct ble_ext_rx *rx, u8 *offset)</argsstring>
+        <name>build_ext_aux_adv_report</name>
+        <param>
+          <type>struct <ref refid="structle__ext__scan__link" kindref="compound">le_ext_scan_link</ref> *</type>
+          <declname>link</declname>
+        </param>
+        <param>
+          <type>struct ble_ext_rx *</type>
+          <declname>rx</declname>
+        </param>
+        <param>
+          <type>u8 *</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_scan.h" line="106" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__ext__scan_8h_1a6b20604feb2c552a003e02022e7132cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ll_ext_scan_rx_post_process</definition>
+        <argsstring>(int *empty)</argsstring>
+        <name>ll_ext_scan_rx_post_process</name>
+        <param>
+          <type>int *</type>
+          <declname>empty</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_scan.h" line="107" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__ext__scan_8h_1a20e06cdf14a775b8b694fe278c00b1aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void destroy_le_ext_scan</definition>
+        <argsstring>(void)</argsstring>
+        <name>destroy_le_ext_scan</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_scan.h" line="108" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__ext__scan_8h_1ad9eef021572c00f9f7f9f042c812f82a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* ll_get_ext_scan_link</definition>
+        <argsstring>(u16 sync_handle)</argsstring>
+        <name>ll_get_ext_scan_link</name>
+        <param>
+          <type>u16</type>
+          <declname>sync_handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_scan.h" line="109" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__ext__scan_8h_1af4bfb24266d7b367c6661bf6265e1691" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ll_ext_scan_open</definition>
+        <argsstring>(void)</argsstring>
+        <name>ll_ext_scan_open</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_scan.h" line="115" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__ext__scan_8h_1ade4085d263f6f451ccd74a02e2f9f561" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ll_ext_scan_close</definition>
+        <argsstring>(void)</argsstring>
+        <name>ll_ext_scan_close</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_scan.h" line="116" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__ext__scan_8h_1ae42b06eba6fea0d078b7a08f61705572" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int le_cmd_set_ext_scan</definition>
+        <argsstring>(u16 opcode, const u8 *data, u32 size)</argsstring>
+        <name>le_cmd_set_ext_scan</name>
+        <param>
+          <type>u16</type>
+          <declname>opcode</declname>
+        </param>
+        <param>
+          <type>const u8 *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_scan.h" line="118" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>__LL_EXT_SCAN_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__LL_EXT_SCAN_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;typedef.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="ll__ext__scan_8h_1a2b5c7ef5af92b367d121312c78628cdd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXT_SCAN_DURATION_UNIT_MS<sp/><sp/><sp/>10L</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="ll__ext__scan_8h_1a028a8ab6611a0cdec1bcbf8a675d72dc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXT_SCAN_PERIOD_UNIT_MS<sp/><sp/><sp/><sp/><sp/>1280L</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="ll__ext__scan_8h_1a77eb2e1fc1adf9d966a9b49cf8739a09" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GET_SYNC_INFO()<sp/>\</highlight></codeline>
+<codeline lineno="10"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>ext_adv_hdr_t<sp/><sp/>ext_adv_hdr<sp/>=<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.ext_hdr_len<sp/>=<sp/>rx-&gt;data[0]<sp/>&amp;<sp/>EXT_HEADER_LEN_MASK,<sp/>\</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>};<sp/>\</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>if<sp/>(ext_adv_hdr.ext_hdr_len)<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="14"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ext_flag<sp/>=<sp/>rx-&gt;data[1];<sp/>\</highlight></codeline>
+<codeline lineno="15"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(ext_flag<sp/>&amp;<sp/>FLAG_SYNCINFO)<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="16"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MAKE_REPORT(FLAG_SYNCINFO,<sp/>&amp;sync_info);<sp/>\</highlight></codeline>
+<codeline lineno="17"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>link-&gt;ext_adv_report.periodic_adv_interval<sp/>=<sp/>sync_info.interval;<sp/>\</highlight></codeline>
+<codeline lineno="18"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>\</highlight></codeline>
+<codeline lineno="19"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="ll__ext__scan_8h_1afa8428cfa3a9fb61b026d517abd908e4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAKE_REPORT(x,<sp/>y)<sp/><sp/>__ble5_ops-&gt;ext_ioctrl(NULL,<sp/>BLE_GET_EXT_HEADER_RESOLVE,<sp/>ext_flag,<sp/>&amp;rx-&gt;data[2],<sp/>x,<sp/>y)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="ll__ext__scan_8h_1a31edb8834d915e6d288298493ba1c6b7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SET_BIT(value,<sp/>start,<sp/>len,<sp/>dat)<sp/>(value<sp/>=<sp/>(value<sp/>&amp;<sp/>~((~(0xffffffff<sp/>&lt;&lt;<sp/>(len)))<sp/>&lt;&lt;<sp/>(start)))<sp/>|<sp/>(((dat)<sp/>&amp;<sp/>(~(0xffffffff<sp/>&lt;&lt;<sp/>(len))))<sp/>&lt;&lt;<sp/>(start)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="ll__ext__scan_8h_1a2c4399aafaff083644508e724756c134" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_EXT_PUBLIC_PRIMARY_SCAN_CREAT_PROCEDURE()<sp/>\</highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>link-&gt;primary_legacy_hw<sp/>=<sp/>__ble_ops-&gt;open();<sp/>\</highlight></codeline>
+<codeline lineno="27"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>ASSERT(link-&gt;primary_legacy_hw<sp/>!=<sp/>NULL,<sp/>&quot;%s/n&quot;,<sp/>&quot;hw<sp/>legacy<sp/>open<sp/>error&quot;);<sp/>\</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>__ble5_ops-&gt;ext_adv_ctrl(link-&gt;hw,<sp/>BLE_SET_EXT_CORRELATED_HW,<sp/>link-&gt;primary_legacy_hw);<sp/>\</highlight></codeline>
+<codeline lineno="29"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>__ble5_ops-&gt;ext_adv_ctrl(link-&gt;primary_legacy_hw,<sp/>BLE_SET_EXT_CORRELATED_HW,<sp/>link-&gt;hw);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="ll__ext__scan_8h_1a7d55e23de39519e4fb9b904df0876790" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_EXT_PUBLIC_PRIMARY_SCAN_DESTROY_PROCEDURE(x)<sp/>\</highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>__ble5_ops-&gt;legacy_close(x);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="ll__ext__scan_8h_1aa94aeb30150d5436d38dd0b2aef2fc27" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXT_REPORT_EVENT_MAX_DATA_LEN<sp/><sp/>(<sp/>0xff<sp/>-<sp/>sizeof(struct<sp/>__ext_adv_report_event)<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="ll__ext__scan_8h_1a8f5e0748087b87d63826c26de3e9ab94" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="ll__ext__scan_8h_1a8f5e0748087b87d63826c26de3e9ab94" kindref="member">__report_event_type</ref><sp/>{</highlight></codeline>
+<codeline lineno="37" refid="ll__ext__scan_8h_1a8f5e0748087b87d63826c26de3e9ab94a0942121ad971374a0a42662db4e9ccdd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__ext__scan_8h_1a8f5e0748087b87d63826c26de3e9ab94a0942121ad971374a0a42662db4e9ccdd" kindref="member">REPORT_CONNECTABLE_ADV</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="38" refid="ll__ext__scan_8h_1a8f5e0748087b87d63826c26de3e9ab94a22e2f447fdae8ae5ed8084bec1c5f557" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__ext__scan_8h_1a8f5e0748087b87d63826c26de3e9ab94a22e2f447fdae8ae5ed8084bec1c5f557" kindref="member">REPORT_SCANNABLE_ADV</ref>,</highlight></codeline>
+<codeline lineno="39" refid="ll__ext__scan_8h_1a8f5e0748087b87d63826c26de3e9ab94aeebedd486df2e1f5a4a2202dbd14a816" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__ext__scan_8h_1a8f5e0748087b87d63826c26de3e9ab94aeebedd486df2e1f5a4a2202dbd14a816" kindref="member">REPORT_DIRECTED_ADV</ref>,</highlight></codeline>
+<codeline lineno="40" refid="ll__ext__scan_8h_1a8f5e0748087b87d63826c26de3e9ab94ac2b98df6f424919de4036e3e0814020f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__ext__scan_8h_1a8f5e0748087b87d63826c26de3e9ab94ac2b98df6f424919de4036e3e0814020f" kindref="member">REPORT_SCAN_RSP</ref>,</highlight></codeline>
+<codeline lineno="41" refid="ll__ext__scan_8h_1a8f5e0748087b87d63826c26de3e9ab94a491a3dd7c0cdad7d591db104e73508ff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__ext__scan_8h_1a8f5e0748087b87d63826c26de3e9ab94a491a3dd7c0cdad7d591db104e73508ff" kindref="member">REPORT_LEGACY_ADV</ref>,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="ll__ext__scan_8h_1a24734c34558385990915f413953c6a12" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="ll__ext__scan_8h_1a24734c34558385990915f413953c6a12" kindref="member">__ext_sync_filter_policy</ref><sp/>{</highlight></codeline>
+<codeline lineno="45" refid="ll__ext__scan_8h_1a24734c34558385990915f413953c6a12a9c851e958a51c43a9cb08c9cbd7515be" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__ext__scan_8h_1a24734c34558385990915f413953c6a12a9c851e958a51c43a9cb08c9cbd7515be" kindref="member">NOT_USE_PERIODIC_ADV_LIST</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="46" refid="ll__ext__scan_8h_1a24734c34558385990915f413953c6a12a1858dc01ce82cad717613bc361102200" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__ext__scan_8h_1a24734c34558385990915f413953c6a12a1858dc01ce82cad717613bc361102200" kindref="member">USE_PERIODIC_ADV_LIST</ref>,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">//&lt;<sp/>must<sp/>follow<sp/>Core_v5.0<sp/>struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="union____ExtAdv__EventType" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal"><ref refid="union____ExtAdv__EventType" kindref="compound">__ExtAdv_EventType</ref><sp/>{</highlight></codeline>
+<codeline lineno="51" refid="struct____ExtAdv__EventType_8____unnamed____" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u16<sp/>Connectable_advertising<sp/>:<sp/>1,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Scannable_advertising<sp/>:<sp/>1,</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Directed_advertising<sp/>:<sp/>1,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Scan_response<sp/>:<sp/>1,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Legacy_adv_PDUs_used<sp/>:<sp/>1,</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Data_status<sp/>:<sp/>2,</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>All_other_bits<sp/>:<sp/>9;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="union____ExtAdv__EventType_1affb2636c8d80af4395c50954f048c78b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="union____ExtAdv__EventType_1affb2636c8d80af4395c50954f048c78b" kindref="member">event_type</ref>;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}<sp/><ref refid="ll__ext__scan_8h_1aa4dd745a3521839a479790391389c1bf" kindref="member">_GNU_PACKED_</ref>;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="struct____ext__adv__report__event" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct____ext__adv__report__event" kindref="compound">__ext_adv_report_event</ref><sp/>{</highlight></codeline>
+<codeline lineno="65" refid="struct____ext__adv__report__event_1acede40c6765775738442d1422a8b358b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/><ref refid="struct____ext__adv__report__event_1acede40c6765775738442d1422a8b358b" kindref="member">Subevent_Code</ref>;</highlight></codeline>
+<codeline lineno="66" refid="struct____ext__adv__report__event_1a6ad249cdf7178cb272ff2c4d2878555d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/><ref refid="struct____ext__adv__report__event_1a6ad249cdf7178cb272ff2c4d2878555d" kindref="member">Num_Reports</ref>;</highlight></codeline>
+<codeline lineno="67" refid="struct____ext__adv__report__event_1ace7eaf15d00e906496b05ede1d9b99f0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal"><ref refid="union____ExtAdv__EventType" kindref="compound">__ExtAdv_EventType</ref><sp/>Event_Type;</highlight></codeline>
+<codeline lineno="68" refid="struct____ext__adv__report__event_1af2841e894ab4c6993907dbf41caeb895" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/><ref refid="struct____ext__adv__report__event_1af2841e894ab4c6993907dbf41caeb895" kindref="member">Address_Type</ref>;</highlight></codeline>
+<codeline lineno="69" refid="struct____ext__adv__report__event_1a970a5b8d609f3cdc5272a800c8a814bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/>Address[6];</highlight></codeline>
+<codeline lineno="70" refid="struct____ext__adv__report__event_1a69823e2a048fa9df6cd06305858f7410" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/><ref refid="struct____ext__adv__report__event_1a69823e2a048fa9df6cd06305858f7410" kindref="member">Primary_PHY</ref>;</highlight></codeline>
+<codeline lineno="71" refid="struct____ext__adv__report__event_1a45ef045c50df5af2661e4698c7dffaee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/><ref refid="struct____ext__adv__report__event_1a45ef045c50df5af2661e4698c7dffaee" kindref="member">Secondary_PHY</ref>;</highlight></codeline>
+<codeline lineno="72" refid="struct____ext__adv__report__event_1a659e4e94fc12d760e6d5a16375285395" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/><ref refid="struct____ext__adv__report__event_1a659e4e94fc12d760e6d5a16375285395" kindref="member">Advertising_SID</ref>;</highlight></codeline>
+<codeline lineno="73" refid="struct____ext__adv__report__event_1a3824843bf0b8e560481baf3a5ed1af4f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/><ref refid="struct____ext__adv__report__event_1a3824843bf0b8e560481baf3a5ed1af4f" kindref="member">Tx_Power</ref>;</highlight></codeline>
+<codeline lineno="74" refid="struct____ext__adv__report__event_1afa1e0c4348b165dca7a31aa3721c41d6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/><ref refid="struct____ext__adv__report__event_1afa1e0c4348b165dca7a31aa3721c41d6" kindref="member">RSSI</ref>;</highlight></codeline>
+<codeline lineno="75" refid="struct____ext__adv__report__event_1a399071635c7e3000a1407c9de225c356" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="struct____ext__adv__report__event_1a399071635c7e3000a1407c9de225c356" kindref="member">Periodic_Advertising_Interval</ref>;</highlight></codeline>
+<codeline lineno="76" refid="struct____ext__adv__report__event_1ae72b60cfa4bc7abdb3fd43fae7c740f1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/><ref refid="struct____ext__adv__report__event_1ae72b60cfa4bc7abdb3fd43fae7c740f1" kindref="member">Direct_Address_Type</ref>;</highlight></codeline>
+<codeline lineno="77" refid="struct____ext__adv__report__event_1ad61e5614ecbc4eecffc71b1a46e54465" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/>Direct_Address[6];</highlight></codeline>
+<codeline lineno="78" refid="struct____ext__adv__report__event_1a523f235fbcb328b645b3c6cc8fc47668" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/><ref refid="struct____ext__adv__report__event_1a523f235fbcb328b645b3c6cc8fc47668" kindref="member">Data_Length</ref>;</highlight></codeline>
+<codeline lineno="79" refid="struct____ext__adv__report__event_1aa1ae2c1c1c6d4bdafa8037409ddf51e3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/>Data[0];</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}<sp/><ref refid="ll__ext__scan_8h_1aa4dd745a3521839a479790391389c1bf" kindref="member">_GNU_PACKED_</ref>;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="structle__ext__adv__report" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structle__ext__adv__report" kindref="compound">le_ext_adv_report</ref><sp/>{</highlight></codeline>
+<codeline lineno="83" refid="structle__ext__adv__report_1ae7c314a0b5f87a827f1bb13c8083e433" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/><ref refid="structle__ext__adv__report_1ae7c314a0b5f87a827f1bb13c8083e433" kindref="member">event_type</ref>;</highlight></codeline>
+<codeline lineno="84" refid="structle__ext__adv__report_1a5258855e162cee869cb31d363aae3aeb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/>address[6];</highlight></codeline>
+<codeline lineno="85" refid="structle__ext__adv__report_1ad0be59bf450c185a6b76136fc698add9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/>direct_address[6];</highlight></codeline>
+<codeline lineno="86" refid="structle__ext__adv__report_1aa6eaae2ee50ad78f66efcc1b95f29daa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/><ref refid="structle__ext__adv__report_1aa6eaae2ee50ad78f66efcc1b95f29daa" kindref="member">tx_power</ref>;</highlight></codeline>
+<codeline lineno="87" refid="structle__ext__adv__report_1a6a5e8bfd5dee48062ee3c1f919bd23bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structle__ext__adv__report_1a6a5e8bfd5dee48062ee3c1f919bd23bc" kindref="member">advertising_adi</ref>;</highlight></codeline>
+<codeline lineno="88" refid="structle__ext__adv__report_1a6299f19426dabcc1a728d56d9d855de0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structle__ext__adv__report_1a6299f19426dabcc1a728d56d9d855de0" kindref="member">periodic_adv_interval</ref>;</highlight></codeline>
+<codeline lineno="89" refid="structle__ext__adv__report_1ae2b5ba6ee38e03f19e7cdf4a467a4179" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/><ref refid="structle__ext__adv__report_1ae2b5ba6ee38e03f19e7cdf4a467a4179" kindref="member">cte_type</ref>;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="structle__ext__scan__link" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structle__ext__scan__link" kindref="compound">le_ext_scan_link</ref><sp/>{</highlight></codeline>
+<codeline lineno="93" refid="structle__ext__scan__link_1a8ae19b5c0deba0c2e240a28887215b1f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structle__ext__scan__link_1a8ae19b5c0deba0c2e240a28887215b1f" kindref="member">primary_legacy_hw</ref>;</highlight></codeline>
+<codeline lineno="94" refid="structle__ext__scan__link_1ad7fb35738ce774536efaaaec6e7e15d2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structle__ext__scan__link_1ad7fb35738ce774536efaaaec6e7e15d2" kindref="member">hw</ref>;</highlight></codeline>
+<codeline lineno="95" refid="structle__ext__scan__link_1a1f599a5a3aefab84126e1a5e350ca656" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">ble_ext_scan<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>extended_scan;</highlight></codeline>
+<codeline lineno="96" refid="structle__ext__scan__link_1a5e817b5ba0949889b86d1b13e0b36cb1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structle__ext__adv__report" kindref="compound">le_ext_adv_report</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ext_adv_report;</highlight></codeline>
+<codeline lineno="97" refid="structle__ext__scan__link_1a2c24ea1b469c7e40bd1fb3a818ba1726" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">ble_ext_period_sync<sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structle__ext__scan__link_1a2c24ea1b469c7e40bd1fb3a818ba1726" kindref="member">period_sync</ref>;</highlight></codeline>
+<codeline lineno="98" refid="structle__ext__scan__link_1a59757ed828e1643e723853635286a6d2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">ble_cte_iq_sample<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structle__ext__scan__link_1a59757ed828e1643e723853635286a6d2" kindref="member">cte_iq_sample</ref>;</highlight></codeline>
+<codeline lineno="99" refid="structle__ext__scan__link_1ade0e603045828a52ca79cf4915c9ca2f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structle__ext__scan__link_1ade0e603045828a52ca79cf4915c9ca2f" kindref="member">state</ref>;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="comment">/*-----------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="104"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>LL<sp/>Internal<sp/>API</highlight></codeline>
+<codeline lineno="105"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="ll__ext__scan_8h_1a221c4b601e98bc1d1ca824ebb153c862" kindref="member">build_ext_aux_adv_report</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structle__ext__scan__link" kindref="compound">le_ext_scan_link</ref><sp/>*link,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>ble_ext_rx<sp/>*rx,<sp/>u8<sp/>*offset);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__ext__scan_8h_1a6b20604feb2c552a003e02022e7132cd" kindref="member">ll_ext_scan_rx_post_process</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*empty);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__ext__scan_8h_1a20e06cdf14a775b8b694fe278c00b1aa" kindref="member">destroy_le_ext_scan</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="ll__ext__scan_8h_1ad9eef021572c00f9f7f9f042c812f82a" kindref="member">ll_get_ext_scan_link</ref>(u16<sp/>sync_handle);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="comment">/*-----------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="113"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Link<sp/>Layer<sp/>API</highlight></codeline>
+<codeline lineno="114"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ll__ext__scan_8h_1af4bfb24266d7b367c6661bf6265e1691" kindref="member">ll_ext_scan_open</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__ext__scan_8h_1ade4085d263f6f451ccd74a02e2f9f561" kindref="member">ll_ext_scan_close</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ll__ext__scan_8h_1ae42b06eba6fea0d078b7a08f61705572" kindref="member">le_cmd_set_ext_scan</ref>(u16<sp/>opcode,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>*data,<sp/>u32<sp/>size);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__LL_EXT_SCAN_H__<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_scan.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,440 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structbredr__local__device" kind="struct" language="C++" prot="public">
+    <compoundname>bredr_local_device</compoundname>
+    <includes refid="bredr__device_8h" local="no">bredr_device.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structbredr__local__device_1acbbb1d98bff581703b270d16b4074a7f" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 bredr_local_device::authentication_enable</definition>
+        <argsstring></argsstring>
+        <name>authentication_enable</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" line="18" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__local__device_1ab89236ba92ec57417a602fab39d464a0" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 bredr_local_device::pin_code_type</definition>
+        <argsstring></argsstring>
+        <name>pin_code_type</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" line="19" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__local__device_1af408bb24a32342d923a36a671e4b0969" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 bredr_local_device::inquiry_scan_type</definition>
+        <argsstring></argsstring>
+        <name>inquiry_scan_type</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" line="20" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__local__device_1a3007fd2dfe61703fa347d8bbb0aac019" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 bredr_local_device::page_scan_type</definition>
+        <argsstring></argsstring>
+        <name>page_scan_type</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" line="21" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__local__device_1ad3dedc3d629d31cc09eeb9a69de5a3a1" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 bredr_local_device::inquiry_mode</definition>
+        <argsstring></argsstring>
+        <name>inquiry_mode</name>
+        <bitfield> 2</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" line="22" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__local__device_1a47fb184fcd03058fe54d44fa896d2c20" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 bredr_local_device::default_link_policy_settings</definition>
+        <argsstring></argsstring>
+        <name>default_link_policy_settings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" line="23" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__local__device_1a7d156ee69350e65e68b251d1aa9fae63" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 bredr_local_device::tws_mclkn_adjust</definition>
+        <argsstring></argsstring>
+        <name>tws_mclkn_adjust</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" line="24" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__local__device_1a15cb8127c0aabdea1feb944ad38ad3b9" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 bredr_local_device::tws_ble_lt_addr</definition>
+        <argsstring></argsstring>
+        <name>tws_ble_lt_addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" line="25" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__local__device_1a013327d337e10f37d413a2e566491cd7" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 bredr_local_device::drift</definition>
+        <argsstring></argsstring>
+        <name>drift</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" line="26" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__local__device_1a060be61a558a9bc936b5bfcce2351daf" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 bredr_local_device::jitter</definition>
+        <argsstring></argsstring>
+        <name>jitter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" line="27" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__local__device_1ab940ca2294e04f0eddafc48e3dacdebe" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 bredr_local_device::pin_code_len</definition>
+        <argsstring></argsstring>
+        <name>pin_code_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" line="28" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__local__device_1abc74225c3b458213c1c7dd7c383c2c55" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 bredr_local_device::local_name[32]</definition>
+        <argsstring>[32]</argsstring>
+        <name>local_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" line="29" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__local__device_1a4f754778f6105bae56cec5568a9226ca" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 bredr_local_device::priv_version[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>priv_version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" line="30" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__local__device_1a9887cf04edd16006ae5a651d72d6e563" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char bredr_local_device::pin_code[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>pin_code</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" line="31" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__local__device_1a951691d7e439c7641c3afe2b34d1ffe1" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 bredr_local_device::super_timeout_value</definition>
+        <argsstring></argsstring>
+        <name>super_timeout_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" line="32" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__local__device_1a0e7a7a8c87a5217ac73ed0c7163de389" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 bredr_local_device::page_timeout_value</definition>
+        <argsstring></argsstring>
+        <name>page_timeout_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" line="33" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__local__device_1ac3bda028a7fc7098a3084dd26c3ba093" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 bredr_local_device::page_scan_interval</definition>
+        <argsstring></argsstring>
+        <name>page_scan_interval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" line="34" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__local__device_1a31822bf184bfd8c906a3039c118d5324" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 bredr_local_device::page_scan_window</definition>
+        <argsstring></argsstring>
+        <name>page_scan_window</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" line="35" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__local__device_1ad13c0d6c5f8e7cc64fddf5a26537ccda" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 bredr_local_device::inquiry_scan_interval</definition>
+        <argsstring></argsstring>
+        <name>inquiry_scan_interval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" line="36" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__local__device_1afbb145eae987ad13a0efebffd18a78fe" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 bredr_local_device::inquiry_scan_window</definition>
+        <argsstring></argsstring>
+        <name>inquiry_scan_window</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" line="37" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__local__device_1af1fd146bbbbf6478bdc197075169a3e3" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 bredr_local_device::connection_accept_timeout_value</definition>
+        <argsstring></argsstring>
+        <name>connection_accept_timeout_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" line="38" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__local__device_1a82ce3812c4074ffba4fd78a0a397c043" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 bredr_local_device::voice_setting</definition>
+        <argsstring></argsstring>
+        <name>voice_setting</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" line="39" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__local__device_1a6d0490d22b67faa108b0d3510f22ca55" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 bredr_local_device::clk_base</definition>
+        <argsstring></argsstring>
+        <name>clk_base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" line="40" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__local__device_1a7554d5faed27365dea4b47a6f73e7597" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 bredr_local_device::tws_ble_mclkn</definition>
+        <argsstring></argsstring>
+        <name>tws_ble_mclkn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" line="41" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__local__device_1acefe4109a22ec50c58874f4c2e130fee" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int bredr_local_device::dev_class</definition>
+        <argsstring></argsstring>
+        <name>dev_class</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" line="42" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__local__device_1af590f8bfe78eb0ce050fdbad7394a9ab" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 bredr_local_device::iac_lap[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>iac_lap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" line="43" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__local__device_1abb67f2a6a969e754e25888df8ee8ea76" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 bredr_local_device::supported_iac</definition>
+        <argsstring></argsstring>
+        <name>supported_iac</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" line="44" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__local__device_1ae4ca024c2d9f54b40dd42242a40b60d0" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 bredr_local_device::num_current_iac</definition>
+        <argsstring></argsstring>
+        <name>num_current_iac</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" line="45" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__local__device_1a6439c83fe71748bc3652bc4cbadb3ef1" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structbredr__local__eir" kindref="compound">bredr_local_eir</ref></type>
+        <definition>struct bredr_local_eir bredr_local_device::eir</definition>
+        <argsstring></argsstring>
+        <name>eir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" line="45" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="975">
+        <label>bredr_local_device</label>
+        <link refid="structbredr__local__device"/>
+        <childnode refid="976" relation="usage">
+          <edgelabel>eir</edgelabel>
+        </childnode>
+      </node>
+      <node id="976">
+        <label>bredr_local_eir</label>
+        <link refid="structbredr__local__eir"/>
+      </node>
+    </collaborationgraph>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" line="17" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_device.h" bodystart="17" bodyend="52"/>
+    <listofallmembers>
+      <member refid="structbredr__local__device_1acbbb1d98bff581703b270d16b4074a7f" prot="public" virt="non-virtual"><scope>bredr_local_device</scope><name>authentication_enable</name></member>
+      <member refid="structbredr__local__device_1a6d0490d22b67faa108b0d3510f22ca55" prot="public" virt="non-virtual"><scope>bredr_local_device</scope><name>clk_base</name></member>
+      <member refid="structbredr__local__device_1af1fd146bbbbf6478bdc197075169a3e3" prot="public" virt="non-virtual"><scope>bredr_local_device</scope><name>connection_accept_timeout_value</name></member>
+      <member refid="structbredr__local__device_1a47fb184fcd03058fe54d44fa896d2c20" prot="public" virt="non-virtual"><scope>bredr_local_device</scope><name>default_link_policy_settings</name></member>
+      <member refid="structbredr__local__device_1acefe4109a22ec50c58874f4c2e130fee" prot="public" virt="non-virtual"><scope>bredr_local_device</scope><name>dev_class</name></member>
+      <member refid="structbredr__local__device_1a013327d337e10f37d413a2e566491cd7" prot="public" virt="non-virtual"><scope>bredr_local_device</scope><name>drift</name></member>
+      <member refid="structbredr__local__device_1a6439c83fe71748bc3652bc4cbadb3ef1" prot="public" virt="non-virtual"><scope>bredr_local_device</scope><name>eir</name></member>
+      <member refid="structbredr__local__device_1af590f8bfe78eb0ce050fdbad7394a9ab" prot="public" virt="non-virtual"><scope>bredr_local_device</scope><name>iac_lap</name></member>
+      <member refid="structbredr__local__device_1ad3dedc3d629d31cc09eeb9a69de5a3a1" prot="public" virt="non-virtual"><scope>bredr_local_device</scope><name>inquiry_mode</name></member>
+      <member refid="structbredr__local__device_1ad13c0d6c5f8e7cc64fddf5a26537ccda" prot="public" virt="non-virtual"><scope>bredr_local_device</scope><name>inquiry_scan_interval</name></member>
+      <member refid="structbredr__local__device_1af408bb24a32342d923a36a671e4b0969" prot="public" virt="non-virtual"><scope>bredr_local_device</scope><name>inquiry_scan_type</name></member>
+      <member refid="structbredr__local__device_1afbb145eae987ad13a0efebffd18a78fe" prot="public" virt="non-virtual"><scope>bredr_local_device</scope><name>inquiry_scan_window</name></member>
+      <member refid="structbredr__local__device_1a060be61a558a9bc936b5bfcce2351daf" prot="public" virt="non-virtual"><scope>bredr_local_device</scope><name>jitter</name></member>
+      <member refid="structbredr__local__device_1abc74225c3b458213c1c7dd7c383c2c55" prot="public" virt="non-virtual"><scope>bredr_local_device</scope><name>local_name</name></member>
+      <member refid="structbredr__local__device_1ae4ca024c2d9f54b40dd42242a40b60d0" prot="public" virt="non-virtual"><scope>bredr_local_device</scope><name>num_current_iac</name></member>
+      <member refid="structbredr__local__device_1ac3bda028a7fc7098a3084dd26c3ba093" prot="public" virt="non-virtual"><scope>bredr_local_device</scope><name>page_scan_interval</name></member>
+      <member refid="structbredr__local__device_1a3007fd2dfe61703fa347d8bbb0aac019" prot="public" virt="non-virtual"><scope>bredr_local_device</scope><name>page_scan_type</name></member>
+      <member refid="structbredr__local__device_1a31822bf184bfd8c906a3039c118d5324" prot="public" virt="non-virtual"><scope>bredr_local_device</scope><name>page_scan_window</name></member>
+      <member refid="structbredr__local__device_1a0e7a7a8c87a5217ac73ed0c7163de389" prot="public" virt="non-virtual"><scope>bredr_local_device</scope><name>page_timeout_value</name></member>
+      <member refid="structbredr__local__device_1a9887cf04edd16006ae5a651d72d6e563" prot="public" virt="non-virtual"><scope>bredr_local_device</scope><name>pin_code</name></member>
+      <member refid="structbredr__local__device_1ab940ca2294e04f0eddafc48e3dacdebe" prot="public" virt="non-virtual"><scope>bredr_local_device</scope><name>pin_code_len</name></member>
+      <member refid="structbredr__local__device_1ab89236ba92ec57417a602fab39d464a0" prot="public" virt="non-virtual"><scope>bredr_local_device</scope><name>pin_code_type</name></member>
+      <member refid="structbredr__local__device_1a4f754778f6105bae56cec5568a9226ca" prot="public" virt="non-virtual"><scope>bredr_local_device</scope><name>priv_version</name></member>
+      <member refid="structbredr__local__device_1a951691d7e439c7641c3afe2b34d1ffe1" prot="public" virt="non-virtual"><scope>bredr_local_device</scope><name>super_timeout_value</name></member>
+      <member refid="structbredr__local__device_1abb67f2a6a969e754e25888df8ee8ea76" prot="public" virt="non-virtual"><scope>bredr_local_device</scope><name>supported_iac</name></member>
+      <member refid="structbredr__local__device_1a15cb8127c0aabdea1feb944ad38ad3b9" prot="public" virt="non-virtual"><scope>bredr_local_device</scope><name>tws_ble_lt_addr</name></member>
+      <member refid="structbredr__local__device_1a7554d5faed27365dea4b47a6f73e7597" prot="public" virt="non-virtual"><scope>bredr_local_device</scope><name>tws_ble_mclkn</name></member>
+      <member refid="structbredr__local__device_1a7d156ee69350e65e68b251d1aa9fae63" prot="public" virt="non-virtual"><scope>bredr_local_device</scope><name>tws_mclkn_adjust</name></member>
+      <member refid="structbredr__local__device_1a82ce3812c4074ffba4fd78a0a397c043" prot="public" virt="non-virtual"><scope>bredr_local_device</scope><name>voice_setting</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

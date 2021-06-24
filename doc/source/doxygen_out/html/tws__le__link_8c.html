@@ -1,0 +1,2951 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>JL Adapter SDK: /data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">JL Adapter SDK
+   &#160;<span id="projectnumber">v0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_5aa4d6ccf34d88a270949875c15714e5.html">btctrler</a></li><li class="navelem"><a class="el" href="dir_16b18ce1fc07a124435f964aa38ae307.html">BLE_v2</a></li><li class="navelem"><a class="el" href="dir_5640cad4df81f1d58994303d9e099d51.html">tws</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle">
+<div class="title">tws_le_link.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;sfr.h&quot;</code><br />
+<code>#include &quot;ble/RF_ble.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="link__layer_8h_source.html">ble/link_layer.h</a>&quot;</code><br />
+<code>#include &quot;btcontroller_util.h&quot;</code><br />
+<code>#include &quot;system/includes.h&quot;</code><br />
+<code>#include &quot;btcontroller_config.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="tws__le__link_8h_source.html">ble/tws_le_link.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="link__task_8h_source.html">link_task.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="link__bulk_8h_source.html">classic/link_bulk.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="bredr__link_8h_source.html">classic/bredr_link.h</a>&quot;</code><br />
+<code>#include &quot;baseband/bredr_slot_timer.h&quot;</code><br />
+<code>#include &quot;common/debug.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tws_le_link.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="tws__le__link_8c__incl.png" border="0" usemap="#_2data_2bingquan_2repo_2repo__adapter_2adapter__sdk_2lib_2btctrler_2BLE__v2_2tws_2tws__le__link_8c" alt=""/></div>
+<map name="_2data_2bingquan_2repo_2repo__adapter_2adapter__sdk_2lib_2btctrler_2BLE__v2_2tws_2tws__le__link_8c" id="_2data_2bingquan_2repo_2repo__adapter_2adapter__sdk_2lib_2btctrler_2BLE__v2_2tws_2tws__le__link_8c">
+<area shape="rect" id="node4" href="link__layer_8h.html" title="ble/link_layer.h" alt="" coords="1050,131,1159,158"/>
+<area shape="rect" id="node31" href="tws__le__link_8h.html" title="ble/tws_le_link.h" alt="" coords="1797,131,1916,158"/>
+<area shape="rect" id="node33" href="link__task_8h.html" title="link_task.h" alt="" coords="1945,213,2030,240"/>
+<area shape="rect" id="node36" href="link__bulk_8h.html" title="classic/link_bulk.h" alt="" coords="2055,213,2184,240"/>
+<area shape="rect" id="node38" href="bredr__link_8h.html" title="classic/bredr_link.h" alt="" coords="2136,131,2271,158"/>
+<area shape="rect" id="node10" href="ll__defines_8h.html" title="ll_defines.h" alt="" coords="1010,363,1098,389"/>
+<area shape="rect" id="node11" href="white__list_8h.html" title="white_list.h" alt="" coords="1122,363,1210,389"/>
+<area shape="rect" id="node14" href="llcp_8h.html" title="ble/llcp.h" alt="" coords="806,288,881,315"/>
+<area shape="rect" id="node15" href="ll__adv_8h.html" title="ble/ll_adv.h" alt="" coords="165,213,253,240"/>
+<area shape="rect" id="node16" href="ll__scan_8h.html" title="ble/ll_scan.h" alt="" coords="277,213,372,240"/>
+<area shape="rect" id="node17" href="ll__init_8h.html" title="ble/ll_init.h" alt="" coords="5,213,89,240"/>
+<area shape="rect" id="node18" href="resolve__list_8h.html" title="resolve_list.h" alt="" coords="1514,363,1613,389"/>
+<area shape="rect" id="node19" href="data__extension_8h.html" title="data_extension.h" alt="" coords="1637,363,1759,389"/>
+<area shape="rect" id="node20" href="multiple__phys_8h.html" title="multiple_phys.h" alt="" coords="617,363,731,389"/>
+<area shape="rect" id="node21" href="ll__cte_8h.html" title="ble/ll_cte.h" alt="" coords="1011,288,1097,315"/>
+<area shape="rect" id="node22" href="ll__iso_8h.html" title="ble/ll_iso.h" alt="" coords="1353,288,1437,315"/>
+<area shape="rect" id="node24" href="ll__bis_8h.html" title="ble/ll_bis.h" alt="" coords="1143,213,1227,240"/>
+<area shape="rect" id="node26" href="ll__cis_8h.html" title="ble/ll_cis.h" alt="" coords="1353,213,1437,240"/>
+<area shape="rect" id="node27" href="ll__pc_8h.html" title="ble/ll_pc.h" alt="" coords="905,288,987,315"/>
+<area shape="rect" id="node25" href="audio__codec_8h.html" title="audio_codec.h" alt="" coords="1171,288,1278,315"/>
+<area shape="rect" id="node37" href="bredr__types_8h.html" title="classic/bredr_types.h" alt="" coords="2059,288,2206,315"/>
+<area shape="rect" id="node39" href="lmp__pdu_8h.html" title="classic/lmp_pdu.h" alt="" coords="2281,363,2408,389"/>
+<area shape="rect" id="node40" href="bredr__device_8h.html" title="classic/bredr_device.h" alt="" coords="2331,213,2483,240"/>
+<area shape="rect" id="node42" href="wifi__detect_8h.html" title="wifi_detect.h" alt="" coords="2638,213,2734,240"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlink__le__adv.html">link_le_adv</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structlink__le__data"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#structlink__le__data">link_le_data</a></td></tr>
+<tr class="separator:structlink__le__data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlink__le__scan.html">link_le_scan</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle__scan__parm__t.html">le_scan_parm_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structle__adv__parm__t.html">le_adv_parm_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a6c6991cba0e2995d7d9aec73e0324317"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a6c6991cba0e2995d7d9aec73e0324317">LOG_TAG_CONST</a>&#160;&#160;&#160;TWS_LE</td></tr>
+<tr class="separator:a6c6991cba0e2995d7d9aec73e0324317"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ce0df38eb467e59f209470c8f5ac4e6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a7ce0df38eb467e59f209470c8f5ac4e6">LOG_TAG</a>&#160;&#160;&#160;&quot;[TWS LE]&quot;</td></tr>
+<tr class="separator:a7ce0df38eb467e59f209470c8f5ac4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eeb6e067100d0dec6e53bce19a403e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a9eeb6e067100d0dec6e53bce19a403e0">LOG_ERROR_ENABLE</a></td></tr>
+<tr class="separator:a9eeb6e067100d0dec6e53bce19a403e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69321c8a2a0b07a07fb5088e82e25eb0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a69321c8a2a0b07a07fb5088e82e25eb0">LOG_INFO_ENABLE</a></td></tr>
+<tr class="separator:a69321c8a2a0b07a07fb5088e82e25eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe76095a81e694a670d6c0e663cbff0f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#abe76095a81e694a670d6c0e663cbff0f">LOG_DEBUG_ENABLE</a></td></tr>
+<tr class="separator:abe76095a81e694a670d6c0e663cbff0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04135f631fe91199f05b1d816dda8756"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a04135f631fe91199f05b1d816dda8756">LOG_DUMP_ENABLE</a></td></tr>
+<tr class="separator:a04135f631fe91199f05b1d816dda8756"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7718df1f99c864f5f76aa661f448fc20"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a7718df1f99c864f5f76aa661f448fc20">LOG_CHAR_ENABLE</a></td></tr>
+<tr class="separator:a7718df1f99c864f5f76aa661f448fc20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a584b2371f9af9285bc915b5054319117"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a584b2371f9af9285bc915b5054319117">TWS_IO_DEBUG_0</a>(i,  x)</td></tr>
+<tr class="separator:a584b2371f9af9285bc915b5054319117"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0343ba68d4d9bed52c8fd995aac3775"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#ab0343ba68d4d9bed52c8fd995aac3775">TWS_IO_DEBUG_1</a>(i,  x)</td></tr>
+<tr class="separator:ab0343ba68d4d9bed52c8fd995aac3775"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d92fa609f391600c6ab0dea2910d084"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a5d92fa609f391600c6ab0dea2910d084">TWS_IO_DEBUG_TOGGLE</a>(i,  x)</td></tr>
+<tr class="separator:a5d92fa609f391600c6ab0dea2910d084"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9446bd6aa82e87158d874dd1f1cc8c5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#af9446bd6aa82e87158d874dd1f1cc8c5">LINK_TYPE_LE_ADV</a>&#160;&#160;&#160;<a class="el" href="link__task_8h.html#a2d5492e116eebd5075f247d21fb9db26a460077e74b302e6713c8f44cb2be4808">LINK_TYPE_PAGE_SCAN</a></td></tr>
+<tr class="separator:af9446bd6aa82e87158d874dd1f1cc8c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a331bc1f4096bee4b71610ea2a59628bb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a331bc1f4096bee4b71610ea2a59628bb">LINK_TYPE_LE_ADV_TWS</a>&#160;&#160;&#160;<a class="el" href="link__task_8h.html#a2d5492e116eebd5075f247d21fb9db26a66347329c0cfe146c07d5f79a84dca6f">LINK_TYPE_PAGE_SCAN_TWS</a></td></tr>
+<tr class="separator:a331bc1f4096bee4b71610ea2a59628bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69800d4c0a8ef6116c049b377fe874c2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a69800d4c0a8ef6116c049b377fe874c2">LINK_TYPE_LE_SCAN</a>&#160;&#160;&#160;<a class="el" href="link__task_8h.html#a2d5492e116eebd5075f247d21fb9db26a56d4643441210095053c6cda36cce90f">LINK_TYPE_PAGE</a></td></tr>
+<tr class="separator:a69800d4c0a8ef6116c049b377fe874c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:abc6126af1d45847bc59afa0aa3216b04"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="tws__le__link_8c.html#abc6126af1d45847bc59afa0aa3216b04aafae13ab15cc9209d55cec5bf99080d5">LE_TWS_TIME0</a> = 0, 
+<a class="el" href="tws__le__link_8c.html#abc6126af1d45847bc59afa0aa3216b04a78c24ac9b24c06a84657ce81037c9593">LE_TWS_TIME1</a>, 
+<a class="el" href="tws__le__link_8c.html#abc6126af1d45847bc59afa0aa3216b04a2b4d4eb2eb2bd5172df45beb93e59a65">LE_TWS_TIME2</a>, 
+<a class="el" href="tws__le__link_8c.html#abc6126af1d45847bc59afa0aa3216b04a6890fdc898ad8ecdd412703025a886e5">LE_TWS_TIME3</a>
+ }</td></tr>
+<tr class="separator:abc6126af1d45847bc59afa0aa3216b04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc29c2ff13d900c2f185ee95427fb06c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="tws__le__link_8c.html#adc29c2ff13d900c2f185ee95427fb06ca46020c54eb02b9d8ffe05efca3af51dd">LINK_LE_ADV_STATE</a> = 0, 
+<a class="el" href="tws__le__link_8c.html#adc29c2ff13d900c2f185ee95427fb06ca9e8b7c9190286b046e99b5f0764d514b">LINK_LE_SCAN_STATE</a>, 
+<a class="el" href="tws__le__link_8c.html#adc29c2ff13d900c2f185ee95427fb06ca1c1bd44341df758489fe152c13084525">LINK_LE_ADV_TWS_STATE</a>, 
+<a class="el" href="tws__le__link_8c.html#adc29c2ff13d900c2f185ee95427fb06ca09c43e26f5941816da14c73a9fd2e29f">LINK_LE_SCAN_TWS_STATE</a>
+ }</td></tr>
+<tr class="separator:adc29c2ff13d900c2f185ee95427fb06c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a7541285524351d11b20ff6e0b37f7d9d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a7541285524351d11b20ff6e0b37f7d9d">tws_ll_adv_set_params</a> (const u8 *data)</td></tr>
+<tr class="separator:a7541285524351d11b20ff6e0b37f7d9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21592dde4418705c58b55678eaf891fb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a21592dde4418705c58b55678eaf891fb">tws_ll_adv_set_adv_data</a> (const u8 *data)</td></tr>
+<tr class="separator:a21592dde4418705c58b55678eaf891fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0842a440c7e09ff061a6bb178fd9a6f1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a0842a440c7e09ff061a6bb178fd9a6f1">tws_ll_adv_set_scan_rsp_data</a> (const u8 *data)</td></tr>
+<tr class="separator:a0842a440c7e09ff061a6bb178fd9a6f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a226e7478623cf52034d47fef47bd71a9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a226e7478623cf52034d47fef47bd71a9">tws_ll_adv_open</a> (void)</td></tr>
+<tr class="separator:a226e7478623cf52034d47fef47bd71a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a74a65644ca79f3fa7c88a1491a8d64"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a4a74a65644ca79f3fa7c88a1491a8d64">tws_ll_adv_close</a> (void)</td></tr>
+<tr class="separator:a4a74a65644ca79f3fa7c88a1491a8d64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5307c960a473117c3005c1c9086f9528"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="ll__adv_8h.html#structle__adv__link">le_adv_link</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a5307c960a473117c3005c1c9086f9528">tws_ll_adv_link_get</a> (void)</td></tr>
+<tr class="separator:a5307c960a473117c3005c1c9086f9528"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4c2a3cee87d19f58b19bcbdb8a14e36"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#af4c2a3cee87d19f58b19bcbdb8a14e36">tws_ll_scan_set_params</a> (const u8 *data)</td></tr>
+<tr class="separator:af4c2a3cee87d19f58b19bcbdb8a14e36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cc8d91bb61024bd2410f9e4730f96d0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a6cc8d91bb61024bd2410f9e4730f96d0">tws_ll_scan_open</a> (const u8 *data)</td></tr>
+<tr class="separator:a6cc8d91bb61024bd2410f9e4730f96d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71fb602cfe6869e6332fedef9fa11323"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a71fb602cfe6869e6332fedef9fa11323">tws_ll_scan_close</a> ()</td></tr>
+<tr class="separator:a71fb602cfe6869e6332fedef9fa11323"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9bb2884c3ababeea584e32b20828193"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="ll__scan_8h.html#structle__scan__link">le_scan_link</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#ae9bb2884c3ababeea584e32b20828193">tws_ll_scan_link_get</a> (void)</td></tr>
+<tr class="separator:ae9bb2884c3ababeea584e32b20828193"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8636d87c7b076704d291ec139ec1b8e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a8636d87c7b076704d291ec139ec1b8e5">le_adv_close</a> (void)</td></tr>
+<tr class="separator:a8636d87c7b076704d291ec139ec1b8e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99ed18a2889f0603e8963fcda1950a6a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a99ed18a2889f0603e8963fcda1950a6a">le_scan_close</a> (void)</td></tr>
+<tr class="separator:a99ed18a2889f0603e8963fcda1950a6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21636e21c9bbfa1906e0f99ebc51cff5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a21636e21c9bbfa1906e0f99ebc51cff5">adv_task_run_again</a> (void)</td></tr>
+<tr class="separator:a21636e21c9bbfa1906e0f99ebc51cff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adac86948c319b77b0cb70ba9556257f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#adac86948c319b77b0cb70ba9556257f7">adv_disable</a> (int inirq)</td></tr>
+<tr class="separator:adac86948c319b77b0cb70ba9556257f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95484ad67a8f93ffcb32b09df9a8541f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a95484ad67a8f93ffcb32b09df9a8541f">le_adv_search_data</a> (void)</td></tr>
+<tr class="separator:a95484ad67a8f93ffcb32b09df9a8541f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a158a531a4d6113d772b4b82e966cc94c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a158a531a4d6113d772b4b82e966cc94c">le_adv_conn_data_reset</a> (void)</td></tr>
+<tr class="separator:a158a531a4d6113d772b4b82e966cc94c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae44958759f38379869e46f06b4c16464"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#ae44958759f38379869e46f06b4c16464">tws_ble_get_search_info</a> (struct <a class="el" href="bredr__link_8h.html#structtws__search__info">tws_search_info</a> *search_info)</td></tr>
+<tr class="separator:ae44958759f38379869e46f06b4c16464"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a578e0cef2ac42adda2cd851f9799d66b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a578e0cef2ac42adda2cd851f9799d66b">tws_ble_get_connect_info</a> (struct <a class="el" href="bredr__link_8h.html#structtws__conn__info">tws_conn_info</a> *tc_info)</td></tr>
+<tr class="separator:a578e0cef2ac42adda2cd851f9799d66b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8422b072e3ff538a5783d510257c0266"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a8422b072e3ff538a5783d510257c0266">tws_ble_clr_connect_info</a> (void)</td></tr>
+<tr class="separator:a8422b072e3ff538a5783d510257c0266"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6153a1d2bd5a5eefcf9de6332b487855"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a6153a1d2bd5a5eefcf9de6332b487855">tws_adv_write_connect_info</a> (u8 role, u8 conn_type)</td></tr>
+<tr class="separator:a6153a1d2bd5a5eefcf9de6332b487855"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e92b6bcb2ab9cb179faa4bd3e409db4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a3e92b6bcb2ab9cb179faa4bd3e409db4">tws_ble_sniff_slot_reset</a> (u8 type)</td></tr>
+<tr class="separator:a3e92b6bcb2ab9cb179faa4bd3e409db4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9641ab4596eb5f82ff0949f50e37f481"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a9641ab4596eb5f82ff0949f50e37f481">tws_ble_adv_timer_for_search</a> (void)</td></tr>
+<tr class="separator:a9641ab4596eb5f82ff0949f50e37f481"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bdf2ff9f41af099669505fce5713e80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a8bdf2ff9f41af099669505fce5713e80">tws_le_adv_search_open</a> (void *p)</td></tr>
+<tr class="separator:a8bdf2ff9f41af099669505fce5713e80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68eade0c344804ad909f7d581a78f07c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a68eade0c344804ad909f7d581a78f07c">tws_ble_search_timeout_clr</a> (void)</td></tr>
+<tr class="separator:a68eade0c344804ad909f7d581a78f07c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9d1d456f232157579197565bd903879"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#aa9d1d456f232157579197565bd903879">check_lmp_detch_over</a> ()</td></tr>
+<tr class="separator:aa9d1d456f232157579197565bd903879"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc37aebfe542a4139a98f96d1f4ab315"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#acc37aebfe542a4139a98f96d1f4ab315">link_tws_inquiry_scan_disable</a> (void)</td></tr>
+<tr class="separator:acc37aebfe542a4139a98f96d1f4ab315"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add84cf1f2190ea09e9a30a30313268a9"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#add84cf1f2190ea09e9a30a30313268a9">get_bredr_link_state</a> ()</td></tr>
+<tr class="separator:add84cf1f2190ea09e9a30a30313268a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a589927f3b0eaff0f7d1e176869cadabf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a589927f3b0eaff0f7d1e176869cadabf">link_tws_ble_inquiry_scan_enable</a> (void)</td></tr>
+<tr class="separator:a589927f3b0eaff0f7d1e176869cadabf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4855d51685083ac792b23c72ce151d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#af4855d51685083ac792b23c72ce151d0">tws_ble_connect_disable</a> (int type)</td></tr>
+<tr class="separator:af4855d51685083ac792b23c72ce151d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43913ac2bd5c7ff7adedee7043b580a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a43913ac2bd5c7ff7adedee7043b580a7">tws_link_wait_connection_resume</a> (struct <a class="el" href="link__task_8h.html#structlink__task">link_task</a> *task)</td></tr>
+<tr class="separator:a43913ac2bd5c7ff7adedee7043b580a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a7f4e286e2c86ff4ffb52eba74b5a34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a8a7f4e286e2c86ff4ffb52eba74b5a34">tws_bredr_master_connect_suspend</a> ()</td></tr>
+<tr class="separator:a8a7f4e286e2c86ff4ffb52eba74b5a34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14fcf24000bf1ea95243a9db6c43b575"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a14fcf24000bf1ea95243a9db6c43b575">tws_api_get_local_channel</a> ()</td></tr>
+<tr class="separator:a14fcf24000bf1ea95243a9db6c43b575"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3fb8deda4a39b1073cf587bbcb3d40e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#ae3fb8deda4a39b1073cf587bbcb3d40e">tws_api_set_local_channel</a> (char channel)</td></tr>
+<tr class="separator:ae3fb8deda4a39b1073cf587bbcb3d40e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3aea14cd3e66b95abb542181a9c3efb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#af3aea14cd3e66b95abb542181a9c3efb">le_tws_connect_set_timer</a> (int type, int timeout)</td></tr>
+<tr class="separator:af3aea14cd3e66b95abb542181a9c3efb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b9ce6cc28728895b275e5d0c4833a18"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a5b9ce6cc28728895b275e5d0c4833a18">link_idle_task_enable_detect</a> (void)</td></tr>
+<tr class="separator:a5b9ce6cc28728895b275e5d0c4833a18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60ca991d715b5902b49192d43a4f18a9"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a60ca991d715b5902b49192d43a4f18a9">tws_le_get_data_indicate</a> (void)</td></tr>
+<tr class="separator:a60ca991d715b5902b49192d43a4f18a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a591444224ee7c4667a0c0fbf0d9a2d69"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a591444224ee7c4667a0c0fbf0d9a2d69">tws_le_get_esco_indicate</a> (void)</td></tr>
+<tr class="separator:a591444224ee7c4667a0c0fbf0d9a2d69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4864a5ede3a61d645eaa9432c042a731"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a4864a5ede3a61d645eaa9432c042a731">tws_le_clr_esco_indicate</a> (void)</td></tr>
+<tr class="separator:a4864a5ede3a61d645eaa9432c042a731"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5836f25132a3b686a63a1be2f24dad5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a5836f25132a3b686a63a1be2f24dad5d">tws_le_set_esco_indicate</a> (void)</td></tr>
+<tr class="separator:a5836f25132a3b686a63a1be2f24dad5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87595823733b1c87326cebf26c594594"><td class="memItemLeft" align="right" valign="top">_INLINE_ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a87595823733b1c87326cebf26c594594">tws_le_adv_scan_parm_init</a> (void)</td></tr>
+<tr class="separator:a87595823733b1c87326cebf26c594594"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9aace1b44b73111e15aa39f06f43456"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#af9aace1b44b73111e15aa39f06f43456">__attribute__</a> ((weak))</td></tr>
+<tr class="separator:af9aace1b44b73111e15aa39f06f43456"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a618262020cd2ce1ff8a8936149a9af01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a618262020cd2ce1ff8a8936149a9af01">tws_rx_probe_adv_pdu_handler</a> (struct <a class="el" href="ll__adv_8h.html#structle__adv__link">le_adv_link</a> *link, struct ble_rx *rx)</td></tr>
+<tr class="separator:a618262020cd2ce1ff8a8936149a9af01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac924f117fa534c66ed3fe8841816ca1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#ac924f117fa534c66ed3fe8841816ca1a">tws_remote_state_setting</a> (void)</td></tr>
+<tr class="separator:ac924f117fa534c66ed3fe8841816ca1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6452d2316b3a418e0a9351f44bb9ac81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a6452d2316b3a418e0a9351f44bb9ac81">tws_rx_probe_scan_pdu_handler</a> (struct <a class="el" href="ll__scan_8h.html#structle__scan__link">le_scan_link</a> *link, struct ble_rx *rx)</td></tr>
+<tr class="separator:a6452d2316b3a418e0a9351f44bb9ac81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa5798676a8f7d504198aceb25ee99bb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#aaa5798676a8f7d504198aceb25ee99bb">le_adv_scan_response_set_data</a> (uint8_t scan_response_data_length, const uint8_t *scan_response_data)</td></tr>
+<tr class="separator:aaa5798676a8f7d504198aceb25ee99bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d98b4663575c3c13ab0cd0a5d3732b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a1d98b4663575c3c13ab0cd0a5d3732b9">tws_le_data_reset</a> (void)</td></tr>
+<tr class="separator:a1d98b4663575c3c13ab0cd0a5d3732b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9263950ac4172491c94c9b789b93c721"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a9263950ac4172491c94c9b789b93c721">tws_le_result_check</a> (void *p)</td></tr>
+<tr class="separator:a9263950ac4172491c94c9b789b93c721"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42403029d4048ec307435d4a49adba47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a42403029d4048ec307435d4a49adba47">tws_ble_adv_result_timerset</a> (void)</td></tr>
+<tr class="separator:a42403029d4048ec307435d4a49adba47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac095ebac96c292d104ca869aa0315e19"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#ac095ebac96c292d104ca869aa0315e19">tws_le_adv_kickstart</a> (void *p)</td></tr>
+<tr class="separator:ac095ebac96c292d104ca869aa0315e19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad14a5b3bc17cdc745b827912b9196953"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#ad14a5b3bc17cdc745b827912b9196953">tws_ble_adv_preset_reset</a> (void)</td></tr>
+<tr class="separator:ad14a5b3bc17cdc745b827912b9196953"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70f0f45ee3533d047066aee561efec65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a70f0f45ee3533d047066aee561efec65">tws_ble_adv_preset_start</a> (void)</td></tr>
+<tr class="separator:a70f0f45ee3533d047066aee561efec65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10ee8597259c61d4f02e7c9e36722274"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a10ee8597259c61d4f02e7c9e36722274">tws_ble_adv_preset_close</a> (void)</td></tr>
+<tr class="separator:a10ee8597259c61d4f02e7c9e36722274"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c517786f5a9f4b3a8ec26995a5c1ad0"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a4c517786f5a9f4b3a8ec26995a5c1ad0">adv_resume</a> (struct <a class="el" href="link__task_8h.html#structlink__task">link_task</a> *task)</td></tr>
+<tr class="separator:a4c517786f5a9f4b3a8ec26995a5c1ad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2e9620e3748a3d21422b9c7948fa3de"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#ad2e9620e3748a3d21422b9c7948fa3de">adv_suspend</a> (struct <a class="el" href="link__task_8h.html#structlink__task">link_task</a> *task)</td></tr>
+<tr class="separator:ad2e9620e3748a3d21422b9c7948fa3de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f3704d281c0051b4f75dd1a7a1c1dbc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a5f3704d281c0051b4f75dd1a7a1c1dbc">adv_disable_for_connect_timeout</a> (void)</td></tr>
+<tr class="separator:a5f3704d281c0051b4f75dd1a7a1c1dbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a04001c1571f2b79971f0d1f825fd52"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a5a04001c1571f2b79971f0d1f825fd52">adv_idle_resume</a> (struct <a class="el" href="link__task_8h.html#structlink__task">link_task</a> *task)</td></tr>
+<tr class="separator:a5a04001c1571f2b79971f0d1f825fd52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04576828bd6d24f5ed5bbde711f4d8e7"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a04576828bd6d24f5ed5bbde711f4d8e7">adv_idle_suspend</a> (struct <a class="el" href="link__task_8h.html#structlink__task">link_task</a> *task)</td></tr>
+<tr class="separator:a04576828bd6d24f5ed5bbde711f4d8e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91f1998e88bb3a9f3c47eae81cf7b4b6"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a91f1998e88bb3a9f3c47eae81cf7b4b6">__le_adv_enable</a> (u32 aa, u8 channel_map, u16 timeout, u8 type, u8 search_en, u8 role_type, u8 task_type, int(*completed)(struct ble_rx *, u8 role))</td></tr>
+<tr class="separator:a91f1998e88bb3a9f3c47eae81cf7b4b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9a31eb8e83f70852e8fd5578cefd460"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#ae9a31eb8e83f70852e8fd5578cefd460">link_le_adv_suspend_en</a> ()</td></tr>
+<tr class="separator:ae9a31eb8e83f70852e8fd5578cefd460"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64c8a299f01f71b64f3d6584fabbae12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a64c8a299f01f71b64f3d6584fabbae12">link_le_adv_resume</a> (u16 slot)</td></tr>
+<tr class="separator:a64c8a299f01f71b64f3d6584fabbae12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa13bdf49ab2a108053db09fdcbb65d40"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#aa13bdf49ab2a108053db09fdcbb65d40">tws_le_set_channel_map_in_esco</a> (void)</td></tr>
+<tr class="separator:aa13bdf49ab2a108053db09fdcbb65d40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00f46417e34a33aefe942490424035da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a00f46417e34a33aefe942490424035da">tws_connect_kickstart_in_esco</a> (void)</td></tr>
+<tr class="separator:a00f46417e34a33aefe942490424035da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8e000bc8d3c099ebd6eb78c4358190a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#aa8e000bc8d3c099ebd6eb78c4358190a">tws_connect_info_clr_in_esco</a> (void)</td></tr>
+<tr class="separator:aa8e000bc8d3c099ebd6eb78c4358190a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ea5d111cb3247b426ff25346930d61b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a7ea5d111cb3247b426ff25346930d61b">tws_ble_connect_switch_bredr</a> (struct <a class="el" href="link__task_8h.html#structlink__task">link_task</a> *task)</td></tr>
+<tr class="separator:a7ea5d111cb3247b426ff25346930d61b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad832497b9dc85cc36153b00a19d8984c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#ad832497b9dc85cc36153b00a19d8984c">tws_connect_pause_in_esco</a> (struct <a class="el" href="link__task_8h.html#structlink__task">link_task</a> *task)</td></tr>
+<tr class="separator:ad832497b9dc85cc36153b00a19d8984c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b5a02df75692d5792962155af95d0cd"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a3b5a02df75692d5792962155af95d0cd">__le_adv_esco_enable</a> (u32 aa, u8 channel_map, u16 timeout, u8 type, u8 search_en, u8 role_type, u8 task_type, int(*completed)(struct ble_rx *, u8 role))</td></tr>
+<tr class="separator:a3b5a02df75692d5792962155af95d0cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2e59b5d770766171e38cc7cd544df31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#aa2e59b5d770766171e38cc7cd544df31">tws_bredr_master_connect_resume</a> ()</td></tr>
+<tr class="separator:aa2e59b5d770766171e38cc7cd544df31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a987d48d2696a6fee27c47001450e4ec0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a987d48d2696a6fee27c47001450e4ec0">tws_link_wait_connection_suspend</a> (struct <a class="el" href="link__task_8h.html#structlink__task">link_task</a> *task)</td></tr>
+<tr class="separator:a987d48d2696a6fee27c47001450e4ec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39fe7b495d03cd33b38a5898209b5444"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a39fe7b495d03cd33b38a5898209b5444">tws_le_esco_connect_handle</a> (struct <a class="el" href="link__task_8h.html#structlink__task">link_task</a> *task)</td></tr>
+<tr class="separator:a39fe7b495d03cd33b38a5898209b5444"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42ead98a88d460e2ba5076f73cdf92ea"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a42ead98a88d460e2ba5076f73cdf92ea">link_le_adv_enable</a> (u32 aa, u8 channel_map, u16 timeout, u8 type, u8 search_en, u8 role_type, u8 task_type, int(*completed)(struct ble_rx *, u8 role))</td></tr>
+<tr class="separator:a42ead98a88d460e2ba5076f73cdf92ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42416be67da1fb8d8e98d526574c93c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a42416be67da1fb8d8e98d526574c93c9">link_le_adv_disable</a> (int type)</td></tr>
+<tr class="separator:a42416be67da1fb8d8e98d526574c93c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78ad75be6051aeb025eabc661a2a30c5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a78ad75be6051aeb025eabc661a2a30c5">link_le_adv_esco_enable</a> (u32 aa, u8 channel_map, u16 timeout, u8 type, u8 search_en, u8 role_type, u8 task_type, int(*completed)(struct ble_rx *, u8 role))</td></tr>
+<tr class="separator:a78ad75be6051aeb025eabc661a2a30c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a224516d4a607703658cb8c5c1dc73089"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a224516d4a607703658cb8c5c1dc73089">link_le_adv_try_timeout_enable</a> (void *p)</td></tr>
+<tr class="separator:a224516d4a607703658cb8c5c1dc73089"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fcd18fff8a3723849d27d17e15d082b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a0fcd18fff8a3723849d27d17e15d082b">link_le_adv_set_timeout</a> (int timeout)</td></tr>
+<tr class="separator:a0fcd18fff8a3723849d27d17e15d082b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfc84feadfbb4ca4f118e135574c2ec9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#abfc84feadfbb4ca4f118e135574c2ec9">link_adv_try_start</a> (int timeout)</td></tr>
+<tr class="separator:abfc84feadfbb4ca4f118e135574c2ec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c04c0ace767f31044a93368b5f6602c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a9c04c0ace767f31044a93368b5f6602c">link_le_adv_try_start_enable</a> (u32 aa, u8 channel_map, u16 timeout, u8 type, u8 search_en, u8 role_type, u8 task_type, int(*completed)(struct ble_rx *, u8 role))</td></tr>
+<tr class="separator:a9c04c0ace767f31044a93368b5f6602c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a383d9538db43c6ed85991d5f6bb4ada3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a383d9538db43c6ed85991d5f6bb4ada3">link_le_adv_esco_try_timeout_enable</a> (void *p)</td></tr>
+<tr class="separator:a383d9538db43c6ed85991d5f6bb4ada3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb0330efdcf4c08c29fdd42bd61d3928"><td class="memItemLeft" align="right" valign="top">__BANK_TWS_BLE int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#afb0330efdcf4c08c29fdd42bd61d3928">link_le_adv_esco_try_start_enable</a> (u32 aa, u8 channel_map, u16 timeout, u8 type, u8 search_en, u8 role_type, u8 task_type, int(*completed)(struct ble_rx *, u8 role))</td></tr>
+<tr class="separator:afb0330efdcf4c08c29fdd42bd61d3928"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07719d5f59ac26e4c7a00b6ba89be7ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a07719d5f59ac26e4c7a00b6ba89be7ee">link_le_adv_try_start_disable</a> (int type)</td></tr>
+<tr class="separator:a07719d5f59ac26e4c7a00b6ba89be7ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe00136f93ecfe9ca155b3f3604b59e4"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#abe00136f93ecfe9ca155b3f3604b59e4">scan_resume</a> (struct <a class="el" href="link__task_8h.html#structlink__task">link_task</a> *task)</td></tr>
+<tr class="separator:abe00136f93ecfe9ca155b3f3604b59e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af19c137ac7fe537e567de23e513beece"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#af19c137ac7fe537e567de23e513beece">scan_suspend</a> (struct <a class="el" href="link__task_8h.html#structlink__task">link_task</a> *task)</td></tr>
+<tr class="separator:af19c137ac7fe537e567de23e513beece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3be4130af0804a14dce563a672c981d7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a3be4130af0804a14dce563a672c981d7">scan_disable</a> (int inirq)</td></tr>
+<tr class="separator:a3be4130af0804a14dce563a672c981d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8179f56bf5c6d84a2404b801a89d8e35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a8179f56bf5c6d84a2404b801a89d8e35">scan_disable_for_connect_timeout</a> (void)</td></tr>
+<tr class="separator:a8179f56bf5c6d84a2404b801a89d8e35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeab7c6da956e4b503116dfa268c65012"><td class="memItemLeft" align="right" valign="top">static __BANK_TWS_BLE int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#aeab7c6da956e4b503116dfa268c65012">__le_scan_enable</a> (u32 aa, u8 channel_map, u16 timeout, u8 type, u8 role_type, u8 task_type, int(*completed)(struct ble_rx *, u8 role))</td></tr>
+<tr class="separator:aeab7c6da956e4b503116dfa268c65012"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fa185d89975b98f2ffb573950ee11bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a7fa185d89975b98f2ffb573950ee11bd">link_le_scan_suspend_en</a> ()</td></tr>
+<tr class="separator:a7fa185d89975b98f2ffb573950ee11bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac389b488fecee0e652a5a949fe227e9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#ac389b488fecee0e652a5a949fe227e9b">link_le_scan_resume</a> (u16 slot)</td></tr>
+<tr class="separator:ac389b488fecee0e652a5a949fe227e9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a926ed0dff02c0c5d2a75d23df26b10"><td class="memItemLeft" align="right" valign="top">__BANK_TWS_BLE int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a9a926ed0dff02c0c5d2a75d23df26b10">link_le_scan_enable</a> (u32 aa, u8 channel_map, u16 timeout, u8 type, u8 role_type, u8 task_type, int(*completed)(struct ble_rx *, u8 role))</td></tr>
+<tr class="separator:a9a926ed0dff02c0c5d2a75d23df26b10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36f89d72ee5d950fdea988fcf7e8085c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a36f89d72ee5d950fdea988fcf7e8085c">link_le_scan_disable</a> (int type)</td></tr>
+<tr class="separator:a36f89d72ee5d950fdea988fcf7e8085c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab837abe40e78ef197c73d0c989c42533"><td class="memItemLeft" align="right" valign="top">__BANK_TWS_BLE_ENTRY void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#ab837abe40e78ef197c73d0c989c42533">link_le_scan_try_timeout_enable</a> (void *p)</td></tr>
+<tr class="separator:ab837abe40e78ef197c73d0c989c42533"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade5d00b771d8b2f761a38c903a11e7fb"><td class="memItemLeft" align="right" valign="top">__BANK_TWS_BLE int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#ade5d00b771d8b2f761a38c903a11e7fb">link_le_scan_try_start_enable</a> (u32 aa, u8 channel_map, u16 timeout, u8 type, u8 role_type, u8 task_type, int(*completed)(struct ble_rx *, u8 role))</td></tr>
+<tr class="separator:ade5d00b771d8b2f761a38c903a11e7fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13ad893731ad8729ec5ff3f5d9d6c718"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a13ad893731ad8729ec5ff3f5d9d6c718">link_le_scan_try_start_disable</a> (int type)</td></tr>
+<tr class="separator:a13ad893731ad8729ec5ff3f5d9d6c718"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e4254ed704aa6fb90680c2f14e547cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a1e4254ed704aa6fb90680c2f14e547cc">tws_try_connect_disable</a> (void)</td></tr>
+<tr class="separator:a1e4254ed704aa6fb90680c2f14e547cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3da98731219ea20485959a9ac854a89e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a3da98731219ea20485959a9ac854a89e">le_tws_connect_timer_handle</a> (int type, int timeout)</td></tr>
+<tr class="separator:a3da98731219ea20485959a9ac854a89e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:a2f751bae307712efc9d8a0e70dfff585"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structle__scan__parm__t.html">le_scan_parm_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a2f751bae307712efc9d8a0e70dfff585">le_scan_parm</a></td></tr>
+<tr class="separator:a2f751bae307712efc9d8a0e70dfff585"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a087fde37e4e81a1a7c135708b7a4faed"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structle__adv__parm__t.html">le_adv_parm_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a087fde37e4e81a1a7c135708b7a4faed">le_adv_esco_parm</a></td></tr>
+<tr class="separator:a087fde37e4e81a1a7c135708b7a4faed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5f48591eeac980902c3b4c85e29f6ae"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structle__adv__parm__t.html">le_adv_parm_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#ac5f48591eeac980902c3b4c85e29f6ae">le_adv_parm</a></td></tr>
+<tr class="separator:ac5f48591eeac980902c3b4c85e29f6ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72958c6c79e8d4000b5c4df995b4e9df"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="tws__le__link_8c.html#structlink__le__data">link_le_data</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a72958c6c79e8d4000b5c4df995b4e9df">tws_le_data</a></td></tr>
+<tr class="separator:a72958c6c79e8d4000b5c4df995b4e9df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf32227ee2e7d6ea515810337d1dc08a"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structlink__le__adv.html">link_le_adv</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#abf32227ee2e7d6ea515810337d1dc08a">le_adv</a> = NULL</td></tr>
+<tr class="separator:abf32227ee2e7d6ea515810337d1dc08a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0faa5bd485b7af74917946ec6bda3ea3"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structlink__le__scan.html">link_le_scan</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a0faa5bd485b7af74917946ec6bda3ea3">le_scan</a> = NULL</td></tr>
+<tr class="separator:a0faa5bd485b7af74917946ec6bda3ea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0db4c2addcd35525ea355b96d5c52e98"><td class="memItemLeft" align="right" valign="top">static u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a0db4c2addcd35525ea355b96d5c52e98">debug_ble_link_state</a> = 0</td></tr>
+<tr class="separator:a0db4c2addcd35525ea355b96d5c52e98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a279f92f812a3e6d80cb60f6b08db0ce9"><td class="memItemLeft" align="right" valign="top">static u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a279f92f812a3e6d80cb60f6b08db0ce9">tws_ble_timer</a> = 0xff</td></tr>
+<tr class="separator:a279f92f812a3e6d80cb60f6b08db0ce9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a336fc02a092d09b74c9551276c400922"><td class="memItemLeft" align="right" valign="top">static const struct <a class="el" href="structlink__task__ops.html">link_task_ops</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a336fc02a092d09b74c9551276c400922">adv_task_ops</a></td></tr>
+<tr class="separator:a336fc02a092d09b74c9551276c400922"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65951d68a5369ebe86abd681d432f756"><td class="memItemLeft" align="right" valign="top">static const struct <a class="el" href="structlink__task__ops.html">link_task_ops</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#a65951d68a5369ebe86abd681d432f756">adv_idle_task_ops</a></td></tr>
+<tr class="separator:a65951d68a5369ebe86abd681d432f756"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb377df08ca25252aa2b0668bc29338c"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#aeb377df08ca25252aa2b0668bc29338c">le_channel_map_tab</a> [3] = {0x01, 0x02, 0x04}</td></tr>
+<tr class="separator:aeb377df08ca25252aa2b0668bc29338c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addde4c09b3215be55403097a4465b21a"><td class="memItemLeft" align="right" valign="top">static const struct <a class="el" href="structlink__task__ops.html">link_task_ops</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__le__link_8c.html#addde4c09b3215be55403097a4465b21a">scan_task_ops</a></td></tr>
+<tr class="separator:addde4c09b3215be55403097a4465b21a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/><h2 class="groupheader">结构体说明</h2>
+<a name="structlink__le__data" id="structlink__le__data"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct link_le_data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="aafdd25fd06d0b54822e92450797da2cb"></a>u8</td>
+<td class="fieldname">
+data_indicate</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ae3cc88cdd7d13e54c7e0d11800b18f1d"></a>u8</td>
+<td class="fieldname">
+esco_indicate</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">宏定义说明</h2>
+<a class="anchor" id="af9446bd6aa82e87158d874dd1f1cc8c5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LINK_TYPE_LE_ADV&#160;&#160;&#160;<a class="el" href="link__task_8h.html#a2d5492e116eebd5075f247d21fb9db26a460077e74b302e6713c8f44cb2be4808">LINK_TYPE_PAGE_SCAN</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a331bc1f4096bee4b71610ea2a59628bb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LINK_TYPE_LE_ADV_TWS&#160;&#160;&#160;<a class="el" href="link__task_8h.html#a2d5492e116eebd5075f247d21fb9db26a66347329c0cfe146c07d5f79a84dca6f">LINK_TYPE_PAGE_SCAN_TWS</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a69800d4c0a8ef6116c049b377fe874c2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LINK_TYPE_LE_SCAN&#160;&#160;&#160;<a class="el" href="link__task_8h.html#a2d5492e116eebd5075f247d21fb9db26a56d4643441210095053c6cda36cce90f">LINK_TYPE_PAGE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7718df1f99c864f5f76aa661f448fc20"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_CHAR_ENABLE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abe76095a81e694a670d6c0e663cbff0f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_DEBUG_ENABLE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a04135f631fe91199f05b1d816dda8756"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_DUMP_ENABLE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9eeb6e067100d0dec6e53bce19a403e0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_ERROR_ENABLE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a69321c8a2a0b07a07fb5088e82e25eb0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_INFO_ENABLE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7ce0df38eb467e59f209470c8f5ac4e6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_TAG&#160;&#160;&#160;&quot;[TWS LE]&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6c6991cba0e2995d7d9aec73e0324317"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_TAG_CONST&#160;&#160;&#160;TWS_LE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a584b2371f9af9285bc915b5054319117"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TWS_IO_DEBUG_0</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">i, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab0343ba68d4d9bed52c8fd995aac3775"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TWS_IO_DEBUG_1</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">i, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5d92fa609f391600c6ab0dea2910d084"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TWS_IO_DEBUG_TOGGLE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">i, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">枚举类型说明</h2>
+<a class="anchor" id="abc6126af1d45847bc59afa0aa3216b04"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="abc6126af1d45847bc59afa0aa3216b04aafae13ab15cc9209d55cec5bf99080d5"></a>LE_TWS_TIME0&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="abc6126af1d45847bc59afa0aa3216b04a78c24ac9b24c06a84657ce81037c9593"></a>LE_TWS_TIME1&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="abc6126af1d45847bc59afa0aa3216b04a2b4d4eb2eb2bd5172df45beb93e59a65"></a>LE_TWS_TIME2&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="abc6126af1d45847bc59afa0aa3216b04a6890fdc898ad8ecdd412703025a886e5"></a>LE_TWS_TIME3&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="adc29c2ff13d900c2f185ee95427fb06c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="adc29c2ff13d900c2f185ee95427fb06ca46020c54eb02b9d8ffe05efca3af51dd"></a>LINK_LE_ADV_STATE&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="adc29c2ff13d900c2f185ee95427fb06ca9e8b7c9190286b046e99b5f0764d514b"></a>LINK_LE_SCAN_STATE&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="adc29c2ff13d900c2f185ee95427fb06ca1c1bd44341df758489fe152c13084525"></a>LINK_LE_ADV_TWS_STATE&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="adc29c2ff13d900c2f185ee95427fb06ca09c43e26f5941816da14c73a9fd2e29f"></a>LINK_LE_SCAN_TWS_STATE&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="af9aace1b44b73111e15aa39f06f43456"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__attribute__ </td>
+          <td>(</td>
+          <td class="paramtype">(weak)&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a91f1998e88bb3a9f3c47eae81cf7b4b6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int __le_adv_enable </td>
+          <td>(</td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>aa</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>channel_map</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>timeout</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>search_en</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>role_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>task_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int(*)(struct ble_rx *, u8 role)&#160;</td>
+          <td class="paramname"><em>completed</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3b5a02df75692d5792962155af95d0cd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int __le_adv_esco_enable </td>
+          <td>(</td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>aa</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>channel_map</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>timeout</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>search_en</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>role_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>task_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int(*)(struct ble_rx *, u8 role)&#160;</td>
+          <td class="paramname"><em>completed</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aeab7c6da956e4b503116dfa268c65012"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static __BANK_TWS_BLE int __le_scan_enable </td>
+          <td>(</td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>aa</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>channel_map</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>timeout</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>role_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>task_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int(*)(struct ble_rx *, u8 role)&#160;</td>
+          <td class="paramname"><em>completed</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adac86948c319b77b0cb70ba9556257f7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void adv_disable </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>inirq</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5f3704d281c0051b4f75dd1a7a1c1dbc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void adv_disable_for_connect_timeout </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5a04001c1571f2b79971f0d1f825fd52"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int adv_idle_resume </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="link__task_8h.html#structlink__task">link_task</a> *&#160;</td>
+          <td class="paramname"><em>task</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a04576828bd6d24f5ed5bbde711f4d8e7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int adv_idle_suspend </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="link__task_8h.html#structlink__task">link_task</a> *&#160;</td>
+          <td class="paramname"><em>task</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4c517786f5a9f4b3a8ec26995a5c1ad0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int adv_resume </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="link__task_8h.html#structlink__task">link_task</a> *&#160;</td>
+          <td class="paramname"><em>task</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad2e9620e3748a3d21422b9c7948fa3de"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int adv_suspend </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="link__task_8h.html#structlink__task">link_task</a> *&#160;</td>
+          <td class="paramname"><em>task</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a21636e21c9bbfa1906e0f99ebc51cff5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void adv_task_run_again </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa9d1d456f232157579197565bd903879"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool check_lmp_detch_over </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="add84cf1f2190ea09e9a30a30313268a9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 get_bredr_link_state </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8636d87c7b076704d291ec139ec1b8e5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void le_adv_close </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a158a531a4d6113d772b4b82e966cc94c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void le_adv_conn_data_reset </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aaa5798676a8f7d504198aceb25ee99bb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void le_adv_scan_response_set_data </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>scan_response_data_length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>scan_response_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a95484ad67a8f93ffcb32b09df9a8541f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void le_adv_search_data </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a99ed18a2889f0603e8963fcda1950a6a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void le_scan_close </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af3aea14cd3e66b95abb542181a9c3efb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int le_tws_connect_set_timer </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3da98731219ea20485959a9ac854a89e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int le_tws_connect_timer_handle </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abfc84feadfbb4ca4f118e135574c2ec9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void link_adv_try_start </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeout</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5b9ce6cc28728895b275e5d0c4833a18"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool link_idle_task_enable_detect </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a42416be67da1fb8d8e98d526574c93c9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void link_le_adv_disable </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a42ead98a88d460e2ba5076f73cdf92ea"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int link_le_adv_enable </td>
+          <td>(</td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>aa</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>channel_map</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>timeout</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>search_en</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>role_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>task_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int(*)(struct ble_rx *, u8 role)&#160;</td>
+          <td class="paramname"><em>completed</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a78ad75be6051aeb025eabc661a2a30c5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int link_le_adv_esco_enable </td>
+          <td>(</td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>aa</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>channel_map</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>timeout</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>search_en</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>role_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>task_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int(*)(struct ble_rx *, u8 role)&#160;</td>
+          <td class="paramname"><em>completed</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afb0330efdcf4c08c29fdd42bd61d3928"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__BANK_TWS_BLE int link_le_adv_esco_try_start_enable </td>
+          <td>(</td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>aa</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>channel_map</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>timeout</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>search_en</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>role_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>task_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int(*)(struct ble_rx *, u8 role)&#160;</td>
+          <td class="paramname"><em>completed</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a383d9538db43c6ed85991d5f6bb4ada3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void link_le_adv_esco_try_timeout_enable </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a64c8a299f01f71b64f3d6584fabbae12"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void link_le_adv_resume </td>
+          <td>(</td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>slot</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0fcd18fff8a3723849d27d17e15d082b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void link_le_adv_set_timeout </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeout</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae9a31eb8e83f70852e8fd5578cefd460"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void link_le_adv_suspend_en </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a07719d5f59ac26e4c7a00b6ba89be7ee"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void link_le_adv_try_start_disable </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9c04c0ace767f31044a93368b5f6602c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int link_le_adv_try_start_enable </td>
+          <td>(</td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>aa</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>channel_map</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>timeout</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>search_en</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>role_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>task_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int(*)(struct ble_rx *, u8 role)&#160;</td>
+          <td class="paramname"><em>completed</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a224516d4a607703658cb8c5c1dc73089"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void link_le_adv_try_timeout_enable </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a36f89d72ee5d950fdea988fcf7e8085c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void link_le_scan_disable </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9a926ed0dff02c0c5d2a75d23df26b10"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__BANK_TWS_BLE int link_le_scan_enable </td>
+          <td>(</td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>aa</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>channel_map</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>timeout</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>role_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>task_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int(*)(struct ble_rx *, u8 role)&#160;</td>
+          <td class="paramname"><em>completed</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac389b488fecee0e652a5a949fe227e9b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void link_le_scan_resume </td>
+          <td>(</td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>slot</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7fa185d89975b98f2ffb573950ee11bd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void link_le_scan_suspend_en </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a13ad893731ad8729ec5ff3f5d9d6c718"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void link_le_scan_try_start_disable </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ade5d00b771d8b2f761a38c903a11e7fb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__BANK_TWS_BLE int link_le_scan_try_start_enable </td>
+          <td>(</td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>aa</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>channel_map</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>timeout</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>role_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>task_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int(*)(struct ble_rx *, u8 role)&#160;</td>
+          <td class="paramname"><em>completed</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab837abe40e78ef197c73d0c989c42533"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__BANK_TWS_BLE_ENTRY void link_le_scan_try_timeout_enable </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a589927f3b0eaff0f7d1e176869cadabf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int link_tws_ble_inquiry_scan_enable </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acc37aebfe542a4139a98f96d1f4ab315"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void link_tws_inquiry_scan_disable </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3be4130af0804a14dce563a672c981d7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void scan_disable </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>inirq</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8179f56bf5c6d84a2404b801a89d8e35"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void scan_disable_for_connect_timeout </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abe00136f93ecfe9ca155b3f3604b59e4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int scan_resume </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="link__task_8h.html#structlink__task">link_task</a> *&#160;</td>
+          <td class="paramname"><em>task</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af19c137ac7fe537e567de23e513beece"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int scan_suspend </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="link__task_8h.html#structlink__task">link_task</a> *&#160;</td>
+          <td class="paramname"><em>task</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6153a1d2bd5a5eefcf9de6332b487855"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_adv_write_connect_info </td>
+          <td>(</td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>role</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>conn_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a14fcf24000bf1ea95243a9db6c43b575"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char tws_api_get_local_channel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae3fb8deda4a39b1073cf587bbcb3d40e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_api_set_local_channel </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>channel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a10ee8597259c61d4f02e7c9e36722274"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_ble_adv_preset_close </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad14a5b3bc17cdc745b827912b9196953"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_ble_adv_preset_reset </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a70f0f45ee3533d047066aee561efec65"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_ble_adv_preset_start </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a42403029d4048ec307435d4a49adba47"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_ble_adv_result_timerset </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9641ab4596eb5f82ff0949f50e37f481"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_ble_adv_timer_for_search </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8422b072e3ff538a5783d510257c0266"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_ble_clr_connect_info </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af4855d51685083ac792b23c72ce151d0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_ble_connect_disable </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7ea5d111cb3247b426ff25346930d61b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_ble_connect_switch_bredr </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="link__task_8h.html#structlink__task">link_task</a> *&#160;</td>
+          <td class="paramname"><em>task</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a578e0cef2ac42adda2cd851f9799d66b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_ble_get_connect_info </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="bredr__link_8h.html#structtws__conn__info">tws_conn_info</a> *&#160;</td>
+          <td class="paramname"><em>tc_info</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae44958759f38379869e46f06b4c16464"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_ble_get_search_info </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="bredr__link_8h.html#structtws__search__info">tws_search_info</a> *&#160;</td>
+          <td class="paramname"><em>search_info</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a68eade0c344804ad909f7d581a78f07c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_ble_search_timeout_clr </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3e92b6bcb2ab9cb179faa4bd3e409db4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_ble_sniff_slot_reset </td>
+          <td>(</td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa2e59b5d770766171e38cc7cd544df31"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_bredr_master_connect_resume </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8a7f4e286e2c86ff4ffb52eba74b5a34"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_bredr_master_connect_suspend </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa8e000bc8d3c099ebd6eb78c4358190a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_connect_info_clr_in_esco </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a00f46417e34a33aefe942490424035da"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_connect_kickstart_in_esco </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad832497b9dc85cc36153b00a19d8984c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_connect_pause_in_esco </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="link__task_8h.html#structlink__task">link_task</a> *&#160;</td>
+          <td class="paramname"><em>task</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac095ebac96c292d104ca869aa0315e19"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void tws_le_adv_kickstart </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a87595823733b1c87326cebf26c594594"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">_INLINE_ void tws_le_adv_scan_parm_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8bdf2ff9f41af099669505fce5713e80"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_le_adv_search_open </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4864a5ede3a61d645eaa9432c042a731"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_le_clr_esco_indicate </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1d98b4663575c3c13ab0cd0a5d3732b9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_le_data_reset </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a39fe7b495d03cd33b38a5898209b5444"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 tws_le_esco_connect_handle </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="link__task_8h.html#structlink__task">link_task</a> *&#160;</td>
+          <td class="paramname"><em>task</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a60ca991d715b5902b49192d43a4f18a9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 tws_le_get_data_indicate </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a591444224ee7c4667a0c0fbf0d9a2d69"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 tws_le_get_esco_indicate </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9263950ac4172491c94c9b789b93c721"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void tws_le_result_check </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa13bdf49ab2a108053db09fdcbb65d40"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_le_set_channel_map_in_esco </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5836f25132a3b686a63a1be2f24dad5d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_le_set_esco_indicate </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a43913ac2bd5c7ff7adedee7043b580a7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_link_wait_connection_resume </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="link__task_8h.html#structlink__task">link_task</a> *&#160;</td>
+          <td class="paramname"><em>task</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a987d48d2696a6fee27c47001450e4ec0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_link_wait_connection_suspend </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="link__task_8h.html#structlink__task">link_task</a> *&#160;</td>
+          <td class="paramname"><em>task</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4a74a65644ca79f3fa7c88a1491a8d64"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tws_ll_adv_close </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5307c960a473117c3005c1c9086f9528"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="ll__adv_8h.html#structle__adv__link">le_adv_link</a>* tws_ll_adv_link_get </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a226e7478623cf52034d47fef47bd71a9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tws_ll_adv_open </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a21592dde4418705c58b55678eaf891fb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tws_ll_adv_set_adv_data </td>
+          <td>(</td>
+          <td class="paramtype">const u8 *&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7541285524351d11b20ff6e0b37f7d9d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tws_ll_adv_set_params </td>
+          <td>(</td>
+          <td class="paramtype">const u8 *&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0842a440c7e09ff061a6bb178fd9a6f1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tws_ll_adv_set_scan_rsp_data </td>
+          <td>(</td>
+          <td class="paramtype">const u8 *&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a71fb602cfe6869e6332fedef9fa11323"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tws_ll_scan_close </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae9bb2884c3ababeea584e32b20828193"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="ll__scan_8h.html#structle__scan__link">le_scan_link</a>* tws_ll_scan_link_get </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6cc8d91bb61024bd2410f9e4730f96d0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tws_ll_scan_open </td>
+          <td>(</td>
+          <td class="paramtype">const u8 *&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af4c2a3cee87d19f58b19bcbdb8a14e36"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tws_ll_scan_set_params </td>
+          <td>(</td>
+          <td class="paramtype">const u8 *&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac924f117fa534c66ed3fe8841816ca1a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_remote_state_setting </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a618262020cd2ce1ff8a8936149a9af01"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_rx_probe_adv_pdu_handler </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="ll__adv_8h.html#structle__adv__link">le_adv_link</a> *&#160;</td>
+          <td class="paramname"><em>link</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct ble_rx *&#160;</td>
+          <td class="paramname"><em>rx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6452d2316b3a418e0a9351f44bb9ac81"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_rx_probe_scan_pdu_handler </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="ll__scan_8h.html#structle__scan__link">le_scan_link</a> *&#160;</td>
+          <td class="paramname"><em>link</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct ble_rx *&#160;</td>
+          <td class="paramname"><em>rx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1e4254ed704aa6fb90680c2f14e547cc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_try_connect_disable </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a class="anchor" id="a65951d68a5369ebe86abd681d432f756"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const struct <a class="el" href="structlink__task__ops.html">link_task_ops</a> adv_idle_task_ops</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>初始值:</b><div class="fragment"><div class="line">= {</div><div class="line">    .resume  = <a class="code" href="tws__le__link_8c.html#a5a04001c1571f2b79971f0d1f825fd52">adv_idle_resume</a>,</div><div class="line">    .suspend = <a class="code" href="tws__le__link_8c.html#a04576828bd6d24f5ed5bbde711f4d8e7">adv_idle_suspend</a>,</div><div class="line">}</div><div class="ttc" id="tws__le__link_8c_html_a04576828bd6d24f5ed5bbde711f4d8e7"><div class="ttname"><a href="tws__le__link_8c.html#a04576828bd6d24f5ed5bbde711f4d8e7">adv_idle_suspend</a></div><div class="ttdeci">static int adv_idle_suspend(struct link_task *task)</div><div class="ttdef"><b>Definition:</b> tws_le_link.c:561</div></div>
+<div class="ttc" id="tws__le__link_8c_html_a5a04001c1571f2b79971f0d1f825fd52"><div class="ttname"><a href="tws__le__link_8c.html#a5a04001c1571f2b79971f0d1f825fd52">adv_idle_resume</a></div><div class="ttdeci">static int adv_idle_resume(struct link_task *task)</div><div class="ttdef"><b>Definition:</b> tws_le_link.c:555</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a336fc02a092d09b74c9551276c400922"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const struct <a class="el" href="structlink__task__ops.html">link_task_ops</a> adv_task_ops</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>初始值:</b><div class="fragment"><div class="line">= {</div><div class="line">    .resume  = <a class="code" href="tws__le__link_8c.html#a4c517786f5a9f4b3a8ec26995a5c1ad0">adv_resume</a>,</div><div class="line">    .suspend = <a class="code" href="tws__le__link_8c.html#ad2e9620e3748a3d21422b9c7948fa3de">adv_suspend</a>,</div><div class="line">}</div><div class="ttc" id="tws__le__link_8c_html_a4c517786f5a9f4b3a8ec26995a5c1ad0"><div class="ttname"><a href="tws__le__link_8c.html#a4c517786f5a9f4b3a8ec26995a5c1ad0">adv_resume</a></div><div class="ttdeci">static int adv_resume(struct link_task *task)</div><div class="ttdef"><b>Definition:</b> tws_le_link.c:383</div></div>
+<div class="ttc" id="tws__le__link_8c_html_ad2e9620e3748a3d21422b9c7948fa3de"><div class="ttname"><a href="tws__le__link_8c.html#ad2e9620e3748a3d21422b9c7948fa3de">adv_suspend</a></div><div class="ttdeci">static int adv_suspend(struct link_task *task)</div><div class="ttdef"><b>Definition:</b> tws_le_link.c:432</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a0db4c2addcd35525ea355b96d5c52e98"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 debug_ble_link_state = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abf32227ee2e7d6ea515810337d1dc08a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structlink__le__adv.html">link_le_adv</a>* le_adv = NULL</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a087fde37e4e81a1a7c135708b7a4faed"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structle__adv__parm__t.html">le_adv_parm_t</a> le_adv_esco_parm</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac5f48591eeac980902c3b4c85e29f6ae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structle__adv__parm__t.html">le_adv_parm_t</a> le_adv_parm</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aeb377df08ca25252aa2b0668bc29338c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 le_channel_map_tab[3] = {0x01, 0x02, 0x04}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0faa5bd485b7af74917946ec6bda3ea3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structlink__le__scan.html">link_le_scan</a>* le_scan = NULL</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2f751bae307712efc9d8a0e70dfff585"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structle__scan__parm__t.html">le_scan_parm_t</a> le_scan_parm</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="addde4c09b3215be55403097a4465b21a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const struct <a class="el" href="structlink__task__ops.html">link_task_ops</a> scan_task_ops</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>初始值:</b><div class="fragment"><div class="line">= {</div><div class="line">    .resume  = <a class="code" href="tws__le__link_8c.html#abe00136f93ecfe9ca155b3f3604b59e4">scan_resume</a>,</div><div class="line">    .suspend = <a class="code" href="tws__le__link_8c.html#af19c137ac7fe537e567de23e513beece">scan_suspend</a>,</div><div class="line">}</div><div class="ttc" id="tws__le__link_8c_html_af19c137ac7fe537e567de23e513beece"><div class="ttname"><a href="tws__le__link_8c.html#af19c137ac7fe537e567de23e513beece">scan_suspend</a></div><div class="ttdeci">static int scan_suspend(struct link_task *task)</div><div class="ttdef"><b>Definition:</b> tws_le_link.c:983</div></div>
+<div class="ttc" id="tws__le__link_8c_html_abe00136f93ecfe9ca155b3f3604b59e4"><div class="ttname"><a href="tws__le__link_8c.html#abe00136f93ecfe9ca155b3f3604b59e4">scan_resume</a></div><div class="ttdeci">static int scan_resume(struct link_task *task)</div><div class="ttdef"><b>Definition:</b> tws_le_link.c:964</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a279f92f812a3e6d80cb60f6b08db0ce9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 tws_ble_timer = 0xff</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a72958c6c79e8d4000b5c4df995b4e9df"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="tws__le__link_8c.html#structlink__le__data">link_le_data</a> tws_le_data</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

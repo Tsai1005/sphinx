@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structadvertising__data" kind="struct" language="C++" prot="public">
+    <compoundname>advertising_data</compoundname>
+    <includes refid="ll__defines_8h" local="no">ll_defines.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structadvertising__data_1ad016ee363d90119906b71bd4387cf245" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 advertising_data::length</definition>
+        <argsstring></argsstring>
+        <name>length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1138" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structadvertising__data_1a5b5a28fc73abc664641e7c7e60e85c36" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 advertising_data::data[31]</definition>
+        <argsstring>[31]</argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1139" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1139" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1137" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1137" bodyend="1140"/>
+    <listofallmembers>
+      <member refid="structadvertising__data_1a5b5a28fc73abc664641e7c7e60e85c36" prot="public" virt="non-virtual"><scope>advertising_data</scope><name>data</name></member>
+      <member refid="structadvertising__data_1ad016ee363d90119906b71bd4387cf245" prot="public" virt="non-virtual"><scope>advertising_data</scope><name>length</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

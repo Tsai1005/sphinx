@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structlctrIsoalTxCtx__t" kind="struct" language="C++" prot="public">
+    <compoundname>lctrIsoalTxCtx_t</compoundname>
+    <includes refid="ll__iso_8h" local="no">ll_iso.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlctrIsoalTxCtx__t_1a82346f29528550357b51b96e73f18a29" prot="public" static="no" mutable="no">
+        <type>struct lbuff_head *</type>
+        <definition>struct lbuff_head* lctrIsoalTxCtx_t::pendSduQ</definition>
+        <argsstring></argsstring>
+        <name>pendSduQ</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pending PDU fragments </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="181" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrIsoalTxCtx__t_1a18ffd27442346da2da866fe7ed10fa4a" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lctrIsoalTxCtx_t::pendQueueSize</definition>
+        <argsstring></argsstring>
+        <name>pendQueueSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pending queue size. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="182" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrIsoalTxCtx__t_1a9af1c3fd1de3c3ec3ba6d7bc5d327990" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lctrIsoalTxCtx_t::compSdu</definition>
+        <argsstring></argsstring>
+        <name>compSdu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of completed SDUs for current ISO event. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="183" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrIsoalTxCtx__t_1aac32dab437c32a4f4c1321fbf2bb2a22" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* lctrIsoalTxCtx_t::pPendPduBuf</definition>
+        <argsstring></argsstring>
+        <name>pPendPduBuf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to incomplete PDU buffer. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="184" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrIsoalTxCtx__t_1a493f3d6ee2c339e32a14b17e36628d63" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lctrIsoalTxCtx_t::pduOffset</definition>
+        <argsstring></argsstring>
+        <name>pduOffset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset of incomplete PDU. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="185" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Transmit ISOAL Context. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="180" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="180" bodyend="186"/>
+    <listofallmembers>
+      <member refid="structlctrIsoalTxCtx__t_1a9af1c3fd1de3c3ec3ba6d7bc5d327990" prot="public" virt="non-virtual"><scope>lctrIsoalTxCtx_t</scope><name>compSdu</name></member>
+      <member refid="structlctrIsoalTxCtx__t_1a493f3d6ee2c339e32a14b17e36628d63" prot="public" virt="non-virtual"><scope>lctrIsoalTxCtx_t</scope><name>pduOffset</name></member>
+      <member refid="structlctrIsoalTxCtx__t_1a18ffd27442346da2da866fe7ed10fa4a" prot="public" virt="non-virtual"><scope>lctrIsoalTxCtx_t</scope><name>pendQueueSize</name></member>
+      <member refid="structlctrIsoalTxCtx__t_1a82346f29528550357b51b96e73f18a29" prot="public" virt="non-virtual"><scope>lctrIsoalTxCtx_t</scope><name>pendSduQ</name></member>
+      <member refid="structlctrIsoalTxCtx__t_1aac32dab437c32a4f4c1321fbf2bb2a22" prot="public" virt="non-virtual"><scope>lctrIsoalTxCtx_t</scope><name>pPendPduBuf</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structlctrCisRsp__t" kind="struct" language="C++" prot="public">
+    <compoundname>lctrCisRsp_t</compoundname>
+    <includes refid="ll__defines_8h" local="no">ll_defines.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlctrCisRsp__t_1a0847494870de0b8e21256308957508f2" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t lctrCisRsp_t::cisOffMinUsec</definition>
+        <argsstring></argsstring>
+        <name>cisOffMinUsec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Contain the minimum time between the CE and the first CIS anchor point. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="969" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="969" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrCisRsp__t_1ab21df9cebaed48eba531d71f635ce766" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t lctrCisRsp_t::cisOffMaxUsec</definition>
+        <argsstring></argsstring>
+        <name>cisOffMaxUsec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Contain the maximum time between the CE and the first CIS anchor point. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="970" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="970" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrCisRsp__t_1afb36751264b636c0859eab9f0ec1d86d" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lctrCisRsp_t::ceRef</definition>
+        <argsstring></argsstring>
+        <name>ceRef</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Contain the reference CE where offsets are applied. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="971" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="971" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>CIS response PDU. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="968" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="968" bodyend="972"/>
+    <listofallmembers>
+      <member refid="structlctrCisRsp__t_1afb36751264b636c0859eab9f0ec1d86d" prot="public" virt="non-virtual"><scope>lctrCisRsp_t</scope><name>ceRef</name></member>
+      <member refid="structlctrCisRsp__t_1ab21df9cebaed48eba531d71f635ce766" prot="public" virt="non-virtual"><scope>lctrCisRsp_t</scope><name>cisOffMaxUsec</name></member>
+      <member refid="structlctrCisRsp__t_1a0847494870de0b8e21256308957508f2" prot="public" virt="non-virtual"><scope>lctrCisRsp_t</scope><name>cisOffMinUsec</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

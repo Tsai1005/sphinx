@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structslot__timer__handle" kind="struct" language="C++" prot="public">
+    <compoundname>slot_timer_handle</compoundname>
+    <includes refid="bredr__link_8h" local="no">bredr_link.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structslot__timer__handle_1a7be892dfbab1844e8cbb3b5d2db445ac" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* slot_timer_handle::priv</definition>
+        <argsstring></argsstring>
+        <name>priv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="664" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="664" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structslot__timer__handle_1ac16be587bb0c74334fe6fbfb906c2920" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* slot_timer_handle::func) (void *)</definition>
+        <argsstring>)(void *)</argsstring>
+        <name>func</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="665" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="665" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="663" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="663" bodyend="666"/>
+    <listofallmembers>
+      <member refid="structslot__timer__handle_1ac16be587bb0c74334fe6fbfb906c2920" prot="public" virt="non-virtual"><scope>slot_timer_handle</scope><name>func</name></member>
+      <member refid="structslot__timer__handle_1a7be892dfbab1844e8cbb3b5d2db445ac" prot="public" virt="non-virtual"><scope>slot_timer_handle</scope><name>priv</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

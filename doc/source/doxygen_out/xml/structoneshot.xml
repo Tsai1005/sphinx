@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structoneshot" kind="struct" language="C++" prot="public">
+    <compoundname>oneshot</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structoneshot_1a6bb9813015027067bf979373aff27a7d" prot="public" static="no" mutable="no">
+        <type>struct list_head</type>
+        <definition>struct list_head oneshot::entry</definition>
+        <argsstring></argsstring>
+        <name>entry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/link_layer.c" line="2102" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/link_layer.c" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structoneshot_1a8cfedd4ca3c52522d5d0a03e8b55aae1" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* oneshot::func) (void *priv)</definition>
+        <argsstring>)(void *priv)</argsstring>
+        <name>func</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/link_layer.c" line="53" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/link_layer.c" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structoneshot_1a246d3b6525f663fdc35a89bc13c2a66f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int oneshot::data[0]</definition>
+        <argsstring>[0]</argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/link_layer.c" line="54" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/link_layer.c" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/link_layer.c" line="51" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/link_layer.c" bodystart="51" bodyend="55"/>
+    <listofallmembers>
+      <member refid="structoneshot_1a246d3b6525f663fdc35a89bc13c2a66f" prot="public" virt="non-virtual"><scope>oneshot</scope><name>data</name></member>
+      <member refid="structoneshot_1a6bb9813015027067bf979373aff27a7d" prot="public" virt="non-virtual"><scope>oneshot</scope><name>entry</name></member>
+      <member refid="structoneshot_1a8cfedd4ca3c52522d5d0a03e8b55aae1" prot="public" virt="non-virtual"><scope>oneshot</scope><name>func</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

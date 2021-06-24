@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structlctrBisDataPduHdr__t" kind="struct" language="C++" prot="public">
+    <compoundname>lctrBisDataPduHdr_t</compoundname>
+    <includes refid="ll__iso_8h" local="no">ll_iso.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlctrBisDataPduHdr__t_1afe06c1b1d398987f5ea1e92219b26207" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__defines_8h_1aa7ad7b5c0167e18a1dd88b4f72431428" kindref="member">LlIsoLlid_t</ref></type>
+        <definition>LlIsoLlid_t lctrBisDataPduHdr_t::llid</definition>
+        <argsstring></argsstring>
+        <name>llid</name>
+        <bitfield> 8</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>PDU type. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="142" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrBisDataPduHdr__t_1a6c59709a3d59e709b9055ffdfc6cb3c5" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lctrBisDataPduHdr_t::cssn</definition>
+        <argsstring></argsstring>
+        <name>cssn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Control Subevent Sequence Number. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="143" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrBisDataPduHdr__t_1a5b96a385bb003d42bd3feaf5a8128234" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref></type>
+        <definition>bool_t lctrBisDataPduHdr_t::cstf</definition>
+        <argsstring></argsstring>
+        <name>cstf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Control Subevent Submission Flag. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="144" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrBisDataPduHdr__t_1aa00130d31d1f8e7d75378c6010a094d0" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lctrBisDataPduHdr_t::len</definition>
+        <argsstring></argsstring>
+        <name>len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Payload length. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="145" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>ISO BIS PDU header. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="141" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="141" bodyend="146"/>
+    <listofallmembers>
+      <member refid="structlctrBisDataPduHdr__t_1a6c59709a3d59e709b9055ffdfc6cb3c5" prot="public" virt="non-virtual"><scope>lctrBisDataPduHdr_t</scope><name>cssn</name></member>
+      <member refid="structlctrBisDataPduHdr__t_1a5b96a385bb003d42bd3feaf5a8128234" prot="public" virt="non-virtual"><scope>lctrBisDataPduHdr_t</scope><name>cstf</name></member>
+      <member refid="structlctrBisDataPduHdr__t_1aa00130d31d1f8e7d75378c6010a094d0" prot="public" virt="non-virtual"><scope>lctrBisDataPduHdr_t</scope><name>len</name></member>
+      <member refid="structlctrBisDataPduHdr__t_1afe06c1b1d398987f5ea1e92219b26207" prot="public" virt="non-virtual"><scope>lctrBisDataPduHdr_t</scope><name>llid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

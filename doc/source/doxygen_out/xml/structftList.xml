@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structftList" kind="struct" language="C++" prot="public">
+    <compoundname>ftList</compoundname>
+    <includes refid="ll__cis_8h" local="no">ll_cis.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structftList_1acd06228f9e60e2ca18e6c69ea5da5e84" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__cis_8h_1a6e01284f1de315d8179780eae9b67f5a" kindref="member">lctrFtParamNode_t</ref> *</type>
+        <definition>lctrFtParamNode_t* ftList::pHead</definition>
+        <argsstring></argsstring>
+        <name>pHead</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to the head of the CIS linked list. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="102" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structftList_1a527497c82e3802bc05e3e2e2728f4e36" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__cis_8h_1a6e01284f1de315d8179780eae9b67f5a" kindref="member">lctrFtParamNode_t</ref> *</type>
+        <definition>lctrFtParamNode_t* ftList::pTail</definition>
+        <argsstring></argsstring>
+        <name>pTail</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to the tail of the CIS linked list. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="103" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structftList_1a3b58f5ec05f1be2560a7ef7ff1fe75d2" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ftList::numNodes</definition>
+        <argsstring></argsstring>
+        <name>numNodes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of nodes in the CIS linked list. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="104" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Flush timeout parameter list. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1052">
+        <label>ftList</label>
+        <link refid="structftList"/>
+        <childnode refid="1053" relation="usage">
+          <edgelabel>pHead</edgelabel>
+          <edgelabel>pTail</edgelabel>
+        </childnode>
+      </node>
+      <node id="1053">
+        <label>ftNode</label>
+        <link refid="structftNode"/>
+        <childnode refid="1053" relation="usage">
+          <edgelabel>pNext</edgelabel>
+        </childnode>
+        <childnode refid="1054" relation="usage">
+          <edgelabel>ftParam</edgelabel>
+        </childnode>
+      </node>
+      <node id="1054">
+        <label>lctrFtParam_t</label>
+        <link refid="structlctrFtParam__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="101" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="101" bodyend="105"/>
+    <listofallmembers>
+      <member refid="structftList_1a3b58f5ec05f1be2560a7ef7ff1fe75d2" prot="public" virt="non-virtual"><scope>ftList</scope><name>numNodes</name></member>
+      <member refid="structftList_1acd06228f9e60e2ca18e6c69ea5da5e84" prot="public" virt="non-virtual"><scope>ftList</scope><name>pHead</name></member>
+      <member refid="structftList_1a527497c82e3802bc05e3e2e2728f4e36" prot="public" virt="non-virtual"><scope>ftList</scope><name>pTail</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

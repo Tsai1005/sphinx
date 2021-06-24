@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>JL Adapter SDK: /data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_manager.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">JL Adapter SDK
+   &#160;<span id="projectnumber">v0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_5aa4d6ccf34d88a270949875c15714e5.html">btctrler</a></li><li class="navelem"><a class="el" href="dir_119de8fbed06b648fc4b1712ddece599.html">include_v2</a></li><li class="navelem"><a class="el" href="dir_7476a7b722cbc192f245c3fdf3b7967b.html">common</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">link_manager.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="link__manager_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _LINK_MANAGER_H_</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define _LINK_MANAGER_H_</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;typedef.h&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//support Classic</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// #include &quot;lmp.h&quot;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">//support LE</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="link__layer_8h.html">ble/link_layer.h</a>&quot;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="link__manager_8h.html#a024a536642a4a0e426ef6518f1bc2fbb">   11</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div><div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="link__manager_8h.html#a024a536642a4a0e426ef6518f1bc2fbbad7f2f27e620addf19ddbf298e708f79a">   12</a></span>&#160;    <a class="code" href="link__manager_8h.html#a024a536642a4a0e426ef6518f1bc2fbbad7f2f27e620addf19ddbf298e708f79a">LINK_TYPE_CLASSIC</a>   = 0,</div><div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="link__manager_8h.html#a024a536642a4a0e426ef6518f1bc2fbbaead7ee5bcdb60a3fe0664776fb7af420">   13</a></span>&#160;    <a class="code" href="link__manager_8h.html#a024a536642a4a0e426ef6518f1bc2fbbaead7ee5bcdb60a3fe0664776fb7af420">LINK_TYPE_LE</a>,</div><div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="link__manager_8h.html#a024a536642a4a0e426ef6518f1bc2fbbae4636feed1b2319d7cdf75eaf5f38ca9">   14</a></span>&#160;    <a class="code" href="link__manager_8h.html#a024a536642a4a0e426ef6518f1bc2fbbae4636feed1b2319d7cdf75eaf5f38ca9">LINK_TYPE_UNKNOWN</a>   = 0xfe</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;} <a class="code" href="link__manager_8h.html#a024a536642a4a0e426ef6518f1bc2fbb">link_type_t</a>;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="link__manager_8h.html">   17</a></span>&#160;<span class="keyword">struct </span><a class="code" href="link__manager_8h.html#structlogic__link">logic_link</a> {</div><div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="link__manager_8h.html#a30c53a8a42a8adc184ac2339e0cc024a">   18</a></span>&#160;    <span class="keyword">struct </span>list_head    <a class="code" href="link__manager_8h.html#a30c53a8a42a8adc184ac2339e0cc024a">entry</a>;</div><div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="link__manager_8h.html#a955b994f1c6a3ac9d74b121d544d833a">   19</a></span>&#160;    <a class="code" href="link__manager_8h.html#a024a536642a4a0e426ef6518f1bc2fbb">link_type_t</a>         <a class="code" href="link__manager_8h.html#a955b994f1c6a3ac9d74b121d544d833a">type</a>;</div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="link__manager_8h.html#a1850f7bcf73f04fa27ae1d904b2beb52">   20</a></span>&#160;    u16                 <a class="code" href="link__manager_8h.html#a1850f7bcf73f04fa27ae1d904b2beb52">conn_handle</a>;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="link__manager_8h.html">   22</a></span>&#160;    <span class="keyword">union </span>{</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keyword">struct </span><a class="code" href="link__layer_8h.html#structle__link">le_link</a> le;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="comment">// struct classic_link classic;</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    };</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;};</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="link__manager_8h.html#adcad25cd75f20bd4bee3069defb74837">logic_link_is_le</a>(<span class="keyword">struct</span> <a class="code" href="link__manager_8h.html#structlogic__link">logic_link</a> *link);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">struct </span><a class="code" href="link__manager_8h.html#structlogic__link">logic_link</a> *<a class="code" href="link__manager_8h.html#afb4a9cb081788aa79f5a2e7eab935692">logic_link_by_handle</a>(u16 handle);</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="link__manager_8h_html_a30c53a8a42a8adc184ac2339e0cc024a"><div class="ttname"><a href="link__manager_8h.html#a30c53a8a42a8adc184ac2339e0cc024a">logic_link::entry</a></div><div class="ttdeci">struct list_head entry</div><div class="ttdef"><b>Definition:</b> link_manager.h:18</div></div>
+<div class="ttc" id="link__layer_8h_html_structle__link"><div class="ttname"><a href="link__layer_8h.html#structle__link">le_link</a></div><div class="ttdef"><b>Definition:</b> link_layer.h:327</div></div>
+<div class="ttc" id="link__layer_8h_html"><div class="ttname"><a href="link__layer_8h.html">link_layer.h</a></div></div>
+<div class="ttc" id="link__manager_8h_html_a024a536642a4a0e426ef6518f1bc2fbbad7f2f27e620addf19ddbf298e708f79a"><div class="ttname"><a href="link__manager_8h.html#a024a536642a4a0e426ef6518f1bc2fbbad7f2f27e620addf19ddbf298e708f79a">LINK_TYPE_CLASSIC</a></div><div class="ttdef"><b>Definition:</b> link_manager.h:12</div></div>
+<div class="ttc" id="link__manager_8h_html_a955b994f1c6a3ac9d74b121d544d833a"><div class="ttname"><a href="link__manager_8h.html#a955b994f1c6a3ac9d74b121d544d833a">logic_link::type</a></div><div class="ttdeci">link_type_t type</div><div class="ttdef"><b>Definition:</b> link_manager.h:19</div></div>
+<div class="ttc" id="link__manager_8h_html_a024a536642a4a0e426ef6518f1bc2fbbae4636feed1b2319d7cdf75eaf5f38ca9"><div class="ttname"><a href="link__manager_8h.html#a024a536642a4a0e426ef6518f1bc2fbbae4636feed1b2319d7cdf75eaf5f38ca9">LINK_TYPE_UNKNOWN</a></div><div class="ttdef"><b>Definition:</b> link_manager.h:14</div></div>
+<div class="ttc" id="link__manager_8h_html_a024a536642a4a0e426ef6518f1bc2fbb"><div class="ttname"><a href="link__manager_8h.html#a024a536642a4a0e426ef6518f1bc2fbb">link_type_t</a></div><div class="ttdeci">link_type_t</div><div class="ttdef"><b>Definition:</b> link_manager.h:11</div></div>
+<div class="ttc" id="link__manager_8h_html_a1850f7bcf73f04fa27ae1d904b2beb52"><div class="ttname"><a href="link__manager_8h.html#a1850f7bcf73f04fa27ae1d904b2beb52">logic_link::conn_handle</a></div><div class="ttdeci">u16 conn_handle</div><div class="ttdef"><b>Definition:</b> link_manager.h:20</div></div>
+<div class="ttc" id="link__manager_8h_html_structlogic__link"><div class="ttname"><a href="link__manager_8h.html#structlogic__link">logic_link</a></div><div class="ttdef"><b>Definition:</b> link_manager.h:17</div></div>
+<div class="ttc" id="link__manager_8h_html_adcad25cd75f20bd4bee3069defb74837"><div class="ttname"><a href="link__manager_8h.html#adcad25cd75f20bd4bee3069defb74837">logic_link_is_le</a></div><div class="ttdeci">bool logic_link_is_le(struct logic_link *link)</div></div>
+<div class="ttc" id="link__manager_8h_html_afb4a9cb081788aa79f5a2e7eab935692"><div class="ttname"><a href="link__manager_8h.html#afb4a9cb081788aa79f5a2e7eab935692">logic_link_by_handle</a></div><div class="ttdeci">struct logic_link * logic_link_by_handle(u16 handle)</div></div>
+<div class="ttc" id="link__manager_8h_html_a024a536642a4a0e426ef6518f1bc2fbbaead7ee5bcdb60a3fe0664776fb7af420"><div class="ttname"><a href="link__manager_8h.html#a024a536642a4a0e426ef6518f1bc2fbbaead7ee5bcdb60a3fe0664776fb7af420">LINK_TYPE_LE</a></div><div class="ttdef"><b>Definition:</b> link_manager.h:13</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

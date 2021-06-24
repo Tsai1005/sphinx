@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="struct____ext__adv__group" kind="struct" language="C++" prot="public">
+    <compoundname>__ext_adv_group</compoundname>
+    <includes refid="ll__ext__adv_8h" local="no">ll_ext_adv.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct____ext__adv__group_1ab4a8a4363b511874014f8bd6a7f2afba" prot="public" static="no" mutable="no">
+        <type>struct list_head</type>
+        <definition>struct list_head __ext_adv_group::entry</definition>
+        <argsstring></argsstring>
+        <name>entry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="244" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct____ext__adv__group_1a42b5a9bdb908679121a60738e75875e2" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structext__advertising__param" kindref="compound">ext_advertising_param</ref></type>
+        <definition>struct ext_advertising_param __ext_adv_group::ext_adv_param</definition>
+        <argsstring></argsstring>
+        <name>ext_adv_param</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="244" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct____ext__adv__group_1a1c912d0cbbe2b44691f921e74ee1e8a9" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structext__advertising__data" kindref="compound">ext_advertising_data</ref></type>
+        <definition>struct ext_advertising_data __ext_adv_group::ext_adv_data</definition>
+        <argsstring></argsstring>
+        <name>ext_adv_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="244" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct____ext__adv__group_1a3d7ed15d4d7a4e8ce2c14efe55364e4d" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structext__advertising__enable" kindref="compound">ext_advertising_enable</ref></type>
+        <definition>struct ext_advertising_enable __ext_adv_group::ext_adv_en</definition>
+        <argsstring></argsstring>
+        <name>ext_adv_en</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="244" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" bodystart="253" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct____ext__adv__group_1addce7dcf415b77c54fd1fa6a6ee83bab" prot="public" static="no" mutable="no">
+        <type>periodic_adv_data_t *</type>
+        <definition>periodic_adv_data_t* __ext_adv_group::periodic_adv_data</definition>
+        <argsstring></argsstring>
+        <name>periodic_adv_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="256" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct____ext__adv__group_1a81a1cf38bdcd8a03b0124202704870b7" prot="public" static="no" mutable="no">
+        <type>periodic_param_t *</type>
+        <definition>periodic_param_t* __ext_adv_group::periodic_param</definition>
+        <argsstring></argsstring>
+        <name>periodic_param</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="257" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" bodystart="257" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct____ext__adv__group_1a138f5cf2ec56e72c2e9f44792901c69f" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structconnless__cte__info" kindref="compound">connless_cte_info</ref> *</type>
+        <definition>struct connless_cte_info* __ext_adv_group::cte_info</definition>
+        <argsstring></argsstring>
+        <name>cte_info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="259" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct____ext__adv__group_1ab6694507854f435af6ff22404cb731cc" prot="public" static="no" mutable="no">
+        <type>struct __ext_adv_group::@64</type>
+        <definition>struct __ext_adv_group::@64  __ext_adv_group::acad</definition>
+        <argsstring></argsstring>
+        <name>acad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="265" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="895">
+        <label>ext_advertising_param</label>
+        <link refid="structext__advertising__param"/>
+      </node>
+      <node id="892">
+        <label>__ext_adv_group</label>
+        <link refid="struct____ext__adv__group"/>
+        <childnode refid="893" relation="usage">
+          <edgelabel>cte_info</edgelabel>
+        </childnode>
+        <childnode refid="894" relation="usage">
+          <edgelabel>ext_adv_data</edgelabel>
+        </childnode>
+        <childnode refid="895" relation="usage">
+          <edgelabel>ext_adv_param</edgelabel>
+        </childnode>
+        <childnode refid="896" relation="usage">
+          <edgelabel>ext_adv_en</edgelabel>
+        </childnode>
+      </node>
+      <node id="896">
+        <label>ext_advertising_enable</label>
+        <link refid="structext__advertising__enable"/>
+      </node>
+      <node id="893">
+        <label>connless_cte_info</label>
+        <link refid="structconnless__cte__info"/>
+      </node>
+      <node id="894">
+        <label>ext_advertising_data</label>
+        <link refid="structext__advertising__data"/>
+      </node>
+    </collaborationgraph>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="247" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" bodystart="247" bodyend="267"/>
+    <listofallmembers>
+      <member refid="struct____ext__adv__group_1ab6694507854f435af6ff22404cb731cc" prot="public" virt="non-virtual"><scope>__ext_adv_group</scope><name>acad</name></member>
+      <member refid="struct____ext__adv__group_1a138f5cf2ec56e72c2e9f44792901c69f" prot="public" virt="non-virtual"><scope>__ext_adv_group</scope><name>cte_info</name></member>
+      <member refid="struct____ext__adv__group_1ab4a8a4363b511874014f8bd6a7f2afba" prot="public" virt="non-virtual"><scope>__ext_adv_group</scope><name>entry</name></member>
+      <member refid="struct____ext__adv__group_1a1c912d0cbbe2b44691f921e74ee1e8a9" prot="public" virt="non-virtual"><scope>__ext_adv_group</scope><name>ext_adv_data</name></member>
+      <member refid="struct____ext__adv__group_1a3d7ed15d4d7a4e8ce2c14efe55364e4d" prot="public" virt="non-virtual"><scope>__ext_adv_group</scope><name>ext_adv_en</name></member>
+      <member refid="struct____ext__adv__group_1a42b5a9bdb908679121a60738e75875e2" prot="public" virt="non-virtual"><scope>__ext_adv_group</scope><name>ext_adv_param</name></member>
+      <member refid="struct____ext__adv__group_1addce7dcf415b77c54fd1fa6a6ee83bab" prot="public" virt="non-virtual"><scope>__ext_adv_group</scope><name>periodic_adv_data</name></member>
+      <member refid="struct____ext__adv__group_1a81a1cf38bdcd8a03b0124202704870b7" prot="public" virt="non-virtual"><scope>__ext_adv_group</scope><name>periodic_param</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

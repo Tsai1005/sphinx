@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="struct__channel__quality" kind="struct" language="C++" prot="public">
+    <compoundname>_channel_quality</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__channel__quality_1afc4a44e42912e75bd56d151d2c8dc130" prot="public" static="no" mutable="no">
+        <type>struct list_head</type>
+        <definition>struct list_head _channel_quality::entry</definition>
+        <argsstring></argsstring>
+        <name>entry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_afh.c" line="663" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_afh.c" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__channel__quality_1a753df6bff1de4051454d0ec76c377d0a" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 _channel_quality::rx_cnt</definition>
+        <argsstring></argsstring>
+        <name>rx_cnt</name>
+        <bitfield> 12</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_afh.c" line="87" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_afh.c" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__channel__quality_1a20acca67dde05d2f6b340bfe73f1f678" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 _channel_quality::expected_rx_cnt</definition>
+        <argsstring></argsstring>
+        <name>expected_rx_cnt</name>
+        <bitfield> 12</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_afh.c" line="88" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_afh.c" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__channel__quality_1abc6123abec2712709d30bf9201771d55" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 _channel_quality::pre_interval_effect</definition>
+        <argsstring></argsstring>
+        <name>pre_interval_effect</name>
+        <bitfield> 8</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_afh.c" line="89" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_afh.c" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__channel__quality_1aa80f28f765139165a2e29ea4a04955dc" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 _channel_quality::effect_times</definition>
+        <argsstring></argsstring>
+        <name>effect_times</name>
+        <bitfield> 8</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_afh.c" line="90" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_afh.c" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__channel__quality_1a6d9e81ec492f497d90edc8e3f8f27128" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 _channel_quality::average_weight</definition>
+        <argsstring></argsstring>
+        <name>average_weight</name>
+        <bitfield> 24</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_afh.c" line="92" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_afh.c" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__channel__quality_1ae9139898d5ef4d9ffd5ff1eb0bbaf482" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 _channel_quality::history_weight</definition>
+        <argsstring></argsstring>
+        <name>history_weight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_afh.c" line="93" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_afh.c" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__channel__quality_1a09342210d579e23924903731f1c4198a" prot="public" static="no" mutable="no">
+        <type>s16</type>
+        <definition>s16 _channel_quality::rx_rssi_average</definition>
+        <argsstring></argsstring>
+        <name>rx_rssi_average</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_afh.c" line="94" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_afh.c" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_afh.c" line="84" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_afh.c" bodystart="84" bodyend="95"/>
+    <listofallmembers>
+      <member refid="struct__channel__quality_1a6d9e81ec492f497d90edc8e3f8f27128" prot="public" virt="non-virtual"><scope>_channel_quality</scope><name>average_weight</name></member>
+      <member refid="struct__channel__quality_1aa80f28f765139165a2e29ea4a04955dc" prot="public" virt="non-virtual"><scope>_channel_quality</scope><name>effect_times</name></member>
+      <member refid="struct__channel__quality_1afc4a44e42912e75bd56d151d2c8dc130" prot="public" virt="non-virtual"><scope>_channel_quality</scope><name>entry</name></member>
+      <member refid="struct__channel__quality_1a20acca67dde05d2f6b340bfe73f1f678" prot="public" virt="non-virtual"><scope>_channel_quality</scope><name>expected_rx_cnt</name></member>
+      <member refid="struct__channel__quality_1ae9139898d5ef4d9ffd5ff1eb0bbaf482" prot="public" virt="non-virtual"><scope>_channel_quality</scope><name>history_weight</name></member>
+      <member refid="struct__channel__quality_1abc6123abec2712709d30bf9201771d55" prot="public" virt="non-virtual"><scope>_channel_quality</scope><name>pre_interval_effect</name></member>
+      <member refid="struct__channel__quality_1a753df6bff1de4051454d0ec76c377d0a" prot="public" virt="non-virtual"><scope>_channel_quality</scope><name>rx_cnt</name></member>
+      <member refid="struct__channel__quality_1a09342210d579e23924903731f1c4198a" prot="public" virt="non-virtual"><scope>_channel_quality</scope><name>rx_rssi_average</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

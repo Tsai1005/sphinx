@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="esco__codec_8h" kind="file" language="C++">
+    <compoundname>esco_codec.h</compoundname>
+    <includes local="yes">generic/typedef.h</includes>
+    <includedby refid="lmp_8h" local="yes">/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h</includedby>
+    <incdepgraph>
+      <node id="5451">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/esco_codec.h</label>
+        <link refid="esco_codec.h"/>
+        <childnode refid="5452" relation="include">
+        </childnode>
+      </node>
+      <node id="5452">
+        <label>generic/typedef.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5457">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h</label>
+        <link refid="tws__sniff_8h"/>
+      </node>
+      <node id="5456">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h</label>
+        <link refid="tws__conn_8h"/>
+        <childnode refid="5457" relation="include">
+        </childnode>
+      </node>
+      <node id="5454">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h</label>
+        <link refid="lmp_8h"/>
+        <childnode refid="5455" relation="include">
+        </childnode>
+        <childnode refid="5456" relation="include">
+        </childnode>
+      </node>
+      <node id="5455">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_role_switch.h</label>
+        <link refid="lmp__role__switch_8h"/>
+      </node>
+      <node id="5453">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/esco_codec.h</label>
+        <link refid="esco_codec.h"/>
+        <childnode refid="5454" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structesco__codec__ops" prot="public">esco_codec_ops</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="esco__codec_8h_1ac9b80dfec41d0c56b67417032524d89e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const struct <ref refid="structesco__codec__ops" kindref="compound">esco_codec_ops</ref> *</type>
+        <definition>const struct esco_codec_ops* esco_codec_for_type</definition>
+        <argsstring>(int type)</argsstring>
+        <name>esco_codec_for_type</name>
+        <param>
+          <type>int</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/esco_codec.h" line="18" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>ESCO_CODEC_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ESCO_CODEC_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;generic/typedef.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="structesco__codec__ops" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structesco__codec__ops" kindref="compound">esco_codec_ops</ref><sp/>{</highlight></codeline>
+<codeline lineno="9" refid="structesco__codec__ops_1a92425190216cabfd9c97912dd79c2e0a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u32(*<ref refid="structesco__codec__ops_1a92425190216cabfd9c97912dd79c2e0a" kindref="member">need_buf</ref>)(void);</highlight></codeline>
+<codeline lineno="10" refid="structesco__codec__ops_1a423fb88b8642cdab1da9c66862636b06" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u32(*<ref refid="structesco__codec__ops_1a423fb88b8642cdab1da9c66862636b06" kindref="member">init</ref>)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ptr);</highlight></codeline>
+<codeline lineno="11" refid="structesco__codec__ops_1a77636f5b2758e26819441bf07510d801" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u32(*<ref refid="structesco__codec__ops_1a77636f5b2758e26819441bf07510d801" kindref="member">encode</ref>)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ptr,<sp/>s16<sp/>*indata,<sp/>u8<sp/>*outdata,<sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="12" refid="structesco__codec__ops_1aa7d89545a0fa76140aeb9cf67054fdfb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u32(*<ref refid="structesco__codec__ops_1aa7d89545a0fa76140aeb9cf67054fdfb" kindref="member">decode</ref>)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ptr,<sp/>u8<sp/>*indata,<sp/>s16<sp/>*outdata,<sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structesco__codec__ops" kindref="compound">esco_codec_ops</ref><sp/>*<ref refid="esco__codec_8h_1ac9b80dfec41d0c56b67417032524d89e" kindref="member">esco_codec_for_type</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>type);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/esco_codec.h"/>
+  </compounddef>
+</doxygen>

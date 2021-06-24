@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structlctrPhy__t" kind="struct" language="C++" prot="public">
+    <compoundname>lctrPhy_t</compoundname>
+    <includes refid="ll__defines_8h" local="no">ll_defines.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlctrPhy__t_1add326f50f5440bfb02835e77632a26d4" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lctrPhy_t::txPhys</definition>
+        <argsstring></argsstring>
+        <name>txPhys</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Transmitter PHYs. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="906" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="906" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrPhy__t_1af23b09ee20e08e089eac70d829931d89" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lctrPhy_t::rxPhys</definition>
+        <argsstring></argsstring>
+        <name>rxPhys</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Receiver PHYs. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="907" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="907" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>PHY request or response PDU. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="905" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="905" bodyend="908"/>
+    <listofallmembers>
+      <member refid="structlctrPhy__t_1af23b09ee20e08e089eac70d829931d89" prot="public" virt="non-virtual"><scope>lctrPhy_t</scope><name>rxPhys</name></member>
+      <member refid="structlctrPhy__t_1add326f50f5440bfb02835e77632a26d4" prot="public" virt="non-virtual"><scope>lctrPhy_t</scope><name>txPhys</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

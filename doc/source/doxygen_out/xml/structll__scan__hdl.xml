@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structll__scan__hdl" kind="struct" language="C++" prot="public">
+    <compoundname>ll_scan_hdl</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structll__scan__hdl_1a7f4806edd93ec2d3fa3cd8da191ec4c4" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 ll_scan_hdl::enable</definition>
+        <argsstring></argsstring>
+        <name>enable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_scan.c" line="28" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_scan.c" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__scan__hdl_1a43720f9a0fd9f579def27fcd695c9b37" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structle__scan__link" kindref="compound">le_scan_link</ref> *</type>
+        <definition>struct le_scan_link* ll_scan_hdl::scan_link</definition>
+        <argsstring></argsstring>
+        <name>scan_link</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_scan.c" line="29" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_scan.c" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__scan__hdl_1ab8ea0cc7d7a057407008221776ac41a9" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structscan__parameter" kindref="compound">scan_parameter</ref></type>
+        <definition>struct scan_parameter ll_scan_hdl::scan_param</definition>
+        <argsstring></argsstring>
+        <name>scan_param</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_scan.c" line="29" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_scan.c" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__scan__hdl_1abdc6bfdf678df25ff5b0ad80b3c296c7" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structscan__enable__parameter" kindref="compound">scan_enable_parameter</ref></type>
+        <definition>struct scan_enable_parameter ll_scan_hdl::scan_enable_param</definition>
+        <argsstring></argsstring>
+        <name>scan_enable_param</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_scan.c" line="29" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_scan.c" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__scan__hdl_1a8a7760dc589f39433b5c876cd54a7459" prot="public" static="no" mutable="no">
+        <type>struct list_head</type>
+        <definition>struct list_head ll_scan_hdl::adv_report_filter_head</definition>
+        <argsstring></argsstring>
+        <name>adv_report_filter_head</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_scan.c" line="29" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_scan.c" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__scan__hdl_1a0793bb7c2167d382f8ad20e8df0f8878" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 ll_scan_hdl::adv_report_cache_size</definition>
+        <argsstring></argsstring>
+        <name>adv_report_cache_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_scan.c" line="33" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_scan.c" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1517">
+        <label>scan_enable_parameter</label>
+        <link refid="structscan__enable__parameter"/>
+      </node>
+      <node id="1519">
+        <label>scan_parameter</label>
+        <link refid="structscan__parameter"/>
+      </node>
+      <node id="1518">
+        <label>le_scan_link</label>
+        <link refid="structle__scan__link"/>
+      </node>
+      <node id="1516">
+        <label>ll_scan_hdl</label>
+        <link refid="structll__scan__hdl"/>
+        <childnode refid="1517" relation="usage">
+          <edgelabel>scan_enable_param</edgelabel>
+        </childnode>
+        <childnode refid="1518" relation="usage">
+          <edgelabel>scan_link</edgelabel>
+        </childnode>
+        <childnode refid="1519" relation="usage">
+          <edgelabel>scan_param</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_scan.c" line="27" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_scan.c" bodystart="27" bodyend="34"/>
+    <listofallmembers>
+      <member refid="structll__scan__hdl_1a0793bb7c2167d382f8ad20e8df0f8878" prot="public" virt="non-virtual"><scope>ll_scan_hdl</scope><name>adv_report_cache_size</name></member>
+      <member refid="structll__scan__hdl_1a8a7760dc589f39433b5c876cd54a7459" prot="public" virt="non-virtual"><scope>ll_scan_hdl</scope><name>adv_report_filter_head</name></member>
+      <member refid="structll__scan__hdl_1a7f4806edd93ec2d3fa3cd8da191ec4c4" prot="public" virt="non-virtual"><scope>ll_scan_hdl</scope><name>enable</name></member>
+      <member refid="structll__scan__hdl_1abdc6bfdf678df25ff5b0ad80b3c296c7" prot="public" virt="non-virtual"><scope>ll_scan_hdl</scope><name>scan_enable_param</name></member>
+      <member refid="structll__scan__hdl_1a43720f9a0fd9f579def27fcd695c9b37" prot="public" virt="non-virtual"><scope>ll_scan_hdl</scope><name>scan_link</name></member>
+      <member refid="structll__scan__hdl_1ab8ea0cc7d7a057407008221776ac41a9" prot="public" virt="non-virtual"><scope>ll_scan_hdl</scope><name>scan_param</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

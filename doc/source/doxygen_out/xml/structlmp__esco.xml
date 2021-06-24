@@ -1,0 +1,369 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structlmp__esco" kind="struct" language="C++" prot="public">
+    <compoundname>lmp_esco</compoundname>
+    <includes refid="lmp_8h" local="no">lmp.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlmp__esco_1a0f61535554e6fc158a5ec302c280eb41" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_esco::hci_handle</definition>
+        <argsstring></argsstring>
+        <name>hci_handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="586" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="586" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__esco_1aac3b21a72d11af3f478054fa63d68d27" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_esco::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="587" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="587" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__esco_1ae6a81fa5693455109946229f8846e0e3" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_esco::link_type</definition>
+        <argsstring></argsstring>
+        <name>link_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="588" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="588" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__esco_1ae1e84a17c3c3b83ab338f3573893e534" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_esco::reserve</definition>
+        <argsstring></argsstring>
+        <name>reserve</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="589" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="589" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__esco_1aabcbe2d43b260efe9afd076b7358c152" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_esco::rx_esco_tran_id</definition>
+        <argsstring></argsstring>
+        <name>rx_esco_tran_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="608" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="608" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__esco_1a9d2ee6fec86249f062f9648e7c339742" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_esco::reason</definition>
+        <argsstring></argsstring>
+        <name>reason</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="609" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="609" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__esco_1a94112edc5018c6b7de04de914bb299bd" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_esco::esco_conn_timer</definition>
+        <argsstring></argsstring>
+        <name>esco_conn_timer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="610" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="610" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__esco_1a1183f747b932349e2638e6946561b550" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structlmp__esco__pdu" kindref="compound">lmp_esco_pdu</ref></type>
+        <definition>struct lmp_esco_pdu lmp_esco::pdu</definition>
+        <argsstring></argsstring>
+        <name>pdu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="610" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="611" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__esco_1a838cf9f9955f9b40994d5fc26bb03d9d" prot="public" static="no" mutable="no">
+        <type>const struct <ref refid="structesco__codec__ops" kindref="compound">esco_codec_ops</ref> *</type>
+        <definition>const struct esco_codec_ops* lmp_esco::codec_ops</definition>
+        <argsstring></argsstring>
+        <name>codec_ops</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="612" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="612" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__esco_1ace544cb248881dfb453db1249a0f873f" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structlmp__connection" kindref="compound">lmp_connection</ref> *</type>
+        <definition>struct lmp_connection* lmp_esco::acl_link</definition>
+        <argsstring></argsstring>
+        <name>acl_link</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="613" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="613" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1606">
+        <label>lmp_core_data</label>
+        <link refid="structlmp__core__data"/>
+      </node>
+      <node id="1597">
+        <label>link_page</label>
+        <link refid="structlink__page"/>
+        <childnode refid="1598" relation="usage">
+          <edgelabel>tws_rx_info</edgelabel>
+          <edgelabel>tws_tx_info</edgelabel>
+        </childnode>
+        <childnode refid="1599" relation="usage">
+          <edgelabel>remote</edgelabel>
+        </childnode>
+        <childnode refid="1600" relation="usage">
+          <edgelabel>task</edgelabel>
+        </childnode>
+      </node>
+      <node id="1603">
+        <label>bredr_dut</label>
+        <link refid="structbredr__dut"/>
+      </node>
+      <node id="1595">
+        <label>link_afh_report</label>
+        <link refid="structlink__afh__report"/>
+      </node>
+      <node id="1596">
+        <label>bredr_role_switch</label>
+        <link refid="structbredr__role__switch"/>
+        <childnode refid="1597" relation="usage">
+          <edgelabel>page</edgelabel>
+        </childnode>
+        <childnode refid="1602" relation="usage">
+          <edgelabel>page_scan</edgelabel>
+        </childnode>
+      </node>
+      <node id="1598">
+        <label>tws_pair_info</label>
+        <link refid="structtws__pair__info"/>
+      </node>
+      <node id="1585">
+        <label>esco_codec_ops</label>
+        <link refid="structesco__codec__ops"/>
+      </node>
+      <node id="1584">
+        <label>lmp_esco_pdu</label>
+        <link refid="structlmp__esco__pdu"/>
+      </node>
+      <node id="1607">
+        <label>lmp_encrypt</label>
+        <link refid="structlmp__encrypt"/>
+      </node>
+      <node id="1593">
+        <label>__tws_esco_tx_info_t</label>
+        <link refid="struct____tws__esco__tx__info__t"/>
+      </node>
+      <node id="1609">
+        <label>lmp_device</label>
+        <link refid="structlmp__device"/>
+      </node>
+      <node id="1600">
+        <label>link_task</label>
+        <link refid="structlink__task"/>
+        <childnode refid="1601" relation="usage">
+          <edgelabel>ops</edgelabel>
+        </childnode>
+      </node>
+      <node id="1599">
+        <label>link_remote</label>
+        <link refid="structlink__remote"/>
+      </node>
+      <node id="1589">
+        <label>lmp_role_switch</label>
+        <link refid="structlmp__role__switch"/>
+      </node>
+      <node id="1591">
+        <label>bredr_esco_link</label>
+        <link refid="structbredr__esco__link"/>
+        <childnode refid="1588" relation="usage">
+          <edgelabel>rx_bulk</edgelabel>
+        </childnode>
+        <childnode refid="1592" relation="usage">
+          <edgelabel>tx_bulk</edgelabel>
+        </childnode>
+        <childnode refid="1593" relation="usage">
+          <edgelabel>tws_esco_tx_info</edgelabel>
+        </childnode>
+        <childnode refid="1584" relation="usage">
+          <edgelabel>pdu</edgelabel>
+        </childnode>
+      </node>
+      <node id="1602">
+        <label>link_page_scan</label>
+        <link refid="structlink__page__scan"/>
+        <childnode refid="1599" relation="usage">
+          <edgelabel>remote</edgelabel>
+        </childnode>
+        <childnode refid="1600" relation="usage">
+          <edgelabel>task</edgelabel>
+        </childnode>
+      </node>
+      <node id="1594">
+        <label>link_afh</label>
+        <link refid="structlink__afh"/>
+      </node>
+      <node id="1587">
+        <label>lmp_sniff</label>
+        <link refid="structlmp__sniff"/>
+      </node>
+      <node id="1605">
+        <label>lmp_simple_pair</label>
+        <link refid="structlmp__simple__pair"/>
+      </node>
+      <node id="1601">
+        <label>link_task_ops</label>
+        <link refid="structlink__task__ops"/>
+      </node>
+      <node id="1590">
+        <label>link_connection</label>
+        <link refid="structlink__connection"/>
+        <childnode refid="1591" relation="usage">
+          <edgelabel>esco</edgelabel>
+        </childnode>
+        <childnode refid="1594" relation="usage">
+          <edgelabel>afh</edgelabel>
+        </childnode>
+        <childnode refid="1595" relation="usage">
+          <edgelabel>afh_report</edgelabel>
+        </childnode>
+        <childnode refid="1588" relation="usage">
+          <edgelabel>rx_bulk</edgelabel>
+        </childnode>
+        <childnode refid="1592" relation="usage">
+          <edgelabel>tx_bulk</edgelabel>
+        </childnode>
+        <childnode refid="1596" relation="usage">
+          <edgelabel>rs</edgelabel>
+        </childnode>
+        <childnode refid="1603" relation="usage">
+          <edgelabel>dut</edgelabel>
+        </childnode>
+        <childnode refid="1604" relation="usage">
+          <edgelabel>core</edgelabel>
+        </childnode>
+        <childnode refid="1600" relation="usage">
+          <edgelabel>task</edgelabel>
+        </childnode>
+      </node>
+      <node id="1586">
+        <label>lmp_connection</label>
+        <link refid="structlmp__connection"/>
+        <childnode refid="1587" relation="usage">
+          <edgelabel>sniff</edgelabel>
+        </childnode>
+        <childnode refid="1588" relation="usage">
+          <edgelabel>acl_s_bulk</edgelabel>
+        </childnode>
+        <childnode refid="1589" relation="usage">
+          <edgelabel>rs_process</edgelabel>
+        </childnode>
+        <childnode refid="1590" relation="usage">
+          <edgelabel>link</edgelabel>
+        </childnode>
+        <childnode refid="1605" relation="usage">
+          <edgelabel>simple</edgelabel>
+        </childnode>
+        <childnode refid="1583" relation="usage">
+          <edgelabel>esco_conn</edgelabel>
+        </childnode>
+        <childnode refid="1606" relation="usage">
+          <edgelabel>core</edgelabel>
+        </childnode>
+        <childnode refid="1607" relation="usage">
+          <edgelabel>encrypt</edgelabel>
+        </childnode>
+        <childnode refid="1608" relation="usage">
+          <edgelabel>core_s</edgelabel>
+        </childnode>
+      </node>
+      <node id="1608">
+        <label>lmp_core_data_static</label>
+        <link refid="structlmp__core__data__static"/>
+        <childnode refid="1609" relation="usage">
+          <edgelabel>remote</edgelabel>
+        </childnode>
+      </node>
+      <node id="1583">
+        <label>lmp_esco</label>
+        <link refid="structlmp__esco"/>
+        <childnode refid="1584" relation="usage">
+          <edgelabel>pdu</edgelabel>
+        </childnode>
+        <childnode refid="1585" relation="usage">
+          <edgelabel>codec_ops</edgelabel>
+        </childnode>
+        <childnode refid="1586" relation="usage">
+          <edgelabel>acl_link</edgelabel>
+        </childnode>
+      </node>
+      <node id="1604">
+        <label>link_core_data</label>
+        <link refid="structlink__core__data"/>
+      </node>
+      <node id="1588">
+        <label>bredr_rx_bulk</label>
+        <link refid="structbredr__rx__bulk"/>
+      </node>
+      <node id="1592">
+        <label>bredr_tx_bulk</label>
+        <link refid="structbredr__tx__bulk"/>
+      </node>
+    </collaborationgraph>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="585" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="585" bodyend="614"/>
+    <listofallmembers>
+      <member refid="structlmp__esco_1ace544cb248881dfb453db1249a0f873f" prot="public" virt="non-virtual"><scope>lmp_esco</scope><name>acl_link</name></member>
+      <member refid="structlmp__esco_1a838cf9f9955f9b40994d5fc26bb03d9d" prot="public" virt="non-virtual"><scope>lmp_esco</scope><name>codec_ops</name></member>
+      <member refid="structlmp__esco_1a94112edc5018c6b7de04de914bb299bd" prot="public" virt="non-virtual"><scope>lmp_esco</scope><name>esco_conn_timer</name></member>
+      <member refid="structlmp__esco_1a0f61535554e6fc158a5ec302c280eb41" prot="public" virt="non-virtual"><scope>lmp_esco</scope><name>hci_handle</name></member>
+      <member refid="structlmp__esco_1ae6a81fa5693455109946229f8846e0e3" prot="public" virt="non-virtual"><scope>lmp_esco</scope><name>link_type</name></member>
+      <member refid="structlmp__esco_1a1183f747b932349e2638e6946561b550" prot="public" virt="non-virtual"><scope>lmp_esco</scope><name>pdu</name></member>
+      <member refid="structlmp__esco_1a9d2ee6fec86249f062f9648e7c339742" prot="public" virt="non-virtual"><scope>lmp_esco</scope><name>reason</name></member>
+      <member refid="structlmp__esco_1ae1e84a17c3c3b83ab338f3573893e534" prot="public" virt="non-virtual"><scope>lmp_esco</scope><name>reserve</name></member>
+      <member refid="structlmp__esco_1aabcbe2d43b260efe9afd076b7358c152" prot="public" virt="non-virtual"><scope>lmp_esco</scope><name>rx_esco_tran_id</name></member>
+      <member refid="structlmp__esco_1aac3b21a72d11af3f478054fa63d68d27" prot="public" virt="non-virtual"><scope>lmp_esco</scope><name>state</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

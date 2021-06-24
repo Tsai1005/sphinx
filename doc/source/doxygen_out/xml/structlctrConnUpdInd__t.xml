@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structlctrConnUpdInd__t" kind="struct" language="C++" prot="public">
+    <compoundname>lctrConnUpdInd_t</compoundname>
+    <includes refid="ll__defines_8h" local="no">ll_defines.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlctrConnUpdInd__t_1a8b0381b953795ab274248b63c4229f4f" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lctrConnUpdInd_t::txWinSize</definition>
+        <argsstring></argsstring>
+        <name>txWinSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>transmitWindowSize value. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="824" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="824" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrConnUpdInd__t_1af34ae59ec793348e62ffb98721fd86fe" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lctrConnUpdInd_t::txWinOffset</definition>
+        <argsstring></argsstring>
+        <name>txWinOffset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>transmitWindowOffset value. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="825" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="825" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrConnUpdInd__t_1ac9a019c8dea66ff34c4fb2b95ba5302d" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lctrConnUpdInd_t::interval</definition>
+        <argsstring></argsstring>
+        <name>interval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>connInterval value. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="826" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="826" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrConnUpdInd__t_1a3633333ff39c6bf3cbff9f717774fdd0" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lctrConnUpdInd_t::latency</definition>
+        <argsstring></argsstring>
+        <name>latency</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>connSlaveLatency value. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="827" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="827" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrConnUpdInd__t_1a81585c1db5e9d1c812bd8951c4e87c58" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lctrConnUpdInd_t::timeout</definition>
+        <argsstring></argsstring>
+        <name>timeout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>connSupervisionTimeout value. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="828" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="828" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrConnUpdInd__t_1a05fec97c31542dae0d900dcb927b383d" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lctrConnUpdInd_t::instant</definition>
+        <argsstring></argsstring>
+        <name>instant</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>connInstant value. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="829" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="829" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Connection update indication PDU. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="823" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="823" bodyend="830"/>
+    <listofallmembers>
+      <member refid="structlctrConnUpdInd__t_1a05fec97c31542dae0d900dcb927b383d" prot="public" virt="non-virtual"><scope>lctrConnUpdInd_t</scope><name>instant</name></member>
+      <member refid="structlctrConnUpdInd__t_1ac9a019c8dea66ff34c4fb2b95ba5302d" prot="public" virt="non-virtual"><scope>lctrConnUpdInd_t</scope><name>interval</name></member>
+      <member refid="structlctrConnUpdInd__t_1a3633333ff39c6bf3cbff9f717774fdd0" prot="public" virt="non-virtual"><scope>lctrConnUpdInd_t</scope><name>latency</name></member>
+      <member refid="structlctrConnUpdInd__t_1a81585c1db5e9d1c812bd8951c4e87c58" prot="public" virt="non-virtual"><scope>lctrConnUpdInd_t</scope><name>timeout</name></member>
+      <member refid="structlctrConnUpdInd__t_1af34ae59ec793348e62ffb98721fd86fe" prot="public" virt="non-virtual"><scope>lctrConnUpdInd_t</scope><name>txWinOffset</name></member>
+      <member refid="structlctrConnUpdInd__t_1a8b0381b953795ab274248b63c4229f4f" prot="public" virt="non-virtual"><scope>lctrConnUpdInd_t</scope><name>txWinSize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structle__event" kind="struct" language="C++" prot="public">
+    <compoundname>le_event</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structle__event_1a8c985639846e2e460390a36009756a84" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 le_event::event</definition>
+        <argsstring></argsstring>
+        <name>event</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/link_layer.c" line="58" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/link_layer.c" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__event_1ab74223808984016942f318a292344e19" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 le_event::len</definition>
+        <argsstring></argsstring>
+        <name>len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/link_layer.c" line="59" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/link_layer.c" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__event_1a9eb7fa03d54d99f1b2fb8cc255a6dac7" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 le_event::data[0]</definition>
+        <argsstring>[0]</argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/link_layer.c" line="60" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/link_layer.c" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/link_layer.c" line="57" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/link_layer.c" bodystart="57" bodyend="61"/>
+    <listofallmembers>
+      <member refid="structle__event_1a9eb7fa03d54d99f1b2fb8cc255a6dac7" prot="public" virt="non-virtual"><scope>le_event</scope><name>data</name></member>
+      <member refid="structle__event_1a8c985639846e2e460390a36009756a84" prot="public" virt="non-virtual"><scope>le_event</scope><name>event</name></member>
+      <member refid="structle__event_1ab74223808984016942f318a292344e19" prot="public" virt="non-virtual"><scope>le_event</scope><name>len</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

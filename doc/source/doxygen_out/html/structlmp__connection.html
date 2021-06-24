@@ -1,0 +1,576 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>JL Adapter SDK: lmp_connection结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">JL Adapter SDK
+   &#160;<span id="projectnumber">v0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>结构体</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li><a href="classes.html"><span>结构体索引</span></a></li>
+      <li><a href="functions.html"><span>成员变量</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">成员变量</a>  </div>
+  <div class="headertitle">
+<div class="title">lmp_connection结构体 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="lmp_8h_source.html">lmp.h</a>&gt;</code></p>
+<div class="dynheader">
+lmp_connection 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="structlmp__connection__coll__graph.png" border="0" usemap="#lmp__connection_coll__map" alt="Collaboration graph"/></div>
+<map name="lmp__connection_coll__map" id="lmp__connection_coll__map">
+<area shape="rect" id="node22" href="lmp_8h.html#structlmp__esco" title="lmp_esco" alt="" coords="1443,261,1521,288"/>
+<area shape="rect" id="node2" href="lmp_8h.html#structlmp__sniff" title="lmp_sniff" alt="" coords="979,383,1053,409"/>
+<area shape="rect" id="node3" href="link__bulk_8h.html#structbredr__rx__bulk" title="bredr_rx_bulk" alt="" coords="425,145,525,172"/>
+<area shape="rect" id="node5" href="bredr__link_8h.html#structlink__connection" title="link_connection" alt="" coords="960,332,1072,359"/>
+<area shape="rect" id="node6" href="bredr__link_8h.html#structbredr__esco__link" title="bredr_esco_link" alt="" coords="709,249,823,276"/>
+<area shape="rect" id="node4" href="lmp_8h.html#structlmp__role__switch" title="lmp_role_switch" alt="" coords="958,433,1074,460"/>
+<area shape="rect" id="node7" href="link__bulk_8h.html#structbredr__tx__bulk" title="bredr_tx_bulk" alt="" coords="425,295,525,321"/>
+<area shape="rect" id="node8" href="tws__link_8h.html#struct____tws__esco__tx__info__t" title="__tws_esco_tx_info_t" alt="" coords="400,225,549,252"/>
+<area shape="rect" id="node9" href="lmp__pdu_8h.html#structlmp__esco__pdu" title="lmp_esco_pdu" alt="" coords="421,24,528,51"/>
+<area shape="rect" id="node10" href="bredr__link_8h.html#structlink__afh" title="link_afh" alt="" coords="733,515,799,541"/>
+<area shape="rect" id="node11" href="bredr__link_8h.html#structlink__afh__report" title="link_afh_report" alt="" coords="713,413,819,440"/>
+<area shape="rect" id="node12" href="bredr__link_8h.html#structbredr__role__switch" title="bredr_role_switch" alt="" coords="704,464,828,491"/>
+<area shape="rect" id="node13" href="structlink__page.html" title="link_page" alt="" coords="436,528,513,555"/>
+<area shape="rect" id="node14" href="bredr__link_8h.html#structtws__pair__info" title="tws_pair_info" alt="" coords="181,593,280,620"/>
+<area shape="rect" id="node15" href="bredr__link_8h.html#structlink__remote" title="link_remote" alt="" coords="186,511,275,537"/>
+<area shape="rect" id="node18" href="bredr__link_8h.html#structlink__page__scan" title="link_page_scan" alt="" coords="419,464,531,491"/>
+<area shape="rect" id="node16" href="link__task_8h.html#structlink__task" title="link_task" alt="" coords="193,397,268,424"/>
+<area shape="rect" id="node17" href="structlink__task__ops.html" title="link_task_ops" alt="" coords="5,397,108,424"/>
+<area shape="rect" id="node19" href="bredr__link_8h.html#structbredr__dut" title="bredr_dut" alt="" coords="728,565,804,592"/>
+<area shape="rect" id="node20" href="bredr__link_8h.html#structlink__core__data" title="link_core_data" alt="" coords="713,616,819,643"/>
+<area shape="rect" id="node21" href="lmp_8h.html#structlmp__simple__pair" title="lmp_simple_pair" alt="" coords="958,484,1074,511"/>
+<area shape="rect" id="node23" href="structesco__codec__ops.html" title="esco_codec_ops" alt="" coords="1207,332,1327,359"/>
+<area shape="rect" id="node24" href="lmp_8h.html#structlmp__core__data" title="lmp_core_data" alt="" coords="963,281,1069,308"/>
+<area shape="rect" id="node25" href="lmp_8h.html#structlmp__encrypt" title="lmp_encrypt" alt="" coords="969,231,1063,257"/>
+<area shape="rect" id="node26" href="lmp_8h.html#structlmp__core__data__static" title="lmp_core_data_static" alt="" coords="943,157,1089,184"/>
+<area shape="rect" id="node27" href="lmp_8h.html#structlmp__device" title="lmp_device" alt="" coords="722,136,810,163"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+成员变量</h2></td></tr>
+<tr class="memitem:a87b9ebb5da20968ebaa84529fc22cec5"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlmp__connection.html#a87b9ebb5da20968ebaa84529fc22cec5">rejust_esco_req</a></td></tr>
+<tr class="separator:a87b9ebb5da20968ebaa84529fc22cec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d20d40a9d35d527f04853538f2263ff"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlmp__connection.html#a7d20d40a9d35d527f04853538f2263ff">tran_id</a></td></tr>
+<tr class="separator:a7d20d40a9d35d527f04853538f2263ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c44674781c11134ec1c9f0745689bb2"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlmp__connection.html#a2c44674781c11134ec1c9f0745689bb2">err_code</a></td></tr>
+<tr class="separator:a2c44674781c11134ec1c9f0745689bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89b5f63ffe44db1e1ea5326cb75268e7"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlmp__connection.html#a89b5f63ffe44db1e1ea5326cb75268e7">cap_adjust</a></td></tr>
+<tr class="separator:a89b5f63ffe44db1e1ea5326cb75268e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af09e3cfa59e14d0a8fccddbe423483cd"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlmp__connection.html#af09e3cfa59e14d0a8fccddbe423483cd">sniff_req_timer</a></td></tr>
+<tr class="separator:af09e3cfa59e14d0a8fccddbe423483cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ae5940d8da07a4516e68fd24d2bf655"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlmp__connection.html#a8ae5940d8da07a4516e68fd24d2bf655">lmp_detch_start</a></td></tr>
+<tr class="separator:a8ae5940d8da07a4516e68fd24d2bf655"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae63f1d6ad067f9af9a05971e8e297c6a"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlmp__connection.html#ae63f1d6ad067f9af9a05971e8e297c6a">rx_remove_esco_req_before_esco_setup</a></td></tr>
+<tr class="separator:ae63f1d6ad067f9af9a05971e8e297c6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a709a6e6d38354df7ef99de3a13ed4089"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlmp__connection.html#a709a6e6d38354df7ef99de3a13ed4089">sbc_open</a></td></tr>
+<tr class="separator:a709a6e6d38354df7ef99de3a13ed4089"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b58f277f05f3bb3d1391b01d1511a5f"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlmp__connection.html#a7b58f277f05f3bb3d1391b01d1511a5f">rxbuf_full</a></td></tr>
+<tr class="separator:a7b58f277f05f3bb3d1391b01d1511a5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03ecde5bd2f72a7f252529242abcb828"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlmp__connection.html#a03ecde5bd2f72a7f252529242abcb828">busy</a></td></tr>
+<tr class="separator:a03ecde5bd2f72a7f252529242abcb828"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ae28084820b3a3ac86a3fc261a8af91"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlmp__connection.html#a5ae28084820b3a3ac86a3fc261a8af91">codec_type</a></td></tr>
+<tr class="separator:a5ae28084820b3a3ac86a3fc261a8af91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01943fa04446fd346f3b0d925e7ff375"><td class="memItemLeft" align="right" valign="top">u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlmp__connection.html#a01943fa04446fd346f3b0d925e7ff375">timer</a></td></tr>
+<tr class="separator:a01943fa04446fd346f3b0d925e7ff375"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab11b3241803d14fd702444d6c1f23811"><td class="memItemLeft" align="right" valign="top">u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlmp__connection.html#ab11b3241803d14fd702444d6c1f23811">sbc_channel</a></td></tr>
+<tr class="separator:ab11b3241803d14fd702444d6c1f23811"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3db8e38acfa3c592e10fc069945018ae"><td class="memItemLeft" align="right" valign="top">u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlmp__connection.html#a3db8e38acfa3c592e10fc069945018ae">sbc_packet_size</a></td></tr>
+<tr class="separator:a3db8e38acfa3c592e10fc069945018ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdae66b42f9a50d9b39937686f4e3985"><td class="memItemLeft" align="right" valign="top">u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlmp__connection.html#abdae66b42f9a50d9b39937686f4e3985">clear_a2dp_packet_num</a></td></tr>
+<tr class="separator:abdae66b42f9a50d9b39937686f4e3985"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7a1bfe63e477cc728d07190f5d17241"><td class="memItemLeft" align="right" valign="top">u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlmp__connection.html#ac7a1bfe63e477cc728d07190f5d17241">wfdet_counter</a></td></tr>
+<tr class="separator:ac7a1bfe63e477cc728d07190f5d17241"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4cd7047563ae2f43ee5c5ab09ad076a"><td class="memItemLeft" align="right" valign="top">u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlmp__connection.html#af4cd7047563ae2f43ee5c5ab09ad076a">wf_det_time</a></td></tr>
+<tr class="separator:af4cd7047563ae2f43ee5c5ab09ad076a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f4e54ce67529858a4c009081be32645"><td class="memItemLeft" align="right" valign="top">u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlmp__connection.html#a7f4e54ce67529858a4c009081be32645">rx_sbc_instant</a></td></tr>
+<tr class="separator:a7f4e54ce67529858a4c009081be32645"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2f64e24f1d5d4046840842367ed9f6a"><td class="memItemLeft" align="right" valign="top">u8 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlmp__connection.html#ad2f64e24f1d5d4046840842367ed9f6a">remote_name</a></td></tr>
+<tr class="separator:ad2f64e24f1d5d4046840842367ed9f6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f713790ba4bf70a9d1b268cdb43582a"><td class="memItemLeft" align="right" valign="top">OS_SEM&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlmp__connection.html#a2f713790ba4bf70a9d1b268cdb43582a">sbc_sem</a></td></tr>
+<tr class="separator:a2f713790ba4bf70a9d1b268cdb43582a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaea2e2760e885b3fa5248af18b93e1c7"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="link__bulk_8h.html#structbredr__rx__bulk">bredr_rx_bulk</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlmp__connection.html#aaea2e2760e885b3fa5248af18b93e1c7">acl_s_bulk</a></td></tr>
+<tr class="separator:aaea2e2760e885b3fa5248af18b93e1c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14db112e05bacb4f460bf91a789b78d1"><td class="memItemLeft" align="right" valign="top">struct list_head&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlmp__connection.html#a14db112e05bacb4f460bf91a789b78d1">rx_acl_u</a></td></tr>
+<tr class="separator:a14db112e05bacb4f460bf91a789b78d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2be6858a76d1b333a9234d2be3109315"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="lmp_8h.html#structlmp__core__data">lmp_core_data</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlmp__connection.html#a2be6858a76d1b333a9234d2be3109315">core</a></td></tr>
+<tr class="separator:a2be6858a76d1b333a9234d2be3109315"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42f76be7cc98e5a6d42dc914c0aecabe"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="lmp_8h.html#structlmp__core__data__static">lmp_core_data_static</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlmp__connection.html#a42f76be7cc98e5a6d42dc914c0aecabe">core_s</a></td></tr>
+<tr class="separator:a42f76be7cc98e5a6d42dc914c0aecabe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fbb77bc5576ca74343c415e65328824"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="bredr__link_8h.html#structlink__connection">link_connection</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlmp__connection.html#a8fbb77bc5576ca74343c415e65328824">link</a></td></tr>
+<tr class="separator:a8fbb77bc5576ca74343c415e65328824"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7da2a069143c3c3f7eeaf0fbc6cafc8a"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="lmp_8h.html#structlmp__sniff">lmp_sniff</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlmp__connection.html#a7da2a069143c3c3f7eeaf0fbc6cafc8a">sniff</a></td></tr>
+<tr class="separator:a7da2a069143c3c3f7eeaf0fbc6cafc8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a014e66c358439780bc4ef4e0fa424317"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="lmp_8h.html#structlmp__esco">lmp_esco</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlmp__connection.html#a014e66c358439780bc4ef4e0fa424317">esco_conn</a></td></tr>
+<tr class="separator:a014e66c358439780bc4ef4e0fa424317"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac85ae1a04df880748aa361af2f8506f3"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="lmp_8h.html#structlmp__encrypt">lmp_encrypt</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlmp__connection.html#ac85ae1a04df880748aa361af2f8506f3">encrypt</a></td></tr>
+<tr class="separator:ac85ae1a04df880748aa361af2f8506f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a465496c9a465638e450dbcba20af15be"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="lmp_8h.html#structlmp__role__switch">lmp_role_switch</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlmp__connection.html#a465496c9a465638e450dbcba20af15be">rs_process</a></td></tr>
+<tr class="separator:a465496c9a465638e450dbcba20af15be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9add35572bd6b47d0a16507dedbc522f"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="lmp_8h.html#structlmp__simple__pair">lmp_simple_pair</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlmp__connection.html#a9add35572bd6b47d0a16507dedbc522f">simple</a></td></tr>
+<tr class="separator:a9add35572bd6b47d0a16507dedbc522f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4304995c1c65503b99c2e104a0575035"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlmp__connection.html#a4304995c1c65503b99c2e104a0575035">role_machine_handler</a> )(struct <a class="el" href="structlmp__connection.html">lmp_connection</a> *conn, struct <a class="el" href="link__bulk_8h.html#structbredr__rx__bulk">bredr_rx_bulk</a> *rx, int *hci_cmd)</td></tr>
+<tr class="separator:a4304995c1c65503b99c2e104a0575035"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">结构体成员变量说明</h2>
+<a class="anchor" id="aaea2e2760e885b3fa5248af18b93e1c7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="link__bulk_8h.html#structbredr__rx__bulk">bredr_rx_bulk</a>* lmp_connection::acl_s_bulk</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a03ecde5bd2f72a7f252529242abcb828"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 lmp_connection::busy</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a89b5f63ffe44db1e1ea5326cb75268e7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 lmp_connection::cap_adjust</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abdae66b42f9a50d9b39937686f4e3985"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u16 lmp_connection::clear_a2dp_packet_num</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5ae28084820b3a3ac86a3fc261a8af91"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 lmp_connection::codec_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2be6858a76d1b333a9234d2be3109315"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="lmp_8h.html#structlmp__core__data">lmp_core_data</a> lmp_connection::core</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a42f76be7cc98e5a6d42dc914c0aecabe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="lmp_8h.html#structlmp__core__data__static">lmp_core_data_static</a> lmp_connection::core_s</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac85ae1a04df880748aa361af2f8506f3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="lmp_8h.html#structlmp__encrypt">lmp_encrypt</a>* lmp_connection::encrypt</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2c44674781c11134ec1c9f0745689bb2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 lmp_connection::err_code</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a014e66c358439780bc4ef4e0fa424317"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="lmp_8h.html#structlmp__esco">lmp_esco</a>* lmp_connection::esco_conn</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8fbb77bc5576ca74343c415e65328824"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="bredr__link_8h.html#structlink__connection">link_connection</a>* lmp_connection::link</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8ae5940d8da07a4516e68fd24d2bf655"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 lmp_connection::lmp_detch_start</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a87b9ebb5da20968ebaa84529fc22cec5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 lmp_connection::rejust_esco_req</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad2f64e24f1d5d4046840842367ed9f6a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8* lmp_connection::remote_name</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4304995c1c65503b99c2e104a0575035"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* lmp_connection::role_machine_handler) (struct <a class="el" href="structlmp__connection.html">lmp_connection</a> *conn, struct <a class="el" href="link__bulk_8h.html#structbredr__rx__bulk">bredr_rx_bulk</a> *rx, int *hci_cmd)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a465496c9a465638e450dbcba20af15be"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="lmp_8h.html#structlmp__role__switch">lmp_role_switch</a>* lmp_connection::rs_process</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a14db112e05bacb4f460bf91a789b78d1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct list_head lmp_connection::rx_acl_u</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae63f1d6ad067f9af9a05971e8e297c6a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 lmp_connection::rx_remove_esco_req_before_esco_setup</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7f4e54ce67529858a4c009081be32645"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u32 lmp_connection::rx_sbc_instant</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7b58f277f05f3bb3d1391b01d1511a5f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 lmp_connection::rxbuf_full</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab11b3241803d14fd702444d6c1f23811"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u16 lmp_connection::sbc_channel</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a709a6e6d38354df7ef99de3a13ed4089"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 lmp_connection::sbc_open</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3db8e38acfa3c592e10fc069945018ae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u16 lmp_connection::sbc_packet_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2f713790ba4bf70a9d1b268cdb43582a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OS_SEM lmp_connection::sbc_sem</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9add35572bd6b47d0a16507dedbc522f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="lmp_8h.html#structlmp__simple__pair">lmp_simple_pair</a>* lmp_connection::simple</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7da2a069143c3c3f7eeaf0fbc6cafc8a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="lmp_8h.html#structlmp__sniff">lmp_sniff</a>* lmp_connection::sniff</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af09e3cfa59e14d0a8fccddbe423483cd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 lmp_connection::sniff_req_timer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a01943fa04446fd346f3b0d925e7ff375"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u16 lmp_connection::timer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7d20d40a9d35d527f04853538f2263ff"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 lmp_connection::tran_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af4cd7047563ae2f43ee5c5ab09ad076a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u16 lmp_connection::wf_det_time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac7a1bfe63e477cc728d07190f5d17241"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u32 lmp_connection::wfdet_counter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/<a class="el" href="lmp_8h_source.html">lmp.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

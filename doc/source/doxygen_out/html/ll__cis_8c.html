@@ -1,0 +1,2194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>JL Adapter SDK: /data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">JL Adapter SDK
+   &#160;<span id="projectnumber">v0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_5aa4d6ccf34d88a270949875c15714e5.html">btctrler</a></li><li class="navelem"><a class="el" href="dir_16b18ce1fc07a124435f964aa38ae307.html">BLE_v2</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle">
+<div class="title">ll_cis.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="link__layer_8h_source.html">ble/link_layer.h</a>&quot;</code><br />
+<code>#include &quot;hci_controller.h&quot;</code><br />
+<code>#include &quot;btcontroller_heap.h&quot;</code><br />
+<code>#include &quot;common/debug.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+ll_cis.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="ll__cis_8c__incl.png" border="0" usemap="#_2data_2bingquan_2repo_2repo__adapter_2adapter__sdk_2lib_2btctrler_2BLE__v2_2ll__cis_8c" alt=""/></div>
+<map name="_2data_2bingquan_2repo_2repo__adapter_2adapter__sdk_2lib_2btctrler_2BLE__v2_2ll__cis_8c" id="_2data_2bingquan_2repo_2repo__adapter_2adapter__sdk_2lib_2btctrler_2BLE__v2_2ll__cis_8c">
+<area shape="rect" id="node2" href="link__layer_8h.html" title="ble/link_layer.h" alt="" coords="705,124,815,151"/>
+<area shape="rect" id="node8" href="ll__defines_8h.html" title="ll_defines.h" alt="" coords="301,348,389,375"/>
+<area shape="rect" id="node9" href="white__list_8h.html" title="white_list.h" alt="" coords="5,348,93,375"/>
+<area shape="rect" id="node12" href="llcp_8h.html" title="ble/llcp.h" alt="" coords="623,273,697,300"/>
+<area shape="rect" id="node13" href="ll__adv_8h.html" title="ble/ll_adv.h" alt="" coords="1052,199,1140,225"/>
+<area shape="rect" id="node14" href="ll__scan_8h.html" title="ble/ll_scan.h" alt="" coords="1165,199,1259,225"/>
+<area shape="rect" id="node15" href="ll__init_8h.html" title="ble/ll_init.h" alt="" coords="1283,199,1367,225"/>
+<area shape="rect" id="node16" href="resolve__list_8h.html" title="resolve_list.h" alt="" coords="159,348,257,375"/>
+<area shape="rect" id="node17" href="data__extension_8h.html" title="data_extension.h" alt="" coords="745,348,866,375"/>
+<area shape="rect" id="node18" href="multiple__phys_8h.html" title="multiple_phys.h" alt="" coords="823,273,937,300"/>
+<area shape="rect" id="node19" href="ll__cte_8h.html" title="ble/ll_cte.h" alt="" coords="223,273,308,300"/>
+<area shape="rect" id="node20" href="ll__iso_8h.html" title="ble/ll_iso.h" alt="" coords="514,273,598,300"/>
+<area shape="rect" id="node22" href="ll__bis_8h.html" title="ble/ll_bis.h" alt="" coords="403,199,487,225"/>
+<area shape="rect" id="node24" href="ll__cis_8h.html" title="ble/ll_cis.h" alt="" coords="511,199,595,225"/>
+<area shape="rect" id="node25" href="ll__pc_8h.html" title="ble/ll_pc.h" alt="" coords="117,273,198,300"/>
+<area shape="rect" id="node23" href="audio__codec_8h.html" title="audio_codec.h" alt="" coords="383,273,489,300"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structruntime__callback__t.html">runtime_callback_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a6c6991cba0e2995d7d9aec73e0324317"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#a6c6991cba0e2995d7d9aec73e0324317">LOG_TAG_CONST</a>&#160;&#160;&#160;LL_CIS</td></tr>
+<tr class="separator:a6c6991cba0e2995d7d9aec73e0324317"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ce0df38eb467e59f209470c8f5ac4e6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#a7ce0df38eb467e59f209470c8f5ac4e6">LOG_TAG</a>&#160;&#160;&#160;&quot;[LL-CIS]&quot;</td></tr>
+<tr class="separator:a7ce0df38eb467e59f209470c8f5ac4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eeb6e067100d0dec6e53bce19a403e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#a9eeb6e067100d0dec6e53bce19a403e0">LOG_ERROR_ENABLE</a></td></tr>
+<tr class="separator:a9eeb6e067100d0dec6e53bce19a403e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69321c8a2a0b07a07fb5088e82e25eb0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#a69321c8a2a0b07a07fb5088e82e25eb0">LOG_INFO_ENABLE</a></td></tr>
+<tr class="separator:a69321c8a2a0b07a07fb5088e82e25eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04135f631fe91199f05b1d816dda8756"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#a04135f631fe91199f05b1d816dda8756">LOG_DUMP_ENABLE</a></td></tr>
+<tr class="separator:a04135f631fe91199f05b1d816dda8756"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad223350d80db21fa8b721107cd1f6442"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#ad223350d80db21fa8b721107cd1f6442">__this</a>&#160;&#160;&#160;(&amp;<a class="el" href="link__layer_8h.html#a11d5b1c8b0def0c238d4700650780724">ll_hdl</a>)</td></tr>
+<tr class="separator:ad223350d80db21fa8b721107cd1f6442"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a10748cd3087da145e4febf2ea0f07e47"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#a10748cd3087da145e4febf2ea0f07e47">ll_cis_supervision_timeout_stop</a> (<a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *cis)</td></tr>
+<tr class="separator:a10748cd3087da145e4febf2ea0f07e47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed49f14f4a63f46322437d5881d63146"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#aed49f14f4a63f46322437d5881d63146">ll_cis_supervision_timer_handler</a> (void *priv)</td></tr>
+<tr class="separator:aed49f14f4a63f46322437d5881d63146"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac192378ffe9d406ab7c4349a1f512e0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#ac192378ffe9d406ab7c4349a1f512e0d">ll_cis_supervision_timeout_start</a> (<a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *cis, u32 timeout)</td></tr>
+<tr class="separator:ac192378ffe9d406ab7c4349a1f512e0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68e588852461348978bb282dc2e54c4a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#a68e588852461348978bb282dc2e54c4a">ll_cis_supervision_timeout_reset</a> (<a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *cis)</td></tr>
+<tr class="separator:a68e588852461348978bb282dc2e54c4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e9ca6800f01843b5f4205b4ad3250d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#a3e9ca6800f01843b5f4205b4ad3250d4">ll_cis_supervision_timeout_changeperiod</a> (<a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *cis, u32 timeout)</td></tr>
+<tr class="separator:a3e9ca6800f01843b5f4205b4ad3250d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea6d0e5470d40ea3f69f87e9e6de9eeb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#aea6d0e5470d40ea3f69f87e9e6de9eeb">__cis_evt_oneshot_add</a> (<a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *cis, void(*callback)(<a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *), int instant)</td></tr>
+<tr class="separator:aea6d0e5470d40ea3f69f87e9e6de9eeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a712dc5acfb8de0c59a8ceec43596c931"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#a712dc5acfb8de0c59a8ceec43596c931">__cis_event_oneshot_run</a> (<a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *cis, int event_cnt)</td></tr>
+<tr class="separator:a712dc5acfb8de0c59a8ceec43596c931"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83b458f38386417e243387f00f3ea192"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#a83b458f38386417e243387f00f3ea192">__cis_event_oneshot_remove</a> (<a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *cis, void(*callback)(<a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *), int instant)</td></tr>
+<tr class="separator:a83b458f38386417e243387f00f3ea192"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3e1bb2d82d5525592d595a7574a14a6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#ab3e1bb2d82d5525592d595a7574a14a6">__cis_event_oneshot_destroy</a> (<a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *cis)</td></tr>
+<tr class="separator:ab3e1bb2d82d5525592d595a7574a14a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e54d38aa5192da708600add46c68c44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#a9e54d38aa5192da708600add46c68c44">__cis_rx_oneshot_add</a> (<a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *cis, void(*callback)(<a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *))</td></tr>
+<tr class="separator:a9e54d38aa5192da708600add46c68c44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacde251077ab8a1ba87d05e0ed00b800"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#aacde251077ab8a1ba87d05e0ed00b800">__cis_rx_oneshot_run</a> (<a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *cis)</td></tr>
+<tr class="separator:aacde251077ab8a1ba87d05e0ed00b800"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f1fe93aaa91625cd5e022eb14be60cf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#a6f1fe93aaa91625cd5e022eb14be60cf">__cis_rx_oneshot_destroy</a> (<a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *cis)</td></tr>
+<tr class="separator:a6f1fe93aaa91625cd5e022eb14be60cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a502ed9cc3d020fde7c85313184806589"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#a502ed9cc3d020fde7c85313184806589">__cis_event_oneshot_post_add</a> (<a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *cis, void(*callback)(<a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *), int instant)</td></tr>
+<tr class="separator:a502ed9cc3d020fde7c85313184806589"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d27cc843fe2d5484a5873635741bf1a"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#a8d27cc843fe2d5484a5873635741bf1a">__cis_event_oneshot_post_query</a> (<a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *cis, int event_cnt)</td></tr>
+<tr class="separator:a8d27cc843fe2d5484a5873635741bf1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f6c15b5ae8709e519bde12320254b23"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#a9f6c15b5ae8709e519bde12320254b23">__cis_event_oneshot_post_run</a> (<a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *cis, int event_cnt)</td></tr>
+<tr class="separator:a9f6c15b5ae8709e519bde12320254b23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f03b9dcba802c1a760450526a677379"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#a1f03b9dcba802c1a760450526a677379">__cis_event_oneshot_post_remove</a> (<a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *cis, void(*callback)(<a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *), int instant)</td></tr>
+<tr class="separator:a1f03b9dcba802c1a760450526a677379"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae48638f7443fdf5f161c814184c863bf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#ae48638f7443fdf5f161c814184c863bf">__cis_event_oneshot_post_destroy</a> (<a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *cis)</td></tr>
+<tr class="separator:ae48638f7443fdf5f161c814184c863bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64d5fea52093265b0995f189559097dc"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#a64d5fea52093265b0995f189559097dc">ll_cis_pack_hdr</a> (uint8_t *pBuf, const <a class="el" href="ll__defines_8h.html#structcis__pdu__hdr__t">cis_pdu_hdr_t</a> *pHdr)</td></tr>
+<tr class="memdesc:a64d5fea52093265b0995f189559097dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pack an CIS data channel PDU header.  <a href="#a64d5fea52093265b0995f189559097dc">更多...</a><br /></td></tr>
+<tr class="separator:a64d5fea52093265b0995f189559097dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5886f296b951105aa7adb05ff2826e6b"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#a5886f296b951105aa7adb05ff2826e6b">ll_cis_unpack_hdr</a> (<a class="el" href="ll__defines_8h.html#structcis__pdu__hdr__t">cis_pdu_hdr_t</a> *pHdr, const uint8_t *pBuf)</td></tr>
+<tr class="memdesc:a5886f296b951105aa7adb05ff2826e6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unpack a CIS data channel PDU header.  <a href="#a5886f296b951105aa7adb05ff2826e6b">更多...</a><br /></td></tr>
+<tr class="separator:a5886f296b951105aa7adb05ff2826e6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a584041522aa4b8f10673ee9dd3050cfa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ll__cis_8h.html#structle__cig__t">le_cig_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#a584041522aa4b8f10673ee9dd3050cfa">ll_cig_by_id</a> (u8 id)</td></tr>
+<tr class="separator:a584041522aa4b8f10673ee9dd3050cfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a583a1371fba5ac97b186789f130c4e55"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ll__cis_8h.html#structle__cig__t">le_cig_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#a583a1371fba5ac97b186789f130c4e55">ll_cig_alloc</a> (u8 id)</td></tr>
+<tr class="separator:a583a1371fba5ac97b186789f130c4e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52dcd71dd7a8f3802a85846a14d3f8d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#a52dcd71dd7a8f3802a85846a14d3f8d8">ll_cig_free</a> (<a class="el" href="ll__cis_8h.html#structle__cig__t">le_cig_t</a> *cig)</td></tr>
+<tr class="separator:a52dcd71dd7a8f3802a85846a14d3f8d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ec27df6f762e9fdcaf6f7d37113947a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#a5ec27df6f762e9fdcaf6f7d37113947a">ll_cig_add_cis</a> (<a class="el" href="ll__cis_8h.html#structle__cig__t">le_cig_t</a> *cig, <a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *cis)</td></tr>
+<tr class="memdesc:a5ec27df6f762e9fdcaf6f7d37113947a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert at the head of the CIG.  <a href="#a5ec27df6f762e9fdcaf6f7d37113947a">更多...</a><br /></td></tr>
+<tr class="separator:a5ec27df6f762e9fdcaf6f7d37113947a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78cc2f9aeb7643c325b2764c5126eaa9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#a78cc2f9aeb7643c325b2764c5126eaa9">ll_cig_add_cis_tail</a> (<a class="el" href="ll__cis_8h.html#structle__cig__t">le_cig_t</a> *cig, <a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *cis)</td></tr>
+<tr class="memdesc:a78cc2f9aeb7643c325b2764c5126eaa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert at the tail of the CIG.  <a href="#a78cc2f9aeb7643c325b2764c5126eaa9">更多...</a><br /></td></tr>
+<tr class="separator:a78cc2f9aeb7643c325b2764c5126eaa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcb1151ec3ae0236dec9e651aed89ea1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#afcb1151ec3ae0236dec9e651aed89ea1">ll_cig_remove_cis</a> (<a class="el" href="ll__cis_8h.html#structle__cig__t">le_cig_t</a> *cig, <a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *cis)</td></tr>
+<tr class="memdesc:afcb1151ec3ae0236dec9e651aed89ea1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the CIS of the CIG.  <a href="#afcb1151ec3ae0236dec9e651aed89ea1">更多...</a><br /></td></tr>
+<tr class="separator:afcb1151ec3ae0236dec9e651aed89ea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a457ebb6ce8ad40968fd5aa0df9c5abcd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#a457ebb6ce8ad40968fd5aa0df9c5abcd">ll_cig_get_head_cis</a> (<a class="el" href="ll__cis_8h.html#structle__cig__t">le_cig_t</a> *cig)</td></tr>
+<tr class="memdesc:a457ebb6ce8ad40968fd5aa0df9c5abcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the CIS context at the head of the linked list.  <a href="#a457ebb6ce8ad40968fd5aa0df9c5abcd">更多...</a><br /></td></tr>
+<tr class="separator:a457ebb6ce8ad40968fd5aa0df9c5abcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae468f030c8f0d042f087ac2701b7de24"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#ae468f030c8f0d042f087ac2701b7de24">ll_cis_by_handle</a> (u16 handle)</td></tr>
+<tr class="separator:ae468f030c8f0d042f087ac2701b7de24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5add62d0408985583113023a9722af8a"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#a5add62d0408985583113023a9722af8a">ll_cis_handle_alloc</a> (void)</td></tr>
+<tr class="separator:a5add62d0408985583113023a9722af8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b628e37ed95eb6cd16b8cbfdd07562d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#a9b628e37ed95eb6cd16b8cbfdd07562d">ll_cis_alloc</a> (<a class="el" href="ll__cis_8h.html#structle__cig__t">le_cig_t</a> *cig)</td></tr>
+<tr class="separator:a9b628e37ed95eb6cd16b8cbfdd07562d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af657b080d264fb33edf2f5e15fb3fc3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#af657b080d264fb33edf2f5e15fb3fc3f">ll_cis_free</a> (<a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *cis)</td></tr>
+<tr class="separator:af657b080d264fb33edf2f5e15fb3fc3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8f4358acb1de5424a8fd61b92913b08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#af8f4358acb1de5424a8fd61b92913b08">ll_cis_close</a> (void)</td></tr>
+<tr class="memdesc:af8f4358acb1de5424a8fd61b92913b08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close all resources for CIS.  <a href="#af8f4358acb1de5424a8fd61b92913b08">更多...</a><br /></td></tr>
+<tr class="separator:af8f4358acb1de5424a8fd61b92913b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e6bc601bf78314298a15afb5f2d5d79"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#a2e6bc601bf78314298a15afb5f2d5d79">ll_cis_by_id</a> (uint8_t cigId, uint8_t cisId)</td></tr>
+<tr class="memdesc:a2e6bc601bf78314298a15afb5f2d5d79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a CIS by CIG ID and CIS ID.  <a href="#a2e6bc601bf78314298a15afb5f2d5d79">更多...</a><br /></td></tr>
+<tr class="separator:a2e6bc601bf78314298a15afb5f2d5d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f0c85ad9846643928b13ea9b195c513"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ll__defines_8h.html#a3e11e866bc6d82a804a0ee4740a3a470">bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#a4f0c85ad9846643928b13ea9b195c513">lctrCisIsHeadCis</a> (const struct list_head *head, <a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *cis)</td></tr>
+<tr class="memdesc:a4f0c85ad9846643928b13ea9b195c513"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the input context is the head in the linked list.  <a href="#a4f0c85ad9846643928b13ea9b195c513">更多...</a><br /></td></tr>
+<tr class="separator:a4f0c85ad9846643928b13ea9b195c513"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51eeecb7f0edcd634fe826d0be3b050c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#a51eeecb7f0edcd634fe826d0be3b050c">ll_cis_destory</a> (<a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *cis)</td></tr>
+<tr class="memdesc:a51eeecb7f0edcd634fe826d0be3b050c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cleanup context, clean CIG context if necessary for slave.  <a href="#a51eeecb7f0edcd634fe826d0be3b050c">更多...</a><br /></td></tr>
+<tr class="separator:a51eeecb7f0edcd634fe826d0be3b050c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc8162de5922c6090b853ab1c63fc54e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ll__defines_8h.html#a3e11e866bc6d82a804a0ee4740a3a470">bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#abc8162de5922c6090b853ab1c63fc54e">ll_cis_is_established</a> (<a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *cis)</td></tr>
+<tr class="memdesc:abc8162de5922c6090b853ab1c63fc54e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the CIS is established or not.  <a href="#abc8162de5922c6090b853ab1c63fc54e">更多...</a><br /></td></tr>
+<tr class="separator:abc8162de5922c6090b853ab1c63fc54e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa72512f66a0a8409a69fbb586e108d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#aaa72512f66a0a8409a69fbb586e108d5">ll_cis_established</a> (<a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *cis)</td></tr>
+<tr class="memdesc:aaa72512f66a0a8409a69fbb586e108d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Action function for CIS established.  <a href="#aaa72512f66a0a8409a69fbb586e108d5">更多...</a><br /></td></tr>
+<tr class="separator:aaa72512f66a0a8409a69fbb586e108d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af283bd8306fdfaccb098428fea80e604"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#af283bd8306fdfaccb098428fea80e604">ll_cis_established_fail</a> (<a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *cis)</td></tr>
+<tr class="memdesc:af283bd8306fdfaccb098428fea80e604"><td class="mdescLeft">&#160;</td><td class="mdescRight">Action function for CIS fail to establish.  <a href="#af283bd8306fdfaccb098428fea80e604">更多...</a><br /></td></tr>
+<tr class="separator:af283bd8306fdfaccb098428fea80e604"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab38a55a615c21b3b79ade97304518e0"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#aab38a55a615c21b3b79ade97304518e0">ll_get_number_enable_cis</a> (LlCisCigParams_t *param)</td></tr>
+<tr class="memdesc:aab38a55a615c21b3b79ade97304518e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of CIS contexts that are already set up(enabled).  <a href="#aab38a55a615c21b3b79ade97304518e0">更多...</a><br /></td></tr>
+<tr class="separator:aab38a55a615c21b3b79ade97304518e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76bc0f8e82666f19e1b2b86989f0240b"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#a76bc0f8e82666f19e1b2b86989f0240b">ll_get_number_enable_cis_test</a> (<a class="el" href="ll__cis_8h.html#structLlCisCigParamsTest__t">LlCisCigParamsTest_t</a> *param)</td></tr>
+<tr class="memdesc:a76bc0f8e82666f19e1b2b86989f0240b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of CIS contexts that are enabled(in use).  <a href="#a76bc0f8e82666f19e1b2b86989f0240b">更多...</a><br /></td></tr>
+<tr class="separator:a76bc0f8e82666f19e1b2b86989f0240b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a354377eb3d543c74536f474719f40ee3"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#a354377eb3d543c74536f474719f40ee3">ll_get_number_avail_cis</a> ()</td></tr>
+<tr class="memdesc:a354377eb3d543c74536f474719f40ee3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of available CIS contexts.  <a href="#a354377eb3d543c74536f474719f40ee3">更多...</a><br /></td></tr>
+<tr class="separator:a354377eb3d543c74536f474719f40ee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa087d92b7cd3100584747466bb8e2f85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#aa087d92b7cd3100584747466bb8e2f85">ll_setup_channel_param</a> (<a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *cis, uint64_t chanMask)</td></tr>
+<tr class="memdesc:aa087d92b7cd3100584747466bb8e2f85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set up the channel parameter.  <a href="#aa087d92b7cd3100584747466bb8e2f85">更多...</a><br /></td></tr>
+<tr class="separator:aa087d92b7cd3100584747466bb8e2f85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac78d412978e0df4f3ffec69f4a5750bc"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#ac78d412978e0df4f3ffec69f4a5750bc">ll_cis_tx_test</a> (<a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *cis, u8 payload_type)</td></tr>
+<tr class="memdesc:ac78d412978e0df4f3ffec69f4a5750bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable ISO Tx test.  <a href="#ac78d412978e0df4f3ffec69f4a5750bc">更多...</a><br /></td></tr>
+<tr class="separator:ac78d412978e0df4f3ffec69f4a5750bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a755cde1eed5764421acdc61c8aa30d10"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#a755cde1eed5764421acdc61c8aa30d10">ll_cis_rx_test</a> (<a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *cis, u8 payload_type)</td></tr>
+<tr class="memdesc:a755cde1eed5764421acdc61c8aa30d10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable CIS Rx test.  <a href="#a755cde1eed5764421acdc61c8aa30d10">更多...</a><br /></td></tr>
+<tr class="separator:a755cde1eed5764421acdc61c8aa30d10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf80b7330c1e841e6ee9889402009f6c"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#acf80b7330c1e841e6ee9889402009f6c">ll_cis_read_test_counters</a> (<a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *cis, <a class="el" href="ll__iso_8h.html#structLlIsoTestCtrs__t">LlIsoTestCtrs_t</a> *pTest)</td></tr>
+<tr class="memdesc:acf80b7330c1e841e6ee9889402009f6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">CIS read ISO test counters.  <a href="#acf80b7330c1e841e6ee9889402009f6c">更多...</a><br /></td></tr>
+<tr class="separator:acf80b7330c1e841e6ee9889402009f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84c5410d08ba7cd776d78634939ab282"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#a84c5410d08ba7cd776d78634939ab282">ll_cis_calc_subevt_sequential_us</a> (uint8_t phyMToS, uint8_t phySToM, uint8_t plMToS, uint8_t plSToM)</td></tr>
+<tr class="memdesc:a84c5410d08ba7cd776d78634939ab282"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the duration in microseconds of an subevent for sequential packing.  <a href="#a84c5410d08ba7cd776d78634939ab282">更多...</a><br /></td></tr>
+<tr class="separator:a84c5410d08ba7cd776d78634939ab282"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a5894c28eddb56eaecd71b42178c671"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#a2a5894c28eddb56eaecd71b42178c671">ll_cis_calc_subevt_interleaved_us</a> (LlCisCigParams_t *pSetCigParam)</td></tr>
+<tr class="memdesc:a2a5894c28eddb56eaecd71b42178c671"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the duration in microseconds of an sub event for interleaved packing.  <a href="#a2a5894c28eddb56eaecd71b42178c671">更多...</a><br /></td></tr>
+<tr class="separator:a2a5894c28eddb56eaecd71b42178c671"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae923b57373fca351e86e642ad60a02b6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#ae923b57373fca351e86e642ad60a02b6">hci_le_cis_established_event</a> (<a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *cis, uint8_t status)</td></tr>
+<tr class="separator:ae923b57373fca351e86e642ad60a02b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac139ff04625fd6dbe79fd9ac5f1e29cf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#ac139ff04625fd6dbe79fd9ac5f1e29cf">ll_create_cis_done</a> (<a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *cis)</td></tr>
+<tr class="memdesc:ac139ff04625fd6dbe79fd9ac5f1e29cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Action function for create all CISes command.  <a href="#ac139ff04625fd6dbe79fd9ac5f1e29cf">更多...</a><br /></td></tr>
+<tr class="separator:ac139ff04625fd6dbe79fd9ac5f1e29cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadc8587e5100a4de42b09b9f17b60aae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#aadc8587e5100a4de42b09b9f17b60aae">ll_cis_fast_supervision_timeout_handler</a> (<a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *cis)</td></tr>
+<tr class="separator:aadc8587e5100a4de42b09b9f17b60aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af340d0b7530495f4d6f056c6f0ff69a7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#af340d0b7530495f4d6f056c6f0ff69a7">cis_rx_probe_handler</a> (void *priv, uint8_t *pCisPdu)</td></tr>
+<tr class="separator:af340d0b7530495f4d6f056c6f0ff69a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a090ce3e799006f927703287f7f98bca0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#a090ce3e799006f927703287f7f98bca0">cis_tx_probe_handler</a> (void *priv, uint8_t *cis_pdu)</td></tr>
+<tr class="separator:a090ce3e799006f927703287f7f98bca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4acb82cb9884ccd0238197278949436"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#ac4acb82cb9884ccd0238197278949436">cis_evt_probe_handler</a> (void *priv, int type, int event)</td></tr>
+<tr class="separator:ac4acb82cb9884ccd0238197278949436"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1627d3b3290881d7a2f94ba4f251b3fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#a1627d3b3290881d7a2f94ba4f251b3fa">ll_create_cis_link</a> (struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *link, <a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *cis, void *param)</td></tr>
+<tr class="separator:a1627d3b3290881d7a2f94ba4f251b3fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6962c913002d44f246f64f670175b53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#af6962c913002d44f246f64f670175b53">ll_delete_cis_link</a> (<a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *cis)</td></tr>
+<tr class="separator:af6962c913002d44f246f64f670175b53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14b376f2f90e465384da69bf3812a0aa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#a14b376f2f90e465384da69bf3812a0aa">ll_send_cis_msg_id</a> (<a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *cis, uint8_t msg_id)</td></tr>
+<tr class="separator:a14b376f2f90e465384da69bf3812a0aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29595af729156ed3d1a7dc10ca01cc81"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#a29595af729156ed3d1a7dc10ca01cc81">ll_cis_disconnect</a> (<a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *cis, uint8_t reason)</td></tr>
+<tr class="separator:a29595af729156ed3d1a7dc10ca01cc81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cce21b1c893a8eedcebab7782a1734f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#a2cce21b1c893a8eedcebab7782a1734f">ll_cis_msg_handler</a> (uint8_t msg_id, void *payload)</td></tr>
+<tr class="separator:a2cce21b1c893a8eedcebab7782a1734f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e86ba22791343b8c1edb883824c9e93"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#a8e86ba22791343b8c1edb883824c9e93">ll_cis_slave_rx_post_handler</a> (void *priv)</td></tr>
+<tr class="separator:a8e86ba22791343b8c1edb883824c9e93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90d588feb737002a3d2b633a4381341c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#a90d588feb737002a3d2b633a4381341c">ll_cis_rx_post_handler</a> (<a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *cis)</td></tr>
+<tr class="separator:a90d588feb737002a3d2b633a4381341c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58ee537675d76e350279ca92def7332c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#a58ee537675d76e350279ca92def7332c">ll_cis_tx_post_handler</a> (<a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *cis)</td></tr>
+<tr class="separator:a58ee537675d76e350279ca92def7332c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa32f4fd215b5ca9cf9e3564dc782c031"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#aa32f4fd215b5ca9cf9e3564dc782c031">ll_cis_evt_post_handler</a> (<a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *cis)</td></tr>
+<tr class="separator:aa32f4fd215b5ca9cf9e3564dc782c031"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac92f0de91f9e7826744b8e2db68642fa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#ac92f0de91f9e7826744b8e2db68642fa">ll_cis_post_process</a> (void)</td></tr>
+<tr class="separator:ac92f0de91f9e7826744b8e2db68642fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad209cdddf3389eb066175a82335f080b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#ad209cdddf3389eb066175a82335f080b">ll_cis_init</a> (void)</td></tr>
+<tr class="memdesc:ad209cdddf3389eb066175a82335f080b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize resources for CIS.  <a href="#ad209cdddf3389eb066175a82335f080b">更多...</a><br /></td></tr>
+<tr class="separator:ad209cdddf3389eb066175a82335f080b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:a578309a643ab36336d81d92a6d503b17"><td class="memItemLeft" align="right" valign="top">const struct ble_handler&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__cis_8c.html#a578309a643ab36336d81d92a6d503b17">ll_cis_bb_handler</a></td></tr>
+<tr class="memdesc:a578309a643ab36336d81d92a6d503b17"><td class="mdescLeft">&#160;</td><td class="mdescRight">BB LE baseband callback.  <a href="#a578309a643ab36336d81d92a6d503b17">更多...</a><br /></td></tr>
+<tr class="separator:a578309a643ab36336d81d92a6d503b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">宏定义说明</h2>
+<a class="anchor" id="ad223350d80db21fa8b721107cd1f6442"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __this&#160;&#160;&#160;(&amp;<a class="el" href="link__layer_8h.html#a11d5b1c8b0def0c238d4700650780724">ll_hdl</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a04135f631fe91199f05b1d816dda8756"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_DUMP_ENABLE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9eeb6e067100d0dec6e53bce19a403e0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_ERROR_ENABLE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a69321c8a2a0b07a07fb5088e82e25eb0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_INFO_ENABLE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7ce0df38eb467e59f209470c8f5ac4e6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_TAG&#160;&#160;&#160;&quot;[LL-CIS]&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6c6991cba0e2995d7d9aec73e0324317"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_TAG_CONST&#160;&#160;&#160;LL_CIS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="ab3e1bb2d82d5525592d595a7574a14a6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void __cis_event_oneshot_destroy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *&#160;</td>
+          <td class="paramname"><em>cis</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>: __cis_event_oneshot_destroy</p>
+<p>: cis </p>
+
+</div>
+</div>
+<a class="anchor" id="a502ed9cc3d020fde7c85313184806589"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void __cis_event_oneshot_post_add </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *&#160;</td>
+          <td class="paramname"><em>cis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(*)(<a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *)&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>instant</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>: __cis_event_oneshot_post_add</p>
+<p>: cis  : callback  : instant </p>
+
+</div>
+</div>
+<a class="anchor" id="ae48638f7443fdf5f161c814184c863bf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void __cis_event_oneshot_post_destroy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *&#160;</td>
+          <td class="paramname"><em>cis</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>: __cis_event_oneshot_post_destroy</p>
+<p>: cis </p>
+
+</div>
+</div>
+<a class="anchor" id="a8d27cc843fe2d5484a5873635741bf1a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool __cis_event_oneshot_post_query </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *&#160;</td>
+          <td class="paramname"><em>cis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>event_cnt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>: __cis_event_oneshot_post_query</p>
+<p>: cis  : event_cnt</p>
+<p>: </p>
+
+</div>
+</div>
+<a class="anchor" id="a1f03b9dcba802c1a760450526a677379"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void __cis_event_oneshot_post_remove </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *&#160;</td>
+          <td class="paramname"><em>cis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(*)(<a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *)&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>instant</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>: __cis_event_oneshot_post_remove</p>
+<p>: cis  : callback  : instant </p>
+
+</div>
+</div>
+<a class="anchor" id="a9f6c15b5ae8709e519bde12320254b23"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void __cis_event_oneshot_post_run </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *&#160;</td>
+          <td class="paramname"><em>cis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>event_cnt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>: __cis_event_oneshot_post_run</p>
+<p>: cis  : event_cnt </p>
+
+</div>
+</div>
+<a class="anchor" id="a83b458f38386417e243387f00f3ea192"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void __cis_event_oneshot_remove </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *&#160;</td>
+          <td class="paramname"><em>cis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(*)(<a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *)&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>instant</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>: __cis_event_oneshot_remove</p>
+<p>: cis  : callback  : instant </p>
+
+</div>
+</div>
+<a class="anchor" id="a712dc5acfb8de0c59a8ceec43596c931"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void __cis_event_oneshot_run </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *&#160;</td>
+          <td class="paramname"><em>cis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>event_cnt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>: __cis_event_oneshot_run</p>
+<p>: cis  : event_cnt </p>
+
+</div>
+</div>
+<a class="anchor" id="aea6d0e5470d40ea3f69f87e9e6de9eeb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void __cis_evt_oneshot_add </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *&#160;</td>
+          <td class="paramname"><em>cis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(*)(<a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *)&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>instant</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>: __cis_event_oneshot_add</p>
+<p>: cis  : callback  : instant </p>
+
+</div>
+</div>
+<a class="anchor" id="a9e54d38aa5192da708600add46c68c44"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void __cis_rx_oneshot_add </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *&#160;</td>
+          <td class="paramname"><em>cis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(*)(<a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *)&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>: __cis_rx_oneshot_add</p>
+<p>: cis  : callback </p>
+
+</div>
+</div>
+<a class="anchor" id="a6f1fe93aaa91625cd5e022eb14be60cf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void __cis_rx_oneshot_destroy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *&#160;</td>
+          <td class="paramname"><em>cis</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>: __cis_rx_oneshot_destroy</p>
+<p>: cis </p>
+
+</div>
+</div>
+<a class="anchor" id="aacde251077ab8a1ba87d05e0ed00b800"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void __cis_rx_oneshot_run </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *&#160;</td>
+          <td class="paramname"><em>cis</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>: __cis_rx_oneshot_run</p>
+<p>: cis </p>
+
+</div>
+</div>
+<a class="anchor" id="ac4acb82cb9884ccd0238197278949436"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void cis_evt_probe_handler </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>priv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>event</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>: cis_evt_probe_handler</p>
+<p>: priv  : type  : event </p>
+
+</div>
+</div>
+<a class="anchor" id="af340d0b7530495f4d6f056c6f0ff69a7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void cis_rx_probe_handler </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>priv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>pCisPdu</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>: cis_rx_probe_handler</p>
+<p>: priv  : rx </p>
+
+</div>
+</div>
+<a class="anchor" id="a090ce3e799006f927703287f7f98bca0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void cis_tx_probe_handler </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>priv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>cis_pdu</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>: cis_tx_probe_handler</p>
+<p>: priv  : cis_pdu </p>
+
+</div>
+</div>
+<a class="anchor" id="ae923b57373fca351e86e642ad60a02b6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void hci_le_cis_established_event </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *&#160;</td>
+          <td class="paramname"><em>cis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>: hci_le_cis_established_event</p>
+<p>: cis  : status </p>
+
+</div>
+</div>
+<a class="anchor" id="a4f0c85ad9846643928b13ea9b195c513"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ll__defines_8h.html#a3e11e866bc6d82a804a0ee4740a3a470">bool_t</a> lctrCisIsHeadCis </td>
+          <td>(</td>
+          <td class="paramtype">const struct list_head *&#160;</td>
+          <td class="paramname"><em>head</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *&#160;</td>
+          <td class="paramname"><em>cis</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if the input context is the head in the linked list. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">head</td><td>Pointer to the list head. </td></tr>
+    <tr><td class="paramname">cis</td><td>Pointer to the CIS context.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>TRUE if the input context is the head in the linked list, FALSE otherwise </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5ec27df6f762e9fdcaf6f7d37113947a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_cig_add_cis </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__cis_8h.html#structle__cig__t">le_cig_t</a> *&#160;</td>
+          <td class="paramname"><em>cig</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *&#160;</td>
+          <td class="paramname"><em>cis</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Insert at the head of the CIG. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cig</td><td>CIG context. </td></tr>
+    <tr><td class="paramname">cis</td><td>CIS context. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a78cc2f9aeb7643c325b2764c5126eaa9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_cig_add_cis_tail </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__cis_8h.html#structle__cig__t">le_cig_t</a> *&#160;</td>
+          <td class="paramname"><em>cig</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *&#160;</td>
+          <td class="paramname"><em>cis</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Insert at the tail of the CIG. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cig</td><td>CIG context. </td></tr>
+    <tr><td class="paramname">cis</td><td>CIS context. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a583a1371fba5ac97b186789f130c4e55"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ll__cis_8h.html#structle__cig__t">le_cig_t</a>* ll_cig_alloc </td>
+          <td>(</td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a584041522aa4b8f10673ee9dd3050cfa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ll__cis_8h.html#structle__cig__t">le_cig_t</a>* ll_cig_by_id </td>
+          <td>(</td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>: ll_cig_by_id</p>
+<p>: id</p>
+<p>: </p>
+
+</div>
+</div>
+<a class="anchor" id="a52dcd71dd7a8f3802a85846a14d3f8d8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_cig_free </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__cis_8h.html#structle__cig__t">le_cig_t</a> *&#160;</td>
+          <td class="paramname"><em>cig</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a457ebb6ce8ad40968fd5aa0df9c5abcd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a>* ll_cig_get_head_cis </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__cis_8h.html#structle__cig__t">le_cig_t</a> *&#160;</td>
+          <td class="paramname"><em>cig</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the CIS context at the head of the linked list. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pList</td><td>Pointer to the list.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>NULL or pointer to the CIS context at the head of the linked list. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afcb1151ec3ae0236dec9e651aed89ea1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_cig_remove_cis </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__cis_8h.html#structle__cig__t">le_cig_t</a> *&#160;</td>
+          <td class="paramname"><em>cig</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *&#160;</td>
+          <td class="paramname"><em>cis</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove the CIS of the CIG. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cig</td><td>CIG context. </td></tr>
+    <tr><td class="paramname">cis</td><td>CIS context. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a9b628e37ed95eb6cd16b8cbfdd07562d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a>* ll_cis_alloc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__cis_8h.html#structle__cig__t">le_cig_t</a> *&#160;</td>
+          <td class="paramname"><em>cig</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae468f030c8f0d042f087ac2701b7de24"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a>* ll_cis_by_handle </td>
+          <td>(</td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2e6bc601bf78314298a15afb5f2d5d79"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> * ll_cis_by_id </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>cigId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>cisId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Find a CIS by CIG ID and CIS ID. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cigId</td><td>CIG identifier. </td></tr>
+    <tr><td class="paramname">cisId</td><td>CIS identifier.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>CIS or NULL if not found. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2a5894c28eddb56eaecd71b42178c671"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t ll_cis_calc_subevt_interleaved_us </td>
+          <td>(</td>
+          <td class="paramtype">LlCisCigParams_t *&#160;</td>
+          <td class="paramname"><em>pSetCigParam</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compute the duration in microseconds of an sub event for interleaved packing. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pSetCigParam</td><td>CIG parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Time in microseconds for the packet to be transferred on the medium.</dd></dl>
+<dl class="section note"><dt>注解</dt><dd>This value includes preamble, access address, CRC and T_IFS. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a84c5410d08ba7cd776d78634939ab282"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t ll_cis_calc_subevt_sequential_us </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>phyMToS</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>phySToM</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>plMToS</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>plSToM</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compute the duration in microseconds of an subevent for sequential packing. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phyMToS</td><td>PHY master to slave. </td></tr>
+    <tr><td class="paramname">phySToM</td><td>PHY slave to master. </td></tr>
+    <tr><td class="paramname">plMToS</td><td>Payload master to slave. </td></tr>
+    <tr><td class="paramname">plSToM</td><td>Payload master to slave.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Time in microseconds for the packet to be transferred on the medium. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af8f4358acb1de5424a8fd61b92913b08"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_cis_close </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Close all resources for CIS. </p>
+
+</div>
+</div>
+<a class="anchor" id="a51eeecb7f0edcd634fe826d0be3b050c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_cis_destory </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *&#160;</td>
+          <td class="paramname"><em>cis</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cleanup context, clean CIG context if necessary for slave. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cis</td><td>CIS context to free. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a29595af729156ed3d1a7dc10ca01cc81"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ll_cis_disconnect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *&#160;</td>
+          <td class="paramname"><em>cis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>reason</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>: ll_cis_disconnect</p>
+<p>: cis  : reason</p>
+<p>: </p>
+
+</div>
+</div>
+<a class="anchor" id="aaa72512f66a0a8409a69fbb586e108d5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_cis_established </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *&#160;</td>
+          <td class="paramname"><em>cis</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Action function for CIS established. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pCisCtx</td><td>CIS context. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="af283bd8306fdfaccb098428fea80e604"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_cis_established_fail </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *&#160;</td>
+          <td class="paramname"><em>cis</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Action function for CIS fail to establish. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pCisCtx</td><td>CIS context. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aa32f4fd215b5ca9cf9e3564dc782c031"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ll_cis_evt_post_handler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *&#160;</td>
+          <td class="paramname"><em>cis</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>: ll_cis_evt_post_handler</p>
+<p>: cis </p>
+
+</div>
+</div>
+<a class="anchor" id="aadc8587e5100a4de42b09b9f17b60aae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_cis_fast_supervision_timeout_handler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *&#160;</td>
+          <td class="paramname"><em>cis</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>: ll_cis_fast_supervision_timeout_handler</p>
+<p>: link </p>
+
+</div>
+</div>
+<a class="anchor" id="af657b080d264fb33edf2f5e15fb3fc3f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_cis_free </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *&#160;</td>
+          <td class="paramname"><em>cis</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5add62d0408985583113023a9722af8a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t ll_cis_handle_alloc </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad209cdddf3389eb066175a82335f080b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_cis_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize resources for CIS. </p>
+
+</div>
+</div>
+<a class="anchor" id="abc8162de5922c6090b853ab1c63fc54e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ll__defines_8h.html#a3e11e866bc6d82a804a0ee4740a3a470">bool_t</a> ll_cis_is_established </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *&#160;</td>
+          <td class="paramname"><em>cis</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if the CIS is established or not. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pCisCtx</td><td>CIS context.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>TRUE if CIS is established. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2cce21b1c893a8eedcebab7782a1734f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ll_cis_msg_handler </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>msg_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>payload</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>: ll_cis_msg_handler</p>
+<p>: msg_id  : payload </p>
+
+</div>
+</div>
+<a class="anchor" id="a64d5fea52093265b0995f189559097dc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t ll_cis_pack_hdr </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>pBuf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="ll__defines_8h.html#structcis__pdu__hdr__t">cis_pdu_hdr_t</a> *&#160;</td>
+          <td class="paramname"><em>pHdr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pack an CIS data channel PDU header. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pBuf</td><td>Packed packet buffer. </td></tr>
+    <tr><td class="paramname">pHdr</td><td>Unpacked PDU header.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Header length. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac92f0de91f9e7826744b8e2db68642fa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ll_cis_post_process </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>: ll_cis_post_process</p>
+<p>: </p>
+
+</div>
+</div>
+<a class="anchor" id="acf80b7330c1e841e6ee9889402009f6c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 ll_cis_read_test_counters </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *&#160;</td>
+          <td class="paramname"><em>cis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ll__iso_8h.html#structLlIsoTestCtrs__t">LlIsoTestCtrs_t</a> *&#160;</td>
+          <td class="paramname"><em>pTest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CIS read ISO test counters. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cis</td><td>CIS context. </td></tr>
+    <tr><td class="paramname">pTest</td><td>Pointer to the statistics block.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Status error code. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a90d588feb737002a3d2b633a4381341c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ll_cis_rx_post_handler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *&#160;</td>
+          <td class="paramname"><em>cis</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>: ll_cis_rx_post_handler</p>
+<p>: cis </p>
+
+</div>
+</div>
+<a class="anchor" id="a755cde1eed5764421acdc61c8aa30d10"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 ll_cis_rx_test </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *&#160;</td>
+          <td class="paramname"><em>cis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>payload_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable CIS Rx test. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cis</td><td>CIS context. </td></tr>
+    <tr><td class="paramname">payload_type</td><td>Payload length type.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Status error code. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8e86ba22791343b8c1edb883824c9e93"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ll_cis_slave_rx_post_handler </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>priv</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>: ll_cis_slave_rx_post_handler</p>
+<p>: priv </p>
+
+</div>
+</div>
+<a class="anchor" id="a3e9ca6800f01843b5f4205b4ad3250d4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_cis_supervision_timeout_changeperiod </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *&#160;</td>
+          <td class="paramname"><em>cis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>: ll_supervision_timeout_changeperiod</p>
+<p>: cis  : timeout </p>
+
+</div>
+</div>
+<a class="anchor" id="a68e588852461348978bb282dc2e54c4a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ll_cis_supervision_timeout_reset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *&#160;</td>
+          <td class="paramname"><em>cis</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>: ll_cis_supervision_timeout_reset</p>
+<p>: cis </p>
+
+</div>
+</div>
+<a class="anchor" id="ac192378ffe9d406ab7c4349a1f512e0d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_cis_supervision_timeout_start </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *&#160;</td>
+          <td class="paramname"><em>cis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>: ll_cis_supervision_timeout_start</p>
+<p>: cis  : timeout </p>
+
+</div>
+</div>
+<a class="anchor" id="a10748cd3087da145e4febf2ea0f07e47"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ll_cis_supervision_timeout_stop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *&#160;</td>
+          <td class="paramname"><em>cis</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>: ll_cis_supervision_timeout_stop</p>
+<p>: cis </p>
+
+</div>
+</div>
+<a class="anchor" id="aed49f14f4a63f46322437d5881d63146"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ll_cis_supervision_timer_handler </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>priv</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>: ll_cis_supervision_timer_handler</p>
+<p>: priv </p>
+
+</div>
+</div>
+<a class="anchor" id="a58ee537675d76e350279ca92def7332c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ll_cis_tx_post_handler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *&#160;</td>
+          <td class="paramname"><em>cis</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>: ll_cis_tx_post_handler</p>
+<p>: cis </p>
+
+</div>
+</div>
+<a class="anchor" id="ac78d412978e0df4f3ffec69f4a5750bc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 ll_cis_tx_test </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *&#160;</td>
+          <td class="paramname"><em>cis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>payload_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable ISO Tx test. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cis</td><td>CIS context. </td></tr>
+    <tr><td class="paramname">payload_type</td><td>Payload length type.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Status error code. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5886f296b951105aa7adb05ff2826e6b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t ll_cis_unpack_hdr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__defines_8h.html#structcis__pdu__hdr__t">cis_pdu_hdr_t</a> *&#160;</td>
+          <td class="paramname"><em>pHdr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>pBuf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unpack a CIS data channel PDU header. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pHdr</td><td>Unpacked header. </td></tr>
+    <tr><td class="paramname">pBuf</td><td>Packed packet buffer.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Header length. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac139ff04625fd6dbe79fd9ac5f1e29cf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ll_create_cis_done </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *&#160;</td>
+          <td class="paramname"><em>cis</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Action function for create all CISes command. </p>
+
+</div>
+</div>
+<a class="anchor" id="a1627d3b3290881d7a2f94ba4f251b3fa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_create_cis_link </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *&#160;</td>
+          <td class="paramname"><em>link</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *&#160;</td>
+          <td class="paramname"><em>cis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>param</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>: ll_create_cis_link</p>
+<p>: link  : cis  : param </p>
+
+</div>
+</div>
+<a class="anchor" id="af6962c913002d44f246f64f670175b53"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_delete_cis_link </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *&#160;</td>
+          <td class="paramname"><em>cis</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>: ll_delete_cis_link</p>
+<p>: cis </p>
+
+</div>
+</div>
+<a class="anchor" id="a354377eb3d543c74536f474719f40ee3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t ll_get_number_avail_cis </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the number of available CIS contexts. </p>
+<dl class="section return"><dt>返回</dt><dd>Number of available CIS contexts. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aab38a55a615c21b3b79ade97304518e0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t ll_get_number_enable_cis </td>
+          <td>(</td>
+          <td class="paramtype">LlCisCigParams_t *&#160;</td>
+          <td class="paramname"><em>param</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the number of CIS contexts that are already set up(enabled). </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pSetCigParam</td><td>Set CIG parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Number of CIS contexts that are already set up(enabled). </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a76bc0f8e82666f19e1b2b86989f0240b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t ll_get_number_enable_cis_test </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__cis_8h.html#structLlCisCigParamsTest__t">LlCisCigParamsTest_t</a> *&#160;</td>
+          <td class="paramname"><em>param</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the number of CIS contexts that are enabled(in use). </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pSetCigParam</td><td>Set CIG parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Number of CIS contexts that are already set up(enabled). </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a14b376f2f90e465384da69bf3812a0aa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ll_send_cis_msg_id </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *&#160;</td>
+          <td class="paramname"><em>cis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>msg_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>: ll_send_cis_msg_id</p>
+<p>: cis  : msg_id</p>
+<p>: </p>
+
+</div>
+</div>
+<a class="anchor" id="aa087d92b7cd3100584747466bb8e2f85"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_setup_channel_param </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *&#160;</td>
+          <td class="paramname"><em>cis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>chanMask</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set up the channel parameter. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pCisCtx</td><td>CIS context. </td></tr>
+    <tr><td class="paramname">chanMask</td><td>Channel mask. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a class="anchor" id="a578309a643ab36336d81d92a6d503b17"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const struct ble_handler ll_cis_bb_handler</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>初始值:</b><div class="fragment"><div class="line">= {</div><div class="line">    .rx_probe_handler       = <a class="code" href="ll__cis_8c.html#af340d0b7530495f4d6f056c6f0ff69a7">cis_rx_probe_handler</a>,</div><div class="line">    .tx_probe_handler       = <a class="code" href="ll__cis_8c.html#a090ce3e799006f927703287f7f98bca0">cis_tx_probe_handler</a>,</div><div class="line">    .event_probe_handler    = <a class="code" href="ll__cis_8c.html#ac4acb82cb9884ccd0238197278949436">cis_evt_probe_handler</a>,</div><div class="line">}</div><div class="ttc" id="ll__cis_8c_html_ac4acb82cb9884ccd0238197278949436"><div class="ttname"><a href="ll__cis_8c.html#ac4acb82cb9884ccd0238197278949436">cis_evt_probe_handler</a></div><div class="ttdeci">static void cis_evt_probe_handler(void *priv, int type, int event)</div><div class="ttdef"><b>Definition:</b> ll_cis.c:1353</div></div>
+<div class="ttc" id="ll__cis_8c_html_a090ce3e799006f927703287f7f98bca0"><div class="ttname"><a href="ll__cis_8c.html#a090ce3e799006f927703287f7f98bca0">cis_tx_probe_handler</a></div><div class="ttdeci">static void cis_tx_probe_handler(void *priv, uint8_t *cis_pdu)</div><div class="ttdef"><b>Definition:</b> ll_cis.c:1318</div></div>
+<div class="ttc" id="ll__cis_8c_html_af340d0b7530495f4d6f056c6f0ff69a7"><div class="ttname"><a href="ll__cis_8c.html#af340d0b7530495f4d6f056c6f0ff69a7">cis_rx_probe_handler</a></div><div class="ttdeci">static void cis_rx_probe_handler(void *priv, uint8_t *pCisPdu)</div><div class="ttdef"><b>Definition:</b> ll_cis.c:1281</div></div>
+</div><!-- fragment -->
+<p>BB LE baseband callback. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structlmp__core__data__static" kind="struct" language="C++" prot="public">
+    <compoundname>lmp_core_data_static</compoundname>
+    <includes refid="lmp_8h" local="no">lmp.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlmp__core__data__static_1a651d16ebe4730b7b874c0109f43da229" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 lmp_core_data_static::handle</definition>
+        <argsstring></argsstring>
+        <name>handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="656" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="656" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__core__data__static_1a4ebae0342ab13d03742e4465cfcfcc66" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structlmp__device" kindref="compound">lmp_device</ref></type>
+        <definition>struct lmp_device lmp_core_data_static::remote</definition>
+        <argsstring></argsstring>
+        <name>remote</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="656" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="657" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1577">
+        <label>lmp_device</label>
+        <link refid="structlmp__device"/>
+      </node>
+      <node id="1576">
+        <label>lmp_core_data_static</label>
+        <link refid="structlmp__core__data__static"/>
+        <childnode refid="1577" relation="usage">
+          <edgelabel>remote</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="655" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="655" bodyend="658"/>
+    <listofallmembers>
+      <member refid="structlmp__core__data__static_1a651d16ebe4730b7b874c0109f43da229" prot="public" virt="non-virtual"><scope>lmp_core_data_static</scope><name>handle</name></member>
+      <member refid="structlmp__core__data__static_1a4ebae0342ab13d03742e4465cfcfcc66" prot="public" virt="non-virtual"><scope>lmp_core_data_static</scope><name>remote</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

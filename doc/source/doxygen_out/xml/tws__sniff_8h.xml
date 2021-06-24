@@ -1,0 +1,452 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="tws__sniff_8h" kind="file" language="C++">
+    <compoundname>tws_sniff.h</compoundname>
+    <includes refid="tws__link_8h" local="yes">classic/tws_link.h</includes>
+    <includes local="yes">classic/tws_event.h</includes>
+    <includes refid="tws__conn_8h" local="yes">classic/tws_conn.h</includes>
+    <includes local="yes">system/includes.h</includes>
+    <incdepgraph>
+      <node id="5615">
+        <label>classic/bredr_frame.h</label>
+      </node>
+      <node id="5608">
+        <label>generic/list.h</label>
+      </node>
+      <node id="5612">
+        <label>common/link_task.h</label>
+        <link refid="link__task_8h"/>
+        <childnode refid="5607" relation="include">
+        </childnode>
+        <childnode refid="5608" relation="include">
+        </childnode>
+      </node>
+      <node id="5602">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h</label>
+        <link refid="tws_sniff.h"/>
+        <childnode refid="5603" relation="include">
+        </childnode>
+        <childnode refid="5616" relation="include">
+        </childnode>
+        <childnode refid="5617" relation="include">
+        </childnode>
+        <childnode refid="5619" relation="include">
+        </childnode>
+      </node>
+      <node id="5611">
+        <label>classic/bredr_device.h</label>
+        <link refid="bredr__device_8h"/>
+      </node>
+      <node id="5617">
+        <label>classic/tws_conn.h</label>
+        <link refid="tws__conn_8h"/>
+        <childnode refid="5603" relation="include">
+        </childnode>
+        <childnode refid="5618" relation="include">
+        </childnode>
+        <childnode refid="5613" relation="include">
+        </childnode>
+      </node>
+      <node id="5618">
+        <label>classic/lmp.h</label>
+        <link refid="lmp_8h"/>
+        <childnode refid="5605" relation="include">
+        </childnode>
+        <childnode refid="5606" relation="include">
+        </childnode>
+        <childnode refid="5619" relation="include">
+        </childnode>
+        <childnode refid="5610" relation="include">
+        </childnode>
+        <childnode refid="5620" relation="include">
+        </childnode>
+        <childnode refid="5613" relation="include">
+        </childnode>
+      </node>
+      <node id="5614">
+        <label>wifi_detect.h</label>
+        <link refid="wifi__detect_8h"/>
+      </node>
+      <node id="5609">
+        <label>classic/bredr_types.h</label>
+        <link refid="bredr__types_8h"/>
+      </node>
+      <node id="5604">
+        <label>classic/bredr_link.h</label>
+        <link refid="bredr__link_8h"/>
+        <childnode refid="5605" relation="include">
+        </childnode>
+        <childnode refid="5606" relation="include">
+        </childnode>
+        <childnode refid="5610" relation="include">
+        </childnode>
+        <childnode refid="5611" relation="include">
+        </childnode>
+        <childnode refid="5612" relation="include">
+        </childnode>
+        <childnode refid="5613" relation="include">
+        </childnode>
+        <childnode refid="5614" relation="include">
+        </childnode>
+        <childnode refid="5615" relation="include">
+        </childnode>
+      </node>
+      <node id="5605">
+        <label>typedef.h</label>
+      </node>
+      <node id="5619">
+        <label>system/includes.h</label>
+      </node>
+      <node id="5620">
+        <label>esco_codec.h</label>
+        <link refid="esco__codec_8h"/>
+        <childnode refid="5607" relation="include">
+        </childnode>
+      </node>
+      <node id="5607">
+        <label>generic/typedef.h</label>
+      </node>
+      <node id="5616">
+        <label>classic/tws_event.h</label>
+      </node>
+      <node id="5613">
+        <label>system/task.h</label>
+      </node>
+      <node id="5606">
+        <label>classic/link_bulk.h</label>
+        <link refid="link__bulk_8h"/>
+        <childnode refid="5607" relation="include">
+        </childnode>
+        <childnode refid="5608" relation="include">
+        </childnode>
+        <childnode refid="5609" relation="include">
+        </childnode>
+      </node>
+      <node id="5603">
+        <label>classic/tws_link.h</label>
+        <link refid="tws__link_8h"/>
+        <childnode refid="5604" relation="include">
+        </childnode>
+        <childnode refid="5609" relation="include">
+        </childnode>
+        <childnode refid="5615" relation="include">
+        </childnode>
+      </node>
+      <node id="5610">
+        <label>classic/lmp_pdu.h</label>
+        <link refid="lmp__pdu_8h"/>
+        <childnode refid="5605" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structlmp__tws__sniff" prot="public">lmp_tws_sniff</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="tws__sniff_8h_1aa10f558bd115f32d7666d0aa87392023" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structlmp__tws__sniff" kindref="compound">lmp_tws_sniff</ref></type>
+        <definition>struct lmp_tws_sniff tws_sniff</definition>
+        <argsstring></argsstring>
+        <name>tws_sniff</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" line="18" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="tws__sniff_8h_1a1b7b4622aa98cddf268121a31dc4fc69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tws_sniff_ap_enter</definition>
+        <argsstring>(void)</argsstring>
+        <name>tws_sniff_ap_enter</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__sniff_8h_1ae583c23f4cb14f9dafac02a8c43a5979" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tws_sniff_ap_exit</definition>
+        <argsstring>(void)</argsstring>
+        <name>tws_sniff_ap_exit</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" line="50" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__sniff_8h_1af7e9bd2e05aa0382280ea8afb6185e3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tws_sniff_detach</definition>
+        <argsstring>(void)</argsstring>
+        <name>tws_sniff_detach</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__sniff_8h_1a05f63366c2db1a72b19335a9356ca016" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tws_tx_sniff_req</definition>
+        <argsstring>(void)</argsstring>
+        <name>tws_tx_sniff_req</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__sniff_8h_1af6a451cead40c4ac50e8555090461011" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tws_rx_sniff_req</definition>
+        <argsstring>(u8 *rx)</argsstring>
+        <name>tws_rx_sniff_req</name>
+        <param>
+          <type>u8 *</type>
+          <declname>rx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__sniff_8h_1a06e98b099c9f8a63d30b4148d181b46f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tws_tx_unsniff_req</definition>
+        <argsstring>(void)</argsstring>
+        <name>tws_tx_unsniff_req</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" line="56" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__sniff_8h_1a9108b077a093336e80d5a8dd1310d1b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tws_rx_unsniff_req</definition>
+        <argsstring>(u8 *rx)</argsstring>
+        <name>tws_rx_unsniff_req</name>
+        <param>
+          <type>u8 *</type>
+          <declname>rx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" line="57" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__sniff_8h_1a5bd3f3ce4e7173cb45faa5f10af9ffce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tws_rx_unsniff_accept</definition>
+        <argsstring>(u8 *rx)</argsstring>
+        <name>tws_rx_unsniff_accept</name>
+        <param>
+          <type>u8 *</type>
+          <declname>rx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" line="59" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__sniff_8h_1adcfb56b1d17341d727ed574214d8d5ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tws_rx_sniff_accept</definition>
+        <argsstring>(u8 *rx)</argsstring>
+        <name>tws_rx_sniff_accept</name>
+        <param>
+          <type>u8 *</type>
+          <declname>rx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__sniff_8h_1a6986dc25004b5e53fc3aa4a3c4a4b5d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tws_lmp_rx_sniff_sync</definition>
+        <argsstring>(struct lmp_connection *conn, struct lmp_sniff *sniff_parm)</argsstring>
+        <name>tws_lmp_rx_sniff_sync</name>
+        <param>
+          <type>struct <ref refid="structlmp__connection" kindref="compound">lmp_connection</ref> *</type>
+          <declname>conn</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structlmp__sniff" kindref="compound">lmp_sniff</ref> *</type>
+          <declname>sniff_parm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" line="62" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__sniff_8h_1a1eb3cacc00cdc86f9e9fbfceb7c963da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tws_sniff_with_phone</definition>
+        <argsstring>(void)</argsstring>
+        <name>tws_sniff_with_phone</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__sniff_8h_1aeeba49a61b01b1e90c012d1a4a4f2ad4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tws_rx_sniff_info</definition>
+        <argsstring>(u8 *rx)</argsstring>
+        <name>tws_rx_sniff_info</name>
+        <param>
+          <type>u8 *</type>
+          <declname>rx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" line="65" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__sniff_8h_1a0d13979cfe53ecb00e994c46ab9df167" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tws_in_sniff_state</definition>
+        <argsstring>()</argsstring>
+        <name>tws_in_sniff_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" line="67" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TWS_SNIFF_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TWS_SNIFF_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="tws__link_8h" kindref="compound">classic/tws_link.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;classic/tws_event.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="tws__conn_8h" kindref="compound">classic/tws_conn.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="tws__link_8h" kindref="compound">classic/tws_link.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;system/includes.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="structlmp__tws__sniff" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structlmp__tws__sniff" kindref="compound">lmp_tws_sniff</ref><sp/>{</highlight></codeline>
+<codeline lineno="13" refid="structlmp__tws__sniff_1a1c3bbdf9c50e4f2524cc35d7a4f243c9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structlmp__tws__sniff_1a1c3bbdf9c50e4f2524cc35d7a4f243c9" kindref="member">enable</ref><sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="14" refid="structlmp__tws__sniff_1ac53269ea4de97e6ebcea5efc15ea5575" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structlmp__tws__sniff_1ac53269ea4de97e6ebcea5efc15ea5575" kindref="member">sync</ref><sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="15" refid="structlmp__tws__sniff_1a6bef54e0c4008c4ca25fead094c3bb75" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structlmp__tws__sniff_1a6bef54e0c4008c4ca25fead094c3bb75" kindref="member">witchout_phone</ref>:<sp/>1;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="structlmp__tws__sniff_1a4c43f4cfb3c68e12b776c315f2e90e86" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structlmp__tws__sniff_1a4c43f4cfb3c68e12b776c315f2e90e86" kindref="member">unsniff_retry</ref>;</highlight></codeline>
+<codeline lineno="18" refid="structlmp__tws__sniff_1a19b429f6e29e6bf78bd9a3113da2eb1b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structlmp__tws__sniff_1a19b429f6e29e6bf78bd9a3113da2eb1b" kindref="member">ap_check_retry</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="structlmp__tws__sniff_1aa396625f3d59e5ade8187609b4ccb090" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structlmp__tws__sniff_1aa396625f3d59e5ade8187609b4ccb090" kindref="member">state</ref>;</highlight></codeline>
+<codeline lineno="21" refid="structlmp__tws__sniff_1ab39cc14b29aff94eb8828dad96f8d208" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>s8<sp/><ref refid="structlmp__tws__sniff_1ab39cc14b29aff94eb8828dad96f8d208" kindref="member">wakeup_offset</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//schedule<sp/>timer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="structlmp__tws__sniff_1a5fafa76e441b7b57d30ec14c3803ca6c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structlmp__tws__sniff_1a5fafa76e441b7b57d30ec14c3803ca6c" kindref="member">timer</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//reset<sp/>timer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="structlmp__tws__sniff_1a956165a7c2d5ccff668144e6064a9273" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structlmp__tws__sniff_1a956165a7c2d5ccff668144e6064a9273" kindref="member">reset_timer</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>sniff<sp/>parm</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="structlmp__tws__sniff_1a76a9472f179eb1ae9b17629caf9cb0bb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structlmp__tws__sniff_1a76a9472f179eb1ae9b17629caf9cb0bb" kindref="member">timing_control_flags</ref>;</highlight></codeline>
+<codeline lineno="31" refid="structlmp__tws__sniff_1ac1d3b556e820352c0bba87215e6b40c4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structlmp__tws__sniff_1ac1d3b556e820352c0bba87215e6b40c4" kindref="member">D_sniff</ref>;</highlight></codeline>
+<codeline lineno="32" refid="structlmp__tws__sniff_1ac2c9a263f77b16c0501e6a800c131e3b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structlmp__tws__sniff_1ac2c9a263f77b16c0501e6a800c131e3b" kindref="member">T_sniff</ref>;</highlight></codeline>
+<codeline lineno="33" refid="structlmp__tws__sniff_1aa05bdff673cce4d161199a6bcfe18ec7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structlmp__tws__sniff_1aa05bdff673cce4d161199a6bcfe18ec7" kindref="member">attempt</ref>;</highlight></codeline>
+<codeline lineno="34" refid="structlmp__tws__sniff_1a3c4183179eee3a2b96240cc9fe19652c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structlmp__tws__sniff_1a3c4183179eee3a2b96240cc9fe19652c" kindref="member">timeout</ref>;</highlight></codeline>
+<codeline lineno="35" refid="structlmp__tws__sniff_1ae0b2a6238c28edc58327fd2b99b0a09d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structlmp__tws__sniff_1ae0b2a6238c28edc58327fd2b99b0a09d" kindref="member">D_sniff_bk</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="structlmp__tws__sniff_1ac48f88e84e824bfb7066eca74cca2cc0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/><ref refid="structlmp__tws__sniff_1ac48f88e84e824bfb7066eca74cca2cc0" kindref="member">wake_instant</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//new_baseband</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="structlmp__tws__sniff_1a192798fd4a016c92ba5d4471d112fc93" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/><ref refid="structlmp__tws__sniff_1a192798fd4a016c92ba5d4471d112fc93" kindref="member">pclkoffset</ref>;</highlight></codeline>
+<codeline lineno="41" refid="structlmp__tws__sniff_1a34a758e6850d9830e8a3bec16f60b6af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structlmp__tws__sniff_1a34a758e6850d9830e8a3bec16f60b6af" kindref="member">pbitoffset</ref>;</highlight></codeline>
+<codeline lineno="42" refid="structlmp__tws__sniff_1a4aab8a25d7b50f61db5c8fe6b116c589" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structlmp__tws__sniff_1a4aab8a25d7b50f61db5c8fe6b116c589" kindref="member">tbitoffset</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="structlmp__tws__sniff_1a4563f9b9b9f172f70a13f2907ff4146b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/><ref refid="structlmp__tws__sniff_1a4563f9b9b9f172f70a13f2907ff4146b" kindref="member">cnt</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structlmp__tws__sniff" kindref="compound">lmp_tws_sniff</ref><sp/><ref refid="tws__sniff_8h_1aa10f558bd115f32d7666d0aa87392023" kindref="member">tws_sniff</ref>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__sniff_8h_1a1b7b4622aa98cddf268121a31dc4fc69" kindref="member">tws_sniff_ap_enter</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__sniff_8h_1ae583c23f4cb14f9dafac02a8c43a5979" kindref="member">tws_sniff_ap_exit</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__sniff_8h_1af7e9bd2e05aa0382280ea8afb6185e3e" kindref="member">tws_sniff_detach</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__sniff_8h_1a05f63366c2db1a72b19335a9356ca016" kindref="member">tws_tx_sniff_req</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__sniff_8h_1af6a451cead40c4ac50e8555090461011" kindref="member">tws_rx_sniff_req</ref>(u8<sp/>*rx);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__sniff_8h_1a06e98b099c9f8a63d30b4148d181b46f" kindref="member">tws_tx_unsniff_req</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__sniff_8h_1a9108b077a093336e80d5a8dd1310d1b4" kindref="member">tws_rx_unsniff_req</ref>(u8<sp/>*rx);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__sniff_8h_1a5bd3f3ce4e7173cb45faa5f10af9ffce" kindref="member">tws_rx_unsniff_accept</ref>(u8<sp/>*rx);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__sniff_8h_1adcfb56b1d17341d727ed574214d8d5ff" kindref="member">tws_rx_sniff_accept</ref>(u8<sp/>*rx);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__sniff_8h_1a6986dc25004b5e53fc3aa4a3c4a4b5d3" kindref="member">tws_lmp_rx_sniff_sync</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structlmp__connection" kindref="compound">lmp_connection</ref><sp/>*conn,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structlmp__sniff" kindref="compound">lmp_sniff</ref><sp/>*sniff_parm);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__sniff_8h_1a1eb3cacc00cdc86f9e9fbfceb7c963da" kindref="member">tws_sniff_with_phone</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__sniff_8h_1aeeba49a61b01b1e90c012d1a4a4f2ad4" kindref="member">tws_rx_sniff_info</ref>(u8<sp/>*rx);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="tws__sniff_8h_1a0d13979cfe53ecb00e994c46ab9df167" kindref="member">tws_in_sniff_state</ref>();</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h"/>
+  </compounddef>
+</doxygen>

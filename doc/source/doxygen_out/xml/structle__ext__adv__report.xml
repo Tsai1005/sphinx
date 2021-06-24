@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structle__ext__adv__report" kind="struct" language="C++" prot="public">
+    <compoundname>le_ext_adv_report</compoundname>
+    <includes refid="ll__ext__scan_8h" local="no">ll_ext_scan.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structle__ext__adv__report_1ae7c314a0b5f87a827f1bb13c8083e433" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 le_ext_adv_report::event_type</definition>
+        <argsstring></argsstring>
+        <name>event_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_scan.h" line="83" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_scan.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__ext__adv__report_1a5258855e162cee869cb31d363aae3aeb" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 le_ext_adv_report::address[6]</definition>
+        <argsstring>[6]</argsstring>
+        <name>address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_scan.h" line="84" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_scan.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__ext__adv__report_1ad0be59bf450c185a6b76136fc698add9" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 le_ext_adv_report::direct_address[6]</definition>
+        <argsstring>[6]</argsstring>
+        <name>direct_address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_scan.h" line="85" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_scan.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__ext__adv__report_1aa6eaae2ee50ad78f66efcc1b95f29daa" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 le_ext_adv_report::tx_power</definition>
+        <argsstring></argsstring>
+        <name>tx_power</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_scan.h" line="86" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_scan.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__ext__adv__report_1a6a5e8bfd5dee48062ee3c1f919bd23bc" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 le_ext_adv_report::advertising_adi</definition>
+        <argsstring></argsstring>
+        <name>advertising_adi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_scan.h" line="87" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_scan.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__ext__adv__report_1a6299f19426dabcc1a728d56d9d855de0" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 le_ext_adv_report::periodic_adv_interval</definition>
+        <argsstring></argsstring>
+        <name>periodic_adv_interval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_scan.h" line="88" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_scan.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__ext__adv__report_1ae2b5ba6ee38e03f19e7cdf4a467a4179" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 le_ext_adv_report::cte_type</definition>
+        <argsstring></argsstring>
+        <name>cte_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_scan.h" line="89" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_scan.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_scan.h" line="82" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_scan.h" bodystart="82" bodyend="90"/>
+    <listofallmembers>
+      <member refid="structle__ext__adv__report_1a5258855e162cee869cb31d363aae3aeb" prot="public" virt="non-virtual"><scope>le_ext_adv_report</scope><name>address</name></member>
+      <member refid="structle__ext__adv__report_1a6a5e8bfd5dee48062ee3c1f919bd23bc" prot="public" virt="non-virtual"><scope>le_ext_adv_report</scope><name>advertising_adi</name></member>
+      <member refid="structle__ext__adv__report_1ae2b5ba6ee38e03f19e7cdf4a467a4179" prot="public" virt="non-virtual"><scope>le_ext_adv_report</scope><name>cte_type</name></member>
+      <member refid="structle__ext__adv__report_1ad0be59bf450c185a6b76136fc698add9" prot="public" virt="non-virtual"><scope>le_ext_adv_report</scope><name>direct_address</name></member>
+      <member refid="structle__ext__adv__report_1ae7c314a0b5f87a827f1bb13c8083e433" prot="public" virt="non-virtual"><scope>le_ext_adv_report</scope><name>event_type</name></member>
+      <member refid="structle__ext__adv__report_1a6299f19426dabcc1a728d56d9d855de0" prot="public" virt="non-virtual"><scope>le_ext_adv_report</scope><name>periodic_adv_interval</name></member>
+      <member refid="structle__ext__adv__report_1aa6eaae2ee50ad78f66efcc1b95f29daa" prot="public" virt="non-virtual"><scope>le_ext_adv_report</scope><name>tx_power</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="bredr__types_8h" kind="file" language="C++">
+    <compoundname>bredr_types.h</compoundname>
+    <includedby refid="link__bulk_8h" local="yes">/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h</includedby>
+    <includedby refid="tws__link_8h" local="yes">/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h</includedby>
+    <invincdepgraph>
+      <node id="5448">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_data_sync.h</label>
+        <link refid="tws__data__sync_8h"/>
+      </node>
+      <node id="5442">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h</label>
+        <link refid="tws__sniff_8h"/>
+      </node>
+      <node id="5444">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_schedule.h</label>
+        <link refid="tws__schedule_8h"/>
+      </node>
+      <node id="5441">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h</label>
+        <link refid="tws__conn_8h"/>
+        <childnode refid="5442" relation="include">
+        </childnode>
+      </node>
+      <node id="5445">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h</label>
+        <link refid="lmp_8h"/>
+        <childnode refid="5446" relation="include">
+        </childnode>
+        <childnode refid="5441" relation="include">
+        </childnode>
+      </node>
+      <node id="5446">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_role_switch.h</label>
+        <link refid="lmp__role__switch_8h"/>
+      </node>
+      <node id="5443">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sbc_sync.h</label>
+        <link refid="tws__sbc__sync_8h"/>
+      </node>
+      <node id="5436">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h</label>
+        <link refid="bredr_types.h"/>
+        <childnode refid="5437" relation="include">
+        </childnode>
+        <childnode refid="5440" relation="include">
+        </childnode>
+      </node>
+      <node id="5439">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h</label>
+        <link refid="bredr__link_8h"/>
+        <childnode refid="5438" relation="include">
+        </childnode>
+        <childnode refid="5440" relation="include">
+        </childnode>
+      </node>
+      <node id="5447">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_hci.h</label>
+        <link refid="lmp__hci_8h"/>
+      </node>
+      <node id="5438">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c</label>
+        <link refid="tws__le__link_8c"/>
+      </node>
+      <node id="5437">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h</label>
+        <link refid="link__bulk_8h"/>
+        <childnode refid="5438" relation="include">
+        </childnode>
+        <childnode refid="5439" relation="include">
+        </childnode>
+        <childnode refid="5445" relation="include">
+        </childnode>
+        <childnode refid="5447" relation="include">
+        </childnode>
+        <childnode refid="5448" relation="include">
+        </childnode>
+      </node>
+      <node id="5440">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h</label>
+        <link refid="tws__link_8h"/>
+        <childnode refid="5441" relation="include">
+        </childnode>
+        <childnode refid="5443" relation="include">
+        </childnode>
+        <childnode refid="5444" relation="include">
+        </childnode>
+        <childnode refid="5442" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="bredr__types_8h_1a8c5bd7fbb9ef59762a7b67c4edbd3782" prot="public" static="no">
+        <name>TWS_ACCESS_PACKET_ADD_EN</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="8" column="10" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1adfdb69a47ad37cbc161a3ce297be66aa" prot="public" static="no">
+        <name>ACL_C</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="12" column="10" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1a661b1dff03219c7e3e0eecc409fd4b32" prot="public" static="no">
+        <name>ACL_U_S</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="13" column="10" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1a36b88fe1f8dff1033f9738674eb0abc4" prot="public" static="no">
+        <name>ACL_U</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="14" column="10" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1a2b256ffcfa9c705e14f191d6e8005b70" prot="public" static="no">
+        <name>SCO_D</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="15" column="10" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1a6c0fe452ed9dbada21ec4e08ed253983" prot="public" static="no">
+        <name>MASTER_CONNECT</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="17" column="10" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1a170139885fa7c0b7f561a8a492dd6992" prot="public" static="no">
+        <name>SLAVE_CONNECT</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="18" column="10" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1a81cb74761d269ea2740e5df37fbf4847" prot="public" static="no">
+        <name>PAGE</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="19" column="10" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1accda7d8c47f2df73fccdb0e6505d29b9" prot="public" static="no">
+        <name>PAGE_SCAN</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="20" column="10" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1ac9fb70daa7b851f602f0ab1fc9358831" prot="public" static="no">
+        <name>MASTER_PAGE_RESPONSE</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="21" column="10" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1a2e6c35b9e9064c7c472171faf9280454" prot="public" static="no">
+        <name>SLAVE_PAGE_RESPONSE</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="22" column="10" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1ae0625901cda07459b1e876166b125998" prot="public" static="no">
+        <name>INQUIRY</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="27" column="11" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1a5b27dccee391964e0061f2c2ee704ec3" prot="public" static="no">
+        <name>INQUIRY_SCAN</name>
+        <initializer>9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="28" column="10" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1abf92aeec82656561c358c2a57e73df67" prot="public" static="no">
+        <name>INQUIRY_RESPONSE</name>
+        <initializer>11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="30" column="11" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1a2233ac26053f034ac1fc447066d64405" prot="public" static="no">
+        <name>MASTER_ACCESS_WINDOW</name>
+        <initializer>24</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="31" column="10" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1a3716b63bf53259304fd5304d01e6323a" prot="public" static="no">
+        <name>SLAVE_ACCESS_WINDOW1</name>
+        <initializer>25</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="32" column="10" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1a617e65713a9f8bb0ac1d80ccd38a1fcc" prot="public" static="no">
+        <name>MASTER_BROADCAST</name>
+        <initializer>26</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="33" column="10" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1a995ea85cdedacf5c860119c517234679" prot="public" static="no">
+        <name>SLAVE_ACCESS_WINDOW2</name>
+        <initializer>27</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="34" column="10" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1a439033546cdfa9163df6f72db33352c7" prot="public" static="no">
+        <name>ID_PACKET</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="37" column="10" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1aa42101d679ce4e8aafbd42ae8abcf9b9" prot="public" static="no">
+        <name>NULL_PACKET</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="38" column="10" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1a31a318f1fa3824e23ca602dde126e0f4" prot="public" static="no">
+        <name>POLL</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="39" column="10" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1aa34c26a7426380ae9c692d332b927cd9" prot="public" static="no">
+        <name>FHS</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="40" column="10" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1aaa8bbfd07cf58d67cf5a1710112ae0fa" prot="public" static="no">
+        <name>DM1</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="41" column="10" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1a1e227cd077171c81ffee7772260d10cf" prot="public" static="no">
+        <name>DH1</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="42" column="10" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1a967fc2ca117a98be53a529ab4f63ad0e" prot="public" static="no">
+        <name>EDR2DH1</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="43" column="10" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1a15e8e931da362b507fd6ad9216da76f7" prot="public" static="no">
+        <name>HV1</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="44" column="10" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1a8cba8fce0b767fd563a77ea7b748f949" prot="public" static="no">
+        <name>HV2</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="45" column="10" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1a883eea85837d606dcb08d3976869bb01" prot="public" static="no">
+        <name>EDR2EV3</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="46" column="10" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1a4c66b6a92e997de44b1e4b49523f803d" prot="public" static="no">
+        <name>HV3</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="47" column="10" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1a423def99b56eba226a563d231c2fe3a0" prot="public" static="no">
+        <name>EV3</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="48" column="10" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1a6d82e7f275c3675259c08736ae7526a8" prot="public" static="no">
+        <name>EDR3EV3</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="49" column="10" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1a3df48b39d6e3d9f4f8c6b6c9fd13b2b3" prot="public" static="no">
+        <name>DV</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="50" column="10" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1ad9e13b1566200c45f4080fa65b2f72f3" prot="public" static="no">
+        <name>EDR3DH1</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="51" column="10" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1a265717fcdca0aad3e296d063c4f1b760" prot="public" static="no">
+        <name>AUX1</name>
+        <initializer>9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="52" column="10" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1a756a3f609624d71c4735c19add46defc" prot="public" static="no">
+        <name>DM3</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="53" column="10" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1af007aa215840df322048970c899d3fd6" prot="public" static="no">
+        <name>EDR2DH3</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="54" column="10" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1ac353509754c2db73e31e752da767472d" prot="public" static="no">
+        <name>DH3</name>
+        <initializer>11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="55" column="10" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1a5470d4f8c92b824f129a5ded89cb06ce" prot="public" static="no">
+        <name>EDR3DH3</name>
+        <initializer>11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="56" column="10" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1ac0c6a7759da8bcba9abbb824453a2faa" prot="public" static="no">
+        <name>EV4</name>
+        <initializer>12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="57" column="10" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1a9d30accec2b6cae0e0e62d7d36e59cf7" prot="public" static="no">
+        <name>EDR2EV5</name>
+        <initializer>12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="58" column="10" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1a349c8847211bf938d460283f1df4b4c8" prot="public" static="no">
+        <name>EV5</name>
+        <initializer>13</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="59" column="10" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1a8762b0286b98bda2d28ea5cbc069d96f" prot="public" static="no">
+        <name>EDR3EV5</name>
+        <initializer>13</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="60" column="10" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1a22a1b000aff8c73d729e3a8da441b5b1" prot="public" static="no">
+        <name>DM5</name>
+        <initializer>14</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="61" column="10" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1a79537882a11a3d08df1c6970d8d060b6" prot="public" static="no">
+        <name>EDR2DH5</name>
+        <initializer>14</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="62" column="10" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1a732caa98bdce642443cae8376c526b3f" prot="public" static="no">
+        <name>DH5</name>
+        <initializer>15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="63" column="10" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1aaf377f1be814bd02e08b8e0c17778e69" prot="public" static="no">
+        <name>EDR3DH5</name>
+        <initializer>15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="64" column="10" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1ac7760b780345a8cdc13b052bfeb97fb5" prot="public" static="no">
+        <name>DM1_SIZE</name>
+        <initializer>17</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="67" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1a70de1773d8224e6925fb89feb3a6bfc7" prot="public" static="no">
+        <name>DH1_SIZE</name>
+        <initializer>27</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="68" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1ad7d32f663ec34e82396c1645b779f947" prot="public" static="no">
+        <name>EDR2DH1_SIZE</name>
+        <initializer>54</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="69" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1a7dcb0f06be0332ed54916928e9967062" prot="public" static="no">
+        <name>EDR3DH1_SIZE</name>
+        <initializer>83</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="70" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1a827fc8cd5cf5825cb85bd784eedd6df0" prot="public" static="no">
+        <name>DM3_SIZE</name>
+        <initializer>121</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="71" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1a03ac4d154a7f18cf7d35a924edaa177f" prot="public" static="no">
+        <name>DH3_SIZE</name>
+        <initializer>183</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="72" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1a03bae9bdbeeb426de774fa52fbf076c4" prot="public" static="no">
+        <name>DM5_SIZE</name>
+        <initializer>224</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="73" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1ab557a2a1676a654f87d4b359283dc6a5" prot="public" static="no">
+        <name>DH5_SIZE</name>
+        <initializer>339</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="74" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1a73630ce5478a7543c74113183d523d70" prot="public" static="no">
+        <name>EDR2DH3_SIZE</name>
+        <initializer>367</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="75" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1a4947a50ce181387bdd68f1a259371437" prot="public" static="no">
+        <name>EDR3DH3_SIZE</name>
+        <initializer>552</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="76" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1aa2142940b6004ab36f54adca230d3c30" prot="public" static="no">
+        <name>EDR2DH5_SIZE</name>
+        <initializer>679</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="77" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1a2003ae1aefd0a42e24c6b392589cd69f" prot="public" static="no">
+        <name>EDR3DH5_SIZE</name>
+        <initializer>1021</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="78" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1ad636bb7e47ae7b384fc4a98b45894129" prot="public" static="no">
+        <name>HV1_SIZE</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="80" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1a68c1ce301a08b36a64a76de89939c29d" prot="public" static="no">
+        <name>HV2_SIZE</name>
+        <initializer>20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="81" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1afd7ead04ea7b6c17dee055e2432d94b8" prot="public" static="no">
+        <name>HV3_SIZE</name>
+        <initializer>30</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="82" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1aaf54998debb3a0e9b3a8c75ec4c16aef" prot="public" static="no">
+        <name>DV_SIZE</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="83" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1a4333dccf50f218ac86e098bf966f85f5" prot="public" static="no">
+        <name>EV3_SIZE</name>
+        <initializer>30</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="84" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1aa7d02e61e36e831fde5f0e695bcae567" prot="public" static="no">
+        <name>EV4_SIZE</name>
+        <initializer>120</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="85" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1a0ba79e08f73159d69ad4f95cb5ac7793" prot="public" static="no">
+        <name>EV5_SIZE</name>
+        <initializer>180</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="86" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1a99606cb089c5591240c3af71d89756ff" prot="public" static="no">
+        <name>EDR2EV3_SIZE</name>
+        <initializer>60</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="88" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1a9a22da37d4fb5882be24be86ef4de72a" prot="public" static="no">
+        <name>EDR2EV5_SIZE</name>
+        <initializer>360</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="89" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1ae46ac8e8b668921aac9120b92ee7f0ff" prot="public" static="no">
+        <name>EDR3EV3_SIZE</name>
+        <initializer>90</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="90" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1ad9e8ff177357fa9dd633ee06d6837a6d" prot="public" static="no">
+        <name>EDR3EV5_SIZE</name>
+        <initializer>540</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="91" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1aa5241a8e09b43a69a901fe3f66a959f2" prot="public" static="no">
+        <name>ROLE_MASTER</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="100" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1aa137dd59500b99e82f8de7624c73aa7f" prot="public" static="no">
+        <name>ROLE_SLAVE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="101" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1a05119fe0f0f52534c23e49db3b91c741" prot="public" static="no">
+        <name>LE_ADV_TYPE</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="103" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1ac913a33b50ae34945dd98f0c8b82d2d1" prot="public" static="no">
+        <name>LE_SCAN_TYPE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="104" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1a4c5c6bf400fad989b1f5b7f9a95449cd" prot="public" static="no">
+        <name>ACL_SIZE</name>
+        <initializer><ref refid="bredr__types_8h_1a2003ae1aefd0a42e24c6b392589cd69f" kindref="member">EDR3DH5_SIZE</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="108" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1a098866afc02311164f4dbc6151f67c4a" prot="public" static="no">
+        <name>ESCO_BUF_SIZE</name>
+        <initializer>(0XA0+32)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="109" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1ad9b7f7628b238cd6f5b08a4c18dcbde0" prot="public" static="no">
+        <name>LLID_INDEX</name>
+        <param><defname>llid</defname></param>
+        <initializer>(!((llid) == <ref refid="bredr__types_8h_1adfdb69a47ad37cbc161a3ce297be66aa" kindref="member">ACL_C</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="112" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1a649984b3cda33717d06e0a8f4ce5206e" prot="public" static="no">
+        <name>READ_BT_8</name>
+        <param><defname>buffer</defname></param>
+        <param><defname>pos</defname></param>
+        <initializer>( ((u8) buffer[pos]))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="115" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1a7e2d929fd73d9bf2feba13300726daed" prot="public" static="no">
+        <name>READ_BT_16</name>
+        <param><defname>buffer</defname></param>
+        <param><defname>pos</defname></param>
+        <initializer>( ((uint16_t) buffer[pos]) | (((uint16_t)buffer[pos+1]) &lt;&lt; 8))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="116" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1af272661bd3ef018e45275e220fb9e207" prot="public" static="no">
+        <name>READ_BT_24</name>
+        <param><defname>buffer</defname></param>
+        <param><defname>pos</defname></param>
+        <initializer>( ((uint32_t) buffer[pos]) | (((uint32_t)buffer[pos+1]) &lt;&lt; 8) | (((uint32_t)buffer[pos+2]) &lt;&lt; 16))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="117" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bredr__types_8h_1a6f2204adaa58132ff46799a6085adf54" prot="public" static="no">
+        <name>READ_BT_32</name>
+        <param><defname>buffer</defname></param>
+        <param><defname>pos</defname></param>
+        <initializer>( ((uint32_t) buffer[pos]) | (((uint32_t)buffer[pos+1]) &lt;&lt; 8) | (((uint32_t)buffer[pos+2]) &lt;&lt; 16) | (((uint32_t) buffer[pos+3])) &lt;&lt; 24)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" line="118" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>BT_BASE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(defined<sp/>CONFIG_CPU_BR21)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TWS_ACCESS_PACKET_ADD_EN<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0//tws通讯附件包</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="bredr__types_8h_1a8c5bd7fbb9ef59762a7b67c4edbd3782" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TWS_ACCESS_PACKET_ADD_EN<sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//LLID<sp/>define</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="bredr__types_8h_1adfdb69a47ad37cbc161a3ce297be66aa" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ACL_C<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="bredr__types_8h_1a661b1dff03219c7e3e0eecc409fd4b32" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ACL_U_S<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="bredr__types_8h_1a36b88fe1f8dff1033f9738674eb0abc4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ACL_U<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="bredr__types_8h_1a2b256ffcfa9c705e14f191d6e8005b70" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>SCO_D<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4<sp/><sp/><sp/><sp/>//manufature<sp/>define<sp/>,sco<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="bredr__types_8h_1a6c0fe452ed9dbada21ec4e08ed253983" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>MASTER_CONNECT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="bredr__types_8h_1a170139885fa7c0b7f561a8a492dd6992" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>SLAVE_CONNECT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="bredr__types_8h_1a81cb74761d269ea2740e5df37fbf4847" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>PAGE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="bredr__types_8h_1accda7d8c47f2df73fccdb0e6505d29b9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>PAGE_SCAN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="bredr__types_8h_1ac9fb70daa7b851f602f0ab1fc9358831" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>MASTER_PAGE_RESPONSE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="bredr__types_8h_1a2e6c35b9e9064c7c472171faf9280454" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>SLAVE_PAGE_RESPONSE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>CONFIG_NEW_BREDR_ENABLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>INQUIRY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>INQUIRY_SCAN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="bredr__types_8h_1ae0625901cda07459b1e876166b125998" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>INQUIRY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="bredr__types_8h_1a5b27dccee391964e0061f2c2ee704ec3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>INQUIRY_SCAN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>9</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="bredr__types_8h_1abf92aeec82656561c358c2a57e73df67" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>INQUIRY_RESPONSE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>11</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="bredr__types_8h_1a2233ac26053f034ac1fc447066d64405" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>MASTER_ACCESS_WINDOW<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>24</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="bredr__types_8h_1a3716b63bf53259304fd5304d01e6323a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>SLAVE_ACCESS_WINDOW1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>25</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="bredr__types_8h_1a617e65713a9f8bb0ac1d80ccd38a1fcc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>MASTER_BROADCAST<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>26</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="bredr__types_8h_1a995ea85cdedacf5c860119c517234679" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>SLAVE_ACCESS_WINDOW2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>27</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">//PACKET<sp/>define</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="bredr__types_8h_1a439033546cdfa9163df6f72db33352c7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>ID_PACKET<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="bredr__types_8h_1aa42101d679ce4e8aafbd42ae8abcf9b9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>NULL_PACKET<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="bredr__types_8h_1a31a318f1fa3824e23ca602dde126e0f4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>POLL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="bredr__types_8h_1aa34c26a7426380ae9c692d332b927cd9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>FHS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="bredr__types_8h_1aaa8bbfd07cf58d67cf5a1710112ae0fa" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>DM1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="bredr__types_8h_1a1e227cd077171c81ffee7772260d10cf" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>DH1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="bredr__types_8h_1a967fc2ca117a98be53a529ab4f63ad0e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EDR2DH1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="bredr__types_8h_1a15e8e931da362b507fd6ad9216da76f7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>HV1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="bredr__types_8h_1a8cba8fce0b767fd563a77ea7b748f949" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>HV2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="bredr__types_8h_1a883eea85837d606dcb08d3976869bb01" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EDR2EV3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="bredr__types_8h_1a4c66b6a92e997de44b1e4b49523f803d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>HV3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="bredr__types_8h_1a423def99b56eba226a563d231c2fe3a0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EV3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>7<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="49" refid="bredr__types_8h_1a6d82e7f275c3675259c08736ae7526a8" refkind="member"><highlight class="preprocessor">#define<sp/><sp/>EDR3EV3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="bredr__types_8h_1a3df48b39d6e3d9f4f8c6b6c9fd13b2b3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>DV<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="bredr__types_8h_1ad9e13b1566200c45f4080fa65b2f72f3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EDR3DH1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="bredr__types_8h_1a265717fcdca0aad3e296d063c4f1b760" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>AUX1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>9</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="bredr__types_8h_1a756a3f609624d71c4735c19add46defc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>DM3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="bredr__types_8h_1af007aa215840df322048970c899d3fd6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EDR2DH3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="bredr__types_8h_1ac353509754c2db73e31e752da767472d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>DH3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>11</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="bredr__types_8h_1a5470d4f8c92b824f129a5ded89cb06ce" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EDR3DH3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>11</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="bredr__types_8h_1ac0c6a7759da8bcba9abbb824453a2faa" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EV4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>12</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="bredr__types_8h_1a9d30accec2b6cae0e0e62d7d36e59cf7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EDR2EV5<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>12</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="bredr__types_8h_1a349c8847211bf938d460283f1df4b4c8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EV5<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>13</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="bredr__types_8h_1a8762b0286b98bda2d28ea5cbc069d96f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EDR3EV5<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>13</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="bredr__types_8h_1a22a1b000aff8c73d729e3a8da441b5b1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>DM5<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>14</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="bredr__types_8h_1a79537882a11a3d08df1c6970d8d060b6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EDR2DH5<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>14</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="bredr__types_8h_1a732caa98bdce642443cae8376c526b3f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>DH5<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>15</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="bredr__types_8h_1aaf377f1be814bd02e08b8e0c17778e69" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EDR3DH5<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>15</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">//packet<sp/>sizes<sp/>(max<sp/>payload)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="bredr__types_8h_1ac7760b780345a8cdc13b052bfeb97fb5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DM1_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>17</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="bredr__types_8h_1a70de1773d8224e6925fb89feb3a6bfc7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DH1_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>27</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="bredr__types_8h_1ad7d32f663ec34e82396c1645b779f947" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EDR2DH1_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>54</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="bredr__types_8h_1a7dcb0f06be0332ed54916928e9967062" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EDR3DH1_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>83</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="bredr__types_8h_1a827fc8cd5cf5825cb85bd784eedd6df0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DM3_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>121</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="bredr__types_8h_1a03ac4d154a7f18cf7d35a924edaa177f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DH3_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>183</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="bredr__types_8h_1a03bae9bdbeeb426de774fa52fbf076c4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DM5_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>224</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="bredr__types_8h_1ab557a2a1676a654f87d4b359283dc6a5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DH5_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>339</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="bredr__types_8h_1a73630ce5478a7543c74113183d523d70" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EDR2DH3_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>367</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="bredr__types_8h_1a4947a50ce181387bdd68f1a259371437" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EDR3DH3_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>552</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="bredr__types_8h_1aa2142940b6004ab36f54adca230d3c30" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EDR2DH5_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>679</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="bredr__types_8h_1a2003ae1aefd0a42e24c6b392589cd69f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EDR3DH5_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1021</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="bredr__types_8h_1ad636bb7e47ae7b384fc4a98b45894129" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HV1_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="bredr__types_8h_1a68c1ce301a08b36a64a76de89939c29d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HV2_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>20</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="bredr__types_8h_1afd7ead04ea7b6c17dee055e2432d94b8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HV3_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>30</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="bredr__types_8h_1aaf54998debb3a0e9b3a8c75ec4c16aef" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DV_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="bredr__types_8h_1a4333dccf50f218ac86e098bf966f85f5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EV3_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>30</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="bredr__types_8h_1aa7d02e61e36e831fde5f0e695bcae567" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EV4_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>120</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="bredr__types_8h_1a0ba79e08f73159d69ad4f95cb5ac7793" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EV5_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>180</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="bredr__types_8h_1a99606cb089c5591240c3af71d89756ff" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EDR2EV3_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>60</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="bredr__types_8h_1a9a22da37d4fb5882be24be86ef4de72a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EDR2EV5_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>360</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="bredr__types_8h_1ae46ac8e8b668921aac9120b92ee7f0ff" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EDR3EV3_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>90</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="bredr__types_8h_1ad9e8ff177357fa9dd633ee06d6837a6d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EDR3EV5_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>540</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="comment">/********************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="96"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>USER<sp/>DEFINED</highlight></codeline>
+<codeline lineno="97"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="98"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="comment">//role<sp/>define</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="bredr__types_8h_1aa5241a8e09b43a69a901fe3f66a959f2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ROLE_MASTER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="bredr__types_8h_1aa137dd59500b99e82f8de7624c73aa7f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ROLE_SLAVE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="bredr__types_8h_1a05119fe0f0f52534c23e49db3b91c741" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LE_ADV_TYPE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="bredr__types_8h_1ac913a33b50ae34945dd98f0c8b82d2d1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LE_SCAN_TYPE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="bredr__types_8h_1a4c5c6bf400fad989b1f5b7f9a95449cd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ACL_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EDR3DH5_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x300</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="bredr__types_8h_1a098866afc02311164f4dbc6151f67c4a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ESCO_BUF_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0XA0+32)<sp/><sp/><sp/><sp/><sp/>//120</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="bredr__types_8h_1ad9b7f7628b238cd6f5b08a4c18dcbde0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LLID_INDEX(llid)<sp/><sp/><sp/><sp/>(!((llid)<sp/>==<sp/>ACL_C))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="bredr__types_8h_1a649984b3cda33717d06e0a8f4ce5206e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>READ_BT_8(<sp/>buffer,<sp/>pos)<sp/>(<sp/>((u8)<sp/>buffer[pos]))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116" refid="bredr__types_8h_1a7e2d929fd73d9bf2feba13300726daed" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>READ_BT_16(<sp/>buffer,<sp/>pos)<sp/>(<sp/>((uint16_t)<sp/>buffer[pos])<sp/>|<sp/>(((uint16_t)buffer[pos+1])<sp/>&lt;&lt;<sp/>8))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="bredr__types_8h_1af272661bd3ef018e45275e220fb9e207" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>READ_BT_24(<sp/>buffer,<sp/>pos)<sp/>(<sp/>((uint32_t)<sp/>buffer[pos])<sp/>|<sp/>(((uint32_t)buffer[pos+1])<sp/>&lt;&lt;<sp/>8)<sp/>|<sp/>(((uint32_t)buffer[pos+2])<sp/>&lt;&lt;<sp/>16))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118" refid="bredr__types_8h_1a6f2204adaa58132ff46799a6085adf54" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>READ_BT_32(<sp/>buffer,<sp/>pos)<sp/>(<sp/>((uint32_t)<sp/>buffer[pos])<sp/>|<sp/>(((uint32_t)buffer[pos+1])<sp/>&lt;&lt;<sp/>8)<sp/>|<sp/>(((uint32_t)buffer[pos+2])<sp/>&lt;&lt;<sp/>16)<sp/>|<sp/>(((uint32_t)<sp/>buffer[pos+3]))<sp/>&lt;&lt;<sp/>24)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_types.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structll__privacy" kind="struct" language="C++" prot="public">
+    <compoundname>ll_privacy</compoundname>
+    <includes refid="resolve__list_8h" local="no">resolve_list.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structll__privacy_1afb31904d23f7d7f22fec0230e87a2b1d" prot="public" static="no" mutable="no">
+        <type>sys_timer</type>
+        <definition>sys_timer ll_privacy::RPA_timeout</definition>
+        <argsstring></argsstring>
+        <name>RPA_timeout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/resolve_list.h" line="29" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/resolve_list.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__privacy_1a11d2f05636a73ae8147c6fca8a7f9db7" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 ll_privacy::RPA_timeout_cnt</definition>
+        <argsstring></argsstring>
+        <name>RPA_timeout_cnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/resolve_list.h" line="30" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/resolve_list.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__privacy_1a08817ebe8730c3da12f8fb80fd7db775" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 ll_privacy::random48[6]</definition>
+        <argsstring>[6]</argsstring>
+        <name>random48</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/resolve_list.h" line="31" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/resolve_list.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/resolve_list.h" line="28" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/resolve_list.h" bodystart="28" bodyend="32"/>
+    <listofallmembers>
+      <member refid="structll__privacy_1a08817ebe8730c3da12f8fb80fd7db775" prot="public" virt="non-virtual"><scope>ll_privacy</scope><name>random48</name></member>
+      <member refid="structll__privacy_1afb31904d23f7d7f22fec0230e87a2b1d" prot="public" virt="non-virtual"><scope>ll_privacy</scope><name>RPA_timeout</name></member>
+      <member refid="structll__privacy_1a11d2f05636a73ae8147c6fca8a7f9db7" prot="public" virt="non-virtual"><scope>ll_privacy</scope><name>RPA_timeout_cnt</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

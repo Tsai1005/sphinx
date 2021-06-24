@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structlmp__encrypt" kind="struct" language="C++" prot="public">
+    <compoundname>lmp_encrypt</compoundname>
+    <includes refid="lmp_8h" local="no">lmp.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlmp__encrypt_1a58b547924147a85da566ab6280e8b0f9" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_encrypt::rand_num[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>rand_num</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="557" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="557" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__encrypt_1a1e9084e66a771417f392036f844cf0ae" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_encrypt::lk_k[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>lk_k</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="558" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="558" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__encrypt_1aa2181c15432af35db39dd9646a828ae6" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_encrypt::c[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>c</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="559" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="559" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__encrypt_1a1bcbbc51c4ee619e87946b806a02c767" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_encrypt::init_key[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>init_key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="560" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="560" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__encrypt_1a004d740d40c1477ba4d599e10cb695c2" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_encrypt::sres[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>sres</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="562" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="562" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__encrypt_1a935d1f3e30be9253ba52c299b264bf07" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_encrypt::sres_mach</definition>
+        <argsstring></argsstring>
+        <name>sres_mach</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="566" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="566" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="556" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="556" bodyend="567"/>
+    <listofallmembers>
+      <member refid="structlmp__encrypt_1aa2181c15432af35db39dd9646a828ae6" prot="public" virt="non-virtual"><scope>lmp_encrypt</scope><name>c</name></member>
+      <member refid="structlmp__encrypt_1a1bcbbc51c4ee619e87946b806a02c767" prot="public" virt="non-virtual"><scope>lmp_encrypt</scope><name>init_key</name></member>
+      <member refid="structlmp__encrypt_1a1e9084e66a771417f392036f844cf0ae" prot="public" virt="non-virtual"><scope>lmp_encrypt</scope><name>lk_k</name></member>
+      <member refid="structlmp__encrypt_1a58b547924147a85da566ab6280e8b0f9" prot="public" virt="non-virtual"><scope>lmp_encrypt</scope><name>rand_num</name></member>
+      <member refid="structlmp__encrypt_1a004d740d40c1477ba4d599e10cb695c2" prot="public" virt="non-virtual"><scope>lmp_encrypt</scope><name>sres</name></member>
+      <member refid="structlmp__encrypt_1a935d1f3e30be9253ba52c299b264bf07" prot="public" virt="non-virtual"><scope>lmp_encrypt</scope><name>sres_mach</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

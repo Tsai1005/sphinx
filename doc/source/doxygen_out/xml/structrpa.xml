@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structrpa" kind="struct" language="C++" prot="public">
+    <compoundname>rpa</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structrpa_1a0599835e6a665f3a726c6d2f870d4361" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 rpa::addr[6]</definition>
+        <argsstring>[6]</argsstring>
+        <name>addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_resolve_list.c" line="422" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_resolve_list.c" bodystart="422" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrpa_1ac19cde4255bfa356f2a7ae8339798e2a" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 rpa::peer_irk[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>peer_irk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_resolve_list.c" line="423" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_resolve_list.c" bodystart="423" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrpa_1a8216ae6387c768a89a928ae84c85d7d9" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 rpa::local_irk[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>local_irk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_resolve_list.c" line="424" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_resolve_list.c" bodystart="424" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_resolve_list.c" line="421" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_resolve_list.c" bodystart="421" bodyend="425"/>
+    <listofallmembers>
+      <member refid="structrpa_1a0599835e6a665f3a726c6d2f870d4361" prot="public" virt="non-virtual"><scope>rpa</scope><name>addr</name></member>
+      <member refid="structrpa_1a8216ae6387c768a89a928ae84c85d7d9" prot="public" virt="non-virtual"><scope>rpa</scope><name>local_irk</name></member>
+      <member refid="structrpa_1ac19cde4255bfa356f2a7ae8339798e2a" prot="public" virt="non-virtual"><scope>rpa</scope><name>peer_irk</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

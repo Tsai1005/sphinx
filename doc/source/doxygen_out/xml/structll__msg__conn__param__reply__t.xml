@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structll__msg__conn__param__reply__t" kind="struct" language="C++" prot="public">
+    <compoundname>ll_msg_conn_param_reply_t</compoundname>
+    <includes refid="llcp_8h" local="no">llcp.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structll__msg__conn__param__reply__t_1aaff1f1d68763fb907687200a21d7da0f" prot="public" static="no" mutable="no">
+        <type><ref refid="structll__msg__hdr__t" kindref="compound">ll_msg_hdr_t</ref></type>
+        <definition>ll_msg_hdr_t ll_msg_conn_param_reply_t::hdr</definition>
+        <argsstring></argsstring>
+        <name>hdr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="116" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__msg__conn__param__reply__t_1a997dbaa381b624da175bca1d0cfae052" prot="public" static="no" mutable="no">
+        <type><ref refid="structconnection__update__parameter__t" kindref="compound">connection_update_parameter_t</ref></type>
+        <definition>connection_update_parameter_t ll_msg_conn_param_reply_t::param</definition>
+        <argsstring></argsstring>
+        <name>param</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="118" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1465">
+        <label>connection_update_parameter_t</label>
+        <link refid="structconnection__update__parameter__t"/>
+      </node>
+      <node id="1464">
+        <label>ll_msg_conn_param_reply_t</label>
+        <link refid="structll__msg__conn__param__reply__t"/>
+        <childnode refid="1465" relation="usage">
+          <edgelabel>param</edgelabel>
+        </childnode>
+        <childnode refid="1466" relation="usage">
+          <edgelabel>hdr</edgelabel>
+        </childnode>
+      </node>
+      <node id="1466">
+        <label>ll_msg_hdr_t</label>
+        <link refid="structll__msg__hdr__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="115" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="115" bodyend="119"/>
+    <listofallmembers>
+      <member refid="structll__msg__conn__param__reply__t_1aaff1f1d68763fb907687200a21d7da0f" prot="public" virt="non-virtual"><scope>ll_msg_conn_param_reply_t</scope><name>hdr</name></member>
+      <member refid="structll__msg__conn__param__reply__t_1a997dbaa381b624da175bca1d0cfae052" prot="public" virt="non-virtual"><scope>ll_msg_conn_param_reply_t</scope><name>param</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

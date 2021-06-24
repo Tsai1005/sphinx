@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structtws__conn__core__data" kind="struct" language="C++" prot="public">
+    <compoundname>tws_conn_core_data</compoundname>
+    <includes refid="tws__conn_8h" local="no">tws_conn.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtws__conn__core__data_1ab7b17981e50e43612adbc081fd737d77" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structlmp__core__data" kindref="compound">lmp_core_data</ref></type>
+        <definition>struct lmp_core_data tws_conn_core_data::lmp_core</definition>
+        <argsstring></argsstring>
+        <name>lmp_core</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="183" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1659">
+        <label>lmp_core_data</label>
+        <link refid="structlmp__core__data"/>
+      </node>
+      <node id="1658">
+        <label>tws_conn_core_data</label>
+        <link refid="structtws__conn__core__data"/>
+        <childnode refid="1659" relation="usage">
+          <edgelabel>lmp_core</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="186" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="186" bodyend="189"/>
+    <listofallmembers>
+      <member refid="structtws__conn__core__data_1ab7b17981e50e43612adbc081fd737d77" prot="public" virt="non-virtual"><scope>tws_conn_core_data</scope><name>lmp_core</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

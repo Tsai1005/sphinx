@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structle__ext__init__link" kind="struct" language="C++" prot="public">
+    <compoundname>le_ext_init_link</compoundname>
+    <includes refid="ll__ext__init_8h" local="no">ll_ext_init.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structle__ext__init__link_1ae78483c9f037f3116f8bfdd42433fa67" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* le_ext_init_link::primary_legacy_hw</definition>
+        <argsstring></argsstring>
+        <name>primary_legacy_hw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_init.h" line="7" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_init.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__ext__init__link_1a00b103b11fcfde7da1bfc7b756511d98" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* le_ext_init_link::hw</definition>
+        <argsstring></argsstring>
+        <name>hw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_init.h" line="8" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_init.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__ext__init__link_1ab3e6c539fa0261f055497833c686e514" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structle__link" kindref="compound">le_link</ref> *</type>
+        <definition>struct le_link* le_ext_init_link::connect_link</definition>
+        <argsstring></argsstring>
+        <name>connect_link</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_init.h" line="9" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_init.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__ext__init__link_1a096b39863b58bdb271b7ea7468f45e16" prot="public" static="no" mutable="no">
+        <type>struct ble_ext_init</type>
+        <definition>struct ble_ext_init le_ext_init_link::extended_init</definition>
+        <argsstring></argsstring>
+        <name>extended_init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_init.h" line="9" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_init.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__ext__init__link_1a202f1b33c4f769946bf9c1522e48761c" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 le_ext_init_link::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_init.h" line="13" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_init.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1244">
+        <label>connection_update_parameter_t</label>
+        <link refid="structconnection__update__parameter__t"/>
+      </node>
+      <node id="1241">
+        <label>le_ext_init_link</label>
+        <link refid="structle__ext__init__link"/>
+        <childnode refid="1242" relation="usage">
+          <edgelabel>connect_link</edgelabel>
+        </childnode>
+      </node>
+      <node id="1246">
+        <label>connection_param_request</label>
+        <link refid="structconnection__param__request"/>
+      </node>
+      <node id="1248">
+        <label>le_link::ble_phy_update</label>
+        <link refid="structle__link_1_1ble__phy__update"/>
+      </node>
+      <node id="1247">
+        <label>data_length</label>
+        <link refid="structdata__length"/>
+      </node>
+      <node id="1242">
+        <label>le_link</label>
+        <link refid="structle__link"/>
+        <childnode refid="1243" relation="usage">
+          <edgelabel>cte_rx_param</edgelabel>
+        </childnode>
+        <childnode refid="1244" relation="usage">
+          <edgelabel>conn_update_param</edgelabel>
+        </childnode>
+        <childnode refid="1245" relation="usage">
+          <edgelabel>cte_tx_param</edgelabel>
+        </childnode>
+        <childnode refid="1246" relation="usage">
+          <edgelabel>conn_param_req</edgelabel>
+        </childnode>
+        <childnode refid="1247" relation="usage">
+          <edgelabel>pdu_len</edgelabel>
+        </childnode>
+        <childnode refid="1248" relation="usage">
+          <edgelabel>phy</edgelabel>
+        </childnode>
+        <childnode refid="1249" relation="usage">
+          <edgelabel>llcp</edgelabel>
+        </childnode>
+      </node>
+      <node id="1245">
+        <label>cte_tx_param_t</label>
+        <link refid="structcte__tx__param__t"/>
+      </node>
+      <node id="1249">
+        <label>llcp_ctx_t</label>
+        <link refid="structllcp__ctx__t"/>
+        <childnode refid="1250" relation="usage">
+          <edgelabel>pdu</edgelabel>
+        </childnode>
+      </node>
+      <node id="1243">
+        <label>cte_rx_param_t</label>
+        <link refid="structcte__rx__param__t"/>
+      </node>
+      <node id="1250">
+        <label>lctrDataPdu_t</label>
+        <link refid="structlctrDataPdu__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_init.h" line="6" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_init.h" bodystart="6" bodyend="14"/>
+    <listofallmembers>
+      <member refid="structle__ext__init__link_1ab3e6c539fa0261f055497833c686e514" prot="public" virt="non-virtual"><scope>le_ext_init_link</scope><name>connect_link</name></member>
+      <member refid="structle__ext__init__link_1a096b39863b58bdb271b7ea7468f45e16" prot="public" virt="non-virtual"><scope>le_ext_init_link</scope><name>extended_init</name></member>
+      <member refid="structle__ext__init__link_1a00b103b11fcfde7da1bfc7b756511d98" prot="public" virt="non-virtual"><scope>le_ext_init_link</scope><name>hw</name></member>
+      <member refid="structle__ext__init__link_1ae78483c9f037f3116f8bfdd42433fa67" prot="public" virt="non-virtual"><scope>le_ext_init_link</scope><name>primary_legacy_hw</name></member>
+      <member refid="structle__ext__init__link_1a202f1b33c4f769946bf9c1522e48761c" prot="public" virt="non-virtual"><scope>le_ext_init_link</scope><name>state</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

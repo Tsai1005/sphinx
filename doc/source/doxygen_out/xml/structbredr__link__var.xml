@@ -1,0 +1,339 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structbredr__link__var" kind="struct" language="C++" prot="public">
+    <compoundname>bredr_link_var</compoundname>
+    <includes refid="bredr__link_8h" local="no">bredr_link.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structbredr__link__var_1a6faa5ab4e6b430bdb2c20927ca94e3f3" prot="public" static="no" mutable="no">
+        <type>struct list_head</type>
+        <definition>struct list_head bredr_link_var::link_conn_head</definition>
+        <argsstring></argsstring>
+        <name>link_conn_head</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="672" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="676" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__link__var_1a57fd60585af6d3e5f512d9f3952a8476" prot="public" static="no" mutable="no">
+        <type>struct lp_ws_t *</type>
+        <definition>struct lp_ws_t* bredr_link_var::lp_ws</definition>
+        <argsstring></argsstring>
+        <name>lp_ws</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="677" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="677" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__link__var_1a4d0113178d0edbf895f008b8f4b1f536" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structlink__connection" kindref="compound">link_connection</ref> *</type>
+        <definition>struct link_connection* bredr_link_var::fcc_lc</definition>
+        <argsstring></argsstring>
+        <name>fcc_lc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="678" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="678" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__link__var_1a70eb4bac5b82483ae5fb2c084a325779" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structbredr__power" kindref="compound">bredr_power</ref></type>
+        <definition>struct bredr_power bredr_link_var::edr_power_hd</definition>
+        <argsstring></argsstring>
+        <name>edr_power_hd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="678" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="679" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__link__var_1af7565dc3a6a1c364083d265606d9e0c3" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structslot__timer__handle" kindref="compound">slot_timer_handle</ref></type>
+        <definition>struct slot_timer_handle bredr_link_var::handle[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="678" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="684" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__link__var_1a110272e70f2c8691c691b66d265d740f" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 bredr_link_var::timer_used</definition>
+        <argsstring></argsstring>
+        <name>timer_used</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="685" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="685" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__link__var_1a75e3a4665be081096fa8d4fb0f5ac9f5" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 bredr_link_var::esco_last_seqn</definition>
+        <argsstring></argsstring>
+        <name>esco_last_seqn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="687" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="687" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__link__var_1a3fd57ad457a89abcb3e95d52960ac6d9" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 bredr_link_var::glt_addr</definition>
+        <argsstring></argsstring>
+        <name>glt_addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="688" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="688" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__link__var_1a839ee9559e289611bc0b8989a8cc33df" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 bredr_link_var::bredr_link_state</definition>
+        <argsstring></argsstring>
+        <name>bredr_link_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="689" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="689" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__link__var_1addf476fa89cb4fb0efd8ea4664d28a5e" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 bredr_link_var::super_timerout_timer</definition>
+        <argsstring></argsstring>
+        <name>super_timerout_timer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="690" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="690" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__link__var_1aebdcb132960e965a66f0897e69104e3c" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 bredr_link_var::remote_device_state</definition>
+        <argsstring></argsstring>
+        <name>remote_device_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="691" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="691" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__link__var_1a0197804eac3dc79510fd72e2606da358" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 bredr_link_var::esco_used</definition>
+        <argsstring></argsstring>
+        <name>esco_used</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="692" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="692" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="964">
+        <label>link_page</label>
+        <link refid="structlink__page"/>
+        <childnode refid="965" relation="usage">
+          <edgelabel>tws_rx_info</edgelabel>
+          <edgelabel>tws_tx_info</edgelabel>
+        </childnode>
+        <childnode refid="966" relation="usage">
+          <edgelabel>remote</edgelabel>
+        </childnode>
+        <childnode refid="967" relation="usage">
+          <edgelabel>task</edgelabel>
+        </childnode>
+      </node>
+      <node id="970">
+        <label>bredr_dut</label>
+        <link refid="structbredr__dut"/>
+      </node>
+      <node id="962">
+        <label>link_afh_report</label>
+        <link refid="structlink__afh__report"/>
+      </node>
+      <node id="963">
+        <label>bredr_role_switch</label>
+        <link refid="structbredr__role__switch"/>
+        <childnode refid="964" relation="usage">
+          <edgelabel>page</edgelabel>
+        </childnode>
+        <childnode refid="969" relation="usage">
+          <edgelabel>page_scan</edgelabel>
+        </childnode>
+      </node>
+      <node id="965">
+        <label>tws_pair_info</label>
+        <link refid="structtws__pair__info"/>
+      </node>
+      <node id="960">
+        <label>lmp_esco_pdu</label>
+        <link refid="structlmp__esco__pdu"/>
+      </node>
+      <node id="973">
+        <label>bredr_power</label>
+        <link refid="structbredr__power"/>
+      </node>
+      <node id="959">
+        <label>__tws_esco_tx_info_t</label>
+        <link refid="struct____tws__esco__tx__info__t"/>
+      </node>
+      <node id="954">
+        <label>bredr_link_var</label>
+        <link refid="structbredr__link__var"/>
+        <childnode refid="955" relation="usage">
+          <edgelabel>fcc_lc</edgelabel>
+        </childnode>
+        <childnode refid="972" relation="usage">
+          <edgelabel>handle</edgelabel>
+        </childnode>
+        <childnode refid="973" relation="usage">
+          <edgelabel>edr_power_hd</edgelabel>
+        </childnode>
+      </node>
+      <node id="967">
+        <label>link_task</label>
+        <link refid="structlink__task"/>
+        <childnode refid="968" relation="usage">
+          <edgelabel>ops</edgelabel>
+        </childnode>
+      </node>
+      <node id="966">
+        <label>link_remote</label>
+        <link refid="structlink__remote"/>
+      </node>
+      <node id="956">
+        <label>bredr_esco_link</label>
+        <link refid="structbredr__esco__link"/>
+        <childnode refid="957" relation="usage">
+          <edgelabel>rx_bulk</edgelabel>
+        </childnode>
+        <childnode refid="958" relation="usage">
+          <edgelabel>tx_bulk</edgelabel>
+        </childnode>
+        <childnode refid="959" relation="usage">
+          <edgelabel>tws_esco_tx_info</edgelabel>
+        </childnode>
+        <childnode refid="960" relation="usage">
+          <edgelabel>pdu</edgelabel>
+        </childnode>
+      </node>
+      <node id="969">
+        <label>link_page_scan</label>
+        <link refid="structlink__page__scan"/>
+        <childnode refid="966" relation="usage">
+          <edgelabel>remote</edgelabel>
+        </childnode>
+        <childnode refid="967" relation="usage">
+          <edgelabel>task</edgelabel>
+        </childnode>
+      </node>
+      <node id="961">
+        <label>link_afh</label>
+        <link refid="structlink__afh"/>
+      </node>
+      <node id="968">
+        <label>link_task_ops</label>
+        <link refid="structlink__task__ops"/>
+      </node>
+      <node id="955">
+        <label>link_connection</label>
+        <link refid="structlink__connection"/>
+        <childnode refid="956" relation="usage">
+          <edgelabel>esco</edgelabel>
+        </childnode>
+        <childnode refid="961" relation="usage">
+          <edgelabel>afh</edgelabel>
+        </childnode>
+        <childnode refid="962" relation="usage">
+          <edgelabel>afh_report</edgelabel>
+        </childnode>
+        <childnode refid="957" relation="usage">
+          <edgelabel>rx_bulk</edgelabel>
+        </childnode>
+        <childnode refid="958" relation="usage">
+          <edgelabel>tx_bulk</edgelabel>
+        </childnode>
+        <childnode refid="963" relation="usage">
+          <edgelabel>rs</edgelabel>
+        </childnode>
+        <childnode refid="970" relation="usage">
+          <edgelabel>dut</edgelabel>
+        </childnode>
+        <childnode refid="971" relation="usage">
+          <edgelabel>core</edgelabel>
+        </childnode>
+        <childnode refid="967" relation="usage">
+          <edgelabel>task</edgelabel>
+        </childnode>
+      </node>
+      <node id="971">
+        <label>link_core_data</label>
+        <link refid="structlink__core__data"/>
+      </node>
+      <node id="957">
+        <label>bredr_rx_bulk</label>
+        <link refid="structbredr__rx__bulk"/>
+      </node>
+      <node id="972">
+        <label>slot_timer_handle</label>
+        <link refid="structslot__timer__handle"/>
+      </node>
+      <node id="958">
+        <label>bredr_tx_bulk</label>
+        <link refid="structbredr__tx__bulk"/>
+      </node>
+    </collaborationgraph>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="675" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="675" bodyend="704"/>
+    <listofallmembers>
+      <member refid="structbredr__link__var_1a839ee9559e289611bc0b8989a8cc33df" prot="public" virt="non-virtual"><scope>bredr_link_var</scope><name>bredr_link_state</name></member>
+      <member refid="structbredr__link__var_1a70eb4bac5b82483ae5fb2c084a325779" prot="public" virt="non-virtual"><scope>bredr_link_var</scope><name>edr_power_hd</name></member>
+      <member refid="structbredr__link__var_1a75e3a4665be081096fa8d4fb0f5ac9f5" prot="public" virt="non-virtual"><scope>bredr_link_var</scope><name>esco_last_seqn</name></member>
+      <member refid="structbredr__link__var_1a0197804eac3dc79510fd72e2606da358" prot="public" virt="non-virtual"><scope>bredr_link_var</scope><name>esco_used</name></member>
+      <member refid="structbredr__link__var_1a4d0113178d0edbf895f008b8f4b1f536" prot="public" virt="non-virtual"><scope>bredr_link_var</scope><name>fcc_lc</name></member>
+      <member refid="structbredr__link__var_1a3fd57ad457a89abcb3e95d52960ac6d9" prot="public" virt="non-virtual"><scope>bredr_link_var</scope><name>glt_addr</name></member>
+      <member refid="structbredr__link__var_1af7565dc3a6a1c364083d265606d9e0c3" prot="public" virt="non-virtual"><scope>bredr_link_var</scope><name>handle</name></member>
+      <member refid="structbredr__link__var_1a6faa5ab4e6b430bdb2c20927ca94e3f3" prot="public" virt="non-virtual"><scope>bredr_link_var</scope><name>link_conn_head</name></member>
+      <member refid="structbredr__link__var_1a57fd60585af6d3e5f512d9f3952a8476" prot="public" virt="non-virtual"><scope>bredr_link_var</scope><name>lp_ws</name></member>
+      <member refid="structbredr__link__var_1aebdcb132960e965a66f0897e69104e3c" prot="public" virt="non-virtual"><scope>bredr_link_var</scope><name>remote_device_state</name></member>
+      <member refid="structbredr__link__var_1addf476fa89cb4fb0efd8ea4664d28a5e" prot="public" virt="non-virtual"><scope>bredr_link_var</scope><name>super_timerout_timer</name></member>
+      <member refid="structbredr__link__var_1a110272e70f2c8691c691b66d265d740f" prot="public" virt="non-virtual"><scope>bredr_link_var</scope><name>timer_used</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

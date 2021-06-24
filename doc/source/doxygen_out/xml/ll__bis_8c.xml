@@ -1,0 +1,1783 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="ll__bis_8c" kind="file" language="C++">
+    <compoundname>ll_bis.c</compoundname>
+    <includes refid="link__layer_8h" local="yes">ble/link_layer.h</includes>
+    <includes local="yes">hci_controller.h</includes>
+    <includes local="yes">system/includes.h</includes>
+    <includes local="yes">btcontroller_heap.h</includes>
+    <includes local="yes">common/debug.h</includes>
+    <incdepgraph>
+      <node id="3066">
+        <label>os/os_type.h</label>
+      </node>
+      <node id="3062">
+        <label>common/atomic.h</label>
+      </node>
+      <node id="3076">
+        <label>common/lbuf.h</label>
+      </node>
+      <node id="3059">
+        <label>common/list.h</label>
+      </node>
+      <node id="3065">
+        <label>common/thread.h</label>
+      </node>
+      <node id="3068">
+        <label>ble/ll_adv.h</label>
+        <link refid="ll__adv_8h"/>
+        <childnode refid="3060" relation="include">
+        </childnode>
+      </node>
+      <node id="3084">
+        <label>common/debug.h</label>
+      </node>
+      <node id="3056">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c</label>
+        <link refid="ll_bis.c"/>
+        <childnode refid="3057" relation="include">
+        </childnode>
+        <childnode refid="3081" relation="include">
+        </childnode>
+        <childnode refid="3082" relation="include">
+        </childnode>
+        <childnode refid="3083" relation="include">
+        </childnode>
+        <childnode refid="3084" relation="include">
+        </childnode>
+      </node>
+      <node id="3070">
+        <label>ble/ll_init.h</label>
+        <link refid="ll__init_8h"/>
+        <childnode refid="3060" relation="include">
+        </childnode>
+      </node>
+      <node id="3072">
+        <label>data_extension.h</label>
+        <link refid="data__extension_8h"/>
+        <childnode refid="3058" relation="include">
+        </childnode>
+      </node>
+      <node id="3075">
+        <label>ble/ll_iso.h</label>
+        <link refid="ll__iso_8h"/>
+        <childnode refid="3063" relation="include">
+        </childnode>
+        <childnode refid="3076" relation="include">
+        </childnode>
+        <childnode refid="3065" relation="include">
+        </childnode>
+      </node>
+      <node id="3058">
+        <label>typedef.h</label>
+      </node>
+      <node id="3083">
+        <label>btcontroller_heap.h</label>
+      </node>
+      <node id="3064">
+        <label>white_list.h</label>
+        <link refid="white__list_8h"/>
+        <childnode refid="3058" relation="include">
+        </childnode>
+      </node>
+      <node id="3078">
+        <label>audio_codec.h</label>
+        <link refid="audio__codec_8h"/>
+        <childnode refid="3063" relation="include">
+        </childnode>
+      </node>
+      <node id="3082">
+        <label>system/includes.h</label>
+      </node>
+      <node id="3069">
+        <label>ble/ll_scan.h</label>
+        <link refid="ll__scan_8h"/>
+        <childnode refid="3060" relation="include">
+        </childnode>
+      </node>
+      <node id="3067">
+        <label>ble/llcp.h</label>
+        <link refid="llcp_8h"/>
+        <childnode refid="3058" relation="include">
+        </childnode>
+        <childnode refid="3063" relation="include">
+        </childnode>
+      </node>
+      <node id="3073">
+        <label>multiple_phys.h</label>
+        <link refid="multiple__phys_8h"/>
+        <childnode refid="3058" relation="include">
+        </childnode>
+      </node>
+      <node id="3071">
+        <label>resolve_list.h</label>
+        <link refid="resolve__list_8h"/>
+        <childnode refid="3058" relation="include">
+        </childnode>
+      </node>
+      <node id="3060">
+        <label>ble_interface.h</label>
+      </node>
+      <node id="3074">
+        <label>ble/ll_cte.h</label>
+        <link refid="ll__cte_8h"/>
+        <childnode refid="3063" relation="include">
+        </childnode>
+      </node>
+      <node id="3081">
+        <label>hci_controller.h</label>
+      </node>
+      <node id="3061">
+        <label>common/sys_timer.h</label>
+      </node>
+      <node id="3057">
+        <label>ble/link_layer.h</label>
+        <link refid="link__layer_8h"/>
+        <childnode refid="3058" relation="include">
+        </childnode>
+        <childnode refid="3059" relation="include">
+        </childnode>
+        <childnode refid="3060" relation="include">
+        </childnode>
+        <childnode refid="3061" relation="include">
+        </childnode>
+        <childnode refid="3062" relation="include">
+        </childnode>
+        <childnode refid="3063" relation="include">
+        </childnode>
+        <childnode refid="3064" relation="include">
+        </childnode>
+        <childnode refid="3065" relation="include">
+        </childnode>
+        <childnode refid="3066" relation="include">
+        </childnode>
+        <childnode refid="3067" relation="include">
+        </childnode>
+        <childnode refid="3068" relation="include">
+        </childnode>
+        <childnode refid="3069" relation="include">
+        </childnode>
+        <childnode refid="3070" relation="include">
+        </childnode>
+        <childnode refid="3071" relation="include">
+        </childnode>
+        <childnode refid="3072" relation="include">
+        </childnode>
+        <childnode refid="3073" relation="include">
+        </childnode>
+        <childnode refid="3074" relation="include">
+        </childnode>
+        <childnode refid="3075" relation="include">
+        </childnode>
+        <childnode refid="3077" relation="include">
+        </childnode>
+        <childnode refid="3079" relation="include">
+        </childnode>
+        <childnode refid="3080" relation="include">
+        </childnode>
+      </node>
+      <node id="3063">
+        <label>ll_defines.h</label>
+        <link refid="ll__defines_8h"/>
+        <childnode refid="3058" relation="include">
+        </childnode>
+      </node>
+      <node id="3079">
+        <label>ble/ll_cis.h</label>
+        <link refid="ll__cis_8h"/>
+        <childnode refid="3075" relation="include">
+        </childnode>
+        <childnode refid="3057" relation="include">
+        </childnode>
+      </node>
+      <node id="3077">
+        <label>ble/ll_bis.h</label>
+        <link refid="ll__bis_8h"/>
+        <childnode refid="3075" relation="include">
+        </childnode>
+        <childnode refid="3078" relation="include">
+        </childnode>
+      </node>
+      <node id="3080">
+        <label>ble/ll_pc.h</label>
+        <link refid="ll__pc_8h"/>
+        <childnode refid="3063" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="ll__bis_8c_1a6c6991cba0e2995d7d9aec73e0324317" prot="public" static="no">
+        <name>LOG_TAG_CONST</name>
+        <initializer>LL_BIS</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" line="19" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__bis_8c_1a7ce0df38eb467e59f209470c8f5ac4e6" prot="public" static="no">
+        <name>LOG_TAG</name>
+        <initializer>&quot;[LL-BIS]&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" line="20" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__bis_8c_1a9eeb6e067100d0dec6e53bce19a403e0" prot="public" static="no">
+        <name>LOG_ERROR_ENABLE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" line="22" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__bis_8c_1a69321c8a2a0b07a07fb5088e82e25eb0" prot="public" static="no">
+        <name>LOG_INFO_ENABLE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" line="23" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__bis_8c_1a04135f631fe91199f05b1d816dda8756" prot="public" static="no">
+        <name>LOG_DUMP_ENABLE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" line="24" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__bis_8c_1ad223350d80db21fa8b721107cd1f6442" prot="public" static="no">
+        <name>__this</name>
+        <initializer>(&amp;<ref refid="link__layer_8h_1a11d5b1c8b0def0c238d4700650780724" kindref="member">ll_hdl</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" line="37" column="10" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="ll__bis_8c_1ae8b94383b570426da398013a057260a8" prot="public" static="no" mutable="no">
+        <type>const struct ble_handler</type>
+        <definition>const struct ble_handler ll_bis_bb_handler</definition>
+        <argsstring></argsstring>
+        <name>ll_bis_bb_handler</name>
+        <initializer>= {
+    .rx_probe_handler       = NULL,
+    .tx_probe_handler       = <ref refid="ll__bis_8c_1af43af208ab491f30059fcd5be85e604e" kindref="member">bis_tx_probe_handler</ref>,
+}</initializer>
+        <briefdescription>
+<para>BB LE BIS Callback. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" line="643" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" bodystart="668" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="ll__bis_8c_1a8daa54773d3bdfffa96a780facf916bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_bis_unpack_hdr</definition>
+        <argsstring>(bis_pdu_hdr_t *pHdr, const uint8_t *pBuf)</argsstring>
+        <name>ll_bis_unpack_hdr</name>
+        <param>
+          <type><ref refid="structbis__pdu__hdr__t" kindref="compound">bis_pdu_hdr_t</ref> *</type>
+          <declname>pHdr</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>pBuf</declname>
+        </param>
+        <briefdescription>
+<para>Unpack a BIS data channel PDU header. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pHdr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unpacked header. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pBuf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Packed packet buffer.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Header length. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" line="54" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" bodystart="54" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__bis_8c_1a259836c6c492df26a40c5f85fed864c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structle__bis__t" kindref="compound">le_bis_t</ref> *</type>
+        <definition>le_bis_t* ll_bis_by_handle</definition>
+        <argsstring>(uint16_t handle)</argsstring>
+        <name>ll_bis_by_handle</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" line="70" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" bodystart="70" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__bis_8c_1a1119fa8bb177dc394d15de582c1e38c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structle__bis__t" kindref="compound">le_bis_t</ref> *</type>
+        <definition>le_bis_t* ll_bis_by_num</definition>
+        <argsstring>(le_big_t *big, uint16_t num)</argsstring>
+        <name>ll_bis_by_num</name>
+        <param>
+          <type><ref refid="structle__big__t" kindref="compound">le_big_t</ref> *</type>
+          <declname>big</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" line="98" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" bodystart="98" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__bis_8c_1a9ab1f7ceb634e56770d5182def74c872" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t ll_bis_handle_alloc</definition>
+        <argsstring>(void)</argsstring>
+        <name>ll_bis_handle_alloc</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" line="111" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" bodystart="111" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__bis_8c_1a64d1f2d90ed180e3c415f6df192b2aaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structle__bis__t" kindref="compound">le_bis_t</ref> *</type>
+        <definition>le_bis_t* ll_bis_alloc</definition>
+        <argsstring>(le_big_t *big)</argsstring>
+        <name>ll_bis_alloc</name>
+        <param>
+          <type><ref refid="structle__big__t" kindref="compound">le_big_t</ref> *</type>
+          <declname>big</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" line="127" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" bodystart="127" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__bis_8c_1a1f745d19f62cf6ba411565af30cbe1ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ll_bis_free</definition>
+        <argsstring>(le_bis_t *bis)</argsstring>
+        <name>ll_bis_free</name>
+        <param>
+          <type><ref refid="structle__bis__t" kindref="compound">le_bis_t</ref> *</type>
+          <declname>bis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" line="161" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" bodystart="161" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__bis_8c_1acf513c8c6f94cb606bb21d03814818b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structle__big__t" kindref="compound">le_big_t</ref> *</type>
+        <definition>le_big_t* ll_big_by_handle</definition>
+        <argsstring>(uint16_t handle)</argsstring>
+        <name>ll_big_by_handle</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" line="176" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" bodystart="176" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__bis_8c_1a9533c6fc2d1fd1ad5fc1486cb41215f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structle__big__t" kindref="compound">le_big_t</ref> *</type>
+        <definition>le_big_t* ll_big_alloc</definition>
+        <argsstring>(uint8_t handle)</argsstring>
+        <name>ll_big_alloc</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" line="189" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" bodystart="189" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__bis_8c_1a0ac90d03121c46d8b3cae47f9c42e195" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ll_big_free</definition>
+        <argsstring>(le_big_t *big)</argsstring>
+        <name>ll_big_free</name>
+        <param>
+          <type><ref refid="structle__big__t" kindref="compound">le_big_t</ref> *</type>
+          <declname>big</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" line="211" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" bodystart="211" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__bis_8c_1abdd8a985aeeded3bfbf4a09dd7596cb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ll_bis_set_acad_biginfo</definition>
+        <argsstring>(const struct __ext_adv_group *adv_set, ble_adv_set_t *bb_adv_set)</argsstring>
+        <name>ll_bis_set_acad_biginfo</name>
+        <param>
+          <type>const struct <ref refid="struct____ext__adv__group" kindref="compound">__ext_adv_group</ref> *</type>
+          <declname>adv_set</declname>
+        </param>
+        <param>
+          <type>ble_adv_set_t *</type>
+          <declname>bb_adv_set</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>: ll_bis_set_acad_biginfo</para><para>: adv_set  : bb_adv_set </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" line="249" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" bodystart="249" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__bis_8c_1a0b427f6c144a93cae51f7904e8686579" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ll_bis_set_acad_channel_map_update</definition>
+        <argsstring>(const struct __ext_adv_group *adv_set, ble_adv_set_t *bb_adv_set)</argsstring>
+        <name>ll_bis_set_acad_channel_map_update</name>
+        <param>
+          <type>const struct <ref refid="struct____ext__adv__group" kindref="compound">__ext_adv_group</ref> *</type>
+          <declname>adv_set</declname>
+        </param>
+        <param>
+          <type>ble_adv_set_t *</type>
+          <declname>bb_adv_set</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>: ll_bis_set_acad_channel_map_update</para><para>: adv_set  : bb_adv_set </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" line="304" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" bodystart="304" bodyend="317"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__bis_8c_1aacc18a5b44e740e876ab74a42891992d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_get_number_avail_bis</definition>
+        <argsstring>(void)</argsstring>
+        <name>ll_get_number_avail_bis</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Return the number of available BIS contexts. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Number of available BIS contexts. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" line="326" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" bodystart="326" bodyend="329"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__bis_8c_1a95c5632d0d5f68ab80055c5d8c53297a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lctrBisCalcGroupSessionKey</definition>
+        <argsstring>(const uint8_t *pGSKD, const uint8_t *pBC, uint8_t *pGSK)</argsstring>
+        <name>lctrBisCalcGroupSessionKey</name>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>pGSKD</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>pBC</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>pGSK</declname>
+        </param>
+        <briefdescription>
+<para>Calculate Group session key. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pGSKD</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Group Session Key Diversifier. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pBC</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Broadcast Code. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pGSK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Group Session Key result. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" line="340" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" bodystart="340" bodyend="358"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__bis_8c_1a1e2ca816825d9802809609ca104d57f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t lctrComputeBisAccessAddr</definition>
+        <argsstring>(uint32_t seedAccAddr, uint8_t bisNum)</argsstring>
+        <name>lctrComputeBisAccessAddr</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>seedAccAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>bisNum</declname>
+        </param>
+        <briefdescription>
+<para>Compute new access address. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>seedAccAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Seed access address. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bisNum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>BIS number.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>New seed access address value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" line="370" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" bodystart="370" bodyend="399"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__bis_8c_1a2e0625064c0b86acda36a23fdd5902d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ll_bis_setup</definition>
+        <argsstring>(le_bis_t *bis, uint32_t seedAccAddr, uint16_t baseCrcInit, uint64_t chMap, LlPhy_t phy)</argsstring>
+        <name>ll_bis_setup</name>
+        <param>
+          <type><ref refid="structle__bis__t" kindref="compound">le_bis_t</ref> *</type>
+          <declname>bis</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>seedAccAddr</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>baseCrcInit</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>chMap</declname>
+        </param>
+        <param>
+          <type><ref refid="ll__defines_8h_1aedd452843edd3c41a93f9f8dda96e63e" kindref="member">LlPhy_t</ref></type>
+          <declname>phy</declname>
+        </param>
+        <briefdescription>
+<para>Set up a new BIS. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pBisCtx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>BIS context. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>seedAccAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Seed access address. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>baseCrcInit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Base CRC Init. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>chMap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Channel map. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>phy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PHY. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" line="412" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" bodystart="412" bodyend="419"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__bis_8c_1a80e209996e1ed2e74872104a3bc6de39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u8</type>
+        <definition>u8 ll_bis_tx_test</definition>
+        <argsstring>(le_bis_t *bis, u8 payload_type)</argsstring>
+        <name>ll_bis_tx_test</name>
+        <param>
+          <type><ref refid="structle__bis__t" kindref="compound">le_bis_t</ref> *</type>
+          <declname>bis</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>payload_type</declname>
+        </param>
+        <briefdescription>
+<para>Enable BIS Tx test. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>BIS context. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>payload_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Payload length type.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status error code. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" line="431" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" bodystart="431" bodyend="445"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__bis_8c_1a12e221e9bfcffcf69c4cc44995f7215f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u8</type>
+        <definition>u8 ll_bis_rx_test</definition>
+        <argsstring>(le_bis_t *bis, u8 payload_type)</argsstring>
+        <name>ll_bis_rx_test</name>
+        <param>
+          <type><ref refid="structle__bis__t" kindref="compound">le_bis_t</ref> *</type>
+          <declname>bis</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>payload_type</declname>
+        </param>
+        <briefdescription>
+<para>Enable BIS Rx test. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>BIS context. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>payload_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Payload length type.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status error code. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" line="457" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" bodystart="457" bodyend="470"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__bis_8c_1ac638b72c234736721b8eaba8812a440b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u8</type>
+        <definition>u8 ll_bis_read_test_counters</definition>
+        <argsstring>(le_bis_t *bis, LlIsoTestCtrs_t *pTest)</argsstring>
+        <name>ll_bis_read_test_counters</name>
+        <param>
+          <type><ref refid="structle__bis__t" kindref="compound">le_bis_t</ref> *</type>
+          <declname>bis</declname>
+        </param>
+        <param>
+          <type><ref refid="structLlIsoTestCtrs__t" kindref="compound">LlIsoTestCtrs_t</ref> *</type>
+          <declname>pTest</declname>
+        </param>
+        <briefdescription>
+<para>BIS read ISO test counters. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>BIS context. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pTest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the statistics block.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status error code. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" line="482" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" bodystart="482" bodyend="496"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__bis_8c_1a6e0da02cd672e511b13f448ea6e73d10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u8</type>
+        <definition>u8 ll_bis_setup_iso_data_path</definition>
+        <argsstring>(le_bis_t *bis, LlIsoDataPathDir_t dpDir, LlIsoDataPath_t dpId)</argsstring>
+        <name>ll_bis_setup_iso_data_path</name>
+        <param>
+          <type><ref refid="structle__bis__t" kindref="compound">le_bis_t</ref> *</type>
+          <declname>bis</declname>
+        </param>
+        <param>
+          <type><ref refid="ll__iso_8h_1ac6b0e5b32a70e2319903fb13194e7666" kindref="member">LlIsoDataPathDir_t</ref></type>
+          <declname>dpDir</declname>
+        </param>
+        <param>
+          <type><ref refid="ll__iso_8h_1ad4a7049340ee84c0b78deb08a375078e" kindref="member">LlIsoDataPath_t</ref></type>
+          <declname>dpId</declname>
+        </param>
+        <briefdescription>
+<para>Set the BIS data path. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>BIS context. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dpDir</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data path direction. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dpId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data path ID.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status error code. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" line="509" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" bodystart="509" bodyend="567"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__bis_8c_1a4bdde6e4fe2ecef49447610acc60170f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ll_bis_msg_handler</definition>
+        <argsstring>(uint8_t msg_id, void *payload)</argsstring>
+        <name>ll_bis_msg_handler</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>msg_id</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>payload</declname>
+        </param>
+        <briefdescription>
+<para>BIS message handler. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>msg_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message Indentifier </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>*payload</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message Context </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" line="578" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" bodystart="578" bodyend="583"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__bis_8c_1abcda0e4f11f8f8de431a64b1efa67bee" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>static uint8_t llcp_channel_class_update_handler</definition>
+        <argsstring>(uint64_t channel_map)</argsstring>
+        <name>llcp_channel_class_update_handler</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>channel_map</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" line="585" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" bodystart="585" bodyend="588"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__bis_8c_1af86fe08a49a414e90034f621e3e3dd66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ll_bis_close</definition>
+        <argsstring>(void)</argsstring>
+        <name>ll_bis_close</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Close all resources for BIS. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" line="596" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" bodystart="596" bodyend="605"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__bis_8c_1aa35c263b7c5f3b8f191dc9ddb951e87d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void hci_le_create_big_complete_evt</definition>
+        <argsstring>(le_big_t *big, uint8_t status)</argsstring>
+        <name>hci_le_create_big_complete_evt</name>
+        <param>
+          <type><ref refid="structle__big__t" kindref="compound">le_big_t</ref> *</type>
+          <declname>big</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" line="608" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" bodystart="608" bodyend="625"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__bis_8c_1af43af208ab491f30059fcd5be85e604e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void bis_tx_probe_handler</definition>
+        <argsstring>(void *priv, uint8_t *bis_pdu)</argsstring>
+        <name>bis_tx_probe_handler</name>
+        <param>
+          <type>void *</type>
+          <declname>priv</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>bis_pdu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>: bis_rx_probe_handler</para><para>: priv  : pBisPDU  : bis_tx_probe_handler</para><para>: priv  : bis_pdu </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" line="643" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" bodystart="643" bodyend="665"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__bis_8c_1a7f0b7bb5852efaddef08891ef28663b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ll_bis_acad_create_big</definition>
+        <argsstring>(uint16_t big_handle, struct __ext_adv_group *adv_set)</argsstring>
+        <name>ll_bis_acad_create_big</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>big_handle</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="struct____ext__adv__group" kindref="compound">__ext_adv_group</ref> *</type>
+          <declname>adv_set</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>: ll_bis_acad_create_big</para><para>: big_handle  : adv_set </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" line="681" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" bodystart="681" bodyend="766"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__bis_8c_1a87a0010e6ea5d24a1825ddc0ad6db6ad" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ll_bis_tx_post_handler</definition>
+        <argsstring>(le_bis_t *bis)</argsstring>
+        <name>ll_bis_tx_post_handler</name>
+        <param>
+          <type><ref refid="structle__bis__t" kindref="compound">le_bis_t</ref> *</type>
+          <declname>bis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>: ll_bis_tx_post_handler</para><para>: bis </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" line="775" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" bodystart="775" bodyend="788"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__bis_8c_1a0957603625561a121dbc7b886890adce" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ll_bis_rx_post_handler</definition>
+        <argsstring>(le_bis_t *bis)</argsstring>
+        <name>ll_bis_rx_post_handler</name>
+        <param>
+          <type><ref refid="structle__bis__t" kindref="compound">le_bis_t</ref> *</type>
+          <declname>bis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>: ll_bis_rx_post_handler</para><para>: bis </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" line="797" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" bodystart="797" bodyend="800"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__bis_8c_1ab9771d38c45a4436d668377cf559875f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ll_bis_post_process</definition>
+        <argsstring>(void)</argsstring>
+        <name>ll_bis_post_process</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>: ll_bis_post_process</para><para>: </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" line="809" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" bodystart="809" bodyend="835"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__bis_8c_1a21d7d41abb5d8d86f303fc989662c389" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ll_bis_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>ll_bis_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Initialize resources for BIS. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" line="842" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c" bodystart="842" bodyend="865"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*********************************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/>Filename<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>ll_bis.c</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/>Description<sp/><sp/><sp/><sp/><sp/>:</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"></highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/>Author<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>Bingquan</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"></highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/>Email<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>caibingquan@zh-jieli.com</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/>Last<sp/>modifiled<sp/><sp/>:<sp/>2020-07-31<sp/>14:11</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"></highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/>Copyright:(c)JIELI<sp/><sp/>2011-2019<sp/><sp/>@<sp/>,<sp/>All<sp/>Rights<sp/>Reserved.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">*********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="link__layer_8h" kindref="compound">ble/link_layer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;hci_controller.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;system/includes.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;btcontroller_heap.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_TAG_CONST<sp/><sp/><sp/><sp/><sp/>LL_BIS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_TAG<sp/><sp/><sp/><sp/><sp/>&quot;[LL-BIS]&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_ERROR_ENABLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_INFO_ENABLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_DUMP_ENABLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;common/debug.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>SUPPORT_MS_EXTENSIONS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>bss_seg(&quot;.ble_ll_bss&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>data_seg(&quot;.ble_ll_data&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>const_seg(&quot;.ble_ll_const&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>code_seg(&quot;.ble_ll_code&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>HAVE_MALLOC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__this<sp/><sp/><sp/><sp/><sp/><sp/>(ll_hdl)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__this<sp/><sp/><sp/><sp/><sp/><sp/>(&amp;ll_hdl)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">/**************************************************************************************************</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/><sp/>Local<sp/>Functions</highlight></codeline>
+<codeline lineno="42"><highlight class="comment">**************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">/*************************************************************************************************/</highlight></codeline>
+<codeline lineno="53"><highlight class="comment">/*************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal">uint8_t<sp/><ref refid="ll__bis_8c_1a8daa54773d3bdfffa96a780facf916bc" kindref="member">ll_bis_unpack_hdr</ref>(<ref refid="structbis__pdu__hdr__t" kindref="compound">bis_pdu_hdr_t</ref><sp/>*pHdr,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*pBuf)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>len<sp/>=<sp/><ref refid="ll__defines_8h_1ab555a9e0e5fd075313e849eff7899bc2" kindref="member">LL_DATA_HDR_LEN</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>hdr;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>BSTREAM_TO_UINT16(hdr,<sp/>pBuf);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>pHdr-&gt;<ref refid="structbis__pdu__hdr__t_1a098990f5d28fd6d8418cd74566182572" kindref="member">llid</ref><sp/><sp/>=<sp/>(hdr<sp/>&gt;&gt;<sp/>0)<sp/>&amp;<sp/><ref refid="ll__defines_8h_1ae5cca98beaabd2f2351566f6c7fbba03" kindref="member">LL_DATA_HDR_LLID_MSK</ref>;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>pHdr-&gt;<ref refid="structbis__pdu__hdr__t_1acc1397eb20df81b601b3f251668ee7be" kindref="member">cssn</ref><sp/><sp/>=<sp/>(hdr<sp/>&gt;&gt;<sp/>2)<sp/>&amp;<sp/>0b111;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>pHdr-&gt;<ref refid="structbis__pdu__hdr__t_1a44dad2f3f22e0695dc72233844137776" kindref="member">cstf</ref><sp/><sp/>=<sp/>(hdr<sp/>&gt;&gt;<sp/>5)<sp/>&amp;<sp/>0b1;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>pHdr-&gt;<ref refid="structbis__pdu__hdr__t_1ae9cdd9aebaf31f2cb2094041c3f7be73" kindref="member">length</ref><sp/>=<sp/>(hdr<sp/>&gt;&gt;<sp/>8)<sp/>&amp;<sp/><ref refid="ll__defines_8h_1a51134d70b65d381ce1eb6c9b9a62ba63" kindref="member">LL_DATA_HDR_LEN_MSK</ref>;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>len;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><ref refid="structle__bis__t" kindref="compound">le_bis_t</ref><sp/>*<ref refid="ll__bis_8c_1a259836c6c492df26a40c5f85fed864c4" kindref="member">ll_bis_by_handle</ref>(uint16_t<sp/>handle)</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structle__big__t" kindref="compound">le_big_t</ref><sp/>*big;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structle__bis__t" kindref="compound">le_bis_t</ref><sp/>*bis;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(list_empty(&amp;<ref refid="ll__bis_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref>-&gt;iso_ctx.bis_head)<sp/>==<sp/>FALSE)<sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>list_for_each_entry(bis,<sp/>&amp;<ref refid="ll__bis_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref>-&gt;iso_ctx.bis_head,<sp/>entry)<sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>log_info(&quot;BIS<sp/>by<sp/>handle<sp/>0x%x&quot;,<sp/>bis-&gt;handle);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(bis-&gt;<ref refid="structle__bis__t_1a370497e11e3e4dda7480b105795d6d80" kindref="member">handle</ref><sp/>==<sp/>handle)<sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>bis;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(list_empty(&amp;<ref refid="ll__bis_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref>-&gt;iso_ctx.big_head)<sp/>==<sp/>FALSE)<sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>list_for_each_entry(big,<sp/>&amp;<ref refid="ll__bis_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref>-&gt;iso_ctx.big_head,<sp/>entry)<sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>list_for_each_entry(bis,<sp/>&amp;big-&gt;<ref refid="structle__big__t_1a0a814e20299b999f85afe260abb8f5e0" kindref="member">bis_head</ref>,<sp/>entry)<sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_info(</highlight><highlight class="stringliteral">&quot;BIG<sp/>BIS<sp/>by<sp/>handle<sp/>0x%x&quot;</highlight><highlight class="normal">,<sp/>bis-&gt;<ref refid="structle__bis__t_1a370497e11e3e4dda7480b105795d6d80" kindref="member">handle</ref>);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(bis-&gt;<ref refid="structle__bis__t_1a370497e11e3e4dda7480b105795d6d80" kindref="member">handle</ref><sp/>==<sp/>handle)<sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>bis;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><ref refid="structle__bis__t" kindref="compound">le_bis_t</ref><sp/>*<ref refid="ll__bis_8c_1a1119fa8bb177dc394d15de582c1e38c2" kindref="member">ll_bis_by_num</ref>(<ref refid="structle__big__t" kindref="compound">le_big_t</ref><sp/>*big,<sp/>uint16_t<sp/>num)</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structle__bis__t" kindref="compound">le_bis_t</ref><sp/>*bis<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>list_for_each_entry(bis,<sp/>&amp;big-&gt;<ref refid="structle__big__t_1a0a814e20299b999f85afe260abb8f5e0" kindref="member">bis_head</ref>,<sp/>entry)<sp/>{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(bis-&gt;<ref refid="structle__bis__t_1a034a24953b4c3e250ae77ac53a26ea33" kindref="member">bisNum</ref><sp/>==<sp/>num)<sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>bis;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal">uint16_t<sp/><ref refid="ll__bis_8c_1a9ab1f7ceb634e56770d5182def74c872" kindref="member">ll_bis_handle_alloc</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="112"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/>i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="ll__defines_8h_1a18372e9a640aaa2af1a55c54e34cd005" kindref="member">LL_MAX_BIS</ref>;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((<ref refid="ll__bis_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref>-&gt;iso_ctx.bis_bitmap<sp/>&amp;<sp/>BIT(i))<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="ll__bis_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref>-&gt;iso_ctx.bis_bitmap<sp/>|=<sp/>BIT(i);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(i<sp/>&lt;<sp/>LL_MAX_BIS,<sp/></highlight><highlight class="stringliteral">&quot;alloc_bis_handle<sp/>error\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="ll__defines_8h_1ad2fc86ec63a9fc723092fafc83e3151b" kindref="member">LL_BIS_FIRST_HANDLE</ref><sp/>+<sp/>i);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><ref refid="structle__bis__t" kindref="compound">le_bis_t</ref><sp/>*<ref refid="ll__bis_8c_1a64d1f2d90ed180e3c415f6df192b2aaa" kindref="member">ll_bis_alloc</ref>(<ref refid="structle__big__t" kindref="compound">le_big_t</ref><sp/>*big)</highlight></codeline>
+<codeline lineno="128"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structle__bis__t" kindref="compound">le_bis_t</ref><sp/>*bis<sp/>=<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structle__bis__t" kindref="compound">le_bis_t</ref>));</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(bis<sp/>==<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_error(</highlight><highlight class="stringliteral">&quot;BIS<sp/>No<sp/>memory&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>memset((u8<sp/>*)bis,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(*bis));</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>bis-&gt;<ref refid="structle__bis__t_1a370497e11e3e4dda7480b105795d6d80" kindref="member">handle</ref><sp/>=<sp/><ref refid="ll__bis_8c_1a9ab1f7ceb634e56770d5182def74c872" kindref="member">ll_bis_handle_alloc</ref>();</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>log_info(</highlight><highlight class="stringliteral">&quot;BIS<sp/>handle<sp/>:<sp/>0x%x&quot;</highlight><highlight class="normal">,<sp/>bis-&gt;<ref refid="structle__bis__t_1a370497e11e3e4dda7480b105795d6d80" kindref="member">handle</ref>);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>bis-&gt;<ref refid="structle__bis__t_1a034a24953b4c3e250ae77ac53a26ea33" kindref="member">bisNum</ref><sp/>=<sp/>big-&gt;<ref refid="structle__big__t_1a87434bacf4e16752ec41a7d203c5e642" kindref="member">numBis</ref><sp/>+<sp/>1;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>big-&gt;<ref refid="structle__big__t_1a87434bacf4e16752ec41a7d203c5e642" kindref="member">numBis</ref>++;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Initialize<sp/>data<sp/>path<sp/>info.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>bis-&gt;<ref refid="structle__bis__t_1a815a53b0c0b710d6663e842ed36731db" kindref="member">path</ref><sp/><sp/><sp/>=<sp/><ref refid="ll__iso_8h_1ad4a7049340ee84c0b78deb08a375078eaf76206cbde4d9f6e9c7db594ad1ecb83" kindref="member">LL_ISO_DATA_PATH_DISABLED</ref>;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>bis-&gt;<ref refid="structle__bis__t_1a2741e2c7290825249901e18d3f808b63" kindref="member">big</ref><sp/>=<sp/>big;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__bis_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref>-&gt;iso_ctx.bis_number++;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>list_add_tail(&amp;bis-&gt;<ref refid="structle__bis__t_1a70873eae66f16c32c46c89dce5b1d6be" kindref="member">entry</ref>,<sp/>&amp;<ref refid="ll__bis_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref>-&gt;iso_ctx.bis_head);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>list_add_tail(&amp;bis-&gt;<ref refid="structle__bis__t_1a70873eae66f16c32c46c89dce5b1d6be" kindref="member">entry</ref>,<sp/>&amp;big-&gt;<ref refid="structle__big__t_1a0a814e20299b999f85afe260abb8f5e0" kindref="member">bis_head</ref>);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>INIT_LIST_HEAD(&amp;bis-&gt;<ref refid="structle__bis__t_1a7d40ccbaa4c63f30b739c7c83036b354" kindref="member">isoalRxCtx</ref>.<ref refid="structlctrIsoalRxCtx__t_1ade9f18223d9ce206947c5be942fbcb83" kindref="member">data</ref>.unframed.pendSduQ);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>bis;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__bis_8c_1a1f745d19f62cf6ba411565af30cbe1ad" kindref="member">ll_bis_free</ref>(<ref refid="structle__bis__t" kindref="compound">le_bis_t</ref><sp/>*bis)</highlight></codeline>
+<codeline lineno="162"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Flush<sp/>pending<sp/>iso<sp/>packets*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__bis_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref>-&gt;iso_ctx.bis_number--;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structle__big__t" kindref="compound">le_big_t</ref><sp/>*big<sp/>=<sp/>bis-&gt;<ref refid="structle__bis__t_1a2741e2c7290825249901e18d3f808b63" kindref="member">big</ref>;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>big-&gt;<ref refid="structle__big__t_1a87434bacf4e16752ec41a7d203c5e642" kindref="member">numBis</ref>--;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>list_del(&amp;bis-&gt;<ref refid="structle__bis__t_1a70873eae66f16c32c46c89dce5b1d6be" kindref="member">entry</ref>);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>free(bis);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><ref refid="structle__big__t" kindref="compound">le_big_t</ref><sp/>*<ref refid="ll__bis_8c_1acf513c8c6f94cb606bb21d03814818b6" kindref="member">ll_big_by_handle</ref>(uint16_t<sp/>handle)</highlight></codeline>
+<codeline lineno="177"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structle__big__t" kindref="compound">le_big_t</ref><sp/>*big;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>list_for_each_entry(big,<sp/>&amp;<ref refid="ll__bis_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref>-&gt;iso_ctx.big_head,<sp/>entry)<sp/>{</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(big-&gt;<ref refid="structle__big__t_1a8c51844165f820888b9a71e3e8fadabc" kindref="member">handle</ref><sp/>==<sp/>handle)<sp/>{</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>big;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><ref refid="structle__big__t" kindref="compound">le_big_t</ref><sp/>*<ref refid="ll__bis_8c_1a9533c6fc2d1fd1ad5fc1486cb41215f6" kindref="member">ll_big_alloc</ref>(uint8_t<sp/>handle)</highlight></codeline>
+<codeline lineno="190"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structle__big__t" kindref="compound">le_big_t</ref><sp/>*big<sp/>=<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structle__big__t" kindref="compound">le_big_t</ref>));</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(big<sp/>==<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>memset(big,<sp/>0x0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structle__big__t" kindref="compound">le_big_t</ref>));</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>big-&gt;<ref refid="structle__big__t_1a8c51844165f820888b9a71e3e8fadabc" kindref="member">handle</ref><sp/>=<sp/>handle;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>CIS<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>INIT_LIST_HEAD(&amp;big-&gt;<ref refid="structle__big__t_1a0a814e20299b999f85afe260abb8f5e0" kindref="member">bis_head</ref>);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/>list_add_tail(&amp;big-&gt;<ref refid="structle__big__t_1ad39175de42c3c27aa564e3a2c64be9ff" kindref="member">entry</ref>,<sp/>&amp;<ref refid="ll__bis_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref>-&gt;iso_ctx.big_head);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__bis_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref>-&gt;iso_ctx.big_number++;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>big;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__bis_8c_1a0ac90d03121c46d8b3cae47f9c42e195" kindref="member">ll_big_free</ref>(<ref refid="structle__big__t" kindref="compound">le_big_t</ref><sp/>*big)</highlight></codeline>
+<codeline lineno="212"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Free<sp/>all<sp/>BIS<sp/>context<sp/>associated<sp/>with<sp/>the<sp/>BIG.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structle__bis__t" kindref="compound">le_bis_t</ref><sp/>*bis,<sp/>*n;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/>list_for_each_entry_safe(bis,<sp/>n,<sp/>&amp;big-&gt;<ref refid="structle__big__t_1a0a814e20299b999f85afe260abb8f5e0" kindref="member">bis_head</ref>,<sp/>entry)<sp/>{</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(big-&gt;<ref refid="structle__big__t_1ae29aa1216dbd6efe1269694c0ff7915e" kindref="member">role</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ll__defines_8h_1acb969664188d3b5c343b54570b707cd9a24032f4565cdaf16204e35963ebf90d5" kindref="member">LL_ROLE_SLAVE</ref>:</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="ll__bis_8c_1a6e0da02cd672e511b13f448ea6e73d10" kindref="member">ll_bis_setup_iso_data_path</ref>(bis,<sp/><ref refid="ll__iso_8h_1ac6b0e5b32a70e2319903fb13194e7666a0d80d43ea3519e84815ad5efc06a7520" kindref="member">LL_ISO_DATA_DIR_INPUT</ref>,<sp/><ref refid="ll__iso_8h_1ad4a7049340ee84c0b78deb08a375078eaf76206cbde4d9f6e9c7db594ad1ecb83" kindref="member">LL_ISO_DATA_PATH_DISABLED</ref>);</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>lctrNotifyIsoTxComplete(pBigCtx);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ll__defines_8h_1acb969664188d3b5c343b54570b707cd9a9e90d540540fc283ccbdcbdbe4f494c3" kindref="member">LL_ROLE_MASTER</ref>:</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="ll__bis_8c_1a6e0da02cd672e511b13f448ea6e73d10" kindref="member">ll_bis_setup_iso_data_path</ref>(bis,<sp/><ref refid="ll__iso_8h_1ac6b0e5b32a70e2319903fb13194e7666af27f48a01364df1851e192e237106148" kindref="member">LL_ISO_DATA_DIR_OUTPUT</ref>,<sp/><ref refid="ll__iso_8h_1ad4a7049340ee84c0b78deb08a375078eaf76206cbde4d9f6e9c7db594ad1ecb83" kindref="member">LL_ISO_DATA_PATH_DISABLED</ref>);</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="ll__bis_8c_1a1f745d19f62cf6ba411565af30cbe1ad" kindref="member">ll_bis_free</ref>(bis);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Flush<sp/>BIG<sp/>Control<sp/>PDUs<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__bis_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref>-&gt;iso_ctx.big_number--;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/>list_del(&amp;big-&gt;<ref refid="structle__big__t_1ad39175de42c3c27aa564e3a2c64be9ff" kindref="member">entry</ref>);</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/>free(big);</highlight></codeline>
+<codeline lineno="239"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>***************************************************************************/</highlight></codeline>
+<codeline lineno="248"><highlight class="comment">/*<sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__bis_8c_1abdd8a985aeeded3bfbf4a09dd7596cb5" kindref="member">ll_bis_set_acad_biginfo</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct____ext__adv__group" kindref="compound">__ext_adv_group</ref><sp/>*adv_set,<sp/>ble_adv_set_t<sp/>*bb_adv_set)</highlight></codeline>
+<codeline lineno="250"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/>acad_big_info_t<sp/>*big_info<sp/>=<sp/>adv_set-&gt;<ref refid="struct____ext__adv__group_1ab6694507854f435af6ff22404cb731cc" kindref="member">acad</ref>.big_info;</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(big_info<sp/>==<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="stringliteral">&quot;BIGInfo<sp/>null&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Convert<sp/>PHY<sp/>value<sp/>to<sp/>BIG<sp/>Info<sp/>enumeration.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>bigPhy<sp/>=<sp/>big_info-&gt;phy<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>*pBuf<sp/>=<sp/>(uint8_t<sp/>*)&amp;bb_adv_set-&gt;acad.big_info;</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Pack<sp/>ACAD<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT8_TO_BSTREAM(pBuf,<sp/>big_info-&gt;hdr.length<sp/>+<sp/><ref refid="ll__defines_8h_1a78c0cbae5532e22bf63bb95505fabee0" kindref="member">LL_ACAD_LEN_FIELD_LEN</ref>);</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT8_TO_BSTREAM(pBuf,<sp/><ref refid="ll__defines_8h_1a1fb9092bcdeada2d206bdc74afbbe122a638543ffeb32d416d7b6cb59cb5498de" kindref="member">LL_ACAD_OPCODE_BIG_INFO</ref>);</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT32_TO_BSTREAM(pBuf,<sp/>((big_info-&gt;bigOffs<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;<sp/>0x3FFF)<sp/>&lt;&lt;<sp/><sp/>0)<sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((big_info-&gt;bigOffsUnits<sp/><sp/><sp/><sp/>&amp;<sp/>0x0001)<sp/>&lt;&lt;<sp/>14)<sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((big_info-&gt;isoInter)<sp/>&lt;&lt;<sp/>15)<sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((big_info-&gt;numBis)<sp/>&lt;&lt;<sp/>27));</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT32_TO_BSTREAM(pBuf,<sp/>((big_info-&gt;nse)<sp/>&lt;&lt;<sp/><sp/>0)<sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((big_info-&gt;bn)<sp/>&lt;&lt;<sp/><sp/>5)<sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((big_info-&gt;subEvtInterUsec)<sp/>&lt;&lt;<sp/><sp/>8)<sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((big_info-&gt;pto)<sp/>&lt;&lt;<sp/>28));</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT32_TO_BSTREAM(pBuf,<sp/>((big_info-&gt;bisSpaceUsec)<sp/>&lt;&lt;<sp/><sp/>0)<sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((big_info-&gt;irc)<sp/>&lt;&lt;<sp/>20)<sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((big_info-&gt;maxPdu)<sp/>&lt;&lt;<sp/>24));</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT8_TO_BSTREAM(pBuf,<sp/>((0<sp/></highlight><highlight class="comment">/*<sp/>RFU<sp/>*/</highlight><highlight class="normal">)<sp/>&lt;&lt;<sp/><sp/>0));</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT32_TO_BSTREAM(pBuf,<sp/>((big_info-&gt;seedAccAddr)<sp/>&lt;&lt;<sp/><sp/>0));</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT32_TO_BSTREAM(pBuf,<sp/>((big_info-&gt;sduInterUsec)<sp/>&lt;&lt;<sp/><sp/>0)<sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((big_info-&gt;maxSdu)<sp/>&lt;&lt;<sp/>20));</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT16_TO_BSTREAM(pBuf,<sp/>((big_info-&gt;baseCrcInit)<sp/>&lt;&lt;<sp/><sp/>0));</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT40_TO_BSTREAM(pBuf,<sp/>((big_info-&gt;chanMap)<sp/>&lt;&lt;<sp/><sp/>0)<sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(((uint64_t)bigPhy)<sp/>&lt;&lt;<sp/>37));</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT40_TO_BSTREAM(pBuf,<sp/>((big_info-&gt;bisPldCtr<sp/>&amp;<sp/>UINT64_C(0x7FFFFFFFFF))<sp/>&lt;&lt;<sp/><sp/>0)<sp/>|</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((big_info-&gt;framing<sp/><sp/><sp/>&amp;<sp/>UINT64_C(1))<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>39));</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(big_info-&gt;encrypt)<sp/>{</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>memcpy(pBuf,<sp/>big_info-&gt;giv,<sp/><ref refid="ll__defines_8h_1aebab5ed83127e6e4865e34adee30ab75" kindref="member">LL_GIV_LEN</ref>);</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pBuf<sp/>+=<sp/><ref refid="ll__defines_8h_1aebab5ed83127e6e4865e34adee30ab75" kindref="member">LL_GIV_LEN</ref>;</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>memcpy(pBuf,<sp/>big_info-&gt;gskd,<sp/><ref refid="ll__defines_8h_1a3fd9cd0476cf27fe7dccd733637e03c8" kindref="member">LL_GSKD_LEN</ref>);</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pBuf<sp/>+=<sp/><ref refid="ll__defines_8h_1a3fd9cd0476cf27fe7dccd733637e03c8" kindref="member">LL_GSKD_LEN</ref>;</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="294"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>***************************************************************************/</highlight></codeline>
+<codeline lineno="303"><highlight class="comment">/*<sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__bis_8c_1a0b427f6c144a93cae51f7904e8686579" kindref="member">ll_bis_set_acad_channel_map_update</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct____ext__adv__group" kindref="compound">__ext_adv_group</ref><sp/>*adv_set,<sp/>ble_adv_set_t<sp/>*bb_adv_set)</highlight></codeline>
+<codeline lineno="305"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/>acad_channel_map_update_t<sp/>*ch_map<sp/>=<sp/>adv_set-&gt;<ref refid="struct____ext__adv__group_1ab6694507854f435af6ff22404cb731cc" kindref="member">acad</ref>.channel_map_update;</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>len<sp/>=<sp/><ref refid="ll__defines_8h_1a78c0cbae5532e22bf63bb95505fabee0" kindref="member">LL_ACAD_LEN_FIELD_LEN</ref><sp/>+<sp/><ref refid="ll__defines_8h_1a2596330922516718c530a2485d83f7e1" kindref="member">LL_ACAD_OPCODE_LEN</ref><sp/>+<sp/><ref refid="ll__defines_8h_1abadccccd4ccb6d66eae7fc3324f94f0b" kindref="member">LL_ACAD_CHAN_MAP_UPD_LEN</ref>;</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>*pBuf<sp/>=<sp/>(uint8_t<sp/>*)&amp;bb_adv_set-&gt;acad.chmap;</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Pack<sp/>ACAD<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT8_TO_BSTREAM(pBuf,<sp/>LL_ACAD_CHAN_MAP_UPD_LEN<sp/>+<sp/><ref refid="ll__defines_8h_1a78c0cbae5532e22bf63bb95505fabee0" kindref="member">LL_ACAD_LEN_FIELD_LEN</ref>);</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT8_TO_BSTREAM(pBuf,<sp/><ref refid="ll__defines_8h_1a1fb9092bcdeada2d206bdc74afbbe122ab0a53cea21f6646b91aba1ee72618b73" kindref="member">LL_ACAD_OPCODE_CHAN_MAP_UPD</ref>);</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT40_TO_BSTREAM(pBuf,<sp/>ch_map-&gt;channel_mask);</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT16_TO_BSTREAM(pBuf,<sp/>ch_map-&gt;instant);</highlight></codeline>
+<codeline lineno="317"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight><highlight class="comment">/*************************************************************************************************/</highlight></codeline>
+<codeline lineno="325"><highlight class="comment">/*************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="326"><highlight class="normal">uint8_t<sp/><ref refid="ll__bis_8c_1aacc18a5b44e740e876ab74a42891992d" kindref="member">ll_get_number_avail_bis</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="327"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="ll__bis_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref>-&gt;iso_ctx.max_bis_number<sp/>-<sp/><ref refid="ll__bis_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref>-&gt;iso_ctx.bis_number;</highlight></codeline>
+<codeline lineno="329"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight><highlight class="comment">/*************************************************************************************************/</highlight></codeline>
+<codeline lineno="339"><highlight class="comment">/*************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="340"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__bis_8c_1a95c5632d0d5f68ab80055c5d8c53297a" kindref="member">lctrBisCalcGroupSessionKey</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*pGSKD,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*pBC,<sp/>uint8_t<sp/>*pGSK)</highlight></codeline>
+<codeline lineno="341"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>big1[<ref refid="ll__defines_8h_1acbe5dcf90f76db5c59510d14e6c5b8e1" kindref="member">BB_CRYPTO_LL_KEY_LEN</ref>]<sp/>=<sp/>{<sp/>0x31,<sp/>0x47,<sp/>0x49,<sp/>0x42,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00<sp/>};</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>big2[4]<sp/>=<sp/>{<sp/>0x32,<sp/>0x47,<sp/>0x49,<sp/>0x42<sp/>};</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>big3[4]<sp/>=<sp/>{<sp/>0x33,<sp/>0x47,<sp/>0x49,<sp/>0x42<sp/>};</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>igltk[<ref refid="ll__defines_8h_1acbe5dcf90f76db5c59510d14e6c5b8e1" kindref="member">BB_CRYPTO_LL_KEY_LEN</ref>];</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>gltk[<ref refid="ll__defines_8h_1acbe5dcf90f76db5c59510d14e6c5b8e1" kindref="member">BB_CRYPTO_LL_KEY_LEN</ref>];</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>ik[<ref refid="ll__defines_8h_1acbe5dcf90f76db5c59510d14e6c5b8e1" kindref="member">BB_CRYPTO_LL_KEY_LEN</ref>];</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"></highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>IGLTK<sp/>=<sp/>h7(&quot;BIG1&quot;,<sp/>Broadcast_Code)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/>aes_cmac(igltk,<sp/>big1,<sp/>pBC,<sp/>16);</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"></highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>GLTK<sp/>=<sp/>h6(IGLTK,<sp/>&quot;BIG2&quot;)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/>aes_cmac(gltk,<sp/>igltk,<sp/>big2,<sp/>4);</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"></highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>GSK<sp/>=<sp/>h8(GLTK,<sp/>GSKD,<sp/>&quot;BIG3&quot;)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/>aes_cmac(ik,<sp/>pGSKD,<sp/>gltk,<sp/>16);</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/>aes_cmac(pGSK,<sp/>ik,<sp/>big3,<sp/>4);</highlight></codeline>
+<codeline lineno="358"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"></highlight></codeline>
+<codeline lineno="360"><highlight class="normal"></highlight><highlight class="comment">/*************************************************************************************************/</highlight></codeline>
+<codeline lineno="369"><highlight class="comment">/*************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="370"><highlight class="normal">uint32_t<sp/><ref refid="ll__bis_8c_1a1e2ca816825d9802809609ca104d57f5" kindref="member">lctrComputeBisAccessAddr</ref>(uint32_t<sp/>seedAccAddr,<sp/>uint8_t<sp/>bisNum)</highlight></codeline>
+<codeline lineno="371"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>accAddr<sp/>=<sp/>seedAccAddr;</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>div;</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>dw<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>d0,<sp/>d1,<sp/>d2,<sp/>d3,<sp/>d4,<sp/>d5,<sp/>d6;</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"></highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/>d0<sp/>=<sp/>d1<sp/>=<sp/>d2<sp/>=<sp/>d3<sp/>=<sp/>d4<sp/>=<sp/>d5<sp/>=<sp/>d6<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"></highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Diversifier<sp/>=<sp/>((35<sp/>*<sp/>n)<sp/>+<sp/>42)<sp/>MOD<sp/>128<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint16_t<sp/>term<sp/>=<sp/>(35<sp/>*<sp/>bisNum)<sp/>+<sp/>42;</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/>div<sp/>=<sp/>term<sp/>-<sp/>((term<sp/>&gt;&gt;<sp/>7)<sp/>*<sp/>128);</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"></highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/><sp/><sp/>d0<sp/>=<sp/>div<sp/>&amp;<sp/>1;</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/>d1<sp/>=<sp/>(div<sp/>&gt;&gt;<sp/>1)<sp/>&amp;<sp/>1;</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/>d2<sp/>=<sp/>(div<sp/>&gt;&gt;<sp/>2)<sp/>&amp;<sp/>1;</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/>d3<sp/>=<sp/>(div<sp/>&gt;&gt;<sp/>3)<sp/>&amp;<sp/>1;</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/>d4<sp/>=<sp/>(div<sp/>&gt;&gt;<sp/>4)<sp/>&amp;<sp/>1;</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/>d5<sp/>=<sp/>(div<sp/>&gt;&gt;<sp/>5)<sp/>&amp;<sp/>1;</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/>d6<sp/>=<sp/>(div<sp/>&gt;&gt;<sp/>6)<sp/>&amp;<sp/>1;</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"></highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>DW<sp/>=<sp/>D0D0D0D0D0D0D1D6_D10D5D40D3D20_00000000_00000000b<sp/><sp/>Note<sp/>the<sp/>digit<sp/>after<sp/>the<sp/>letter<sp/>is<sp/>the<sp/>index<sp/>of<sp/>the<sp/>D.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/>dw<sp/>=<sp/>((d0<sp/>&lt;&lt;<sp/>31)<sp/>|<sp/>(d0<sp/>&lt;&lt;<sp/>30)<sp/>|<sp/>(d0<sp/>&lt;&lt;<sp/>29)<sp/>|<sp/>(d0<sp/>&lt;&lt;<sp/>28)<sp/>|<sp/>(d0<sp/>&lt;&lt;<sp/>27)<sp/><sp/>|<sp/>(d0<sp/>&lt;&lt;<sp/>26)<sp/>|<sp/>(d1<sp/>&lt;&lt;<sp/>25)<sp/>|<sp/>(d6<sp/>&lt;&lt;<sp/>24)<sp/>|<sp/>\</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(d1<sp/>&lt;&lt;<sp/>23)<sp/>|<sp/>(d5<sp/>&lt;&lt;<sp/>21)<sp/>|<sp/>(d4<sp/>&lt;&lt;<sp/>20)<sp/>|<sp/>(d3<sp/>&lt;&lt;<sp/>18)<sp/>|<sp/>(d2<sp/>&lt;&lt;<sp/>17));</highlight></codeline>
+<codeline lineno="394"><highlight class="normal"></highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>SAA<sp/>bit-wise<sp/>XORed<sp/>with<sp/>DW<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="396"><highlight class="normal"><sp/><sp/><sp/><sp/>accAddr<sp/>^=<sp/>dw;</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"></highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>accAddr;</highlight></codeline>
+<codeline lineno="399"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"></highlight></codeline>
+<codeline lineno="401"><highlight class="normal"></highlight><highlight class="comment">/*************************************************************************************************/</highlight></codeline>
+<codeline lineno="411"><highlight class="comment">/*************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="412"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__bis_8c_1a2e0625064c0b86acda36a23fdd5902d7" kindref="member">ll_bis_setup</ref>(<ref refid="structle__bis__t" kindref="compound">le_bis_t</ref><sp/>*bis,<sp/>uint32_t<sp/>seedAccAddr,<sp/>uint16_t<sp/>baseCrcInit,<sp/>uint64_t<sp/>chMap,<sp/><ref refid="ll__defines_8h_1aedd452843edd3c41a93f9f8dda96e63e" kindref="member">LlPhy_t</ref><sp/>phy)</highlight></codeline>
+<codeline lineno="413"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="414"><highlight class="normal"></highlight></codeline>
+<codeline lineno="415"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>accAddr<sp/>=<sp/><ref refid="ll__bis_8c_1a1e2ca816825d9802809609ca104d57f5" kindref="member">lctrComputeBisAccessAddr</ref>(seedAccAddr,<sp/>bis-&gt;<ref refid="structle__bis__t_1a034a24953b4c3e250ae77ac53a26ea33" kindref="member">bisNum</ref>);</highlight></codeline>
+<codeline lineno="416"><highlight class="normal"></highlight></codeline>
+<codeline lineno="417"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(bis-&gt;<ref refid="structle__bis__t_1a2741e2c7290825249901e18d3f808b63" kindref="member">big</ref>-&gt;<ref refid="structle__big__t_1afcf71d726fe9228df00efe53d751db8c" kindref="member">encrypt</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="419"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="420"><highlight class="normal"></highlight></codeline>
+<codeline lineno="421"><highlight class="normal"></highlight><highlight class="comment">/*************************************************************************************************/</highlight></codeline>
+<codeline lineno="430"><highlight class="comment">/*************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="431"><highlight class="normal">u8<sp/><ref refid="ll__bis_8c_1a80e209996e1ed2e74872104a3bc6de39" kindref="member">ll_bis_tx_test</ref>(<ref refid="structle__bis__t" kindref="compound">le_bis_t</ref><sp/>*bis,<sp/>u8<sp/>payload_type)</highlight></codeline>
+<codeline lineno="432"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="433"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(bis-&gt;<ref refid="structle__bis__t_1a8bcaa71c71d32ed5de4cc858a0a82711" kindref="member">test</ref>.enabled<sp/>||<sp/>bis-&gt;<ref refid="structle__bis__t_1a8bcaa71c71d32ed5de4cc858a0a82711" kindref="member">test</ref>.term)<sp/>{</highlight></codeline>
+<codeline lineno="434"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="stringliteral">&quot;Invalid<sp/>ISO<sp/>Test<sp/>state,<sp/>test<sp/>mode<sp/>already<sp/>enabled&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="435"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>COMMAND_DISALLOWED;</highlight></codeline>
+<codeline lineno="436"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="437"><highlight class="normal"></highlight></codeline>
+<codeline lineno="438"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(0)<sp/>{</highlight></codeline>
+<codeline lineno="439"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="stringliteral">&quot;Out<sp/>of<sp/>memory,<sp/>no<sp/>ISO<sp/>Tx<sp/>buffers<sp/>available&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="440"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>MEMORY_CAPACITY_EXCEEDED;</highlight></codeline>
+<codeline lineno="441"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="442"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*-TODO-*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="443"><highlight class="normal"></highlight></codeline>
+<codeline lineno="444"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>SUCCESS;</highlight></codeline>
+<codeline lineno="445"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="446"><highlight class="normal"></highlight></codeline>
+<codeline lineno="447"><highlight class="normal"></highlight><highlight class="comment">/*************************************************************************************************/</highlight></codeline>
+<codeline lineno="456"><highlight class="comment">/*************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="457"><highlight class="normal">u8<sp/><ref refid="ll__bis_8c_1a12e221e9bfcffcf69c4cc44995f7215f" kindref="member">ll_bis_rx_test</ref>(<ref refid="structle__bis__t" kindref="compound">le_bis_t</ref><sp/>*bis,<sp/>u8<sp/>payload_type)</highlight></codeline>
+<codeline lineno="458"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="459"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(bis-&gt;<ref refid="structle__bis__t_1a8bcaa71c71d32ed5de4cc858a0a82711" kindref="member">test</ref>.enabled<sp/>||<sp/>bis-&gt;<ref refid="structle__bis__t_1a8bcaa71c71d32ed5de4cc858a0a82711" kindref="member">test</ref>.term)<sp/>{</highlight></codeline>
+<codeline lineno="460"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="stringliteral">&quot;Invalid<sp/>ISO<sp/>Test<sp/>state,<sp/>test<sp/>mode<sp/>already<sp/>enabled&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="461"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>COMMAND_DISALLOWED;</highlight></codeline>
+<codeline lineno="462"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="463"><highlight class="normal"></highlight></codeline>
+<codeline lineno="464"><highlight class="normal"><sp/><sp/><sp/><sp/>bis-&gt;<ref refid="structle__bis__t_1a8bcaa71c71d32ed5de4cc858a0a82711" kindref="member">test</ref>.enabled<sp/><sp/><sp/>=<sp/>TRUE;</highlight></codeline>
+<codeline lineno="465"><highlight class="normal"><sp/><sp/><sp/><sp/>bis-&gt;<ref refid="structle__bis__t_1a8bcaa71c71d32ed5de4cc858a0a82711" kindref="member">test</ref>.term<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>FALSE;</highlight></codeline>
+<codeline lineno="466"><highlight class="normal"><sp/><sp/><sp/><sp/>bis-&gt;<ref refid="structle__bis__t_1a8bcaa71c71d32ed5de4cc858a0a82711" kindref="member">test</ref>.pendInit<sp/><sp/>=<sp/>TRUE;</highlight></codeline>
+<codeline lineno="467"><highlight class="normal"><sp/><sp/><sp/><sp/>bis-&gt;<ref refid="structle__bis__t_1a8bcaa71c71d32ed5de4cc858a0a82711" kindref="member">test</ref>.pldType<sp/><sp/><sp/>=<sp/>payload_type;</highlight></codeline>
+<codeline lineno="468"><highlight class="normal"></highlight></codeline>
+<codeline lineno="469"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>SUCCESS;</highlight></codeline>
+<codeline lineno="470"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="471"><highlight class="normal"></highlight></codeline>
+<codeline lineno="472"><highlight class="normal"></highlight><highlight class="comment">/*************************************************************************************************/</highlight></codeline>
+<codeline lineno="481"><highlight class="comment">/*************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="482"><highlight class="normal">u8<sp/><ref refid="ll__bis_8c_1ac638b72c234736721b8eaba8812a440b" kindref="member">ll_bis_read_test_counters</ref>(<ref refid="structle__bis__t" kindref="compound">le_bis_t</ref><sp/>*bis,<sp/><ref refid="structLlIsoTestCtrs__t" kindref="compound">LlIsoTestCtrs_t</ref><sp/>*pTest)</highlight></codeline>
+<codeline lineno="483"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="484"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(bis-&gt;<ref refid="structle__bis__t_1a8bcaa71c71d32ed5de4cc858a0a82711" kindref="member">test</ref>.enabled<sp/>==<sp/>FALSE)<sp/>{</highlight></codeline>
+<codeline lineno="485"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="stringliteral">&quot;Invalid<sp/>ISO<sp/>Test<sp/>state,<sp/>test<sp/>mode<sp/>must<sp/>be<sp/>enabled&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="486"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>COMMAND_DISALLOWED;</highlight></codeline>
+<codeline lineno="487"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="488"><highlight class="normal"></highlight></codeline>
+<codeline lineno="489"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(bis-&gt;<ref refid="structle__bis__t_1a8bcaa71c71d32ed5de4cc858a0a82711" kindref="member">test</ref>.term<sp/>==<sp/>TRUE)<sp/>{</highlight></codeline>
+<codeline lineno="490"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pTest-&gt;<ref refid="structLlIsoTestCtrs__t_1ae3e20393333b245d9af857e9dcf46a3b" kindref="member">numSuccess</ref><sp/><sp/><sp/>=<sp/>bis-&gt;<ref refid="structle__bis__t_1a8bcaa71c71d32ed5de4cc858a0a82711" kindref="member">test</ref>.numRxSuccess;</highlight></codeline>
+<codeline lineno="491"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pTest-&gt;<ref refid="structLlIsoTestCtrs__t_1a5d571fc08fb0ecfc1e48c50ebeed27ef" kindref="member">numMissed</ref><sp/><sp/><sp/><sp/>=<sp/>bis-&gt;<ref refid="structle__bis__t_1a8bcaa71c71d32ed5de4cc858a0a82711" kindref="member">test</ref>.numRxMissed;</highlight></codeline>
+<codeline lineno="492"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pTest-&gt;<ref refid="structLlIsoTestCtrs__t_1a3740510c3cfbacc7521913c11a960b41" kindref="member">numFailed</ref><sp/><sp/><sp/><sp/>=<sp/>bis-&gt;<ref refid="structle__bis__t_1a8bcaa71c71d32ed5de4cc858a0a82711" kindref="member">test</ref>.numRxFailed;</highlight></codeline>
+<codeline lineno="493"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="494"><highlight class="normal"></highlight></codeline>
+<codeline lineno="495"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>SUCCESS;</highlight></codeline>
+<codeline lineno="496"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="497"><highlight class="normal"></highlight></codeline>
+<codeline lineno="498"><highlight class="normal"></highlight><highlight class="comment">/*************************************************************************************************/</highlight></codeline>
+<codeline lineno="508"><highlight class="comment">/*************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="509"><highlight class="normal">u8<sp/><ref refid="ll__bis_8c_1a6e0da02cd672e511b13f448ea6e73d10" kindref="member">ll_bis_setup_iso_data_path</ref>(<ref refid="structle__bis__t" kindref="compound">le_bis_t</ref><sp/>*bis,<sp/><ref refid="ll__iso_8h_1ac6b0e5b32a70e2319903fb13194e7666" kindref="member">LlIsoDataPathDir_t</ref><sp/>dpDir,<sp/><ref refid="ll__iso_8h_1ad4a7049340ee84c0b78deb08a375078e" kindref="member">LlIsoDataPath_t</ref><sp/>dpId)</highlight></codeline>
+<codeline lineno="510"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="511"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(bis-&gt;<ref refid="structle__bis__t_1a815a53b0c0b710d6663e842ed36731db" kindref="member">path</ref><sp/>==<sp/>dpId)<sp/>{</highlight></codeline>
+<codeline lineno="512"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>No<sp/>change.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="513"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>SUCCESS;</highlight></codeline>
+<codeline lineno="514"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="515"><highlight class="normal"></highlight></codeline>
+<codeline lineno="516"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/***<sp/>Stop<sp/>current<sp/>data<sp/>path.<sp/>***/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="517"><highlight class="normal"></highlight></codeline>
+<codeline lineno="518"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(bis-&gt;<ref refid="structle__bis__t_1a815a53b0c0b710d6663e842ed36731db" kindref="member">path</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="519"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ll__iso_8h_1ad4a7049340ee84c0b78deb08a375078ea6d04eaee61592dd2024de537a4ca67d7" kindref="member">LL_ISO_DATA_PATH_VS</ref>:</highlight></codeline>
+<codeline lineno="520"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="ll__common__iso_8c_1ae1e65f2a672b1526c01f098ec8b268fb" kindref="member">ll_codec</ref>.<ref refid="structll__codec__t_1a1b2df6bac8f677236d66fd0f4006f645" kindref="member">stop</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="521"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>INVALID_HCI_COMMAND_PARAMETERS;</highlight></codeline>
+<codeline lineno="522"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="523"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="ll__common__iso_8c_1ae1e65f2a672b1526c01f098ec8b268fb" kindref="member">ll_codec</ref>.<ref refid="structll__codec__t_1a1b2df6bac8f677236d66fd0f4006f645" kindref="member">stop</ref>(bis-&gt;<ref refid="structle__bis__t_1a370497e11e3e4dda7480b105795d6d80" kindref="member">handle</ref>);</highlight></codeline>
+<codeline lineno="524"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="525"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ll__iso_8h_1ad4a7049340ee84c0b78deb08a375078eaf76206cbde4d9f6e9c7db594ad1ecb83" kindref="member">LL_ISO_DATA_PATH_DISABLED</ref>:</highlight></codeline>
+<codeline lineno="526"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ll__iso_8h_1ad4a7049340ee84c0b78deb08a375078ea8ff1da2638ff7d0be0a7f70bf2fe1dca" kindref="member">LL_ISO_DATA_PATH_HCI</ref>:</highlight></codeline>
+<codeline lineno="527"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="528"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>No<sp/>action<sp/>required.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="529"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="530"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="531"><highlight class="normal"></highlight></codeline>
+<codeline lineno="532"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/***<sp/>Start<sp/>new<sp/>data<sp/>path.<sp/>***/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="533"><highlight class="normal"></highlight></codeline>
+<codeline lineno="534"><highlight class="normal"><sp/><sp/><sp/><sp/>bis-&gt;<ref refid="structle__bis__t_1a815a53b0c0b710d6663e842ed36731db" kindref="member">path</ref><sp/>=<sp/>dpId;</highlight></codeline>
+<codeline lineno="535"><highlight class="normal"></highlight></codeline>
+<codeline lineno="536"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(dpId)<sp/>{</highlight></codeline>
+<codeline lineno="537"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ll__iso_8h_1ad4a7049340ee84c0b78deb08a375078ea6d04eaee61592dd2024de537a4ca67d7" kindref="member">LL_ISO_DATA_PATH_VS</ref>:</highlight></codeline>
+<codeline lineno="538"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="ll__common__iso_8c_1ae1e65f2a672b1526c01f098ec8b268fb" kindref="member">ll_codec</ref>.<ref refid="structll__codec__t_1aa976175226859b463e48915861f777b1" kindref="member">start</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="539"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structPalCodecSreamParam__t" kindref="compound">PalCodecSreamParam_t</ref><sp/>param<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="540"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.<ref refid="structPalCodecSreamParam__t_1a2507785e41cd11260fbaab8a12f60f14" kindref="member">dir</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(dpDir<sp/>==<sp/><ref refid="ll__iso_8h_1ac6b0e5b32a70e2319903fb13194e7666a0d80d43ea3519e84815ad5efc06a7520" kindref="member">LL_ISO_DATA_DIR_INPUT</ref>)<sp/>?<sp/><ref refid="audio__codec_8h_1a3c4e02d88b523dba66d7d5f4fbfb1f5cabf36628644687c8e3ebef1bd57459503" kindref="member">PAL_CODEC_DIR_INPUT</ref><sp/>:<sp/><ref refid="audio__codec_8h_1a3c4e02d88b523dba66d7d5f4fbfb1f5cac65c0fb7f019f1b9cfe387a720e2e3d4" kindref="member">PAL_CODEC_DIR_OUTPUT</ref>,</highlight></codeline>
+<codeline lineno="541"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.chMask<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="audio__codec_8h_1a0b887f38fa71033f0904f8e2330b6815a820fa41694b845b78d09f58b956845c6" kindref="member">PAL_CODEC_CH_LEFT_BIT</ref><sp/>|<sp/><ref refid="audio__codec_8h_1a0b887f38fa71033f0904f8e2330b6815a8235d554173fe6fa1064eb921e7a8f60" kindref="member">PAL_CODEC_CH_RIGHT_BIT</ref>,</highlight></codeline>
+<codeline lineno="542"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.intervalUsec<sp/>=<sp/>bis-&gt;<ref refid="structle__bis__t_1a2741e2c7290825249901e18d3f808b63" kindref="member">big</ref>-&gt;<ref refid="structle__big__t_1afb550fe0e67e8960b0762f8175b9ede9" kindref="member">isoInterUsec</ref>,</highlight></codeline>
+<codeline lineno="543"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.pktCtr<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(bis-&gt;<ref refid="structle__bis__t_1a2741e2c7290825249901e18d3f808b63" kindref="member">big</ref>-&gt;<ref refid="structle__big__t_1a62fdab0525a42f6dac459f7199295078" kindref="member">eventCounter</ref><sp/>+<sp/>1)<sp/>*<sp/>bis-&gt;<ref refid="structle__bis__t_1a2741e2c7290825249901e18d3f808b63" kindref="member">big</ref>-&gt;<ref refid="structle__big__t_1add7ca06e23e5918c77acbf4e5ae0b33f" kindref="member">bn</ref>,</highlight></codeline>
+<codeline lineno="544"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.rdyCback<sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="ll__common__iso_8c_1a50c2eabdddb63705bdfd638a208eb73a" kindref="member">lctrIsoSendCodecSdu</ref></highlight></codeline>
+<codeline lineno="545"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="546"><highlight class="normal"></highlight></codeline>
+<codeline lineno="547"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="ll__common__iso_8c_1ae1e65f2a672b1526c01f098ec8b268fb" kindref="member">ll_codec</ref>.<ref refid="structll__codec__t_1aa976175226859b463e48915861f777b1" kindref="member">start</ref>(bis-&gt;<ref refid="structle__bis__t_1a370497e11e3e4dda7480b105795d6d80" kindref="member">handle</ref>,<sp/>&amp;param))<sp/>{</highlight></codeline>
+<codeline lineno="548"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_error(</highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>start<sp/>the<sp/>codec,<sp/>dpId=%u&quot;</highlight><highlight class="normal">,<sp/>dpId);</highlight></codeline>
+<codeline lineno="549"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bis-&gt;<ref refid="structle__bis__t_1a815a53b0c0b710d6663e842ed36731db" kindref="member">path</ref><sp/>=<sp/><ref refid="ll__iso_8h_1ad4a7049340ee84c0b78deb08a375078eaf76206cbde4d9f6e9c7db594ad1ecb83" kindref="member">LL_ISO_DATA_PATH_DISABLED</ref>;</highlight></codeline>
+<codeline lineno="550"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>CONNECTION_REJECTED_DUE_TO_LIMITED_RESOURCES;</highlight></codeline>
+<codeline lineno="551"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="552"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="553"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_error(</highlight><highlight class="stringliteral">&quot;Codec<sp/>not<sp/>found,<sp/>dpId=%u&quot;</highlight><highlight class="normal">,<sp/>dpId);</highlight></codeline>
+<codeline lineno="554"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>INVALID_HCI_COMMAND_PARAMETERS;</highlight></codeline>
+<codeline lineno="555"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="556"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="557"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ll__iso_8h_1ad4a7049340ee84c0b78deb08a375078eaf76206cbde4d9f6e9c7db594ad1ecb83" kindref="member">LL_ISO_DATA_PATH_DISABLED</ref>:</highlight></codeline>
+<codeline lineno="558"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ll__iso_8h_1ad4a7049340ee84c0b78deb08a375078ea8ff1da2638ff7d0be0a7f70bf2fe1dca" kindref="member">LL_ISO_DATA_PATH_HCI</ref>:</highlight></codeline>
+<codeline lineno="559"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>No<sp/>action<sp/>required.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="560"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="561"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="562"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_error(</highlight><highlight class="stringliteral">&quot;Unknown<sp/>Data<sp/>Path,<sp/>dpId=%u&quot;</highlight><highlight class="normal">,<sp/>dpId);</highlight></codeline>
+<codeline lineno="563"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>INVALID_HCI_COMMAND_PARAMETERS;</highlight></codeline>
+<codeline lineno="564"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="565"><highlight class="normal"></highlight></codeline>
+<codeline lineno="566"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>SUCCESS;</highlight></codeline>
+<codeline lineno="567"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="568"><highlight class="normal"></highlight></codeline>
+<codeline lineno="569"><highlight class="normal"></highlight><highlight class="comment">/*************************************************************************************************/</highlight></codeline>
+<codeline lineno="577"><highlight class="comment">/*************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="578"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__bis_8c_1a4bdde6e4fe2ecef49447610acc60170f" kindref="member">ll_bis_msg_handler</ref>(uint8_t<sp/>msg_id,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*payload)</highlight></codeline>
+<codeline lineno="579"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="580"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(msg_id)<sp/>{</highlight></codeline>
+<codeline lineno="581"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="582"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="583"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="584"><highlight class="normal"></highlight></codeline>
+<codeline lineno="585"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="ll__bis_8c_1abcda0e4f11f8f8de431a64b1efa67bee" kindref="member">llcp_channel_class_update_handler</ref>(uint64_t<sp/>channel_map)</highlight></codeline>
+<codeline lineno="586"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="587"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>SUCCESS;</highlight></codeline>
+<codeline lineno="588"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="589"><highlight class="normal"></highlight></codeline>
+<codeline lineno="590"><highlight class="normal"></highlight></codeline>
+<codeline lineno="591"><highlight class="normal"></highlight><highlight class="comment">/*************************************************************************************************/</highlight></codeline>
+<codeline lineno="595"><highlight class="comment">/*************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="596"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__bis_8c_1af86fe08a49a414e90034f621e3e3dd66" kindref="member">ll_bis_close</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="597"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="598"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structle__bis__t" kindref="compound">le_bis_t</ref><sp/>*big,<sp/>*n;</highlight></codeline>
+<codeline lineno="599"><highlight class="normal"></highlight></codeline>
+<codeline lineno="600"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(list_empty(&amp;<ref refid="ll__bis_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref>-&gt;iso_ctx.big_head)<sp/>==<sp/>FALSE)<sp/>{</highlight></codeline>
+<codeline lineno="601"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>list_for_each_entry_safe(big,<sp/>n,<sp/>&amp;<ref refid="ll__bis_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref>-&gt;iso_ctx.big_head,<sp/>entry)<sp/>{</highlight></codeline>
+<codeline lineno="602"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="ll__bis_8c_1a1f745d19f62cf6ba411565af30cbe1ad" kindref="member">ll_bis_free</ref>(big);</highlight></codeline>
+<codeline lineno="603"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="604"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="605"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="606"><highlight class="normal"></highlight></codeline>
+<codeline lineno="607"><highlight class="normal"></highlight></codeline>
+<codeline lineno="608"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__bis_8c_1aa35c263b7c5f3b8f191dc9ddb951e87d" kindref="member">hci_le_create_big_complete_evt</ref>(<ref refid="structle__big__t" kindref="compound">le_big_t</ref><sp/>*big,<sp/>uint8_t<sp/>status)</highlight></codeline>
+<codeline lineno="609"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="610"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="link__layer_8c_1a4e5a29b6bb078f3eda716888d15412a5" kindref="member">__hci_emit_le_meta_event</ref>(HCI_SUBEVENT_LE_CREATE_BIG_CMPL_EVT,</highlight></codeline>
+<codeline lineno="611"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;1H33111112212&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="612"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status,</highlight></codeline>
+<codeline lineno="613"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>big-&gt;<ref refid="structle__big__t_1a8c51844165f820888b9a71e3e8fadabc" kindref="member">handle</ref>,</highlight></codeline>
+<codeline lineno="614"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>big-&gt;<ref refid="structle__big__t_1a78932c6ad77f32daf61e0f51e4bd8876" kindref="member">syncDelayUsec</ref>,</highlight></codeline>
+<codeline lineno="615"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>big-&gt;<ref refid="structle__big__t_1ab80e473fd6fab9ff7a21d505071cd9e5" kindref="member">transLatUsec</ref>,</highlight></codeline>
+<codeline lineno="616"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>big-&gt;<ref refid="structle__big__t_1abdc5031680c739b09c1367249fc906cf" kindref="member">phy</ref><sp/>+<sp/>1,</highlight></codeline>
+<codeline lineno="617"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>big-&gt;<ref refid="structle__big__t_1a9fb9f8a0ddc0e146a0c0b914ce3c0e26" kindref="member">nse</ref>,</highlight></codeline>
+<codeline lineno="618"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>big-&gt;<ref refid="structle__big__t_1add7ca06e23e5918c77acbf4e5ae0b33f" kindref="member">bn</ref>,</highlight></codeline>
+<codeline lineno="619"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>big-&gt;<ref refid="structle__big__t_1a9f1995b0bc3ce621b995e4a4298a2441" kindref="member">pto</ref>,</highlight></codeline>
+<codeline lineno="620"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>big-&gt;<ref refid="structle__big__t_1aefc1238eec0062d8cb9c07482ebb9ae2" kindref="member">irc</ref>,</highlight></codeline>
+<codeline lineno="621"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>big-&gt;<ref refid="structle__big__t_1af67168b7c3135d1cf9ad5cf6042b724b" kindref="member">maxPdu</ref>,</highlight></codeline>
+<codeline lineno="622"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>big-&gt;<ref refid="structle__big__t_1afb550fe0e67e8960b0762f8175b9ede9" kindref="member">isoInterUsec</ref><sp/>/<sp/>1250,</highlight></codeline>
+<codeline lineno="623"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>big-&gt;<ref refid="structle__big__t_1a87434bacf4e16752ec41a7d203c5e642" kindref="member">numBis</ref>,</highlight></codeline>
+<codeline lineno="624"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1);</highlight></codeline>
+<codeline lineno="625"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="626"><highlight class="normal"></highlight></codeline>
+<codeline lineno="627"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>***************************************************************************/</highlight></codeline>
+<codeline lineno="634"><highlight class="comment">/*<sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="635"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>***************************************************************************/</highlight></codeline>
+<codeline lineno="642"><highlight class="comment">/*<sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="643"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__bis_8c_1af43af208ab491f30059fcd5be85e604e" kindref="member">bis_tx_probe_handler</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*priv,<sp/>uint8_t<sp/>*bis_pdu)</highlight></codeline>
+<codeline lineno="644"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="645"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structle__bis__t" kindref="compound">le_bis_t</ref><sp/>*bis<sp/><sp/>=<sp/>(<ref refid="structle__bis__t" kindref="compound">le_bis_t</ref><sp/>*)priv;</highlight></codeline>
+<codeline lineno="646"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__defines_8h_1a194765d07627a538aa212cf97446626c" kindref="member">bis_pdu_t</ref><sp/>*pdu<sp/>=<sp/>&amp;((<ref refid="ll__defines_8h_1a8188ace9478f97edea5fc8771e999c31" kindref="member">bis_tx_pdu_t</ref><sp/>*)bis_pdu)-&gt;bis_hdr;</highlight></codeline>
+<codeline lineno="647"><highlight class="normal"></highlight></codeline>
+<codeline lineno="648"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(bis-&gt;<ref refid="structle__bis__t_1a2741e2c7290825249901e18d3f808b63" kindref="member">big</ref>-&gt;<ref refid="structle__big__t_1a302b5a41685a4b5875dc9dd6fb00438e" kindref="member">state</ref><sp/>==<sp/><ref refid="link__layer_8h_1ac36f475ca5b446f4fde4c9b90bec77c8ab5e4e8159170bb56785fbf8a03ea7afe" kindref="member">LL_BIG_CREATE</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="649"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bis-&gt;<ref refid="structle__bis__t_1a2741e2c7290825249901e18d3f808b63" kindref="member">big</ref>-&gt;<ref refid="structle__big__t_1a302b5a41685a4b5875dc9dd6fb00438e" kindref="member">state</ref><sp/>=<sp/><ref refid="link__layer_8h_1ac36f475ca5b446f4fde4c9b90bec77c8ac3790be14685bb166979294d1c6df62b" kindref="member">LL_BIG_CREATE_ESTABLISHED</ref>;</highlight></codeline>
+<codeline lineno="650"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="651"><highlight class="normal"></highlight></codeline>
+<codeline lineno="652"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pdu-&gt;length<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="653"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="654"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="655"><highlight class="normal"></highlight></codeline>
+<codeline lineno="656"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(pdu-&gt;llid)<sp/>{</highlight></codeline>
+<codeline lineno="657"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ll__defines_8h_1aa7ad7b5c0167e18a1dd88b4f72431428a713d8edf7ed4e27e627d885ffd304544" kindref="member">LL_LLID_ISO_UNF_END_PDU</ref>:</highlight></codeline>
+<codeline lineno="658"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ll__defines_8h_1aa7ad7b5c0167e18a1dd88b4f72431428a1b75aeb164af7c6df4b37ef79eba6291" kindref="member">LL_LLID_ISO_UNF_CONT_PDU</ref>:</highlight></codeline>
+<codeline lineno="659"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ll__defines_8h_1aa7ad7b5c0167e18a1dd88b4f72431428a76ecf8a6f11b3dd6c03a105fc5cf4469" kindref="member">LL_LLID_ISO_FRA_PDU</ref>:</highlight></codeline>
+<codeline lineno="660"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>atomic_inc(&amp;bis-&gt;<ref refid="structle__bis__t_1a4e0cd64fec1a7c68780109284d5926b6" kindref="member">air_sent_iso_num</ref>);</highlight></codeline>
+<codeline lineno="661"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="662"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="663"><highlight class="normal"></highlight></codeline>
+<codeline lineno="664"><highlight class="normal"><sp/><sp/><sp/><sp/>thread_resume(&amp;<ref refid="ll__bis_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref>-&gt;thread);</highlight></codeline>
+<codeline lineno="665"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="666"><highlight class="normal"></highlight></codeline>
+<codeline lineno="668"><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">ble_handler<sp/><ref refid="ll__bis_8c_1ae8b94383b570426da398013a057260a8" kindref="member">ll_bis_bb_handler</ref><sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="669"><highlight class="normal"><sp/><sp/><sp/><sp/>.rx_probe_handler<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NULL,</highlight></codeline>
+<codeline lineno="670"><highlight class="normal"><sp/><sp/><sp/><sp/>.tx_probe_handler<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="ll__bis_8c_1af43af208ab491f30059fcd5be85e604e" kindref="member">bis_tx_probe_handler</ref>,</highlight></codeline>
+<codeline lineno="671"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="672"><highlight class="normal"></highlight></codeline>
+<codeline lineno="673"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>***************************************************************************/</highlight></codeline>
+<codeline lineno="680"><highlight class="comment">/*<sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="681"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__bis_8c_1a7f0b7bb5852efaddef08891ef28663b3" kindref="member">ll_bis_acad_create_big</ref>(uint16_t<sp/>big_handle,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct____ext__adv__group" kindref="compound">__ext_adv_group</ref><sp/>*adv_set)</highlight></codeline>
+<codeline lineno="682"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="683"><highlight class="normal"><sp/><sp/><sp/><sp/>acad_big_info_t<sp/>*big_info<sp/>=<sp/>__bt_malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(acad_big_info_t));;</highlight></codeline>
+<codeline lineno="684"><highlight class="normal"></highlight></codeline>
+<codeline lineno="685"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(big_info<sp/>==<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="686"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_error(</highlight><highlight class="stringliteral">&quot;BIG<sp/>Info<sp/>memory<sp/>execeed&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="687"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="688"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="689"><highlight class="normal"></highlight></codeline>
+<codeline lineno="690"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structle__big__t" kindref="compound">le_big_t</ref><sp/>*big<sp/>=<sp/><ref refid="ll__bis_8c_1acf513c8c6f94cb606bb21d03814818b6" kindref="member">ll_big_by_handle</ref>(big_handle);</highlight></codeline>
+<codeline lineno="691"><highlight class="normal"></highlight></codeline>
+<codeline lineno="692"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(big-&gt;<ref refid="structle__big__t_1afcf71d726fe9228df00efe53d751db8c" kindref="member">encrypt</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="693"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>big_info-&gt;hdr.length<sp/>=<sp/><ref refid="ll__defines_8h_1a8ac9d77a1fd743fb40ab9e4020f6a1ab" kindref="member">LL_ACAD_BIG_INFO_ENCRPT_LEN</ref>;</highlight></codeline>
+<codeline lineno="694"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>memcpy(big_info-&gt;giv,<sp/>big-&gt;<ref refid="structle__big__t_1adbbbad79ea22bf8c4b33dea8f55db56f" kindref="member">giv</ref>,<sp/><ref refid="ll__defines_8h_1aebab5ed83127e6e4865e34adee30ab75" kindref="member">LL_GIV_LEN</ref>);</highlight></codeline>
+<codeline lineno="695"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>memcpy(big_info-&gt;gskd,<sp/>big-&gt;<ref refid="structle__big__t_1ad1f12d259c16eba98171c7f012c6393c" kindref="member">gskd</ref>,<sp/><ref refid="ll__defines_8h_1a3fd9cd0476cf27fe7dccd733637e03c8" kindref="member">LL_GSKD_LEN</ref>);</highlight></codeline>
+<codeline lineno="696"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="697"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>big_info-&gt;hdr.length<sp/>=<sp/><ref refid="ll__defines_8h_1ad08b4682da6886350e49c0b5d0ad24ab" kindref="member">LL_ACAD_BIG_INFO_UNENCRPT_LEN</ref>;</highlight></codeline>
+<codeline lineno="698"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="699"><highlight class="normal"></highlight></codeline>
+<codeline lineno="700"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>A<sp/>new<sp/>BigInfo<sp/>cannot<sp/>replace<sp/>a<sp/>currently<sp/>running<sp/>one.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="701"><highlight class="normal"></highlight></codeline>
+<codeline lineno="702"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>Baseband<sp/>决定时间参数*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="703"><highlight class="normal"></highlight></codeline>
+<codeline lineno="704"><highlight class="normal"><sp/><sp/><sp/><sp/>big-&gt;<ref refid="structle__big__t_1afb550fe0e67e8960b0762f8175b9ede9" kindref="member">isoInterUsec</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>10000;</highlight></codeline>
+<codeline lineno="705"><highlight class="normal"><sp/><sp/><sp/><sp/>big-&gt;<ref refid="structle__big__t_1abdc5031680c739b09c1367249fc906cf" kindref="member">phy</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="706"><highlight class="normal"><sp/><sp/><sp/><sp/>big-&gt;<ref refid="structle__big__t_1a37811274ea6af5868e0e07043d5acfae" kindref="member">seedAccAddr</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x8488bae7;</highlight></codeline>
+<codeline lineno="707"><highlight class="normal"><sp/><sp/><sp/><sp/>big-&gt;<ref refid="structle__big__t_1aa02661b6f83341729f8f46e76ed796a6" kindref="member">baseCrcInit</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x57f4;</highlight></codeline>
+<codeline lineno="708"><highlight class="normal"><sp/><sp/><sp/><sp/>big-&gt;<ref refid="structle__big__t_1a9fb9f8a0ddc0e146a0c0b914ce3c0e26" kindref="member">nse</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="709"><highlight class="normal"><sp/><sp/><sp/><sp/>big_info-&gt;bigOffs<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(15000)<sp/>/<sp/>30;</highlight></codeline>
+<codeline lineno="710"><highlight class="normal"><sp/><sp/><sp/><sp/>big_info-&gt;chanMap<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x1fffffffff;</highlight></codeline>
+<codeline lineno="711"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>big-&gt;subInterUsec<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>894;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="712"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>big-&gt;subInterUsec<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>886;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="713"><highlight class="normal"></highlight></codeline>
+<codeline lineno="714"><highlight class="normal"><sp/><sp/><sp/><sp/>big_info-&gt;isoInter<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(big-&gt;<ref refid="structle__big__t_1afb550fe0e67e8960b0762f8175b9ede9" kindref="member">isoInterUsec</ref>)<sp/>/<sp/>1250;</highlight></codeline>
+<codeline lineno="715"><highlight class="normal"><sp/><sp/><sp/><sp/>big_info-&gt;numBis<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>big-&gt;<ref refid="structle__big__t_1a87434bacf4e16752ec41a7d203c5e642" kindref="member">numBis</ref>;</highlight></codeline>
+<codeline lineno="716"><highlight class="normal"><sp/><sp/><sp/><sp/>big_info-&gt;nse<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>big-&gt;<ref refid="structle__big__t_1a9fb9f8a0ddc0e146a0c0b914ce3c0e26" kindref="member">nse</ref>;</highlight></codeline>
+<codeline lineno="717"><highlight class="normal"><sp/><sp/><sp/><sp/>big_info-&gt;bn<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>big-&gt;<ref refid="structle__big__t_1add7ca06e23e5918c77acbf4e5ae0b33f" kindref="member">bn</ref>;</highlight></codeline>
+<codeline lineno="718"><highlight class="normal"><sp/><sp/><sp/><sp/>big_info-&gt;subEvtInterUsec<sp/>=<sp/>big-&gt;<ref refid="structle__big__t_1ac476aa9144dd7b58cfc1037db8c72d0f" kindref="member">subInterUsec</ref>;</highlight></codeline>
+<codeline lineno="719"><highlight class="normal"><sp/><sp/><sp/><sp/>big_info-&gt;pto<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>big-&gt;<ref refid="structle__big__t_1a9f1995b0bc3ce621b995e4a4298a2441" kindref="member">pto</ref>;</highlight></codeline>
+<codeline lineno="720"><highlight class="normal"><sp/><sp/><sp/><sp/>big_info-&gt;bisSpaceUsec<sp/><sp/><sp/><sp/>=<sp/>big-&gt;<ref refid="structle__big__t_1a263055c665a85faf5bdfa3860ad39dc3" kindref="member">bisSpaceUsec</ref>;</highlight></codeline>
+<codeline lineno="721"><highlight class="normal"><sp/><sp/><sp/><sp/>big_info-&gt;irc<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>big-&gt;<ref refid="structle__big__t_1aefc1238eec0062d8cb9c07482ebb9ae2" kindref="member">irc</ref>;</highlight></codeline>
+<codeline lineno="722"><highlight class="normal"><sp/><sp/><sp/><sp/>big_info-&gt;maxPdu<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>big-&gt;<ref refid="structle__big__t_1af67168b7c3135d1cf9ad5cf6042b724b" kindref="member">maxPdu</ref>;</highlight></codeline>
+<codeline lineno="723"><highlight class="normal"><sp/><sp/><sp/><sp/>big_info-&gt;seedAccAddr<sp/><sp/><sp/><sp/><sp/>=<sp/>big-&gt;<ref refid="structle__big__t_1a37811274ea6af5868e0e07043d5acfae" kindref="member">seedAccAddr</ref>;</highlight></codeline>
+<codeline lineno="724"><highlight class="normal"><sp/><sp/><sp/><sp/>big_info-&gt;sduInterUsec<sp/><sp/><sp/><sp/>=<sp/>big-&gt;<ref refid="structle__big__t_1adc4c659401867a7e3382c300d9046c5c" kindref="member">sduInterUsec</ref>;</highlight></codeline>
+<codeline lineno="725"><highlight class="normal"><sp/><sp/><sp/><sp/>big_info-&gt;maxSdu<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>big-&gt;<ref refid="structle__big__t_1aeaa76e7393e0ac5321ee1d76177d3296" kindref="member">maxSdu</ref>;</highlight></codeline>
+<codeline lineno="726"><highlight class="normal"><sp/><sp/><sp/><sp/>big_info-&gt;baseCrcInit<sp/><sp/><sp/><sp/><sp/>=<sp/>big-&gt;<ref refid="structle__big__t_1aa02661b6f83341729f8f46e76ed796a6" kindref="member">baseCrcInit</ref>;</highlight></codeline>
+<codeline lineno="727"><highlight class="normal"><sp/><sp/><sp/><sp/>big_info-&gt;phy<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>big-&gt;<ref refid="structle__big__t_1abdc5031680c739b09c1367249fc906cf" kindref="member">phy</ref>;</highlight></codeline>
+<codeline lineno="728"><highlight class="normal"><sp/><sp/><sp/><sp/>big_info-&gt;bisPldCtr<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>big-&gt;<ref refid="structle__big__t_1a62fdab0525a42f6dac459f7199295078" kindref="member">eventCounter</ref><sp/>*<sp/>big-&gt;<ref refid="structle__big__t_1add7ca06e23e5918c77acbf4e5ae0b33f" kindref="member">bn</ref>;</highlight></codeline>
+<codeline lineno="729"><highlight class="normal"><sp/><sp/><sp/><sp/>big_info-&gt;framing<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>big-&gt;<ref refid="structle__big__t_1a5c805071cf61a105aa27b33fd9c1ca86" kindref="member">framing</ref>;</highlight></codeline>
+<codeline lineno="730"><highlight class="normal"><sp/><sp/><sp/><sp/>big_info-&gt;encrypt<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>big-&gt;<ref refid="structle__big__t_1afcf71d726fe9228df00efe53d751db8c" kindref="member">encrypt</ref>;</highlight></codeline>
+<codeline lineno="731"><highlight class="normal"></highlight></codeline>
+<codeline lineno="732"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>bond<sp/>to<sp/>adv<sp/>set*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="733"><highlight class="normal"><sp/><sp/><sp/><sp/>adv_set-&gt;<ref refid="struct____ext__adv__group_1ab6694507854f435af6ff22404cb731cc" kindref="member">acad</ref>.big_info<sp/>=<sp/>big_info;</highlight></codeline>
+<codeline lineno="734"><highlight class="normal"></highlight></codeline>
+<codeline lineno="735"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>BIG<sp/>Create<sp/>baseband<sp/>ram*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="736"><highlight class="normal"><sp/><sp/><sp/><sp/>big-&gt;<ref refid="structle__big__t_1ad2d41933109e17bd2b79c0a47d2d1d0b" kindref="member">hw</ref><sp/>=<sp/>__ble5_ops-&gt;ext_open(BIS_PARAM);</highlight></codeline>
+<codeline lineno="737"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(big-&gt;<ref refid="structle__big__t_1ad2d41933109e17bd2b79c0a47d2d1d0b" kindref="member">hw</ref><sp/>==<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="738"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="ll__bis_8c_1a0ac90d03121c46d8b3cae47f9c42e195" kindref="member">ll_big_free</ref>(big);</highlight></codeline>
+<codeline lineno="739"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__bt_free(big_info);</highlight></codeline>
+<codeline lineno="740"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="741"><highlight class="normal"></highlight></codeline>
+<codeline lineno="742"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>bond<sp/>to<sp/>periodic<sp/>link<sp/>hw<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="743"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structle__ext__periodic__link" kindref="compound">le_ext_periodic_link</ref><sp/>*period_link;</highlight></codeline>
+<codeline lineno="744"><highlight class="normal"></highlight></codeline>
+<codeline lineno="745"><highlight class="normal"><sp/><sp/><sp/><sp/>period_link<sp/>=<sp/><ref refid="periodic__advertising_8h_1ad1c69a6b96fe71f20c4473d0c3471c5f" kindref="member">ll_get_periodic_link</ref>(adv_set-&gt;<ref refid="struct____ext__adv__group_1a42b5a9bdb908679121a60738e75875e2" kindref="member">ext_adv_param</ref>.<ref refid="structext__advertising__param_1afc7af5667bd11123266bb8ab47668db6" kindref="member">Advertising_Handle</ref>);</highlight></codeline>
+<codeline lineno="746"><highlight class="normal"></highlight></codeline>
+<codeline lineno="747"><highlight class="normal"><sp/><sp/><sp/><sp/>__period_adv_ops-&gt;link_to_bis_hw(period_link-&gt;<ref refid="structle__ext__periodic__link_1a21586b2213c30ac5c88235898a85650a" kindref="member">hw</ref>,<sp/>big-&gt;<ref refid="structle__big__t_1ad2d41933109e17bd2b79c0a47d2d1d0b" kindref="member">hw</ref>);</highlight></codeline>
+<codeline lineno="748"><highlight class="normal"></highlight></codeline>
+<codeline lineno="749"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>BIG<sp/>Create<sp/>baseband<sp/>hw*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="750"><highlight class="normal"><sp/><sp/><sp/><sp/>ble_adv_set_t<sp/>bb_adv_set;</highlight></codeline>
+<codeline lineno="751"><highlight class="normal"></highlight></codeline>
+<codeline lineno="752"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__bis_8c_1abdd8a985aeeded3bfbf4a09dd7596cb5" kindref="member">ll_bis_set_acad_biginfo</ref>(adv_set,<sp/>&amp;bb_adv_set);</highlight></codeline>
+<codeline lineno="753"><highlight class="normal"></highlight></codeline>
+<codeline lineno="754"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structle__bis__t" kindref="compound">le_bis_t</ref><sp/>*bis<sp/>=<sp/><ref refid="ll__bis_8c_1a1119fa8bb177dc394d15de582c1e38c2" kindref="member">ll_bis_by_num</ref>(big,<sp/>1);</highlight></codeline>
+<codeline lineno="755"><highlight class="normal"></highlight></codeline>
+<codeline lineno="756"><highlight class="normal"><sp/><sp/><sp/><sp/>__bis_ops-&gt;handler_register(big-&gt;<ref refid="structle__big__t_1ad2d41933109e17bd2b79c0a47d2d1d0b" kindref="member">hw</ref>,<sp/>bis,<sp/>&amp;ll_bis_bb_handler);</highlight></codeline>
+<codeline lineno="757"><highlight class="normal"></highlight></codeline>
+<codeline lineno="758"><highlight class="normal"><sp/><sp/><sp/><sp/>__bis_ops-&gt;bis_create(big-&gt;<ref refid="structle__big__t_1ad2d41933109e17bd2b79c0a47d2d1d0b" kindref="member">hw</ref>,<sp/>&amp;bb_adv_set.acad.big_info);</highlight></codeline>
+<codeline lineno="759"><highlight class="normal"></highlight></codeline>
+<codeline lineno="760"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>Update<sp/>Baseband<sp/>Adv<sp/>Set*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="761"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__ext__adv_8h_1ae3514e7d08927be1f669aeca40c22e8d" kindref="member">ll_ext_adv_set_update</ref>(adv_set-&gt;<ref refid="struct____ext__adv__group_1a42b5a9bdb908679121a60738e75875e2" kindref="member">ext_adv_param</ref>.<ref refid="structext__advertising__param_1afc7af5667bd11123266bb8ab47668db6" kindref="member">Advertising_Handle</ref>,<sp/>adv_set);</highlight></codeline>
+<codeline lineno="762"><highlight class="normal"></highlight></codeline>
+<codeline lineno="763"><highlight class="normal"><sp/><sp/><sp/><sp/>big-&gt;<ref refid="structle__big__t_1a302b5a41685a4b5875dc9dd6fb00438e" kindref="member">state</ref><sp/>=<sp/><ref refid="link__layer_8h_1ac36f475ca5b446f4fde4c9b90bec77c8ab5e4e8159170bb56785fbf8a03ea7afe" kindref="member">LL_BIG_CREATE</ref>;</highlight></codeline>
+<codeline lineno="764"><highlight class="normal"></highlight></codeline>
+<codeline lineno="765"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__bis_8c_1aa35c263b7c5f3b8f191dc9ddb951e87d" kindref="member">hci_le_create_big_complete_evt</ref>(big,<sp/>SUCCESS);</highlight></codeline>
+<codeline lineno="766"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="767"><highlight class="normal"></highlight></codeline>
+<codeline lineno="768"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>***************************************************************************/</highlight></codeline>
+<codeline lineno="774"><highlight class="comment">/*<sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="775"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__bis_8c_1a87a0010e6ea5d24a1825ddc0ad6db6ad" kindref="member">ll_bis_tx_post_handler</ref>(<ref refid="structle__bis__t" kindref="compound">le_bis_t</ref><sp/>*bis)</highlight></codeline>
+<codeline lineno="776"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="777"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>sent_num<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="778"><highlight class="normal"></highlight></codeline>
+<codeline lineno="779"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(atomic_read(&amp;bis-&gt;<ref refid="structle__bis__t_1a4e0cd64fec1a7c68780109284d5926b6" kindref="member">air_sent_iso_num</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="780"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>atomic_dec(&amp;bis-&gt;<ref refid="structle__bis__t_1a4e0cd64fec1a7c68780109284d5926b6" kindref="member">air_sent_iso_num</ref>);</highlight></codeline>
+<codeline lineno="781"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sent_num<sp/>+=<sp/>1;</highlight></codeline>
+<codeline lineno="782"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="783"><highlight class="normal"></highlight></codeline>
+<codeline lineno="784"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sent_num)<sp/>{</highlight></codeline>
+<codeline lineno="785"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__hci_send_event(HCI_EVENT_NUMBER_OF_COMPLETED_PACKETS,<sp/></highlight><highlight class="stringliteral">&quot;1H2&quot;</highlight><highlight class="normal">,<sp/>1,</highlight></codeline>
+<codeline lineno="786"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bis-&gt;<ref refid="structle__bis__t_1a370497e11e3e4dda7480b105795d6d80" kindref="member">handle</ref>,<sp/>sent_num);</highlight></codeline>
+<codeline lineno="787"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="788"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="789"><highlight class="normal"></highlight></codeline>
+<codeline lineno="790"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>***************************************************************************/</highlight></codeline>
+<codeline lineno="796"><highlight class="comment">/*<sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="797"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__bis_8c_1a0957603625561a121dbc7b886890adce" kindref="member">ll_bis_rx_post_handler</ref>(<ref refid="structle__bis__t" kindref="compound">le_bis_t</ref><sp/>*bis)</highlight></codeline>
+<codeline lineno="798"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="799"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__bis__master_8c_1ab744c15bd8ba463679ace3a12a220582" kindref="member">ll_bis_master_rx_post_handler</ref>(bis);</highlight></codeline>
+<codeline lineno="800"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="801"><highlight class="normal"></highlight></codeline>
+<codeline lineno="802"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>***************************************************************************/</highlight></codeline>
+<codeline lineno="808"><highlight class="comment">/*<sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="809"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="ll__bis_8c_1ab9771d38c45a4436d668377cf559875f" kindref="member">ll_bis_post_process</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="810"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="811"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>Post<sp/>Process<sp/>the<sp/>BISes<sp/>in<sp/>BIG*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="812"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(list_empty(&amp;<ref refid="ll__bis_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref>-&gt;iso_ctx.big_head))<sp/>{</highlight></codeline>
+<codeline lineno="813"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>TRUE;</highlight></codeline>
+<codeline lineno="814"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="815"><highlight class="normal"></highlight></codeline>
+<codeline lineno="816"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structle__big__t" kindref="compound">le_big_t</ref><sp/>*big,<sp/>*n;</highlight></codeline>
+<codeline lineno="817"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structle__bis__t" kindref="compound">le_bis_t</ref><sp/>*bis,<sp/>*p;</highlight></codeline>
+<codeline lineno="818"><highlight class="normal"></highlight></codeline>
+<codeline lineno="819"><highlight class="normal"><sp/><sp/><sp/><sp/>list_for_each_entry_safe(big,<sp/>n,<sp/>&amp;<ref refid="ll__bis_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref>-&gt;iso_ctx.big_head,<sp/><ref refid="structle__ext__periodic__link_1a3fe230ef16d4d3ffc0466079e9e1ceac" kindref="member">entry</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="820"><highlight class="normal"></highlight></codeline>
+<codeline lineno="821"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>list_for_each_entry_safe(bis,<sp/>p,<sp/>&amp;big-&gt;<ref refid="structle__big__t_1a0a814e20299b999f85afe260abb8f5e0" kindref="member">bis_head</ref>,<sp/><ref refid="structle__ext__periodic__link_1a3fe230ef16d4d3ffc0466079e9e1ceac" kindref="member">entry</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="822"><highlight class="normal"></highlight></codeline>
+<codeline lineno="823"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>log_info(&quot;post<sp/>BIS<sp/>handle<sp/>0x%x&quot;,<sp/>bis-&gt;handle);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="824"><highlight class="normal"></highlight></codeline>
+<codeline lineno="825"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(big-&gt;<ref refid="structle__big__t_1a302b5a41685a4b5875dc9dd6fb00438e" kindref="member">state</ref><sp/>==<sp/><ref refid="link__layer_8h_1ac36f475ca5b446f4fde4c9b90bec77c8ac3790be14685bb166979294d1c6df62b" kindref="member">LL_BIG_CREATE_ESTABLISHED</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="826"><highlight class="normal"></highlight></codeline>
+<codeline lineno="827"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="ll__bis_8c_1a87a0010e6ea5d24a1825ddc0ad6db6ad" kindref="member">ll_bis_tx_post_handler</ref>(bis);</highlight></codeline>
+<codeline lineno="828"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="829"><highlight class="normal"></highlight></codeline>
+<codeline lineno="830"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="ll__bis_8c_1a0957603625561a121dbc7b886890adce" kindref="member">ll_bis_rx_post_handler</ref>(bis);</highlight></codeline>
+<codeline lineno="831"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="832"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="833"><highlight class="normal"></highlight></codeline>
+<codeline lineno="834"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>TRUE;</highlight></codeline>
+<codeline lineno="835"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="836"><highlight class="normal"></highlight></codeline>
+<codeline lineno="837"><highlight class="normal"></highlight><highlight class="comment">/*************************************************************************************************/</highlight></codeline>
+<codeline lineno="841"><highlight class="comment">/*************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="842"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__bis_8c_1a21d7d41abb5d8d86f303fc989662c389" kindref="member">ll_bis_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="843"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="844"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>BIG<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="845"><highlight class="normal"><sp/><sp/><sp/><sp/>INIT_LIST_HEAD(&amp;<ref refid="ll__bis_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref>-&gt;iso_ctx.big_head);</highlight></codeline>
+<codeline lineno="846"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__bis_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref>-&gt;iso_ctx.big_number<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="847"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__bis_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref>-&gt;iso_ctx.max_big_number<sp/><sp/>=<sp/><ref refid="ll__defines_8h_1ad79d53b27b9c2bdafd369c2df453650a" kindref="member">LL_MAX_BIG</ref>;</highlight></codeline>
+<codeline lineno="848"><highlight class="normal"></highlight></codeline>
+<codeline lineno="849"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>BIS<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="850"><highlight class="normal"><sp/><sp/><sp/><sp/>INIT_LIST_HEAD(&amp;<ref refid="ll__bis_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref>-&gt;iso_ctx.bis_head);</highlight></codeline>
+<codeline lineno="851"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__bis_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref>-&gt;iso_ctx.bis_number<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="852"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__bis_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref>-&gt;iso_ctx.max_bis_number<sp/><sp/>=<sp/><ref refid="ll__defines_8h_1a18372e9a640aaa2af1a55c54e34cd005" kindref="member">LL_MAX_BIS</ref>;</highlight></codeline>
+<codeline lineno="853"><highlight class="normal"></highlight></codeline>
+<codeline lineno="854"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(LE_FEATURES_IS_SUPPORT(LL_FEAT_ISO_SYNC))<sp/>{</highlight></codeline>
+<codeline lineno="855"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>ll_bis_master_init();<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="856"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="857"><highlight class="normal"></highlight></codeline>
+<codeline lineno="858"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(LE_FEATURES_IS_SUPPORT(LL_FEAT_ISO_BROADCASTER))<sp/>{</highlight></codeline>
+<codeline lineno="859"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="ll__bis__slave_8c_1a30c1abca1e74d276bc0052c8fad49009" kindref="member">ll_bis_slave_init</ref>();</highlight></codeline>
+<codeline lineno="860"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="861"><highlight class="normal"></highlight></codeline>
+<codeline lineno="862"><highlight class="normal"></highlight></codeline>
+<codeline lineno="863"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>Channel<sp/>class<sp/>update*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="864"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>__this-&gt;msg_ctx.llcp_channel_class_handler_table[LLCP_CHANNEL_CLASS_UPDATE_BIS]<sp/>=<sp/>llcp_channel_class_update_handler;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="865"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,2450 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>JL Adapter SDK: /data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">JL Adapter SDK
+   &#160;<span id="projectnumber">v0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_5aa4d6ccf34d88a270949875c15714e5.html">btctrler</a></li><li class="navelem"><a class="el" href="dir_119de8fbed06b648fc4b1712ddece599.html">include_v2</a></li><li class="navelem"><a class="el" href="dir_11c925b722666962fce8d6f7c0ca7e4f.html">ble</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle">
+<div class="title">ll_bis.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="ll__iso_8h_source.html">ble/ll_iso.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="audio__codec_8h_source.html">audio_codec.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+ll_bis.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="ll__bis_8h__incl.png" border="0" usemap="#_2data_2bingquan_2repo_2repo__adapter_2adapter__sdk_2lib_2btctrler_2include__v2_2ble_2ll__bis_8h" alt=""/></div>
+<map name="_2data_2bingquan_2repo_2repo__adapter_2adapter__sdk_2lib_2btctrler_2include__v2_2ble_2ll__bis_8h" id="_2data_2bingquan_2repo_2repo__adapter_2adapter__sdk_2lib_2btctrler_2include__v2_2ble_2ll__bis_8h">
+<area shape="rect" id="node2" href="ll__iso_8h.html" title="ble/ll_iso.h" alt="" coords="137,124,221,151"/>
+<area shape="rect" id="node7" href="audio__codec_8h.html" title="audio_codec.h" alt="" coords="5,124,112,151"/>
+<area shape="rect" id="node3" href="ll__defines_8h.html" title="ll_defines.h" alt="" coords="13,199,101,225"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="ll__bis_8h__dep__incl.png" border="0" usemap="#_2data_2bingquan_2repo_2repo__adapter_2adapter__sdk_2lib_2btctrler_2include__v2_2ble_2ll__bis_8hdep" alt=""/></div>
+<map name="_2data_2bingquan_2repo_2repo__adapter_2adapter__sdk_2lib_2btctrler_2include__v2_2ble_2ll__bis_8hdep" id="_2data_2bingquan_2repo_2repo__adapter_2adapter__sdk_2lib_2btctrler_2include__v2_2ble_2ll__bis_8hdep">
+<area shape="rect" id="node2" href="link__layer_8h.html" title="/data/bingquan/repo\l/repo_adapter/adapter\l_sdk/lib/btctrler/include\l_v2/ble/link_layer.h" alt="" coords="4103,124,4259,195"/>
+<area shape="rect" id="node3" href="hci__ll_8c.html" title="/data/bingquan/repo\l/repo_adapter/adapter\l_sdk/lib/btctrler/BLE\l_v2/hci_ll.c" alt="" coords="5,243,153,313"/>
+<area shape="rect" id="node4" href="hci__ll__cmds_8c.html" title="/data/bingquan/repo\l/repo_adapter/adapter\l_sdk/lib/btctrler/BLE\l_v2/hci_ll_cmds.c" alt="" coords="177,243,325,313"/>
+<area shape="rect" id="node5" href="link__layer_8c.html" title="/data/bingquan/repo\l/repo_adapter/adapter\l_sdk/lib/btctrler/BLE\l_v2/link_layer.c" alt="" coords="349,243,497,313"/>
+<area shape="rect" id="node6" href="ll__adv_8c.html" title="/data/bingquan/repo\l/repo_adapter/adapter\l_sdk/lib/btctrler/BLE\l_v2/ll_adv.c" alt="" coords="521,243,669,313"/>
+<area shape="rect" id="node7" href="ll__afh_8c.html" title="/data/bingquan/repo\l/repo_adapter/adapter\l_sdk/lib/btctrler/BLE\l_v2/ll_afh.c" alt="" coords="693,243,841,313"/>
+<area shape="rect" id="node8" href="ll__bis_8c.html" title="/data/bingquan/repo\l/repo_adapter/adapter\l_sdk/lib/btctrler/BLE\l_v2/ll_bis.c" alt="" coords="865,243,1013,313"/>
+<area shape="rect" id="node9" href="ll__bis__master_8c.html" title="/data/bingquan/repo\l/repo_adapter/adapter\l_sdk/lib/btctrler/BLE\l_v2/ll_bis_master.c" alt="" coords="1037,243,1185,313"/>
+<area shape="rect" id="node10" href="ll__bis__slave_8c.html" title="/data/bingquan/repo\l/repo_adapter/adapter\l_sdk/lib/btctrler/BLE\l_v2/ll_bis_slave.c" alt="" coords="1209,243,1357,313"/>
+<area shape="rect" id="node11" href="ll__cis_8c.html" title="/data/bingquan/repo\l/repo_adapter/adapter\l_sdk/lib/btctrler/BLE\l_v2/ll_cis.c" alt="" coords="1381,243,1529,313"/>
+<area shape="rect" id="node12" href="ll__cis__master_8c.html" title="/data/bingquan/repo\l/repo_adapter/adapter\l_sdk/lib/btctrler/BLE\l_v2/ll_cis_master.c" alt="" coords="1553,243,1701,313"/>
+<area shape="rect" id="node13" href="ll__cis__slave_8c.html" title="/data/bingquan/repo\l/repo_adapter/adapter\l_sdk/lib/btctrler/BLE\l_v2/ll_cis_slave.c" alt="" coords="1725,243,1873,313"/>
+<area shape="rect" id="node14" href="ll__common__iso_8c.html" title="/data/bingquan/repo\l/repo_adapter/adapter\l_sdk/lib/btctrler/BLE\l_v2/ll_common_iso.c" alt="" coords="1897,243,2045,313"/>
+<area shape="rect" id="node15" href="ll__cte_8c.html" title="/data/bingquan/repo\l/repo_adapter/adapter\l_sdk/lib/btctrler/BLE\l_v2/ll_cte.c" alt="" coords="2069,243,2217,313"/>
+<area shape="rect" id="node16" href="ll__data__extension_8c.html" title="/data/bingquan/repo\l/repo_adapter/adapter\l_sdk/lib/btctrler/BLE\l_v2/ll_data_extension.c" alt="" coords="2241,243,2400,313"/>
+<area shape="rect" id="node17" href="ll__events_8c.html" title="/data/bingquan/repo\l/repo_adapter/adapter\l_sdk/lib/btctrler/BLE\l_v2/ll_events.c" alt="" coords="2424,243,2572,313"/>
+<area shape="rect" id="node18" href="ll__ext__adv_8c.html" title="/data/bingquan/repo\l/repo_adapter/adapter\l_sdk/lib/btctrler/BLE\l_v2/ll_ext_adv.c" alt="" coords="2596,243,2744,313"/>
+<area shape="rect" id="node19" href="ll__ext__init_8c.html" title="/data/bingquan/repo\l/repo_adapter/adapter\l_sdk/lib/btctrler/BLE\l_v2/ll_ext_init.c" alt="" coords="2768,243,2916,313"/>
+<area shape="rect" id="node20" href="ll__ext__scan_8c.html" title="/data/bingquan/repo\l/repo_adapter/adapter\l_sdk/lib/btctrler/BLE\l_v2/ll_ext_scan.c" alt="" coords="2940,243,3088,313"/>
+<area shape="rect" id="node21" href="ll__extended__advertising_8c.html" title="/data/bingquan/repo\l/repo_adapter/adapter\l_sdk/lib/btctrler/BLE\l_v2/ll_extended_advertising.c" alt="" coords="3113,243,3307,313"/>
+<area shape="rect" id="node22" href="ll__init_8c.html" title="/data/bingquan/repo\l/repo_adapter/adapter\l_sdk/lib/btctrler/BLE\l_v2/ll_init.c" alt="" coords="3332,243,3480,313"/>
+<area shape="rect" id="node23" href="ll__isoal_8c.html" title="/data/bingquan/repo\l/repo_adapter/adapter\l_sdk/lib/btctrler/BLE\l_v2/ll_isoal.c" alt="" coords="3504,243,3652,313"/>
+<area shape="rect" id="node24" href="ll__keys_8c.html" title="/data/bingquan/repo\l/repo_adapter/adapter\l_sdk/lib/btctrler/BLE\l_v2/ll_keys.c" alt="" coords="3676,243,3824,313"/>
+<area shape="rect" id="node25" href="ll__master_8c.html" title="/data/bingquan/repo\l/repo_adapter/adapter\l_sdk/lib/btctrler/BLE\l_v2/ll_master.c" alt="" coords="3848,243,3996,313"/>
+<area shape="rect" id="node26" href="ll__msg_8c.html" title="/data/bingquan/repo\l/repo_adapter/adapter\l_sdk/lib/btctrler/BLE\l_v2/ll_msg.c" alt="" coords="4020,243,4168,313"/>
+<area shape="rect" id="node27" href="ll__multiple__phys_8c.html" title="/data/bingquan/repo\l/repo_adapter/adapter\l_sdk/lib/btctrler/BLE\l_v2/ll_multiple_phys.c" alt="" coords="4192,243,4343,313"/>
+<area shape="rect" id="node28" href="ll__pc_8c.html" title="/data/bingquan/repo\l/repo_adapter/adapter\l_sdk/lib/btctrler/BLE\l_v2/ll_pc.c" alt="" coords="4367,243,4515,313"/>
+<area shape="rect" id="node29" href="ll__periodic__advertising_8c.html" title="/data/bingquan/repo\l/repo_adapter/adapter\l_sdk/lib/btctrler/BLE\l_v2/ll_periodic_advertising.c" alt="" coords="4539,243,4726,313"/>
+<area shape="rect" id="node30" href="ll__resolve__list_8c.html" title="/data/bingquan/repo\l/repo_adapter/adapter\l_sdk/lib/btctrler/BLE\l_v2/ll_resolve_list.c" alt="" coords="4751,243,4899,313"/>
+<area shape="rect" id="node31" href="ll__scan_8c.html" title="/data/bingquan/repo\l/repo_adapter/adapter\l_sdk/lib/btctrler/BLE\l_v2/ll_scan.c" alt="" coords="4923,243,5071,313"/>
+<area shape="rect" id="node32" href="ll__slave_8c.html" title="/data/bingquan/repo\l/repo_adapter/adapter\l_sdk/lib/btctrler/BLE\l_v2/ll_slave.c" alt="" coords="5095,243,5243,313"/>
+<area shape="rect" id="node33" href="ll__vendor_8c.html" title="/data/bingquan/repo\l/repo_adapter/adapter\l_sdk/lib/btctrler/BLE\l_v2/ll_vendor.c" alt="" coords="5267,243,5415,313"/>
+<area shape="rect" id="node34" href="ll__white__list_8c.html" title="/data/bingquan/repo\l/repo_adapter/adapter\l_sdk/lib/btctrler/BLE\l_v2/ll_white_list.c" alt="" coords="5439,243,5587,313"/>
+<area shape="rect" id="node35" href="llcp__sm__bis_8c.html" title="/data/bingquan/repo\l/repo_adapter/adapter\l_sdk/lib/btctrler/BLE\l_v2/llcp_sm_bis.c" alt="" coords="5611,243,5759,313"/>
+<area shape="rect" id="node36" href="llcp__sm__cis_8c.html" title="/data/bingquan/repo\l/repo_adapter/adapter\l_sdk/lib/btctrler/BLE\l_v2/llcp_sm_cis.c" alt="" coords="5783,243,5931,313"/>
+<area shape="rect" id="node37" href="llcp__sm__cis__terminate_8c.html" title="/data/bingquan/repo\l/repo_adapter/adapter\l_sdk/lib/btctrler/BLE\l_v2/llcp_sm_cis_terminate.c" alt="" coords="5955,243,6143,313"/>
+<area shape="rect" id="node38" href="llcp__sm__common_8c.html" title="/data/bingquan/repo\l/repo_adapter/adapter\l_sdk/lib/btctrler/BLE\l_v2/llcp_sm_common.c" alt="" coords="6167,243,6327,313"/>
+<area shape="rect" id="node39" href="llcp__sm__conn__update_8c.html" title="/data/bingquan/repo\l/repo_adapter/adapter\l_sdk/lib/btctrler/BLE\l_v2/llcp_sm_conn_update.c" alt="" coords="6351,243,6535,313"/>
+<area shape="rect" id="node40" href="llcp__sm__cte_8c.html" title="/data/bingquan/repo\l/repo_adapter/adapter\l_sdk/lib/btctrler/BLE\l_v2/llcp_sm_cte.c" alt="" coords="6560,243,6708,313"/>
+<area shape="rect" id="node41" href="llcp__sm__data__extension_8c.html" title="/data/bingquan/repo\l/repo_adapter/adapter\l_sdk/lib/btctrler/BLE\l_v2/llcp_sm_data_extension.c" alt="" coords="6732,243,6931,313"/>
+<area shape="rect" id="node42" href="llcp__sm__encrypt_8c.html" title="/data/bingquan/repo\l/repo_adapter/adapter\l_sdk/lib/btctrler/BLE\l_v2/llcp_sm_encrypt.c" alt="" coords="6955,243,7108,313"/>
+<area shape="rect" id="node43" href="llcp__sm__pc_8c.html" title="/data/bingquan/repo\l/repo_adapter/adapter\l_sdk/lib/btctrler/BLE\l_v2/llcp_sm_pc.c" alt="" coords="7132,243,7280,313"/>
+<area shape="rect" id="node44" href="llcp__sm__phy__update_8c.html" title="/data/bingquan/repo\l/repo_adapter/adapter\l_sdk/lib/btctrler/BLE\l_v2/llcp_sm_phy_update.c" alt="" coords="7304,243,7481,313"/>
+<area shape="rect" id="node45" href="llcp__sm__ping_8c.html" title="/data/bingquan/repo\l/repo_adapter/adapter\l_sdk/lib/btctrler/BLE\l_v2/llcp_sm_ping.c" alt="" coords="7505,243,7653,313"/>
+<area shape="rect" id="node46" href="llcp__sm__sca_8c.html" title="/data/bingquan/repo\l/repo_adapter/adapter\l_sdk/lib/btctrler/BLE\l_v2/llcp_sm_sca.c" alt="" coords="7677,243,7825,313"/>
+<area shape="rect" id="node47" href="llcp__sm__template_8c.html" title="/data/bingquan/repo\l/repo_adapter/adapter\l_sdk/lib/btctrler/BLE\l_v2/llcp_sm_template.c" alt="" coords="7850,243,8010,313"/>
+<area shape="rect" id="node48" href="llcp__sm__vendor__jl_8c.html" title="/data/bingquan/repo\l/repo_adapter/adapter\l_sdk/lib/btctrler/BLE\l_v2/llcp_sm_vendor_jl.c" alt="" coords="8034,243,8197,313"/>
+<area shape="rect" id="node49" href="tws__le__acc_8c.html" title="/data/bingquan/repo\l/repo_adapter/adapter\l_sdk/lib/btctrler/BLE\l_v2/tws/tws_le_acc.c" alt="" coords="8221,243,8370,313"/>
+<area shape="rect" id="node50" href="tws__le__link_8c.html" title="/data/bingquan/repo\l/repo_adapter/adapter\l_sdk/lib/btctrler/BLE\l_v2/tws/tws_le_link.c" alt="" coords="8395,243,8543,313"/>
+</map>
+</div>
+</div>
+<p><a href="ll__bis_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+结构体</h2></td></tr>
+<tr class="memitem:structll__msg__acad__t"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__bis_8h.html#structll__msg__acad__t">ll_msg_acad_t</a></td></tr>
+<tr class="memdesc:structll__msg__acad__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">ACAD Message -&gt; ext adv Accept action.  <a href="ll__bis_8h.html#structll__msg__acad__t">更多...</a><br /></td></tr>
+<tr class="separator:structll__msg__acad__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structll__msg__big__terminated__t"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__bis_8h.html#structll__msg__big__terminated__t">ll_msg_big_terminated_t</a></td></tr>
+<tr class="memdesc:structll__msg__big__terminated__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">BIS Message -&gt; BIS Accept action.  <a href="ll__bis_8h.html#structll__msg__big__terminated__t">更多...</a><br /></td></tr>
+<tr class="separator:structll__msg__big__terminated__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structLlCreateBig__t"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__bis_8h.html#structLlCreateBig__t">LlCreateBig_t</a></td></tr>
+<tr class="memdesc:structLlCreateBig__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">BIG Create BIG message.  <a href="ll__bis_8h.html#structLlCreateBig__t">更多...</a><br /></td></tr>
+<tr class="separator:structLlCreateBig__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structLlCreateBigTest__t"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__bis_8h.html#structLlCreateBigTest__t">LlCreateBigTest_t</a></td></tr>
+<tr class="memdesc:structLlCreateBigTest__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">BIG Create BIG Test message.  <a href="ll__bis_8h.html#structLlCreateBigTest__t">更多...</a><br /></td></tr>
+<tr class="separator:structLlCreateBigTest__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structLlBigCreateSync__t"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__bis_8h.html#structLlBigCreateSync__t">LlBigCreateSync_t</a></td></tr>
+<tr class="memdesc:structLlBigCreateSync__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">BIG Create Sync message.  <a href="ll__bis_8h.html#structLlBigCreateSync__t">更多...</a><br /></td></tr>
+<tr class="separator:structLlBigCreateSync__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structle__big__t"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__bis_8h.html#structle__big__t">le_big_t</a></td></tr>
+<tr class="memdesc:structle__big__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broadcast Isochronous Group (BIG) context.  <a href="ll__bis_8h.html#structle__big__t">更多...</a><br /></td></tr>
+<tr class="separator:structle__big__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structle__bis__t"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__bis_8h.html#structle__bis__t">le_bis_t</a></td></tr>
+<tr class="memdesc:structle__bis__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broadcast Isochronous Stream (BIS) context.  <a href="ll__bis_8h.html#structle__bis__t">更多...</a><br /></td></tr>
+<tr class="separator:structle__bis__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structll__codec__t"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__bis_8h.html#structll__codec__t">ll_codec_t</a></td></tr>
+<tr class="memdesc:structll__codec__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">Codec event handlers.  <a href="ll__bis_8h.html#structll__codec__t">更多...</a><br /></td></tr>
+<tr class="separator:structll__codec__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:unionle__big__t_8roleData"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__bis_8h.html#unionle__big__t_8roleData">le_big_t.roleData</a></td></tr>
+<tr class="separator:unionle__big__t_8roleData"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structle__big__t_8roleData_8slv"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__bis_8h.html#structle__big__t_8roleData_8slv">le_big_t.roleData.slv</a></td></tr>
+<tr class="separator:structle__big__t_8roleData_8slv"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structle__big__t_8roleData_8mst"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__bis_8h.html#structle__big__t_8roleData_8mst">le_big_t.roleData.mst</a></td></tr>
+<tr class="separator:structle__big__t_8roleData_8mst"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structle__big__t_8bcp"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__bis_8h.html#structle__big__t_8bcp">le_big_t.bcp</a></td></tr>
+<tr class="separator:structle__big__t_8bcp"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structle__big__t_8bcp_8chanMapUpd"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__bis_8h.html#structle__big__t_8bcp_8chanMapUpd">le_big_t.bcp.chanMapUpd</a></td></tr>
+<tr class="separator:structle__big__t_8bcp_8chanMapUpd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structle__big__t_8bcp_8term"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__bis_8h.html#structle__big__t_8bcp_8term">le_big_t.bcp.term</a></td></tr>
+<tr class="separator:structle__big__t_8bcp_8term"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structle__bis__t_8test"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__bis_8h.html#structle__bis__t_8test">le_bis_t.test</a></td></tr>
+<tr class="separator:structle__bis__t_8test"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:unionle__bis__t_8test_8util"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__bis_8h.html#unionle__bis__t_8test_8util">le_bis_t.test.util</a></td></tr>
+<tr class="separator:unionle__bis__t_8test_8util"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structle__bis__t_8test_8util_8framed"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__bis_8h.html#structle__bis__t_8test_8util_8framed">le_bis_t.test.util.framed</a></td></tr>
+<tr class="separator:structle__bis__t_8test_8util_8framed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structle__bis__t_8test_8util_8unframed"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__bis_8h.html#structle__bis__t_8test_8util_8unframed">le_bis_t.test.util.unframed</a></td></tr>
+<tr class="separator:structle__bis__t_8test_8util_8unframed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a655df87aa217d186c4ac109d45497fbb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__bis_8h.html#a655df87aa217d186c4ac109d45497fbb">LCTR_ISO_SDU_START_OFFSET</a>&#160;&#160;&#160;(HCI_ISO_HDR_LEN + HCI_ISO_DL_MAX_LEN - <a class="el" href="ll__defines_8h.html#add91193afa007d94d8c47c336e68e55e">LL_ISO_DATA_HDR_LEN</a>)</td></tr>
+<tr class="memdesc:a655df87aa217d186c4ac109d45497fbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">ISO Data PDU start offset in a buffer.  <a href="#a655df87aa217d186c4ac109d45497fbb">更多...</a><br /></td></tr>
+<tr class="separator:a655df87aa217d186c4ac109d45497fbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:adbdcb2d2e1d6901dcc2a696978763f53"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="ll__defines_8h.html#a3e11e866bc6d82a804a0ee4740a3a470">bool_t</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__bis_8h.html#adbdcb2d2e1d6901dcc2a696978763f53">ll_codec_start</a>) (uint16_t id, <a class="el" href="audio__codec_8h.html#structPalCodecSreamParam__t">PalCodecSreamParam_t</a> *pParam)</td></tr>
+<tr class="memdesc:adbdcb2d2e1d6901dcc2a696978763f53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start stream call signature.  <a href="#adbdcb2d2e1d6901dcc2a696978763f53">更多...</a><br /></td></tr>
+<tr class="separator:adbdcb2d2e1d6901dcc2a696978763f53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb2e6bcbeab9ccceb154a6c19e575daf"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__bis_8h.html#acb2e6bcbeab9ccceb154a6c19e575daf">ll_codec_stop</a>) (uint16_t id)</td></tr>
+<tr class="memdesc:acb2e6bcbeab9ccceb154a6c19e575daf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop stream call signature.  <a href="#acb2e6bcbeab9ccceb154a6c19e575daf">更多...</a><br /></td></tr>
+<tr class="separator:acb2e6bcbeab9ccceb154a6c19e575daf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66032c15a481aa636667993325c0e0d8"><td class="memItemLeft" align="right" valign="top">typedef uint16_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__bis_8h.html#a66032c15a481aa636667993325c0e0d8">ll_codec_input</a>) (uint16_t id, uint8_t *pBuf, uint16_t len, uint32_t *pPktCtr)</td></tr>
+<tr class="memdesc:a66032c15a481aa636667993325c0e0d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stream in data call signature.  <a href="#a66032c15a481aa636667993325c0e0d8">更多...</a><br /></td></tr>
+<tr class="separator:a66032c15a481aa636667993325c0e0d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a867e86f67f0c4db8ccdd4e6ace37e127"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__bis_8h.html#a867e86f67f0c4db8ccdd4e6ace37e127">ll_codec_ouput</a>) (uint16_t id, const uint8_t *pBuf, uint16_t len, uint32_t pktCtr)</td></tr>
+<tr class="memdesc:a867e86f67f0c4db8ccdd4e6ace37e127"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stream out data call signature.  <a href="#a867e86f67f0c4db8ccdd4e6ace37e127">更多...</a><br /></td></tr>
+<tr class="separator:a867e86f67f0c4db8ccdd4e6ace37e127"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:aba01db17f4a2bfbc3db60dc172972a25"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="ll__bis_8h.html#aba01db17f4a2bfbc3db60dc172972a25a71583d6da8d1a46940a607495de417bf">LL_ACAD_MSG_CREATE_BIG</a> = 0, 
+<a class="el" href="ll__bis_8h.html#aba01db17f4a2bfbc3db60dc172972a25abafd6be44a9d48415fba4b134533f86e">LL_ACAD_MSG_CHANNEL_MAP</a>, 
+<a class="el" href="ll__bis_8h.html#aba01db17f4a2bfbc3db60dc172972a25a272ba4f671ecd003930248c1b164e04f">LL_ACAD_MSG_TERMINATED_BIG</a>
+ }<tr class="memdesc:aba01db17f4a2bfbc3db60dc172972a25"><td class="mdescLeft">&#160;</td><td class="mdescRight">ACAD messages dispatcher.  <a href="ll__bis_8h.html#aba01db17f4a2bfbc3db60dc172972a25">更多...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:aba01db17f4a2bfbc3db60dc172972a25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf105ae5beaca1dee30ae54530691fce"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="ll__bis_8h.html#aaf105ae5beaca1dee30ae54530691fceae7be4dbbbe6549474f3cd497ea11ff2a">LL_SLV_BIG_MSG_CREATE_BIG</a> = 0, 
+<a class="el" href="ll__bis_8h.html#aaf105ae5beaca1dee30ae54530691fceab3d4d1f51989b783d0be44adcad83fb1">LL_SLV_BIG_MSG_TERMINATED_BIG</a>
+ }<tr class="memdesc:aaf105ae5beaca1dee30ae54530691fce"><td class="mdescLeft">&#160;</td><td class="mdescRight">BIS Slave messages dispatcher.  <a href="ll__bis_8h.html#aaf105ae5beaca1dee30ae54530691fce">更多...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:aaf105ae5beaca1dee30ae54530691fce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a8daa54773d3bdfffa96a780facf916bc"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__bis_8h.html#a8daa54773d3bdfffa96a780facf916bc">ll_bis_unpack_hdr</a> (<a class="el" href="ll__defines_8h.html#structbis__pdu__hdr__t">bis_pdu_hdr_t</a> *pHdr, const uint8_t *pBuf)</td></tr>
+<tr class="memdesc:a8daa54773d3bdfffa96a780facf916bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unpack a BIS data channel PDU header.  <a href="#a8daa54773d3bdfffa96a780facf916bc">更多...</a><br /></td></tr>
+<tr class="separator:a8daa54773d3bdfffa96a780facf916bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0f6cec9169e85f2682476a8cfcb1084"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__bis_8h.html#ad0f6cec9169e85f2682476a8cfcb1084">hci_le_create_big_complete_event</a> (uint8_t status, <a class="el" href="ll__bis_8h.html#structle__big__t">le_big_t</a> *big)</td></tr>
+<tr class="memdesc:ad0f6cec9169e85f2682476a8cfcb1084"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pack a set CIG parameters event.  <a href="#ad0f6cec9169e85f2682476a8cfcb1084">更多...</a><br /></td></tr>
+<tr class="separator:ad0f6cec9169e85f2682476a8cfcb1084"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81011290ef6fbc2d209711f215067fba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__bis_8h.html#a81011290ef6fbc2d209711f215067fba">le_cmd_set_bis_slave</a> (u16 opcode, const u8 *data, u32 size)</td></tr>
+<tr class="memdesc:a81011290ef6fbc2d209711f215067fba"><td class="mdescLeft">&#160;</td><td class="mdescRight">BIS Slave command packet decode.  <a href="#a81011290ef6fbc2d209711f215067fba">更多...</a><br /></td></tr>
+<tr class="separator:a81011290ef6fbc2d209711f215067fba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bbac5ee3c9d40cbe076d7b94f7660bb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__bis_8h.html#a1bbac5ee3c9d40cbe076d7b94f7660bb">le_cmd_set_bis_master</a> (u16 opcode, const u8 *data, u32 size)</td></tr>
+<tr class="separator:a1bbac5ee3c9d40cbe076d7b94f7660bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95c5632d0d5f68ab80055c5d8c53297a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__bis_8h.html#a95c5632d0d5f68ab80055c5d8c53297a">lctrBisCalcGroupSessionKey</a> (const uint8_t *pGSKD, const uint8_t *pBC, uint8_t *pGSK)</td></tr>
+<tr class="memdesc:a95c5632d0d5f68ab80055c5d8c53297a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate Group session key.  <a href="#a95c5632d0d5f68ab80055c5d8c53297a">更多...</a><br /></td></tr>
+<tr class="separator:a95c5632d0d5f68ab80055c5d8c53297a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ddb8141353278853fd90ef4c57f4ea6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__bis_8h.html#a2ddb8141353278853fd90ef4c57f4ea6">llcp_big_slv_sm_run</a> (<a class="el" href="ll__bis_8h.html#structle__big__t">le_big_t</a> *big, uint8_t event, void *data)</td></tr>
+<tr class="separator:a2ddb8141353278853fd90ef4c57f4ea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21d7d41abb5d8d86f303fc989662c389"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__bis_8h.html#a21d7d41abb5d8d86f303fc989662c389">ll_bis_init</a> (void)</td></tr>
+<tr class="memdesc:a21d7d41abb5d8d86f303fc989662c389"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize resources for BIS.  <a href="#a21d7d41abb5d8d86f303fc989662c389">更多...</a><br /></td></tr>
+<tr class="separator:a21d7d41abb5d8d86f303fc989662c389"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af86fe08a49a414e90034f621e3e3dd66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__bis_8h.html#af86fe08a49a414e90034f621e3e3dd66">ll_bis_close</a> (void)</td></tr>
+<tr class="memdesc:af86fe08a49a414e90034f621e3e3dd66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close all resources for BIS.  <a href="#af86fe08a49a414e90034f621e3e3dd66">更多...</a><br /></td></tr>
+<tr class="separator:af86fe08a49a414e90034f621e3e3dd66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf513c8c6f94cb606bb21d03814818b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ll__bis_8h.html#structle__big__t">le_big_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__bis_8h.html#acf513c8c6f94cb606bb21d03814818b6">ll_big_by_handle</a> (uint16_t handle)</td></tr>
+<tr class="separator:acf513c8c6f94cb606bb21d03814818b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9533c6fc2d1fd1ad5fc1486cb41215f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ll__bis_8h.html#structle__big__t">le_big_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__bis_8h.html#a9533c6fc2d1fd1ad5fc1486cb41215f6">ll_big_alloc</a> (uint8_t handle)</td></tr>
+<tr class="separator:a9533c6fc2d1fd1ad5fc1486cb41215f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ac90d03121c46d8b3cae47f9c42e195"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__bis_8h.html#a0ac90d03121c46d8b3cae47f9c42e195">ll_big_free</a> (<a class="el" href="ll__bis_8h.html#structle__big__t">le_big_t</a> *big)</td></tr>
+<tr class="separator:a0ac90d03121c46d8b3cae47f9c42e195"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a259836c6c492df26a40c5f85fed864c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ll__bis_8h.html#structle__bis__t">le_bis_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__bis_8h.html#a259836c6c492df26a40c5f85fed864c4">ll_bis_by_handle</a> (uint16_t handle)</td></tr>
+<tr class="separator:a259836c6c492df26a40c5f85fed864c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64d1f2d90ed180e3c415f6df192b2aaa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ll__bis_8h.html#structle__bis__t">le_bis_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__bis_8h.html#a64d1f2d90ed180e3c415f6df192b2aaa">ll_bis_alloc</a> (<a class="el" href="ll__bis_8h.html#structle__big__t">le_big_t</a> *big)</td></tr>
+<tr class="separator:a64d1f2d90ed180e3c415f6df192b2aaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f745d19f62cf6ba411565af30cbe1ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__bis_8h.html#a1f745d19f62cf6ba411565af30cbe1ad">ll_bis_free</a> (<a class="el" href="ll__bis_8h.html#structle__bis__t">le_bis_t</a> *bis)</td></tr>
+<tr class="separator:a1f745d19f62cf6ba411565af30cbe1ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e0625064c0b86acda36a23fdd5902d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__bis_8h.html#a2e0625064c0b86acda36a23fdd5902d7">ll_bis_setup</a> (<a class="el" href="ll__bis_8h.html#structle__bis__t">le_bis_t</a> *bis, uint32_t seedAccAddr, uint16_t baseCrcInit, uint64_t chMap, <a class="el" href="ll__defines_8h.html#aedd452843edd3c41a93f9f8dda96e63e">LlPhy_t</a> phy)</td></tr>
+<tr class="memdesc:a2e0625064c0b86acda36a23fdd5902d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set up a new BIS.  <a href="#a2e0625064c0b86acda36a23fdd5902d7">更多...</a><br /></td></tr>
+<tr class="separator:a2e0625064c0b86acda36a23fdd5902d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacc18a5b44e740e876ab74a42891992d"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__bis_8h.html#aacc18a5b44e740e876ab74a42891992d">ll_get_number_avail_bis</a> (void)</td></tr>
+<tr class="memdesc:aacc18a5b44e740e876ab74a42891992d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of available BIS contexts.  <a href="#aacc18a5b44e740e876ab74a42891992d">更多...</a><br /></td></tr>
+<tr class="separator:aacc18a5b44e740e876ab74a42891992d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a9f5a2a754bbeae20de42e53cd46a24"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__bis_8h.html#a9a9f5a2a754bbeae20de42e53cd46a24">ll_bis_tx_test</a> (<a class="el" href="ll__bis_8h.html#structle__bis__t">le_bis_t</a> *pBis, u8 payload_type)</td></tr>
+<tr class="memdesc:a9a9f5a2a754bbeae20de42e53cd46a24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable BIS Tx test.  <a href="#a9a9f5a2a754bbeae20de42e53cd46a24">更多...</a><br /></td></tr>
+<tr class="separator:a9a9f5a2a754bbeae20de42e53cd46a24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5cde03f93f0517ee3bbf920c7b44cb5"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__bis_8h.html#af5cde03f93f0517ee3bbf920c7b44cb5">ll_bis_rx_test</a> (<a class="el" href="ll__bis_8h.html#structle__bis__t">le_bis_t</a> *pBis, u8 payload_type)</td></tr>
+<tr class="memdesc:af5cde03f93f0517ee3bbf920c7b44cb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable BIS Rx test.  <a href="#af5cde03f93f0517ee3bbf920c7b44cb5">更多...</a><br /></td></tr>
+<tr class="separator:af5cde03f93f0517ee3bbf920c7b44cb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a132cf274b4ec1649016c8ae473b513a4"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__bis_8h.html#a132cf274b4ec1649016c8ae473b513a4">ll_bis_read_test_counters</a> (<a class="el" href="ll__bis_8h.html#structle__bis__t">le_bis_t</a> *pBis, <a class="el" href="ll__iso_8h.html#structLlIsoTestCtrs__t">LlIsoTestCtrs_t</a> *pTest)</td></tr>
+<tr class="memdesc:a132cf274b4ec1649016c8ae473b513a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">BIS read ISO test counters.  <a href="#a132cf274b4ec1649016c8ae473b513a4">更多...</a><br /></td></tr>
+<tr class="separator:a132cf274b4ec1649016c8ae473b513a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69143eb10be3e6d403024a620a82219e"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__bis_8h.html#a69143eb10be3e6d403024a620a82219e">ll_bis_setup_iso_data_path</a> (<a class="el" href="ll__bis_8h.html#structle__bis__t">le_bis_t</a> *pBis, <a class="el" href="ll__iso_8h.html#ac6b0e5b32a70e2319903fb13194e7666">LlIsoDataPathDir_t</a> dpDir, <a class="el" href="ll__iso_8h.html#ad4a7049340ee84c0b78deb08a375078e">LlIsoDataPath_t</a> dpId)</td></tr>
+<tr class="memdesc:a69143eb10be3e6d403024a620a82219e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the BIS data path.  <a href="#a69143eb10be3e6d403024a620a82219e">更多...</a><br /></td></tr>
+<tr class="separator:a69143eb10be3e6d403024a620a82219e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30c1abca1e74d276bc0052c8fad49009"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__bis_8h.html#a30c1abca1e74d276bc0052c8fad49009">ll_bis_slave_init</a> (void)</td></tr>
+<tr class="separator:a30c1abca1e74d276bc0052c8fad49009"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a785516f525901cd9bb4d618fe27a2e0b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__bis_8h.html#a785516f525901cd9bb4d618fe27a2e0b">ll_send_acad_msg_id</a> (<a class="el" href="ll__bis_8h.html#structle__big__t">le_big_t</a> *big, uint8_t msg_id)</td></tr>
+<tr class="separator:a785516f525901cd9bb4d618fe27a2e0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcf3c9b51dc2bdd8d60aafd4ade4c19e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__bis_8h.html#afcf3c9b51dc2bdd8d60aafd4ade4c19e">ll_send_big_slv_msg_id</a> (<a class="el" href="ll__bis_8h.html#structle__big__t">le_big_t</a> *big, uint8_t msg_id)</td></tr>
+<tr class="separator:afcf3c9b51dc2bdd8d60aafd4ade4c19e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f0b7bb5852efaddef08891ef28663b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__bis_8h.html#a7f0b7bb5852efaddef08891ef28663b3">ll_bis_acad_create_big</a> (uint16_t big_handle, struct <a class="el" href="ll__ext__adv_8h.html#struct____ext__adv__group">__ext_adv_group</a> *adv_set)</td></tr>
+<tr class="separator:a7f0b7bb5852efaddef08891ef28663b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b427f6c144a93cae51f7904e8686579"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__bis_8h.html#a0b427f6c144a93cae51f7904e8686579">ll_bis_set_acad_channel_map_update</a> (const struct <a class="el" href="ll__ext__adv_8h.html#struct____ext__adv__group">__ext_adv_group</a> *adv_set, ble_adv_set_t *bb_adv_set)</td></tr>
+<tr class="separator:a0b427f6c144a93cae51f7904e8686579"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdd8a985aeeded3bfbf4a09dd7596cb5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__bis_8h.html#abdd8a985aeeded3bfbf4a09dd7596cb5">ll_bis_set_acad_biginfo</a> (const struct <a class="el" href="ll__ext__adv_8h.html#struct____ext__adv__group">__ext_adv_group</a> *adv_set, ble_adv_set_t *bb_adv_set)</td></tr>
+<tr class="separator:abdd8a985aeeded3bfbf4a09dd7596cb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9771d38c45a4436d668377cf559875f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__bis_8h.html#ab9771d38c45a4436d668377cf559875f">ll_bis_post_process</a> (void)</td></tr>
+<tr class="separator:ab9771d38c45a4436d668377cf559875f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab744c15bd8ba463679ace3a12a220582"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__bis_8h.html#ab744c15bd8ba463679ace3a12a220582">ll_bis_master_rx_post_handler</a> (<a class="el" href="ll__bis_8h.html#structle__bis__t">le_bis_t</a> *bis)</td></tr>
+<tr class="separator:ab744c15bd8ba463679ace3a12a220582"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c2385571a577d45ac1daf487dd05c72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__bis_8h.html#a9c2385571a577d45ac1daf487dd05c72">ll_iso_bis_sdu_recombination</a> (<a class="el" href="ll__bis_8h.html#structle__bis__t">le_bis_t</a> *bis, <a class="el" href="ll__defines_8h.html#a194765d07627a538aa212cf97446626c">bis_pdu_t</a> *pdu)</td></tr>
+<tr class="separator:a9c2385571a577d45ac1daf487dd05c72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:ae1e65f2a672b1526c01f098ec8b268fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ll__bis_8h.html#structll__codec__t">ll_codec_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__bis_8h.html#ae1e65f2a672b1526c01f098ec8b268fb">ll_codec</a></td></tr>
+<tr class="memdesc:ae1e65f2a672b1526c01f098ec8b268fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Codec event handlers.  <a href="#ae1e65f2a672b1526c01f098ec8b268fb">更多...</a><br /></td></tr>
+<tr class="separator:ae1e65f2a672b1526c01f098ec8b268fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/><h2 class="groupheader">结构体说明</h2>
+<a name="structll__msg__acad__t" id="structll__msg__acad__t"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct ll_msg_acad_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>ACAD Message -&gt; ext adv Accept action. </p>
+</div><div class="dynheader">
+ll_msg_acad_t 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="structll__msg__acad__t__coll__graph.png" border="0" usemap="#ll__msg__acad__t_coll__map" alt="Collaboration graph"/></div>
+<map name="ll__msg__acad__t_coll__map" id="ll__msg__acad__t_coll__map">
+<area shape="rect" id="node2" href="ll__defines_8h.html#structll__msg__hdr__t" title="LL internal message. " alt="" coords="11,5,107,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a2795d73083873ed896c0bb55ff9b7a31"></a>uint16_t</td>
+<td class="fieldname">
+bisHandle</td>
+<td class="fielddoc">
+<p>BIS handle. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a43d27df39471141ca62294d433fbff82"></a><a class="el" href="ll__defines_8h.html#structll__msg__hdr__t">ll_msg_hdr_t</a></td>
+<td class="fieldname">
+hdr</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structll__msg__big__terminated__t" id="structll__msg__big__terminated__t"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct ll_msg_big_terminated_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>BIS Message -&gt; BIS Accept action. </p>
+</div><div class="dynheader">
+ll_msg_big_terminated_t 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="structll__msg__big__terminated__t__coll__graph.png" border="0" usemap="#ll__msg__big__terminated__t_coll__map" alt="Collaboration graph"/></div>
+<map name="ll__msg__big__terminated__t_coll__map" id="ll__msg__big__terminated__t_coll__map">
+<area shape="rect" id="node2" href="ll__defines_8h.html#structll__msg__hdr__t" title="LL internal message. " alt="" coords="39,5,135,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ac7b718ad0a3edb08a57200d8c66bb139"></a><a class="el" href="ll__defines_8h.html#structll__msg__hdr__t">ll_msg_hdr_t</a></td>
+<td class="fieldname">
+hdr</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a11974217ddd3f2e1ea21796401ad478d"></a>uint8_t</td>
+<td class="fieldname">
+reason</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structLlCreateBig__t" id="structLlCreateBig__t"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct LlCreateBig_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>BIG Create BIG message. </p>
+</div><table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a280c45f37053fe4f3921d5f91e645058"></a>uint8_t</td>
+<td class="fieldname">
+advHandle</td>
+<td class="fielddoc">
+<p>Used to identify the periodic advertising train. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a041fc0b73444f3e9b5acdadddfb57b74"></a>uint8_t</td>
+<td class="fieldname">
+bcstCode[<a class="el" href="ll__defines_8h.html#aefad3e40b98f68f4e23ec1aa1df4e819">LL_BC_LEN</a>]</td>
+<td class="fielddoc">
+<p>Session key used to encrypt and decrypt BIS payloads. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a8f9a96219f01654b0765a0fb58ba12d8"></a>uint8_t</td>
+<td class="fieldname">
+bigHandle</td>
+<td class="fielddoc">
+<p>Used to identify the BIG. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a5a0f4bf41145d2b22d4270d18916c678"></a>uint8_t</td>
+<td class="fieldname">
+encrypt</td>
+<td class="fielddoc">
+<p>Unencrypted or Encrypted. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a314cc186fb609829e8ead2f58849c6c4"></a><a class="el" href="ll__defines_8h.html#abc82a5d7375f4c58cf47b3b284b24c49">LlFraming_t</a></td>
+<td class="fieldname">
+framing: 8</td>
+<td class="fielddoc">
+<p>Unframed or Framed. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ad547d0be7cbdc3fb8cf4d616e9d7729c"></a>uint16_t</td>
+<td class="fieldname">
+maxSdu</td>
+<td class="fielddoc">
+<p>Maximum size of an SDU. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="aec8a6c243dacb0915beb89a62e79497c"></a>uint16_t</td>
+<td class="fieldname">
+mtlMs</td>
+<td class="fielddoc">
+<p>Maximum time in milliseconds. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ae65e08daf3e4927d3feab86bfb5bb870"></a>uint8_t</td>
+<td class="fieldname">
+numBis</td>
+<td class="fielddoc">
+<p>Total number of BISes in the BIG. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a35b01609bf25b85d150956450758317a"></a>uint8_t</td>
+<td class="fieldname">
+packing</td>
+<td class="fielddoc">
+<p>Sequential or Interleaved packing. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ab09912dae404c64e5306a9775527d118"></a>uint8_t</td>
+<td class="fieldname">
+phys</td>
+<td class="fielddoc">
+<p>Transmitter PHYs of packets. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="aae42868c79480017565fe802942566e6"></a>uint8_t</td>
+<td class="fieldname">
+rtn</td>
+<td class="fielddoc">
+<p>Retransmitted number. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a85a19c58e3594eb75a52263fbbb33b1c"></a>uint32_t</td>
+<td class="fieldname">
+sduInterUsec</td>
+<td class="fielddoc">
+<p>Interval, in microseconds, of BIG SDUs. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structLlCreateBigTest__t" id="structLlCreateBigTest__t"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct LlCreateBigTest_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>BIG Create BIG Test message. </p>
+</div><table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a0186ab1ad493b713266613cc7e2bbcaa"></a>uint8_t</td>
+<td class="fieldname">
+advHandle</td>
+<td class="fielddoc">
+<p>Used to identify the periodic advertising train. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ad5cb6720b7e06f17b400eead11039353"></a>uint8_t</td>
+<td class="fieldname">
+bcstCode[<a class="el" href="ll__defines_8h.html#aefad3e40b98f68f4e23ec1aa1df4e819">LL_BC_LEN</a>]</td>
+<td class="fielddoc">
+<p>Code used to derive the session key. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a311893a4a6bdc47b14727c664ed75cfb"></a>uint8_t</td>
+<td class="fieldname">
+bigHandle</td>
+<td class="fielddoc">
+<p>Used to identify the BIG. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="acebd96ec3415e977b1ee0bc2a5ab1842"></a>uint8_t</td>
+<td class="fieldname">
+bn</td>
+<td class="fielddoc">
+<p>Number of new payloads in each interval for each BIS. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a044decbff7bc7c2979a69e5dc3d4deb3"></a>uint8_t</td>
+<td class="fieldname">
+encrypt</td>
+<td class="fielddoc">
+<p>Unencrypted or Encrypted. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a4e1bda0c8c575fcd2860dec179ff4b06"></a><a class="el" href="ll__defines_8h.html#abc82a5d7375f4c58cf47b3b284b24c49">LlFraming_t</a></td>
+<td class="fieldname">
+framing: 8</td>
+<td class="fielddoc">
+<p>Unframed or Framed. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ad0dabaaa6f4697c55dfe542588c1a9d1"></a>uint8_t</td>
+<td class="fieldname">
+irc</td>
+<td class="fielddoc">
+<p>Number of times the scheduled payload(s) are transmitted in a given event. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a87adb99a2e60e9b254739bc2ec0ee40e"></a>uint16_t</td>
+<td class="fieldname">
+isoInter</td>
+<td class="fielddoc">
+<p>Duration of an isochronous interval for BIG PDUs in 1.25ms unit. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a7db8c27840b86406093bd96139623064"></a>uint16_t</td>
+<td class="fieldname">
+maxPdu</td>
+<td class="fielddoc">
+<p>Maximum size of payload. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="aa2df96845dfb6ceed59c2273564e0b70"></a>uint16_t</td>
+<td class="fieldname">
+maxSdu</td>
+<td class="fielddoc">
+<p>Maximum size of a SDU. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="aaaabb5c074ee798a3366320260fe80f3"></a>uint8_t</td>
+<td class="fieldname">
+nse</td>
+<td class="fielddoc">
+<p>Total number of subevents in each interval of each BIS in the BIG. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="aaa965bbd24f8f6ca98145f0bb19c5290"></a>uint8_t</td>
+<td class="fieldname">
+numBis</td>
+<td class="fielddoc">
+<p>Total number of BISes in the BIG. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a83af184b12191c7c17deb1d561e5ac03"></a>uint8_t</td>
+<td class="fieldname">
+packing</td>
+<td class="fielddoc">
+<p>Sequential or Interleaved packing. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a089d3c43307ea4e3d750997739733648"></a>uint8_t</td>
+<td class="fieldname">
+phys</td>
+<td class="fielddoc">
+<p>Transmitter PHYs of packets. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a9950e662c85b53dec0391bc96b12b19e"></a>uint8_t</td>
+<td class="fieldname">
+pto</td>
+<td class="fielddoc">
+<p>Offset used for pre-transmissions. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a232bce49fc5d8ef9c6f62adb9742ec95"></a>uint32_t</td>
+<td class="fieldname">
+sduInterUsec</td>
+<td class="fielddoc">
+<p>Interval in microseconds of BIG SDUs. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structLlBigCreateSync__t" id="structLlBigCreateSync__t"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct LlBigCreateSync_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>BIG Create Sync message. </p>
+</div><table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a33f5d42aaeebbb608b49f4e357cd4d90"></a>uint8_t</td>
+<td class="fieldname">
+bcstCode[<a class="el" href="ll__defines_8h.html#aefad3e40b98f68f4e23ec1aa1df4e819">LL_BC_LEN</a>]</td>
+<td class="fielddoc">
+<p>Session key code for encrypt and decrypt BIS payloads. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a127dd9494393ce775e97b63974fa83f7"></a>uint8_t</td>
+<td class="fieldname">
+bigHandle</td>
+<td class="fielddoc">
+<p>Used to identify the BIG. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="adb6fa7ed9a83f8c88514c99edb45e69a"></a>uint16_t</td>
+<td class="fieldname">
+bigSyncTimeout</td>
+<td class="fielddoc">
+<p>Synchronization timeout for the BIS, in the units of 10ms. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ad746e57954331783427217a18279fdeb"></a>uint8_t</td>
+<td class="fieldname">
+bis[<a class="el" href="ll__defines_8h.html#a18372e9a640aaa2af1a55c54e34cd005">LL_MAX_BIS</a>]</td>
+<td class="fielddoc">
+<p>List of indices of BISes. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a23ca4d8537d96b887b2950c8f3ca0f39"></a>uint8_t</td>
+<td class="fieldname">
+encrypt</td>
+<td class="fielddoc">
+<p>Unencrypted or Encrypted. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a9399780c7d91c3090a37c3c2dc609bed"></a>uint8_t</td>
+<td class="fieldname">
+mse</td>
+<td class="fielddoc">
+<p>Maximum number of subevents. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a4fb7361882738135d3ea71018f57e3a5"></a>uint8_t</td>
+<td class="fieldname">
+numBis</td>
+<td class="fielddoc">
+<p>Total number of BISes in the BIG. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ab7e3e05afec9203f3f2f2f2bce0337fd"></a>uint16_t</td>
+<td class="fieldname">
+syncHandle</td>
+<td class="fielddoc">
+<p>Periodic advertising train handle. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structle__big__t" id="structle__big__t"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct le_big_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>Broadcast Isochronous Group (BIG) context. </p>
+</div><table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="aa02661b6f83341729f8f46e76ed796a6"></a>uint16_t</td>
+<td class="fieldname">
+baseCrcInit</td>
+<td class="fielddoc">
+<p>Base CRC Init. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a1fd56a690bafc53a6a8bc658ee54d00a"></a>struct <a class="el" href="ll__bis_8h.html#structle__big__t_8bcp">le_big_t</a></td>
+<td class="fieldname">
+bcp</td>
+<td class="fielddoc">
+<p>BIG Control Procedure data. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a0a814e20299b999f85afe260abb8f5e0"></a>struct list_head</td>
+<td class="fieldname">
+bis_head</td>
+<td class="fielddoc">
+<p>List entry </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a263055c665a85faf5bdfa3860ad39dc3"></a>uint32_t</td>
+<td class="fieldname">
+bisSpaceUsec</td>
+<td class="fielddoc">
+<p>BIS space in microseconds. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="add7ca06e23e5918c77acbf4e5ae0b33f"></a>uint8_t</td>
+<td class="fieldname">
+bn</td>
+<td class="fielddoc">
+<p>Burst number. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="afcf71d726fe9228df00efe53d751db8c"></a><a class="el" href="ll__defines_8h.html#a3e11e866bc6d82a804a0ee4740a3a470">bool_t</a></td>
+<td class="fieldname">
+encrypt</td>
+<td class="fielddoc">
+<p>Encryption enable for BIS. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ad39175de42c3c27aa564e3a2c64be9ff"></a>struct list_head</td>
+<td class="fieldname">
+entry</td>
+<td class="fielddoc">
+<p>List entry </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a62fdab0525a42f6dac459f7199295078"></a>uint64_t</td>
+<td class="fieldname">
+eventCounter</td>
+<td class="fielddoc">
+<p>Event counter. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a5c805071cf61a105aa27b33fd9c1ca86"></a><a class="el" href="ll__defines_8h.html#abc82a5d7375f4c58cf47b3b284b24c49">LlFraming_t</a></td>
+<td class="fieldname">
+framing: 8</td>
+<td class="fielddoc">
+<p>BIS Data PDU format. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="adbbbad79ea22bf8c4b33dea8f55db56f"></a>uint8_t</td>
+<td class="fieldname">
+giv[<a class="el" href="ll__defines_8h.html#aebab5ed83127e6e4865e34adee30ab75">LL_GIV_LEN</a>]</td>
+<td class="fielddoc">
+<p>GIV. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ad1f12d259c16eba98171c7f012c6393c"></a>uint8_t</td>
+<td class="fieldname">
+gskd[<a class="el" href="ll__defines_8h.html#a3fd9cd0476cf27fe7dccd733637e03c8">LL_GSKD_LEN</a>]</td>
+<td class="fielddoc">
+<p>GSKD. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a8c51844165f820888b9a71e3e8fadabc"></a>uint8_t</td>
+<td class="fieldname">
+handle</td>
+<td class="fielddoc">
+<p>BIG handle. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ad2d41933109e17bd2b79c0a47d2d1d0b"></a>void *</td>
+<td class="fieldname">
+hw</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="aefc1238eec0062d8cb9c07482ebb9ae2"></a>uint8_t</td>
+<td class="fieldname">
+irc</td>
+<td class="fielddoc">
+<p>Immediate repetition count. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="afb550fe0e67e8960b0762f8175b9ede9"></a>uint32_t</td>
+<td class="fieldname">
+isoInterUsec</td>
+<td class="fielddoc">
+<p>Isochronous PDU interval in microseconds. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a2231d6bed805cc48d5bf40c9d9d938dc"></a><a class="el" href="ll__defines_8h.html#a3e11e866bc6d82a804a0ee4740a3a470">bool_t</a></td>
+<td class="fieldname">
+lastPduMissed</td>
+<td class="fielddoc">
+<p>Rx failure on last PDU. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="af67168b7c3135d1cf9ad5cf6042b724b"></a>uint16_t</td>
+<td class="fieldname">
+maxPdu</td>
+<td class="fielddoc">
+<p>Maximum size of BIS Data PDU. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="aeaa76e7393e0ac5321ee1d76177d3296"></a>uint16_t</td>
+<td class="fieldname">
+maxSdu</td>
+<td class="fielddoc">
+<p>Maximum size of ISO SDU. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a9fb9f8a0ddc0e146a0c0b914ce3c0e26"></a>uint8_t</td>
+<td class="fieldname">
+nse</td>
+<td class="fielddoc">
+<p>Maximum number of subevent in each interval on BIS. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a87434bacf4e16752ec41a7d203c5e642"></a>uint8_t</td>
+<td class="fieldname">
+numBis</td>
+<td class="fielddoc">
+<p>Number of BISs. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="aaf8a0b50ed05ab82bbcbd74b238031d0"></a><a class="el" href="ll__iso_8h.html#a670cd0842150eedf5fa09adca1f054b2">LlPacking_t</a></td>
+<td class="fieldname">
+packing: 8</td>
+<td class="fielddoc">
+<p>Packing sequence scheme. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="abdc5031680c739b09c1367249fc906cf"></a>uint8_t</td>
+<td class="fieldname">
+phy</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a9f1995b0bc3ce621b995e4a4298a2441"></a>uint8_t</td>
+<td class="fieldname">
+pto</td>
+<td class="fielddoc">
+<p>Pre-transmission offset. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ae29aa1216dbd6efe1269694c0ff7915e"></a><a class="el" href="ll__defines_8h.html#acb969664188d3b5c343b54570b707cd9">LlRole_t</a></td>
+<td class="fieldname">
+role: 8</td>
+<td class="fielddoc">
+<p>Role. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a622908664b0333397aa763c61473d886"></a>union <a class="el" href="ll__bis_8h.html#unionle__big__t_8roleData">le_big_t</a></td>
+<td class="fieldname">
+roleData</td>
+<td class="fielddoc">
+<p>Role-specific data. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="adc4c659401867a7e3382c300d9046c5c"></a>uint32_t</td>
+<td class="fieldname">
+sduInterUsec</td>
+<td class="fielddoc">
+<p>SDU interval in microseconds. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a37811274ea6af5868e0e07043d5acfae"></a>uint32_t</td>
+<td class="fieldname">
+seedAccAddr</td>
+<td class="fielddoc">
+<p>Seed access address. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a302b5a41685a4b5875dc9dd6fb00438e"></a>uint8_t</td>
+<td class="fieldname">
+state</td>
+<td class="fielddoc">
+<p>Current state. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ac476aa9144dd7b58cfc1037db8c72d0f"></a>uint32_t</td>
+<td class="fieldname">
+subInterUsec</td>
+<td class="fielddoc">
+<p>Subevent interval in microseconds. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a78932c6ad77f32daf61e0f51e4bd8876"></a>uint32_t</td>
+<td class="fieldname">
+syncDelayUsec</td>
+<td class="fielddoc">
+<p>Synchronization delay in microseconds. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ab80e473fd6fab9ff7a21d505071cd9e5"></a>uint32_t</td>
+<td class="fieldname">
+transLatUsec</td>
+<td class="fielddoc">
+<p>The maximum transmission latency, in microseconds. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structle__bis__t" id="structle__bis__t"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct le_bis_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>Broadcast Isochronous Stream (BIS) context. </p>
+</div><div class="dynheader">
+le_bis_t 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="structle__bis__t__coll__graph.png" border="0" usemap="#le__bis__t_coll__map" alt="Collaboration graph"/></div>
+<map name="le__bis__t_coll__map" id="le__bis__t_coll__map">
+<area shape="rect" id="node2" href="ll__iso_8h.html#structlctrIsoalRxCtx__t" title="Receive ISOAL Context. " alt="" coords="5,5,123,32"/>
+<area shape="rect" id="node3" href="ll__iso_8h.html#structlctrOutDataPathCtx__t" title="Output datapath context. " alt="" coords="146,5,294,32"/>
+<area shape="rect" id="node4" href="ll__iso_8h.html#structlctrInDataPathCtx__t" title="Input datapath context. " alt="" coords="319,5,457,32"/>
+<area shape="rect" id="node5" href="ll__bis_8h.html#structle__big__t" title="Broadcast Isochronous Group (BIG) context. " alt="" coords="481,5,548,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a4e0cd64fec1a7c68780109284d5926b6"></a>atomic_t</td>
+<td class="fieldname">
+air_sent_iso_num</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a2741e2c7290825249901e18d3f808b63"></a><a class="el" href="ll__bis_8h.html#structle__big__t">le_big_t</a> *</td>
+<td class="fieldname">
+big</td>
+<td class="fielddoc">
+<p>BIG context. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a034a24953b4c3e250ae77ac53a26ea33"></a>uint8_t</td>
+<td class="fieldname">
+bisNum</td>
+<td class="fielddoc">
+<p>BIS positional sequence number. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a0eada1c6e73515670025da2a67ae07dc"></a>uint32_t</td>
+<td class="fieldname">
+crcErrPkt</td>
+<td class="fielddoc">
+<p>CRC error packets. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a726c659a4bc7d13aabfc303f310331c0"></a><a class="el" href="ll__iso_8h.html#structlctrInDataPathCtx__t">lctrInDataPathCtx_t</a></td>
+<td class="fieldname">
+dataPathInCtx</td>
+<td class="fielddoc">
+<p>Input data path config. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="acfb9e9c87a96684b2e169835b23a9143"></a><a class="el" href="ll__iso_8h.html#structlctrOutDataPathCtx__t">lctrOutDataPathCtx_t</a></td>
+<td class="fieldname">
+dataPathOutCtx</td>
+<td class="fielddoc">
+<p>Output data path context. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a70873eae66f16c32c46c89dce5b1d6be"></a>struct list_head</td>
+<td class="fieldname">
+entry</td>
+<td class="fielddoc">
+<p>List entry </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a370497e11e3e4dda7480b105795d6d80"></a>uint16_t</td>
+<td class="fieldname">
+handle</td>
+<td class="fielddoc">
+<p>BIS handle. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a7d40ccbaa4c63f30b739c7c83036b354"></a><a class="el" href="ll__iso_8h.html#structlctrIsoalRxCtx__t">lctrIsoalRxCtx_t</a></td>
+<td class="fieldname">
+isoalRxCtx</td>
+<td class="fielddoc">
+<p>Partial receive context. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a737cefcc4f443225825e2d89f472b02c"></a><a class="el" href="ll__defines_8h.html#aa7ad7b5c0167e18a1dd88b4f72431428">LlIsoLlid_t</a></td>
+<td class="fieldname">
+lastLlid: 8</td>
+<td class="fielddoc">
+<p>Last LLID. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a815a53b0c0b710d6663e842ed36731db"></a><a class="el" href="ll__iso_8h.html#ad4a7049340ee84c0b78deb08a375078e">LlIsoDataPath_t</a></td>
+<td class="fieldname">
+path: 8</td>
+<td class="fielddoc">
+<p>Input audio data path. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a5c4444178bf73cfe0a0986f815c63335"></a>uint32_t</td>
+<td class="fieldname">
+rxUnreceivedPkt</td>
+<td class="fielddoc">
+<p>Packets unreceived by flush point. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a8bcaa71c71d32ed5de4cc858a0a82711"></a>struct <a class="el" href="ll__bis_8h.html#structle__bis__t_8test">le_bis_t</a></td>
+<td class="fieldname">
+test</td>
+<td class="fielddoc">
+<p>ISO Test data. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structll__codec__t" id="structll__codec__t"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct ll_codec_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>Codec event handlers. </p>
+</div><div class="dynheader">
+ll_codec_t 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="structll__codec__t__coll__graph.png" border="0" usemap="#ll__codec__t_coll__map" alt="Collaboration graph"/></div>
+<map name="ll__codec__t_coll__map" id="ll__codec__t_coll__map">
+<area shape="rect" id="node2" href="audio__codec_8h.html#structPalCodecSreamParam__t" title="Codec. " alt="" coords="5,5,172,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="abdaec05119a356c04074cbfe3a7e54d2"></a><a class="el" href="ll__bis_8h.html#a66032c15a481aa636667993325c0e0d8">ll_codec_input</a></td>
+<td class="fieldname">
+in</td>
+<td class="fielddoc">
+<p>Stream data input. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a2cc6bc1e2e28f028eaeb8abed2c0571b"></a><a class="el" href="ll__bis_8h.html#a867e86f67f0c4db8ccdd4e6ace37e127">ll_codec_ouput</a></td>
+<td class="fieldname">
+out</td>
+<td class="fielddoc">
+<p>Stream data output. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="aa976175226859b463e48915861f777b1"></a><a class="el" href="ll__bis_8h.html#adbdcb2d2e1d6901dcc2a696978763f53">ll_codec_start</a></td>
+<td class="fieldname">
+start</td>
+<td class="fielddoc">
+<p>Start stream. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a1b2df6bac8f677236d66fd0f4006f645"></a><a class="el" href="ll__bis_8h.html#acb2e6bcbeab9ccceb154a6c19e575daf">ll_codec_stop</a></td>
+<td class="fieldname">
+stop</td>
+<td class="fielddoc">
+<p>Stop stream. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="unionle__big__t_8roleData" id="unionle__big__t_8roleData"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">union le_big_t.roleData</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="aa88ad3a75f88bbe93b64a7c55ade7a5d"></a><a class="el" href="ll__bis_8h.html#structle__big__t_8roleData_8mst">roleData</a></td>
+<td class="fieldname">
+mst</td>
+<td class="fielddoc">
+<p>BIG master specific data. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a06a9ad3bb6121f438d91f827a3ac1f90"></a><a class="el" href="ll__bis_8h.html#structle__big__t_8roleData_8slv">roleData</a></td>
+<td class="fieldname">
+slv</td>
+<td class="fielddoc">
+<p>BIG slave specific data. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structle__big__t_8roleData_8slv" id="structle__big__t_8roleData_8slv"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct le_big_t.roleData.slv</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a76c9ec6fcf7208670cc3608e7f9bbeed"></a><a class="el" href="ll__defines_8h.html#a3e11e866bc6d82a804a0ee4740a3a470">bool_t</a></td>
+<td class="fieldname">
+notifyHostEst</td>
+<td class="fielddoc">
+<p>Notify host event sent flag. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a5c94fa5340dfa116caaf76db229c4882"></a>struct <a class="el" href="ll__ext__adv_8h.html#struct____ext__adv__group">__ext_adv_group</a> *</td>
+<td class="fieldname">
+pAdvSet</td>
+<td class="fielddoc">
+<p>Advertising Set parent. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structle__big__t_8roleData_8mst" id="structle__big__t_8roleData_8mst"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct le_big_t.roleData.mst</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a25a69a33b9cf5294e06b8b7d14534f65"></a>uint32_t</td>
+<td class="fieldname">
+anchorPoint</td>
+<td class="fielddoc">
+<p>BIG anchor point. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a8411c3d8276d256086dbf86b7a0cbd0b"></a>uint8_t</td>
+<td class="fieldname">
+bcstCode[<a class="el" href="ll__defines_8h.html#aefad3e40b98f68f4e23ec1aa1df4e819">LL_BC_LEN</a>]</td>
+<td class="fielddoc">
+<p>Broadcast Code. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ab6543a085f7a23ebe54977ee44ada4e0"></a>uint32_t</td>
+<td class="fieldname">
+bigSyncTimeoutMs</td>
+<td class="fielddoc">
+<p>Synchronization timeout in microseconds. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a268233409f2561e1c5bd87c7d8c86712"></a>sys_timer</td>
+<td class="fieldname">
+bigSyncTmr</td>
+<td class="fielddoc">
+<p>Synchronization timeout timer. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ae777450db34af05a8a2f15da2bad8019"></a>uint8_t</td>
+<td class="fieldname">
+bisIdx[<a class="el" href="ll__defines_8h.html#a18372e9a640aaa2af1a55c54e34cd005">LL_MAX_BIS</a>]</td>
+<td class="fielddoc">
+<p>List of indices of BISes. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="acadfeea8758c24add5e77a70783faf60"></a>uint16_t</td>
+<td class="fieldname">
+extraWwUsec</td>
+<td class="fielddoc">
+<p>Extra window widening time in microseconds. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a7f04af006bdeba02616023b6e6c68409"></a>uint8_t</td>
+<td class="fieldname">
+mse</td>
+<td class="fielddoc">
+<p>Maximum number of subevents. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a6130e4959a9ec79237b70a9966c9bf13"></a>uint8_t</td>
+<td class="fieldname">
+numBisIdx</td>
+<td class="fielddoc">
+<p>Total number of BISes in the BIG. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ad08b14525ceb2e36d9a83042910b443c"></a>uint32_t</td>
+<td class="fieldname">
+rxSyncTime</td>
+<td class="fielddoc">
+<p>Last received BIG anchor point. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a47fd2e72c2efc8f0ee7625530af679c9"></a><a class="el" href="ll__defines_8h.html#a3e11e866bc6d82a804a0ee4740a3a470">bool_t</a></td>
+<td class="fieldname">
+syncLostReason</td>
+<td class="fielddoc">
+<p>BIG synchronization lost. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a22bf0a1edbd857e52277cd16fc494fbe"></a>uint16_t</td>
+<td class="fieldname">
+totalAcc</td>
+<td class="fielddoc">
+<p>Total clock accuracy. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structle__big__t_8bcp" id="structle__big__t_8bcp"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct le_big_t.bcp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="aa54e120143d3ef215840db6a12097dbd"></a>uint8_t</td>
+<td class="fieldname">
+actMsk</td>
+<td class="fielddoc">
+<p>Active control procedure bitmask. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a9b9677be44201382ad2ff54e8bd99ffa"></a><a class="el" href="ll__bis_8h.html#structle__big__t_8bcp_8chanMapUpd">bcp</a></td>
+<td class="fieldname">
+chanMapUpd</td>
+<td class="fielddoc">
+<p>Channel Map Update data. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a85e85fac9061dfe61792a485b8d68fc4"></a>uint8_t</td>
+<td class="fieldname">
+cssn</td>
+<td class="fielddoc">
+<p>Control Subevent Sequence Number </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="afca4b44a95561de5a0d5736f7f9b38bc"></a>uint8_t</td>
+<td class="fieldname">
+pendMsk</td>
+<td class="fielddoc">
+<p>Pending control procedure bitmask. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ab4dad0fe5fbef2c0e24d9db1cc69e5a2"></a><a class="el" href="ll__bis_8h.html#structle__big__t_8bcp_8term">bcp</a></td>
+<td class="fieldname">
+term</td>
+<td class="fielddoc">
+<p>Terminate data. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structle__big__t_8bcp_8chanMapUpd" id="structle__big__t_8bcp_8chanMapUpd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct le_big_t.bcp.chanMapUpd</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a50c9af2262027c7b1c6f76bcda13a947"></a>uint64_t</td>
+<td class="fieldname">
+chanMap</td>
+<td class="fielddoc">
+<p>Channel map. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a183224d27b72b647391e179fa311b891"></a>uint16_t</td>
+<td class="fieldname">
+inst</td>
+<td class="fielddoc">
+<p>Instant. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structle__big__t_8bcp_8term" id="structle__big__t_8bcp_8term"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct le_big_t.bcp.term</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a183224d27b72b647391e179fa311b891"></a>uint16_t</td>
+<td class="fieldname">
+inst</td>
+<td class="fielddoc">
+<p>Instant. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a40bea8d637cdf2c1b07fcf0630482b73"></a>uint8_t</td>
+<td class="fieldname">
+reason</td>
+<td class="fielddoc">
+<p>Termination reason. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structle__bis__t_8test" id="structle__bis__t_8test"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct le_bis_t.test</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="aa10311459433adf322f2590a4987c423"></a><a class="el" href="ll__defines_8h.html#a3e11e866bc6d82a804a0ee4740a3a470">bool_t</a></td>
+<td class="fieldname">
+enabled</td>
+<td class="fielddoc">
+<p>TRUE ISO test enabled, FALSE otherwise. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a87bdfa8d6f9f5a4561806e6fd85c5dfe"></a>uint32_t</td>
+<td class="fieldname">
+numRxFailed</td>
+<td class="fielddoc">
+<p>ISO Rx failed payload counter. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a5baadc2d728b51627537d0b8f2c9967e"></a>uint32_t</td>
+<td class="fieldname">
+numRxMissed</td>
+<td class="fielddoc">
+<p>ISO Rx missed payload counter. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a2b50ffa289df14190efa218a3313bcd6"></a>uint32_t</td>
+<td class="fieldname">
+numRxSuccess</td>
+<td class="fielddoc">
+<p>ISO Rx received payload counter. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="aa6018cc7ec0a2f29423e192f91db6124"></a><a class="el" href="ll__defines_8h.html#a3e11e866bc6d82a804a0ee4740a3a470">bool_t</a></td>
+<td class="fieldname">
+pendInit</td>
+<td class="fielddoc">
+<p>Receive pending init. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a9e257790136c665286eff091a953225a"></a><a class="el" href="ll__iso_8h.html#a7fd3a11b71f060e138c02f9594b7188d">LlIsoPldType_t</a></td>
+<td class="fieldname">
+pldType: 8</td>
+<td class="fielddoc">
+<p>Test payload type. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ab4dad0fe5fbef2c0e24d9db1cc69e5a2"></a><a class="el" href="ll__defines_8h.html#a3e11e866bc6d82a804a0ee4740a3a470">bool_t</a></td>
+<td class="fieldname">
+term</td>
+<td class="fielddoc">
+<p>Flag for ISO test termination. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a05c7e24700502a079cdd88012b5a76d3"></a><a class="el" href="ll__bis_8h.html#unionle__bis__t_8test_8util">test</a></td>
+<td class="fieldname">
+util</td>
+<td class="fielddoc">
+<p>Role-based utility variables. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="unionle__bis__t_8test_8util" id="unionle__bis__t_8test_8util"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">union le_bis_t.test.util</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="aeaeae9781ada28434d289493598ec6ff"></a><a class="el" href="ll__bis_8h.html#structle__bis__t_8test_8util_8framed">util</a></td>
+<td class="fieldname">
+framed</td>
+<td class="fielddoc">
+<p>Framed context. </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a963ebe5c44860dd82cec27468a423596"></a><a class="el" href="ll__bis_8h.html#structle__bis__t_8test_8util_8unframed">util</a></td>
+<td class="fieldname">
+unframed</td>
+<td class="fielddoc">
+<p>Unframed context. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structle__bis__t_8test_8util_8framed" id="structle__bis__t_8test_8util_8framed"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct le_bis_t.test.util.framed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a844ff0b937c6cc285f6827307ee9fdf5"></a>uint32_t</td>
+<td class="fieldname">
+payloadCtr</td>
+<td class="fielddoc">
+<p>Payload counter for framed transmissions. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structle__bis__t_8test_8util_8unframed" id="structle__bis__t_8test_8util_8unframed"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct le_bis_t.test.util.unframed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="aa5f5a3e700c7cbfa90c28049450801e2"></a>uint8_t</td>
+<td class="fieldname">
+payloadOffset</td>
+<td class="fielddoc">
+<p>Payload offset for unframed transmissions. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">宏定义说明</h2>
+<a class="anchor" id="a655df87aa217d186c4ac109d45497fbb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LCTR_ISO_SDU_START_OFFSET&#160;&#160;&#160;(HCI_ISO_HDR_LEN + HCI_ISO_DL_MAX_LEN - <a class="el" href="ll__defines_8h.html#add91193afa007d94d8c47c336e68e55e">LL_ISO_DATA_HDR_LEN</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ISO Data PDU start offset in a buffer. </p>
+
+</div>
+</div>
+<h2 class="groupheader">类型定义说明</h2>
+<a class="anchor" id="a66032c15a481aa636667993325c0e0d8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef uint16_t(* ll_codec_input) (uint16_t id, uint8_t *pBuf, uint16_t len, uint32_t *pPktCtr)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stream in data call signature. </p>
+
+</div>
+</div>
+<a class="anchor" id="a867e86f67f0c4db8ccdd4e6ace37e127"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* ll_codec_ouput) (uint16_t id, const uint8_t *pBuf, uint16_t len, uint32_t pktCtr)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stream out data call signature. </p>
+
+</div>
+</div>
+<a class="anchor" id="adbdcb2d2e1d6901dcc2a696978763f53"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="ll__defines_8h.html#a3e11e866bc6d82a804a0ee4740a3a470">bool_t</a>(* ll_codec_start) (uint16_t id, <a class="el" href="audio__codec_8h.html#structPalCodecSreamParam__t">PalCodecSreamParam_t</a> *pParam)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Start stream call signature. </p>
+
+</div>
+</div>
+<a class="anchor" id="acb2e6bcbeab9ccceb154a6c19e575daf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* ll_codec_stop) (uint16_t id)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stop stream call signature. </p>
+
+</div>
+</div>
+<h2 class="groupheader">枚举类型说明</h2>
+<a class="anchor" id="aba01db17f4a2bfbc3db60dc172972a25"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ACAD messages dispatcher. </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="aba01db17f4a2bfbc3db60dc172972a25a71583d6da8d1a46940a607495de417bf"></a>LL_ACAD_MSG_CREATE_BIG&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aba01db17f4a2bfbc3db60dc172972a25abafd6be44a9d48415fba4b134533f86e"></a>LL_ACAD_MSG_CHANNEL_MAP&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aba01db17f4a2bfbc3db60dc172972a25a272ba4f671ecd003930248c1b164e04f"></a>LL_ACAD_MSG_TERMINATED_BIG&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="aaf105ae5beaca1dee30ae54530691fce"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>BIS Slave messages dispatcher. </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="aaf105ae5beaca1dee30ae54530691fceae7be4dbbbe6549474f3cd497ea11ff2a"></a>LL_SLV_BIG_MSG_CREATE_BIG&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aaf105ae5beaca1dee30ae54530691fceab3d4d1f51989b783d0be44adcad83fb1"></a>LL_SLV_BIG_MSG_TERMINATED_BIG&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="ad0f6cec9169e85f2682476a8cfcb1084"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hci_le_create_big_complete_event </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>status</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ll__bis_8h.html#structle__big__t">le_big_t</a> *&#160;</td>
+          <td class="paramname"><em>big</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pack a set CIG parameters event. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">payload</td><td>Packed packet buffer. </td></tr>
+    <tr><td class="paramname">status</td><td>Status code. </td></tr>
+    <tr><td class="paramname">cig_id</td><td>CIG identifier </td></tr>
+    <tr><td class="paramname">num_cis</td><td>Number of CIS add or modified </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a95c5632d0d5f68ab80055c5d8c53297a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lctrBisCalcGroupSessionKey </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>pGSKD</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>pBC</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>pGSK</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculate Group session key. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pGSKD</td><td>Group Session Key Diversifier. </td></tr>
+    <tr><td class="paramname">pBC</td><td>Broadcast Code. </td></tr>
+    <tr><td class="paramname">pGSK</td><td>Group Session Key result. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a1bbac5ee3c9d40cbe076d7b94f7660bb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int le_cmd_set_bis_master </td>
+          <td>(</td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>opcode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const u8 *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a81011290ef6fbc2d209711f215067fba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int le_cmd_set_bis_slave </td>
+          <td>(</td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>opcode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const u8 *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>BIS Slave command packet decode. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">opcode</td><td>Opcode </td></tr>
+    <tr><td class="paramname">*data</td><td>Pointer to the command packet </td></tr>
+    <tr><td class="paramname">size</td><td>Size of the command packet</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Status command match. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9533c6fc2d1fd1ad5fc1486cb41215f6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ll__bis_8h.html#structle__big__t">le_big_t</a>* ll_big_alloc </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acf513c8c6f94cb606bb21d03814818b6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ll__bis_8h.html#structle__big__t">le_big_t</a>* ll_big_by_handle </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0ac90d03121c46d8b3cae47f9c42e195"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_big_free </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__bis_8h.html#structle__big__t">le_big_t</a> *&#160;</td>
+          <td class="paramname"><em>big</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7f0b7bb5852efaddef08891ef28663b3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_bis_acad_create_big </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>big_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="ll__ext__adv_8h.html#struct____ext__adv__group">__ext_adv_group</a> *&#160;</td>
+          <td class="paramname"><em>adv_set</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>: ll_bis_acad_create_big</p>
+<p>: big_handle  : adv_set </p>
+
+</div>
+</div>
+<a class="anchor" id="a64d1f2d90ed180e3c415f6df192b2aaa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ll__bis_8h.html#structle__bis__t">le_bis_t</a>* ll_bis_alloc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__bis_8h.html#structle__big__t">le_big_t</a> *&#160;</td>
+          <td class="paramname"><em>big</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a259836c6c492df26a40c5f85fed864c4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ll__bis_8h.html#structle__bis__t">le_bis_t</a>* ll_bis_by_handle </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af86fe08a49a414e90034f621e3e3dd66"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_bis_close </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Close all resources for BIS. </p>
+
+</div>
+</div>
+<a class="anchor" id="a1f745d19f62cf6ba411565af30cbe1ad"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_bis_free </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__bis_8h.html#structle__bis__t">le_bis_t</a> *&#160;</td>
+          <td class="paramname"><em>bis</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a21d7d41abb5d8d86f303fc989662c389"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_bis_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize resources for BIS. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab744c15bd8ba463679ace3a12a220582"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_bis_master_rx_post_handler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__bis_8h.html#structle__bis__t">le_bis_t</a> *&#160;</td>
+          <td class="paramname"><em>bis</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>: ll_bis_master_rx_post_handler</p>
+<p>: priv </p>
+
+</div>
+</div>
+<a class="anchor" id="ab9771d38c45a4436d668377cf559875f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ll_bis_post_process </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>: ll_bis_post_process</p>
+<p>: </p>
+
+</div>
+</div>
+<a class="anchor" id="a132cf274b4ec1649016c8ae473b513a4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 ll_bis_read_test_counters </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__bis_8h.html#structle__bis__t">le_bis_t</a> *&#160;</td>
+          <td class="paramname"><em>bis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ll__iso_8h.html#structLlIsoTestCtrs__t">LlIsoTestCtrs_t</a> *&#160;</td>
+          <td class="paramname"><em>pTest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>BIS read ISO test counters. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bis</td><td>BIS context. </td></tr>
+    <tr><td class="paramname">pTest</td><td>Pointer to the statistics block.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Status error code. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af5cde03f93f0517ee3bbf920c7b44cb5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 ll_bis_rx_test </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__bis_8h.html#structle__bis__t">le_bis_t</a> *&#160;</td>
+          <td class="paramname"><em>bis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>payload_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable BIS Rx test. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bis</td><td>BIS context. </td></tr>
+    <tr><td class="paramname">payload_type</td><td>Payload length type.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Status error code. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abdd8a985aeeded3bfbf4a09dd7596cb5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_bis_set_acad_biginfo </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="ll__ext__adv_8h.html#struct____ext__adv__group">__ext_adv_group</a> *&#160;</td>
+          <td class="paramname"><em>adv_set</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ble_adv_set_t *&#160;</td>
+          <td class="paramname"><em>bb_adv_set</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>: ll_bis_set_acad_biginfo</p>
+<p>: adv_set  : bb_adv_set </p>
+
+</div>
+</div>
+<a class="anchor" id="a0b427f6c144a93cae51f7904e8686579"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_bis_set_acad_channel_map_update </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="ll__ext__adv_8h.html#struct____ext__adv__group">__ext_adv_group</a> *&#160;</td>
+          <td class="paramname"><em>adv_set</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ble_adv_set_t *&#160;</td>
+          <td class="paramname"><em>bb_adv_set</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>: ll_bis_set_acad_channel_map_update</p>
+<p>: adv_set  : bb_adv_set </p>
+
+</div>
+</div>
+<a class="anchor" id="a2e0625064c0b86acda36a23fdd5902d7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_bis_setup </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__bis_8h.html#structle__bis__t">le_bis_t</a> *&#160;</td>
+          <td class="paramname"><em>bis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>seedAccAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>baseCrcInit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>chMap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ll__defines_8h.html#aedd452843edd3c41a93f9f8dda96e63e">LlPhy_t</a>&#160;</td>
+          <td class="paramname"><em>phy</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set up a new BIS. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pBisCtx</td><td>BIS context. </td></tr>
+    <tr><td class="paramname">seedAccAddr</td><td>Seed access address. </td></tr>
+    <tr><td class="paramname">baseCrcInit</td><td>Base CRC Init. </td></tr>
+    <tr><td class="paramname">chMap</td><td>Channel map. </td></tr>
+    <tr><td class="paramname">phy</td><td>PHY. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a69143eb10be3e6d403024a620a82219e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 ll_bis_setup_iso_data_path </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__bis_8h.html#structle__bis__t">le_bis_t</a> *&#160;</td>
+          <td class="paramname"><em>bis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ll__iso_8h.html#ac6b0e5b32a70e2319903fb13194e7666">LlIsoDataPathDir_t</a>&#160;</td>
+          <td class="paramname"><em>dpDir</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ll__iso_8h.html#ad4a7049340ee84c0b78deb08a375078e">LlIsoDataPath_t</a>&#160;</td>
+          <td class="paramname"><em>dpId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the BIS data path. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bis</td><td>BIS context. </td></tr>
+    <tr><td class="paramname">dpDir</td><td>Data path direction. </td></tr>
+    <tr><td class="paramname">dpId</td><td>Data path ID.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Status error code. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a30c1abca1e74d276bc0052c8fad49009"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_bis_slave_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>: ll_bis_slave_init </p>
+
+</div>
+</div>
+<a class="anchor" id="a9a9f5a2a754bbeae20de42e53cd46a24"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 ll_bis_tx_test </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__bis_8h.html#structle__bis__t">le_bis_t</a> *&#160;</td>
+          <td class="paramname"><em>bis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>payload_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable BIS Tx test. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bis</td><td>BIS context. </td></tr>
+    <tr><td class="paramname">payload_type</td><td>Payload length type.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Status error code. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8daa54773d3bdfffa96a780facf916bc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t ll_bis_unpack_hdr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__defines_8h.html#structbis__pdu__hdr__t">bis_pdu_hdr_t</a> *&#160;</td>
+          <td class="paramname"><em>pHdr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>pBuf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unpack a BIS data channel PDU header. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pHdr</td><td>Unpacked header. </td></tr>
+    <tr><td class="paramname">pBuf</td><td>Packed packet buffer.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Header length. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aacc18a5b44e740e876ab74a42891992d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t ll_get_number_avail_bis </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the number of available BIS contexts. </p>
+<dl class="section return"><dt>返回</dt><dd>Number of available BIS contexts. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9c2385571a577d45ac1daf487dd05c72"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_iso_bis_sdu_recombination </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__bis_8h.html#structle__bis__t">le_bis_t</a> *&#160;</td>
+          <td class="paramname"><em>bis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ll__defines_8h.html#a194765d07627a538aa212cf97446626c">bis_pdu_t</a> *&#160;</td>
+          <td class="paramname"><em>pdu</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>: ll_iso_bis_sdu_recombination</p>
+<p>: bis  : pdu </p>
+<p>&lt; Complete SDU</p>
+<p>&lt; End SDU</p>
+<p>&lt; First SDU</p>
+<p>&lt; Continue SDU </p>
+
+</div>
+</div>
+<a class="anchor" id="a785516f525901cd9bb4d618fe27a2e0b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ll_send_acad_msg_id </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__bis_8h.html#structle__big__t">le_big_t</a> *&#160;</td>
+          <td class="paramname"><em>big</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>msg_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afcf3c9b51dc2bdd8d60aafd4ade4c19e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ll_send_big_slv_msg_id </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__bis_8h.html#structle__big__t">le_big_t</a> *&#160;</td>
+          <td class="paramname"><em>big</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>msg_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2ddb8141353278853fd90ef4c57f4ea6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void llcp_big_slv_sm_run </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__bis_8h.html#structle__big__t">le_big_t</a> *&#160;</td>
+          <td class="paramname"><em>big</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>: llcp_big_slv_sm_run</p>
+<p>: big  : event  : data </p>
+
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a class="anchor" id="ae1e65f2a672b1526c01f098ec8b268fb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ll__bis_8h.html#structll__codec__t">ll_codec_t</a> ll_codec</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Codec event handlers. </p>
+<p>Codec event handlers. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

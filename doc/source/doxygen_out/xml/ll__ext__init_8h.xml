@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="ll__ext__init_8h" kind="file" language="C++">
+    <compoundname>ll_ext_init.h</compoundname>
+    <includes local="yes">typedef.h</includes>
+    <includedby refid="extended__advertising_8h" local="yes">/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/extended_advertising.h</includedby>
+    <incdepgraph>
+      <node id="4933">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_init.h</label>
+        <link refid="ll_ext_init.h"/>
+        <childnode refid="4934" relation="include">
+        </childnode>
+      </node>
+      <node id="4934">
+        <label>typedef.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4936">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/extended_advertising.h</label>
+        <link refid="extended__advertising_8h"/>
+      </node>
+      <node id="4935">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_init.h</label>
+        <link refid="ll_ext_init.h"/>
+        <childnode refid="4936" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structle__ext__init__link" prot="public">le_ext_init_link</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="ll__ext__init_8h_1afedf924f916f4ab3efce694f0676d90b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void destroy_le_ext_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>destroy_le_ext_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_init.h" line="20" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__ext__init_8h_1a9fb95cddb7888c44f8b8d7cc2fd9ba99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ll_ext_init_rx_post_process</definition>
+        <argsstring>(int *empty)</argsstring>
+        <name>ll_ext_init_rx_post_process</name>
+        <param>
+          <type>int *</type>
+          <declname>empty</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_init.h" line="21" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__ext__init_8h_1ae84f6e47dae6779629f5e8c6b5c0153b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ll_ext_init_open</definition>
+        <argsstring>(void)</argsstring>
+        <name>ll_ext_init_open</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_init.h" line="27" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>__LL_EXT_INIT_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__LL_EXT_INIT_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;typedef.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="structle__ext__init__link" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structle__ext__init__link" kindref="compound">le_ext_init_link</ref><sp/>{</highlight></codeline>
+<codeline lineno="7" refid="structle__ext__init__link_1ae78483c9f037f3116f8bfdd42433fa67" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structle__ext__init__link_1ae78483c9f037f3116f8bfdd42433fa67" kindref="member">primary_legacy_hw</ref>;</highlight></codeline>
+<codeline lineno="8" refid="structle__ext__init__link_1a00b103b11fcfde7da1bfc7b756511d98" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structle__ext__init__link_1a00b103b11fcfde7da1bfc7b756511d98" kindref="member">hw</ref>;</highlight></codeline>
+<codeline lineno="9" refid="structle__ext__init__link_1ab3e6c539fa0261f055497833c686e514" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structle__link" kindref="compound">le_link</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structle__ext__init__link_1ab3e6c539fa0261f055497833c686e514" kindref="member">connect_link</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="structle__ext__init__link_1a096b39863b58bdb271b7ea7468f45e16" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">ble_ext_init<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structle__ext__init__link_1a096b39863b58bdb271b7ea7468f45e16" kindref="member">extended_init</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="structle__ext__init__link_1a202f1b33c4f769946bf9c1522e48761c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structle__ext__init__link_1a202f1b33c4f769946bf9c1522e48761c" kindref="member">state</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">/*-----------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>LL<sp/>Internal<sp/>API</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__ext__init_8h_1afedf924f916f4ab3efce694f0676d90b" kindref="member">destroy_le_ext_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__ext__init_8h_1a9fb95cddb7888c44f8b8d7cc2fd9ba99" kindref="member">ll_ext_init_rx_post_process</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*empty);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">/*-----------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Link<sp/>Layer<sp/>API</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ll__ext__init_8h_1ae84f6e47dae6779629f5e8c6b5c0153b" kindref="member">ll_ext_init_open</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__LL_EXT_INIT_H__<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_init.h"/>
+  </compounddef>
+</doxygen>

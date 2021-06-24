@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structle__big__t_8bcp" kind="struct" language="C++" prot="public">
+    <compoundname>le_big_t.bcp</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structle__big__t_8bcp_1aa54e120143d3ef215840db6a12097dbd" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>actMsk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Active control procedure bitmask. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="166" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__big__t_8bcp_1afca4b44a95561de5a0d5736f7f9b38bc" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>pendMsk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pending control procedure bitmask. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="167" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__big__t_8bcp_1a85e85fac9061dfe61792a485b8d68fc4" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>cssn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Control Subevent Sequence Number </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="168" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__big__t_8bcp_1a9b9677be44201382ad2ff54e8bd99ffa" prot="public" static="no" mutable="no">
+        <type>struct le_big_t::@18::@21</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>chanMapUpd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Channel Map Update data. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="172" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__big__t_8bcp_1ab4dad0fe5fbef2c0e24d9db1cc69e5a2" prot="public" static="no" mutable="no">
+        <type>struct le_big_t::@18::@22</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>term</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Terminate data. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="176" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="165" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="165" bodyend="177"/>
+    <listofallmembers>
+      <member refid="structle__big__t_8bcp_1aa54e120143d3ef215840db6a12097dbd" prot="public" virt="non-virtual"><scope>le_big_t.bcp</scope><name>actMsk</name></member>
+      <member refid="structle__big__t_8bcp_1a9b9677be44201382ad2ff54e8bd99ffa" prot="public" virt="non-virtual"><scope>le_big_t.bcp</scope><name>chanMapUpd</name></member>
+      <member refid="structle__big__t_8bcp_1a85e85fac9061dfe61792a485b8d68fc4" prot="public" virt="non-virtual"><scope>le_big_t.bcp</scope><name>cssn</name></member>
+      <member refid="structle__big__t_8bcp_1afca4b44a95561de5a0d5736f7f9b38bc" prot="public" virt="non-virtual"><scope>le_big_t.bcp</scope><name>pendMsk</name></member>
+      <member refid="structle__big__t_8bcp_1ab4dad0fe5fbef2c0e24d9db1cc69e5a2" prot="public" virt="non-virtual"><scope>le_big_t.bcp</scope><name>term</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

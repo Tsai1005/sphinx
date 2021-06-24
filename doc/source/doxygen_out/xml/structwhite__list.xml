@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structwhite__list" kind="struct" language="C++" prot="public">
+    <compoundname>white_list</compoundname>
+    <includes refid="white__list_8h" local="no">white_list.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwhite__list_1a1a66e0e089bf8661213386ff176d31fa" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structwhite__list__parameter" kindref="compound">white_list_parameter</ref></type>
+        <definition>struct white_list_parameter white_list::white_list_param</definition>
+        <argsstring></argsstring>
+        <name>white_list_param</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/white_list.h" line="11" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/white_list.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwhite__list_1aba79949e4d66abe7d1321fe6d7479095" prot="public" static="no" mutable="no">
+        <type>struct list_head</type>
+        <definition>struct list_head white_list::entry</definition>
+        <argsstring></argsstring>
+        <name>entry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/white_list.h" line="11" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/white_list.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwhite__list_1abaff45f8ec170e73f3b789f7afd37eed" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 white_list::cnt</definition>
+        <argsstring></argsstring>
+        <name>cnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/white_list.h" line="18" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/white_list.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1735">
+        <label>white_list</label>
+        <link refid="structwhite__list"/>
+        <childnode refid="1736" relation="usage">
+          <edgelabel>white_list_param</edgelabel>
+        </childnode>
+      </node>
+      <node id="1736">
+        <label>white_list_parameter</label>
+        <link refid="structwhite__list__parameter"/>
+      </node>
+    </collaborationgraph>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/white_list.h" line="14" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/white_list.h" bodystart="14" bodyend="19"/>
+    <listofallmembers>
+      <member refid="structwhite__list_1abaff45f8ec170e73f3b789f7afd37eed" prot="public" virt="non-virtual"><scope>white_list</scope><name>cnt</name></member>
+      <member refid="structwhite__list_1aba79949e4d66abe7d1321fe6d7479095" prot="public" virt="non-virtual"><scope>white_list</scope><name>entry</name></member>
+      <member refid="structwhite__list_1a1a66e0e089bf8661213386ff176d31fa" prot="public" virt="non-virtual"><scope>white_list</scope><name>white_list_param</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

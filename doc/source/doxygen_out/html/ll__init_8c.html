@@ -1,0 +1,864 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>JL Adapter SDK: /data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_init.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">JL Adapter SDK
+   &#160;<span id="projectnumber">v0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_5aa4d6ccf34d88a270949875c15714e5.html">btctrler</a></li><li class="navelem"><a class="el" href="dir_16b18ce1fc07a124435f964aa38ae307.html">BLE_v2</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle">
+<div class="title">ll_init.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;sfr.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="link__layer_8h_source.html">ble/link_layer.h</a>&quot;</code><br />
+<code>#include &quot;stdarg.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="h4__transport_8h_source.html">h4_transport.h</a>&quot;</code><br />
+<code>#include &quot;RF_ble.h&quot;</code><br />
+<code>#include &quot;btcontroller_util.h&quot;</code><br />
+<code>#include &quot;btcontroller_heap.h&quot;</code><br />
+<code>#include &quot;tomcrypt.h&quot;</code><br />
+<code>#include &quot;hci_controller.h&quot;</code><br />
+<code>#include &quot;misc_interface.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="resolve__list_8h_source.html">ble/resolve_list.h</a>&quot;</code><br />
+<code>#include &quot;common/debug.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+ll_init.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="ll__init_8c__incl.png" border="0" usemap="#_2data_2bingquan_2repo_2repo__adapter_2adapter__sdk_2lib_2btctrler_2BLE__v2_2ll__init_8c" alt=""/></div>
+<map name="_2data_2bingquan_2repo_2repo__adapter_2adapter__sdk_2lib_2btctrler_2BLE__v2_2ll__init_8c" id="_2data_2bingquan_2repo_2repo__adapter_2adapter__sdk_2lib_2btctrler_2BLE__v2_2ll__init_8c">
+<area shape="rect" id="node3" href="link__layer_8h.html" title="ble/link_layer.h" alt="" coords="1007,124,1116,151"/>
+<area shape="rect" id="node17" href="resolve__list_8h.html" title="resolve_list.h" alt="" coords="1658,199,1756,225"/>
+<area shape="rect" id="node28" href="h4__transport_8h.html" title="h4_transport.h" alt="" coords="1732,273,1837,300"/>
+<area shape="rect" id="node9" href="ll__defines_8h.html" title="ll_defines.h" alt="" coords="1318,348,1406,375"/>
+<area shape="rect" id="node10" href="white__list_8h.html" title="white_list.h" alt="" coords="1540,348,1628,375"/>
+<area shape="rect" id="node13" href="llcp_8h.html" title="ble/llcp.h" alt="" coords="1508,273,1583,300"/>
+<area shape="rect" id="node14" href="ll__adv_8h.html" title="ble/ll_adv.h" alt="" coords="726,199,814,225"/>
+<area shape="rect" id="node15" href="ll__scan_8h.html" title="ble/ll_scan.h" alt="" coords="838,199,933,225"/>
+<area shape="rect" id="node16" href="ll__init_8h.html" title="ble/ll_init.h" alt="" coords="445,199,529,225"/>
+<area shape="rect" id="node18" href="data__extension_8h.html" title="data_extension.h" alt="" coords="377,348,498,375"/>
+<area shape="rect" id="node19" href="multiple__phys_8h.html" title="multiple_phys.h" alt="" coords="604,348,717,375"/>
+<area shape="rect" id="node20" href="ll__cte_8h.html" title="ble/ll_cte.h" alt="" coords="1399,273,1484,300"/>
+<area shape="rect" id="node21" href="ll__iso_8h.html" title="ble/ll_iso.h" alt="" coords="1002,273,1086,300"/>
+<area shape="rect" id="node23" href="ll__bis_8h.html" title="ble/ll_bis.h" alt="" coords="1168,199,1252,225"/>
+<area shape="rect" id="node25" href="ll__cis_8h.html" title="ble/ll_cis.h" alt="" coords="1060,199,1144,225"/>
+<area shape="rect" id="node26" href="ll__pc_8h.html" title="ble/ll_pc.h" alt="" coords="1242,273,1324,300"/>
+<area shape="rect" id="node24" href="audio__codec_8h.html" title="audio_codec.h" alt="" coords="1111,273,1218,300"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+结构体</h2></td></tr>
+<tr class="memitem:structll__init__hdl"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__init_8c.html#structll__init__hdl">ll_init_hdl</a></td></tr>
+<tr class="separator:structll__init__hdl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a6c6991cba0e2995d7d9aec73e0324317"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__init_8c.html#a6c6991cba0e2995d7d9aec73e0324317">LOG_TAG_CONST</a>&#160;&#160;&#160;LL_INIT</td></tr>
+<tr class="separator:a6c6991cba0e2995d7d9aec73e0324317"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ce0df38eb467e59f209470c8f5ac4e6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__init_8c.html#a7ce0df38eb467e59f209470c8f5ac4e6">LOG_TAG</a>&#160;&#160;&#160;&quot;[LL-Init]&quot;</td></tr>
+<tr class="separator:a7ce0df38eb467e59f209470c8f5ac4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eeb6e067100d0dec6e53bce19a403e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__init_8c.html#a9eeb6e067100d0dec6e53bce19a403e0">LOG_ERROR_ENABLE</a></td></tr>
+<tr class="separator:a9eeb6e067100d0dec6e53bce19a403e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69321c8a2a0b07a07fb5088e82e25eb0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__init_8c.html#a69321c8a2a0b07a07fb5088e82e25eb0">LOG_INFO_ENABLE</a></td></tr>
+<tr class="separator:a69321c8a2a0b07a07fb5088e82e25eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04135f631fe91199f05b1d816dda8756"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__init_8c.html#a04135f631fe91199f05b1d816dda8756">LOG_DUMP_ENABLE</a></td></tr>
+<tr class="separator:a04135f631fe91199f05b1d816dda8756"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad223350d80db21fa8b721107cd1f6442"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__init_8c.html#ad223350d80db21fa8b721107cd1f6442">__this</a>&#160;&#160;&#160;(<a class="el" href="ll__init_8c.html#aecb715deb53f5d6b171602ab545ffcc9">init_hdl</a>)</td></tr>
+<tr class="separator:ad223350d80db21fa8b721107cd1f6442"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a297f3f4a4e54c27e3504e2d1829c859c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__init_8c.html#a297f3f4a4e54c27e3504e2d1829c859c">master_rx_conn_post_handler</a> (struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *link, struct ble_rx *rx)</td></tr>
+<tr class="separator:a297f3f4a4e54c27e3504e2d1829c859c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa72aff6b6d648d1f642db2d53a738fb9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__init_8c.html#aa72aff6b6d648d1f642db2d53a738fb9">ll_channel_info_init</a> (struct ble_conn_param *ll_data)</td></tr>
+<tr class="separator:aa72aff6b6d648d1f642db2d53a738fb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7b9cae61418407cc093ebb9e244d0a1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__init_8c.html#ab7b9cae61418407cc093ebb9e244d0a1">ll_init_init</a> (void)</td></tr>
+<tr class="separator:ab7b9cae61418407cc093ebb9e244d0a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91518ab5a12480c5c5a95cc0400f6c11"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__init_8c.html#a91518ab5a12480c5c5a95cc0400f6c11">ll_init_destroy</a> (void)</td></tr>
+<tr class="separator:a91518ab5a12480c5c5a95cc0400f6c11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af992cebef46a52b201add4f25320548b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__init_8c.html#af992cebef46a52b201add4f25320548b">__set_ll_init_local_RPA</a> (struct <a class="el" href="ll__init_8h.html#structle__init__link">le_init_link</a> *link, struct ble_rx *rx, struct <a class="el" href="resolve__list_8h.html#structresolving__list">resolving_list</a> *resolving_list_t)</td></tr>
+<tr class="separator:af992cebef46a52b201add4f25320548b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac525b28b05ed3ade3f3b16f35516d865"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="resolve__list_8h.html#structresolving__list">resolving_list</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__init_8c.html#ac525b28b05ed3ade3f3b16f35516d865">ll_init_state_RPA_process</a> (struct <a class="el" href="ll__init_8h.html#structle__init__link">le_init_link</a> *link, struct ble_rx *rx)</td></tr>
+<tr class="separator:ac525b28b05ed3ade3f3b16f35516d865"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64b3d4fbc9141e3b977aff0e0cd11bd3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__init_8c.html#a64b3d4fbc9141e3b977aff0e0cd11bd3">ll_init_set_peer_wla</a> (struct <a class="el" href="ll__init_8h.html#structle__init__link">le_init_link</a> *link)</td></tr>
+<tr class="separator:a64b3d4fbc9141e3b977aff0e0cd11bd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4de2879ee991f16192d94bdde192728"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__init_8c.html#ac4de2879ee991f16192d94bdde192728">ll_init_state_filter_process</a> (struct <a class="el" href="ll__init_8h.html#structle__init__link">le_init_link</a> *link, struct ble_rx *rx, struct <a class="el" href="resolve__list_8h.html#structresolving__list">resolving_list</a> *resolving_list_t)</td></tr>
+<tr class="separator:ac4de2879ee991f16192d94bdde192728"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f8f71a789df6e655319e0a8bf21709d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__init_8c.html#a6f8f71a789df6e655319e0a8bf21709d">le_ll_init_addr_process</a> (struct <a class="el" href="ll__init_8h.html#structle__init__link">le_init_link</a> *link, struct ble_rx *rx)</td></tr>
+<tr class="separator:a6f8f71a789df6e655319e0a8bf21709d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abffd6cff02dc5a5b09b545826ce3fba3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__init_8c.html#abffd6cff02dc5a5b09b545826ce3fba3">__set_ll_init_peer_addr</a> (struct <a class="el" href="ll__init_8h.html#structle__init__link">le_init_link</a> *link)</td></tr>
+<tr class="separator:abffd6cff02dc5a5b09b545826ce3fba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04b1f44d357dc30ec01e375330022d46"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__init_8c.html#a04b1f44d357dc30ec01e375330022d46">__set_ll_init_state</a> (struct <a class="el" href="ll__init_8h.html#structle__init__link">le_init_link</a> *init_link)</td></tr>
+<tr class="separator:a04b1f44d357dc30ec01e375330022d46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab24ccca4d147c27fb3bdaa320351d437"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__init_8c.html#ab24ccca4d147c27fb3bdaa320351d437">init_rx_probe_handler</a> (void *priv, struct ble_rx *rx)</td></tr>
+<tr class="separator:ab24ccca4d147c27fb3bdaa320351d437"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab79466d93dbd5a29b45546fde2809faa"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__init_8c.html#ab79466d93dbd5a29b45546fde2809faa">ll_enter_conn_state</a> (struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *link, struct ble_rx *rx)</td></tr>
+<tr class="separator:ab79466d93dbd5a29b45546fde2809faa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5133ece6329400692116fff71bae9bb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__init_8c.html#ae5133ece6329400692116fff71bae9bb">__init_rx_post_handler</a> (void *priv, struct ble_rx *rx)</td></tr>
+<tr class="separator:ae5133ece6329400692116fff71bae9bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaca643e0ffd0dcab27df48bae5ff6e8c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__init_8c.html#aaca643e0ffd0dcab27df48bae5ff6e8c">init_rx_post_handler</a> (void)</td></tr>
+<tr class="separator:aaca643e0ffd0dcab27df48bae5ff6e8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06e1ee5ef24038290232b9ea5368f242"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__init_8c.html#a06e1ee5ef24038290232b9ea5368f242">init_sync_param_handler</a> (void *priv, u8 *data, u16 size)</td></tr>
+<tr class="separator:a06e1ee5ef24038290232b9ea5368f242"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87d8d3ddda708b61c76dae8b2c793ad0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__init_8c.html#a87d8d3ddda708b61c76dae8b2c793ad0">ll_init_open</a> (const u8 *data)</td></tr>
+<tr class="separator:a87d8d3ddda708b61c76dae8b2c793ad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b001c687c4393c4cea5c5e26b426895"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__init_8c.html#a3b001c687c4393c4cea5c5e26b426895">ll_init_close</a> (void)</td></tr>
+<tr class="separator:a3b001c687c4393c4cea5c5e26b426895"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a3121df323ed9383628fe79a04b95eb"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="ll__init_8h.html#structle__init__link">le_init_link</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__init_8c.html#a9a3121df323ed9383628fe79a04b95eb">ll_init_link_get</a> (void)</td></tr>
+<tr class="separator:a9a3121df323ed9383628fe79a04b95eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:aecb715deb53f5d6b171602ab545ffcc9"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="ll__init_8c.html#structll__init__hdl">ll_init_hdl</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__init_8c.html#aecb715deb53f5d6b171602ab545ffcc9">init_hdl</a> = NULL</td></tr>
+<tr class="separator:aecb715deb53f5d6b171602ab545ffcc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a012f40149b9bdf181a3a4944b5f91626"><td class="memItemLeft" align="right" valign="top">static const struct ble_handler&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__init_8c.html#a012f40149b9bdf181a3a4944b5f91626">init_handler</a></td></tr>
+<tr class="separator:a012f40149b9bdf181a3a4944b5f91626"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/><h2 class="groupheader">结构体说明</h2>
+<a name="structll__init__hdl" id="structll__init__hdl"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct ll_init_hdl</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><div class="dynheader">
+ll_init_hdl 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="structll__init__hdl__coll__graph.png" border="0" usemap="#ll__init__hdl_coll__map" alt="Collaboration graph"/></div>
+<map name="ll__init__hdl_coll__map" id="ll__init__hdl_coll__map">
+<area shape="rect" id="node2" href="ll__defines_8h.html#structconnection__parameter" title="connection_parameter" alt="" coords="5,5,156,32"/>
+<area shape="rect" id="node3" href="ll__init_8h.html#structle__init__link" title="le_init_link" alt="" coords="181,5,263,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="adef26aa6e7451fe79a31627782fee5fd"></a>struct <a class="el" href="ll__defines_8h.html#structconnection__parameter">connection_parameter</a></td>
+<td class="fieldname">
+conn_param</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a62c12a0452ad9a564e743eaa761bc81b"></a>struct <a class="el" href="ll__init_8h.html#structle__init__link">le_init_link</a> *</td>
+<td class="fieldname">
+init_link</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">宏定义说明</h2>
+<a class="anchor" id="ad223350d80db21fa8b721107cd1f6442"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __this&#160;&#160;&#160;(<a class="el" href="ll__init_8c.html#aecb715deb53f5d6b171602ab545ffcc9">init_hdl</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a04135f631fe91199f05b1d816dda8756"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_DUMP_ENABLE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9eeb6e067100d0dec6e53bce19a403e0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_ERROR_ENABLE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a69321c8a2a0b07a07fb5088e82e25eb0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_INFO_ENABLE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7ce0df38eb467e59f209470c8f5ac4e6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_TAG&#160;&#160;&#160;&quot;[LL-Init]&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6c6991cba0e2995d7d9aec73e0324317"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_TAG_CONST&#160;&#160;&#160;LL_INIT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="ae5133ece6329400692116fff71bae9bb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void __init_rx_post_handler </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>priv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct ble_rx *&#160;</td>
+          <td class="paramname"><em>rx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af992cebef46a52b201add4f25320548b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void __set_ll_init_local_RPA </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="ll__init_8h.html#structle__init__link">le_init_link</a> *&#160;</td>
+          <td class="paramname"><em>link</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct ble_rx *&#160;</td>
+          <td class="paramname"><em>rx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="resolve__list_8h.html#structresolving__list">resolving_list</a> *&#160;</td>
+          <td class="paramname"><em>resolving_list_t</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abffd6cff02dc5a5b09b545826ce3fba3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void __set_ll_init_peer_addr </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="ll__init_8h.html#structle__init__link">le_init_link</a> *&#160;</td>
+          <td class="paramname"><em>link</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a04b1f44d357dc30ec01e375330022d46"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void __set_ll_init_state </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="ll__init_8h.html#structle__init__link">le_init_link</a> *&#160;</td>
+          <td class="paramname"><em>init_link</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aaca643e0ffd0dcab27df48bae5ff6e8c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int init_rx_post_handler </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab24ccca4d147c27fb3bdaa320351d437"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void init_rx_probe_handler </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>priv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct ble_rx *&#160;</td>
+          <td class="paramname"><em>rx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a06e1ee5ef24038290232b9ea5368f242"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void init_sync_param_handler </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>priv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6f8f71a789df6e655319e0a8bf21709d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void le_ll_init_addr_process </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="ll__init_8h.html#structle__init__link">le_init_link</a> *&#160;</td>
+          <td class="paramname"><em>link</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct ble_rx *&#160;</td>
+          <td class="paramname"><em>rx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa72aff6b6d648d1f642db2d53a738fb9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_channel_info_init </td>
+          <td>(</td>
+          <td class="paramtype">struct ble_conn_param *&#160;</td>
+          <td class="paramname"><em>ll_data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab79466d93dbd5a29b45546fde2809faa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ll_enter_conn_state </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *&#160;</td>
+          <td class="paramname"><em>link</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct ble_rx *&#160;</td>
+          <td class="paramname"><em>rx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3b001c687c4393c4cea5c5e26b426895"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ll_init_close </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a91518ab5a12480c5c5a95cc0400f6c11"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ll_init_destroy </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab7b9cae61418407cc093ebb9e244d0a1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ll_init_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9a3121df323ed9383628fe79a04b95eb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="ll__init_8h.html#structle__init__link">le_init_link</a>* ll_init_link_get </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a87d8d3ddda708b61c76dae8b2c793ad0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ll_init_open </td>
+          <td>(</td>
+          <td class="paramtype">const u8 *&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a64b3d4fbc9141e3b977aff0e0cd11bd3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ll_init_set_peer_wla </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="ll__init_8h.html#structle__init__link">le_init_link</a> *&#160;</td>
+          <td class="paramname"><em>link</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac4de2879ee991f16192d94bdde192728"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ll_init_state_filter_process </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="ll__init_8h.html#structle__init__link">le_init_link</a> *&#160;</td>
+          <td class="paramname"><em>link</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct ble_rx *&#160;</td>
+          <td class="paramname"><em>rx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="resolve__list_8h.html#structresolving__list">resolving_list</a> *&#160;</td>
+          <td class="paramname"><em>resolving_list_t</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac525b28b05ed3ade3f3b16f35516d865"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="resolve__list_8h.html#structresolving__list">resolving_list</a>* ll_init_state_RPA_process </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="ll__init_8h.html#structle__init__link">le_init_link</a> *&#160;</td>
+          <td class="paramname"><em>link</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct ble_rx *&#160;</td>
+          <td class="paramname"><em>rx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a297f3f4a4e54c27e3504e2d1829c859c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void master_rx_conn_post_handler </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *&#160;</td>
+          <td class="paramname"><em>link</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct ble_rx *&#160;</td>
+          <td class="paramname"><em>rx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a class="anchor" id="a012f40149b9bdf181a3a4944b5f91626"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const struct ble_handler init_handler</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>初始值:</b><div class="fragment"><div class="line">= {</div><div class="line">    .rx_probe_handler   = <a class="code" href="ll__init_8c.html#ab24ccca4d147c27fb3bdaa320351d437">init_rx_probe_handler</a>,</div><div class="line">    .sync_param_handler = <a class="code" href="ll__init_8c.html#a06e1ee5ef24038290232b9ea5368f242">init_sync_param_handler</a>,</div><div class="line">}</div><div class="ttc" id="ll__init_8c_html_a06e1ee5ef24038290232b9ea5368f242"><div class="ttname"><a href="ll__init_8c.html#a06e1ee5ef24038290232b9ea5368f242">init_sync_param_handler</a></div><div class="ttdeci">static void init_sync_param_handler(void *priv, u8 *data, u16 size)</div><div class="ttdef"><b>Definition:</b> ll_init.c:386</div></div>
+<div class="ttc" id="ll__init_8c_html_ab24ccca4d147c27fb3bdaa320351d437"><div class="ttname"><a href="ll__init_8c.html#ab24ccca4d147c27fb3bdaa320351d437">init_rx_probe_handler</a></div><div class="ttdeci">static void init_rx_probe_handler(void *priv, struct ble_rx *rx)</div><div class="ttdef"><b>Definition:</b> ll_init.c:280</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="aecb715deb53f5d6b171602ab545ffcc9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="ll__init_8c.html#structll__init__hdl">ll_init_hdl</a>* init_hdl = NULL</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structftNode" kind="struct" language="C++" prot="public">
+    <compoundname>ftNode</compoundname>
+    <includes refid="ll__cis_8h" local="no">ll_cis.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structftNode_1a823717cbb7c1b135ec6816828f7f5b76" prot="public" static="no" mutable="no">
+        <type><ref refid="structlctrFtParam__t" kindref="compound">lctrFtParam_t</ref></type>
+        <definition>lctrFtParam_t ftNode::ftParam</definition>
+        <argsstring></argsstring>
+        <name>ftParam</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flush time parameter. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="96" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structftNode_1a47834a8f77c1365e9cbb83d2b81bf32e" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structftNode" kindref="compound">ftNode</ref> *</type>
+        <definition>struct ftNode* ftNode::pNext</definition>
+        <argsstring></argsstring>
+        <name>pNext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to the next node. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="97" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Flush timeout parameter node. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1056">
+        <label>ftNode</label>
+        <link refid="structftNode"/>
+        <childnode refid="1056" relation="usage">
+          <edgelabel>pNext</edgelabel>
+        </childnode>
+        <childnode refid="1057" relation="usage">
+          <edgelabel>ftParam</edgelabel>
+        </childnode>
+      </node>
+      <node id="1057">
+        <label>lctrFtParam_t</label>
+        <link refid="structlctrFtParam__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="95" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="95" bodyend="98"/>
+    <listofallmembers>
+      <member refid="structftNode_1a823717cbb7c1b135ec6816828f7f5b76" prot="public" virt="non-virtual"><scope>ftNode</scope><name>ftParam</name></member>
+      <member refid="structftNode_1a47834a8f77c1365e9cbb83d2b81bf32e" prot="public" virt="non-virtual"><scope>ftNode</scope><name>pNext</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

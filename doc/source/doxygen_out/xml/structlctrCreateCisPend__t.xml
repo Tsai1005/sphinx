@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structlctrCreateCisPend__t" kind="struct" language="C++" prot="public">
+    <compoundname>lctrCreateCisPend_t</compoundname>
+    <includes refid="ll__iso_8h" local="no">ll_iso.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlctrCreateCisPend__t_1a634e459898ceed90c5434606abdde653" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lctrCreateCisPend_t::numCis</definition>
+        <argsstring></argsstring>
+        <name>numCis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of CISs to create. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="229" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrCreateCisPend__t_1ab4657081c6102987d00ba2329dd30374" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lctrCreateCisPend_t::cisHandle[LL_MAX_CIS]</definition>
+        <argsstring>[LL_MAX_CIS]</argsstring>
+        <name>cisHandle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CIS handle array. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="230" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrCreateCisPend__t_1acfdca76530f09e456ecbebdb32b4d249" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lctrCreateCisPend_t::aclHandle[LL_MAX_CIS]</definition>
+        <argsstring>[LL_MAX_CIS]</argsstring>
+        <name>aclHandle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ACL handle array. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="231" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrCreateCisPend__t_1ad49c2f579fdd6b51a691968374520607" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lctrCreateCisPend_t::isCreateCisDone[LL_MAX_CIS]</definition>
+        <argsstring>[LL_MAX_CIS]</argsstring>
+        <name>isCreateCisDone</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TRUE if create CIS is done, either succeed or fail. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="232" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Create CIS pending. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="228" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="228" bodyend="233"/>
+    <listofallmembers>
+      <member refid="structlctrCreateCisPend__t_1acfdca76530f09e456ecbebdb32b4d249" prot="public" virt="non-virtual"><scope>lctrCreateCisPend_t</scope><name>aclHandle</name></member>
+      <member refid="structlctrCreateCisPend__t_1ab4657081c6102987d00ba2329dd30374" prot="public" virt="non-virtual"><scope>lctrCreateCisPend_t</scope><name>cisHandle</name></member>
+      <member refid="structlctrCreateCisPend__t_1ad49c2f579fdd6b51a691968374520607" prot="public" virt="non-virtual"><scope>lctrCreateCisPend_t</scope><name>isCreateCisDone</name></member>
+      <member refid="structlctrCreateCisPend__t_1a634e459898ceed90c5434606abdde653" prot="public" virt="non-virtual"><scope>lctrCreateCisPend_t</scope><name>numCis</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

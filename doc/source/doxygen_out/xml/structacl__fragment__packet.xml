@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structacl__fragment__packet" kind="struct" language="C++" prot="public">
+    <compoundname>acl_fragment_packet</compoundname>
+    <includes refid="link__layer_8h" local="no">link_layer.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structacl__fragment__packet_1acefb1a63c74d55644448acd51339fb3d" prot="public" static="no" mutable="no">
+        <type>struct list_head</type>
+        <definition>struct list_head acl_fragment_packet::entry</definition>
+        <argsstring></argsstring>
+        <name>entry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="496" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="513" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structacl__fragment__packet_1a1e6ac0e71e90e17cc34171cb41fef431" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 acl_fragment_packet::num_acl_packets_sent</definition>
+        <argsstring></argsstring>
+        <name>num_acl_packets_sent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="514" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="514" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="512" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="512" bodyend="515"/>
+    <listofallmembers>
+      <member refid="structacl__fragment__packet_1acefb1a63c74d55644448acd51339fb3d" prot="public" virt="non-virtual"><scope>acl_fragment_packet</scope><name>entry</name></member>
+      <member refid="structacl__fragment__packet_1a1e6ac0e71e90e17cc34171cb41fef431" prot="public" virt="non-virtual"><scope>acl_fragment_packet</scope><name>num_acl_packets_sent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,299 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structlmp__tws__sniff" kind="struct" language="C++" prot="public">
+    <compoundname>lmp_tws_sniff</compoundname>
+    <includes refid="tws__sniff_8h" local="no">tws_sniff.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlmp__tws__sniff_1a1c3bbdf9c50e4f2524cc35d7a4f243c9" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_tws_sniff::enable</definition>
+        <argsstring></argsstring>
+        <name>enable</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" line="13" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__tws__sniff_1ac53269ea4de97e6ebcea5efc15ea5575" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_tws_sniff::sync</definition>
+        <argsstring></argsstring>
+        <name>sync</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" line="14" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__tws__sniff_1a6bef54e0c4008c4ca25fead094c3bb75" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_tws_sniff::witchout_phone</definition>
+        <argsstring></argsstring>
+        <name>witchout_phone</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" line="15" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__tws__sniff_1a4c43f4cfb3c68e12b776c315f2e90e86" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_tws_sniff::unsniff_retry</definition>
+        <argsstring></argsstring>
+        <name>unsniff_retry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" line="17" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__tws__sniff_1a19b429f6e29e6bf78bd9a3113da2eb1b" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_tws_sniff::ap_check_retry</definition>
+        <argsstring></argsstring>
+        <name>ap_check_retry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" line="18" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__tws__sniff_1aa396625f3d59e5ade8187609b4ccb090" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_tws_sniff::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" line="20" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__tws__sniff_1ab39cc14b29aff94eb8828dad96f8d208" prot="public" static="no" mutable="no">
+        <type>s8</type>
+        <definition>s8 lmp_tws_sniff::wakeup_offset</definition>
+        <argsstring></argsstring>
+        <name>wakeup_offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" line="21" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__tws__sniff_1a5fafa76e441b7b57d30ec14c3803ca6c" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_tws_sniff::timer</definition>
+        <argsstring></argsstring>
+        <name>timer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" line="24" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__tws__sniff_1a956165a7c2d5ccff668144e6064a9273" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_tws_sniff::reset_timer</definition>
+        <argsstring></argsstring>
+        <name>reset_timer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" line="27" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__tws__sniff_1a76a9472f179eb1ae9b17629caf9cb0bb" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_tws_sniff::timing_control_flags</definition>
+        <argsstring></argsstring>
+        <name>timing_control_flags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" line="30" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__tws__sniff_1ac1d3b556e820352c0bba87215e6b40c4" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 lmp_tws_sniff::D_sniff</definition>
+        <argsstring></argsstring>
+        <name>D_sniff</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" line="31" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__tws__sniff_1ac2c9a263f77b16c0501e6a800c131e3b" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 lmp_tws_sniff::T_sniff</definition>
+        <argsstring></argsstring>
+        <name>T_sniff</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" line="32" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__tws__sniff_1aa05bdff673cce4d161199a6bcfe18ec7" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 lmp_tws_sniff::attempt</definition>
+        <argsstring></argsstring>
+        <name>attempt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" line="33" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__tws__sniff_1a3c4183179eee3a2b96240cc9fe19652c" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 lmp_tws_sniff::timeout</definition>
+        <argsstring></argsstring>
+        <name>timeout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" line="34" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__tws__sniff_1ae0b2a6238c28edc58327fd2b99b0a09d" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 lmp_tws_sniff::D_sniff_bk</definition>
+        <argsstring></argsstring>
+        <name>D_sniff_bk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" line="35" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__tws__sniff_1ac48f88e84e824bfb7066eca74cca2cc0" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 lmp_tws_sniff::wake_instant</definition>
+        <argsstring></argsstring>
+        <name>wake_instant</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" line="37" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__tws__sniff_1a192798fd4a016c92ba5d4471d112fc93" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 lmp_tws_sniff::pclkoffset</definition>
+        <argsstring></argsstring>
+        <name>pclkoffset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" line="40" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__tws__sniff_1a34a758e6850d9830e8a3bec16f60b6af" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 lmp_tws_sniff::pbitoffset</definition>
+        <argsstring></argsstring>
+        <name>pbitoffset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" line="41" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__tws__sniff_1a4aab8a25d7b50f61db5c8fe6b116c589" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 lmp_tws_sniff::tbitoffset</definition>
+        <argsstring></argsstring>
+        <name>tbitoffset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" line="42" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__tws__sniff_1a4563f9b9b9f172f70a13f2907ff4146b" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 lmp_tws_sniff::cnt</definition>
+        <argsstring></argsstring>
+        <name>cnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" line="44" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" line="12" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h" bodystart="12" bodyend="45"/>
+    <listofallmembers>
+      <member refid="structlmp__tws__sniff_1a19b429f6e29e6bf78bd9a3113da2eb1b" prot="public" virt="non-virtual"><scope>lmp_tws_sniff</scope><name>ap_check_retry</name></member>
+      <member refid="structlmp__tws__sniff_1aa05bdff673cce4d161199a6bcfe18ec7" prot="public" virt="non-virtual"><scope>lmp_tws_sniff</scope><name>attempt</name></member>
+      <member refid="structlmp__tws__sniff_1a4563f9b9b9f172f70a13f2907ff4146b" prot="public" virt="non-virtual"><scope>lmp_tws_sniff</scope><name>cnt</name></member>
+      <member refid="structlmp__tws__sniff_1ac1d3b556e820352c0bba87215e6b40c4" prot="public" virt="non-virtual"><scope>lmp_tws_sniff</scope><name>D_sniff</name></member>
+      <member refid="structlmp__tws__sniff_1ae0b2a6238c28edc58327fd2b99b0a09d" prot="public" virt="non-virtual"><scope>lmp_tws_sniff</scope><name>D_sniff_bk</name></member>
+      <member refid="structlmp__tws__sniff_1a1c3bbdf9c50e4f2524cc35d7a4f243c9" prot="public" virt="non-virtual"><scope>lmp_tws_sniff</scope><name>enable</name></member>
+      <member refid="structlmp__tws__sniff_1a34a758e6850d9830e8a3bec16f60b6af" prot="public" virt="non-virtual"><scope>lmp_tws_sniff</scope><name>pbitoffset</name></member>
+      <member refid="structlmp__tws__sniff_1a192798fd4a016c92ba5d4471d112fc93" prot="public" virt="non-virtual"><scope>lmp_tws_sniff</scope><name>pclkoffset</name></member>
+      <member refid="structlmp__tws__sniff_1a956165a7c2d5ccff668144e6064a9273" prot="public" virt="non-virtual"><scope>lmp_tws_sniff</scope><name>reset_timer</name></member>
+      <member refid="structlmp__tws__sniff_1aa396625f3d59e5ade8187609b4ccb090" prot="public" virt="non-virtual"><scope>lmp_tws_sniff</scope><name>state</name></member>
+      <member refid="structlmp__tws__sniff_1ac53269ea4de97e6ebcea5efc15ea5575" prot="public" virt="non-virtual"><scope>lmp_tws_sniff</scope><name>sync</name></member>
+      <member refid="structlmp__tws__sniff_1ac2c9a263f77b16c0501e6a800c131e3b" prot="public" virt="non-virtual"><scope>lmp_tws_sniff</scope><name>T_sniff</name></member>
+      <member refid="structlmp__tws__sniff_1a4aab8a25d7b50f61db5c8fe6b116c589" prot="public" virt="non-virtual"><scope>lmp_tws_sniff</scope><name>tbitoffset</name></member>
+      <member refid="structlmp__tws__sniff_1a3c4183179eee3a2b96240cc9fe19652c" prot="public" virt="non-virtual"><scope>lmp_tws_sniff</scope><name>timeout</name></member>
+      <member refid="structlmp__tws__sniff_1a5fafa76e441b7b57d30ec14c3803ca6c" prot="public" virt="non-virtual"><scope>lmp_tws_sniff</scope><name>timer</name></member>
+      <member refid="structlmp__tws__sniff_1a76a9472f179eb1ae9b17629caf9cb0bb" prot="public" virt="non-virtual"><scope>lmp_tws_sniff</scope><name>timing_control_flags</name></member>
+      <member refid="structlmp__tws__sniff_1a4c43f4cfb3c68e12b776c315f2e90e86" prot="public" virt="non-virtual"><scope>lmp_tws_sniff</scope><name>unsniff_retry</name></member>
+      <member refid="structlmp__tws__sniff_1ac48f88e84e824bfb7066eca74cca2cc0" prot="public" virt="non-virtual"><scope>lmp_tws_sniff</scope><name>wake_instant</name></member>
+      <member refid="structlmp__tws__sniff_1ab39cc14b29aff94eb8828dad96f8d208" prot="public" virt="non-virtual"><scope>lmp_tws_sniff</scope><name>wakeup_offset</name></member>
+      <member refid="structlmp__tws__sniff_1a6bef54e0c4008c4ca25fead094c3bb75" prot="public" virt="non-virtual"><scope>lmp_tws_sniff</scope><name>witchout_phone</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

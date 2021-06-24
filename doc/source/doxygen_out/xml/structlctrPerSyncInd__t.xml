@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structlctrPerSyncInd__t" kind="struct" language="C++" prot="public">
+    <compoundname>lctrPerSyncInd_t</compoundname>
+    <includes refid="ll__defines_8h" local="no">ll_defines.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlctrPerSyncInd__t_1add33ad11c9f85fab2e12f2c8987c8836" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lctrPerSyncInd_t::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>identifier provided by the host. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="925" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="925" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrPerSyncInd__t_1a13c9388a58f2755f1d1340363facfd99" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lctrPerSyncInd_t::syncInfo[LL_SYNC_INFO_LEN]</definition>
+        <argsstring>[LL_SYNC_INFO_LEN]</argsstring>
+        <name>syncInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Syncinfo field. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="926" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="926" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrPerSyncInd__t_1aab4f25973f585d884a0b66c5e2db4885" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lctrPerSyncInd_t::ceCounter</definition>
+        <argsstring></argsstring>
+        <name>ceCounter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reference connection event counter. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="927" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="927" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrPerSyncInd__t_1aff903bc83934eb8ac6a8aeaa986f8819" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lctrPerSyncInd_t::lastPECounter</definition>
+        <argsstring></argsstring>
+        <name>lastPECounter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>paEventCounter applying to AUX_SYNC_IND PDU. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="928" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="928" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrPerSyncInd__t_1ad55ab2e9eaa5cda8b7cfd037ef928e03" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lctrPerSyncInd_t::sid</definition>
+        <argsstring></argsstring>
+        <name>sid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Advertising SID subfield. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="929" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="929" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrPerSyncInd__t_1a440760c827b1665084414135becf3423" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lctrPerSyncInd_t::aType</definition>
+        <argsstring></argsstring>
+        <name>aType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Address type of periodic advertising. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="930" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="930" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrPerSyncInd__t_1ae14652caf6aa9c34bd370e27694c0f24" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lctrPerSyncInd_t::sca</definition>
+        <argsstring></argsstring>
+        <name>sca</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sleep clock accuracy of the device sending this PDU. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="931" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="931" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrPerSyncInd__t_1a7a87d558082bc7253cb1648dc02f404c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lctrPerSyncInd_t::phy</definition>
+        <argsstring></argsstring>
+        <name>phy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>PHY used by the periodic advertising. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="932" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="932" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrPerSyncInd__t_1a505ab2ad9a62607d426468bf8561b25f" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t lctrPerSyncInd_t::advA</definition>
+        <argsstring></argsstring>
+        <name>advA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Advertiser&apos;s address in the periodic advertising. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="933" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="933" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrPerSyncInd__t_1a119397aa34f903705c6584e8ef9b7169" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lctrPerSyncInd_t::syncConnEvtCounter</definition>
+        <argsstring></argsstring>
+        <name>syncConnEvtCounter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Connection event counter when the contents of the PDU is determined. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="934" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="934" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Periodic sync indication PDU. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="924" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="924" bodyend="935"/>
+    <listofallmembers>
+      <member refid="structlctrPerSyncInd__t_1a505ab2ad9a62607d426468bf8561b25f" prot="public" virt="non-virtual"><scope>lctrPerSyncInd_t</scope><name>advA</name></member>
+      <member refid="structlctrPerSyncInd__t_1a440760c827b1665084414135becf3423" prot="public" virt="non-virtual"><scope>lctrPerSyncInd_t</scope><name>aType</name></member>
+      <member refid="structlctrPerSyncInd__t_1aab4f25973f585d884a0b66c5e2db4885" prot="public" virt="non-virtual"><scope>lctrPerSyncInd_t</scope><name>ceCounter</name></member>
+      <member refid="structlctrPerSyncInd__t_1add33ad11c9f85fab2e12f2c8987c8836" prot="public" virt="non-virtual"><scope>lctrPerSyncInd_t</scope><name>id</name></member>
+      <member refid="structlctrPerSyncInd__t_1aff903bc83934eb8ac6a8aeaa986f8819" prot="public" virt="non-virtual"><scope>lctrPerSyncInd_t</scope><name>lastPECounter</name></member>
+      <member refid="structlctrPerSyncInd__t_1a7a87d558082bc7253cb1648dc02f404c" prot="public" virt="non-virtual"><scope>lctrPerSyncInd_t</scope><name>phy</name></member>
+      <member refid="structlctrPerSyncInd__t_1ae14652caf6aa9c34bd370e27694c0f24" prot="public" virt="non-virtual"><scope>lctrPerSyncInd_t</scope><name>sca</name></member>
+      <member refid="structlctrPerSyncInd__t_1ad55ab2e9eaa5cda8b7cfd037ef928e03" prot="public" virt="non-virtual"><scope>lctrPerSyncInd_t</scope><name>sid</name></member>
+      <member refid="structlctrPerSyncInd__t_1a119397aa34f903705c6584e8ef9b7169" prot="public" virt="non-virtual"><scope>lctrPerSyncInd_t</scope><name>syncConnEvtCounter</name></member>
+      <member refid="structlctrPerSyncInd__t_1a13c9388a58f2755f1d1340363facfd99" prot="public" virt="non-virtual"><scope>lctrPerSyncInd_t</scope><name>syncInfo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

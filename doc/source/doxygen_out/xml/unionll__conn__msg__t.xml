@@ -1,0 +1,266 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="unionll__conn__msg__t" kind="union" language="C++" prot="public">
+    <compoundname>ll_conn_msg_t</compoundname>
+    <includes refid="llcp_8h" local="no">llcp.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unionll__conn__msg__t_1a9e38a7061e8398bc0b9097895dc045eb" prot="public" static="no" mutable="no">
+        <type><ref refid="structll__msg__hdr__t" kindref="compound">ll_msg_hdr_t</ref></type>
+        <definition>ll_msg_hdr_t ll_conn_msg_t::hdr</definition>
+        <argsstring></argsstring>
+        <name>hdr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="214" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionll__conn__msg__t_1a02b1721e19f93246d025d888ecaedd4a" prot="public" static="no" mutable="no">
+        <type><ref refid="structll__msg__conn__update__t" kindref="compound">ll_msg_conn_update_t</ref></type>
+        <definition>ll_msg_conn_update_t ll_conn_msg_t::connection_update_param</definition>
+        <argsstring></argsstring>
+        <name>connection_update_param</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="217" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionll__conn__msg__t_1afe1760615da0cbd5c6214ab68622e44b" prot="public" static="no" mutable="no">
+        <type><ref refid="structll__msg__start__encryption__parameter__t" kindref="compound">ll_msg_start_encryption_parameter_t</ref></type>
+        <definition>ll_msg_start_encryption_parameter_t ll_conn_msg_t::start_encryption_param</definition>
+        <argsstring></argsstring>
+        <name>start_encryption_param</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="218" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionll__conn__msg__t_1a7f565694c3310b8c15ebdc7c929c57f0" prot="public" static="no" mutable="no">
+        <type><ref refid="structll__msg__long__term__key__request__reply__parameter__t" kindref="compound">ll_msg_long_term_key_request_reply_parameter_t</ref></type>
+        <definition>ll_msg_long_term_key_request_reply_parameter_t ll_conn_msg_t::long_term_key_request_reply_param</definition>
+        <argsstring></argsstring>
+        <name>long_term_key_request_reply_param</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="219" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionll__conn__msg__t_1a0363855e6ff9737e3a16056a0997dc87" prot="public" static="no" mutable="no">
+        <type><ref refid="llcp_8h_1a9e3b6c56b0186db0ac80c40a32966f6a" kindref="member">ll_msg_host_channel_classification_t</ref></type>
+        <definition>ll_msg_host_channel_classification_t ll_conn_msg_t::host_channel_param</definition>
+        <argsstring></argsstring>
+        <name>host_channel_param</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="220" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionll__conn__msg__t_1a5905174ebec092ca1859cc526774811e" prot="public" static="no" mutable="no">
+        <type><ref refid="structll__msg__disconnect__t" kindref="compound">ll_msg_disconnect_t</ref></type>
+        <definition>ll_msg_disconnect_t ll_conn_msg_t::disconnect</definition>
+        <argsstring></argsstring>
+        <name>disconnect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="221" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionll__conn__msg__t_1a7b2e2e77af5e551f2da64851192bd366" prot="public" static="no" mutable="no">
+        <type><ref refid="structll__msg__data__length__t" kindref="compound">ll_msg_data_length_t</ref></type>
+        <definition>ll_msg_data_length_t ll_conn_msg_t::data_length_param</definition>
+        <argsstring></argsstring>
+        <name>data_length_param</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="222" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionll__conn__msg__t_1a725c17453dfd9e161dfd0aded0c79c79" prot="public" static="no" mutable="no">
+        <type><ref refid="structll__msg__cte__req__parameter__t" kindref="compound">ll_msg_cte_req_parameter_t</ref></type>
+        <definition>ll_msg_cte_req_parameter_t ll_conn_msg_t::cte_req_param</definition>
+        <argsstring></argsstring>
+        <name>cte_req_param</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="223" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionll__conn__msg__t_1a3ffdc978367fe17f169226ef54a87db1" prot="public" static="no" mutable="no">
+        <type><ref refid="structll__msg__phy__parameter__t" kindref="compound">ll_msg_phy_parameter_t</ref></type>
+        <definition>ll_msg_phy_parameter_t ll_conn_msg_t::phy_param</definition>
+        <argsstring></argsstring>
+        <name>phy_param</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="226" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionll__conn__msg__t_1aa6ac9fc517a7cda165e8c9fb23ff99ea" prot="public" static="no" mutable="no">
+        <type><ref refid="structll__msg__cis__t" kindref="compound">ll_msg_cis_t</ref></type>
+        <definition>ll_msg_cis_t ll_conn_msg_t::cis</definition>
+        <argsstring></argsstring>
+        <name>cis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="228" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Host API Parameters. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1432">
+        <label>connection_update_parameter_t</label>
+        <link refid="structconnection__update__parameter__t"/>
+      </node>
+      <node id="1428">
+        <label>ll_msg_data_length_t</label>
+        <link refid="structll__msg__data__length__t"/>
+        <childnode refid="1423" relation="usage">
+          <edgelabel>hdr</edgelabel>
+        </childnode>
+      </node>
+      <node id="1421">
+        <label>ll_conn_msg_t</label>
+        <link refid="unionll__conn__msg__t"/>
+        <childnode refid="1422" relation="usage">
+          <edgelabel>host_channel_param</edgelabel>
+        </childnode>
+        <childnode refid="1424" relation="usage">
+          <edgelabel>long_term_key_request_reply_param</edgelabel>
+        </childnode>
+        <childnode refid="1425" relation="usage">
+          <edgelabel>cte_req_param</edgelabel>
+        </childnode>
+        <childnode refid="1426" relation="usage">
+          <edgelabel>start_encryption_param</edgelabel>
+        </childnode>
+        <childnode refid="1427" relation="usage">
+          <edgelabel>phy_param</edgelabel>
+        </childnode>
+        <childnode refid="1428" relation="usage">
+          <edgelabel>data_length_param</edgelabel>
+        </childnode>
+        <childnode refid="1429" relation="usage">
+          <edgelabel>cis</edgelabel>
+        </childnode>
+        <childnode refid="1430" relation="usage">
+          <edgelabel>disconnect</edgelabel>
+        </childnode>
+        <childnode refid="1431" relation="usage">
+          <edgelabel>connection_update_param</edgelabel>
+        </childnode>
+        <childnode refid="1423" relation="usage">
+          <edgelabel>hdr</edgelabel>
+        </childnode>
+      </node>
+      <node id="1424">
+        <label>ll_msg_long_term_key_request_reply_parameter_t</label>
+        <link refid="structll__msg__long__term__key__request__reply__parameter__t"/>
+        <childnode refid="1423" relation="usage">
+          <edgelabel>hdr</edgelabel>
+        </childnode>
+      </node>
+      <node id="1427">
+        <label>ll_msg_phy_parameter_t</label>
+        <link refid="structll__msg__phy__parameter__t"/>
+        <childnode refid="1423" relation="usage">
+          <edgelabel>hdr</edgelabel>
+        </childnode>
+      </node>
+      <node id="1429">
+        <label>ll_msg_cis_t</label>
+        <link refid="structll__msg__cis__t"/>
+        <childnode refid="1423" relation="usage">
+          <edgelabel>hdr</edgelabel>
+        </childnode>
+      </node>
+      <node id="1423">
+        <label>ll_msg_hdr_t</label>
+        <link refid="structll__msg__hdr__t"/>
+      </node>
+      <node id="1425">
+        <label>ll_msg_cte_req_parameter_t</label>
+        <link refid="structll__msg__cte__req__parameter__t"/>
+        <childnode refid="1423" relation="usage">
+          <edgelabel>hdr</edgelabel>
+        </childnode>
+      </node>
+      <node id="1430">
+        <label>ll_msg_disconnect_t</label>
+        <link refid="structll__msg__disconnect__t"/>
+        <childnode refid="1423" relation="usage">
+          <edgelabel>hdr</edgelabel>
+        </childnode>
+      </node>
+      <node id="1431">
+        <label>ll_msg_conn_update_t</label>
+        <link refid="structll__msg__conn__update__t"/>
+        <childnode refid="1432" relation="usage">
+          <edgelabel>param</edgelabel>
+        </childnode>
+        <childnode refid="1423" relation="usage">
+          <edgelabel>hdr</edgelabel>
+        </childnode>
+      </node>
+      <node id="1426">
+        <label>ll_msg_start_encryption_parameter_t</label>
+        <link refid="structll__msg__start__encryption__parameter__t"/>
+        <childnode refid="1423" relation="usage">
+          <edgelabel>hdr</edgelabel>
+        </childnode>
+      </node>
+      <node id="1422">
+        <label>host_channel_classification</label>
+        <link refid="structhost__channel__classification"/>
+        <childnode refid="1423" relation="usage">
+          <edgelabel>hdr</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="213" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="213" bodyend="229"/>
+    <listofallmembers>
+      <member refid="unionll__conn__msg__t_1aa6ac9fc517a7cda165e8c9fb23ff99ea" prot="public" virt="non-virtual"><scope>ll_conn_msg_t</scope><name>cis</name></member>
+      <member refid="unionll__conn__msg__t_1a02b1721e19f93246d025d888ecaedd4a" prot="public" virt="non-virtual"><scope>ll_conn_msg_t</scope><name>connection_update_param</name></member>
+      <member refid="unionll__conn__msg__t_1a725c17453dfd9e161dfd0aded0c79c79" prot="public" virt="non-virtual"><scope>ll_conn_msg_t</scope><name>cte_req_param</name></member>
+      <member refid="unionll__conn__msg__t_1a7b2e2e77af5e551f2da64851192bd366" prot="public" virt="non-virtual"><scope>ll_conn_msg_t</scope><name>data_length_param</name></member>
+      <member refid="unionll__conn__msg__t_1a5905174ebec092ca1859cc526774811e" prot="public" virt="non-virtual"><scope>ll_conn_msg_t</scope><name>disconnect</name></member>
+      <member refid="unionll__conn__msg__t_1a9e38a7061e8398bc0b9097895dc045eb" prot="public" virt="non-virtual"><scope>ll_conn_msg_t</scope><name>hdr</name></member>
+      <member refid="unionll__conn__msg__t_1a0363855e6ff9737e3a16056a0997dc87" prot="public" virt="non-virtual"><scope>ll_conn_msg_t</scope><name>host_channel_param</name></member>
+      <member refid="unionll__conn__msg__t_1a7f565694c3310b8c15ebdc7c929c57f0" prot="public" virt="non-virtual"><scope>ll_conn_msg_t</scope><name>long_term_key_request_reply_param</name></member>
+      <member refid="unionll__conn__msg__t_1a3ffdc978367fe17f169226ef54a87db1" prot="public" virt="non-virtual"><scope>ll_conn_msg_t</scope><name>phy_param</name></member>
+      <member refid="unionll__conn__msg__t_1afe1760615da0cbd5c6214ab68622e44b" prot="public" virt="non-virtual"><scope>ll_conn_msg_t</scope><name>start_encryption_param</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

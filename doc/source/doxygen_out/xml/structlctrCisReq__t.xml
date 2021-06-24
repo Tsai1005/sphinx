@@ -1,0 +1,310 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structlctrCisReq__t" kind="struct" language="C++" prot="public">
+    <compoundname>lctrCisReq_t</compoundname>
+    <includes refid="ll__defines_8h" local="no">ll_defines.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlctrCisReq__t_1a35f9277f3c79aa620b162287cc98bb09" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lctrCisReq_t::cigId</definition>
+        <argsstring></argsstring>
+        <name>cigId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CIG identifier. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="944" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="944" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrCisReq__t_1a313dbb8051a7dc11cf5bd64cad6b77d6" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lctrCisReq_t::cisId</definition>
+        <argsstring></argsstring>
+        <name>cisId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CIS identifier. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="945" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="945" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrCisReq__t_1a23b1cafac7cab361d83d4563181b559d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lctrCisReq_t::phyMToS</definition>
+        <argsstring></argsstring>
+        <name>phyMToS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Master to slave PHY. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="946" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="946" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrCisReq__t_1a2b6101bd15d11578c49e8710d95e0de2" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lctrCisReq_t::phySToM</definition>
+        <argsstring></argsstring>
+        <name>phySToM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Slave to Master PHY. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="947" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="947" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrCisReq__t_1ab8cf284e6c6e9188afa5b66d7ec57c18" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lctrCisReq_t::framing</definition>
+        <argsstring></argsstring>
+        <name>framing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>PDU framing type. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="948" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="948" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrCisReq__t_1a6ecf1ffadab6ef69abbc3602f0936071" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lctrCisReq_t::sduSizeMToS</definition>
+        <argsstring></argsstring>
+        <name>sduSizeMToS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum SDU size from the master Host. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="949" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="949" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrCisReq__t_1a68e2cfc08970dfca1392d80d16d9ca87" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lctrCisReq_t::sduSizeSToM</definition>
+        <argsstring></argsstring>
+        <name>sduSizeSToM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum SDU size from the slave Host. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="950" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="950" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrCisReq__t_1a44ff628bff37d5362137216611e1d600" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t lctrCisReq_t::sduIntervalMToS</definition>
+        <argsstring></argsstring>
+        <name>sduIntervalMToS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Time interval between the start of consecutive SDUs from the master Host </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="951" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="951" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrCisReq__t_1adcd363601f0ce5e4ca53c2e6bcb32bf4" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t lctrCisReq_t::sduIntervalSToM</definition>
+        <argsstring></argsstring>
+        <name>sduIntervalSToM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Time interval between the start of consecutive SDUs from the master Host </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="952" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="952" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrCisReq__t_1aabeb59c2c26819fd3b88f230f27a2bc3" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lctrCisReq_t::plMToS</definition>
+        <argsstring></argsstring>
+        <name>plMToS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Master to slave payload. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="953" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="953" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrCisReq__t_1a29e0d398d00fa88937723587a765ab69" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lctrCisReq_t::plSToM</definition>
+        <argsstring></argsstring>
+        <name>plSToM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Slave to master payload. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="954" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="954" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrCisReq__t_1ad47c75d6f9eecc3ca0945a413c4f6f12" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lctrCisReq_t::nse</definition>
+        <argsstring></argsstring>
+        <name>nse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of subevent. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="955" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="955" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrCisReq__t_1aa3007856777c6ae0fb2cd6bd077fc552" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t lctrCisReq_t::subIntervUsec</definition>
+        <argsstring></argsstring>
+        <name>subIntervUsec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Contain the time between the start of a subevent and the start of the next subevent, 24 significant bits. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="956" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="956" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrCisReq__t_1a7cf2e291413d75c15f8ed3a74b4c5340" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lctrCisReq_t::bnMToS</definition>
+        <argsstring></argsstring>
+        <name>bnMToS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Master to slave burst number, 4 significant bits. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="957" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="957" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrCisReq__t_1a45b9ce80a3e3dbab4b32e593ed368548" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lctrCisReq_t::bnSToM</definition>
+        <argsstring></argsstring>
+        <name>bnSToM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Slave to master burst number, 4 significant bits. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="958" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="958" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrCisReq__t_1abdf960c188b140a485dd80b90123c226" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lctrCisReq_t::ftMToS</definition>
+        <argsstring></argsstring>
+        <name>ftMToS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Master to slave flush time. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="959" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="959" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrCisReq__t_1a11efa66b9d7c40a0a0797cb5e1d05d75" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lctrCisReq_t::ftSToM</definition>
+        <argsstring></argsstring>
+        <name>ftSToM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Slave to master flush time. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="960" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="960" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrCisReq__t_1a557655356278de8f91029ae7a0de717a" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lctrCisReq_t::isoInterval</definition>
+        <argsstring></argsstring>
+        <name>isoInterval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Contain the time between two CIS anchor points in 1.25msec unit. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="961" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="961" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrCisReq__t_1ad4077a39af606dc463cf73a9cd012a28" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t lctrCisReq_t::cisOffMinUsec</definition>
+        <argsstring></argsstring>
+        <name>cisOffMinUsec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Contain the minimum time between the CE and the first CIS anchor point. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="962" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="962" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrCisReq__t_1ac01f4ae2659fd6a215457e4f88f7b5c0" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t lctrCisReq_t::cisOffMaxUsec</definition>
+        <argsstring></argsstring>
+        <name>cisOffMaxUsec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Contain the maximum time between the CE and the first CIS anchor point. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="963" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="963" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrCisReq__t_1a5eaac8c839edd3fcf2959284445a3dd6" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lctrCisReq_t::ceRef</definition>
+        <argsstring></argsstring>
+        <name>ceRef</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Contain the reference CE where offsets are applied. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="964" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="964" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>CIS request PDU. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="943" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="943" bodyend="965"/>
+    <listofallmembers>
+      <member refid="structlctrCisReq__t_1a7cf2e291413d75c15f8ed3a74b4c5340" prot="public" virt="non-virtual"><scope>lctrCisReq_t</scope><name>bnMToS</name></member>
+      <member refid="structlctrCisReq__t_1a45b9ce80a3e3dbab4b32e593ed368548" prot="public" virt="non-virtual"><scope>lctrCisReq_t</scope><name>bnSToM</name></member>
+      <member refid="structlctrCisReq__t_1a5eaac8c839edd3fcf2959284445a3dd6" prot="public" virt="non-virtual"><scope>lctrCisReq_t</scope><name>ceRef</name></member>
+      <member refid="structlctrCisReq__t_1a35f9277f3c79aa620b162287cc98bb09" prot="public" virt="non-virtual"><scope>lctrCisReq_t</scope><name>cigId</name></member>
+      <member refid="structlctrCisReq__t_1a313dbb8051a7dc11cf5bd64cad6b77d6" prot="public" virt="non-virtual"><scope>lctrCisReq_t</scope><name>cisId</name></member>
+      <member refid="structlctrCisReq__t_1ac01f4ae2659fd6a215457e4f88f7b5c0" prot="public" virt="non-virtual"><scope>lctrCisReq_t</scope><name>cisOffMaxUsec</name></member>
+      <member refid="structlctrCisReq__t_1ad4077a39af606dc463cf73a9cd012a28" prot="public" virt="non-virtual"><scope>lctrCisReq_t</scope><name>cisOffMinUsec</name></member>
+      <member refid="structlctrCisReq__t_1ab8cf284e6c6e9188afa5b66d7ec57c18" prot="public" virt="non-virtual"><scope>lctrCisReq_t</scope><name>framing</name></member>
+      <member refid="structlctrCisReq__t_1abdf960c188b140a485dd80b90123c226" prot="public" virt="non-virtual"><scope>lctrCisReq_t</scope><name>ftMToS</name></member>
+      <member refid="structlctrCisReq__t_1a11efa66b9d7c40a0a0797cb5e1d05d75" prot="public" virt="non-virtual"><scope>lctrCisReq_t</scope><name>ftSToM</name></member>
+      <member refid="structlctrCisReq__t_1a557655356278de8f91029ae7a0de717a" prot="public" virt="non-virtual"><scope>lctrCisReq_t</scope><name>isoInterval</name></member>
+      <member refid="structlctrCisReq__t_1ad47c75d6f9eecc3ca0945a413c4f6f12" prot="public" virt="non-virtual"><scope>lctrCisReq_t</scope><name>nse</name></member>
+      <member refid="structlctrCisReq__t_1a23b1cafac7cab361d83d4563181b559d" prot="public" virt="non-virtual"><scope>lctrCisReq_t</scope><name>phyMToS</name></member>
+      <member refid="structlctrCisReq__t_1a2b6101bd15d11578c49e8710d95e0de2" prot="public" virt="non-virtual"><scope>lctrCisReq_t</scope><name>phySToM</name></member>
+      <member refid="structlctrCisReq__t_1aabeb59c2c26819fd3b88f230f27a2bc3" prot="public" virt="non-virtual"><scope>lctrCisReq_t</scope><name>plMToS</name></member>
+      <member refid="structlctrCisReq__t_1a29e0d398d00fa88937723587a765ab69" prot="public" virt="non-virtual"><scope>lctrCisReq_t</scope><name>plSToM</name></member>
+      <member refid="structlctrCisReq__t_1a44ff628bff37d5362137216611e1d600" prot="public" virt="non-virtual"><scope>lctrCisReq_t</scope><name>sduIntervalMToS</name></member>
+      <member refid="structlctrCisReq__t_1adcd363601f0ce5e4ca53c2e6bcb32bf4" prot="public" virt="non-virtual"><scope>lctrCisReq_t</scope><name>sduIntervalSToM</name></member>
+      <member refid="structlctrCisReq__t_1a6ecf1ffadab6ef69abbc3602f0936071" prot="public" virt="non-virtual"><scope>lctrCisReq_t</scope><name>sduSizeMToS</name></member>
+      <member refid="structlctrCisReq__t_1a68e2cfc08970dfca1392d80d16d9ca87" prot="public" virt="non-virtual"><scope>lctrCisReq_t</scope><name>sduSizeSToM</name></member>
+      <member refid="structlctrCisReq__t_1aa3007856777c6ae0fb2cd6bd077fc552" prot="public" virt="non-virtual"><scope>lctrCisReq_t</scope><name>subIntervUsec</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

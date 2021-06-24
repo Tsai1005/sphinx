@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structLctrAcadHdr__t" kind="struct" language="C++" prot="public">
+    <compoundname>LctrAcadHdr_t</compoundname>
+    <includes refid="ll__defines_8h" local="no">ll_defines.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structLctrAcadHdr__t_1a796c43895811b062af7dad81fa2fe958" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t LctrAcadHdr_t::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>State of ACAD. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1033" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1033" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLctrAcadHdr__t_1a75f3e69fe6b3cabe0dca2d636a9e1645" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t LctrAcadHdr_t::opcode</definition>
+        <argsstring></argsstring>
+        <name>opcode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Opcode of ACAD. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1034" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1034" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLctrAcadHdr__t_1aeef09386272cc19e2bdbacdd51b5fe13" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t LctrAcadHdr_t::len</definition>
+        <argsstring></argsstring>
+        <name>len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Length of ACAD data field. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1035" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1035" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>ACAD header. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1032" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1032" bodyend="1036"/>
+    <listofallmembers>
+      <member refid="structLctrAcadHdr__t_1aeef09386272cc19e2bdbacdd51b5fe13" prot="public" virt="non-virtual"><scope>LctrAcadHdr_t</scope><name>len</name></member>
+      <member refid="structLctrAcadHdr__t_1a75f3e69fe6b3cabe0dca2d636a9e1645" prot="public" virt="non-virtual"><scope>LctrAcadHdr_t</scope><name>opcode</name></member>
+      <member refid="structLctrAcadHdr__t_1a796c43895811b062af7dad81fa2fe958" prot="public" virt="non-virtual"><scope>LctrAcadHdr_t</scope><name>state</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

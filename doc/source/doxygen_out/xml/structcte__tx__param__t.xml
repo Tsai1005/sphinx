@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structcte__tx__param__t" kind="struct" language="C++" prot="public">
+    <compoundname>cte_tx_param_t</compoundname>
+    <includes refid="link__layer_8h" local="no">link_layer.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcte__tx__param__t_1a591206029ad483db3bff780a5a648846" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 cte_tx_param_t::Enable</definition>
+        <argsstring></argsstring>
+        <name>Enable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="303" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="303" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcte__tx__param__t_1a53c489bf6ff8a7a51eec28ca3ecaea2d" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 cte_tx_param_t::Support_CTE_Types</definition>
+        <argsstring></argsstring>
+        <name>Support_CTE_Types</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="304" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="304" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcte__tx__param__t_1a60a55545073cedc587e6f45e7947e314" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 cte_tx_param_t::CTE_Request_Interval</definition>
+        <argsstring></argsstring>
+        <name>CTE_Request_Interval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="305" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcte__tx__param__t_1afc3b3803287863f44ff61e1c870ba571" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 cte_tx_param_t::Requested_CTE_Length</definition>
+        <argsstring></argsstring>
+        <name>Requested_CTE_Length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="306" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="306" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcte__tx__param__t_1ada3c6df584d39ff586911b51192e4eee" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 cte_tx_param_t::Requested_CTE_Type</definition>
+        <argsstring></argsstring>
+        <name>Requested_CTE_Type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="307" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="307" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcte__tx__param__t_1a23e20c7e83b119dcb1ec7b48f2f2e950" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 cte_tx_param_t::Switching_Pattern_Length</definition>
+        <argsstring></argsstring>
+        <name>Switching_Pattern_Length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="308" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcte__tx__param__t_1a81ab1b545c9af37629a99a13368255b0" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 cte_tx_param_t::Antenna_ID[0]</definition>
+        <argsstring>[0]</argsstring>
+        <name>Antenna_ID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="309" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="309" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="302" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="302" bodyend="310"/>
+    <listofallmembers>
+      <member refid="structcte__tx__param__t_1a81ab1b545c9af37629a99a13368255b0" prot="public" virt="non-virtual"><scope>cte_tx_param_t</scope><name>Antenna_ID</name></member>
+      <member refid="structcte__tx__param__t_1a60a55545073cedc587e6f45e7947e314" prot="public" virt="non-virtual"><scope>cte_tx_param_t</scope><name>CTE_Request_Interval</name></member>
+      <member refid="structcte__tx__param__t_1a591206029ad483db3bff780a5a648846" prot="public" virt="non-virtual"><scope>cte_tx_param_t</scope><name>Enable</name></member>
+      <member refid="structcte__tx__param__t_1afc3b3803287863f44ff61e1c870ba571" prot="public" virt="non-virtual"><scope>cte_tx_param_t</scope><name>Requested_CTE_Length</name></member>
+      <member refid="structcte__tx__param__t_1ada3c6df584d39ff586911b51192e4eee" prot="public" virt="non-virtual"><scope>cte_tx_param_t</scope><name>Requested_CTE_Type</name></member>
+      <member refid="structcte__tx__param__t_1a53c489bf6ff8a7a51eec28ca3ecaea2d" prot="public" virt="non-virtual"><scope>cte_tx_param_t</scope><name>Support_CTE_Types</name></member>
+      <member refid="structcte__tx__param__t_1a23e20c7e83b119dcb1ec7b48f2f2e950" prot="public" virt="non-virtual"><scope>cte_tx_param_t</scope><name>Switching_Pattern_Length</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

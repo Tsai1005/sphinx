@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structbredr__power" kind="struct" language="C++" prot="public">
+    <compoundname>bredr_power</compoundname>
+    <includes refid="bredr__link_8h" local="no">bredr_link.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structbredr__power_1adf67a0bd2afcd9dff4467ba12ab4df8c" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* bredr_power::power_ctrl</definition>
+        <argsstring></argsstring>
+        <name>power_ctrl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="669" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="669" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__power_1a4a132807b1bec72028885a31f4d4ad88" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 bredr_power::interval</definition>
+        <argsstring></argsstring>
+        <name>interval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="670" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="670" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__power_1a61fd310fda71d59c88295e3fd6ea169d" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 bredr_power::clkn</definition>
+        <argsstring></argsstring>
+        <name>clkn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="671" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="671" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__power_1a4efb81ea3dc632740c82fbcc99405a80" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 bredr_power::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="672" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="672" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="668" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="668" bodyend="673"/>
+    <listofallmembers>
+      <member refid="structbredr__power_1a61fd310fda71d59c88295e3fd6ea169d" prot="public" virt="non-virtual"><scope>bredr_power</scope><name>clkn</name></member>
+      <member refid="structbredr__power_1a4a132807b1bec72028885a31f4d4ad88" prot="public" virt="non-virtual"><scope>bredr_power</scope><name>interval</name></member>
+      <member refid="structbredr__power_1adf67a0bd2afcd9dff4467ba12ab4df8c" prot="public" virt="non-virtual"><scope>bredr_power</scope><name>power_ctrl</name></member>
+      <member refid="structbredr__power_1a4efb81ea3dc632740c82fbcc99405a80" prot="public" virt="non-virtual"><scope>bredr_power</scope><name>state</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structll__codec__t" kind="struct" language="C++" prot="public">
+    <compoundname>ll_codec_t</compoundname>
+    <includes refid="ll__bis_8h" local="no">ll_bis.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structll__codec__t_1aa976175226859b463e48915861f777b1" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__bis_8h_1adbdcb2d2e1d6901dcc2a696978763f53" kindref="member">ll_codec_start</ref></type>
+        <definition>ll_codec_start ll_codec_t::start</definition>
+        <argsstring></argsstring>
+        <name>start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start stream. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="254" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__codec__t_1a1b2df6bac8f677236d66fd0f4006f645" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__bis_8h_1acb2e6bcbeab9ccceb154a6c19e575daf" kindref="member">ll_codec_stop</ref></type>
+        <definition>ll_codec_stop ll_codec_t::stop</definition>
+        <argsstring></argsstring>
+        <name>stop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Stop stream. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="255" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__codec__t_1abdaec05119a356c04074cbfe3a7e54d2" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__bis_8h_1a66032c15a481aa636667993325c0e0d8" kindref="member">ll_codec_input</ref></type>
+        <definition>ll_codec_input ll_codec_t::in</definition>
+        <argsstring></argsstring>
+        <name>in</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Stream data input. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="256" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__codec__t_1a2cc6bc1e2e28f028eaeb8abed2c0571b" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__bis_8h_1a867e86f67f0c4db8ccdd4e6ace37e127" kindref="member">ll_codec_ouput</ref></type>
+        <definition>ll_codec_ouput ll_codec_t::out</definition>
+        <argsstring></argsstring>
+        <name>out</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Stream data output. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="257" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="257" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Codec event handlers. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1419">
+        <label>PalCodecSreamParam_t</label>
+        <link refid="structPalCodecSreamParam__t"/>
+      </node>
+      <node id="1418">
+        <label>ll_codec_t</label>
+        <link refid="structll__codec__t"/>
+        <childnode refid="1419" relation="usage">
+          <edgelabel>start</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="253" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="253" bodyend="258"/>
+    <listofallmembers>
+      <member refid="structll__codec__t_1abdaec05119a356c04074cbfe3a7e54d2" prot="public" virt="non-virtual"><scope>ll_codec_t</scope><name>in</name></member>
+      <member refid="structll__codec__t_1a2cc6bc1e2e28f028eaeb8abed2c0571b" prot="public" virt="non-virtual"><scope>ll_codec_t</scope><name>out</name></member>
+      <member refid="structll__codec__t_1aa976175226859b463e48915861f777b1" prot="public" virt="non-virtual"><scope>ll_codec_t</scope><name>start</name></member>
+      <member refid="structll__codec__t_1a1b2df6bac8f677236d66fd0f4006f645" prot="public" virt="non-virtual"><scope>ll_codec_t</scope><name>stop</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

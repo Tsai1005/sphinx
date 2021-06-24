@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structext__le__parameter" kind="struct" language="C++" prot="public">
+    <compoundname>ext_le_parameter</compoundname>
+    <includes refid="extended__advertising_8h" local="no">extended_advertising.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structext__le__parameter_1a2fdb42a305f7514ae6f90fd1eec2bace" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="struct____ext__adv__list" kindref="compound">__ext_adv_list</ref></type>
+        <definition>struct __ext_adv_list ext_le_parameter::ext_adv_list</definition>
+        <argsstring></argsstring>
+        <name>ext_adv_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/extended_advertising.h" line="33" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/extended_advertising.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structext__le__parameter_1a062d8a9b1f0d0758a92c305367fce9cf" prot="public" static="no" mutable="no">
+        <type>struct __ext_scan *</type>
+        <definition>struct __ext_scan* ext_le_parameter::ext_scan</definition>
+        <argsstring></argsstring>
+        <name>ext_scan</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/extended_advertising.h" line="38" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/extended_advertising.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structext__le__parameter_1ac3a98a8c18b7d13b302d0be263a525b6" prot="public" static="no" mutable="no">
+        <type>struct __ext_init *</type>
+        <definition>struct __ext_init* ext_le_parameter::ext_init</definition>
+        <argsstring></argsstring>
+        <name>ext_init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/extended_advertising.h" line="39" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/extended_advertising.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structext__le__parameter_1adf8d5682d8726a685a1d790adefb30ae" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="struct____default__prefers__phys" kindref="compound">__default_prefers_phys</ref></type>
+        <definition>struct __default_prefers_phys ext_le_parameter::default_prefers_phys</definition>
+        <argsstring></argsstring>
+        <name>default_prefers_phys</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/extended_advertising.h" line="39" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/extended_advertising.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1035">
+        <label>__ext_adv_list</label>
+        <link refid="struct____ext__adv__list"/>
+      </node>
+      <node id="1036">
+        <label>__default_prefers_phys</label>
+        <link refid="struct____default__prefers__phys"/>
+      </node>
+      <node id="1034">
+        <label>ext_le_parameter</label>
+        <link refid="structext__le__parameter"/>
+        <childnode refid="1035" relation="usage">
+          <edgelabel>ext_adv_list</edgelabel>
+        </childnode>
+        <childnode refid="1036" relation="usage">
+          <edgelabel>default_prefers_phys</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/extended_advertising.h" line="36" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/extended_advertising.h" bodystart="36" bodyend="41"/>
+    <listofallmembers>
+      <member refid="structext__le__parameter_1adf8d5682d8726a685a1d790adefb30ae" prot="public" virt="non-virtual"><scope>ext_le_parameter</scope><name>default_prefers_phys</name></member>
+      <member refid="structext__le__parameter_1a2fdb42a305f7514ae6f90fd1eec2bace" prot="public" virt="non-virtual"><scope>ext_le_parameter</scope><name>ext_adv_list</name></member>
+      <member refid="structext__le__parameter_1ac3a98a8c18b7d13b302d0be263a525b6" prot="public" virt="non-virtual"><scope>ext_le_parameter</scope><name>ext_init</name></member>
+      <member refid="structext__le__parameter_1a062d8a9b1f0d0758a92c305367fce9cf" prot="public" virt="non-virtual"><scope>ext_le_parameter</scope><name>ext_scan</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

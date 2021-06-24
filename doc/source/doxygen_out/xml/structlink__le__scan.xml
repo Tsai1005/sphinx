@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structlink__le__scan" kind="struct" language="C++" prot="public">
+    <compoundname>link_le_scan</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlink__le__scan_1a85dea8c036c5a81672787c138899593e" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 link_le_scan::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c" line="88" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__le__scan_1a1c9e45fcabe5928d3632fe964dd0a12b" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 link_le_scan::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c" line="89" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__le__scan_1a5d4cd3e5beb999fddc7f1da04295e623" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 link_le_scan::role_type</definition>
+        <argsstring></argsstring>
+        <name>role_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c" line="90" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__le__scan_1a8584d0d5cc3190343c34294cf57d0912" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 link_le_scan::task_type</definition>
+        <argsstring></argsstring>
+        <name>task_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c" line="91" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__le__scan_1a546a9d65c8ddffa6b6e82b9eba1f1bfe" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structlink__task" kindref="compound">link_task</ref></type>
+        <definition>struct link_task link_le_scan::task</definition>
+        <argsstring></argsstring>
+        <name>task</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c" line="91" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__le__scan_1af4764420f4dfd464369d89df73e4c732" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* link_le_scan::completed) (struct ble_rx *, u8 role)</definition>
+        <argsstring>)(struct ble_rx *, u8 role)</argsstring>
+        <name>completed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c" line="93" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__le__scan_1afede3ca5ad30ddd79189920f59b40554" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structtws__scan__parameter" kindref="compound">tws_scan_parameter</ref></type>
+        <definition>struct tws_scan_parameter link_le_scan::scan_param</definition>
+        <argsstring></argsstring>
+        <name>scan_param</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c" line="93" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1373">
+        <label>tws_scan_parameter</label>
+        <link refid="structtws__scan__parameter"/>
+      </node>
+      <node id="1374">
+        <label>link_task</label>
+        <link refid="structlink__task"/>
+        <childnode refid="1375" relation="usage">
+          <edgelabel>ops</edgelabel>
+        </childnode>
+      </node>
+      <node id="1372">
+        <label>link_le_scan</label>
+        <link refid="structlink__le__scan"/>
+        <childnode refid="1373" relation="usage">
+          <edgelabel>scan_param</edgelabel>
+        </childnode>
+        <childnode refid="1374" relation="usage">
+          <edgelabel>task</edgelabel>
+        </childnode>
+      </node>
+      <node id="1375">
+        <label>link_task_ops</label>
+        <link refid="structlink__task__ops"/>
+      </node>
+    </collaborationgraph>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c" line="87" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c" bodystart="87" bodyend="95"/>
+    <listofallmembers>
+      <member refid="structlink__le__scan_1af4764420f4dfd464369d89df73e4c732" prot="public" virt="non-virtual"><scope>link_le_scan</scope><name>completed</name></member>
+      <member refid="structlink__le__scan_1a5d4cd3e5beb999fddc7f1da04295e623" prot="public" virt="non-virtual"><scope>link_le_scan</scope><name>role_type</name></member>
+      <member refid="structlink__le__scan_1afede3ca5ad30ddd79189920f59b40554" prot="public" virt="non-virtual"><scope>link_le_scan</scope><name>scan_param</name></member>
+      <member refid="structlink__le__scan_1a1c9e45fcabe5928d3632fe964dd0a12b" prot="public" virt="non-virtual"><scope>link_le_scan</scope><name>state</name></member>
+      <member refid="structlink__le__scan_1a546a9d65c8ddffa6b6e82b9eba1f1bfe" prot="public" virt="non-virtual"><scope>link_le_scan</scope><name>task</name></member>
+      <member refid="structlink__le__scan_1a8584d0d5cc3190343c34294cf57d0912" prot="public" virt="non-virtual"><scope>link_le_scan</scope><name>task_type</name></member>
+      <member refid="structlink__le__scan_1a85dea8c036c5a81672787c138899593e" prot="public" virt="non-virtual"><scope>link_le_scan</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

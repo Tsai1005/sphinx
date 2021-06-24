@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structext__advertising__data" kind="struct" language="C++" prot="public">
+    <compoundname>ext_advertising_data</compoundname>
+    <includes refid="ll__ext__adv_8h" local="no">ll_ext_adv.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structext__advertising__data_1a5842177dce9fecae1d88f5f0b8c3c197" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 ext_advertising_data::Operation</definition>
+        <argsstring></argsstring>
+        <name>Operation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="180" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structext__advertising__data_1a4e8f5a1ec9f04480e945dc942e518636" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 ext_advertising_data::Fragment_Preference</definition>
+        <argsstring></argsstring>
+        <name>Fragment_Preference</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="181" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structext__advertising__data_1ad00ea6cf416710083158a94d14602f9c" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 ext_advertising_data::cur_len</definition>
+        <argsstring></argsstring>
+        <name>cur_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="182" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structext__advertising__data_1af474ad2dc8a6933feff948c6b85f8828" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 ext_advertising_data::data[MAX_SUPPORTED_ADV_DATA_LENGTH]</definition>
+        <argsstring>[MAX_SUPPORTED_ADV_DATA_LENGTH]</argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="183" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>LE Set Ext Adv Data format. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="179" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" bodystart="179" bodyend="184"/>
+    <listofallmembers>
+      <member refid="structext__advertising__data_1ad00ea6cf416710083158a94d14602f9c" prot="public" virt="non-virtual"><scope>ext_advertising_data</scope><name>cur_len</name></member>
+      <member refid="structext__advertising__data_1af474ad2dc8a6933feff948c6b85f8828" prot="public" virt="non-virtual"><scope>ext_advertising_data</scope><name>data</name></member>
+      <member refid="structext__advertising__data_1a4e8f5a1ec9f04480e945dc942e518636" prot="public" virt="non-virtual"><scope>ext_advertising_data</scope><name>Fragment_Preference</name></member>
+      <member refid="structext__advertising__data_1a5842177dce9fecae1d88f5f0b8c3c197" prot="public" virt="non-virtual"><scope>ext_advertising_data</scope><name>Operation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

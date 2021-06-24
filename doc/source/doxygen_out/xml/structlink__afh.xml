@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structlink__afh" kind="struct" language="C++" prot="public">
+    <compoundname>link_afh</compoundname>
+    <includes refid="bredr__link_8h" local="no">bredr_link.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlink__afh_1a95139555ecf1da73064bc32b5234f167" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 link_afh::en</definition>
+        <argsstring></argsstring>
+        <name>en</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="441" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="441" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__afh_1a900e356f594183a449d2888d91360dd4" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 link_afh::reset_cnt</definition>
+        <argsstring></argsstring>
+        <name>reset_cnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="442" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="442" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__afh_1aa2021586573b4db36f1850ca4abed1aa" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 link_afh::err_cnt[79]</definition>
+        <argsstring>[79]</argsstring>
+        <name>err_cnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="443" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="443" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__afh_1ae16ed3ea650e56196e41b10b94d32220" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 link_afh::err_num[79]</definition>
+        <argsstring>[79]</argsstring>
+        <name>err_num</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="444" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="444" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__afh_1a0440fc46a25068b48d75cfd1c447c40d" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 link_afh::rx_cnt[79]</definition>
+        <argsstring>[79]</argsstring>
+        <name>rx_cnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="445" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="445" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__afh_1ab66963f1b982a9ccb5e980808e4198e2" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 link_afh::rx_num[79]</definition>
+        <argsstring>[79]</argsstring>
+        <name>rx_num</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="446" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="446" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__afh_1ab588e4b224fb8b28dd88402928b8a26c" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 link_afh::clkn_begin</definition>
+        <argsstring></argsstring>
+        <name>clkn_begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="447" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="447" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__afh_1a862dfb59910138103cd61be88088408a" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 link_afh::instant</definition>
+        <argsstring></argsstring>
+        <name>instant</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="448" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="448" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="440" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="440" bodyend="450"/>
+    <listofallmembers>
+      <member refid="structlink__afh_1ab588e4b224fb8b28dd88402928b8a26c" prot="public" virt="non-virtual"><scope>link_afh</scope><name>clkn_begin</name></member>
+      <member refid="structlink__afh_1a95139555ecf1da73064bc32b5234f167" prot="public" virt="non-virtual"><scope>link_afh</scope><name>en</name></member>
+      <member refid="structlink__afh_1aa2021586573b4db36f1850ca4abed1aa" prot="public" virt="non-virtual"><scope>link_afh</scope><name>err_cnt</name></member>
+      <member refid="structlink__afh_1ae16ed3ea650e56196e41b10b94d32220" prot="public" virt="non-virtual"><scope>link_afh</scope><name>err_num</name></member>
+      <member refid="structlink__afh_1a862dfb59910138103cd61be88088408a" prot="public" virt="non-virtual"><scope>link_afh</scope><name>instant</name></member>
+      <member refid="structlink__afh_1a900e356f594183a449d2888d91360dd4" prot="public" virt="non-virtual"><scope>link_afh</scope><name>reset_cnt</name></member>
+      <member refid="structlink__afh_1a0440fc46a25068b48d75cfd1c447c40d" prot="public" virt="non-virtual"><scope>link_afh</scope><name>rx_cnt</name></member>
+      <member refid="structlink__afh_1ab66963f1b982a9ccb5e980808e4198e2" prot="public" virt="non-virtual"><scope>link_afh</scope><name>rx_num</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

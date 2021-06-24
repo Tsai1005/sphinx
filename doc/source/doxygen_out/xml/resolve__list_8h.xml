@@ -1,0 +1,751 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="resolve__list_8h" kind="file" language="C++">
+    <compoundname>resolve_list.h</compoundname>
+    <includes local="yes">typedef.h</includes>
+    <includedby refid="ll__adv_8c" local="yes">/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_adv.c</includedby>
+    <includedby refid="ll__init_8c" local="yes">/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_init.c</includedby>
+    <includedby refid="ll__scan_8c" local="yes">/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_scan.c</includedby>
+    <includedby refid="tws__ll__adv_8c" local="yes">/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_adv.c</includedby>
+    <includedby refid="tws__ll__scan_8c" local="yes">/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_scan.c</includedby>
+    <includedby refid="link__layer_8h" local="yes">/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h</includedby>
+    <incdepgraph>
+      <node id="5287">
+        <label>typedef.h</label>
+      </node>
+      <node id="5286">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/resolve_list.h</label>
+        <link refid="resolve_list.h"/>
+        <childnode refid="5287" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5322">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_vendor.c</label>
+        <link refid="ll__vendor_8c"/>
+      </node>
+      <node id="5341">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_manager.h</label>
+        <link refid="link__manager_8h"/>
+      </node>
+      <node id="5296">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/hci_ll_cmds.c</label>
+        <link refid="hci__ll__cmds_8c"/>
+      </node>
+      <node id="5318">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_pc.c</label>
+        <link refid="ll__pc_8c"/>
+      </node>
+      <node id="5332">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_pc.c</label>
+        <link refid="llcp__sm__pc_8c"/>
+      </node>
+      <node id="5305">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_common_iso.c</label>
+        <link refid="ll__common__iso_8c"/>
+      </node>
+      <node id="5321">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_slave.c</label>
+        <link refid="ll__slave_8c"/>
+      </node>
+      <node id="5314">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_keys.c</label>
+        <link refid="ll__keys_8c"/>
+      </node>
+      <node id="5312">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_extended_advertising.c</label>
+        <link refid="ll__extended__advertising_8c"/>
+      </node>
+      <node id="5328">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_conn_update.c</label>
+        <link refid="llcp__sm__conn__update_8c"/>
+      </node>
+      <node id="5297">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/link_layer.c</label>
+        <link refid="link__layer_8c"/>
+      </node>
+      <node id="5335">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_sca.c</label>
+        <link refid="llcp__sm__sca_8c"/>
+      </node>
+      <node id="5299">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c</label>
+        <link refid="ll__bis_8c"/>
+      </node>
+      <node id="5300">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis_master.c</label>
+        <link refid="ll__bis__master_8c"/>
+      </node>
+      <node id="5309">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_ext_adv.c</label>
+        <link refid="ll__ext__adv_8c"/>
+      </node>
+      <node id="5327">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_common.c</label>
+        <link refid="llcp__sm__common_8c"/>
+      </node>
+      <node id="5310">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_ext_init.c</label>
+        <link refid="ll__ext__init_8c"/>
+      </node>
+      <node id="5307">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_data_extension.c</label>
+        <link refid="ll__data__extension_8c"/>
+      </node>
+      <node id="5302">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis.c</label>
+        <link refid="ll__cis_8c"/>
+      </node>
+      <node id="5289">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_adv.c</label>
+        <link refid="ll__adv_8c"/>
+      </node>
+      <node id="5306">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cte.c</label>
+        <link refid="ll__cte_8c"/>
+      </node>
+      <node id="5338">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_acc.c</label>
+        <link refid="tws__le__acc_8c"/>
+      </node>
+      <node id="5315">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_master.c</label>
+        <link refid="ll__master_8c"/>
+      </node>
+      <node id="5333">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_phy_update.c</label>
+        <link refid="llcp__sm__phy__update_8c"/>
+      </node>
+      <node id="5295">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/hci_ll.c</label>
+        <link refid="hci__ll_8c"/>
+      </node>
+      <node id="5293">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_scan.c</label>
+        <link refid="tws__ll__scan_8c"/>
+      </node>
+      <node id="5320">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_resolve_list.c</label>
+        <link refid="ll__resolve__list_8c"/>
+      </node>
+      <node id="5326">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_cis_terminate.c</label>
+        <link refid="llcp__sm__cis__terminate_8c"/>
+      </node>
+      <node id="5336">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_template.c</label>
+        <link refid="llcp__sm__template_8c"/>
+      </node>
+      <node id="5323">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_white_list.c</label>
+        <link refid="ll__white__list_8c"/>
+      </node>
+      <node id="5290">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_init.c</label>
+        <link refid="ll__init_8c"/>
+      </node>
+      <node id="5308">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_events.c</label>
+        <link refid="ll__events_8c"/>
+      </node>
+      <node id="5288">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/resolve_list.h</label>
+        <link refid="resolve_list.h"/>
+        <childnode refid="5289" relation="include">
+        </childnode>
+        <childnode refid="5290" relation="include">
+        </childnode>
+        <childnode refid="5291" relation="include">
+        </childnode>
+        <childnode refid="5292" relation="include">
+        </childnode>
+        <childnode refid="5293" relation="include">
+        </childnode>
+        <childnode refid="5294" relation="include">
+        </childnode>
+      </node>
+      <node id="5337">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_vendor_jl.c</label>
+        <link refid="llcp__sm__vendor__jl_8c"/>
+      </node>
+      <node id="5325">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_cis.c</label>
+        <link refid="llcp__sm__cis_8c"/>
+      </node>
+      <node id="5339">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c</label>
+        <link refid="tws__le__link_8c"/>
+      </node>
+      <node id="5324">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_bis.c</label>
+        <link refid="llcp__sm__bis_8c"/>
+      </node>
+      <node id="5301">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis_slave.c</label>
+        <link refid="ll__bis__slave_8c"/>
+      </node>
+      <node id="5329">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_cte.c</label>
+        <link refid="llcp__sm__cte_8c"/>
+      </node>
+      <node id="5292">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_adv.c</label>
+        <link refid="tws__ll__adv_8c"/>
+      </node>
+      <node id="5334">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_ping.c</label>
+        <link refid="llcp__sm__ping_8c"/>
+      </node>
+      <node id="5304">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis_slave.c</label>
+        <link refid="ll__cis__slave_8c"/>
+      </node>
+      <node id="5316">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_msg.c</label>
+        <link refid="ll__msg_8c"/>
+      </node>
+      <node id="5294">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h</label>
+        <link refid="link__layer_8h"/>
+        <childnode refid="5295" relation="include">
+        </childnode>
+        <childnode refid="5296" relation="include">
+        </childnode>
+        <childnode refid="5297" relation="include">
+        </childnode>
+        <childnode refid="5289" relation="include">
+        </childnode>
+        <childnode refid="5298" relation="include">
+        </childnode>
+        <childnode refid="5299" relation="include">
+        </childnode>
+        <childnode refid="5300" relation="include">
+        </childnode>
+        <childnode refid="5301" relation="include">
+        </childnode>
+        <childnode refid="5302" relation="include">
+        </childnode>
+        <childnode refid="5303" relation="include">
+        </childnode>
+        <childnode refid="5304" relation="include">
+        </childnode>
+        <childnode refid="5305" relation="include">
+        </childnode>
+        <childnode refid="5306" relation="include">
+        </childnode>
+        <childnode refid="5307" relation="include">
+        </childnode>
+        <childnode refid="5308" relation="include">
+        </childnode>
+        <childnode refid="5309" relation="include">
+        </childnode>
+        <childnode refid="5310" relation="include">
+        </childnode>
+        <childnode refid="5311" relation="include">
+        </childnode>
+        <childnode refid="5312" relation="include">
+        </childnode>
+        <childnode refid="5290" relation="include">
+        </childnode>
+        <childnode refid="5313" relation="include">
+        </childnode>
+        <childnode refid="5314" relation="include">
+        </childnode>
+        <childnode refid="5315" relation="include">
+        </childnode>
+        <childnode refid="5316" relation="include">
+        </childnode>
+        <childnode refid="5317" relation="include">
+        </childnode>
+        <childnode refid="5318" relation="include">
+        </childnode>
+        <childnode refid="5319" relation="include">
+        </childnode>
+        <childnode refid="5320" relation="include">
+        </childnode>
+        <childnode refid="5291" relation="include">
+        </childnode>
+        <childnode refid="5321" relation="include">
+        </childnode>
+        <childnode refid="5322" relation="include">
+        </childnode>
+        <childnode refid="5323" relation="include">
+        </childnode>
+        <childnode refid="5324" relation="include">
+        </childnode>
+        <childnode refid="5325" relation="include">
+        </childnode>
+        <childnode refid="5326" relation="include">
+        </childnode>
+        <childnode refid="5327" relation="include">
+        </childnode>
+        <childnode refid="5328" relation="include">
+        </childnode>
+        <childnode refid="5329" relation="include">
+        </childnode>
+        <childnode refid="5330" relation="include">
+        </childnode>
+        <childnode refid="5331" relation="include">
+        </childnode>
+        <childnode refid="5332" relation="include">
+        </childnode>
+        <childnode refid="5333" relation="include">
+        </childnode>
+        <childnode refid="5334" relation="include">
+        </childnode>
+        <childnode refid="5335" relation="include">
+        </childnode>
+        <childnode refid="5336" relation="include">
+        </childnode>
+        <childnode refid="5337" relation="include">
+        </childnode>
+        <childnode refid="5338" relation="include">
+        </childnode>
+        <childnode refid="5339" relation="include">
+        </childnode>
+        <childnode refid="5292" relation="include">
+        </childnode>
+        <childnode refid="5293" relation="include">
+        </childnode>
+        <childnode refid="5340" relation="include">
+        </childnode>
+        <childnode refid="5341" relation="include">
+        </childnode>
+      </node>
+      <node id="5340">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h</label>
+        <link refid="ll__cis_8h"/>
+        <childnode refid="5294" relation="include">
+        </childnode>
+      </node>
+      <node id="5311">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_ext_scan.c</label>
+        <link refid="ll__ext__scan_8c"/>
+      </node>
+      <node id="5330">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_data_extension.c</label>
+        <link refid="llcp__sm__data__extension_8c"/>
+      </node>
+      <node id="5291">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_scan.c</label>
+        <link refid="ll__scan_8c"/>
+      </node>
+      <node id="5317">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_multiple_phys.c</label>
+        <link refid="ll__multiple__phys_8c"/>
+      </node>
+      <node id="5298">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_afh.c</label>
+        <link refid="ll__afh_8c"/>
+      </node>
+      <node id="5313">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_isoal.c</label>
+        <link refid="ll__isoal_8c"/>
+      </node>
+      <node id="5303">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis_master.c</label>
+        <link refid="ll__cis__master_8c"/>
+      </node>
+      <node id="5319">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_periodic_advertising.c</label>
+        <link refid="ll__periodic__advertising_8c"/>
+      </node>
+      <node id="5331">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_encrypt.c</label>
+        <link refid="llcp__sm__encrypt_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structresolving__list__parameter" prot="public">resolving_list_parameter</innerclass>
+    <innerclass refid="structresolving__list" prot="public">resolving_list</innerclass>
+    <innerclass refid="structll__privacy" prot="public">ll_privacy</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="resolve__list_8h_1a13873db6a30bdecf4da8caf8d6d43caa" prot="public" static="no">
+        <name>LL_RESOLVING_LIST_SIZE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/resolve_list.h" line="7" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/resolve_list.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="resolve__list_8h_1a672d9679dbf70a156b69cf50089779ea" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structll__privacy" kindref="compound">ll_privacy</ref></type>
+        <definition>struct ll_privacy le_privacy</definition>
+        <argsstring></argsstring>
+        <name>le_privacy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/resolve_list.h" line="31" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_resolve_list.c" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="resolve__list_8h_1a6b607a52c88f6fa64a6633ce7facfaed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structresolving__list" kindref="compound">resolving_list</ref> *</type>
+        <definition>struct resolving_list* ll_resolve_peer_addr</definition>
+        <argsstring>(const u8 *addr)</argsstring>
+        <name>ll_resolve_peer_addr</name>
+        <param>
+          <type>const u8 *</type>
+          <declname>addr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/resolve_list.h" line="41" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_resolve_list.c" bodystart="219" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="resolve__list_8h_1acfec6138d2ca732b3d23cc8203c4c106" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structresolving__list" kindref="compound">resolving_list</ref> *</type>
+        <definition>struct resolving_list* ll_resolve_local_addr</definition>
+        <argsstring>(const u8 *addr)</argsstring>
+        <name>ll_resolve_local_addr</name>
+        <param>
+          <type>const u8 *</type>
+          <declname>addr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/resolve_list.h" line="43" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_resolve_list.c" bodystart="245" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="function" id="resolve__list_8h_1a297db023b3f17c67c550d50c4b041a9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ll_resolve_list_IRK_verify</definition>
+        <argsstring>(const u8 *irk)</argsstring>
+        <name>ll_resolve_list_IRK_verify</name>
+        <param>
+          <type>const u8 *</type>
+          <declname>irk</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/resolve_list.h" line="45" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_resolve_list.c" bodystart="124" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="resolve__list_8h_1afde9eb98c2aca78fa7c2ad77c84702c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structresolving__list" kindref="compound">resolving_list</ref> *</type>
+        <definition>struct resolving_list* ll_resolving_list_match</definition>
+        <argsstring>(const u8 addr_type, const u8 *addr)</argsstring>
+        <name>ll_resolving_list_match</name>
+        <param>
+          <type>const u8</type>
+          <declname>addr_type</declname>
+        </param>
+        <param>
+          <type>const u8 *</type>
+          <declname>addr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/resolve_list.h" line="47" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_resolve_list.c" bodystart="138" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="resolve__list_8h_1a3b6f5d27d5c4368a895e4b2fd1a8a889" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ll_resolve_list_set_local_RPA</definition>
+        <argsstring>(u8 *addr, struct resolving_list *resolving_list_t)</argsstring>
+        <name>ll_resolve_list_set_local_RPA</name>
+        <param>
+          <type>u8 *</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structresolving__list" kindref="compound">resolving_list</ref> *</type>
+          <declname>resolving_list_t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/resolve_list.h" line="49" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_resolve_list.c" bodystart="191" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="resolve__list_8h_1a0246ce47acd493dd58761f16ca1aa5b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ll_resolve_list_set_peer_RPA</definition>
+        <argsstring>(u8 *addr, struct resolving_list *resolving_list_t)</argsstring>
+        <name>ll_resolve_list_set_peer_RPA</name>
+        <param>
+          <type>u8 *</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structresolving__list" kindref="compound">resolving_list</ref> *</type>
+          <declname>resolving_list_t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/resolve_list.h" line="51" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_resolve_list.c" bodystart="205" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="resolve__list_8h_1acbf778419447e0c5af9fb216e9c8e6b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ll_resolving_list_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>ll_resolving_list_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/resolve_list.h" line="53" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_resolve_list.c" bodystart="302" bodyend="306"/>
+      </memberdef>
+      <memberdef kind="function" id="resolve__list_8h_1ad3206fa834723b7ebd7c26e8c5237f6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ll_resolving_list_add</definition>
+        <argsstring>(const u8 *data)</argsstring>
+        <name>ll_resolving_list_add</name>
+        <param>
+          <type>const u8 *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/resolve_list.h" line="55" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_resolve_list.c" bodystart="308" bodyend="335"/>
+      </memberdef>
+      <memberdef kind="function" id="resolve__list_8h_1aa2139825e64cc23306a5d58ce08ed0ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ll_resolving_list_remove</definition>
+        <argsstring>(const u8 *data)</argsstring>
+        <name>ll_resolving_list_remove</name>
+        <param>
+          <type>const u8 *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/resolve_list.h" line="57" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_resolve_list.c" bodystart="337" bodyend="349"/>
+      </memberdef>
+      <memberdef kind="function" id="resolve__list_8h_1acec5917f59a9e58296e3d947a4b5bd87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ll_read_peer_resolvable_address</definition>
+        <argsstring>(const u8 addr_type, const u8 *addr, u8 *peer_PRA)</argsstring>
+        <name>ll_read_peer_resolvable_address</name>
+        <param>
+          <type>const u8</type>
+          <declname>addr_type</declname>
+        </param>
+        <param>
+          <type>const u8 *</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>u8 *</type>
+          <declname>peer_PRA</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/resolve_list.h" line="59" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_resolve_list.c" bodystart="351" bodyend="364"/>
+      </memberdef>
+      <memberdef kind="function" id="resolve__list_8h_1aa1f97b55016f2d0dc51496c7fae54d63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ll_read_local_resolvable_address</definition>
+        <argsstring>(const u8 addr_type, const u8 *addr, u8 *local_PRA)</argsstring>
+        <name>ll_read_local_resolvable_address</name>
+        <param>
+          <type>const u8</type>
+          <declname>addr_type</declname>
+        </param>
+        <param>
+          <type>const u8 *</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>u8 *</type>
+          <declname>local_PRA</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/resolve_list.h" line="61" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_resolve_list.c" bodystart="366" bodyend="379"/>
+      </memberdef>
+      <memberdef kind="function" id="resolve__list_8h_1aa54a6a5427731f52ee9313b36fd4ed59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ll_resolution_enable</definition>
+        <argsstring>(void)</argsstring>
+        <name>ll_resolution_enable</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/resolve_list.h" line="63" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_resolve_list.c" bodystart="392" bodyend="401"/>
+      </memberdef>
+      <memberdef kind="function" id="resolve__list_8h_1aa54c2f9f169c3e9249622cf95db49ecf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ll_set_resolvable_private_address_timeout</definition>
+        <argsstring>(const u8 *data)</argsstring>
+        <name>ll_set_resolvable_private_address_timeout</name>
+        <param>
+          <type>const u8 *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/resolve_list.h" line="65" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_resolve_list.c" bodystart="381" bodyend="390"/>
+      </memberdef>
+      <memberdef kind="function" id="resolve__list_8h_1ae8f2dde34376952c7cee67706e303537" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ll_resolvable_private_addr_verify</definition>
+        <argsstring>(const u8 *addr)</argsstring>
+        <name>ll_resolvable_private_addr_verify</name>
+        <param>
+          <type>const u8 *</type>
+          <declname>addr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/resolve_list.h" line="67" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_resolve_list.c" bodystart="403" bodyend="410"/>
+      </memberdef>
+      <memberdef kind="function" id="resolve__list_8h_1abc3e4d56810bad81718c75f07fc2262d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ll_resolution_disable</definition>
+        <argsstring>(void)</argsstring>
+        <name>ll_resolution_disable</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/resolve_list.h" line="69" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_resolve_list.c" bodystart="412" bodyend="419"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>_LL_RESOLVE_LIST_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_LL_RESOLVE_LIST_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;typedef.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="resolve__list_8h_1a13873db6a30bdecf4da8caf8d6d43caa" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_RESOLVING_LIST_SIZE<sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>Resolving<sp/>List<sp/>IRK<sp/>pairs<sp/>shall<sp/>be</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>associated<sp/>with<sp/>a<sp/>public<sp/>or<sp/>static<sp/>device<sp/>address<sp/>known<sp/>as<sp/>the<sp/>Identity</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Address.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="structresolving__list__parameter" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structresolving__list__parameter" kindref="compound">resolving_list_parameter</ref><sp/>{</highlight></codeline>
+<codeline lineno="13" refid="structresolving__list__parameter_1adfc3b04f4e4ee4f0a0734851ed57da00" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structresolving__list__parameter_1adfc3b04f4e4ee4f0a0734851ed57da00" kindref="member">Peer_Identity_Address_Type</ref>;</highlight></codeline>
+<codeline lineno="14" refid="structresolving__list__parameter_1a1949b335de50c67f5d13cf434304a603" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structresolving__list__parameter_1a1949b335de50c67f5d13cf434304a603" kindref="member">Peer_Identity_Address</ref>[6];</highlight></codeline>
+<codeline lineno="15" refid="structresolving__list__parameter_1a94bb1b7a68089f95cf0bc9d4719b7e43" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structresolving__list__parameter_1a94bb1b7a68089f95cf0bc9d4719b7e43" kindref="member">Peer_IRK</ref>[16];</highlight></codeline>
+<codeline lineno="16" refid="structresolving__list__parameter_1adf9ce025198ad79f47dab65d383a98c5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structresolving__list__parameter_1adf9ce025198ad79f47dab65d383a98c5" kindref="member">Local_IRK</ref>[16];</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="structresolving__list" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structresolving__list" kindref="compound">resolving_list</ref><sp/>{</highlight></codeline>
+<codeline lineno="20" refid="structresolving__list_1ab0e3085d46800278307f1ed504939f10" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structresolving__list__parameter" kindref="compound">resolving_list_parameter</ref><sp/>resolving_list_param;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="structresolving__list_1a40bb1d4f97437474544f9afb269f8d60" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">list_head<sp/>entry;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="structresolving__list_1a9a3a770532b382ad65e328d4558eece9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>local_PRA[6];</highlight></codeline>
+<codeline lineno="25" refid="structresolving__list_1a9eb5c175877889a123a496180ac06323" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>peer_PRA[6];</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//=============<sp/>privacy<sp/>4.2<sp/>feature<sp/>begin</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="structll__privacy" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structll__privacy" kindref="compound">ll_privacy</ref><sp/>{</highlight></codeline>
+<codeline lineno="29" refid="structll__privacy_1afb31904d23f7d7f22fec0230e87a2b1d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>sys_timer<sp/><ref refid="structll__privacy_1afb31904d23f7d7f22fec0230e87a2b1d" kindref="member">RPA_timeout</ref>;</highlight></codeline>
+<codeline lineno="30" refid="structll__privacy_1a11d2f05636a73ae8147c6fca8a7f9db7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/><ref refid="structll__privacy_1a11d2f05636a73ae8147c6fca8a7f9db7" kindref="member">RPA_timeout_cnt</ref>;</highlight></codeline>
+<codeline lineno="31" refid="structll__privacy_1a08817ebe8730c3da12f8fb80fd7db775" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>random48[6];</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structll__privacy" kindref="compound">ll_privacy</ref><sp/><ref refid="resolve__list_8h_1a672d9679dbf70a156b69cf50089779ea" kindref="member">le_privacy</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">//=============<sp/>privacy<sp/>4.2<sp/>feature<sp/>end</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//Resolve<sp/>List<sp/>Part</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structresolving__list" kindref="compound">resolving_list</ref><sp/>*<ref refid="resolve__list_8h_1a6b607a52c88f6fa64a6633ce7facfaed" kindref="member">ll_resolve_peer_addr</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>*addr);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structresolving__list" kindref="compound">resolving_list</ref><sp/>*<ref refid="resolve__list_8h_1acfec6138d2ca732b3d23cc8203c4c106" kindref="member">ll_resolve_local_addr</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>*addr);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="resolve__list_8h_1a297db023b3f17c67c550d50c4b041a9a" kindref="member">ll_resolve_list_IRK_verify</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>*irk);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structresolving__list" kindref="compound">resolving_list</ref><sp/>*<ref refid="resolve__list_8h_1afde9eb98c2aca78fa7c2ad77c84702c4" kindref="member">ll_resolving_list_match</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>addr_type,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>*addr);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="resolve__list_8h_1a3b6f5d27d5c4368a895e4b2fd1a8a889" kindref="member">ll_resolve_list_set_local_RPA</ref>(u8<sp/>*addr,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structresolving__list" kindref="compound">resolving_list</ref><sp/>*resolving_list_t);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="resolve__list_8h_1a0246ce47acd493dd58761f16ca1aa5b3" kindref="member">ll_resolve_list_set_peer_RPA</ref>(u8<sp/>*addr,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structresolving__list" kindref="compound">resolving_list</ref><sp/>*resolving_list_t);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="resolve__list_8h_1acbf778419447e0c5af9fb216e9c8e6b6" kindref="member">ll_resolving_list_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="resolve__list_8h_1ad3206fa834723b7ebd7c26e8c5237f6f" kindref="member">ll_resolving_list_add</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>*data);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="resolve__list_8h_1aa2139825e64cc23306a5d58ce08ed0ac" kindref="member">ll_resolving_list_remove</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>*data);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="resolve__list_8h_1acec5917f59a9e58296e3d947a4b5bd87" kindref="member">ll_read_peer_resolvable_address</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>addr_type,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>*addr,<sp/>u8<sp/>*<ref refid="structresolving__list_1a9eb5c175877889a123a496180ac06323" kindref="member">peer_PRA</ref>);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="resolve__list_8h_1aa1f97b55016f2d0dc51496c7fae54d63" kindref="member">ll_read_local_resolvable_address</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>addr_type,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>*addr,<sp/>u8<sp/>*<ref refid="structresolving__list_1a9a3a770532b382ad65e328d4558eece9" kindref="member">local_PRA</ref>);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="resolve__list_8h_1aa54a6a5427731f52ee9313b36fd4ed59" kindref="member">ll_resolution_enable</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="resolve__list_8h_1aa54c2f9f169c3e9249622cf95db49ecf" kindref="member">ll_set_resolvable_private_address_timeout</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>*data);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="resolve__list_8h_1ae8f2dde34376952c7cee67706e303537" kindref="member">ll_resolvable_private_addr_verify</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>*addr);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="resolve__list_8h_1abc3e4d56810bad81718c75f07fc2262d" kindref="member">ll_resolution_disable</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/resolve_list.h"/>
+  </compounddef>
+</doxygen>

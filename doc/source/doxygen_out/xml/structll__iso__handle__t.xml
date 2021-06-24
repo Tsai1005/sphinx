@@ -1,0 +1,351 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structll__iso__handle__t" kind="struct" language="C++" prot="public">
+    <compoundname>ll_iso_handle_t</compoundname>
+    <includes refid="ll__iso_8h" local="no">ll_iso.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structll__iso__handle__t_1af7a9ff304aaf2c9bcc7968c7d943267e" prot="public" static="no" mutable="no">
+        <type>struct list_head</type>
+        <definition>struct list_head ll_iso_handle_t::cig_head</definition>
+        <argsstring></argsstring>
+        <name>cig_head</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="261" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="293" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__iso__handle__t_1aeb58d3e2feec771d9bfc5e8c77833053" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_iso_handle_t::max_cig_number</definition>
+        <argsstring></argsstring>
+        <name>max_cig_number</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="294" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="294" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__iso__handle__t_1aad5308da45d9904ab77b987497078d73" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_iso_handle_t::cig_number</definition>
+        <argsstring></argsstring>
+        <name>cig_number</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="295" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="295" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__iso__handle__t_1aa43ece2c2d51006265afe9ae46fb16b8" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_iso_handle_t::cig_bitmap</definition>
+        <argsstring></argsstring>
+        <name>cig_bitmap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="296" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="296" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__iso__handle__t_1a7667b5c8b47cb685bc444d9d767716bf" prot="public" static="no" mutable="no">
+        <type>struct list_head</type>
+        <definition>struct list_head ll_iso_handle_t::cis_head</definition>
+        <argsstring></argsstring>
+        <name>cis_head</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="296" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="299" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__iso__handle__t_1a7e93ec999645da73e94f77e790eeb963" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_iso_handle_t::max_cis_number</definition>
+        <argsstring></argsstring>
+        <name>max_cis_number</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="300" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="300" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__iso__handle__t_1a26e2da2d943adc9f1dbad71a6076ad83" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_iso_handle_t::cis_number</definition>
+        <argsstring></argsstring>
+        <name>cis_number</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="301" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="301" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__iso__handle__t_1a55d9eff9bed62670d5702b5bf9a90b4c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_iso_handle_t::cis_bitmap</definition>
+        <argsstring></argsstring>
+        <name>cis_bitmap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="302" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="302" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__iso__handle__t_1a4315ed604bbd59a77fda2fca325f5fcd" prot="public" static="no" mutable="no">
+        <type>struct list_head</type>
+        <definition>struct list_head ll_iso_handle_t::big_head</definition>
+        <argsstring></argsstring>
+        <name>big_head</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="302" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__iso__handle__t_1ab9e67726587ec1a9a25c2253de13ce0e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_iso_handle_t::max_big_number</definition>
+        <argsstring></argsstring>
+        <name>max_big_number</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="306" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="306" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__iso__handle__t_1ae9645419d3dd36d33a7789c64518bb7d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_iso_handle_t::big_number</definition>
+        <argsstring></argsstring>
+        <name>big_number</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="307" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="307" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__iso__handle__t_1afbdc59a3d9009155e4f275da8a86e68f" prot="public" static="no" mutable="no">
+        <type>struct list_head</type>
+        <definition>struct list_head ll_iso_handle_t::bis_head</definition>
+        <argsstring></argsstring>
+        <name>bis_head</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="307" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="310" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__iso__handle__t_1a485ec59699d663ef50bd5481393fc41d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_iso_handle_t::max_bis_number</definition>
+        <argsstring></argsstring>
+        <name>max_bis_number</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="311" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="311" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__iso__handle__t_1afbf606f2e99a9b951f56e0855b423240" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_iso_handle_t::bis_number</definition>
+        <argsstring></argsstring>
+        <name>bis_number</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="312" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="312" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__iso__handle__t_1a0486eae296ca73cb45ee54440e57bea1" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_iso_handle_t::bis_bitmap</definition>
+        <argsstring></argsstring>
+        <name>bis_bitmap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="313" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="313" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__iso__handle__t_1ac57c00cec28f6594574cbc7444b68541" prot="public" static="no" mutable="no">
+        <type>struct thread</type>
+        <definition>struct thread ll_iso_handle_t::thread</definition>
+        <argsstring></argsstring>
+        <name>thread</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Thread of scheduler </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="313" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="315" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__iso__handle__t_1a4504eda3bdbeecee6cc764e41ff36e6a" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ll_iso_handle_t::createCisPend</definition>
+        <argsstring></argsstring>
+        <name>createCisPend</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="317" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="317" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__iso__handle__t_1a849f6abc895c31d11f459ec7f7f92119" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_iso_handle_t::numIsoTxBuf</definition>
+        <argsstring></argsstring>
+        <name>numIsoTxBuf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default number of ISO transmit buffers. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="320" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="320" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__iso__handle__t_1ad2f62b21eef0c650e33c4be3416fe132" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_iso_handle_t::numIsoRxBuf</definition>
+        <argsstring></argsstring>
+        <name>numIsoRxBuf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default number of ISO receive buffers. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="321" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="321" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__iso__handle__t_1a8782933b8c6fce7dd09ac04dd7fb352a" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t ll_iso_handle_t::maxIsoSduLen</definition>
+        <argsstring></argsstring>
+        <name>maxIsoSduLen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum ISO buffer size between host and controller. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="322" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="322" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__iso__handle__t_1a93427ddb47630d2b3cf341de553b27b0" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t ll_iso_handle_t::maxIsoPduLen</definition>
+        <argsstring></argsstring>
+        <name>maxIsoPduLen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum ISO PDU size between controllers. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="323" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="323" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__iso__handle__t_1a21d47e0ebf1f1b202e06e2ffe7d80a7b" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t ll_iso_handle_t::cisSubEvtSpaceDelay</definition>
+        <argsstring></argsstring>
+        <name>cisSubEvtSpaceDelay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Subevent spacing above T_MSS in microsecond. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="325" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="325" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__iso__handle__t_1ab2dd840e7b24ff867caeedfa50a4334a" prot="public" static="no" mutable="no">
+        <type><ref refid="structlctrCreateCisPend__t" kindref="compound">lctrCreateCisPend_t</ref></type>
+        <definition>lctrCreateCisPend_t ll_iso_handle_t::lctrMstCreateCisPend</definition>
+        <argsstring></argsstring>
+        <name>lctrMstCreateCisPend</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create CIS pending parameters. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="327" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="327" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>LL ISO context. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1445">
+        <label>lctrCreateCisPend_t</label>
+        <link refid="structlctrCreateCisPend__t"/>
+      </node>
+      <node id="1444">
+        <label>ll_iso_handle_t</label>
+        <link refid="structll__iso__handle__t"/>
+        <childnode refid="1445" relation="usage">
+          <edgelabel>lctrMstCreateCisPend</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="291" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="291" bodyend="328"/>
+    <listofallmembers>
+      <member refid="structll__iso__handle__t_1a4315ed604bbd59a77fda2fca325f5fcd" prot="public" virt="non-virtual"><scope>ll_iso_handle_t</scope><name>big_head</name></member>
+      <member refid="structll__iso__handle__t_1ae9645419d3dd36d33a7789c64518bb7d" prot="public" virt="non-virtual"><scope>ll_iso_handle_t</scope><name>big_number</name></member>
+      <member refid="structll__iso__handle__t_1a0486eae296ca73cb45ee54440e57bea1" prot="public" virt="non-virtual"><scope>ll_iso_handle_t</scope><name>bis_bitmap</name></member>
+      <member refid="structll__iso__handle__t_1afbdc59a3d9009155e4f275da8a86e68f" prot="public" virt="non-virtual"><scope>ll_iso_handle_t</scope><name>bis_head</name></member>
+      <member refid="structll__iso__handle__t_1afbf606f2e99a9b951f56e0855b423240" prot="public" virt="non-virtual"><scope>ll_iso_handle_t</scope><name>bis_number</name></member>
+      <member refid="structll__iso__handle__t_1aa43ece2c2d51006265afe9ae46fb16b8" prot="public" virt="non-virtual"><scope>ll_iso_handle_t</scope><name>cig_bitmap</name></member>
+      <member refid="structll__iso__handle__t_1af7a9ff304aaf2c9bcc7968c7d943267e" prot="public" virt="non-virtual"><scope>ll_iso_handle_t</scope><name>cig_head</name></member>
+      <member refid="structll__iso__handle__t_1aad5308da45d9904ab77b987497078d73" prot="public" virt="non-virtual"><scope>ll_iso_handle_t</scope><name>cig_number</name></member>
+      <member refid="structll__iso__handle__t_1a55d9eff9bed62670d5702b5bf9a90b4c" prot="public" virt="non-virtual"><scope>ll_iso_handle_t</scope><name>cis_bitmap</name></member>
+      <member refid="structll__iso__handle__t_1a7667b5c8b47cb685bc444d9d767716bf" prot="public" virt="non-virtual"><scope>ll_iso_handle_t</scope><name>cis_head</name></member>
+      <member refid="structll__iso__handle__t_1a26e2da2d943adc9f1dbad71a6076ad83" prot="public" virt="non-virtual"><scope>ll_iso_handle_t</scope><name>cis_number</name></member>
+      <member refid="structll__iso__handle__t_1a21d47e0ebf1f1b202e06e2ffe7d80a7b" prot="public" virt="non-virtual"><scope>ll_iso_handle_t</scope><name>cisSubEvtSpaceDelay</name></member>
+      <member refid="structll__iso__handle__t_1a4504eda3bdbeecee6cc764e41ff36e6a" prot="public" virt="non-virtual"><scope>ll_iso_handle_t</scope><name>createCisPend</name></member>
+      <member refid="structll__iso__handle__t_1ab2dd840e7b24ff867caeedfa50a4334a" prot="public" virt="non-virtual"><scope>ll_iso_handle_t</scope><name>lctrMstCreateCisPend</name></member>
+      <member refid="structll__iso__handle__t_1ab9e67726587ec1a9a25c2253de13ce0e" prot="public" virt="non-virtual"><scope>ll_iso_handle_t</scope><name>max_big_number</name></member>
+      <member refid="structll__iso__handle__t_1a485ec59699d663ef50bd5481393fc41d" prot="public" virt="non-virtual"><scope>ll_iso_handle_t</scope><name>max_bis_number</name></member>
+      <member refid="structll__iso__handle__t_1aeb58d3e2feec771d9bfc5e8c77833053" prot="public" virt="non-virtual"><scope>ll_iso_handle_t</scope><name>max_cig_number</name></member>
+      <member refid="structll__iso__handle__t_1a7e93ec999645da73e94f77e790eeb963" prot="public" virt="non-virtual"><scope>ll_iso_handle_t</scope><name>max_cis_number</name></member>
+      <member refid="structll__iso__handle__t_1a93427ddb47630d2b3cf341de553b27b0" prot="public" virt="non-virtual"><scope>ll_iso_handle_t</scope><name>maxIsoPduLen</name></member>
+      <member refid="structll__iso__handle__t_1a8782933b8c6fce7dd09ac04dd7fb352a" prot="public" virt="non-virtual"><scope>ll_iso_handle_t</scope><name>maxIsoSduLen</name></member>
+      <member refid="structll__iso__handle__t_1ad2f62b21eef0c650e33c4be3416fe132" prot="public" virt="non-virtual"><scope>ll_iso_handle_t</scope><name>numIsoRxBuf</name></member>
+      <member refid="structll__iso__handle__t_1a849f6abc895c31d11f459ec7f7f92119" prot="public" virt="non-virtual"><scope>ll_iso_handle_t</scope><name>numIsoTxBuf</name></member>
+      <member refid="structll__iso__handle__t_1ac57c00cec28f6594574cbc7444b68541" prot="public" virt="non-virtual"><scope>ll_iso_handle_t</scope><name>thread</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

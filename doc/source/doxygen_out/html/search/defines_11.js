@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['s16_5fmax_5flimit',['S16_MAX_LIMIT',['../ll__afh_8c.html#a1790cf8e7506da554bc1acab1d011cd2',1,'ll_afh.c']]],
+  ['s16_5fmin_5flimit',['S16_MIN_LIMIT',['../ll__afh_8c.html#ab72cdee251f9107b020c634646c87d1b',1,'ll_afh.c']]],
+  ['scan_5fundirected',['SCAN_UNDIRECTED',['../ll__ext__adv_8h.html#a8ed4b8f7861601b2ea0935dedd67b7d7',1,'ll_ext_adv.h']]],
+  ['scannable_5fdirected',['SCANNABLE_DIRECTED',['../ll__ext__adv_8h.html#abd7b71a6c7841dc14d5e2505bb6fd6e7',1,'ll_ext_adv.h']]],
+  ['scannable_5fundirected',['SCANNABLE_UNDIRECTED',['../ll__ext__adv_8h.html#a3c59de53b29704efe57c531572816f68',1,'ll_ext_adv.h']]],
+  ['sco_5fd',['SCO_D',['../bredr__types_8h.html#a2b256ffcfa9c705e14f191d6e8005b70',1,'bredr_types.h']]],
+  ['sco_5fhv1',['SCO_HV1',['../lmp__pdu_8h.html#a1b7a0a01f737cf44202e0e0aaf823496',1,'lmp_pdu.h']]],
+  ['sco_5fhv2',['SCO_HV2',['../lmp__pdu_8h.html#a77a5714502150862249cbe36676f116e',1,'lmp_pdu.h']]],
+  ['sco_5fhv3',['SCO_HV3',['../lmp__pdu_8h.html#a4127660fff31308790756f9f6fc2cbeb',1,'lmp_pdu.h']]],
+  ['send_5fencrypted',['SEND_ENCRYPTED',['../link__layer_8h.html#ad70cf16a99572872437a57c760b48674',1,'link_layer.h']]],
+  ['send_5fprotect_5fdisable',['SEND_PROTECT_DISABLE',['../link__layer_8h.html#aa1eda38f9a033f397d34ba0d47c5b4d8',1,'link_layer.h']]],
+  ['send_5fprotect_5fenable',['SEND_PROTECT_ENABLE',['../link__layer_8h.html#aeab53bcd39ceb37ed6b59dcceb1a0180',1,'link_layer.h']]],
+  ['send_5funencrypted',['SEND_UNENCRYPTED',['../link__layer_8h.html#a1db5e690ee0074f2897eaf093e90983e',1,'link_layer.h']]],
+  ['set_5fbit',['SET_BIT',['../ll__ext__scan_8h.html#a31edb8834d915e6d288298493ba1c6b7',1,'ll_ext_scan.h']]],
+  ['signal_5fdebug_5ftimeout',['SIGNAL_DEBUG_TIMEOUT',['../link__layer_8c.html#aadb1c152d5ce09030e3e52745b7b16d6',1,'link_layer.c']]],
+  ['slave_5faccess_5fwindow1',['SLAVE_ACCESS_WINDOW1',['../bredr__types_8h.html#a3716b63bf53259304fd5304d01e6323a',1,'bredr_types.h']]],
+  ['slave_5faccess_5fwindow2',['SLAVE_ACCESS_WINDOW2',['../bredr__types_8h.html#a995ea85cdedacf5c860119c517234679',1,'bredr_types.h']]],
+  ['slave_5fconnect',['SLAVE_CONNECT',['../bredr__types_8h.html#a170139885fa7c0b7f561a8a492dd6992',1,'bredr_types.h']]],
+  ['slave_5fpage_5fresponse',['SLAVE_PAGE_RESPONSE',['../bredr__types_8h.html#a2e6c35b9e9064c7c472171faf9280454',1,'bredr_types.h']]],
+  ['sniff_5ftone_5fdebug',['SNIFF_TONE_DEBUG',['../bredr__link_8h.html#ab79c5eff23b8b17197c93ea0079158f9',1,'bredr_link.h']]],
+  ['sp_5fnumeric_5fcomparison',['SP_NUMERIC_COMPARISON',['../lmp_8h.html#af8f1303a87cacd5013386f2b935402e5',1,'lmp.h']]],
+  ['sp_5fout_5fof_5fband',['SP_OUT_OF_BAND',['../lmp_8h.html#ac3d0b84af0070a3223ff80e0c9df8f07',1,'lmp.h']]],
+  ['sp_5fpasskey_5fentry',['SP_PASSKEY_ENTRY',['../lmp_8h.html#ab0a96bb33e5ecc0105140d66328dc621',1,'lmp.h']]],
+  ['sp_5freserved',['SP_RESERVED',['../lmp_8h.html#ae182885cc83026ee971a9aee523d36bc',1,'lmp.h']]],
+  ['subversnr',['SUBVERSNR',['../ll__defines_8h.html#a19d4268da04e3641980bac368f629e40',1,'ll_defines.h']]]
+];

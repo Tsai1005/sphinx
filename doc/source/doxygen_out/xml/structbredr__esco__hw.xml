@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structbredr__esco__hw" kind="struct" language="C++" prot="public">
+    <compoundname>bredr_esco_hw</compoundname>
+    <includes refid="bredr__link_8h" local="no">bredr_link.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structbredr__esco__hw_1a9635fe248192b316485ecbdaa8ead680" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 bredr_esco_hw::esco_id</definition>
+        <argsstring></argsstring>
+        <name>esco_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="363" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="363" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__esco__hw_1a0d690eb7ff2bc63a8106bc0efa9b27c0" prot="public" static="no" mutable="no">
+        <type>struct bredr_esco_reg *</type>
+        <definition>volatile struct bredr_esco_reg* bredr_esco_hw::reg</definition>
+        <argsstring></argsstring>
+        <name>reg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="364" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="364" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__esco__hw_1a2a5db16ebd1f320d7a62fb7fc0151009" prot="public" static="no" mutable="no">
+        <type>struct bredr_esco_frame *</type>
+        <definition>volatile struct bredr_esco_frame* bredr_esco_hw::frame</definition>
+        <argsstring></argsstring>
+        <name>frame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="365" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="365" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="362" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="362" bodyend="366"/>
+    <listofallmembers>
+      <member refid="structbredr__esco__hw_1a9635fe248192b316485ecbdaa8ead680" prot="public" virt="non-virtual"><scope>bredr_esco_hw</scope><name>esco_id</name></member>
+      <member refid="structbredr__esco__hw_1a2a5db16ebd1f320d7a62fb7fc0151009" prot="public" virt="non-virtual"><scope>bredr_esco_hw</scope><name>frame</name></member>
+      <member refid="structbredr__esco__hw_1a0d690eb7ff2bc63a8106bc0efa9b27c0" prot="public" virt="non-virtual"><scope>bredr_esco_hw</scope><name>reg</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

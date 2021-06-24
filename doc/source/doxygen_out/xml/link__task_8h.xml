@@ -1,0 +1,820 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="link__task_8h" kind="file" language="C++">
+    <compoundname>link_task.h</compoundname>
+    <includes local="yes">generic/typedef.h</includes>
+    <includes local="yes">generic/list.h</includes>
+    <includedby refid="ll__adv_8c" local="yes">/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_adv.c</includedby>
+    <includedby refid="tws__le__link_8c" local="yes">/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c</includedby>
+    <includedby refid="bredr__link_8h" local="yes">/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h</includedby>
+    <incdepgraph>
+      <node id="5736">
+        <label>generic/list.h</label>
+      </node>
+      <node id="5734">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_task.h</label>
+        <link refid="link_task.h"/>
+        <childnode refid="5735" relation="include">
+        </childnode>
+        <childnode refid="5736" relation="include">
+        </childnode>
+      </node>
+      <node id="5735">
+        <label>generic/typedef.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5737">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_task.h</label>
+        <link refid="link_task.h"/>
+        <childnode refid="5738" relation="include">
+        </childnode>
+        <childnode refid="5739" relation="include">
+        </childnode>
+        <childnode refid="5740" relation="include">
+        </childnode>
+      </node>
+      <node id="5743">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h</label>
+        <link refid="tws__sniff_8h"/>
+      </node>
+      <node id="5745">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_schedule.h</label>
+        <link refid="tws__schedule_8h"/>
+      </node>
+      <node id="5742">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h</label>
+        <link refid="tws__conn_8h"/>
+        <childnode refid="5743" relation="include">
+        </childnode>
+      </node>
+      <node id="5744">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sbc_sync.h</label>
+        <link refid="tws__sbc__sync_8h"/>
+      </node>
+      <node id="5740">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h</label>
+        <link refid="bredr__link_8h"/>
+        <childnode refid="5739" relation="include">
+        </childnode>
+        <childnode refid="5741" relation="include">
+        </childnode>
+      </node>
+      <node id="5738">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_adv.c</label>
+        <link refid="ll__adv_8c"/>
+      </node>
+      <node id="5739">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c</label>
+        <link refid="tws__le__link_8c"/>
+      </node>
+      <node id="5741">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h</label>
+        <link refid="tws__link_8h"/>
+        <childnode refid="5742" relation="include">
+        </childnode>
+        <childnode refid="5744" relation="include">
+        </childnode>
+        <childnode refid="5745" relation="include">
+        </childnode>
+        <childnode refid="5743" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structlink__task__ops" prot="public">link_task_ops</innerclass>
+    <innerclass refid="structlink__task" prot="public">link_task</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="link__task_8h_1a2d5492e116eebd5075f247d21fb9db26" prot="public" static="no">
+        <name>@99</name>
+        <enumvalue id="link__task_8h_1a2d5492e116eebd5075f247d21fb9db26a8b506354ddc147926fd67fff6846fa2c" prot="public">
+          <name>LINK_TYPE_IDLE</name>
+          <initializer>= 0x0001</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="link__task_8h_1a2d5492e116eebd5075f247d21fb9db26aebd566e9aed21daef551c25d9ee788b1" prot="public">
+          <name>LINK_TYPE_INQUIRY_SCAN</name>
+          <initializer>= 0x0002</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="link__task_8h_1a2d5492e116eebd5075f247d21fb9db26a460077e74b302e6713c8f44cb2be4808" prot="public">
+          <name>LINK_TYPE_PAGE_SCAN</name>
+          <initializer>= 0x0004</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="link__task_8h_1a2d5492e116eebd5075f247d21fb9db26a5a702c8696545eae9e2cb4f644071e9c" prot="public">
+          <name>LINK_TYPE_INQUIRY</name>
+          <initializer>= 0x0008</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="link__task_8h_1a2d5492e116eebd5075f247d21fb9db26a56d4643441210095053c6cda36cce90f" prot="public">
+          <name>LINK_TYPE_PAGE</name>
+          <initializer>= 0x0010</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="link__task_8h_1a2d5492e116eebd5075f247d21fb9db26a1c59394277ba5309c23452de1dec7754" prot="public">
+          <name>LINK_TYPE_CONN</name>
+          <initializer>= 0x0020</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="link__task_8h_1a2d5492e116eebd5075f247d21fb9db26a88ef6e8af7f04890ce8cdc4b3035f323" prot="public">
+          <name>LINK_TYPE_PAGE_TWS</name>
+          <initializer>= 0x0040</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="link__task_8h_1a2d5492e116eebd5075f247d21fb9db26a66347329c0cfe146c07d5f79a84dca6f" prot="public">
+          <name>LINK_TYPE_PAGE_SCAN_TWS</name>
+          <initializer>= 0x0080</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="link__task_8h_1a2d5492e116eebd5075f247d21fb9db26a49282e7eff1ee6f51c07dbd661028748" prot="public">
+          <name>LINK_TYPE_CONN_TWS</name>
+          <initializer>= 0x0100</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="link__task_8h_1a2d5492e116eebd5075f247d21fb9db26a6449b05d11d9c0e0786e241220071c08" prot="public">
+          <name>LINK_TYPE_TWS_SEARCH_IDLE</name>
+          <initializer>= 0x0200</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="link__task_8h_1a2d5492e116eebd5075f247d21fb9db26ae20f230dd22e2e1bf248f3f19002c2a2" prot="public">
+          <name>LINK_TYPE_RAND_PAGE</name>
+          <initializer>= 0x0400</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="link__task_8h_1a2d5492e116eebd5075f247d21fb9db26a18fcbced487e3b33d482541083e5d17d" prot="public">
+          <name>LINK_TYPE_DISTURB_SCAN</name>
+          <initializer>= 0x0800</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="link__task_8h_1a2d5492e116eebd5075f247d21fb9db26a74cbd4cfda3ec4f8b6968dcdf7f19b14" prot="public">
+          <name>LINK_TYPE_FIX_TXRX</name>
+          <initializer>= 0x1000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_task.h" line="7" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_task.h" bodystart="7" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="enum" id="link__task_8h_1a73c53bacb25588538843a1dcfe5f382b" prot="public" static="no">
+        <name>@100</name>
+        <enumvalue id="link__task_8h_1a73c53bacb25588538843a1dcfe5f382ba75b441bcb01ef5b9e61547b34a5f9f61" prot="public">
+          <name>LINK_STA_ATTRIBUTE_IDLE</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="link__task_8h_1a73c53bacb25588538843a1dcfe5f382baba4db0a4b6198440b839f973c42279d0" prot="public">
+          <name>LINK_STA_ATTRIBUTE_SBC</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="link__task_8h_1a73c53bacb25588538843a1dcfe5f382bab79f19cd18cc4aa7fd40915bca4a83b2" prot="public">
+          <name>LINK_STA_ATTRIBUTE_TWS</name>
+          <initializer>= 0x03</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="link__task_8h_1a73c53bacb25588538843a1dcfe5f382ba23838951d8c4e2e16912a1a718624077" prot="public">
+          <name>LINK_STA_ATTRIBUTE_NO_RUN</name>
+          <initializer>= 0x04</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_task.h" line="23" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_task.h" bodystart="23" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="enum" id="link__task_8h_1a26e1124d33b4acdb532c49f6498df549" prot="public" static="no">
+        <name>@101</name>
+        <enumvalue id="link__task_8h_1a26e1124d33b4acdb532c49f6498df549ae50623b439b41ba62b89ec623abb2d5c" prot="public">
+          <name>LINK_TASK_STA_CLOSE</name>
+          <initializer>= 0x00</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="link__task_8h_1a26e1124d33b4acdb532c49f6498df549ac460b14059b3b89a8bc58f5b819d98da" prot="public">
+          <name>LINK_TASK_STA_OPEN</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="link__task_8h_1a26e1124d33b4acdb532c49f6498df549a470ba3dd13d8a76a1ecdeb83f4f94da2" prot="public">
+          <name>LINK_TASK_STA_SUSPEND</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_task.h" line="30" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_task.h" bodystart="30" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="link__task_8h_1a405812a1f39709a740cbe1fc71aab2c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void link_task_add</definition>
+        <argsstring>(struct link_task *new)</argsstring>
+        <name>link_task_add</name>
+        <param>
+          <type>struct <ref refid="structlink__task" kindref="compound">link_task</ref> *</type>
+          <declname>new</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_task.h" line="61" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__task_8h_1aa3945f4005033f122705d6010127b28d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void link_task_del</definition>
+        <argsstring>(struct link_task *task)</argsstring>
+        <name>link_task_del</name>
+        <param>
+          <type>struct <ref refid="structlink__task" kindref="compound">link_task</ref> *</type>
+          <declname>task</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_task.h" line="64" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__task_8h_1aef816856db62afbbe00f7fa1ff52838d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void link_task_schedule</definition>
+        <argsstring>()</argsstring>
+        <name>link_task_schedule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_task.h" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__task_8h_1a763d9a05ddb864371739573481624399" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void link_task_run</definition>
+        <argsstring>(struct link_task *task)</argsstring>
+        <name>link_task_run</name>
+        <param>
+          <type>struct <ref refid="structlink__task" kindref="compound">link_task</ref> *</type>
+          <declname>task</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_task.h" line="68" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__task_8h_1a35f56138ac17a6e3e1883ce80cdef780" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void link_task_run_slots</definition>
+        <argsstring>(struct link_task *task, int)</argsstring>
+        <name>link_task_run_slots</name>
+        <param>
+          <type>struct <ref refid="structlink__task" kindref="compound">link_task</ref> *</type>
+          <declname>task</declname>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_task.h" line="70" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__task_8h_1a6a32359535e6b869028fd707c28fcf3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u32</type>
+        <definition>u32 link_task_remain_slot</definition>
+        <argsstring>(struct link_task *task)</argsstring>
+        <name>link_task_remain_slot</name>
+        <param>
+          <type>struct <ref refid="structlink__task" kindref="compound">link_task</ref> *</type>
+          <declname>task</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_task.h" line="72" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__task_8h_1a70367fa788f6209becc900cc00e0b1e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void link_task_set_slots</definition>
+        <argsstring>(struct link_task *task, int slots)</argsstring>
+        <name>link_task_set_slots</name>
+        <param>
+          <type>struct <ref refid="structlink__task" kindref="compound">link_task</ref> *</type>
+          <declname>task</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>slots</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_task.h" line="74" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__task_8h_1a86612bcf975758d56f23647999d12343" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void link_task_schedule_reset</definition>
+        <argsstring>(void)</argsstring>
+        <name>link_task_schedule_reset</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_task.h" line="76" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__task_8h_1aca8eb37e1a91459092b5ce4cf26b3449" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void link_task_schedule_suspend</definition>
+        <argsstring>()</argsstring>
+        <name>link_task_schedule_suspend</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_task.h" line="78" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__task_8h_1a2b0d404c1235d679300dcfa7048a810f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void link_task_schedule_resume</definition>
+        <argsstring>()</argsstring>
+        <name>link_task_schedule_resume</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_task.h" line="80" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__task_8h_1a5c305daa09764fed621e93fc7d2fa8f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void link_task_set_period</definition>
+        <argsstring>(int period)</argsstring>
+        <name>link_task_set_period</name>
+        <param>
+          <type>int</type>
+          <declname>period</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_task.h" line="82" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__task_8h_1a8162d2dd878c8bf797bbc9df1fb3ced2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u32</type>
+        <definition>u32 link_task_idle_enable</definition>
+        <argsstring>(void)</argsstring>
+        <name>link_task_idle_enable</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_task.h" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__task_8h_1abad4a4ff8d690aa2776aafb8099cf140" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u32</type>
+        <definition>u32 link_task_idle_disable</definition>
+        <argsstring>(void)</argsstring>
+        <name>link_task_idle_disable</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_task.h" line="86" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__task_8h_1a1c20644102d15c6de0720ee017d55270" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void link_task_reset_slot</definition>
+        <argsstring>(struct link_task *task, u8 sta_attribute)</argsstring>
+        <name>link_task_reset_slot</name>
+        <param>
+          <type>struct <ref refid="structlink__task" kindref="compound">link_task</ref> *</type>
+          <declname>task</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>sta_attribute</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_task.h" line="88" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__task_8h_1a8f2e3370754ccae24ef3739bc4853d7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void link_other_task_run_slots</definition>
+        <argsstring>(struct link_task *task, int slots)</argsstring>
+        <name>link_other_task_run_slots</name>
+        <param>
+          <type>struct <ref refid="structlink__task" kindref="compound">link_task</ref> *</type>
+          <declname>task</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>slots</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_task.h" line="90" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__task_8h_1a9181c87da9ba038ee5808d456b2be6c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void link_task_run_set</definition>
+        <argsstring>(struct link_task *task, u8 run_num)</argsstring>
+        <name>link_task_run_set</name>
+        <param>
+          <type>struct <ref refid="structlink__task" kindref="compound">link_task</ref> *</type>
+          <declname>task</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>run_num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_task.h" line="92" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__task_8h_1a22413c4ab532845b5493ea15447e8d15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void link_task_try_run_slots</definition>
+        <argsstring>(struct link_task *task, int slots)</argsstring>
+        <name>link_task_try_run_slots</name>
+        <param>
+          <type>struct <ref refid="structlink__task" kindref="compound">link_task</ref> *</type>
+          <declname>task</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>slots</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_task.h" line="94" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__task_8h_1ab605d59c8c64b0e9824af9f10cb01643" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void link_task_idle_run</definition>
+        <argsstring>(int slot)</argsstring>
+        <name>link_task_idle_run</name>
+        <param>
+          <type>int</type>
+          <declname>slot</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_task.h" line="96" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__task_8h_1ab1aa73c524423ca178c5255cf6124ce0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structlink__task" kindref="compound">link_task</ref> *</type>
+        <definition>struct link_task* get_curr_task</definition>
+        <argsstring>()</argsstring>
+        <name>get_curr_task</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_task.h" line="97" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__task_8h_1aa7e1a8ce3670ca3852d478ee7c7c1f9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void link_task_close_all</definition>
+        <argsstring>(void)</argsstring>
+        <name>link_task_close_all</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_task.h" line="99" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__task_8h_1ab5d5245ba6367b1e34159d5deeb90bbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void link_tws_task_adjust</definition>
+        <argsstring>(u8 slot)</argsstring>
+        <name>link_tws_task_adjust</name>
+        <param>
+          <type>u8</type>
+          <declname>slot</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_task.h" line="101" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__task_8h_1a9388774761aa3bcfd38950acbab913ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void link_task_set_sleep_slot</definition>
+        <argsstring>(int slot)</argsstring>
+        <name>link_task_set_sleep_slot</name>
+        <param>
+          <type>int</type>
+          <declname>slot</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_task.h" line="103" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__task_8h_1a53b18305cde97e4c0e1ace7357e1bb69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int link_task_schedule_active</definition>
+        <argsstring>()</argsstring>
+        <name>link_task_schedule_active</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_task.h" line="105" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__task_8h_1ac8706bd5967c04d8ee24fb507cd6c05d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void idle_reset</definition>
+        <argsstring>(int slot)</argsstring>
+        <name>idle_reset</name>
+        <param>
+          <type>int</type>
+          <declname>slot</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_task.h" line="107" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__task_8h_1ada7ee8f017ed025ef973b2634bdec6e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u8</type>
+        <definition>u8 is_dac_power_off</definition>
+        <argsstring>(void)</argsstring>
+        <name>is_dac_power_off</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_task.h" line="108" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>LINK_TASK_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LINK_TASK_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;generic/typedef.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;generic/list.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="8" refid="link__task_8h_1a2d5492e116eebd5075f247d21fb9db26a8b506354ddc147926fd67fff6846fa2c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="link__task_8h_1a2d5492e116eebd5075f247d21fb9db26a8b506354ddc147926fd67fff6846fa2c" kindref="member">LINK_TYPE_IDLE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x0001,</highlight></codeline>
+<codeline lineno="9" refid="link__task_8h_1a2d5492e116eebd5075f247d21fb9db26aebd566e9aed21daef551c25d9ee788b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="link__task_8h_1a2d5492e116eebd5075f247d21fb9db26aebd566e9aed21daef551c25d9ee788b1" kindref="member">LINK_TYPE_INQUIRY_SCAN</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x0002,</highlight></codeline>
+<codeline lineno="10" refid="link__task_8h_1a2d5492e116eebd5075f247d21fb9db26a460077e74b302e6713c8f44cb2be4808" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="link__task_8h_1a2d5492e116eebd5075f247d21fb9db26a460077e74b302e6713c8f44cb2be4808" kindref="member">LINK_TYPE_PAGE_SCAN</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x0004,</highlight></codeline>
+<codeline lineno="11" refid="link__task_8h_1a2d5492e116eebd5075f247d21fb9db26a5a702c8696545eae9e2cb4f644071e9c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="link__task_8h_1a2d5492e116eebd5075f247d21fb9db26a5a702c8696545eae9e2cb4f644071e9c" kindref="member">LINK_TYPE_INQUIRY</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x0008,</highlight></codeline>
+<codeline lineno="12" refid="link__task_8h_1a2d5492e116eebd5075f247d21fb9db26a56d4643441210095053c6cda36cce90f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="link__task_8h_1a2d5492e116eebd5075f247d21fb9db26a56d4643441210095053c6cda36cce90f" kindref="member">LINK_TYPE_PAGE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x0010,</highlight></codeline>
+<codeline lineno="13" refid="link__task_8h_1a2d5492e116eebd5075f247d21fb9db26a1c59394277ba5309c23452de1dec7754" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="link__task_8h_1a2d5492e116eebd5075f247d21fb9db26a1c59394277ba5309c23452de1dec7754" kindref="member">LINK_TYPE_CONN</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x0020,</highlight></codeline>
+<codeline lineno="14" refid="link__task_8h_1a2d5492e116eebd5075f247d21fb9db26a88ef6e8af7f04890ce8cdc4b3035f323" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="link__task_8h_1a2d5492e116eebd5075f247d21fb9db26a88ef6e8af7f04890ce8cdc4b3035f323" kindref="member">LINK_TYPE_PAGE_TWS</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x0040,</highlight></codeline>
+<codeline lineno="15" refid="link__task_8h_1a2d5492e116eebd5075f247d21fb9db26a66347329c0cfe146c07d5f79a84dca6f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="link__task_8h_1a2d5492e116eebd5075f247d21fb9db26a66347329c0cfe146c07d5f79a84dca6f" kindref="member">LINK_TYPE_PAGE_SCAN_TWS</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x0080,</highlight></codeline>
+<codeline lineno="16" refid="link__task_8h_1a2d5492e116eebd5075f247d21fb9db26a49282e7eff1ee6f51c07dbd661028748" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="link__task_8h_1a2d5492e116eebd5075f247d21fb9db26a49282e7eff1ee6f51c07dbd661028748" kindref="member">LINK_TYPE_CONN_TWS</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x0100,</highlight></codeline>
+<codeline lineno="17" refid="link__task_8h_1a2d5492e116eebd5075f247d21fb9db26a6449b05d11d9c0e0786e241220071c08" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="link__task_8h_1a2d5492e116eebd5075f247d21fb9db26a6449b05d11d9c0e0786e241220071c08" kindref="member">LINK_TYPE_TWS_SEARCH_IDLE</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x0200,</highlight></codeline>
+<codeline lineno="18" refid="link__task_8h_1a2d5492e116eebd5075f247d21fb9db26ae20f230dd22e2e1bf248f3f19002c2a2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="link__task_8h_1a2d5492e116eebd5075f247d21fb9db26ae20f230dd22e2e1bf248f3f19002c2a2" kindref="member">LINK_TYPE_RAND_PAGE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x0400,</highlight></codeline>
+<codeline lineno="19" refid="link__task_8h_1a2d5492e116eebd5075f247d21fb9db26a18fcbced487e3b33d482541083e5d17d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="link__task_8h_1a2d5492e116eebd5075f247d21fb9db26a18fcbced487e3b33d482541083e5d17d" kindref="member">LINK_TYPE_DISTURB_SCAN</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x0800,</highlight></codeline>
+<codeline lineno="20" refid="link__task_8h_1a2d5492e116eebd5075f247d21fb9db26a74cbd4cfda3ec4f8b6968dcdf7f19b14" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="link__task_8h_1a2d5492e116eebd5075f247d21fb9db26a74cbd4cfda3ec4f8b6968dcdf7f19b14" kindref="member">LINK_TYPE_FIX_TXRX</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x1000,</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="24" refid="link__task_8h_1a73c53bacb25588538843a1dcfe5f382ba75b441bcb01ef5b9e61547b34a5f9f61" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="link__task_8h_1a73c53bacb25588538843a1dcfe5f382ba75b441bcb01ef5b9e61547b34a5f9f61" kindref="member">LINK_STA_ATTRIBUTE_IDLE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x01,</highlight></codeline>
+<codeline lineno="25" refid="link__task_8h_1a73c53bacb25588538843a1dcfe5f382baba4db0a4b6198440b839f973c42279d0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="link__task_8h_1a73c53bacb25588538843a1dcfe5f382baba4db0a4b6198440b839f973c42279d0" kindref="member">LINK_STA_ATTRIBUTE_SBC</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x02,</highlight></codeline>
+<codeline lineno="26" refid="link__task_8h_1a73c53bacb25588538843a1dcfe5f382bab79f19cd18cc4aa7fd40915bca4a83b2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="link__task_8h_1a73c53bacb25588538843a1dcfe5f382bab79f19cd18cc4aa7fd40915bca4a83b2" kindref="member">LINK_STA_ATTRIBUTE_TWS</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x03,</highlight></codeline>
+<codeline lineno="27" refid="link__task_8h_1a73c53bacb25588538843a1dcfe5f382ba23838951d8c4e2e16912a1a718624077" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="link__task_8h_1a73c53bacb25588538843a1dcfe5f382ba23838951d8c4e2e16912a1a718624077" kindref="member">LINK_STA_ATTRIBUTE_NO_RUN</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x04,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="31" refid="link__task_8h_1a26e1124d33b4acdb532c49f6498df549ae50623b439b41ba62b89ec623abb2d5c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="link__task_8h_1a26e1124d33b4acdb532c49f6498df549ae50623b439b41ba62b89ec623abb2d5c" kindref="member">LINK_TASK_STA_CLOSE</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x00,</highlight></codeline>
+<codeline lineno="32" refid="link__task_8h_1a26e1124d33b4acdb532c49f6498df549ac460b14059b3b89a8bc58f5b819d98da" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="link__task_8h_1a26e1124d33b4acdb532c49f6498df549ac460b14059b3b89a8bc58f5b819d98da" kindref="member">LINK_TASK_STA_OPEN</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x01,</highlight></codeline>
+<codeline lineno="33" refid="link__task_8h_1a26e1124d33b4acdb532c49f6498df549a470ba3dd13d8a76a1ecdeb83f4f94da2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="link__task_8h_1a26e1124d33b4acdb532c49f6498df549a470ba3dd13d8a76a1ecdeb83f4f94da2" kindref="member">LINK_TASK_STA_SUSPEND</ref><sp/><sp/><sp/><sp/>=<sp/>0x02,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structlink__task" kindref="compound">link_task</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="structlink__task__ops" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structlink__task__ops" kindref="compound">link_task_ops</ref><sp/>{</highlight></codeline>
+<codeline lineno="39" refid="structlink__task__ops_1ab11baafadfa5a047c4029137f84bcf47" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/>(*<ref refid="structlink__task__ops_1ab11baafadfa5a047c4029137f84bcf47" kindref="member">resume</ref>)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structlink__task" kindref="compound">link_task</ref><sp/>*);</highlight></codeline>
+<codeline lineno="40" refid="structlink__task__ops_1a07a83ce83dc63a220f630ec5da4425c6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/>(*<ref refid="structlink__task__ops_1a07a83ce83dc63a220f630ec5da4425c6" kindref="member">suspend</ref>)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structlink__task" kindref="compound">link_task</ref><sp/>*);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="structlink__task" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structlink__task" kindref="compound">link_task</ref><sp/>{</highlight></codeline>
+<codeline lineno="45" refid="structlink__task_1a3938e3dcf2a6612cbc8bc4088c679110" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structlink__task_1a3938e3dcf2a6612cbc8bc4088c679110" kindref="member">sta_attribute</ref>;</highlight></codeline>
+<codeline lineno="46" refid="structlink__task_1a79c013664f5e3268ffd76269af8bbacd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structlink__task_1a79c013664f5e3268ffd76269af8bbacd" kindref="member">state</ref>;</highlight></codeline>
+<codeline lineno="47" refid="structlink__task_1a7eec3544fa1d3667218fdaf687ff0284" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structlink__task_1a7eec3544fa1d3667218fdaf687ff0284" kindref="member">run_cnt</ref>;</highlight></codeline>
+<codeline lineno="48" refid="structlink__task_1ab3d2846cf2eb178d91244f2711e9ebbb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structlink__task_1ab3d2846cf2eb178d91244f2711e9ebbb" kindref="member">run_num</ref>;</highlight></codeline>
+<codeline lineno="49" refid="structlink__task_1a96d71ceae3b72bfed4e55795e0eab1b4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structlink__task_1a96d71ceae3b72bfed4e55795e0eab1b4" kindref="member">priority</ref>;</highlight></codeline>
+<codeline lineno="50" refid="structlink__task_1acf5a150c48b43bcf8c713b5ed5403159" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structlink__task_1acf5a150c48b43bcf8c713b5ed5403159" kindref="member">cur_priority</ref>;</highlight></codeline>
+<codeline lineno="51" refid="structlink__task_1a73bfee891fc184be6011ada115f6435c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structlink__task_1a73bfee891fc184be6011ada115f6435c" kindref="member">type</ref>;</highlight></codeline>
+<codeline lineno="52" refid="structlink__task_1a8b10d7ac04a0bed40282ab68c9233908" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structlink__task_1a8b10d7ac04a0bed40282ab68c9233908" kindref="member">run_slot</ref>;</highlight></codeline>
+<codeline lineno="53" refid="structlink__task_1a98f4dd4757964abf45f035fd8419da46" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structlink__task_1a98f4dd4757964abf45f035fd8419da46" kindref="member">default_run_slot</ref>;</highlight></codeline>
+<codeline lineno="54" refid="structlink__task_1a549da3e122d93041fac1a4c8fa2a94f6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structlink__task_1a549da3e122d93041fac1a4c8fa2a94f6" kindref="member">interval</ref>;</highlight></codeline>
+<codeline lineno="55" refid="structlink__task_1a411e63dbf8e3386191c53eefb67a0e2e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">list_head<sp/>entry;</highlight></codeline>
+<codeline lineno="56" refid="structlink__task_1ac7d72b2a8690b0122011de6daf27f88b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structlink__task__ops" kindref="compound">link_task_ops</ref><sp/>*<ref refid="structlink__task_1ac7d72b2a8690b0122011de6daf27f88b" kindref="member">ops</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="link__task_8h_1a405812a1f39709a740cbe1fc71aab2c6" kindref="member">link_task_add</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structlink__task" kindref="compound">link_task</ref><sp/>*</highlight><highlight class="keyword">new</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="link__task_8h_1aa3945f4005033f122705d6010127b28d" kindref="member">link_task_del</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structlink__task" kindref="compound">link_task</ref><sp/>*task);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="link__task_8h_1aef816856db62afbbe00f7fa1ff52838d" kindref="member">link_task_schedule</ref>();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="link__task_8h_1a763d9a05ddb864371739573481624399" kindref="member">link_task_run</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structlink__task" kindref="compound">link_task</ref><sp/>*task);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="link__task_8h_1a35f56138ac17a6e3e1883ce80cdef780" kindref="member">link_task_run_slots</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structlink__task" kindref="compound">link_task</ref><sp/>*task,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal">u32<sp/><ref refid="link__task_8h_1a6a32359535e6b869028fd707c28fcf3d" kindref="member">link_task_remain_slot</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structlink__task" kindref="compound">link_task</ref><sp/>*task);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="link__task_8h_1a70367fa788f6209becc900cc00e0b1e0" kindref="member">link_task_set_slots</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structlink__task" kindref="compound">link_task</ref><sp/>*task,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>slots);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="link__task_8h_1a86612bcf975758d56f23647999d12343" kindref="member">link_task_schedule_reset</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="link__task_8h_1aca8eb37e1a91459092b5ce4cf26b3449" kindref="member">link_task_schedule_suspend</ref>();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="link__task_8h_1a2b0d404c1235d679300dcfa7048a810f" kindref="member">link_task_schedule_resume</ref>();</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="link__task_8h_1a5c305daa09764fed621e93fc7d2fa8f5" kindref="member">link_task_set_period</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>period);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal">u32<sp/><ref refid="link__task_8h_1a8162d2dd878c8bf797bbc9df1fb3ced2" kindref="member">link_task_idle_enable</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal">u32<sp/><ref refid="link__task_8h_1abad4a4ff8d690aa2776aafb8099cf140" kindref="member">link_task_idle_disable</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="link__task_8h_1a1c20644102d15c6de0720ee017d55270" kindref="member">link_task_reset_slot</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structlink__task" kindref="compound">link_task</ref><sp/>*task,<sp/>u8<sp/>sta_attribute);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="link__task_8h_1a8f2e3370754ccae24ef3739bc4853d7c" kindref="member">link_other_task_run_slots</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structlink__task" kindref="compound">link_task</ref><sp/>*task,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>slots);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="link__task_8h_1a9181c87da9ba038ee5808d456b2be6c9" kindref="member">link_task_run_set</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structlink__task" kindref="compound">link_task</ref><sp/>*task,<sp/>u8<sp/>run_num);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="link__task_8h_1a22413c4ab532845b5493ea15447e8d15" kindref="member">link_task_try_run_slots</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structlink__task" kindref="compound">link_task</ref><sp/>*task,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>slots);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="link__task_8h_1ab605d59c8c64b0e9824af9f10cb01643" kindref="member">link_task_idle_run</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>slot);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structlink__task" kindref="compound">link_task</ref><sp/>*<ref refid="link__task_8h_1ab1aa73c524423ca178c5255cf6124ce0" kindref="member">get_curr_task</ref>();</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="link__task_8h_1aa7e1a8ce3670ca3852d478ee7c7c1f9b" kindref="member">link_task_close_all</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="link__task_8h_1ab5d5245ba6367b1e34159d5deeb90bbc" kindref="member">link_tws_task_adjust</ref>(u8<sp/>slot);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="link__task_8h_1a9388774761aa3bcfd38950acbab913ab" kindref="member">link_task_set_sleep_slot</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>slot);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="link__task_8h_1a53b18305cde97e4c0e1ace7357e1bb69" kindref="member">link_task_schedule_active</ref>();</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="link__task_8h_1ac8706bd5967c04d8ee24fb507cd6c05d" kindref="member">idle_reset</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>slot);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal">u8<sp/><sp/><ref refid="link__task_8h_1ada7ee8f017ed025ef973b2634bdec6e4" kindref="member">is_dac_power_off</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_task.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structll__msg__phy__parameter__t" kind="struct" language="C++" prot="public">
+    <compoundname>ll_msg_phy_parameter_t</compoundname>
+    <includes refid="llcp_8h" local="no">llcp.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structll__msg__phy__parameter__t_1ab21ab4621f576f3fa1ab54a43b9efefe" prot="public" static="no" mutable="no">
+        <type><ref refid="structll__msg__hdr__t" kindref="compound">ll_msg_hdr_t</ref></type>
+        <definition>ll_msg_hdr_t ll_msg_phy_parameter_t::hdr</definition>
+        <argsstring></argsstring>
+        <name>hdr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="177" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__msg__phy__parameter__t_1a5c314fd40ffb02167aaec2c17b889f57" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_msg_phy_parameter_t::all_phys</definition>
+        <argsstring></argsstring>
+        <name>all_phys</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="179" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__msg__phy__parameter__t_1aed6b2ad3967fd60396d148e84bfacf6c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_msg_phy_parameter_t::tx_phys</definition>
+        <argsstring></argsstring>
+        <name>tx_phys</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="180" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__msg__phy__parameter__t_1abc4968d7c87d9e076f0ca3b3c9d1c781" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_msg_phy_parameter_t::rx_phys</definition>
+        <argsstring></argsstring>
+        <name>rx_phys</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="181" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__msg__phy__parameter__t_1ac3568376cd3ca2cb2a49e89f4cced827" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_msg_phy_parameter_t::phy_options</definition>
+        <argsstring></argsstring>
+        <name>phy_options</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="182" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1503">
+        <label>ll_msg_phy_parameter_t</label>
+        <link refid="structll__msg__phy__parameter__t"/>
+        <childnode refid="1504" relation="usage">
+          <edgelabel>hdr</edgelabel>
+        </childnode>
+      </node>
+      <node id="1504">
+        <label>ll_msg_hdr_t</label>
+        <link refid="structll__msg__hdr__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="176" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="176" bodyend="183"/>
+    <listofallmembers>
+      <member refid="structll__msg__phy__parameter__t_1a5c314fd40ffb02167aaec2c17b889f57" prot="public" virt="non-virtual"><scope>ll_msg_phy_parameter_t</scope><name>all_phys</name></member>
+      <member refid="structll__msg__phy__parameter__t_1ab21ab4621f576f3fa1ab54a43b9efefe" prot="public" virt="non-virtual"><scope>ll_msg_phy_parameter_t</scope><name>hdr</name></member>
+      <member refid="structll__msg__phy__parameter__t_1ac3568376cd3ca2cb2a49e89f4cced827" prot="public" virt="non-virtual"><scope>ll_msg_phy_parameter_t</scope><name>phy_options</name></member>
+      <member refid="structll__msg__phy__parameter__t_1abc4968d7c87d9e076f0ca3b3c9d1c781" prot="public" virt="non-virtual"><scope>ll_msg_phy_parameter_t</scope><name>rx_phys</name></member>
+      <member refid="structll__msg__phy__parameter__t_1aed6b2ad3967fd60396d148e84bfacf6c" prot="public" virt="non-virtual"><scope>ll_msg_phy_parameter_t</scope><name>tx_phys</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

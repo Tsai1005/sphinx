@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structlctrChanMapInd__t" kind="struct" language="C++" prot="public">
+    <compoundname>lctrChanMapInd_t</compoundname>
+    <includes refid="ll__defines_8h" local="no">ll_defines.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlctrChanMapInd__t_1ae50d5997c4e58fc0a3545bd6d18324af" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t lctrChanMapInd_t::chanMask</definition>
+        <argsstring></argsstring>
+        <name>chanMask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Channel mask. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="834" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="834" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrChanMapInd__t_1a2b40ffbced738ac36288317c21b29f05" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lctrChanMapInd_t::instant</definition>
+        <argsstring></argsstring>
+        <name>instant</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>connInstant value. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="835" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="835" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Connection update indication PDU. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="833" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="833" bodyend="836"/>
+    <listofallmembers>
+      <member refid="structlctrChanMapInd__t_1ae50d5997c4e58fc0a3545bd6d18324af" prot="public" virt="non-virtual"><scope>lctrChanMapInd_t</scope><name>chanMask</name></member>
+      <member refid="structlctrChanMapInd__t_1a2b40ffbced738ac36288317c21b29f05" prot="public" virt="non-virtual"><scope>lctrChanMapInd_t</scope><name>instant</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

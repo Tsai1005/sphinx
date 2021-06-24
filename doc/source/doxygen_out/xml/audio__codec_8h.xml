@@ -1,0 +1,869 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="audio__codec_8h" kind="file" language="C++">
+    <compoundname>audio_codec.h</compoundname>
+    <includes refid="ll__defines_8h" local="yes">ble/ll_defines.h</includes>
+    <includedby refid="ll__bis_8h" local="yes">/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h</includedby>
+    <incdepgraph>
+      <node id="5633">
+        <label>typedef.h</label>
+      </node>
+      <node id="5631">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/audio_codec.h</label>
+        <link refid="audio_codec.h"/>
+        <childnode refid="5632" relation="include">
+        </childnode>
+      </node>
+      <node id="5632">
+        <label>ble/ll_defines.h</label>
+        <link refid="ll__defines_8h"/>
+        <childnode refid="5633" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5667">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_vendor.c</label>
+        <link refid="ll__vendor_8c"/>
+      </node>
+      <node id="5688">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_manager.h</label>
+        <link refid="link__manager_8h"/>
+      </node>
+      <node id="5638">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/hci_ll_cmds.c</label>
+        <link refid="hci__ll__cmds_8c"/>
+      </node>
+      <node id="5662">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_pc.c</label>
+        <link refid="ll__pc_8c"/>
+      </node>
+      <node id="5677">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_pc.c</label>
+        <link refid="llcp__sm__pc_8c"/>
+      </node>
+      <node id="5648">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_common_iso.c</label>
+        <link refid="ll__common__iso_8c"/>
+      </node>
+      <node id="5666">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_slave.c</label>
+        <link refid="ll__slave_8c"/>
+      </node>
+      <node id="5658">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_keys.c</label>
+        <link refid="ll__keys_8c"/>
+      </node>
+      <node id="5655">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_extended_advertising.c</label>
+        <link refid="ll__extended__advertising_8c"/>
+      </node>
+      <node id="5673">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_conn_update.c</label>
+        <link refid="llcp__sm__conn__update_8c"/>
+      </node>
+      <node id="5639">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/link_layer.c</label>
+        <link refid="link__layer_8c"/>
+      </node>
+      <node id="5680">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_sca.c</label>
+        <link refid="llcp__sm__sca_8c"/>
+      </node>
+      <node id="5642">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c</label>
+        <link refid="ll__bis_8c"/>
+      </node>
+      <node id="5643">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis_master.c</label>
+        <link refid="ll__bis__master_8c"/>
+      </node>
+      <node id="5652">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_ext_adv.c</label>
+        <link refid="ll__ext__adv_8c"/>
+      </node>
+      <node id="5672">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_common.c</label>
+        <link refid="llcp__sm__common_8c"/>
+      </node>
+      <node id="5653">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_ext_init.c</label>
+        <link refid="ll__ext__init_8c"/>
+      </node>
+      <node id="5650">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_data_extension.c</label>
+        <link refid="ll__data__extension_8c"/>
+      </node>
+      <node id="5645">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis.c</label>
+        <link refid="ll__cis_8c"/>
+      </node>
+      <node id="5640">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_adv.c</label>
+        <link refid="ll__adv_8c"/>
+      </node>
+      <node id="5649">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cte.c</label>
+        <link refid="ll__cte_8c"/>
+      </node>
+      <node id="5683">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_acc.c</label>
+        <link refid="tws__le__acc_8c"/>
+      </node>
+      <node id="5659">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_master.c</label>
+        <link refid="ll__master_8c"/>
+      </node>
+      <node id="5678">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_phy_update.c</label>
+        <link refid="llcp__sm__phy__update_8c"/>
+      </node>
+      <node id="5637">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/hci_ll.c</label>
+        <link refid="hci__ll_8c"/>
+      </node>
+      <node id="5686">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_scan.c</label>
+        <link refid="tws__ll__scan_8c"/>
+      </node>
+      <node id="5634">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/audio_codec.h</label>
+        <link refid="audio_codec.h"/>
+        <childnode refid="5635" relation="include">
+        </childnode>
+      </node>
+      <node id="5664">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_resolve_list.c</label>
+        <link refid="ll__resolve__list_8c"/>
+      </node>
+      <node id="5671">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_cis_terminate.c</label>
+        <link refid="llcp__sm__cis__terminate_8c"/>
+      </node>
+      <node id="5681">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_template.c</label>
+        <link refid="llcp__sm__template_8c"/>
+      </node>
+      <node id="5668">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_white_list.c</label>
+        <link refid="ll__white__list_8c"/>
+      </node>
+      <node id="5656">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_init.c</label>
+        <link refid="ll__init_8c"/>
+      </node>
+      <node id="5651">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_events.c</label>
+        <link refid="ll__events_8c"/>
+      </node>
+      <node id="5682">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_vendor_jl.c</label>
+        <link refid="llcp__sm__vendor__jl_8c"/>
+      </node>
+      <node id="5670">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_cis.c</label>
+        <link refid="llcp__sm__cis_8c"/>
+      </node>
+      <node id="5684">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c</label>
+        <link refid="tws__le__link_8c"/>
+      </node>
+      <node id="5669">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_bis.c</label>
+        <link refid="llcp__sm__bis_8c"/>
+      </node>
+      <node id="5644">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis_slave.c</label>
+        <link refid="ll__bis__slave_8c"/>
+      </node>
+      <node id="5674">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_cte.c</label>
+        <link refid="llcp__sm__cte_8c"/>
+      </node>
+      <node id="5685">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_adv.c</label>
+        <link refid="tws__ll__adv_8c"/>
+      </node>
+      <node id="5679">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_ping.c</label>
+        <link refid="llcp__sm__ping_8c"/>
+      </node>
+      <node id="5647">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis_slave.c</label>
+        <link refid="ll__cis__slave_8c"/>
+      </node>
+      <node id="5660">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_msg.c</label>
+        <link refid="ll__msg_8c"/>
+      </node>
+      <node id="5636">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h</label>
+        <link refid="link__layer_8h"/>
+        <childnode refid="5637" relation="include">
+        </childnode>
+        <childnode refid="5638" relation="include">
+        </childnode>
+        <childnode refid="5639" relation="include">
+        </childnode>
+        <childnode refid="5640" relation="include">
+        </childnode>
+        <childnode refid="5641" relation="include">
+        </childnode>
+        <childnode refid="5642" relation="include">
+        </childnode>
+        <childnode refid="5643" relation="include">
+        </childnode>
+        <childnode refid="5644" relation="include">
+        </childnode>
+        <childnode refid="5645" relation="include">
+        </childnode>
+        <childnode refid="5646" relation="include">
+        </childnode>
+        <childnode refid="5647" relation="include">
+        </childnode>
+        <childnode refid="5648" relation="include">
+        </childnode>
+        <childnode refid="5649" relation="include">
+        </childnode>
+        <childnode refid="5650" relation="include">
+        </childnode>
+        <childnode refid="5651" relation="include">
+        </childnode>
+        <childnode refid="5652" relation="include">
+        </childnode>
+        <childnode refid="5653" relation="include">
+        </childnode>
+        <childnode refid="5654" relation="include">
+        </childnode>
+        <childnode refid="5655" relation="include">
+        </childnode>
+        <childnode refid="5656" relation="include">
+        </childnode>
+        <childnode refid="5657" relation="include">
+        </childnode>
+        <childnode refid="5658" relation="include">
+        </childnode>
+        <childnode refid="5659" relation="include">
+        </childnode>
+        <childnode refid="5660" relation="include">
+        </childnode>
+        <childnode refid="5661" relation="include">
+        </childnode>
+        <childnode refid="5662" relation="include">
+        </childnode>
+        <childnode refid="5663" relation="include">
+        </childnode>
+        <childnode refid="5664" relation="include">
+        </childnode>
+        <childnode refid="5665" relation="include">
+        </childnode>
+        <childnode refid="5666" relation="include">
+        </childnode>
+        <childnode refid="5667" relation="include">
+        </childnode>
+        <childnode refid="5668" relation="include">
+        </childnode>
+        <childnode refid="5669" relation="include">
+        </childnode>
+        <childnode refid="5670" relation="include">
+        </childnode>
+        <childnode refid="5671" relation="include">
+        </childnode>
+        <childnode refid="5672" relation="include">
+        </childnode>
+        <childnode refid="5673" relation="include">
+        </childnode>
+        <childnode refid="5674" relation="include">
+        </childnode>
+        <childnode refid="5675" relation="include">
+        </childnode>
+        <childnode refid="5676" relation="include">
+        </childnode>
+        <childnode refid="5677" relation="include">
+        </childnode>
+        <childnode refid="5678" relation="include">
+        </childnode>
+        <childnode refid="5679" relation="include">
+        </childnode>
+        <childnode refid="5680" relation="include">
+        </childnode>
+        <childnode refid="5681" relation="include">
+        </childnode>
+        <childnode refid="5682" relation="include">
+        </childnode>
+        <childnode refid="5683" relation="include">
+        </childnode>
+        <childnode refid="5684" relation="include">
+        </childnode>
+        <childnode refid="5685" relation="include">
+        </childnode>
+        <childnode refid="5686" relation="include">
+        </childnode>
+        <childnode refid="5687" relation="include">
+        </childnode>
+        <childnode refid="5688" relation="include">
+        </childnode>
+      </node>
+      <node id="5687">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h</label>
+        <link refid="ll__cis_8h"/>
+        <childnode refid="5636" relation="include">
+        </childnode>
+      </node>
+      <node id="5654">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_ext_scan.c</label>
+        <link refid="ll__ext__scan_8c"/>
+      </node>
+      <node id="5675">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_data_extension.c</label>
+        <link refid="llcp__sm__data__extension_8c"/>
+      </node>
+      <node id="5635">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h</label>
+        <link refid="ll__bis_8h"/>
+        <childnode refid="5636" relation="include">
+        </childnode>
+      </node>
+      <node id="5665">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_scan.c</label>
+        <link refid="ll__scan_8c"/>
+      </node>
+      <node id="5661">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_multiple_phys.c</label>
+        <link refid="ll__multiple__phys_8c"/>
+      </node>
+      <node id="5641">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_afh.c</label>
+        <link refid="ll__afh_8c"/>
+      </node>
+      <node id="5657">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_isoal.c</label>
+        <link refid="ll__isoal_8c"/>
+      </node>
+      <node id="5646">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis_master.c</label>
+        <link refid="ll__cis__master_8c"/>
+      </node>
+      <node id="5663">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_periodic_advertising.c</label>
+        <link refid="ll__periodic__advertising_8c"/>
+      </node>
+      <node id="5676">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_encrypt.c</label>
+        <link refid="llcp__sm__encrypt_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structAudioStdCodecInfo__t" prot="public">AudioStdCodecInfo_t</innerclass>
+    <innerclass refid="structAudioVsCodecInfo__t" prot="public">AudioVsCodecInfo_t</innerclass>
+    <innerclass refid="structPalCodecSreamParam__t" prot="public">PalCodecSreamParam_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="audio__codec_8h_1a3c4e02d88b523dba66d7d5f4fbfb1f5c" prot="public" static="no">
+        <name>PalAudioDir_t</name>
+        <enumvalue id="audio__codec_8h_1a3c4e02d88b523dba66d7d5f4fbfb1f5cabf36628644687c8e3ebef1bd57459503" prot="public">
+          <name>PAL_CODEC_DIR_INPUT</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Input data path. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="audio__codec_8h_1a3c4e02d88b523dba66d7d5f4fbfb1f5cac65c0fb7f019f1b9cfe387a720e2e3d4" prot="public">
+          <name>PAL_CODEC_DIR_OUTPUT</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Output data path. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Audio data path direction. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/audio_codec.h" line="11" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/audio_codec.h" bodystart="11" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="enum" id="audio__codec_8h_1a360b34d088c3054a6cf6d3d3e66152a3" prot="public" static="no">
+        <name>PalAudioChan_t</name>
+        <enumvalue id="audio__codec_8h_1a360b34d088c3054a6cf6d3d3e66152a3ab65931df0ac3f4e601200ef46d7b085d" prot="public">
+          <name>PAL_CODEC_CH_LEFT</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Left channel. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="audio__codec_8h_1a360b34d088c3054a6cf6d3d3e66152a3a3e1b3bc9a5434e668b559fad31333743" prot="public">
+          <name>PAL_CODEC_CH_RIGHT</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Right channel. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="audio__codec_8h_1a360b34d088c3054a6cf6d3d3e66152a3accc6ed7af33019a06b55eeb35b796b4f" prot="public">
+          <name>AUDIO_NUM_CH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Right channel. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Audio Channel. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/audio_codec.h" line="17" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/audio_codec.h" bodystart="17" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="enum" id="audio__codec_8h_1a0b887f38fa71033f0904f8e2330b6815" prot="public" static="no">
+        <name>@96</name>
+        <enumvalue id="audio__codec_8h_1a0b887f38fa71033f0904f8e2330b6815a820fa41694b845b78d09f58b956845c6" prot="public">
+          <name>PAL_CODEC_CH_LEFT_BIT</name>
+          <initializer>= (1 &lt;&lt; PAL_CODEC_CH_LEFT)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="audio__codec_8h_1a0b887f38fa71033f0904f8e2330b6815a8235d554173fe6fa1064eb921e7a8f60" prot="public">
+          <name>PAL_CODEC_CH_RIGHT_BIT</name>
+          <initializer>= (1 &lt;&lt; PAL_CODEC_CH_RIGHT)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Audio Channel mask. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/audio_codec.h" line="24" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/audio_codec.h" bodystart="24" bodyend="27"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="audio__codec_8h_1a133b2b633c140cbc3cc6cbb2909d269c" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* PalCodecDataReady_t) (uint16_t id)</definition>
+        <argsstring>)(uint16_t id)</argsstring>
+        <name>PalCodecDataReady_t</name>
+        <briefdescription>
+<para>Buffer available call signature. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/audio_codec.h" line="41" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/audio_codec.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="audio__codec_8h_1ab7b14b9f63d130fbc5f3478a1ccf38b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PalCodecReadLocalSupportedCodecs</definition>
+        <argsstring>(uint8_t *pNumStd, AudioStdCodecInfo_t stdCodecs[], uint8_t *pNumVs, AudioVsCodecInfo_t vsCodecs[])</argsstring>
+        <name>PalCodecReadLocalSupportedCodecs</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>pNumStd</declname>
+        </param>
+        <param>
+          <type><ref refid="structAudioStdCodecInfo__t" kindref="compound">AudioStdCodecInfo_t</ref></type>
+          <declname>stdCodecs</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>pNumVs</declname>
+        </param>
+        <param>
+          <type><ref refid="structAudioVsCodecInfo__t" kindref="compound">AudioVsCodecInfo_t</ref></type>
+          <declname>vsCodecs</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/audio_codec.h" line="57" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="audio__codec_8h_1af7e3db31dacac1ec0a2c4b371b336a07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref></type>
+        <definition>bool_t PalCodecReadLocalSupportedCodecCapabilities</definition>
+        <argsstring>(uint8_t codingFmt, uint16_t compId, uint16_t vsCodecId, PalAudioDir_t dir)</argsstring>
+        <name>PalCodecReadLocalSupportedCodecCapabilities</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>codingFmt</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>compId</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>vsCodecId</declname>
+        </param>
+        <param>
+          <type><ref refid="audio__codec_8h_1a3c4e02d88b523dba66d7d5f4fbfb1f5c" kindref="member">PalAudioDir_t</ref></type>
+          <declname>dir</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/audio_codec.h" line="59" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="audio__codec_8h_1a39d7f77bc058632086ef00a8180e3cb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref></type>
+        <definition>bool_t PalCodecReadLocalSupportedControllerDelay</definition>
+        <argsstring>(uint8_t codingFmt, uint16_t compId, uint16_t vsCodecId, PalAudioDir_t dir, uint32_t *pMinDly, uint32_t *pMaxDly)</argsstring>
+        <name>PalCodecReadLocalSupportedControllerDelay</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>codingFmt</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>compId</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>vsCodecId</declname>
+        </param>
+        <param>
+          <type><ref refid="audio__codec_8h_1a3c4e02d88b523dba66d7d5f4fbfb1f5c" kindref="member">PalAudioDir_t</ref></type>
+          <declname>dir</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>pMinDly</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>pMaxDly</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/audio_codec.h" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="audio__codec_8h_1a2e2d4820a77f0c6762d9e69505cf8305" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref></type>
+        <definition>bool_t PalCodecConfigureDataPath</definition>
+        <argsstring>(PalAudioDir_t dir, uint8_t dataPathId)</argsstring>
+        <name>PalCodecConfigureDataPath</name>
+        <param>
+          <type><ref refid="audio__codec_8h_1a3c4e02d88b523dba66d7d5f4fbfb1f5c" kindref="member">PalAudioDir_t</ref></type>
+          <declname>dir</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>dataPathId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/audio_codec.h" line="62" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="audio__codec_8h_1ae22963c51ae1cb5d35f10695af2773ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PalCodecAmpInit</definition>
+        <argsstring>(void)</argsstring>
+        <name>PalCodecAmpInit</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/audio_codec.h" line="65" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="audio__codec_8h_1a9434c67693dc95b6b108ac9c801f336c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t PalCodecAmpGetVol</definition>
+        <argsstring>(void)</argsstring>
+        <name>PalCodecAmpGetVol</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/audio_codec.h" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="audio__codec_8h_1af6b7341848c45106111196ef4c82b5e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PalCodecAmpVolumeUp</definition>
+        <argsstring>(void)</argsstring>
+        <name>PalCodecAmpVolumeUp</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/audio_codec.h" line="67" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="audio__codec_8h_1aae90bf1ed3b92acb6844b0449c680409" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PalCodecAmpVolumeDown</definition>
+        <argsstring>(void)</argsstring>
+        <name>PalCodecAmpVolumeDown</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/audio_codec.h" line="68" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="audio__codec_8h_1a9534beaad0c1e7c27895d527216c7caf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PalCodecAmpMute</definition>
+        <argsstring>(void)</argsstring>
+        <name>PalCodecAmpMute</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/audio_codec.h" line="69" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="audio__codec_8h_1a21a4285fa0294c66204c46b63598df4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PalCodecAmpUnmute</definition>
+        <argsstring>(void)</argsstring>
+        <name>PalCodecAmpUnmute</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/audio_codec.h" line="70" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="audio__codec_8h_1abb40652f3591d84e8b8d46afbaacd7d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PalCodecDataInit</definition>
+        <argsstring>(void)</argsstring>
+        <name>PalCodecDataInit</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/audio_codec.h" line="73" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="audio__codec_8h_1aa61a254cf910b6c7358e29aacea958d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref></type>
+        <definition>bool_t PalCodecDataStartStream</definition>
+        <argsstring>(uint16_t id, PalCodecSreamParam_t *pParam)</argsstring>
+        <name>PalCodecDataStartStream</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type><ref refid="structPalCodecSreamParam__t" kindref="compound">PalCodecSreamParam_t</ref> *</type>
+          <declname>pParam</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/audio_codec.h" line="74" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="audio__codec_8h_1aaac86825d7ad3556d149ebde41c7b18c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PalCodecDataStopStream</definition>
+        <argsstring>(uint16_t id)</argsstring>
+        <name>PalCodecDataStopStream</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/audio_codec.h" line="75" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="audio__codec_8h_1afaf67c35a0d22c7ca3fd5cd8b0168cbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t PalCodecDataStreamIn</definition>
+        <argsstring>(uint16_t id, uint8_t *pBuf, uint16_t len, uint32_t *pPktCtr)</argsstring>
+        <name>PalCodecDataStreamIn</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>pBuf</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>pPktCtr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/audio_codec.h" line="76" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="audio__codec_8h_1ae159a9c583fc3a8412b048e63acfb305" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PalCodecDataStreamOut</definition>
+        <argsstring>(uint16_t id, const uint8_t *pBuf, uint16_t len, uint32_t pktCtr)</argsstring>
+        <name>PalCodecDataStreamOut</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>pBuf</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>pktCtr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/audio_codec.h" line="77" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>__AUDIO_CODEC_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__AUDIO_CODEC_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ll__defines_8h" kindref="compound">ble/ll_defines.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">/**************************************************************************************************&apos;</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/>Data<sp/>Types</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">**************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="audio__codec_8h_1a3c4e02d88b523dba66d7d5f4fbfb1f5c" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="12" refid="audio__codec_8h_1a3c4e02d88b523dba66d7d5f4fbfb1f5cabf36628644687c8e3ebef1bd57459503" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="audio__codec_8h_1a3c4e02d88b523dba66d7d5f4fbfb1f5cabf36628644687c8e3ebef1bd57459503" kindref="member">PAL_CODEC_DIR_INPUT</ref><sp/><sp/><sp/>=<sp/>0,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="13" refid="audio__codec_8h_1a3c4e02d88b523dba66d7d5f4fbfb1f5cac65c0fb7f019f1b9cfe387a720e2e3d4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="audio__codec_8h_1a3c4e02d88b523dba66d7d5f4fbfb1f5cac65c0fb7f019f1b9cfe387a720e2e3d4" kindref="member">PAL_CODEC_DIR_OUTPUT</ref><sp/><sp/>=<sp/>1<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}<sp/><ref refid="audio__codec_8h_1a3c4e02d88b523dba66d7d5f4fbfb1f5c" kindref="member">PalAudioDir_t</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="audio__codec_8h_1a360b34d088c3054a6cf6d3d3e66152a3" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="18" refid="audio__codec_8h_1a360b34d088c3054a6cf6d3d3e66152a3ab65931df0ac3f4e601200ef46d7b085d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="audio__codec_8h_1a360b34d088c3054a6cf6d3d3e66152a3ab65931df0ac3f4e601200ef46d7b085d" kindref="member">PAL_CODEC_CH_LEFT</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="19" refid="audio__codec_8h_1a360b34d088c3054a6cf6d3d3e66152a3a3e1b3bc9a5434e668b559fad31333743" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="audio__codec_8h_1a360b34d088c3054a6cf6d3d3e66152a3a3e1b3bc9a5434e668b559fad31333743" kindref="member">PAL_CODEC_CH_RIGHT</ref><sp/><sp/><sp/><sp/>=<sp/>1,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="20" refid="audio__codec_8h_1a360b34d088c3054a6cf6d3d3e66152a3accc6ed7af33019a06b55eeb35b796b4f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="audio__codec_8h_1a360b34d088c3054a6cf6d3d3e66152a3accc6ed7af33019a06b55eeb35b796b4f" kindref="member">AUDIO_NUM_CH</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}<sp/><ref refid="audio__codec_8h_1a360b34d088c3054a6cf6d3d3e66152a3" kindref="member">PalAudioChan_t</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="25" refid="audio__codec_8h_1a0b887f38fa71033f0904f8e2330b6815a820fa41694b845b78d09f58b956845c6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="audio__codec_8h_1a0b887f38fa71033f0904f8e2330b6815a820fa41694b845b78d09f58b956845c6" kindref="member">PAL_CODEC_CH_LEFT_BIT</ref><sp/><sp/>=<sp/>(1<sp/>&lt;&lt;<sp/><ref refid="audio__codec_8h_1a360b34d088c3054a6cf6d3d3e66152a3ab65931df0ac3f4e601200ef46d7b085d" kindref="member">PAL_CODEC_CH_LEFT</ref>),</highlight></codeline>
+<codeline lineno="26" refid="audio__codec_8h_1a0b887f38fa71033f0904f8e2330b6815a8235d554173fe6fa1064eb921e7a8f60" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="audio__codec_8h_1a0b887f38fa71033f0904f8e2330b6815a8235d554173fe6fa1064eb921e7a8f60" kindref="member">PAL_CODEC_CH_RIGHT_BIT</ref><sp/>=<sp/>(1<sp/>&lt;&lt;<sp/><ref refid="audio__codec_8h_1a360b34d088c3054a6cf6d3d3e66152a3a3e1b3bc9a5434e668b559fad31333743" kindref="member">PAL_CODEC_CH_RIGHT</ref>)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="structAudioStdCodecInfo__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31" refid="structAudioStdCodecInfo__t_1a03f6f69b8b5c1d74025b675d0e0cc0a7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structAudioStdCodecInfo__t_1a03f6f69b8b5c1d74025b675d0e0cc0a7" kindref="member">codecId</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}<sp/><ref refid="structAudioStdCodecInfo__t" kindref="compound">AudioStdCodecInfo_t</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="structAudioVsCodecInfo__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36" refid="structAudioVsCodecInfo__t_1affc9d539be72401c2ce6ec1a3d1038b3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structAudioVsCodecInfo__t_1affc9d539be72401c2ce6ec1a3d1038b3" kindref="member">compId</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="37" refid="structAudioVsCodecInfo__t_1aff746f34a0d7dffc14249915d4551f10" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structAudioVsCodecInfo__t_1aff746f34a0d7dffc14249915d4551f10" kindref="member">codecId</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}<sp/><ref refid="structAudioVsCodecInfo__t" kindref="compound">AudioVsCodecInfo_t</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="audio__codec_8h_1a133b2b633c140cbc3cc6cbb2909d269c" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*<ref refid="audio__codec_8h_1a133b2b633c140cbc3cc6cbb2909d269c" kindref="member">PalCodecDataReady_t</ref>)(uint16_t<sp/>id);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="structPalCodecSreamParam__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="45" refid="structPalCodecSreamParam__t_1a2507785e41cd11260fbaab8a12f60f14" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="audio__codec_8h_1a3c4e02d88b523dba66d7d5f4fbfb1f5c" kindref="member">PalAudioDir_t</ref><sp/><ref refid="structPalCodecSreamParam__t_1a2507785e41cd11260fbaab8a12f60f14" kindref="member">dir</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46" refid="structPalCodecSreamParam__t_1af3d87d2f457460faecd88d6e3f6cd8c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structPalCodecSreamParam__t_1af3d87d2f457460faecd88d6e3f6cd8c3" kindref="member">chMask</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47" refid="structPalCodecSreamParam__t_1a80eb8a0b5e66caef4acbba99f80e81c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structPalCodecSreamParam__t_1a80eb8a0b5e66caef4acbba99f80e81c3" kindref="member">intervalUsec</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="48" refid="structPalCodecSreamParam__t_1a1973255576733732d23620072909c6f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structPalCodecSreamParam__t_1a1973255576733732d23620072909c6f5" kindref="member">pktCtr</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="49" refid="structPalCodecSreamParam__t_1abfc6ff537b9ea561079e064bb445304d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="audio__codec_8h_1a133b2b633c140cbc3cc6cbb2909d269c" kindref="member">PalCodecDataReady_t</ref><sp/><ref refid="structPalCodecSreamParam__t_1abfc6ff537b9ea561079e064bb445304d" kindref="member">rdyCback</ref>;<sp/></highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}<sp/><ref refid="structPalCodecSreamParam__t" kindref="compound">PalCodecSreamParam_t</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">/**************************************************************************************************</highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/><sp/>Function<sp/>Declarations</highlight></codeline>
+<codeline lineno="54"><highlight class="comment">**************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Codec<sp/>Information<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="audio__codec_8h_1ab7b14b9f63d130fbc5f3478a1ccf38b6" kindref="member">PalCodecReadLocalSupportedCodecs</ref>(uint8_t<sp/>*pNumStd,<sp/><ref refid="structAudioStdCodecInfo__t" kindref="compound">AudioStdCodecInfo_t</ref><sp/>stdCodecs[],</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>*pNumVs,<sp/><ref refid="structAudioVsCodecInfo__t" kindref="compound">AudioVsCodecInfo_t</ref><sp/>vsCodecs[]);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref><sp/><ref refid="audio__codec_8h_1af7e3db31dacac1ec0a2c4b371b336a07" kindref="member">PalCodecReadLocalSupportedCodecCapabilities</ref>(uint8_t<sp/>codingFmt,<sp/>uint16_t<sp/>compId,<sp/>uint16_t<sp/>vsCodecId,<sp/><ref refid="audio__codec_8h_1a3c4e02d88b523dba66d7d5f4fbfb1f5c" kindref="member">PalAudioDir_t</ref><sp/>dir);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref><sp/><ref refid="audio__codec_8h_1a39d7f77bc058632086ef00a8180e3cb2" kindref="member">PalCodecReadLocalSupportedControllerDelay</ref>(uint8_t<sp/>codingFmt,<sp/>uint16_t<sp/>compId,<sp/>uint16_t<sp/>vsCodecId,<sp/><ref refid="audio__codec_8h_1a3c4e02d88b523dba66d7d5f4fbfb1f5c" kindref="member">PalAudioDir_t</ref><sp/>dir,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>*pMinDly,<sp/>uint32_t<sp/>*pMaxDly);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref><sp/><ref refid="audio__codec_8h_1a2e2d4820a77f0c6762d9e69505cf8305" kindref="member">PalCodecConfigureDataPath</ref>(<ref refid="audio__codec_8h_1a3c4e02d88b523dba66d7d5f4fbfb1f5c" kindref="member">PalAudioDir_t</ref><sp/>dir,<sp/>uint8_t<sp/>dataPathId);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Audio<sp/>Amplifier<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="audio__codec_8h_1ae22963c51ae1cb5d35f10695af2773ff" kindref="member">PalCodecAmpInit</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">uint8_t<sp/><ref refid="audio__codec_8h_1a9434c67693dc95b6b108ac9c801f336c" kindref="member">PalCodecAmpGetVol</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="audio__codec_8h_1af6b7341848c45106111196ef4c82b5e4" kindref="member">PalCodecAmpVolumeUp</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="audio__codec_8h_1aae90bf1ed3b92acb6844b0449c680409" kindref="member">PalCodecAmpVolumeDown</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="audio__codec_8h_1a9534beaad0c1e7c27895d527216c7caf" kindref="member">PalCodecAmpMute</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="audio__codec_8h_1a21a4285fa0294c66204c46b63598df4e" kindref="member">PalCodecAmpUnmute</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Data<sp/>Path<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="audio__codec_8h_1abb40652f3591d84e8b8d46afbaacd7d2" kindref="member">PalCodecDataInit</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref><sp/><ref refid="audio__codec_8h_1aa61a254cf910b6c7358e29aacea958d2" kindref="member">PalCodecDataStartStream</ref>(uint16_t<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/><ref refid="structPalCodecSreamParam__t" kindref="compound">PalCodecSreamParam_t</ref><sp/>*pParam);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="audio__codec_8h_1aaac86825d7ad3556d149ebde41c7b18c" kindref="member">PalCodecDataStopStream</ref>(uint16_t<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">uint16_t<sp/><ref refid="audio__codec_8h_1afaf67c35a0d22c7ca3fd5cd8b0168cbe" kindref="member">PalCodecDataStreamIn</ref>(uint16_t<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>uint8_t<sp/>*pBuf,<sp/>uint16_t<sp/>len,<sp/>uint32_t<sp/>*pPktCtr);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="audio__codec_8h_1ae159a9c583fc3a8412b048e63acfb305" kindref="member">PalCodecDataStreamOut</ref>(uint16_t<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*pBuf,<sp/>uint16_t<sp/>len,<sp/>uint32_t<sp/>pktCtr);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/audio_codec.h"/>
+  </compounddef>
+</doxygen>

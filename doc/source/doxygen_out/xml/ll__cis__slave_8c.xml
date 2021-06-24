@@ -1,0 +1,749 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="ll__cis__slave_8c" kind="file" language="C++">
+    <compoundname>ll_cis_slave.c</compoundname>
+    <includes refid="link__layer_8h" local="yes">ble/link_layer.h</includes>
+    <includes local="yes">hci_controller.h</includes>
+    <includes local="yes">system/includes.h</includes>
+    <includes local="yes">common/debug.h</includes>
+    <incdepgraph>
+      <node id="3213">
+        <label>os/os_type.h</label>
+      </node>
+      <node id="3209">
+        <label>common/atomic.h</label>
+      </node>
+      <node id="3223">
+        <label>common/lbuf.h</label>
+      </node>
+      <node id="3206">
+        <label>common/list.h</label>
+      </node>
+      <node id="3212">
+        <label>common/thread.h</label>
+      </node>
+      <node id="3215">
+        <label>ble/ll_adv.h</label>
+        <link refid="ll__adv_8h"/>
+        <childnode refid="3207" relation="include">
+        </childnode>
+      </node>
+      <node id="3230">
+        <label>common/debug.h</label>
+      </node>
+      <node id="3217">
+        <label>ble/ll_init.h</label>
+        <link refid="ll__init_8h"/>
+        <childnode refid="3207" relation="include">
+        </childnode>
+      </node>
+      <node id="3219">
+        <label>data_extension.h</label>
+        <link refid="data__extension_8h"/>
+        <childnode refid="3205" relation="include">
+        </childnode>
+      </node>
+      <node id="3222">
+        <label>ble/ll_iso.h</label>
+        <link refid="ll__iso_8h"/>
+        <childnode refid="3210" relation="include">
+        </childnode>
+        <childnode refid="3223" relation="include">
+        </childnode>
+        <childnode refid="3212" relation="include">
+        </childnode>
+      </node>
+      <node id="3205">
+        <label>typedef.h</label>
+      </node>
+      <node id="3211">
+        <label>white_list.h</label>
+        <link refid="white__list_8h"/>
+        <childnode refid="3205" relation="include">
+        </childnode>
+      </node>
+      <node id="3225">
+        <label>audio_codec.h</label>
+        <link refid="audio__codec_8h"/>
+        <childnode refid="3210" relation="include">
+        </childnode>
+      </node>
+      <node id="3229">
+        <label>system/includes.h</label>
+      </node>
+      <node id="3216">
+        <label>ble/ll_scan.h</label>
+        <link refid="ll__scan_8h"/>
+        <childnode refid="3207" relation="include">
+        </childnode>
+      </node>
+      <node id="3214">
+        <label>ble/llcp.h</label>
+        <link refid="llcp_8h"/>
+        <childnode refid="3205" relation="include">
+        </childnode>
+        <childnode refid="3210" relation="include">
+        </childnode>
+      </node>
+      <node id="3220">
+        <label>multiple_phys.h</label>
+        <link refid="multiple__phys_8h"/>
+        <childnode refid="3205" relation="include">
+        </childnode>
+      </node>
+      <node id="3218">
+        <label>resolve_list.h</label>
+        <link refid="resolve__list_8h"/>
+        <childnode refid="3205" relation="include">
+        </childnode>
+      </node>
+      <node id="3207">
+        <label>ble_interface.h</label>
+      </node>
+      <node id="3221">
+        <label>ble/ll_cte.h</label>
+        <link refid="ll__cte_8h"/>
+        <childnode refid="3210" relation="include">
+        </childnode>
+      </node>
+      <node id="3228">
+        <label>hci_controller.h</label>
+      </node>
+      <node id="3208">
+        <label>common/sys_timer.h</label>
+      </node>
+      <node id="3203">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis_slave.c</label>
+        <link refid="ll_cis_slave.c"/>
+        <childnode refid="3204" relation="include">
+        </childnode>
+        <childnode refid="3228" relation="include">
+        </childnode>
+        <childnode refid="3229" relation="include">
+        </childnode>
+        <childnode refid="3230" relation="include">
+        </childnode>
+      </node>
+      <node id="3204">
+        <label>ble/link_layer.h</label>
+        <link refid="link__layer_8h"/>
+        <childnode refid="3205" relation="include">
+        </childnode>
+        <childnode refid="3206" relation="include">
+        </childnode>
+        <childnode refid="3207" relation="include">
+        </childnode>
+        <childnode refid="3208" relation="include">
+        </childnode>
+        <childnode refid="3209" relation="include">
+        </childnode>
+        <childnode refid="3210" relation="include">
+        </childnode>
+        <childnode refid="3211" relation="include">
+        </childnode>
+        <childnode refid="3212" relation="include">
+        </childnode>
+        <childnode refid="3213" relation="include">
+        </childnode>
+        <childnode refid="3214" relation="include">
+        </childnode>
+        <childnode refid="3215" relation="include">
+        </childnode>
+        <childnode refid="3216" relation="include">
+        </childnode>
+        <childnode refid="3217" relation="include">
+        </childnode>
+        <childnode refid="3218" relation="include">
+        </childnode>
+        <childnode refid="3219" relation="include">
+        </childnode>
+        <childnode refid="3220" relation="include">
+        </childnode>
+        <childnode refid="3221" relation="include">
+        </childnode>
+        <childnode refid="3222" relation="include">
+        </childnode>
+        <childnode refid="3224" relation="include">
+        </childnode>
+        <childnode refid="3226" relation="include">
+        </childnode>
+        <childnode refid="3227" relation="include">
+        </childnode>
+      </node>
+      <node id="3210">
+        <label>ll_defines.h</label>
+        <link refid="ll__defines_8h"/>
+        <childnode refid="3205" relation="include">
+        </childnode>
+      </node>
+      <node id="3226">
+        <label>ble/ll_cis.h</label>
+        <link refid="ll__cis_8h"/>
+        <childnode refid="3222" relation="include">
+        </childnode>
+        <childnode refid="3204" relation="include">
+        </childnode>
+      </node>
+      <node id="3224">
+        <label>ble/ll_bis.h</label>
+        <link refid="ll__bis_8h"/>
+        <childnode refid="3222" relation="include">
+        </childnode>
+        <childnode refid="3225" relation="include">
+        </childnode>
+      </node>
+      <node id="3227">
+        <label>ble/ll_pc.h</label>
+        <link refid="ll__pc_8h"/>
+        <childnode refid="3210" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="ll__cis__slave_8c_1a6c6991cba0e2995d7d9aec73e0324317" prot="public" static="no">
+        <name>LOG_TAG_CONST</name>
+        <initializer>LL_CIS</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis_slave.c" line="5" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis_slave.c" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__cis__slave_8c_1a7ce0df38eb467e59f209470c8f5ac4e6" prot="public" static="no">
+        <name>LOG_TAG</name>
+        <initializer>&quot;[LL-CIS]&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis_slave.c" line="6" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis_slave.c" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__cis__slave_8c_1a9eeb6e067100d0dec6e53bce19a403e0" prot="public" static="no">
+        <name>LOG_ERROR_ENABLE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis_slave.c" line="8" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis_slave.c" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__cis__slave_8c_1a69321c8a2a0b07a07fb5088e82e25eb0" prot="public" static="no">
+        <name>LOG_INFO_ENABLE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis_slave.c" line="9" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis_slave.c" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__cis__slave_8c_1a04135f631fe91199f05b1d816dda8756" prot="public" static="no">
+        <name>LOG_DUMP_ENABLE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis_slave.c" line="10" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis_slave.c" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__cis__slave_8c_1ad223350d80db21fa8b721107cd1f6442" prot="public" static="no">
+        <name>__this</name>
+        <initializer>(&amp;<ref refid="link__layer_8h_1a11d5b1c8b0def0c238d4700650780724" kindref="member">ll_hdl</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis_slave.c" line="23" column="10" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis_slave.c" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="ll__cis__slave_8c_1aac1f32a963f98d07b514f1986fb7b25d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void cis_req_handler</definition>
+        <argsstring>(void *priv)</argsstring>
+        <name>cis_req_handler</name>
+        <param>
+          <type>void *</type>
+          <declname>priv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis_slave.c" line="30" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis_slave.c" bodystart="30" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__cis__slave_8c_1a095d74bd045a719d5c5146472a8e3527" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void bb_ble_mock_recv_cis_req</definition>
+        <argsstring>(void)</argsstring>
+        <name>bb_ble_mock_recv_cis_req</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis_slave.c" line="67" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis_slave.c" bodystart="67" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__cis__slave_8c_1adcdbb5bd626316b0053d4a4a3be004d5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void cis_ind_handler</definition>
+        <argsstring>(void *priv)</argsstring>
+        <name>cis_ind_handler</name>
+        <param>
+          <type>void *</type>
+          <declname>priv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis_slave.c" line="73" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis_slave.c" bodystart="73" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__cis__slave_8c_1aba9e1657582f6146fccf10344d64ab5c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void bb_ble_mock_recv_cis_ind</definition>
+        <argsstring>(void)</argsstring>
+        <name>bb_ble_mock_recv_cis_ind</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis_slave.c" line="96" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis_slave.c" bodystart="96" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__cis__slave_8c_1a660d109260e194f52c4dc4c6599ac3f1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>static uint8_t ll_accept_cis_req</definition>
+        <argsstring>(uint16_t cisHandle)</argsstring>
+        <name>ll_accept_cis_req</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>cisHandle</declname>
+        </param>
+        <briefdescription>
+<para>Accept CIS request. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cisHandle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CIS handle.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status error code. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis_slave.c" line="112" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis_slave.c" bodystart="112" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__cis__slave_8c_1afbc3daa240180e53ae42780cd239668f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>static uint8_t ll_reject_cis_req</definition>
+        <argsstring>(uint16_t cisHandle, uint8_t reason)</argsstring>
+        <name>ll_reject_cis_req</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>cisHandle</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>reason</declname>
+        </param>
+        <briefdescription>
+<para>Reject CIS request. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cisHandle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CIS handle. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reason</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reason.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status error code. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis_slave.c" line="164" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis_slave.c" bodystart="164" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__cis__slave_8c_1a621b1366abfd2de556367ec6e4d7dfe1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int le_cmd_set_cis_slave</definition>
+        <argsstring>(u16 opcode, const u8 *data, u32 size)</argsstring>
+        <name>le_cmd_set_cis_slave</name>
+        <param>
+          <type>u16</type>
+          <declname>opcode</declname>
+        </param>
+        <param>
+          <type>const u8 *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>CIS Slave command packet decode. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>opcode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Opcode </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>*data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the command packet </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the command packet</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status command match. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis_slave.c" line="216" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis_slave.c" bodystart="216" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__cis__slave_8c_1a52ac477a0414ae2a753b20b4706f8840" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ll_cis_slave_msg_handler</definition>
+        <argsstring>(uint8_t msg_id, void *payload)</argsstring>
+        <name>ll_cis_slave_msg_handler</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>msg_id</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>payload</declname>
+        </param>
+        <briefdescription>
+<para>CIS Slave message handler. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>msg_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message Indentifier </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>*payload</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message Context </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis_slave.c" line="260" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis_slave.c" bodystart="260" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__cis__slave_8c_1a5af03d54d796172d652053e12df4f944" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ll_cis_slave_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>ll_cis_slave_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis_slave.c" line="265" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis_slave.c" bodystart="265" bodyend="272"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="link__layer_8h" kindref="compound">ble/link_layer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;hci_controller.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;system/includes.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_TAG_CONST<sp/><sp/><sp/><sp/><sp/>LL_CIS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_TAG<sp/><sp/><sp/><sp/><sp/>&quot;[LL-CIS]&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_ERROR_ENABLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_INFO_ENABLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_DUMP_ENABLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;common/debug.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>SUPPORT_MS_EXTENSIONS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>bss_seg(&quot;.ble_ll_bss&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>data_seg(&quot;.ble_ll_data&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>const_seg(&quot;.ble_ll_const&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>code_seg(&quot;.ble_ll_code&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>HAVE_MALLOC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__this<sp/><sp/><sp/><sp/><sp/><sp/>(ll_hdl)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__this<sp/><sp/><sp/><sp/><sp/><sp/>(&amp;ll_hdl)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">/**************************************************************************************************</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/>Local<sp/>Functions</highlight></codeline>
+<codeline lineno="28"><highlight class="comment">**************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__cis__slave_8c_1aac1f32a963f98d07b514f1986fb7b25d" kindref="member">cis_req_handler</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*priv)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structle__link" kindref="compound">le_link</ref><sp/>link;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">ble_rx<sp/>*rx<sp/>=<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>ble_rx)<sp/>+<sp/>1<sp/>+<sp/>1<sp/>+<sp/>1<sp/>+<sp/>1<sp/>+<sp/>1<sp/>+<sp/>2<sp/>+<sp/>2<sp/>+<sp/>3<sp/>+<sp/>3<sp/>+<sp/>2<sp/>+<sp/>2<sp/>+<sp/>1<sp/>+<sp/>3<sp/>+<sp/>1<sp/>+<sp/>1<sp/>+<sp/>1<sp/>+<sp/>2<sp/>+<sp/>3<sp/>+<sp/>3<sp/>+<sp/>2);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>link.handle<sp/>=<sp/>0x1;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>*payload<sp/>=<sp/>rx-&gt;data;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT8_TO_BSTREAM(payload,<sp/><ref refid="ll__defines_8h_1a394b3903fbf00ba2b6243f60689a5a5fa0fb2b1cb9245bf8db2175c08ab303295" kindref="member">LL_PDU_CIS_REQ</ref>);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT8_TO_BSTREAM(payload,<sp/>0x1);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT8_TO_BSTREAM(payload,<sp/>0x1);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT8_TO_BSTREAM(payload,<sp/>0x1);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT8_TO_BSTREAM(payload,<sp/>0x1);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT16_TO_BSTREAM(payload,<sp/>160<sp/>|<sp/>0x0<sp/>&lt;&lt;<sp/>15);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT16_TO_BSTREAM(payload,<sp/>160);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT24_TO_BSTREAM(payload,<sp/>0x2000);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT24_TO_BSTREAM(payload,<sp/>0x2000);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT16_TO_BSTREAM(payload,<sp/>160);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT16_TO_BSTREAM(payload,<sp/>160);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT16_TO_BSTREAM(payload,<sp/>1);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT24_TO_BSTREAM(payload,<sp/>0);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT8_TO_BSTREAM(payload,<sp/>1<sp/>|<sp/>1<sp/>&lt;&lt;<sp/>4);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT8_TO_BSTREAM(payload,<sp/>4);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT8_TO_BSTREAM(payload,<sp/>4);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT8_TO_BSTREAM(payload,<sp/>6);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT24_TO_BSTREAM(payload,<sp/>0x54c);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT24_TO_BSTREAM(payload,<sp/>0x54c);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT16_TO_BSTREAM(payload,<sp/>16);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>log_info(</highlight><highlight class="stringliteral">&quot;rx<sp/>pdu&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>log_info_hexdump(rx-&gt;data,<sp/>1<sp/>+<sp/>1<sp/>+<sp/>1<sp/>+<sp/>1<sp/>+<sp/>1<sp/>+<sp/>2<sp/>+<sp/>2<sp/>+<sp/>3<sp/>+<sp/>3<sp/>+<sp/>2<sp/>+<sp/>2<sp/>+<sp/>1<sp/>+<sp/>3<sp/>+<sp/>1<sp/>+<sp/>1<sp/>+<sp/>1<sp/>+<sp/>2<sp/>+<sp/>3<sp/>+<sp/>3<sp/>+<sp/>2);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>log_info(</highlight><highlight class="stringliteral">&quot;mock<sp/>RF<sp/>send<sp/>RXLLCP&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>ll_cis_slave_send_rx_llcp_msg(&amp;link,<sp/>rx);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__cis__slave_8c_1a095d74bd045a719d5c5146472a8e3527" kindref="member">bb_ble_mock_recv_cis_req</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Assuem<sp/>CIS<sp/>REQ<sp/>recv*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>sys_timeout_add(NULL,<sp/><ref refid="ll__cis__slave_8c_1aac1f32a963f98d07b514f1986fb7b25d" kindref="member">cis_req_handler</ref>,<sp/>1000);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__cis__slave_8c_1adcdbb5bd626316b0053d4a4a3be004d5" kindref="member">cis_ind_handler</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*priv)</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structle__link" kindref="compound">le_link</ref><sp/>link;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">ble_rx<sp/>*rx<sp/>=<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>ble_rx)<sp/>+<sp/>1<sp/>+<sp/>4<sp/>+<sp/>3<sp/>+<sp/>3<sp/>+<sp/>3<sp/>+<sp/>2);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>link.handle<sp/>=<sp/>0x1;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>*payload<sp/>=<sp/>rx-&gt;data;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT8_TO_BSTREAM(payload,<sp/><ref refid="ll__defines_8h_1a394b3903fbf00ba2b6243f60689a5a5fada20a967ae2d29091eb429eadb8744c1" kindref="member">LL_PDU_CIS_IND</ref>);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT32_TO_BSTREAM(payload,<sp/>0xca5cfc7b);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT24_TO_BSTREAM(payload,<sp/>0x54c);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT24_TO_BSTREAM(payload,<sp/>0x112233);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT24_TO_BSTREAM(payload,<sp/>0x112244);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT16_TO_BSTREAM(payload,<sp/>16);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>log_info(</highlight><highlight class="stringliteral">&quot;rx<sp/>pdu&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>log_info_hexdump(rx-&gt;data,<sp/>1<sp/>+<sp/>4<sp/>+<sp/>3<sp/>+<sp/>3<sp/>+<sp/>3<sp/>+<sp/>2);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>log_info(</highlight><highlight class="stringliteral">&quot;mock<sp/>RF<sp/>send<sp/>RXLLCP&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>ll_cis_slave_send_rx_llcp_msg(&amp;link,<sp/>rx);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__cis__slave_8c_1aba9e1657582f6146fccf10344d64ab5c" kindref="member">bb_ble_mock_recv_cis_ind</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Assuem<sp/>CIS<sp/>REQ<sp/>recv*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>sys_timeout_add(NULL,<sp/><ref refid="ll__cis__slave_8c_1adcdbb5bd626316b0053d4a4a3be004d5" kindref="member">cis_ind_handler</ref>,<sp/>1000);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="comment">/*************************************************************************************************/</highlight></codeline>
+<codeline lineno="111"><highlight class="comment">/*************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="ll__cis__slave_8c_1a660d109260e194f52c4dc4c6599ac3f1" kindref="member">ll_accept_cis_req</ref>(uint16_t<sp/>cisHandle)</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structle__cis__t" kindref="compound">le_cis_t</ref><sp/>*cis<sp/>=<sp/><ref refid="ll__cis_8c_1ae468f030c8f0d042f087ac2701b7de24" kindref="member">ll_cis_by_handle</ref>(cisHandle);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cis<sp/>==<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_error(</highlight><highlight class="stringliteral">&quot;LctrAcceptCisReq,<sp/>invalid<sp/>CIS<sp/>handle&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>UNKNOWN_CONNECTION_IDENTIFIER;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(BB_BLE_MOCK_ENABLE<sp/>==<sp/>0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structle__link" kindref="compound">le_link</ref><sp/>*link<sp/>=<sp/><ref refid="link__layer_8c_1ad0cf3cf97fdaf769c891098d100efedc" kindref="member">ll_link_for_handle</ref>(cis-&gt;<ref refid="structle__cis__t_1a4aecbea9f073c04936a05387fc623cd6" kindref="member">aclHandle</ref>);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(link<sp/>==<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_error(</highlight><highlight class="stringliteral">&quot;LctrAcceptCisReq,<sp/>invalid<sp/>ACL<sp/>handle&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>UNKNOWN_CONNECTION_IDENTIFIER;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="link__layer_8h_1ae10f97c34c30ab4d52daa0108608dd2b" kindref="member">ROLE_IS_SLAVE</ref>(link)<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_error(</highlight><highlight class="stringliteral">&quot;LctrAcceptCisReq,<sp/>invalid<sp/>role&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>COMMAND_DISALLOWED;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>LL<sp/>message<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structll__msg__cis__t" kindref="compound">ll_msg_cis_t</ref><sp/>*msg<sp/>=<sp/><ref refid="ll__msg_8c_1ac3416bc22296909dee33d5e51d78ff38" kindref="member">ll_msg_alloc</ref>(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structll__msg__cis__t" kindref="compound">ll_msg_cis_t</ref>));</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(msg);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>msg-&gt;<ref refid="structll__msg__cis__t_1ae84ce4ea4a6d723d5a586a7ae80b1522" kindref="member">hdr</ref>.<ref refid="structll__msg__hdr__t_1a21dce77399d2ecf1420d7f2cb36a3a6a" kindref="member">state_id</ref><sp/><sp/><sp/>=<sp/><ref refid="link__layer_8h_1a726ca809ffd3d67ab4b8476646f26635a53e6ba59eedda5a3e77671e3e36775b1" kindref="member">LL_STATE_SLAVE</ref>;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>msg-&gt;<ref refid="structll__msg__cis__t_1ae84ce4ea4a6d723d5a586a7ae80b1522" kindref="member">hdr</ref>.<ref refid="structll__msg__hdr__t_1aeee7ccb76694abbd7ede6e89338e2f1d" kindref="member">msg_id</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="link__layer_8h_1a0411cd49bb5b71852cecd93bcbf0ca2da57b27f0ea2d4aad90995db47d461e8e3" kindref="member">LL_CONN_MSG_ACCEPT_CIS</ref>;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(BB_BLE_MOCK_ENABLE<sp/>==<sp/>0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>msg-&gt;<ref refid="structll__msg__cis__t_1ae84ce4ea4a6d723d5a586a7ae80b1522" kindref="member">hdr</ref>.<ref refid="structll__msg__hdr__t_1a3994318b478f52ef63f0f9a71a609b4d" kindref="member">handle</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>link-&gt;<ref refid="structle__link_1a6843fe2a32b8f30d12019f50f0363a91" kindref="member">handle</ref>;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>msg-&gt;<ref refid="structll__msg__cis__t_1ae84ce4ea4a6d723d5a586a7ae80b1522" kindref="member">hdr</ref>.<ref refid="structll__msg__hdr__t_1a3994318b478f52ef63f0f9a71a609b4d" kindref="member">handle</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="ll__defines_8h_1afb7b999bc6597e1436f52ba7ebb5330c" kindref="member">LL_CIS_FIRST_HANDLE</ref>;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>msg-&gt;<ref refid="structll__msg__cis__t_1a9464f3d788b51da93c17bf41956b9e35" kindref="member">cisHandle</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="structle__link_1a9b26b19197acc3e1f6fc29c9f7299650" kindref="member">cisHandle</ref>;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__msg_8c_1a3481ad7ca85dea58d6114dac61f55f69" kindref="member">ll_msg_send</ref>(msg);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>SUCCESS;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="comment">/*************************************************************************************************/</highlight></codeline>
+<codeline lineno="163"><highlight class="comment">/*************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="ll__cis__slave_8c_1afbc3daa240180e53ae42780cd239668f" kindref="member">ll_reject_cis_req</ref>(uint16_t<sp/>cisHandle,<sp/>uint8_t<sp/><ref refid="structle__link_1a876d9d1bbdf8903ac13b853901e7587c" kindref="member">reason</ref>)</highlight></codeline>
+<codeline lineno="165"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structle__cis__t" kindref="compound">le_cis_t</ref><sp/>*cis<sp/>=<sp/><ref refid="ll__cis_8c_1ae468f030c8f0d042f087ac2701b7de24" kindref="member">ll_cis_by_handle</ref>(cisHandle);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cis<sp/>==<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_error(</highlight><highlight class="stringliteral">&quot;invalid<sp/>CIS<sp/>handle&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>UNKNOWN_CONNECTION_IDENTIFIER;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structle__link" kindref="compound">le_link</ref><sp/>*link<sp/>=<sp/><ref refid="link__layer_8c_1ad0cf3cf97fdaf769c891098d100efedc" kindref="member">ll_link_for_handle</ref>(cis-&gt;<ref refid="structle__cis__t_1a4aecbea9f073c04936a05387fc623cd6" kindref="member">aclHandle</ref>);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(link<sp/>==<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_error(</highlight><highlight class="stringliteral">&quot;invalid<sp/>ACL<sp/>handle&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>UNKNOWN_CONNECTION_IDENTIFIER;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="link__layer_8h_1ae10f97c34c30ab4d52daa0108608dd2b" kindref="member">ROLE_IS_SLAVE</ref>(link)<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_error(</highlight><highlight class="stringliteral">&quot;invalid<sp/>role&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>COMMAND_DISALLOWED;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>LL<sp/>message<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structll__msg__cis__t" kindref="compound">ll_msg_cis_t</ref><sp/>*msg<sp/>=<sp/><ref refid="ll__msg_8c_1ac3416bc22296909dee33d5e51d78ff38" kindref="member">ll_msg_alloc</ref>(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structll__msg__cis__t" kindref="compound">ll_msg_cis_t</ref>));</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(msg);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>msg-&gt;<ref refid="structll__msg__cis__t_1ae84ce4ea4a6d723d5a586a7ae80b1522" kindref="member">hdr</ref>.<ref refid="structll__msg__hdr__t_1a21dce77399d2ecf1420d7f2cb36a3a6a" kindref="member">state_id</ref><sp/><sp/><sp/>=<sp/><ref refid="link__layer_8h_1a726ca809ffd3d67ab4b8476646f26635a53e6ba59eedda5a3e77671e3e36775b1" kindref="member">LL_STATE_SLAVE</ref>;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>msg-&gt;<ref refid="structll__msg__cis__t_1ae84ce4ea4a6d723d5a586a7ae80b1522" kindref="member">hdr</ref>.<ref refid="structll__msg__hdr__t_1aeee7ccb76694abbd7ede6e89338e2f1d" kindref="member">msg_id</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="link__layer_8h_1a0411cd49bb5b71852cecd93bcbf0ca2daca5b54fc04b4e278a71b66a203329998" kindref="member">LL_CONN_MSG_REJECT_CIS</ref>;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(BB_BLE_MOCK_ENABLE<sp/>==<sp/>0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>msg-&gt;<ref refid="structll__msg__cis__t_1ae84ce4ea4a6d723d5a586a7ae80b1522" kindref="member">hdr</ref>.<ref refid="structll__msg__hdr__t_1a3994318b478f52ef63f0f9a71a609b4d" kindref="member">handle</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>link-&gt;<ref refid="structle__link_1a6843fe2a32b8f30d12019f50f0363a91" kindref="member">handle</ref>;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>msg-&gt;<ref refid="structll__msg__cis__t_1ae84ce4ea4a6d723d5a586a7ae80b1522" kindref="member">hdr</ref>.<ref refid="structll__msg__hdr__t_1a3994318b478f52ef63f0f9a71a609b4d" kindref="member">handle</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="ll__defines_8h_1afb7b999bc6597e1436f52ba7ebb5330c" kindref="member">LL_CIS_FIRST_HANDLE</ref>;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>msg-&gt;<ref refid="structll__msg__cis__t_1a9464f3d788b51da93c17bf41956b9e35" kindref="member">cisHandle</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="structle__link_1a9b26b19197acc3e1f6fc29c9f7299650" kindref="member">cisHandle</ref>;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>msg-&gt;<ref refid="structll__msg__cis__t_1a1bf4d280c70abef4ef1da371fbd54101" kindref="member">reason</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="structle__link_1a876d9d1bbdf8903ac13b853901e7587c" kindref="member">reason</ref>;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__msg_8c_1a3481ad7ca85dea58d6114dac61f55f69" kindref="member">ll_msg_send</ref>(msg);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>SUCCESS;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight><highlight class="comment">/*************************************************************************************************/</highlight></codeline>
+<codeline lineno="215"><highlight class="comment">/*************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ll__cis__slave_8c_1a621b1366abfd2de556367ec6e4d7dfe1" kindref="member">le_cmd_set_cis_slave</ref>(u16<sp/>opcode,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>*data,<sp/>u32<sp/>size)</highlight></codeline>
+<codeline lineno="217"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ocf<sp/>=<sp/>opcode<sp/>&amp;<sp/>0x3ff;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>match<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>status;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(ocf)<sp/>{</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>HCI_LE_ACCEPT_CIS_REQ:<sp/>{</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_info(</highlight><highlight class="stringliteral">&quot;-&gt;<sp/>HCI_LE_ACCEPT_CIS_REQ&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint16_t<sp/>cisHandle<sp/>=<sp/>btctler_little_endian_read_16(data,<sp/>0);</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status<sp/>=<sp/><ref refid="ll__cis__slave_8c_1a660d109260e194f52c4dc4c6599ac3f1" kindref="member">ll_accept_cis_req</ref>(cisHandle);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__hci_emit_event_of_cmd_status(opcode,<sp/>status);</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>HCI_LE_REJECT_CIS_REQ:<sp/>{</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_info(</highlight><highlight class="stringliteral">&quot;-&gt;<sp/>HCI_LE_REJECT_CIS_REQ&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint16_t<sp/>cisHandle<sp/>=<sp/>btctler_little_endian_read_16(data,<sp/>0);</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>reason<sp/>=<sp/>data[2];</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status<sp/>=<sp/><ref refid="ll__cis__slave_8c_1afbc3daa240180e53ae42780cd239668f" kindref="member">ll_reject_cis_req</ref>(cisHandle,<sp/>reason);</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__hci_emit_event_of_cmd_complete(opcode,<sp/></highlight><highlight class="stringliteral">&quot;1H&quot;</highlight><highlight class="normal">,<sp/>status,<sp/>cisHandle);</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>match<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>match;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight><highlight class="comment">/*************************************************************************************************/</highlight></codeline>
+<codeline lineno="259"><highlight class="comment">/*************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__cis__slave_8c_1a52ac477a0414ae2a753b20b4706f8840" kindref="member">ll_cis_slave_msg_handler</ref>(uint8_t<sp/>msg_id,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*payload)</highlight></codeline>
+<codeline lineno="261"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="262"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__cis__slave_8c_1a5af03d54d796172d652053e12df4f944" kindref="member">ll_cis_slave_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="266"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>__this-&gt;msg_ctx.ll_dispatch_msg_table[LL_STATE_CIS_SLAVE]<sp/>=<sp/>ll_cis_slave_msg_handler;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(BB_BLE_MOCK_ENABLE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>bb_ble_mock_recv_cis_req();<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis_slave.c"/>
+  </compounddef>
+</doxygen>

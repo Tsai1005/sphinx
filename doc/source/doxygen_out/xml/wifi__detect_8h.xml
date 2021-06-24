@@ -1,0 +1,275 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="wifi__detect_8h" kind="file" language="C++">
+    <compoundname>wifi_detect.h</compoundname>
+    <includedby refid="bredr__link_8h" local="yes">/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h</includedby>
+    <invincdepgraph>
+      <node id="5628">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h</label>
+        <link refid="tws__sniff_8h"/>
+      </node>
+      <node id="5630">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_schedule.h</label>
+        <link refid="tws__schedule_8h"/>
+      </node>
+      <node id="5627">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h</label>
+        <link refid="tws__conn_8h"/>
+        <childnode refid="5628" relation="include">
+        </childnode>
+      </node>
+      <node id="5623">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/wifi_detect.h</label>
+        <link refid="wifi_detect.h"/>
+        <childnode refid="5624" relation="include">
+        </childnode>
+      </node>
+      <node id="5629">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sbc_sync.h</label>
+        <link refid="tws__sbc__sync_8h"/>
+      </node>
+      <node id="5624">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h</label>
+        <link refid="bredr__link_8h"/>
+        <childnode refid="5625" relation="include">
+        </childnode>
+        <childnode refid="5626" relation="include">
+        </childnode>
+      </node>
+      <node id="5625">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c</label>
+        <link refid="tws__le__link_8c"/>
+      </node>
+      <node id="5626">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h</label>
+        <link refid="tws__link_8h"/>
+        <childnode refid="5627" relation="include">
+        </childnode>
+        <childnode refid="5629" relation="include">
+        </childnode>
+        <childnode refid="5630" relation="include">
+        </childnode>
+        <childnode refid="5628" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="wifi__detect_8h_1aaf9e1bbcd85f0ae15a68ebb2a2da5565" prot="public" static="no">
+        <name>DIFF_NUM</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/wifi_detect.h" line="12" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/wifi_detect.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wifi__detect_8h_1ad4b0fcd891498d0bc3ddf12a46326469" prot="public" static="no">
+        <name>WFDET_UPDATA_INTERVAL_MIN</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/wifi_detect.h" line="14" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/wifi_detect.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wifi__detect_8h_1a679e765bb722bc4b2e8dc93c98d3af56" prot="public" static="no">
+        <name>WFDET_UPDATA_INTERVAL_MAX</name>
+        <initializer>20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/wifi_detect.h" line="16" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/wifi_detect.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wifi__detect_8h_1af78dec0a6f13e7d558c56ce5f523796c" prot="public" static="no">
+        <name>WFDET_UPDATA_INTERVAL_MDM</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/wifi_detect.h" line="18" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/wifi_detect.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wifi__detect_8h_1a49404ea5b2ec58e2f983df96b9933aea" prot="public" static="no">
+        <name>WFDET_UPDATA_INTERVAL_MDM_DIFF_NUM</name>
+        <initializer>21</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/wifi_detect.h" line="20" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/wifi_detect.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="wifi__detect_8h_1ad24b13fbc4cb3b998b241cb16f420115" prot="public" static="no" mutable="no">
+        <type>const u8</type>
+        <definition>const u8 numbits_table[256]</definition>
+        <argsstring>[256]</argsstring>
+        <name>numbits_table</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/wifi_detect.h" line="8" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="wifi__detect_8h_1ac918ddb4a9aed56fe25c7ae610ccadef" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 slave_channel_map_report[10]</definition>
+        <argsstring>[10]</argsstring>
+        <name>slave_channel_map_report</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/wifi_detect.h" line="9" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="wifi__detect_8h_1a5e5afe9ebb73c8768ae34c1e00aa66cf" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 master_channel_map[10]</definition>
+        <argsstring>[10]</argsstring>
+        <name>master_channel_map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/wifi_detect.h" line="10" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="wifi__detect_8h_1aca11cf67dec5f89b23e205317b818130" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wife_detect_record</definition>
+        <argsstring>()</argsstring>
+        <name>wife_detect_record</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/wifi_detect.h" line="21" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wifi__detect_8h_1aceca27ec91ddd0359790fa99def60a0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wifi_det_rx_slave_channel_map</definition>
+        <argsstring>(u8 b[10])</argsstring>
+        <name>wifi_det_rx_slave_channel_map</name>
+        <param>
+          <type>u8</type>
+          <declname>b</declname>
+          <array>[10]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/wifi_detect.h" line="22" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wifi__detect_8h_1a2de6bf4650db49bce618a5335ade3210" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wifi_det_tx_slave_channel_map</definition>
+        <argsstring>(u8 slave_channel_map[10])</argsstring>
+        <name>wifi_det_tx_slave_channel_map</name>
+        <param>
+          <type>u8</type>
+          <declname>slave_channel_map</declname>
+          <array>[10]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/wifi_detect.h" line="23" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wifi__detect_8h_1a97965c4ffd599b19d852db1745a43725" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmp_tx_channel_classification</definition>
+        <argsstring>(u8 *map)</argsstring>
+        <name>lmp_tx_channel_classification</name>
+        <param>
+          <type>u8 *</type>
+          <declname>map</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/wifi_detect.h" line="25" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="wifi__detect_8h_1ab88c287019d9f507e83dc529c9fca8b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u8</type>
+        <definition>u8 wifi_det_master_slave_channel_map</definition>
+        <argsstring>(u8 a[10])</argsstring>
+        <name>wifi_det_master_slave_channel_map</name>
+        <param>
+          <type>u8</type>
+          <declname>a</declname>
+          <array>[10]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/wifi_detect.h" line="26" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>WIFI_DETECT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WIFI_DETECT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#define<sp/>WIFI_DETECT_ENABLE<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#define<sp/>AFH_CLASSIFICATION_ENABLE<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">/*控制主从交流的频率*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/><ref refid="wifi__detect_8h_1ad24b13fbc4cb3b998b241cb16f420115" kindref="member">numbits_table</ref>[256];</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>u8<sp/><ref refid="wifi__detect_8h_1ac918ddb4a9aed56fe25c7ae610ccadef" kindref="member">slave_channel_map_report</ref>[10];</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>u8<sp/><ref refid="wifi__detect_8h_1a5e5afe9ebb73c8768ae34c1e00aa66cf" kindref="member">master_channel_map</ref>[10];</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="wifi__detect_8h_1aaf9e1bbcd85f0ae15a68ebb2a2da5565" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIFF_NUM<sp/>0<sp/>//大于DIFF_NUM个不同,则更新表</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="wifi__detect_8h_1ad4b0fcd891498d0bc3ddf12a46326469" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WFDET_UPDATA_INTERVAL_MIN<sp/>6//单位:100ms</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="wifi__detect_8h_1a679e765bb722bc4b2e8dc93c98d3af56" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WFDET_UPDATA_INTERVAL_MAX<sp/>20//单位:100ms</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="wifi__detect_8h_1af78dec0a6f13e7d558c56ce5f523796c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WFDET_UPDATA_INTERVAL_MDM<sp/>6//单位:100ms,<sp/>当可用信道数过少时,最大时间按照这个时间强制更新</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="wifi__detect_8h_1a49404ea5b2ec58e2f983df96b9933aea" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WFDET_UPDATA_INTERVAL_MDM_DIFF_NUM<sp/>21<sp/>//小于DIFF_NUM个不同,<sp/>则缩短更新时间</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wifi__detect_8h_1aca11cf67dec5f89b23e205317b818130" kindref="member">wife_detect_record</ref>();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wifi__detect_8h_1aceca27ec91ddd0359790fa99def60a0b" kindref="member">wifi_det_rx_slave_channel_map</ref>(u8<sp/>b[10]);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wifi__detect_8h_1a2de6bf4650db49bce618a5335ade3210" kindref="member">wifi_det_tx_slave_channel_map</ref>(u8<sp/>slave_channel_map[10]);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wifi__detect_8h_1aceca27ec91ddd0359790fa99def60a0b" kindref="member">wifi_det_rx_slave_channel_map</ref>(u8<sp/>b[10]);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wifi__detect_8h_1a97965c4ffd599b19d852db1745a43725" kindref="member">lmp_tx_channel_classification</ref>(u8<sp/>*map);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">u8<sp/><ref refid="wifi__detect_8h_1ab88c287019d9f507e83dc529c9fca8b4" kindref="member">wifi_det_master_slave_channel_map</ref>(u8<sp/>a[10]);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/wifi_detect.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1670 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="tws__link_8h" kind="file" language="C++">
+    <compoundname>tws_link.h</compoundname>
+    <includes refid="bredr__link_8h" local="yes">classic/bredr_link.h</includes>
+    <includes refid="bredr__types_8h" local="yes">classic/bredr_types.h</includes>
+    <includes local="yes">classic/bredr_frame.h</includes>
+    <includedby refid="tws__conn_8h" local="yes">/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h</includedby>
+    <includedby refid="tws__sbc__sync_8h" local="yes">/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sbc_sync.h</includedby>
+    <includedby refid="tws__schedule_8h" local="yes">/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_schedule.h</includedby>
+    <includedby refid="tws__sniff_8h" local="yes">/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h</includedby>
+    <incdepgraph>
+      <node id="5566">
+        <label>classic/bredr_frame.h</label>
+      </node>
+      <node id="5559">
+        <label>generic/list.h</label>
+      </node>
+      <node id="5563">
+        <label>common/link_task.h</label>
+        <link refid="link__task_8h"/>
+        <childnode refid="5558" relation="include">
+        </childnode>
+        <childnode refid="5559" relation="include">
+        </childnode>
+      </node>
+      <node id="5562">
+        <label>classic/bredr_device.h</label>
+        <link refid="bredr__device_8h"/>
+      </node>
+      <node id="5565">
+        <label>wifi_detect.h</label>
+        <link refid="wifi__detect_8h"/>
+      </node>
+      <node id="5560">
+        <label>classic/bredr_types.h</label>
+        <link refid="bredr__types_8h"/>
+      </node>
+      <node id="5555">
+        <label>classic/bredr_link.h</label>
+        <link refid="bredr__link_8h"/>
+        <childnode refid="5556" relation="include">
+        </childnode>
+        <childnode refid="5557" relation="include">
+        </childnode>
+        <childnode refid="5561" relation="include">
+        </childnode>
+        <childnode refid="5562" relation="include">
+        </childnode>
+        <childnode refid="5563" relation="include">
+        </childnode>
+        <childnode refid="5564" relation="include">
+        </childnode>
+        <childnode refid="5565" relation="include">
+        </childnode>
+        <childnode refid="5566" relation="include">
+        </childnode>
+      </node>
+      <node id="5556">
+        <label>typedef.h</label>
+      </node>
+      <node id="5558">
+        <label>generic/typedef.h</label>
+      </node>
+      <node id="5564">
+        <label>system/task.h</label>
+      </node>
+      <node id="5557">
+        <label>classic/link_bulk.h</label>
+        <link refid="link__bulk_8h"/>
+        <childnode refid="5558" relation="include">
+        </childnode>
+        <childnode refid="5559" relation="include">
+        </childnode>
+        <childnode refid="5560" relation="include">
+        </childnode>
+      </node>
+      <node id="5554">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h</label>
+        <link refid="tws_link.h"/>
+        <childnode refid="5555" relation="include">
+        </childnode>
+        <childnode refid="5560" relation="include">
+        </childnode>
+        <childnode refid="5566" relation="include">
+        </childnode>
+      </node>
+      <node id="5561">
+        <label>classic/lmp_pdu.h</label>
+        <link refid="lmp__pdu_8h"/>
+        <childnode refid="5556" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5569">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h</label>
+        <link refid="tws__sniff_8h"/>
+      </node>
+      <node id="5571">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_schedule.h</label>
+        <link refid="tws__schedule_8h"/>
+      </node>
+      <node id="5568">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h</label>
+        <link refid="tws__conn_8h"/>
+        <childnode refid="5569" relation="include">
+        </childnode>
+      </node>
+      <node id="5570">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sbc_sync.h</label>
+        <link refid="tws__sbc__sync_8h"/>
+      </node>
+      <node id="5567">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h</label>
+        <link refid="tws_link.h"/>
+        <childnode refid="5568" relation="include">
+        </childnode>
+        <childnode refid="5570" relation="include">
+        </childnode>
+        <childnode refid="5571" relation="include">
+        </childnode>
+        <childnode refid="5569" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct____tws__esco__tx__info__t" prot="public">__tws_esco_tx_info_t</innerclass>
+    <innerclass refid="structtws__link__connection" prot="public">tws_link_connection</innerclass>
+    <innerclass refid="structtws__link__core__data" prot="public">tws_link_core_data</innerclass>
+    <innerclass refid="structtws__link__rxtx__state" prot="public">tws_link_rxtx_state</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="tws__link_8h_1a58deb1a4e33990c0814fc781cc97cbf8" prot="public" static="no">
+        <name>DEBUG_CHECK_ESCO_DATA_CRC_CNT</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="74" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tws__link_8h_1a2b62c324aed390e87d5e4e4b43ea0761" prot="public" static="no">
+        <name>ESCO_CONN_ACL_RUSUME_T_CNT</name>
+        <initializer>12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="75" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tws__link_8h_1ad8bb538f15e68a377b0f26a1be6f337e" prot="public" static="no">
+        <name>ESCO_TX_SYN_REQ_CNT</name>
+        <initializer>20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="76" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tws__link_8h_1a7fd8e79669167c6e7239f32aa9c42060" prot="public" static="no">
+        <name>TWS_ESCO_INTERVAL_SLOT</name>
+        <initializer>100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="77" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tws__link_8h_1a707100d7f6347918b7259f93fa732a4d" prot="public" static="no">
+        <name>TWS_ESCO_ROLE_SWTICH_ACL</name>
+        <initializer>(<ref refid="tws__link_8h_1a7fd8e79669167c6e7239f32aa9c42060" kindref="member">TWS_ESCO_INTERVAL_SLOT</ref>*2/12)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="78" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="tws__link_8h_1aea33efd5e2c69d615faad5c5965510aa" prot="public" static="no">
+        <name>@95</name>
+        <enumvalue id="tws__link_8h_1aea33efd5e2c69d615faad5c5965510aaafc683ce6693e874ca9aef4c6cd66ef2c" prot="public">
+          <name>TWS_LINK_CON_CHECK</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tws__link_8h_1aea33efd5e2c69d615faad5c5965510aaaf7943f022f2013ba68c7c278d4926c05" prot="public">
+          <name>TWS_LINK_ESCO_CHECK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tws__link_8h_1aea33efd5e2c69d615faad5c5965510aaae52b435b6d775eb5b42987f704e7ae97" prot="public">
+          <name>TWS_LINK_ESCO_GET_DATA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tws__link_8h_1aea33efd5e2c69d615faad5c5965510aaaa2ce29784d55c8b1cc347c48d65c98f4" prot="public">
+          <name>TWS_LINK_ESCO_NEXT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tws__link_8h_1aea33efd5e2c69d615faad5c5965510aaa45b446188577fa0b6ca059c3dcb698af" prot="public">
+          <name>TWS_LINK_ESCO_SEND_DATA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tws__link_8h_1aea33efd5e2c69d615faad5c5965510aaaefe92e556c03010cabfa35e76dff9de9" prot="public">
+          <name>TWS_LINK_ESCO_CHECK_DATA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tws__link_8h_1aea33efd5e2c69d615faad5c5965510aaa13b8f1d914f898f57e7288aeaaea5429" prot="public">
+          <name>TWS_LINK_ESCO_ACL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tws__link_8h_1aea33efd5e2c69d615faad5c5965510aaaab2258a53938888c4b37c86937b93dca" prot="public">
+          <name>TWS_ESCO_PACKET_ALIGNEDk</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tws__link_8h_1aea33efd5e2c69d615faad5c5965510aaa40fffe333efa13f24be9a2a49040b01b" prot="public">
+          <name>TWS_LINK_ESCO_CHECK_SLOT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tws__link_8h_1aea33efd5e2c69d615faad5c5965510aaaa883f785687896c61ed5ac53d39d1cc0" prot="public">
+          <name>TWS_LINK_ESCO_CHECK_REMOVE_FLAG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="16" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" bodystart="16" bodyend="27"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="tws__link_8h_1afbb70e7316d2ca772a1b4dfc0731668c" prot="public" static="no">
+        <type>struct <ref refid="struct____tws__esco__tx__info__t" kindref="compound">__tws_esco_tx_info_t</ref></type>
+        <definition>typedef struct __tws_esco_tx_info_t tws_esco_tx_info_t</definition>
+        <argsstring></argsstring>
+        <name>tws_esco_tx_info_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="36" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="tws__link_8h_1a1c66721a879b1c50292543e8e924e98d" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int CONFIG_BTCTLER_TWS_ENABLE</definition>
+        <argsstring></argsstring>
+        <name>CONFIG_BTCTLER_TWS_ENABLE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="14" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tws__link_8h_1a50ac7cebfc02ffeb801aff82c0f167f7" prot="public" static="no" mutable="no">
+        <type>const struct <ref refid="structlink__task__ops" kindref="compound">link_task_ops</ref></type>
+        <definition>const struct link_task_ops tws_link_task_ops</definition>
+        <argsstring></argsstring>
+        <name>tws_link_task_ops</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="14" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tws__link_8h_1a5888eebd4da0df0105e72b4976be93da" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structtws__link__connection" kindref="compound">tws_link_connection</ref></type>
+        <definition>struct tws_link_connection tws_link</definition>
+        <argsstring></argsstring>
+        <name>tws_link</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="14" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="tws__link_8h_1ae3c8b962a89d5f13e5216f71ff600272" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tws_link_init</definition>
+        <argsstring>()</argsstring>
+        <name>tws_link_init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="110" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1ac616f8ea4b35bd1de4001c9b3a5cc025" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u32</type>
+        <definition>u32 tws_link_read_slot_clk</definition>
+        <argsstring>()</argsstring>
+        <name>tws_link_read_slot_clk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="112" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1aee141da2c09ef908f3da8939f7cba582" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tws_link_conn_start_in_irq</definition>
+        <argsstring>(struct link_connection *lc, int role)</argsstring>
+        <name>tws_link_conn_start_in_irq</name>
+        <param>
+          <type>struct <ref refid="structlink__connection" kindref="compound">link_connection</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>role</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="114" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1a2cb38c60aef759d786cf3aabef4671e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tws_link_conn_rx_handler_in_irq</definition>
+        <argsstring>(struct link_connection *, struct bredr_rx_bulk *, int)</argsstring>
+        <name>tws_link_conn_rx_handler_in_irq</name>
+        <param>
+          <type>struct <ref refid="structlink__connection" kindref="compound">link_connection</ref> *</type>
+        </param>
+        <param>
+          <type>struct <ref refid="structbredr__rx__bulk" kindref="compound">bredr_rx_bulk</ref> *</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="116" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1a82befe0b9631c00999df00e34241bd22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tws_tx_bulk_free_space</definition>
+        <argsstring>(void)</argsstring>
+        <name>tws_tx_bulk_free_space</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="118" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1a69b5df95f4db77331fea3129ca63205d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structbredr__rx__bulk" kindref="compound">bredr_rx_bulk</ref> *</type>
+        <definition>struct bredr_rx_bulk* bredr_rx_bulk_alloc_in_irq</definition>
+        <argsstring>()</argsstring>
+        <name>bredr_rx_bulk_alloc_in_irq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="119" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1ab8cf29ee9c5fe84c851f78a6e0a032d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structbredr__tx__bulk" kindref="compound">bredr_tx_bulk</ref> *</type>
+        <definition>struct bredr_tx_bulk* tws_tx_bulk_alloc</definition>
+        <argsstring>(int size)</argsstring>
+        <name>tws_tx_bulk_alloc</name>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="120" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1a924f5f734e1c56de5106bedaaf4b4851" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tws_rx_bulk_realloc_in_irq</definition>
+        <argsstring>(struct bredr_rx_bulk *bulk, int size)</argsstring>
+        <name>tws_rx_bulk_realloc_in_irq</name>
+        <param>
+          <type>struct <ref refid="structbredr__rx__bulk" kindref="compound">bredr_rx_bulk</ref> *</type>
+          <declname>bulk</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="121" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1a429a4fbc33999686d9b8a6c467357daa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tws_tx_bulk_free</definition>
+        <argsstring>(struct bredr_tx_bulk *bulk)</argsstring>
+        <name>tws_tx_bulk_free</name>
+        <param>
+          <type>struct <ref refid="structbredr__tx__bulk" kindref="compound">bredr_tx_bulk</ref> *</type>
+          <declname>bulk</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="122" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1ae1da9f867d3d372b86b925aaad00754e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tws_tx_bulk_realloc</definition>
+        <argsstring>(struct bredr_tx_bulk *bulk, int size)</argsstring>
+        <name>tws_tx_bulk_realloc</name>
+        <param>
+          <type>struct <ref refid="structbredr__tx__bulk" kindref="compound">bredr_tx_bulk</ref> *</type>
+          <declname>bulk</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="123" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1afce77e64372bb45699d597315d302bf8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tws_conn_set_rx_bulk_in_irq</definition>
+        <argsstring>(struct link_connection *lc, int ind)</argsstring>
+        <name>tws_conn_set_rx_bulk_in_irq</name>
+        <param>
+          <type>struct <ref refid="structlink__connection" kindref="compound">link_connection</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ind</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="125" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1a0f2c4ef2c08b4c20bb667fd8828cb79c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tws_link_conn_rx_bulk_avaliable</definition>
+        <argsstring>(struct link_connection *lc, struct bredr_rx_bulk *)</argsstring>
+        <name>tws_link_conn_rx_bulk_avaliable</name>
+        <param>
+          <type>struct <ref refid="structlink__connection" kindref="compound">link_connection</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structbredr__rx__bulk" kindref="compound">bredr_rx_bulk</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="127" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1a8d52702764b6bf56de22cf85c9fe7ee6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct ctrl_frame *</type>
+        <definition>struct ctrl_frame* tws_link_monitor_frame_init</definition>
+        <argsstring>()</argsstring>
+        <name>tws_link_monitor_frame_init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="129" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1a7f599dd7e1d2d72cc7265631029dd46c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tws_link_monitor_frame_setup</definition>
+        <argsstring>(struct ctrl_frame *, struct bredr_frame_core_data *)</argsstring>
+        <name>tws_link_monitor_frame_setup</name>
+        <param>
+          <type>struct ctrl_frame *</type>
+        </param>
+        <param>
+          <type>struct bredr_frame_core_data *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="130" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1ac6cd1e800e259257d8f32f56c10785df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tws_monitor_enable</definition>
+        <argsstring>(struct link_connection *link, u8 en, u8 role)</argsstring>
+        <name>tws_monitor_enable</name>
+        <param>
+          <type>struct <ref refid="structlink__connection" kindref="compound">link_connection</ref> *</type>
+          <declname>link</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>en</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>role</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="132" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1ad8655bfc2ec7657aa7f725b9b6a1c45f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tws_link_monitor_master_init</definition>
+        <argsstring>(struct ctrl_frame *frame)</argsstring>
+        <name>tws_link_monitor_master_init</name>
+        <param>
+          <type>struct ctrl_frame *</type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="133" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1aca150e2a51274b0fff2385746dcf2053" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tws_link_monitor_slave_init</definition>
+        <argsstring>(struct ctrl_frame *frame)</argsstring>
+        <name>tws_link_monitor_slave_init</name>
+        <param>
+          <type>struct ctrl_frame *</type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="134" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1a3439cf9ea433b2240a839a41b76e8e9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tws_link_master_2_slave</definition>
+        <argsstring>(struct link_connection *link)</argsstring>
+        <name>tws_link_master_2_slave</name>
+        <param>
+          <type>struct <ref refid="structlink__connection" kindref="compound">link_connection</ref> *</type>
+          <declname>link</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="136" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1a07ea883c1677c2c73cadb893e0485c6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tws_link_slave_2_master</definition>
+        <argsstring>(struct link_connection *link)</argsstring>
+        <name>tws_link_slave_2_master</name>
+        <param>
+          <type>struct <ref refid="structlink__connection" kindref="compound">link_connection</ref> *</type>
+          <declname>link</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="137" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1a3373e27610b65060f28bcb031e1d9bfa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tws_link_rxtx_state_reset</definition>
+        <argsstring>()</argsstring>
+        <name>tws_link_rxtx_state_reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="139" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1abc2d5edb52c65c690f1567aed4fab81d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tws_link_rx_bulk_free</definition>
+        <argsstring>()</argsstring>
+        <name>tws_link_rx_bulk_free</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="140" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1a0670b115dc64f6aeee822238fd44c4b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tws_link_get_rxtx_state</definition>
+        <argsstring>(struct link_connection *, struct tws_link_rxtx_state *)</argsstring>
+        <name>tws_link_get_rxtx_state</name>
+        <param>
+          <type>struct <ref refid="structlink__connection" kindref="compound">link_connection</ref> *</type>
+        </param>
+        <param>
+          <type>struct <ref refid="structtws__link__rxtx__state" kindref="compound">tws_link_rxtx_state</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="142" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1a1d54b65ae37708f0f0b47af6ce44031c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tws_link_set_rxtx_state</definition>
+        <argsstring>(struct link_connection *, struct tws_link_rxtx_state *)</argsstring>
+        <name>tws_link_set_rxtx_state</name>
+        <param>
+          <type>struct <ref refid="structlink__connection" kindref="compound">link_connection</ref> *</type>
+        </param>
+        <param>
+          <type>struct <ref refid="structtws__link__rxtx__state" kindref="compound">tws_link_rxtx_state</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="143" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1ad2f3057702f026fbea3baaeef2208f11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tws_link_disconnection</definition>
+        <argsstring>()</argsstring>
+        <name>tws_link_disconnection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="145" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1a1538c24a1c55998cfd0cab2fa2bfac93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u8</type>
+        <definition>u8 tws_esco_transmit_deal</definition>
+        <argsstring>(u8 step, struct link_connection *lc)</argsstring>
+        <name>tws_esco_transmit_deal</name>
+        <param>
+          <type>u8</type>
+          <declname>step</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structlink__connection" kindref="compound">link_connection</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="146" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1a6cab5b1ac181393fc06d13e61384e1d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u8</type>
+        <definition>u8 tws_esco_acl_communication</definition>
+        <argsstring>(struct link_connection *lc, u8 *tws_link_status)</argsstring>
+        <name>tws_esco_acl_communication</name>
+        <param>
+          <type>struct <ref refid="structlink__connection" kindref="compound">link_connection</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>u8 *</type>
+          <declname>tws_link_status</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="147" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1aab6c167efd46794794cc85b5f4721e0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* bredr_get_tws_esco_packet</definition>
+        <argsstring>(void *_lc, struct bredr_rx_bulk *phone_bulk, int *wait_tws_rx)</argsstring>
+        <name>bredr_get_tws_esco_packet</name>
+        <param>
+          <type>void *</type>
+          <declname>_lc</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structbredr__rx__bulk" kindref="compound">bredr_rx_bulk</ref> *</type>
+          <declname>phone_bulk</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>wait_tws_rx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="148" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1afc56402c62326831f9a5c909fb32f542" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u8</type>
+        <definition>u8 tws_clear_timeout_tr_esco_packet</definition>
+        <argsstring>(struct link_connection *lc, int cnt)</argsstring>
+        <name>tws_clear_timeout_tr_esco_packet</name>
+        <param>
+          <type>struct <ref refid="structlink__connection" kindref="compound">link_connection</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cnt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="149" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1aa8da046d975fb67fa739bddcc0099588" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tws_link_esco_close_adjust_clkoffset</definition>
+        <argsstring>()</argsstring>
+        <name>tws_link_esco_close_adjust_clkoffset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="151" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1a158c34e13d6d75aebf380266854776db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u8</type>
+        <definition>u8 bredr_esco_tws_link_close</definition>
+        <argsstring>(struct link_connection *lc)</argsstring>
+        <name>bredr_esco_tws_link_close</name>
+        <param>
+          <type>struct <ref refid="structlink__connection" kindref="compound">link_connection</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="152" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1a9ca2457392e6d62543547f2982e35cc9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u8</type>
+        <definition>u8 bredr_esco_tws_link_open</definition>
+        <argsstring>(struct link_connection *lc, u8 monitor_start)</argsstring>
+        <name>bredr_esco_tws_link_open</name>
+        <param>
+          <type>struct <ref refid="structlink__connection" kindref="compound">link_connection</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>monitor_start</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="153" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1a7f286ec4d0b6d7964a15cc53e550b00b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structbredr__tx__bulk" kindref="compound">bredr_tx_bulk</ref> *</type>
+        <definition>struct bredr_tx_bulk* tws_send_esco_packet</definition>
+        <argsstring>(void *priv, u8 *packet, int len)</argsstring>
+        <name>tws_send_esco_packet</name>
+        <param>
+          <type>void *</type>
+          <declname>priv</declname>
+        </param>
+        <param>
+          <type>u8 *</type>
+          <declname>packet</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="154" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1aa22c1d7158233ab626c904258f214dfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bredr_tws_esco_send_data</definition>
+        <argsstring>(struct link_connection *phone_lc, void *_lc)</argsstring>
+        <name>bredr_tws_esco_send_data</name>
+        <param>
+          <type>struct <ref refid="structlink__connection" kindref="compound">link_connection</ref> *</type>
+          <declname>phone_lc</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>_lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="155" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1af3507fddae0aaa8c90717254567c3af3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u8</type>
+        <definition>u8 tws_esco_check_role_switch</definition>
+        <argsstring>(struct bredr_esco_link *phone_esco, u8 master_esco_num, u8 remote_esco_num, u16 limit_check_esco_cnt)</argsstring>
+        <name>tws_esco_check_role_switch</name>
+        <param>
+          <type>struct <ref refid="structbredr__esco__link" kindref="compound">bredr_esco_link</ref> *</type>
+          <declname>phone_esco</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>master_esco_num</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>remote_esco_num</declname>
+        </param>
+        <param>
+          <type>u16</type>
+          <declname>limit_check_esco_cnt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="156" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1a94653ad3decac5b87b18332e16f8f49e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u8</type>
+        <definition>u8 check_tws_esco_resume_acl</definition>
+        <argsstring>()</argsstring>
+        <name>check_tws_esco_resume_acl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="157" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1a2bc84f6c490905bcdfe92635bb5ab069" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tws_esco_suspend_resume</definition>
+        <argsstring>(u8 flag)</argsstring>
+        <name>tws_esco_suspend_resume</name>
+        <param>
+          <type>u8</type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="158" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1ae45eccb84d35d064e5fc88c9df52577f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u32</type>
+        <definition>u32 JBHash_esco</definition>
+        <argsstring>(u8 *data, int len)</argsstring>
+        <name>JBHash_esco</name>
+        <param>
+          <type>u8 *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="159" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1a8c89eb941423eca15a376a99c827b6e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tws_slave_remove_esco_deal</definition>
+        <argsstring>(int instant, u8 timeout)</argsstring>
+        <name>tws_slave_remove_esco_deal</name>
+        <param>
+          <type>int</type>
+          <declname>instant</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="160" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1a30fc4a64a3d9bfaa5b6e352e1963312a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tws_link_cacl_clkoff_for_slave</definition>
+        <argsstring>(struct ctrl_frame *sniffer_frame, struct ctrl_frame *forward_frame, u32 *sniffer_clkoff, u16 *sniffer_bitoff)</argsstring>
+        <name>tws_link_cacl_clkoff_for_slave</name>
+        <param>
+          <type>struct ctrl_frame *</type>
+          <declname>sniffer_frame</declname>
+        </param>
+        <param>
+          <type>struct ctrl_frame *</type>
+          <declname>forward_frame</declname>
+        </param>
+        <param>
+          <type>u32 *</type>
+          <declname>sniffer_clkoff</declname>
+        </param>
+        <param>
+          <type>u16 *</type>
+          <declname>sniffer_bitoff</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="161" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1a21ea65a56c396537a89e40896aec7644" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tws_link_cacl_bitoff</definition>
+        <argsstring>(struct ctrl_frame *sniffer_frame, struct ctrl_frame *forward_frame, u16 *sniffer_bitoff)</argsstring>
+        <name>tws_link_cacl_bitoff</name>
+        <param>
+          <type>struct ctrl_frame *</type>
+          <declname>sniffer_frame</declname>
+        </param>
+        <param>
+          <type>struct ctrl_frame *</type>
+          <declname>forward_frame</declname>
+        </param>
+        <param>
+          <type>u16 *</type>
+          <declname>sniffer_bitoff</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="165" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1ae6f77014b8298dbaff46dd1ebaa39382" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tws_link_wait_pair_by_code</definition>
+        <argsstring>(u16 code)</argsstring>
+        <name>tws_link_wait_pair_by_code</name>
+        <param>
+          <type>u16</type>
+          <declname>code</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="169" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1a5e31320b3144233484171186256ba811" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tws_link_search_sibling_by_code</definition>
+        <argsstring>(int code, int timeout_ms)</argsstring>
+        <name>tws_link_search_sibling_by_code</name>
+        <param>
+          <type>int</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>timeout_ms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="171" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1ad547eb120d84a3a50d8a72c810b153e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tws_link_wait_connection</definition>
+        <argsstring>()</argsstring>
+        <name>tws_link_wait_connection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="173" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1a24b8495a246d9a59f51aa43dd18433e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tws_link_create_connection</definition>
+        <argsstring>(u8 *addr, u16 timeout, void(*completed)(u8 *, int))</argsstring>
+        <name>tws_link_create_connection</name>
+        <param>
+          <type>u8 *</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>u16</type>
+          <declname>timeout</declname>
+        </param>
+        <param>
+          <type>void(*)(u8 *, int)</type>
+          <declname>completed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="175" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1a2621994b7b128b67e5424b2a1109776e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tws_link_cancle_wait_pair</definition>
+        <argsstring>()</argsstring>
+        <name>tws_link_cancle_wait_pair</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="179" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1ab972798e4dc215632535bdc846496e5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tws_link_cancle_search_sibling</definition>
+        <argsstring>()</argsstring>
+        <name>tws_link_cancle_search_sibling</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="181" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1a2c5c9de5488c7c88930d42d7451e952f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tws_link_cancle_wait_connection</definition>
+        <argsstring>()</argsstring>
+        <name>tws_link_cancle_wait_connection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="183" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1a12f0c02f957034fc4b37ca52c9b801a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tws_link_cancle_create_connection</definition>
+        <argsstring>()</argsstring>
+        <name>tws_link_cancle_create_connection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="185" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1a95465270f25f20c050f5b077a65fe036" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tws_link_conn_start</definition>
+        <argsstring>(struct link_connection *link)</argsstring>
+        <name>tws_link_conn_start</name>
+        <param>
+          <type>struct <ref refid="structlink__connection" kindref="compound">link_connection</ref> *</type>
+          <declname>link</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="187" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1a2c83cac033627cd012a799a8692cdd82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tws_link_detach</definition>
+        <argsstring>()</argsstring>
+        <name>tws_link_detach</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="189" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1a69039fddc8a5bd85ca5bc7f16a8dffc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tws_link_set_plink</definition>
+        <argsstring>(struct link_connection *link)</argsstring>
+        <name>tws_link_set_plink</name>
+        <param>
+          <type>struct <ref refid="structlink__connection" kindref="compound">link_connection</ref> *</type>
+          <declname>link</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="191" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1a389e9dcdd58aed6d1823e4f07b5133a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structlink__connection" kindref="compound">link_connection</ref> *</type>
+        <definition>struct link_connection* tws_link_get_plink</definition>
+        <argsstring>()</argsstring>
+        <name>tws_link_get_plink</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="193" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1a6d7bc2dff73620e5eda181abb60d9590" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tws_link_master_get_plink_core_data</definition>
+        <argsstring>(void *buf)</argsstring>
+        <name>tws_link_master_get_plink_core_data</name>
+        <param>
+          <type>void *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="195" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1a805d543ad67dbb65269841791c498493" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tws_link_slave_set_plink_core_data</definition>
+        <argsstring>(void *core_data)</argsstring>
+        <name>tws_link_slave_set_plink_core_data</name>
+        <param>
+          <type>void *</type>
+          <declname>core_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="197" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1a579630853869659ac7906cf870228419" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tws_link_master_start_monitor</definition>
+        <argsstring>()</argsstring>
+        <name>tws_link_master_start_monitor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="203" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1ad5dcbdd5d634b32ade771e2fab75a402" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tws_link_slave_start_monitor</definition>
+        <argsstring>()</argsstring>
+        <name>tws_link_slave_start_monitor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="205" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1a13ecdeeac3cda40719679a913674a0cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tws_link_plink_detach</definition>
+        <argsstring>()</argsstring>
+        <name>tws_link_plink_detach</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="207" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1ac00e6d6645b9b0e9062d44cb1a4d8ed0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tws_link_master_pure_monitor_init</definition>
+        <argsstring>()</argsstring>
+        <name>tws_link_master_pure_monitor_init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="209" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1a16c99bc43e8a8aa2a28b0aa7b708a4fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tws_link_master_exit_pure_monitor</definition>
+        <argsstring>()</argsstring>
+        <name>tws_link_master_exit_pure_monitor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="211" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1a8dc4584cac80d1cb6f641dd8780fbd17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tws_link_slave_pure_monitor_init</definition>
+        <argsstring>()</argsstring>
+        <name>tws_link_slave_pure_monitor_init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="213" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1a497d7ec4ccf2e4c4b5dfab09b4b3bf74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tws_link_slave_exit_pure_monitor</definition>
+        <argsstring>()</argsstring>
+        <name>tws_link_slave_exit_pure_monitor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="215" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1a0ab696ef9ed74ca3508dac5de7ac74c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void extws_link_monitor_close</definition>
+        <argsstring>()</argsstring>
+        <name>extws_link_monitor_close</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="216" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1a20b3cd8f752ff87b31ae5b6aeec476b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void extws_link_monitor_open</definition>
+        <argsstring>()</argsstring>
+        <name>extws_link_monitor_open</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="217" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__link_8h_1ab4345cda0fe23887aa257f352e23f7e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void extws_nack_limit_adjust</definition>
+        <argsstring>(u8 limit_cnt)</argsstring>
+        <name>extws_nack_limit_adjust</name>
+        <param>
+          <type>u8</type>
+          <declname>limit_cnt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h" line="218" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>TWS_LINK_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TWS_LINK_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="bredr__link_8h" kindref="compound">classic/bredr_link.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="bredr__types_8h" kindref="compound">classic/bredr_types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>CONFIG_NEW_BREDR_ENABLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;classic_new/bredr_frame.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;classic/bredr_frame.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="tws__link_8h_1a1c66721a879b1c50292543e8e924e98d" kindref="member">CONFIG_BTCTLER_TWS_ENABLE</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="17" refid="tws__link_8h_1aea33efd5e2c69d615faad5c5965510aaafc683ce6693e874ca9aef4c6cd66ef2c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="tws__link_8h_1aea33efd5e2c69d615faad5c5965510aaafc683ce6693e874ca9aef4c6cd66ef2c" kindref="member">TWS_LINK_CON_CHECK</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="18" refid="tws__link_8h_1aea33efd5e2c69d615faad5c5965510aaaf7943f022f2013ba68c7c278d4926c05" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="tws__link_8h_1aea33efd5e2c69d615faad5c5965510aaaf7943f022f2013ba68c7c278d4926c05" kindref="member">TWS_LINK_ESCO_CHECK</ref>,</highlight></codeline>
+<codeline lineno="19" refid="tws__link_8h_1aea33efd5e2c69d615faad5c5965510aaae52b435b6d775eb5b42987f704e7ae97" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="tws__link_8h_1aea33efd5e2c69d615faad5c5965510aaae52b435b6d775eb5b42987f704e7ae97" kindref="member">TWS_LINK_ESCO_GET_DATA</ref>,</highlight></codeline>
+<codeline lineno="20" refid="tws__link_8h_1aea33efd5e2c69d615faad5c5965510aaaa2ce29784d55c8b1cc347c48d65c98f4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="tws__link_8h_1aea33efd5e2c69d615faad5c5965510aaaa2ce29784d55c8b1cc347c48d65c98f4" kindref="member">TWS_LINK_ESCO_NEXT</ref>,</highlight><highlight class="comment">//&lt;主机与从机的重发esco1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="tws__link_8h_1aea33efd5e2c69d615faad5c5965510aaa45b446188577fa0b6ca059c3dcb698af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="tws__link_8h_1aea33efd5e2c69d615faad5c5965510aaa45b446188577fa0b6ca059c3dcb698af" kindref="member">TWS_LINK_ESCO_SEND_DATA</ref><sp/><sp/><sp/><sp/><sp/>,</highlight></codeline>
+<codeline lineno="22" refid="tws__link_8h_1aea33efd5e2c69d615faad5c5965510aaaefe92e556c03010cabfa35e76dff9de9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="tws__link_8h_1aea33efd5e2c69d615faad5c5965510aaaefe92e556c03010cabfa35e76dff9de9" kindref="member">TWS_LINK_ESCO_CHECK_DATA</ref><sp/><sp/><sp/><sp/>,</highlight></codeline>
+<codeline lineno="23" refid="tws__link_8h_1aea33efd5e2c69d615faad5c5965510aaa13b8f1d914f898f57e7288aeaaea5429" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="tws__link_8h_1aea33efd5e2c69d615faad5c5965510aaa13b8f1d914f898f57e7288aeaaea5429" kindref="member">TWS_LINK_ESCO_ACL</ref>,</highlight></codeline>
+<codeline lineno="24" refid="tws__link_8h_1aea33efd5e2c69d615faad5c5965510aaaab2258a53938888c4b37c86937b93dca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="tws__link_8h_1aea33efd5e2c69d615faad5c5965510aaaab2258a53938888c4b37c86937b93dca" kindref="member">TWS_ESCO_PACKET_ALIGNEDk</ref>,</highlight></codeline>
+<codeline lineno="25" refid="tws__link_8h_1aea33efd5e2c69d615faad5c5965510aaa40fffe333efa13f24be9a2a49040b01b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="tws__link_8h_1aea33efd5e2c69d615faad5c5965510aaa40fffe333efa13f24be9a2a49040b01b" kindref="member">TWS_LINK_ESCO_CHECK_SLOT</ref>,</highlight></codeline>
+<codeline lineno="26" refid="tws__link_8h_1aea33efd5e2c69d615faad5c5965510aaaa883f785687896c61ed5ac53d39d1cc0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="tws__link_8h_1aea33efd5e2c69d615faad5c5965510aaaa883f785687896c61ed5ac53d39d1cc0" kindref="member">TWS_LINK_ESCO_CHECK_REMOVE_FLAG</ref>,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="struct____tws__esco__tx__info__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct____tws__esco__tx__info__t" kindref="compound">__tws_esco_tx_info_t</ref><sp/>{</highlight></codeline>
+<codeline lineno="30" refid="struct____tws__esco__tx__info__t_1adb708b3c33204502b4582e1c20ca7a73" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="struct____tws__esco__tx__info__t_1adb708b3c33204502b4582e1c20ca7a73" kindref="member">esco_hard_crc</ref>;</highlight></codeline>
+<codeline lineno="31" refid="struct____tws__esco__tx__info__t_1a3b8e68a734e0a92beadc8e3339877827" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="struct____tws__esco__tx__info__t_1a3b8e68a734e0a92beadc8e3339877827" kindref="member">phone_rx_esco_num</ref>;</highlight></codeline>
+<codeline lineno="32" refid="struct____tws__esco__tx__info__t_1aa1468c3d9b3efa31424a05779d95740d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="struct____tws__esco__tx__info__t_1aa1468c3d9b3efa31424a05779d95740d" kindref="member">request</ref>;</highlight></codeline>
+<codeline lineno="33" refid="struct____tws__esco__tx__info__t_1a80a3d6c08b07f64a7625df41771768a9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="struct____tws__esco__tx__info__t_1a80a3d6c08b07f64a7625df41771768a9" kindref="member">acl_interval_end</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>u8<sp/>exit_esco_step;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="struct____tws__esco__tx__info__t_1a4dee829864fcb4c585b09f75937c992b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/><ref refid="struct____tws__esco__tx__info__t_1a4dee829864fcb4c585b09f75937c992b" kindref="member">rx_crc</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}<sp/><ref refid="struct__GNU__PACKED__" kindref="compound">_GNU_PACKED_</ref><sp/><ref refid="tws__link_8h_1afbb70e7316d2ca772a1b4dfc0731668c" kindref="member">tws_esco_tx_info_t</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="structtws__link__connection" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtws__link__connection" kindref="compound">tws_link_connection</ref><sp/>{</highlight></codeline>
+<codeline lineno="39" refid="structtws__link__connection_1aee419a780921f3da33b8b1c148705818" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structtws__link__connection_1aee419a780921f3da33b8b1c148705818" kindref="member">wait_tx_suss</ref>;</highlight></codeline>
+<codeline lineno="40" refid="structtws__link__connection_1ab414cb0e61899966f810a0c8d7d67d74" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structtws__link__connection_1ab414cb0e61899966f810a0c8d7d67d74" kindref="member">tx_req_cnt</ref>;</highlight></codeline>
+<codeline lineno="41" refid="structtws__link__connection_1a7944140fede73a7cdba39168938c0407" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structtws__link__connection_1a7944140fede73a7cdba39168938c0407" kindref="member">sync_clkn_offset</ref>;</highlight></codeline>
+<codeline lineno="42" refid="structtws__link__connection_1a1b88f0ea9af367251b55b44c7ce3acd8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structtws__link__connection_1a1b88f0ea9af367251b55b44c7ce3acd8" kindref="member">acl_communication</ref>;</highlight><highlight class="comment">/*tws通话的时候定时通信的标志*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="structtws__link__connection_1acaf83f5c5c4de7e701887fb8b23c2e72" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structtws__link__connection_1acaf83f5c5c4de7e701887fb8b23c2e72" kindref="member">esco_rx_lmp_cmd</ref>;</highlight></codeline>
+<codeline lineno="44" refid="structtws__link__connection_1a5f2bbb4cef265ad51c79f43b52a025b3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structtws__link__connection_1a5f2bbb4cef265ad51c79f43b52a025b3" kindref="member">sync_fun_slot_id</ref>;</highlight></codeline>
+<codeline lineno="45" refid="structtws__link__connection_1a4ae0ce76e11d3f746dfdb6d7aefe1ac9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structtws__link__connection_1a4ae0ce76e11d3f746dfdb6d7aefe1ac9" kindref="member">slot_instant_timer</ref>;</highlight></codeline>
+<codeline lineno="46" refid="structtws__link__connection_1a24560cdf858a5bd88894da182ea60139" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structtws__link__connection_1a24560cdf858a5bd88894da182ea60139" kindref="member">post_step</ref>;</highlight></codeline>
+<codeline lineno="47" refid="structtws__link__connection_1aca9147d88a4938d1f9424eb43aef0842" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structtws__link__connection_1aca9147d88a4938d1f9424eb43aef0842" kindref="member">esco_wait_role_swtich</ref>;</highlight></codeline>
+<codeline lineno="48" refid="structtws__link__connection_1a9c7cde71d314fa99e14677c74137776d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structtws__link__connection_1a9c7cde71d314fa99e14677c74137776d" kindref="member">tx_timer</ref>;</highlight></codeline>
+<codeline lineno="49" refid="structtws__link__connection_1a2fb39a7c240c135e85af9bd0b3f0949b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/><ref refid="structtws__link__connection_1a2fb39a7c240c135e85af9bd0b3f0949b" kindref="member">esco_tx_sync_req_cnt</ref>;</highlight></codeline>
+<codeline lineno="50" refid="structtws__link__connection_1adef64595573e16c4efc6c4e08b36319b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structtws__link__connection_1adef64595573e16c4efc6c4e08b36319b" kindref="member">phone_link_acl_lt_addr</ref>;</highlight></codeline>
+<codeline lineno="51" refid="structtws__link__connection_1a73311e989b18b34ff826bf1900b16abf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structtws__link__connection_1a73311e989b18b34ff826bf1900b16abf" kindref="member">plink_switch_mode</ref>;</highlight></codeline>
+<codeline lineno="52" refid="structtws__link__connection_1a8f42a2cc308bab172407a8417a0f6fac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structtws__link__connection_1a8f42a2cc308bab172407a8417a0f6fac" kindref="member">switch_packet_type</ref>;</highlight></codeline>
+<codeline lineno="53" refid="structtws__link__connection_1a8417b68aaa89ffbec1cbd6ebed03dd19" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structtws__link__connection_1a8417b68aaa89ffbec1cbd6ebed03dd19" kindref="member">switch_ptt_cnt</ref>;</highlight></codeline>
+<codeline lineno="54" refid="structtws__link__connection_1a3d8477df453f50ac2cbe427834560bbb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structtws__link__connection_1a3d8477df453f50ac2cbe427834560bbb" kindref="member">master_super_timeout_cnt</ref>;</highlight></codeline>
+<codeline lineno="55" refid="structtws__link__connection_1ac251ecb4e4397e3930a95009c4fad4e8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structtws__link__connection_1ac251ecb4e4397e3930a95009c4fad4e8" kindref="member">remove_esco_timeout</ref>;</highlight></codeline>
+<codeline lineno="56" refid="structtws__link__connection_1a59fb9658db36e37c0f8d2cacf0fab8cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structtws__link__connection_1a59fb9658db36e37c0f8d2cacf0fab8cd" kindref="member">frame_bitoff</ref>;</highlight></codeline>
+<codeline lineno="57" refid="structtws__link__connection_1acee6bdea67115e4ef47677140807277c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structtws__link__connection_1acee6bdea67115e4ef47677140807277c" kindref="member">tbitoff</ref>;</highlight></codeline>
+<codeline lineno="58" refid="structtws__link__connection_1a329254bcffa0337f637c020b38acf075" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structtws__link__connection_1a329254bcffa0337f637c020b38acf075" kindref="member">last_phone_bitoff</ref>;</highlight></codeline>
+<codeline lineno="59" refid="structtws__link__connection_1a27ddc2c14323aa5a0aadc3bbc7842d4c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structtws__link__connection_1a27ddc2c14323aa5a0aadc3bbc7842d4c" kindref="member">last_tws_bitoff</ref>;</highlight></codeline>
+<codeline lineno="60" refid="structtws__link__connection_1adb3533d750317993bfb2601e4e54e1ca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structtws__link__connection_1adb3533d750317993bfb2601e4e54e1ca" kindref="member">twscon</ref>;</highlight></codeline>
+<codeline lineno="61" refid="structtws__link__connection_1ae8a63d4af9b335f4f38b80afd5a05f72" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structtws__link__connection_1ae8a63d4af9b335f4f38b80afd5a05f72" kindref="member">bk_bitoff</ref>;</highlight></codeline>
+<codeline lineno="62" refid="structtws__link__connection_1a4d6dad374e55a2781f53ba703683ef36" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structtws__link__connection_1a4d6dad374e55a2781f53ba703683ef36" kindref="member">prev_pbitoff</ref>;</highlight></codeline>
+<codeline lineno="63" refid="structtws__link__connection_1ada22fcd846de09d7012cebf4c7a6d970" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/><ref refid="structtws__link__connection_1ada22fcd846de09d7012cebf4c7a6d970" kindref="member">bk_clk_offset</ref><sp/>;</highlight></codeline>
+<codeline lineno="64" refid="structtws__link__connection_1ae03a7890c04987313c69ba2d877af971" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/><ref refid="structtws__link__connection_1ae03a7890c04987313c69ba2d877af971" kindref="member">rx_clkn</ref>;</highlight></codeline>
+<codeline lineno="65" refid="structtws__link__connection_1aeb2803055a3a0103aa58fe1549bb200f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structtws__link__connection_1aeb2803055a3a0103aa58fe1549bb200f" kindref="member">core_hash</ref>;</highlight></codeline>
+<codeline lineno="66" refid="structtws__link__connection_1a488aed1d3d33376fd4865f451e0f58cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structtws__link__connection_1a488aed1d3d33376fd4865f451e0f58cd" kindref="member">active_en</ref>;</highlight></codeline>
+<codeline lineno="67" refid="structtws__link__connection_1afe46303757f92071f2f875833c9c4efa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structtws__link__connection_1afe46303757f92071f2f875833c9c4efa" kindref="member">tws_ble_timeout</ref>;</highlight></codeline>
+<codeline lineno="68" refid="structtws__link__connection_1ae947bade6ee06d8cfa332562fb0863c0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/><ref refid="structtws__link__connection_1ae947bade6ee06d8cfa332562fb0863c0" kindref="member">post_instant</ref>;</highlight></codeline>
+<codeline lineno="69" refid="structtws__link__connection_1a2602e2298b182060d602345befc49e39" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/><ref refid="structtws__link__connection_1a2602e2298b182060d602345befc49e39" kindref="member">suspend_clkn</ref>;</highlight></codeline>
+<codeline lineno="70" refid="structtws__link__connection_1a638da2547549cd94d77c8b41b9be7fed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/><ref refid="structtws__link__connection_1a638da2547549cd94d77c8b41b9be7fed" kindref="member">esco_rx_lmp_slot_clk</ref>;</highlight></codeline>
+<codeline lineno="71" refid="structtws__link__connection_1ae12e2e99766e85dce33ae4568c3d8279" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structlink__connection" kindref="compound">link_connection</ref><sp/>*<ref refid="structtws__link__connection_1ae12e2e99766e85dce33ae4568c3d8279" kindref="member">link</ref>;</highlight></codeline>
+<codeline lineno="72" refid="structtws__link__connection_1ad9633e7850dbf02811a1b02f6a63ff2a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structlink__connection" kindref="compound">link_connection</ref><sp/>*<ref refid="structtws__link__connection_1ad9633e7850dbf02811a1b02f6a63ff2a" kindref="member">plink</ref>;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="74" refid="tws__link_8h_1a58deb1a4e33990c0814fc781cc97cbf8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEBUG_CHECK_ESCO_DATA_CRC_CNT<sp/><sp/>0//调试监听和转发的esco包比较</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="tws__link_8h_1a2b62c324aed390e87d5e4e4b43ea0761" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ESCO_CONN_ACL_RUSUME_T_CNT<sp/><sp/><sp/><sp/>12<sp/><sp/><sp/>//*T_sco</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="tws__link_8h_1ad8bb538f15e68a377b0f26a1be6f337e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ESCO_TX_SYN_REQ_CNT<sp/>20</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="tws__link_8h_1a7fd8e79669167c6e7239f32aa9c42060" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TWS_ESCO_INTERVAL_SLOT<sp/><sp/><sp/>100</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="tws__link_8h_1a707100d7f6347918b7259f93fa732a4d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TWS_ESCO_ROLE_SWTICH_ACL<sp/>(TWS_ESCO_INTERVAL_SLOT*2/12)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CONFIG_NEW_BREDR_ENABLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="structtws__link__core__data" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtws__link__core__data" kindref="compound">tws_link_core_data</ref><sp/>{</highlight></codeline>
+<codeline lineno="82" refid="structtws__link__core__data_1a2dcc54c9459afe9a8677ccd85b3c2e48" refkind="member"><highlight class="normal">u8<sp/><ref refid="structtws__link__core__data_1a2dcc54c9459afe9a8677ccd85b3c2e48" kindref="member">ptt</ref>;</highlight></codeline>
+<codeline lineno="83" refid="structtws__link__core__data_1aa9e17d6464e1dd223b12c9d0fa919f9f" refkind="member"><highlight class="normal">u8<sp/><ref refid="structtws__link__core__data_1aa9e17d6464e1dd223b12c9d0fa919f9f" kindref="member">afh_enable</ref>;</highlight></codeline>
+<codeline lineno="84" refid="structtws__link__core__data_1a1580a28f8a923472865becd1c8561169" refkind="member"><highlight class="normal">u8<sp/><ref refid="structtws__link__core__data_1a1580a28f8a923472865becd1c8561169" kindref="member">rx_enc</ref>;</highlight></codeline>
+<codeline lineno="85" refid="structtws__link__core__data_1af0ee6edbc46e4c1f5a106f591f49f361" refkind="member"><highlight class="normal">u8<sp/><ref refid="structtws__link__core__data_1af0ee6edbc46e4c1f5a106f591f49f361" kindref="member">tx_enc</ref>;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="structtws__link__core__data_1ac715826d5c8b4b20860ee8ef55581d7d" refkind="member"><highlight class="normal">u16<sp/><ref refid="structtws__link__core__data_1ac715826d5c8b4b20860ee8ef55581d7d" kindref="member">super_timeout_cnt</ref>;</highlight></codeline>
+<codeline lineno="88" refid="structtws__link__core__data_1abc2906134aa64b86b5387528031a9eea" refkind="member"><highlight class="normal">u16<sp/><ref refid="structtws__link__core__data_1abc2906134aa64b86b5387528031a9eea" kindref="member">rev</ref>;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="structtws__link__core__data_1a9c069465a8a661aeb482be97ac7cf4c9" refkind="member"><highlight class="normal">u8<sp/>channel_map[10];</highlight></codeline>
+<codeline lineno="91" refid="structtws__link__core__data_1a6e5b2fa527ecdd34e4ca80cbde620e2b" refkind="member"><highlight class="normal">s16<sp/><ref refid="structtws__link__core__data_1a6e5b2fa527ecdd34e4ca80cbde620e2b" kindref="member">bitoff</ref>;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="structtws__link__core__data_1a325ff7c457986c5834188b3b62b7128c" refkind="member"><highlight class="normal">u16<sp/>cryptk[8];</highlight></codeline>
+<codeline lineno="94" refid="structtws__link__core__data_1a89e13233556010c821048eff398a26c1" refkind="member"><highlight class="normal">u32<sp/><ref refid="structtws__link__core__data_1a89e13233556010c821048eff398a26c1" kindref="member">afh_end</ref>;</highlight></codeline>
+<codeline lineno="95" refid="structtws__link__core__data_1a2663a6e15a1957d7814227efa83569a9" refkind="member"><highlight class="normal">u32<sp/><ref refid="structtws__link__core__data_1a2663a6e15a1957d7814227efa83569a9" kindref="member">offset</ref>;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="structtws__link__rxtx__state" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtws__link__rxtx__state" kindref="compound">tws_link_rxtx_state</ref><sp/>{</highlight></codeline>
+<codeline lineno="100" refid="structtws__link__rxtx__state_1ad52bd7d62f9a1e65b165c68396cac207" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structtws__link__rxtx__state_1ad52bd7d62f9a1e65b165c68396cac207" kindref="member">rxtog</ref>;</highlight></codeline>
+<codeline lineno="101" refid="structtws__link__rxtx__state_1a9ea9f58369385a073ef88063e2125f84" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structtws__link__rxtx__state_1a9ea9f58369385a073ef88063e2125f84" kindref="member">txtog</ref>;</highlight></codeline>
+<codeline lineno="102" refid="structtws__link__rxtx__state_1aabdb16e346ac4efe664b4d04be63fe58" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structtws__link__rxtx__state_1aabdb16e346ac4efe664b4d04be63fe58" kindref="member">rxstat0</ref>;</highlight></codeline>
+<codeline lineno="103" refid="structtws__link__rxtx__state_1a4d2c71c635260d134dbb4637d76521de" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structtws__link__rxtx__state_1a4d2c71c635260d134dbb4637d76521de" kindref="member">rxstat1</ref>;</highlight></codeline>
+<codeline lineno="104" refid="structtws__link__rxtx__state_1abf31258f95e2a8d5b2806baa63bcfe38" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structtws__link__rxtx__state_1abf31258f95e2a8d5b2806baa63bcfe38" kindref="member">seqn</ref>;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structlink__task__ops" kindref="compound">link_task_ops</ref><sp/><ref refid="tws__link_8h_1a50ac7cebfc02ffeb801aff82c0f167f7" kindref="member">tws_link_task_ops</ref>;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtws__link__connection" kindref="compound">tws_link_connection</ref><sp/><ref refid="tws__link_8h_1a5888eebd4da0df0105e72b4976be93da" kindref="member">tws_link</ref>;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__link_8h_1ae3c8b962a89d5f13e5216f71ff600272" kindref="member">tws_link_init</ref>();</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal">u32<sp/><ref refid="tws__link_8h_1ac616f8ea4b35bd1de4001c9b3a5cc025" kindref="member">tws_link_read_slot_clk</ref>();</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__link_8h_1aee141da2c09ef908f3da8939f7cba582" kindref="member">tws_link_conn_start_in_irq</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structlink__connection" kindref="compound">link_connection</ref><sp/>*lc,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>role);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__link_8h_1a2cb38c60aef759d786cf3aabef4671e9" kindref="member">tws_link_conn_rx_handler_in_irq</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structlink__connection" kindref="compound">link_connection</ref><sp/>*,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbredr__rx__bulk" kindref="compound">bredr_rx_bulk</ref><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="tws__link_8h_1a82befe0b9631c00999df00e34241bd22" kindref="member">tws_tx_bulk_free_space</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbredr__rx__bulk" kindref="compound">bredr_rx_bulk</ref><sp/>*<ref refid="tws__link_8h_1a69b5df95f4db77331fea3129ca63205d" kindref="member">bredr_rx_bulk_alloc_in_irq</ref>();</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbredr__tx__bulk" kindref="compound">bredr_tx_bulk</ref><sp/>*<ref refid="tws__link_8h_1ab8cf29ee9c5fe84c851f78a6e0a032d3" kindref="member">tws_tx_bulk_alloc</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__link_8h_1a924f5f734e1c56de5106bedaaf4b4851" kindref="member">tws_rx_bulk_realloc_in_irq</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbredr__rx__bulk" kindref="compound">bredr_rx_bulk</ref><sp/>*bulk,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__link_8h_1a429a4fbc33999686d9b8a6c467357daa" kindref="member">tws_tx_bulk_free</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbredr__tx__bulk" kindref="compound">bredr_tx_bulk</ref><sp/>*bulk);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__link_8h_1ae1da9f867d3d372b86b925aaad00754e" kindref="member">tws_tx_bulk_realloc</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbredr__tx__bulk" kindref="compound">bredr_tx_bulk</ref><sp/>*bulk,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__link_8h_1afce77e64372bb45699d597315d302bf8" kindref="member">tws_conn_set_rx_bulk_in_irq</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structlink__connection" kindref="compound">link_connection</ref><sp/>*lc,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ind);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__link_8h_1a0f2c4ef2c08b4c20bb667fd8828cb79c" kindref="member">tws_link_conn_rx_bulk_avaliable</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structlink__connection" kindref="compound">link_connection</ref><sp/>*lc,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbredr__rx__bulk" kindref="compound">bredr_rx_bulk</ref><sp/>*);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">ctrl_frame<sp/>*<ref refid="tws__link_8h_1a8d52702764b6bf56de22cf85c9fe7ee6" kindref="member">tws_link_monitor_frame_init</ref>();</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__link_8h_1a7f599dd7e1d2d72cc7265631029dd46c" kindref="member">tws_link_monitor_frame_setup</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>ctrl_frame<sp/>*,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>bredr_frame_core_data<sp/>*);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__link_8h_1ac6cd1e800e259257d8f32f56c10785df" kindref="member">tws_monitor_enable</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structlink__connection" kindref="compound">link_connection</ref><sp/>*link,<sp/>u8<sp/>en,<sp/>u8<sp/>role);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__link_8h_1ad8655bfc2ec7657aa7f725b9b6a1c45f" kindref="member">tws_link_monitor_master_init</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>ctrl_frame<sp/>*frame);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__link_8h_1aca150e2a51274b0fff2385746dcf2053" kindref="member">tws_link_monitor_slave_init</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>ctrl_frame<sp/>*frame);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__link_8h_1a3439cf9ea433b2240a839a41b76e8e9f" kindref="member">tws_link_master_2_slave</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structlink__connection" kindref="compound">link_connection</ref><sp/>*link);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__link_8h_1a07ea883c1677c2c73cadb893e0485c6e" kindref="member">tws_link_slave_2_master</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structlink__connection" kindref="compound">link_connection</ref><sp/>*link);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__link_8h_1a3373e27610b65060f28bcb031e1d9bfa" kindref="member">tws_link_rxtx_state_reset</ref>();</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__link_8h_1abc2d5edb52c65c690f1567aed4fab81d" kindref="member">tws_link_rx_bulk_free</ref>();</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="tws__link_8h_1a0670b115dc64f6aeee822238fd44c4b6" kindref="member">tws_link_get_rxtx_state</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structlink__connection" kindref="compound">link_connection</ref><sp/>*,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structtws__link__rxtx__state" kindref="compound">tws_link_rxtx_state</ref><sp/>*);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="tws__link_8h_1a1d54b65ae37708f0f0b47af6ce44031c" kindref="member">tws_link_set_rxtx_state</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structlink__connection" kindref="compound">link_connection</ref><sp/>*,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structtws__link__rxtx__state" kindref="compound">tws_link_rxtx_state</ref><sp/>*);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__link_8h_1ad2f3057702f026fbea3baaeef2208f11" kindref="member">tws_link_disconnection</ref>();</highlight></codeline>
+<codeline lineno="146"><highlight class="normal">u8<sp/><ref refid="tws__link_8h_1a1538c24a1c55998cfd0cab2fa2bfac93" kindref="member">tws_esco_transmit_deal</ref>(u8<sp/>step,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structlink__connection" kindref="compound">link_connection</ref><sp/>*lc);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal">u8<sp/><ref refid="tws__link_8h_1a6cab5b1ac181393fc06d13e61384e1d8" kindref="member">tws_esco_acl_communication</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structlink__connection" kindref="compound">link_connection</ref><sp/>*lc,<sp/>u8<sp/>*tws_link_status);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="tws__link_8h_1aab6c167efd46794794cc85b5f4721e0d" kindref="member">bredr_get_tws_esco_packet</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*_lc,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbredr__rx__bulk" kindref="compound">bredr_rx_bulk</ref><sp/>*phone_bulk,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*wait_tws_rx);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal">u8<sp/><ref refid="tws__link_8h_1afc56402c62326831f9a5c909fb32f542" kindref="member">tws_clear_timeout_tr_esco_packet</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structlink__connection" kindref="compound">link_connection</ref><sp/>*lc,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cnt);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__link_8h_1aa8da046d975fb67fa739bddcc0099588" kindref="member">tws_link_esco_close_adjust_clkoffset</ref>();</highlight></codeline>
+<codeline lineno="152"><highlight class="normal">u8<sp/><ref refid="tws__link_8h_1a158c34e13d6d75aebf380266854776db" kindref="member">bredr_esco_tws_link_close</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structlink__connection" kindref="compound">link_connection</ref><sp/>*lc);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal">u8<sp/><ref refid="tws__link_8h_1a9ca2457392e6d62543547f2982e35cc9" kindref="member">bredr_esco_tws_link_open</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structlink__connection" kindref="compound">link_connection</ref><sp/>*lc,<sp/>u8<sp/>monitor_start);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbredr__tx__bulk" kindref="compound">bredr_tx_bulk</ref><sp/>*<ref refid="tws__link_8h_1a7f286ec4d0b6d7964a15cc53e550b00b" kindref="member">tws_send_esco_packet</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*priv,<sp/>u8<sp/>*<ref refid="structbredr__tx__bulk_1a17475184d676ade688dff713d68fd168" kindref="member">packet</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structbredr__tx__bulk_1a3404b913a912a1512a422ba6cbebed37" kindref="member">len</ref>);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__link_8h_1aa22c1d7158233ab626c904258f214dfc" kindref="member">bredr_tws_esco_send_data</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structlink__connection" kindref="compound">link_connection</ref><sp/>*phone_lc,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*_lc);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal">u8<sp/><ref refid="tws__link_8h_1af3507fddae0aaa8c90717254567c3af3" kindref="member">tws_esco_check_role_switch</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbredr__esco__link" kindref="compound">bredr_esco_link</ref><sp/>*phone_esco,<sp/>u8<sp/>master_esco_num,<sp/>u8<sp/>remote_esco_num,<sp/>u16<sp/>limit_check_esco_cnt);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal">u8<sp/><ref refid="tws__link_8h_1a94653ad3decac5b87b18332e16f8f49e" kindref="member">check_tws_esco_resume_acl</ref>();</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__link_8h_1a2bc84f6c490905bcdfe92635bb5ab069" kindref="member">tws_esco_suspend_resume</ref>(u8<sp/>flag);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal">u32<sp/><ref refid="tws__link_8h_1ae45eccb84d35d064e5fc88c9df52577f" kindref="member">JBHash_esco</ref>(u8<sp/>*<ref refid="structbredr__tx__bulk_1ac2b8ac690b46537203627b5aed2c2c9a" kindref="member">data</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structbredr__tx__bulk_1a3404b913a912a1512a422ba6cbebed37" kindref="member">len</ref>);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__link_8h_1a8c89eb941423eca15a376a99c827b6e9" kindref="member">tws_slave_remove_esco_deal</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>instant,<sp/>u8<sp/>timeout);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__link_8h_1a30fc4a64a3d9bfaa5b6e352e1963312a" kindref="member">tws_link_cacl_clkoff_for_slave</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>ctrl_frame<sp/>*sniffer_frame,</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>ctrl_frame<sp/>*forward_frame,</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u32<sp/>*sniffer_clkoff,<sp/>u16<sp/>*sniffer_bitoff);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__link_8h_1a21ea65a56c396537a89e40896aec7644" kindref="member">tws_link_cacl_bitoff</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>ctrl_frame<sp/>*sniffer_frame,</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>ctrl_frame<sp/>*forward_frame,</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u16<sp/>*sniffer_bitoff);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="tws__link_8h_1ae6f77014b8298dbaff46dd1ebaa39382" kindref="member">tws_link_wait_pair_by_code</ref>(u16<sp/>code);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="tws__link_8h_1a5e31320b3144233484171186256ba811" kindref="member">tws_link_search_sibling_by_code</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>code,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>timeout_ms);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="tws__link_8h_1ad547eb120d84a3a50d8a72c810b153e0" kindref="member">tws_link_wait_connection</ref>();</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="tws__link_8h_1a24b8495a246d9a59f51aa43dd18433e6" kindref="member">tws_link_create_connection</ref>(u8<sp/>*addr,<sp/>u16<sp/>timeout,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*completed)(u8<sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="comment">/*int<sp/>tws_link_create_connection(int<sp/>timeout);*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="tws__link_8h_1a2621994b7b128b67e5424b2a1109776e" kindref="member">tws_link_cancle_wait_pair</ref>();</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="tws__link_8h_1ab972798e4dc215632535bdc846496e5a" kindref="member">tws_link_cancle_search_sibling</ref>();</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="tws__link_8h_1a2c5c9de5488c7c88930d42d7451e952f" kindref="member">tws_link_cancle_wait_connection</ref>();</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="tws__link_8h_1a12f0c02f957034fc4b37ca52c9b801a1" kindref="member">tws_link_cancle_create_connection</ref>();</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__link_8h_1a95465270f25f20c050f5b077a65fe036" kindref="member">tws_link_conn_start</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structlink__connection" kindref="compound">link_connection</ref><sp/>*link);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__link_8h_1a2c83cac033627cd012a799a8692cdd82" kindref="member">tws_link_detach</ref>();</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__link_8h_1a69039fddc8a5bd85ca5bc7f16a8dffc1" kindref="member">tws_link_set_plink</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structlink__connection" kindref="compound">link_connection</ref><sp/>*link);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structlink__connection" kindref="compound">link_connection</ref><sp/>*<ref refid="tws__link_8h_1a389e9dcdd58aed6d1823e4f07b5133a6" kindref="member">tws_link_get_plink</ref>();</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="tws__link_8h_1a6d7bc2dff73620e5eda181abb60d9590" kindref="member">tws_link_master_get_plink_core_data</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*buf);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="tws__link_8h_1a805d543ad67dbb65269841791c498493" kindref="member">tws_link_slave_set_plink_core_data</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*core_data);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>CONFIG_NEW_BREDR_ENABLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tws_link_conn_rx_packet_handler(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structlink__connection" kindref="compound">link_connection</ref><sp/>*,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbredr__payload__head" kindref="compound">bredr_payload_head</ref><sp/>*);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__link_8h_1a579630853869659ac7906cf870228419" kindref="member">tws_link_master_start_monitor</ref>();</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__link_8h_1ad5dcbdd5d634b32ade771e2fab75a402" kindref="member">tws_link_slave_start_monitor</ref>();</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__link_8h_1a13ecdeeac3cda40719679a913674a0cb" kindref="member">tws_link_plink_detach</ref>();</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__link_8h_1ac00e6d6645b9b0e9062d44cb1a4d8ed0" kindref="member">tws_link_master_pure_monitor_init</ref>();</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__link_8h_1a16c99bc43e8a8aa2a28b0aa7b708a4fa" kindref="member">tws_link_master_exit_pure_monitor</ref>();</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__link_8h_1a8dc4584cac80d1cb6f641dd8780fbd17" kindref="member">tws_link_slave_pure_monitor_init</ref>();</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__link_8h_1a497d7ec4ccf2e4c4b5dfab09b4b3bf74" kindref="member">tws_link_slave_exit_pure_monitor</ref>();</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__link_8h_1a0ab696ef9ed74ca3508dac5de7ac74c1" kindref="member">extws_link_monitor_close</ref>();</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__link_8h_1a20b3cd8f752ff87b31ae5b6aeec476b8" kindref="member">extws_link_monitor_open</ref>();</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__link_8h_1ab4345cda0fe23887aa257f352e23f7e3" kindref="member">extws_nack_limit_adjust</ref>(u8<sp/>limit_cnt);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h"/>
+  </compounddef>
+</doxygen>

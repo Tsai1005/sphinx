@@ -1,0 +1,188 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="authentication_8h" kind="file" language="C++">
+    <compoundname>authentication.h</compoundname>
+    <includes local="yes">generic/typedef.h</includes>
+    <incdepgraph>
+      <node id="5404">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/authentication.h</label>
+        <link refid="authentication.h"/>
+        <childnode refid="5405" relation="include">
+        </childnode>
+      </node>
+      <node id="5405">
+        <label>generic/typedef.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="authentication_8h_1ad73a2658c13632db64e9f4903f98ce77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void function_E1</definition>
+        <argsstring>(u8 *address, u8 *RAND, u8 *K, u8 *result)</argsstring>
+        <name>function_E1</name>
+        <param>
+          <type>u8 *</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>u8 *</type>
+          <declname>RAND</declname>
+        </param>
+        <param>
+          <type>u8 *</type>
+          <declname>K</declname>
+        </param>
+        <param>
+          <type>u8 *</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/authentication.h" line="8" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="authentication_8h_1abb8066d1125de87527e80ed6254b548a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void function_E21</definition>
+        <argsstring>(u8 *address, u8 *RAND, u8 *reslut)</argsstring>
+        <name>function_E21</name>
+        <param>
+          <type>u8 *</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>u8 *</type>
+          <declname>RAND</declname>
+        </param>
+        <param>
+          <type>u8 *</type>
+          <declname>reslut</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/authentication.h" line="9" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="authentication_8h_1a25246f4aab05409144b7552de9eedb1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void function_E22</definition>
+        <argsstring>(u8 *pin, u8 *RAND, u8 L, u8 *address, u8 *reslut)</argsstring>
+        <name>function_E22</name>
+        <param>
+          <type>u8 *</type>
+          <declname>pin</declname>
+        </param>
+        <param>
+          <type>u8 *</type>
+          <declname>RAND</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>L</declname>
+        </param>
+        <param>
+          <type>u8 *</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>u8 *</type>
+          <declname>reslut</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/authentication.h" line="10" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="authentication_8h_1a50f6578b62aec4e62eb14790afc242f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void function_E3</definition>
+        <argsstring>(u8 *K, u8 *RAND, u8 *COF, u8 L, u8 *result)</argsstring>
+        <name>function_E3</name>
+        <param>
+          <type>u8 *</type>
+          <declname>K</declname>
+        </param>
+        <param>
+          <type>u8 *</type>
+          <declname>RAND</declname>
+        </param>
+        <param>
+          <type>u8 *</type>
+          <declname>COF</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>L</declname>
+        </param>
+        <param>
+          <type>u8 *</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/authentication.h" line="11" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="authentication_8h_1a9056e510deeb1c49d1f581121f6867b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void make_xor</definition>
+        <argsstring>(u8 *rand, u8 *key, u8 *c)</argsstring>
+        <name>make_xor</name>
+        <param>
+          <type>u8 *</type>
+          <declname>rand</declname>
+        </param>
+        <param>
+          <type>u8 *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>u8 *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/authentication.h" line="14" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>_BLUETOOUTH_AUTHENTICATION_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_BLUETOOUTH_AUTHENTICATION_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;generic/typedef.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="authentication_8h_1ad73a2658c13632db64e9f4903f98ce77" kindref="member">function_E1</ref>(u8<sp/>*address,<sp/>u8<sp/>*RAND,<sp/>u8<sp/>*K,<sp/>u8<sp/>*result);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="authentication_8h_1abb8066d1125de87527e80ed6254b548a" kindref="member">function_E21</ref>(u8<sp/>*address,<sp/>u8<sp/>*RAND,<sp/>u8<sp/>*reslut);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="authentication_8h_1a25246f4aab05409144b7552de9eedb1a" kindref="member">function_E22</ref>(u8<sp/>*pin,<sp/>u8<sp/>*RAND,<sp/>u8<sp/>L,<sp/>u8<sp/>*address,<sp/>u8<sp/>*reslut);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="authentication_8h_1a50f6578b62aec4e62eb14790afc242f1" kindref="member">function_E3</ref>(u8<sp/>*K,<sp/>u8<sp/>*RAND,<sp/>u8<sp/>*COF,<sp/>u8<sp/>L,<sp/>u8<sp/>*result);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="authentication_8h_1a9056e510deeb1c49d1f581121f6867b7" kindref="member">make_xor</ref>(u8<sp/>*rand,<sp/>u8<sp/>*key,<sp/>u8<sp/>*c);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/authentication.h"/>
+  </compounddef>
+</doxygen>

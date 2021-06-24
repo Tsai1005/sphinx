@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structtws__channel__head" kind="struct" language="C++" prot="public">
+    <compoundname>tws_channel_head</compoundname>
+    <includes refid="tws__conn_8h" local="no">tws_conn.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtws__channel__head_1ac58e7b5752673769c8b211377a0f6025" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 tws_channel_head::len</definition>
+        <argsstring></argsstring>
+        <name>len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="107" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__channel__head_1a78c07ab6070a73f6129a866aeecf0bc2" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tws_channel_head::channel</definition>
+        <argsstring></argsstring>
+        <name>channel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="108" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__channel__head_1aef83d9e94b1863c9c38b5d3fc078a9ce" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tws_channel_head::opcode</definition>
+        <argsstring></argsstring>
+        <name>opcode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="109" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="106" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="106" bodyend="110"/>
+    <listofallmembers>
+      <member refid="structtws__channel__head_1a78c07ab6070a73f6129a866aeecf0bc2" prot="public" virt="non-virtual"><scope>tws_channel_head</scope><name>channel</name></member>
+      <member refid="structtws__channel__head_1ac58e7b5752673769c8b211377a0f6025" prot="public" virt="non-virtual"><scope>tws_channel_head</scope><name>len</name></member>
+      <member refid="structtws__channel__head_1aef83d9e94b1863c9c38b5d3fc078a9ce" prot="public" virt="non-virtual"><scope>tws_channel_head</scope><name>opcode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

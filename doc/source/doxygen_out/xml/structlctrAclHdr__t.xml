@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structlctrAclHdr__t" kind="struct" language="C++" prot="public">
+    <compoundname>lctrAclHdr_t</compoundname>
+    <includes refid="ll__defines_8h" local="no">ll_defines.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlctrAclHdr__t_1a35bd3a5673eff8687289733333102f86" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lctrAclHdr_t::connHandle</definition>
+        <argsstring></argsstring>
+        <name>connHandle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Connection handle. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="808" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="808" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrAclHdr__t_1ac0c404e23b18e3d2188d30e03136cca5" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lctrAclHdr_t::pktBound</definition>
+        <argsstring></argsstring>
+        <name>pktBound</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Packet boundary flag. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="809" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="809" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrAclHdr__t_1ac1fad82e6a55c5a0afb5556bfb40a4b4" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lctrAclHdr_t::len</definition>
+        <argsstring></argsstring>
+        <name>len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data length. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="810" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="810" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>ACL header. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="807" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="807" bodyend="811"/>
+    <listofallmembers>
+      <member refid="structlctrAclHdr__t_1a35bd3a5673eff8687289733333102f86" prot="public" virt="non-virtual"><scope>lctrAclHdr_t</scope><name>connHandle</name></member>
+      <member refid="structlctrAclHdr__t_1ac1fad82e6a55c5a0afb5556bfb40a4b4" prot="public" virt="non-virtual"><scope>lctrAclHdr_t</scope><name>len</name></member>
+      <member refid="structlctrAclHdr__t_1ac0c404e23b18e3d2188d30e03136cca5" prot="public" virt="non-virtual"><scope>lctrAclHdr_t</scope><name>pktBound</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

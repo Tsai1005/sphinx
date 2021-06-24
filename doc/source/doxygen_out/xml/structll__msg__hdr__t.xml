@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structll__msg__hdr__t" kind="struct" language="C++" prot="public">
+    <compoundname>ll_msg_hdr_t</compoundname>
+    <includes refid="ll__defines_8h" local="no">ll_defines.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structll__msg__hdr__t_1a21dce77399d2ecf1420d7f2cb36a3a6a" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_msg_hdr_t::state_id</definition>
+        <argsstring></argsstring>
+        <name>state_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1111" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__msg__hdr__t_1aeee7ccb76694abbd7ede6e89338e2f1d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_msg_hdr_t::msg_id</definition>
+        <argsstring></argsstring>
+        <name>msg_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1112" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__msg__hdr__t_1a3994318b478f52ef63f0f9a71a609b4d" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t ll_msg_hdr_t::handle</definition>
+        <argsstring></argsstring>
+        <name>handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1113" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1113" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>LL internal message. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1110" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1110" bodyend="1114"/>
+    <listofallmembers>
+      <member refid="structll__msg__hdr__t_1a3994318b478f52ef63f0f9a71a609b4d" prot="public" virt="non-virtual"><scope>ll_msg_hdr_t</scope><name>handle</name></member>
+      <member refid="structll__msg__hdr__t_1aeee7ccb76694abbd7ede6e89338e2f1d" prot="public" virt="non-virtual"><scope>ll_msg_hdr_t</scope><name>msg_id</name></member>
+      <member refid="structll__msg__hdr__t_1a21dce77399d2ecf1420d7f2cb36a3a6a" prot="public" virt="non-virtual"><scope>ll_msg_hdr_t</scope><name>state_id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

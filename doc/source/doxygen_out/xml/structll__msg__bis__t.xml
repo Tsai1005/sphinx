@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structll__msg__bis__t" kind="struct" language="C++" prot="public">
+    <compoundname>ll_msg_bis_t</compoundname>
+    <includes refid="llcp_8h" local="no">llcp.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structll__msg__bis__t_1a20c5777ad7dba26471cb4422e0e69f36" prot="public" static="no" mutable="no">
+        <type><ref refid="structll__msg__hdr__t" kindref="compound">ll_msg_hdr_t</ref></type>
+        <definition>ll_msg_hdr_t ll_msg_bis_t::hdr</definition>
+        <argsstring></argsstring>
+        <name>hdr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="199" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__msg__bis__t_1a2c538289327d79b6336a9822c3b798f2" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t ll_msg_bis_t::bisHandle</definition>
+        <argsstring></argsstring>
+        <name>bisHandle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>BIS handle. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="201" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1455">
+        <label>ll_msg_bis_t</label>
+        <link refid="structll__msg__bis__t"/>
+        <childnode refid="1456" relation="usage">
+          <edgelabel>hdr</edgelabel>
+        </childnode>
+      </node>
+      <node id="1456">
+        <label>ll_msg_hdr_t</label>
+        <link refid="structll__msg__hdr__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="198" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="198" bodyend="202"/>
+    <listofallmembers>
+      <member refid="structll__msg__bis__t_1a2c538289327d79b6336a9822c3b798f2" prot="public" virt="non-virtual"><scope>ll_msg_bis_t</scope><name>bisHandle</name></member>
+      <member refid="structll__msg__bis__t_1a20c5777ad7dba26471cb4422e0e69f36" prot="public" virt="non-virtual"><scope>ll_msg_bis_t</scope><name>hdr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

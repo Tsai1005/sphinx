@@ -1,0 +1,605 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="ll__white__list_8c" kind="file" language="C++">
+    <compoundname>ll_white_list.c</compoundname>
+    <includes refid="link__layer_8h" local="yes">ble/link_layer.h</includes>
+    <includes local="yes">stdarg.h</includes>
+    <includes refid="h4__transport_8h" local="yes">h4_transport.h</includes>
+    <includes local="yes">RF_ble.h</includes>
+    <includes local="yes">btcontroller_util.h</includes>
+    <includes local="yes">btcontroller_heap.h</includes>
+    <includes local="yes">tomcrypt.h</includes>
+    <includes local="yes">hci_controller.h</includes>
+    <includes local="yes">common/debug.h</includes>
+    <incdepgraph>
+      <node id="3918">
+        <label>stdarg.h</label>
+      </node>
+      <node id="3903">
+        <label>os/os_type.h</label>
+      </node>
+      <node id="3899">
+        <label>common/atomic.h</label>
+      </node>
+      <node id="3913">
+        <label>common/lbuf.h</label>
+      </node>
+      <node id="3896">
+        <label>common/list.h</label>
+      </node>
+      <node id="3902">
+        <label>common/thread.h</label>
+      </node>
+      <node id="3905">
+        <label>ble/ll_adv.h</label>
+        <link refid="ll__adv_8h"/>
+        <childnode refid="3897" relation="include">
+        </childnode>
+      </node>
+      <node id="3919">
+        <label>h4_transport.h</label>
+        <link refid="h4__transport_8h"/>
+        <childnode refid="3895" relation="include">
+        </childnode>
+      </node>
+      <node id="3925">
+        <label>common/debug.h</label>
+      </node>
+      <node id="3921">
+        <label>btcontroller_util.h</label>
+      </node>
+      <node id="3907">
+        <label>ble/ll_init.h</label>
+        <link refid="ll__init_8h"/>
+        <childnode refid="3897" relation="include">
+        </childnode>
+      </node>
+      <node id="3909">
+        <label>data_extension.h</label>
+        <link refid="data__extension_8h"/>
+        <childnode refid="3895" relation="include">
+        </childnode>
+      </node>
+      <node id="3912">
+        <label>ble/ll_iso.h</label>
+        <link refid="ll__iso_8h"/>
+        <childnode refid="3900" relation="include">
+        </childnode>
+        <childnode refid="3913" relation="include">
+        </childnode>
+        <childnode refid="3902" relation="include">
+        </childnode>
+      </node>
+      <node id="3920">
+        <label>RF_ble.h</label>
+      </node>
+      <node id="3895">
+        <label>typedef.h</label>
+      </node>
+      <node id="3922">
+        <label>btcontroller_heap.h</label>
+      </node>
+      <node id="3901">
+        <label>white_list.h</label>
+        <link refid="white__list_8h"/>
+        <childnode refid="3895" relation="include">
+        </childnode>
+      </node>
+      <node id="3915">
+        <label>audio_codec.h</label>
+        <link refid="audio__codec_8h"/>
+        <childnode refid="3900" relation="include">
+        </childnode>
+      </node>
+      <node id="3893">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_white_list.c</label>
+        <link refid="ll_white_list.c"/>
+        <childnode refid="3894" relation="include">
+        </childnode>
+        <childnode refid="3918" relation="include">
+        </childnode>
+        <childnode refid="3919" relation="include">
+        </childnode>
+        <childnode refid="3920" relation="include">
+        </childnode>
+        <childnode refid="3921" relation="include">
+        </childnode>
+        <childnode refid="3922" relation="include">
+        </childnode>
+        <childnode refid="3923" relation="include">
+        </childnode>
+        <childnode refid="3924" relation="include">
+        </childnode>
+        <childnode refid="3925" relation="include">
+        </childnode>
+      </node>
+      <node id="3906">
+        <label>ble/ll_scan.h</label>
+        <link refid="ll__scan_8h"/>
+        <childnode refid="3897" relation="include">
+        </childnode>
+      </node>
+      <node id="3904">
+        <label>ble/llcp.h</label>
+        <link refid="llcp_8h"/>
+        <childnode refid="3895" relation="include">
+        </childnode>
+        <childnode refid="3900" relation="include">
+        </childnode>
+      </node>
+      <node id="3910">
+        <label>multiple_phys.h</label>
+        <link refid="multiple__phys_8h"/>
+        <childnode refid="3895" relation="include">
+        </childnode>
+      </node>
+      <node id="3908">
+        <label>resolve_list.h</label>
+        <link refid="resolve__list_8h"/>
+        <childnode refid="3895" relation="include">
+        </childnode>
+      </node>
+      <node id="3897">
+        <label>ble_interface.h</label>
+      </node>
+      <node id="3923">
+        <label>tomcrypt.h</label>
+      </node>
+      <node id="3911">
+        <label>ble/ll_cte.h</label>
+        <link refid="ll__cte_8h"/>
+        <childnode refid="3900" relation="include">
+        </childnode>
+      </node>
+      <node id="3924">
+        <label>hci_controller.h</label>
+      </node>
+      <node id="3898">
+        <label>common/sys_timer.h</label>
+      </node>
+      <node id="3894">
+        <label>ble/link_layer.h</label>
+        <link refid="link__layer_8h"/>
+        <childnode refid="3895" relation="include">
+        </childnode>
+        <childnode refid="3896" relation="include">
+        </childnode>
+        <childnode refid="3897" relation="include">
+        </childnode>
+        <childnode refid="3898" relation="include">
+        </childnode>
+        <childnode refid="3899" relation="include">
+        </childnode>
+        <childnode refid="3900" relation="include">
+        </childnode>
+        <childnode refid="3901" relation="include">
+        </childnode>
+        <childnode refid="3902" relation="include">
+        </childnode>
+        <childnode refid="3903" relation="include">
+        </childnode>
+        <childnode refid="3904" relation="include">
+        </childnode>
+        <childnode refid="3905" relation="include">
+        </childnode>
+        <childnode refid="3906" relation="include">
+        </childnode>
+        <childnode refid="3907" relation="include">
+        </childnode>
+        <childnode refid="3908" relation="include">
+        </childnode>
+        <childnode refid="3909" relation="include">
+        </childnode>
+        <childnode refid="3910" relation="include">
+        </childnode>
+        <childnode refid="3911" relation="include">
+        </childnode>
+        <childnode refid="3912" relation="include">
+        </childnode>
+        <childnode refid="3914" relation="include">
+        </childnode>
+        <childnode refid="3916" relation="include">
+        </childnode>
+        <childnode refid="3917" relation="include">
+        </childnode>
+      </node>
+      <node id="3900">
+        <label>ll_defines.h</label>
+        <link refid="ll__defines_8h"/>
+        <childnode refid="3895" relation="include">
+        </childnode>
+      </node>
+      <node id="3916">
+        <label>ble/ll_cis.h</label>
+        <link refid="ll__cis_8h"/>
+        <childnode refid="3912" relation="include">
+        </childnode>
+        <childnode refid="3894" relation="include">
+        </childnode>
+      </node>
+      <node id="3914">
+        <label>ble/ll_bis.h</label>
+        <link refid="ll__bis_8h"/>
+        <childnode refid="3912" relation="include">
+        </childnode>
+        <childnode refid="3915" relation="include">
+        </childnode>
+      </node>
+      <node id="3917">
+        <label>ble/ll_pc.h</label>
+        <link refid="ll__pc_8h"/>
+        <childnode refid="3900" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="ll__white__list_8c_1a6c6991cba0e2995d7d9aec73e0324317" prot="public" static="no">
+        <name>LOG_TAG_CONST</name>
+        <initializer>LL_WL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_white_list.c" line="10" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_white_list.c" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__white__list_8c_1a7ce0df38eb467e59f209470c8f5ac4e6" prot="public" static="no">
+        <name>LOG_TAG</name>
+        <initializer>&quot;[LL-WL]&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_white_list.c" line="11" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_white_list.c" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__white__list_8c_1a9eeb6e067100d0dec6e53bce19a403e0" prot="public" static="no">
+        <name>LOG_ERROR_ENABLE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_white_list.c" line="13" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_white_list.c" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__white__list_8c_1a69321c8a2a0b07a07fb5088e82e25eb0" prot="public" static="no">
+        <name>LOG_INFO_ENABLE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_white_list.c" line="14" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_white_list.c" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__white__list_8c_1a04135f631fe91199f05b1d816dda8756" prot="public" static="no">
+        <name>LOG_DUMP_ENABLE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_white_list.c" line="15" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_white_list.c" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="ll__white__list_8c_1acd8f421b156f95f1d00008daabc4a464" prot="public" static="yes" mutable="no">
+        <type>u8</type>
+        <definition>u8 ll_white_list_used</definition>
+        <argsstring></argsstring>
+        <name>ll_white_list_used</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_white_list.c" line="25" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_white_list.c" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="ll__white__list_8c_1a3cf3ef3a61def57734992da92bcfed3a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>static void* __malloc</definition>
+        <argsstring>(int size)</argsstring>
+        <name>__malloc</name>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_white_list.c" line="27" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_white_list.c" bodystart="27" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__white__list_8c_1a549f000748ba6d518db83deaeb9b235c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void __free</definition>
+        <argsstring>(void *p)</argsstring>
+        <name>__free</name>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_white_list.c" line="37" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_white_list.c" bodystart="37" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__white__list_8c_1a90bf1e8fb8d0f46ac9dad3a30b607568" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void __white_list_upadte</definition>
+        <argsstring>(void *priv, struct white_list *device)</argsstring>
+        <name>__white_list_upadte</name>
+        <param>
+          <type>void *</type>
+          <declname>priv</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structwhite__list" kindref="compound">white_list</ref> *</type>
+          <declname>device</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_white_list.c" line="42" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_white_list.c" bodystart="42" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__white__list_8c_1a959b0c2f8e49bf5c6a8fd15c35bb612f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void __white_list_weighted_round_robin</definition>
+        <argsstring>(void *priv, struct white_list *device)</argsstring>
+        <name>__white_list_weighted_round_robin</name>
+        <param>
+          <type>void *</type>
+          <declname>priv</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structwhite__list" kindref="compound">white_list</ref> *</type>
+          <declname>device</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_white_list.c" line="51" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_white_list.c" bodystart="51" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__white__list_8c_1a5e24cc0332e7ab00aea02659589e1f29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structwhite__list" kindref="compound">white_list</ref> *</type>
+        <definition>struct white_list* ll_white_list_match</definition>
+        <argsstring>(void *priv, u8 addr_type, const u8 *addr)</argsstring>
+        <name>ll_white_list_match</name>
+        <param>
+          <type>void *</type>
+          <declname>priv</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>addr_type</declname>
+        </param>
+        <param>
+          <type>const u8 *</type>
+          <declname>addr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_white_list.c" line="65" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_white_list.c" bodystart="65" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__white__list_8c_1a7622afe74c8f2aa1409f3f69acf57f3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ll_white_list_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>ll_white_list_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_white_list.c" line="92" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_white_list.c" bodystart="92" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__white__list_8c_1a2f771a1c3dec17b5ac57ebd04eb8a3d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ll_white_list_add</definition>
+        <argsstring>(const u8 *data)</argsstring>
+        <name>ll_white_list_add</name>
+        <param>
+          <type>const u8 *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_white_list.c" line="98" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_white_list.c" bodystart="98" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__white__list_8c_1ab853d581c7b07cc31e0a10701f941780" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u8</type>
+        <definition>u8 ll_white_list_remove</definition>
+        <argsstring>(const u8 *data)</argsstring>
+        <name>ll_white_list_remove</name>
+        <param>
+          <type>const u8 *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_white_list.c" line="118" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_white_list.c" bodystart="118" bodyend="140"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="link__layer_8h" kindref="compound">ble/link_layer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;stdarg.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="h4__transport_8h" kindref="compound">h4_transport.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;RF_ble.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;btcontroller_util.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;btcontroller_heap.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;tomcrypt.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;hci_controller.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_TAG_CONST<sp/><sp/><sp/><sp/><sp/>LL_WL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_TAG<sp/><sp/><sp/><sp/><sp/>&quot;[LL-WL]&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_ERROR_ENABLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_INFO_ENABLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_DUMP_ENABLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;common/debug.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>SUPPORT_MS_EXTENSIONS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>bss_seg(&quot;.ble_ll_bss&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>data_seg(&quot;.ble_ll_data&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>const_seg(&quot;.ble_ll_const&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>code_seg(&quot;.ble_ll_code&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>u8<sp/><ref refid="ll__white__list_8c_1acd8f421b156f95f1d00008daabc4a464" kindref="member">ll_white_list_used</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="ll__white__list_8c_1a3cf3ef3a61def57734992da92bcfed3a" kindref="member">__malloc</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>p<sp/>=<sp/>btctler_nv_memory_malloc(size);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(p<sp/>!=<sp/>NULL);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>p;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__white__list_8c_1a549f000748ba6d518db83deaeb9b235c" kindref="member">__free</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>btctler_nv_memory_free(p);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__white__list_8c_1a90bf1e8fb8d0f46ac9dad3a30b607568" kindref="member">__white_list_upadte</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*priv,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structwhite__list" kindref="compound">white_list</ref><sp/>*device)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>log_info(</highlight><highlight class="stringliteral">&quot;update<sp/>addr<sp/>type<sp/>:<sp/>%02x<sp/>/<sp/>%s&quot;</highlight><highlight class="normal">,<sp/>device-&gt;<ref refid="structwhite__list_1a1a66e0e089bf8661213386ff176d31fa" kindref="member">white_list_param</ref>.<ref refid="structwhite__list__parameter_1a87cbb846ae08b0ead53cd26feb8230de" kindref="member">Address_Type</ref>,<sp/>btctler_bd_addr_to_str(device-&gt;<ref refid="structwhite__list_1a1a66e0e089bf8661213386ff176d31fa" kindref="member">white_list_param</ref>.<ref refid="structwhite__list__parameter_1ab597f037948138891ac430c394ea6bd2" kindref="member">Address</ref>));</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>__ble_ops-&gt;ioctrl(priv,<sp/>BLE_WHITE_LIST_ADDR,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>device-&gt;<ref refid="structwhite__list_1a1a66e0e089bf8661213386ff176d31fa" kindref="member">white_list_param</ref>.<ref refid="structwhite__list__parameter_1a87cbb846ae08b0ead53cd26feb8230de" kindref="member">Address_Type</ref>,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>device-&gt;<ref refid="structwhite__list_1a1a66e0e089bf8661213386ff176d31fa" kindref="member">white_list_param</ref>.<ref refid="structwhite__list__parameter_1ab597f037948138891ac430c394ea6bd2" kindref="member">Address</ref>);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">//for<sp/>hw<sp/>resource<sp/>share</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__white__list_8c_1a959b0c2f8e49bf5c6a8fd15c35bb612f" kindref="member">__white_list_weighted_round_robin</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*priv,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structwhite__list" kindref="compound">white_list</ref><sp/>*device)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(device-&gt;<ref refid="structwhite__list_1abaff45f8ec170e73f3b789f7afd37eed" kindref="member">cnt</ref>++<sp/>==<sp/>10)<sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>device-&gt;<ref refid="structwhite__list_1abaff45f8ec170e73f3b789f7afd37eed" kindref="member">cnt</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//TO*DO<sp/>privacy<sp/>RPA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="ll__white__list_8c_1a90bf1e8fb8d0f46ac9dad3a30b607568" kindref="member">__white_list_upadte</ref>(priv,<sp/>device);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//TO*DO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//lost<sp/>device<sp/>PDUs<sp/>a<sp/>few<sp/>mins<sp/>should<sp/>clean<sp/>device<sp/>counter</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//TO*DO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//one<sp/>more<sp/>device<sp/>have<sp/>the<sp/>same<sp/>device<sp/>counter<sp/>(same<sp/>interval)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structwhite__list" kindref="compound">white_list</ref><sp/>*<ref refid="ll__white__list_8c_1a5e24cc0332e7ab00aea02659589e1f29" kindref="member">ll_white_list_match</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*priv,<sp/>u8<sp/>addr_type,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>*addr)</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structwhite__list" kindref="compound">white_list</ref><sp/>*p;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>list_for_each_entry(p,<sp/>&amp;<ref refid="hci__ll__cmds_8c_1a58e8c0445052dfd3f02f1dccdd04267f" kindref="member">le_param</ref>.<ref refid="structle__parameter_1a125bd961c08515783a06cf48c76ed776" kindref="member">white_list_head</ref>,<sp/><ref refid="structwhite__list_1aba79949e4d66abe7d1321fe6d7479095" kindref="member">entry</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>log_info(&quot;white<sp/>list<sp/>addr<sp/>type<sp/>:<sp/>%02x&quot;,<sp/>p-&gt;white_list_param.Address_Type);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>log_info_hexdump(p-&gt;white_list_param.Address,<sp/>6);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>log_info(&quot;2<sp/>-white<sp/>list<sp/>addr<sp/>type<sp/>:<sp/>%02x&quot;,<sp/>addr_type);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>log_info_hexdump(addr,<sp/>6);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((!memcmp(addr,<sp/>p-&gt;<ref refid="structwhite__list_1a1a66e0e089bf8661213386ff176d31fa" kindref="member">white_list_param</ref>.<ref refid="structwhite__list__parameter_1ab597f037948138891ac430c394ea6bd2" kindref="member">Address</ref>,<sp/>BTCTLER_BD_ADDR_LEN))</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/>(p-&gt;<ref refid="structwhite__list_1a1a66e0e089bf8661213386ff176d31fa" kindref="member">white_list_param</ref>.<ref refid="structwhite__list__parameter_1a87cbb846ae08b0ead53cd26feb8230de" kindref="member">Address_Type</ref><sp/>==<sp/>addr_type))<sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//high<sp/>frequently</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>__white_list_weighted_round_robin(link,<sp/>p);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>__white_list_upadte(link,<sp/>p);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>p;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="comment">/********************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="90"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Device<sp/>Filtering(white<sp/>list)</highlight></codeline>
+<codeline lineno="91"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__white__list_8c_1a7622afe74c8f2aa1409f3f69acf57f3a" kindref="member">ll_white_list_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__white__list_8c_1acd8f421b156f95f1d00008daabc4a464" kindref="member">ll_white_list_used</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>INIT_LIST_HEAD(&amp;<ref refid="hci__ll__cmds_8c_1a58e8c0445052dfd3f02f1dccdd04267f" kindref="member">le_param</ref>.<ref refid="structle__parameter_1a125bd961c08515783a06cf48c76ed776" kindref="member">white_list_head</ref>);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__white__list_8c_1a2f771a1c3dec17b5ac57ebd04eb8a3d6" kindref="member">ll_white_list_add</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>*data)</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structwhite__list" kindref="compound">white_list</ref><sp/>*list;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="ll__white__list_8c_1acd8f421b156f95f1d00008daabc4a464" kindref="member">ll_white_list_used</ref><sp/>==<sp/><ref refid="white__list_8h_1ae51dbd8df543da0ac0ecf16e8c7b0210" kindref="member">LL_WHITE_LIST_SIZE</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_error(</highlight><highlight class="stringliteral">&quot;No<sp/>white<sp/>list&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>list<sp/>=<sp/><sp/><ref refid="ll__white__list_8c_1a3cf3ef3a61def57734992da92bcfed3a" kindref="member">__malloc</ref>(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structwhite__list" kindref="compound">white_list</ref>));</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(list<sp/>!=<sp/>NULL);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>memcpy((u8<sp/>*)&amp;list-&gt;<ref refid="structwhite__list_1a1a66e0e089bf8661213386ff176d31fa" kindref="member">white_list_param</ref>,<sp/>data,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structwhite__list" kindref="compound">white_list</ref>)<sp/>-<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>list_head));</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>list-&gt;<ref refid="structwhite__list_1abaff45f8ec170e73f3b789f7afd37eed" kindref="member">cnt</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>list_add(&amp;list-&gt;<ref refid="structwhite__list_1aba79949e4d66abe7d1321fe6d7479095" kindref="member">entry</ref>,<sp/>&amp;<ref refid="hci__ll__cmds_8c_1a58e8c0445052dfd3f02f1dccdd04267f" kindref="member">le_param</ref>.<ref refid="structle__parameter_1a125bd961c08515783a06cf48c76ed776" kindref="member">white_list_head</ref>);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__white__list_8c_1acd8f421b156f95f1d00008daabc4a464" kindref="member">ll_white_list_used</ref>++;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>log_info(</highlight><highlight class="stringliteral">&quot;White<sp/>list<sp/>add<sp/>:<sp/>%d<sp/>-<sp/>%d<sp/>/<sp/>%s&quot;</highlight><highlight class="normal">,<sp/><ref refid="ll__white__list_8c_1acd8f421b156f95f1d00008daabc4a464" kindref="member">ll_white_list_used</ref>,<sp/>list-&gt;<ref refid="structwhite__list_1a1a66e0e089bf8661213386ff176d31fa" kindref="member">white_list_param</ref>.<ref refid="structwhite__list__parameter_1a87cbb846ae08b0ead53cd26feb8230de" kindref="member">Address_Type</ref>,<sp/>btctler_bd_addr_to_str(list-&gt;<ref refid="structwhite__list_1a1a66e0e089bf8661213386ff176d31fa" kindref="member">white_list_param</ref>.<ref refid="structwhite__list__parameter_1ab597f037948138891ac430c394ea6bd2" kindref="member">Address</ref>));</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal">u8<sp/><ref refid="ll__white__list_8c_1ab853d581c7b07cc31e0a10701f941780" kindref="member">ll_white_list_remove</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>*data)</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structwhite__list" kindref="compound">white_list</ref><sp/>*p,<sp/>*n;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>list_for_each_entry_safe(p,<sp/>n,<sp/>&amp;<ref refid="hci__ll__cmds_8c_1a58e8c0445052dfd3f02f1dccdd04267f" kindref="member">le_param</ref>.<ref refid="structle__parameter_1a125bd961c08515783a06cf48c76ed776" kindref="member">white_list_head</ref>,<sp/><ref refid="structwhite__list_1aba79949e4d66abe7d1321fe6d7479095" kindref="member">entry</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>log_info(&quot;1.Address<sp/>type<sp/>:<sp/>%x<sp/>/<sp/>%s&quot;,<sp/>p-&gt;white_list_param.Address_Type,<sp/>bd_addr_to_str(p-&gt;white_list_param.Address));<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>log_info(&quot;2.Address<sp/>type<sp/>:<sp/>%x<sp/>/<sp/>%s&quot;,<sp/>data[0],<sp/>bd_addr_to_str((u8<sp/>*)data<sp/>+<sp/>1));<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>if<sp/>((!memcmp(data<sp/>+<sp/>1,<sp/>p-&gt;white_list_param.Address,<sp/>6))<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>&amp;&amp;<sp/>(p-&gt;white_list_param.Address_Type<sp/>==<sp/>data[0]))<sp/>{<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!memcmp(data<sp/>+<sp/>1,<sp/>p-&gt;<ref refid="structwhite__list_1a1a66e0e089bf8661213386ff176d31fa" kindref="member">white_list_param</ref>.<ref refid="structwhite__list__parameter_1ab597f037948138891ac430c394ea6bd2" kindref="member">Address</ref>,<sp/>6))<sp/>{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="ll__white__list_8c_1acd8f421b156f95f1d00008daabc4a464" kindref="member">ll_white_list_used</ref>--;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>list_del(&amp;p-&gt;<ref refid="structwhite__list_1aba79949e4d66abe7d1321fe6d7479095" kindref="member">entry</ref>);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_info(</highlight><highlight class="stringliteral">&quot;White<sp/>list<sp/>remove:<sp/>%d<sp/>/<sp/>%s&quot;</highlight><highlight class="normal">,<sp/>p-&gt;<ref refid="structwhite__list_1a1a66e0e089bf8661213386ff176d31fa" kindref="member">white_list_param</ref>.<ref refid="structwhite__list__parameter_1a87cbb846ae08b0ead53cd26feb8230de" kindref="member">Address_Type</ref>,<sp/>btctler_bd_addr_to_str(p-&gt;<ref refid="structwhite__list_1a1a66e0e089bf8661213386ff176d31fa" kindref="member">white_list_param</ref>.<ref refid="structwhite__list__parameter_1ab597f037948138891ac430c394ea6bd2" kindref="member">Address</ref>));</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="ll__white__list_8c_1a549f000748ba6d518db83deaeb9b235c" kindref="member">__free</ref>(p);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((!memcmp(data<sp/>+<sp/>1,<sp/>p-&gt;<ref refid="structwhite__list_1a1a66e0e089bf8661213386ff176d31fa" kindref="member">white_list_param</ref>.<ref refid="structwhite__list__parameter_1ab597f037948138891ac430c394ea6bd2" kindref="member">Address</ref>,<sp/>6))</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/>(p-&gt;<ref refid="structwhite__list_1a1a66e0e089bf8661213386ff176d31fa" kindref="member">white_list_param</ref>.<ref refid="structwhite__list__parameter_1a87cbb846ae08b0ead53cd26feb8230de" kindref="member">Address_Type</ref><sp/>==<sp/>data[0]))<sp/>{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>SUCCESS;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>INVALID_HCI_COMMAND_PARAMETERS;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_white_list.c"/>
+  </compounddef>
+</doxygen>

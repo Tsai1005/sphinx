@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structle__big__t_8roleData_8mst" kind="struct" language="C++" prot="public">
+    <compoundname>le_big_t.roleData.mst</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structle__big__t_8roleData_8mst_1a47fd2e72c2efc8f0ee7625530af679c9" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>syncLostReason</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>BIG synchronization lost. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="144" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__big__t_8roleData_8mst_1a7f04af006bdeba02616023b6e6c68409" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>mse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum number of subevents. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="145" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__big__t_8roleData_8mst_1a6130e4959a9ec79237b70a9966c9bf13" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>numBisIdx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Total number of BISes in the BIG. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="146" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__big__t_8roleData_8mst_1ae777450db34af05a8a2f15da2bad8019" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition></definition>
+        <argsstring>[LL_MAX_BIS]</argsstring>
+        <name>bisIdx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>List of indices of BISes. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="147" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__big__t_8roleData_8mst_1ab6543a085f7a23ebe54977ee44ada4e0" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>bigSyncTimeoutMs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Synchronization timeout in microseconds. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="150" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__big__t_8roleData_8mst_1a268233409f2561e1c5bd87c7d8c86712" prot="public" static="no" mutable="no">
+        <type>sys_timer</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>bigSyncTmr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Synchronization timeout timer. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="151" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__big__t_8roleData_8mst_1a22bf0a1edbd857e52277cd16fc494fbe" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>totalAcc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Total clock accuracy. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="154" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__big__t_8roleData_8mst_1acadfeea8758c24add5e77a70783faf60" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>extraWwUsec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Extra window widening time in microseconds. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="155" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__big__t_8roleData_8mst_1ad08b14525ceb2e36d9a83042910b443c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>rxSyncTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Last received BIG anchor point. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="156" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__big__t_8roleData_8mst_1a25a69a33b9cf5294e06b8b7d14534f65" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>anchorPoint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>BIG anchor point. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="157" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__big__t_8roleData_8mst_1a8411c3d8276d256086dbf86b7a0cbd0b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition></definition>
+        <argsstring>[LL_BC_LEN]</argsstring>
+        <name>bcstCode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Broadcast Code. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="160" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="141" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="141" bodyend="161"/>
+    <listofallmembers>
+      <member refid="structle__big__t_8roleData_8mst_1a25a69a33b9cf5294e06b8b7d14534f65" prot="public" virt="non-virtual"><scope>le_big_t.roleData.mst</scope><name>anchorPoint</name></member>
+      <member refid="structle__big__t_8roleData_8mst_1a8411c3d8276d256086dbf86b7a0cbd0b" prot="public" virt="non-virtual"><scope>le_big_t.roleData.mst</scope><name>bcstCode</name></member>
+      <member refid="structle__big__t_8roleData_8mst_1ab6543a085f7a23ebe54977ee44ada4e0" prot="public" virt="non-virtual"><scope>le_big_t.roleData.mst</scope><name>bigSyncTimeoutMs</name></member>
+      <member refid="structle__big__t_8roleData_8mst_1a268233409f2561e1c5bd87c7d8c86712" prot="public" virt="non-virtual"><scope>le_big_t.roleData.mst</scope><name>bigSyncTmr</name></member>
+      <member refid="structle__big__t_8roleData_8mst_1ae777450db34af05a8a2f15da2bad8019" prot="public" virt="non-virtual"><scope>le_big_t.roleData.mst</scope><name>bisIdx</name></member>
+      <member refid="structle__big__t_8roleData_8mst_1acadfeea8758c24add5e77a70783faf60" prot="public" virt="non-virtual"><scope>le_big_t.roleData.mst</scope><name>extraWwUsec</name></member>
+      <member refid="structle__big__t_8roleData_8mst_1a7f04af006bdeba02616023b6e6c68409" prot="public" virt="non-virtual"><scope>le_big_t.roleData.mst</scope><name>mse</name></member>
+      <member refid="structle__big__t_8roleData_8mst_1a6130e4959a9ec79237b70a9966c9bf13" prot="public" virt="non-virtual"><scope>le_big_t.roleData.mst</scope><name>numBisIdx</name></member>
+      <member refid="structle__big__t_8roleData_8mst_1ad08b14525ceb2e36d9a83042910b443c" prot="public" virt="non-virtual"><scope>le_big_t.roleData.mst</scope><name>rxSyncTime</name></member>
+      <member refid="structle__big__t_8roleData_8mst_1a47fd2e72c2efc8f0ee7625530af679c9" prot="public" virt="non-virtual"><scope>le_big_t.roleData.mst</scope><name>syncLostReason</name></member>
+      <member refid="structle__big__t_8roleData_8mst_1a22bf0a1edbd857e52277cd16fc494fbe" prot="public" virt="non-virtual"><scope>le_big_t.roleData.mst</scope><name>totalAcc</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structlctrFtParam__t" kind="struct" language="C++" prot="public">
+    <compoundname>lctrFtParam_t</compoundname>
+    <includes refid="ll__cis_8h" local="no">ll_cis.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlctrFtParam__t_1a5d7fc30980bbdaa1677719a1d81113f6" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref></type>
+        <definition>bool_t lctrFtParam_t::pduAcked</definition>
+        <argsstring></argsstring>
+        <name>pduAcked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TRUE if current PDU is acked, for Tx only. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="81" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrFtParam__t_1af4b43aef8ce5dad188080226ab0d7a96" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref></type>
+        <definition>bool_t lctrFtParam_t::pduRcved</definition>
+        <argsstring></argsstring>
+        <name>pduRcved</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TRUE if current PDU is received, for Rx only. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="82" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrFtParam__t_1ac1a287440cb0116486f75fdf8759a1ca" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lctrFtParam_t::bn</definition>
+        <argsstring></argsstring>
+        <name>bn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Burst number for the flush timeout. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="83" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrFtParam__t_1a83a75e97f6557efa7adc0081656d3a7f" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lctrFtParam_t::pduCounter</definition>
+        <argsstring></argsstring>
+        <name>pduCounter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Current PDU counter in term of BN. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="84" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrFtParam__t_1a1bc1042ba213053948c15a26543dfa4d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lctrFtParam_t::subEvtCounter</definition>
+        <argsstring></argsstring>
+        <name>subEvtCounter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Current subevent counter before flush timeout. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="85" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrFtParam__t_1ab68b3dba8585d8f090816eaa84471e2c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lctrFtParam_t::intervalTotal</definition>
+        <argsstring></argsstring>
+        <name>intervalTotal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Total number interval before flush timeout. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="86" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrFtParam__t_1aed2d68eb3091cda91f9f883888b5f892" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lctrFtParam_t::intervalCounter</definition>
+        <argsstring></argsstring>
+        <name>intervalCounter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Current interval counter. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="87" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrFtParam__t_1a14898b3a10c01513181498ebcd2815cd" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lctrFtParam_t::lastSubEvtFt[LCTR_MAX_BN]</definition>
+        <argsstring>[LCTR_MAX_BN]</argsstring>
+        <name>lastSubEvtFt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Last subevent the PDU could be transmitted before flush timeout for each PDU(in the last interval). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="89" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrFtParam__t_1a823de635774c4d9d1626ad11ec98498e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lctrFtParam_t::pduType[LCTR_MAX_BN]</definition>
+        <argsstring>[LCTR_MAX_BN]</argsstring>
+        <name>pduType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>PDU type, whether NULL, empty or non-empty. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="90" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrFtParam__t_1a614ebfe18656410b74d5650e4eea4f25" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref></type>
+        <definition>bool_t lctrFtParam_t::isPduDone[LCTR_MAX_BN]</definition>
+        <argsstring>[LCTR_MAX_BN]</argsstring>
+        <name>isPduDone</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TRUE if the PDU is either acked or flushed. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="91" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Parameters related to Tx flush timeout. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="80" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="80" bodyend="92"/>
+    <listofallmembers>
+      <member refid="structlctrFtParam__t_1ac1a287440cb0116486f75fdf8759a1ca" prot="public" virt="non-virtual"><scope>lctrFtParam_t</scope><name>bn</name></member>
+      <member refid="structlctrFtParam__t_1aed2d68eb3091cda91f9f883888b5f892" prot="public" virt="non-virtual"><scope>lctrFtParam_t</scope><name>intervalCounter</name></member>
+      <member refid="structlctrFtParam__t_1ab68b3dba8585d8f090816eaa84471e2c" prot="public" virt="non-virtual"><scope>lctrFtParam_t</scope><name>intervalTotal</name></member>
+      <member refid="structlctrFtParam__t_1a614ebfe18656410b74d5650e4eea4f25" prot="public" virt="non-virtual"><scope>lctrFtParam_t</scope><name>isPduDone</name></member>
+      <member refid="structlctrFtParam__t_1a14898b3a10c01513181498ebcd2815cd" prot="public" virt="non-virtual"><scope>lctrFtParam_t</scope><name>lastSubEvtFt</name></member>
+      <member refid="structlctrFtParam__t_1a5d7fc30980bbdaa1677719a1d81113f6" prot="public" virt="non-virtual"><scope>lctrFtParam_t</scope><name>pduAcked</name></member>
+      <member refid="structlctrFtParam__t_1a83a75e97f6557efa7adc0081656d3a7f" prot="public" virt="non-virtual"><scope>lctrFtParam_t</scope><name>pduCounter</name></member>
+      <member refid="structlctrFtParam__t_1af4b43aef8ce5dad188080226ab0d7a96" prot="public" virt="non-virtual"><scope>lctrFtParam_t</scope><name>pduRcved</name></member>
+      <member refid="structlctrFtParam__t_1a823de635774c4d9d1626ad11ec98498e" prot="public" virt="non-virtual"><scope>lctrFtParam_t</scope><name>pduType</name></member>
+      <member refid="structlctrFtParam__t_1a1bc1042ba213053948c15a26543dfa4d" prot="public" virt="non-virtual"><scope>lctrFtParam_t</scope><name>subEvtCounter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

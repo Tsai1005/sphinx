@@ -1,0 +1,324 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structle__parameter" kind="struct" language="C++" prot="public">
+    <compoundname>le_parameter</compoundname>
+    <includes refid="link__layer_8h" local="no">link_layer.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structle__parameter_1aa5cbefc401ae1a973146f4102c0afb87" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 le_parameter::event_mask[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>event_mask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="518" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="518" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__parameter_1a477178f513d2c4df134d2b4e88b132fd" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 le_parameter::public_address[6]</definition>
+        <argsstring>[6]</argsstring>
+        <name>public_address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="519" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="519" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__parameter_1a8af2272608273289c68ab91c51ee5ab9" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 le_parameter::random_address[6]</definition>
+        <argsstring>[6]</argsstring>
+        <name>random_address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="520" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="520" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__parameter_1a8da027b603dead72e7f0200bdaff3ba8" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 le_parameter::advertise_enable</definition>
+        <argsstring></argsstring>
+        <name>advertise_enable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="521" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="521" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__parameter_1a0956cc9943558fc76bebb3df44b9321b" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 le_parameter::features[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>features</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="529" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="529" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__parameter_1a87b4c690bb883f2797114d51f730cff3" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 le_parameter::version[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="530" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="530" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__parameter_1a6a35436a19c3db091a0f4561c5dce169" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 le_parameter::versnr</definition>
+        <argsstring></argsstring>
+        <name>versnr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="531" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="531" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__parameter_1a6722ba31e000117c9af243356bf51b09" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 le_parameter::compld</definition>
+        <argsstring></argsstring>
+        <name>compld</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="532" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="532" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__parameter_1ad7ed8eb2e0fbf1af458f3c81867fd1d9" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 le_parameter::subversnr</definition>
+        <argsstring></argsstring>
+        <name>subversnr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="533" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="533" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__parameter_1a941544bb7341b42e856d40470af1be75" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 le_parameter::support_states[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>support_states</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="534" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="534" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__parameter_1a94df935feb9ef3a1e4e168a4149417ad" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 le_parameter::acl_packets_total_num</definition>
+        <argsstring></argsstring>
+        <name>acl_packets_total_num</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="536" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="536" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__parameter_1a944c71c79ca15860ac3a085827c6f1c1" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 le_parameter::acl_data_packet_length</definition>
+        <argsstring></argsstring>
+        <name>acl_data_packet_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="537" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="537" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__parameter_1a86de2644466b4996bebb6f620d007e09" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 le_parameter::iso_packets_total_num</definition>
+        <argsstring></argsstring>
+        <name>iso_packets_total_num</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="539" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="539" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__parameter_1ad8c8727458aec99bbb7662f53c810921" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 le_parameter::iso_data_packet_length</definition>
+        <argsstring></argsstring>
+        <name>iso_data_packet_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="540" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="540" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__parameter_1ad85c1e766c5b3e7aad4145d4f5210573" prot="public" static="no" mutable="no">
+        <type>s8</type>
+        <definition>s8 le_parameter::scaMod</definition>
+        <argsstring></argsstring>
+        <name>scaMod</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SCA override value. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="543" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="543" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__parameter_1a65b428b4fcd4ed6803ff9e10c1fa6ef9" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 le_parameter::transmit_power_level</definition>
+        <argsstring></argsstring>
+        <name>transmit_power_level</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="545" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="545" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__parameter_1a15c3b8116f40d8346f524502cdaef1ab" prot="public" static="no" mutable="no">
+        <type>s8</type>
+        <definition>s8 le_parameter::default_tx_power_level</definition>
+        <argsstring></argsstring>
+        <name>default_tx_power_level</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="546" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="546" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__parameter_1aa4d669d560104a1a5275c15f1efc58a1" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 le_parameter::white_list_size</definition>
+        <argsstring></argsstring>
+        <name>white_list_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="549" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="549" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__parameter_1a125bd961c08515783a06cf48c76ed776" prot="public" static="no" mutable="no">
+        <type>struct list_head</type>
+        <definition>struct list_head le_parameter::white_list_head</definition>
+        <argsstring></argsstring>
+        <name>white_list_head</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="549" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="550" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__parameter_1a5bdacdddf7fdfd7b6884dca794bb3767" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 le_parameter::resolution_enable</definition>
+        <argsstring></argsstring>
+        <name>resolution_enable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="553" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="553" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__parameter_1ad7ea0d39538d9d0921e234318cb26cdc" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 le_parameter::resolving_list_size</definition>
+        <argsstring></argsstring>
+        <name>resolving_list_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="554" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="554" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__parameter_1a6cf35dd62cf098844024207d0b4b0b55" prot="public" static="no" mutable="no">
+        <type>struct list_head</type>
+        <definition>struct list_head le_parameter::resolving_list_head</definition>
+        <argsstring></argsstring>
+        <name>resolving_list_head</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="554" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="555" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="517" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="517" bodyend="565"/>
+    <listofallmembers>
+      <member refid="structle__parameter_1a944c71c79ca15860ac3a085827c6f1c1" prot="public" virt="non-virtual"><scope>le_parameter</scope><name>acl_data_packet_length</name></member>
+      <member refid="structle__parameter_1a94df935feb9ef3a1e4e168a4149417ad" prot="public" virt="non-virtual"><scope>le_parameter</scope><name>acl_packets_total_num</name></member>
+      <member refid="structle__parameter_1a8da027b603dead72e7f0200bdaff3ba8" prot="public" virt="non-virtual"><scope>le_parameter</scope><name>advertise_enable</name></member>
+      <member refid="structle__parameter_1a6722ba31e000117c9af243356bf51b09" prot="public" virt="non-virtual"><scope>le_parameter</scope><name>compld</name></member>
+      <member refid="structle__parameter_1a15c3b8116f40d8346f524502cdaef1ab" prot="public" virt="non-virtual"><scope>le_parameter</scope><name>default_tx_power_level</name></member>
+      <member refid="structle__parameter_1aa5cbefc401ae1a973146f4102c0afb87" prot="public" virt="non-virtual"><scope>le_parameter</scope><name>event_mask</name></member>
+      <member refid="structle__parameter_1a0956cc9943558fc76bebb3df44b9321b" prot="public" virt="non-virtual"><scope>le_parameter</scope><name>features</name></member>
+      <member refid="structle__parameter_1ad8c8727458aec99bbb7662f53c810921" prot="public" virt="non-virtual"><scope>le_parameter</scope><name>iso_data_packet_length</name></member>
+      <member refid="structle__parameter_1a86de2644466b4996bebb6f620d007e09" prot="public" virt="non-virtual"><scope>le_parameter</scope><name>iso_packets_total_num</name></member>
+      <member refid="structle__parameter_1a477178f513d2c4df134d2b4e88b132fd" prot="public" virt="non-virtual"><scope>le_parameter</scope><name>public_address</name></member>
+      <member refid="structle__parameter_1a8af2272608273289c68ab91c51ee5ab9" prot="public" virt="non-virtual"><scope>le_parameter</scope><name>random_address</name></member>
+      <member refid="structle__parameter_1a5bdacdddf7fdfd7b6884dca794bb3767" prot="public" virt="non-virtual"><scope>le_parameter</scope><name>resolution_enable</name></member>
+      <member refid="structle__parameter_1a6cf35dd62cf098844024207d0b4b0b55" prot="public" virt="non-virtual"><scope>le_parameter</scope><name>resolving_list_head</name></member>
+      <member refid="structle__parameter_1ad7ea0d39538d9d0921e234318cb26cdc" prot="public" virt="non-virtual"><scope>le_parameter</scope><name>resolving_list_size</name></member>
+      <member refid="structle__parameter_1ad85c1e766c5b3e7aad4145d4f5210573" prot="public" virt="non-virtual"><scope>le_parameter</scope><name>scaMod</name></member>
+      <member refid="structle__parameter_1ad7ed8eb2e0fbf1af458f3c81867fd1d9" prot="public" virt="non-virtual"><scope>le_parameter</scope><name>subversnr</name></member>
+      <member refid="structle__parameter_1a941544bb7341b42e856d40470af1be75" prot="public" virt="non-virtual"><scope>le_parameter</scope><name>support_states</name></member>
+      <member refid="structle__parameter_1a65b428b4fcd4ed6803ff9e10c1fa6ef9" prot="public" virt="non-virtual"><scope>le_parameter</scope><name>transmit_power_level</name></member>
+      <member refid="structle__parameter_1a87b4c690bb883f2797114d51f730cff3" prot="public" virt="non-virtual"><scope>le_parameter</scope><name>version</name></member>
+      <member refid="structle__parameter_1a6a35436a19c3db091a0f4561c5dce169" prot="public" virt="non-virtual"><scope>le_parameter</scope><name>versnr</name></member>
+      <member refid="structle__parameter_1a125bd961c08515783a06cf48c76ed776" prot="public" virt="non-virtual"><scope>le_parameter</scope><name>white_list_head</name></member>
+      <member refid="structle__parameter_1aa4d669d560104a1a5275c15f1efc58a1" prot="public" virt="non-virtual"><scope>le_parameter</scope><name>white_list_size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

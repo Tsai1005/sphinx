@@ -1,0 +1,562 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="ll__scan_8h" kind="file" language="C++">
+    <compoundname>ll_scan.h</compoundname>
+    <includes local="yes">ble_interface.h</includes>
+    <includedby refid="link__layer_8h" local="yes">/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h</includedby>
+    <incdepgraph>
+      <node id="5114">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_scan.h</label>
+        <link refid="ll_scan.h"/>
+        <childnode refid="5115" relation="include">
+        </childnode>
+      </node>
+      <node id="5115">
+        <label>ble_interface.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5148">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_vendor.c</label>
+        <link refid="ll__vendor_8c"/>
+      </node>
+      <node id="5169">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_manager.h</label>
+        <link refid="link__manager_8h"/>
+      </node>
+      <node id="5119">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/hci_ll_cmds.c</label>
+        <link refid="hci__ll__cmds_8c"/>
+      </node>
+      <node id="5143">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_pc.c</label>
+        <link refid="ll__pc_8c"/>
+      </node>
+      <node id="5158">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_pc.c</label>
+        <link refid="llcp__sm__pc_8c"/>
+      </node>
+      <node id="5129">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_common_iso.c</label>
+        <link refid="ll__common__iso_8c"/>
+      </node>
+      <node id="5147">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_slave.c</label>
+        <link refid="ll__slave_8c"/>
+      </node>
+      <node id="5139">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_keys.c</label>
+        <link refid="ll__keys_8c"/>
+      </node>
+      <node id="5136">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_extended_advertising.c</label>
+        <link refid="ll__extended__advertising_8c"/>
+      </node>
+      <node id="5154">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_conn_update.c</label>
+        <link refid="llcp__sm__conn__update_8c"/>
+      </node>
+      <node id="5120">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/link_layer.c</label>
+        <link refid="link__layer_8c"/>
+      </node>
+      <node id="5161">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_sca.c</label>
+        <link refid="llcp__sm__sca_8c"/>
+      </node>
+      <node id="5123">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c</label>
+        <link refid="ll__bis_8c"/>
+      </node>
+      <node id="5124">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis_master.c</label>
+        <link refid="ll__bis__master_8c"/>
+      </node>
+      <node id="5133">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_ext_adv.c</label>
+        <link refid="ll__ext__adv_8c"/>
+      </node>
+      <node id="5153">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_common.c</label>
+        <link refid="llcp__sm__common_8c"/>
+      </node>
+      <node id="5134">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_ext_init.c</label>
+        <link refid="ll__ext__init_8c"/>
+      </node>
+      <node id="5131">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_data_extension.c</label>
+        <link refid="ll__data__extension_8c"/>
+      </node>
+      <node id="5126">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis.c</label>
+        <link refid="ll__cis_8c"/>
+      </node>
+      <node id="5121">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_adv.c</label>
+        <link refid="ll__adv_8c"/>
+      </node>
+      <node id="5130">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cte.c</label>
+        <link refid="ll__cte_8c"/>
+      </node>
+      <node id="5164">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_acc.c</label>
+        <link refid="tws__le__acc_8c"/>
+      </node>
+      <node id="5140">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_master.c</label>
+        <link refid="ll__master_8c"/>
+      </node>
+      <node id="5159">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_phy_update.c</label>
+        <link refid="llcp__sm__phy__update_8c"/>
+      </node>
+      <node id="5118">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/hci_ll.c</label>
+        <link refid="hci__ll_8c"/>
+      </node>
+      <node id="5167">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_scan.c</label>
+        <link refid="tws__ll__scan_8c"/>
+      </node>
+      <node id="5145">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_resolve_list.c</label>
+        <link refid="ll__resolve__list_8c"/>
+      </node>
+      <node id="5152">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_cis_terminate.c</label>
+        <link refid="llcp__sm__cis__terminate_8c"/>
+      </node>
+      <node id="5162">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_template.c</label>
+        <link refid="llcp__sm__template_8c"/>
+      </node>
+      <node id="5149">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_white_list.c</label>
+        <link refid="ll__white__list_8c"/>
+      </node>
+      <node id="5137">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_init.c</label>
+        <link refid="ll__init_8c"/>
+      </node>
+      <node id="5116">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_scan.h</label>
+        <link refid="ll_scan.h"/>
+        <childnode refid="5117" relation="include">
+        </childnode>
+      </node>
+      <node id="5132">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_events.c</label>
+        <link refid="ll__events_8c"/>
+      </node>
+      <node id="5163">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_vendor_jl.c</label>
+        <link refid="llcp__sm__vendor__jl_8c"/>
+      </node>
+      <node id="5151">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_cis.c</label>
+        <link refid="llcp__sm__cis_8c"/>
+      </node>
+      <node id="5165">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c</label>
+        <link refid="tws__le__link_8c"/>
+      </node>
+      <node id="5150">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_bis.c</label>
+        <link refid="llcp__sm__bis_8c"/>
+      </node>
+      <node id="5125">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis_slave.c</label>
+        <link refid="ll__bis__slave_8c"/>
+      </node>
+      <node id="5155">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_cte.c</label>
+        <link refid="llcp__sm__cte_8c"/>
+      </node>
+      <node id="5166">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_adv.c</label>
+        <link refid="tws__ll__adv_8c"/>
+      </node>
+      <node id="5160">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_ping.c</label>
+        <link refid="llcp__sm__ping_8c"/>
+      </node>
+      <node id="5128">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis_slave.c</label>
+        <link refid="ll__cis__slave_8c"/>
+      </node>
+      <node id="5141">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_msg.c</label>
+        <link refid="ll__msg_8c"/>
+      </node>
+      <node id="5117">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h</label>
+        <link refid="link__layer_8h"/>
+        <childnode refid="5118" relation="include">
+        </childnode>
+        <childnode refid="5119" relation="include">
+        </childnode>
+        <childnode refid="5120" relation="include">
+        </childnode>
+        <childnode refid="5121" relation="include">
+        </childnode>
+        <childnode refid="5122" relation="include">
+        </childnode>
+        <childnode refid="5123" relation="include">
+        </childnode>
+        <childnode refid="5124" relation="include">
+        </childnode>
+        <childnode refid="5125" relation="include">
+        </childnode>
+        <childnode refid="5126" relation="include">
+        </childnode>
+        <childnode refid="5127" relation="include">
+        </childnode>
+        <childnode refid="5128" relation="include">
+        </childnode>
+        <childnode refid="5129" relation="include">
+        </childnode>
+        <childnode refid="5130" relation="include">
+        </childnode>
+        <childnode refid="5131" relation="include">
+        </childnode>
+        <childnode refid="5132" relation="include">
+        </childnode>
+        <childnode refid="5133" relation="include">
+        </childnode>
+        <childnode refid="5134" relation="include">
+        </childnode>
+        <childnode refid="5135" relation="include">
+        </childnode>
+        <childnode refid="5136" relation="include">
+        </childnode>
+        <childnode refid="5137" relation="include">
+        </childnode>
+        <childnode refid="5138" relation="include">
+        </childnode>
+        <childnode refid="5139" relation="include">
+        </childnode>
+        <childnode refid="5140" relation="include">
+        </childnode>
+        <childnode refid="5141" relation="include">
+        </childnode>
+        <childnode refid="5142" relation="include">
+        </childnode>
+        <childnode refid="5143" relation="include">
+        </childnode>
+        <childnode refid="5144" relation="include">
+        </childnode>
+        <childnode refid="5145" relation="include">
+        </childnode>
+        <childnode refid="5146" relation="include">
+        </childnode>
+        <childnode refid="5147" relation="include">
+        </childnode>
+        <childnode refid="5148" relation="include">
+        </childnode>
+        <childnode refid="5149" relation="include">
+        </childnode>
+        <childnode refid="5150" relation="include">
+        </childnode>
+        <childnode refid="5151" relation="include">
+        </childnode>
+        <childnode refid="5152" relation="include">
+        </childnode>
+        <childnode refid="5153" relation="include">
+        </childnode>
+        <childnode refid="5154" relation="include">
+        </childnode>
+        <childnode refid="5155" relation="include">
+        </childnode>
+        <childnode refid="5156" relation="include">
+        </childnode>
+        <childnode refid="5157" relation="include">
+        </childnode>
+        <childnode refid="5158" relation="include">
+        </childnode>
+        <childnode refid="5159" relation="include">
+        </childnode>
+        <childnode refid="5160" relation="include">
+        </childnode>
+        <childnode refid="5161" relation="include">
+        </childnode>
+        <childnode refid="5162" relation="include">
+        </childnode>
+        <childnode refid="5163" relation="include">
+        </childnode>
+        <childnode refid="5164" relation="include">
+        </childnode>
+        <childnode refid="5165" relation="include">
+        </childnode>
+        <childnode refid="5166" relation="include">
+        </childnode>
+        <childnode refid="5167" relation="include">
+        </childnode>
+        <childnode refid="5168" relation="include">
+        </childnode>
+        <childnode refid="5169" relation="include">
+        </childnode>
+      </node>
+      <node id="5168">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h</label>
+        <link refid="ll__cis_8h"/>
+        <childnode refid="5117" relation="include">
+        </childnode>
+      </node>
+      <node id="5135">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_ext_scan.c</label>
+        <link refid="ll__ext__scan_8c"/>
+      </node>
+      <node id="5156">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_data_extension.c</label>
+        <link refid="llcp__sm__data__extension_8c"/>
+      </node>
+      <node id="5146">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_scan.c</label>
+        <link refid="ll__scan_8c"/>
+      </node>
+      <node id="5142">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_multiple_phys.c</label>
+        <link refid="ll__multiple__phys_8c"/>
+      </node>
+      <node id="5122">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_afh.c</label>
+        <link refid="ll__afh_8c"/>
+      </node>
+      <node id="5138">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_isoal.c</label>
+        <link refid="ll__isoal_8c"/>
+      </node>
+      <node id="5127">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis_master.c</label>
+        <link refid="ll__cis__master_8c"/>
+      </node>
+      <node id="5144">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_periodic_advertising.c</label>
+        <link refid="ll__periodic__advertising_8c"/>
+      </node>
+      <node id="5157">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_encrypt.c</label>
+        <link refid="llcp__sm__encrypt_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structle__scan__link" prot="public">le_scan_link</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="ll__scan_8h_1a5db072beb363f0e855bb45b9b854a3e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int scan_rx_post_handler</definition>
+        <argsstring>(void)</argsstring>
+        <name>scan_rx_post_handler</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_scan.h" line="18" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_scan.c" bodystart="407" bodyend="430"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__scan_8h_1a98a138066556b1592b8ed78f85e6d905" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void le_scan_filter_duplicates_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>le_scan_filter_duplicates_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_scan.h" line="25" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_scan.c" bodystart="43" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__scan_8h_1a9adde1b02695daa5a3d7fa57147e9ad9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void le_scan_filter_duplicates_query</definition>
+        <argsstring>(void)</argsstring>
+        <name>le_scan_filter_duplicates_query</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_scan.h" line="27" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_scan.c" bodystart="48" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__scan_8h_1a6bdb0ad1fcb654a8b3aaac1c6ef70d54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool le_scan_filter_duplicates</definition>
+        <argsstring>(struct ble_rx *rx)</argsstring>
+        <name>le_scan_filter_duplicates</name>
+        <param>
+          <type>struct ble_rx *</type>
+          <declname>rx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_scan.h" line="29" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_scan.c" bodystart="61" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__scan_8h_1ac9ac4d211801f5c4f86451b63d2bb87d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void le_scan_filter_duplicates_destroy</definition>
+        <argsstring>(void)</argsstring>
+        <name>le_scan_filter_duplicates_destroy</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_scan.h" line="31" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_scan.c" bodystart="106" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__scan_8h_1a04992606b855c63dd625fe19e147b2af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ll_scan_set_params</definition>
+        <argsstring>(const u8 *data)</argsstring>
+        <name>ll_scan_set_params</name>
+        <param>
+          <type>const u8 *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_scan.h" line="33" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_scan.c" bodystart="437" bodyend="457"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__scan_8h_1abba980076d6b8c16c1fb55999eff97a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ll_scan_open</definition>
+        <argsstring>(const u8 *data)</argsstring>
+        <name>ll_scan_open</name>
+        <param>
+          <type>const u8 *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_scan.h" line="35" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_scan.c" bodystart="460" bodyend="510"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__scan_8h_1a00e99c403246b29c406c1186bd70eae4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ll_scan_close</definition>
+        <argsstring>(void)</argsstring>
+        <name>ll_scan_close</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_scan.h" line="37" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_scan.c" bodystart="512" bodyend="546"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__scan_8h_1ace99f140f0f290ea616a8bfc327c930d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structle__scan__link" kindref="compound">le_scan_link</ref> *</type>
+        <definition>struct le_scan_link* ll_scan_link_get</definition>
+        <argsstring>(void)</argsstring>
+        <name>ll_scan_link_get</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_scan.h" line="39" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_scan.c" bodystart="548" bodyend="556"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__scan_8h_1a0edf22625f29053516ed828e1247f059" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ll_scan_destroy</definition>
+        <argsstring>(void)</argsstring>
+        <name>ll_scan_destroy</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_scan.h" line="41" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_scan.c" bodystart="130" bodyend="139"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>_LL_SCAN_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_LL_SCAN_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ble_interface.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="structle__scan__link" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structle__scan__link" kindref="compound">le_scan_link</ref><sp/>{</highlight></codeline>
+<codeline lineno="7" refid="structle__scan__link_1a5d2ca26d956253d21d3bd97593faf52c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structle__scan__link_1a5d2ca26d956253d21d3bd97593faf52c" kindref="member">hw</ref>;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="structle__scan__link_1aef53ec6054aeaa2a9b4ec45dc8aaeb10" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">le_addr<sp/><ref refid="structle__scan__link_1aef53ec6054aeaa2a9b4ec45dc8aaeb10" kindref="member">local</ref>;</highlight></codeline>
+<codeline lineno="10" refid="structle__scan__link_1addfde98e7c6f92a200b9ef4be373e444" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">le_addr<sp/><ref refid="structle__scan__link_1addfde98e7c6f92a200b9ef4be373e444" kindref="member">peer</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">/********************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL<sp/>Internal<sp/>API<sp/>(Must<sp/>not<sp/>callby<sp/>upper<sp/>layer)</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ll__scan_8h_1a5db072beb363f0e855bb45b9b854a3e3" kindref="member">scan_rx_post_handler</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">/********************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL<sp/>API</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__scan_8h_1a98a138066556b1592b8ed78f85e6d905" kindref="member">le_scan_filter_duplicates_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__scan_8h_1a9adde1b02695daa5a3d7fa57147e9ad9" kindref="member">le_scan_filter_duplicates_query</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="ll__scan_8h_1a6bdb0ad1fcb654a8b3aaac1c6ef70d54" kindref="member">le_scan_filter_duplicates</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>ble_rx<sp/>*rx);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__scan_8h_1ac9ac4d211801f5c4f86451b63d2bb87d" kindref="member">le_scan_filter_duplicates_destroy</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ll__scan_8h_1a04992606b855c63dd625fe19e147b2af" kindref="member">ll_scan_set_params</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>*data);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ll__scan_8h_1abba980076d6b8c16c1fb55999eff97a7" kindref="member">ll_scan_open</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>*data);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ll__scan_8h_1a00e99c403246b29c406c1186bd70eae4" kindref="member">ll_scan_close</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structle__scan__link" kindref="compound">le_scan_link</ref><sp/>*<ref refid="ll__scan_8h_1ace99f140f0f290ea616a8bfc327c930d" kindref="member">ll_scan_link_get</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__scan_8h_1a0edf22625f29053516ed828e1247f059" kindref="member">ll_scan_destroy</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_scan.h"/>
+  </compounddef>
+</doxygen>

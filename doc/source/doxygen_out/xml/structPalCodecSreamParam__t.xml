@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structPalCodecSreamParam__t" kind="struct" language="C++" prot="public">
+    <compoundname>PalCodecSreamParam_t</compoundname>
+    <includes refid="audio__codec_8h" local="no">audio_codec.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structPalCodecSreamParam__t_1a2507785e41cd11260fbaab8a12f60f14" prot="public" static="no" mutable="no">
+        <type><ref refid="audio__codec_8h_1a3c4e02d88b523dba66d7d5f4fbfb1f5c" kindref="member">PalAudioDir_t</ref></type>
+        <definition>PalAudioDir_t PalCodecSreamParam_t::dir</definition>
+        <argsstring></argsstring>
+        <name>dir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Stream data direction. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/audio_codec.h" line="45" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/audio_codec.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPalCodecSreamParam__t_1af3d87d2f457460faecd88d6e3f6cd8c3" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t PalCodecSreamParam_t::chMask</definition>
+        <argsstring></argsstring>
+        <name>chMask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Audio channel mask. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/audio_codec.h" line="46" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/audio_codec.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPalCodecSreamParam__t_1a80eb8a0b5e66caef4acbba99f80e81c3" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t PalCodecSreamParam_t::intervalUsec</definition>
+        <argsstring></argsstring>
+        <name>intervalUsec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SDU interval in microseconds. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/audio_codec.h" line="47" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/audio_codec.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPalCodecSreamParam__t_1a1973255576733732d23620072909c6f5" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t PalCodecSreamParam_t::pktCtr</definition>
+        <argsstring></argsstring>
+        <name>pktCtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initial packet counter value. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/audio_codec.h" line="48" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/audio_codec.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPalCodecSreamParam__t_1abfc6ff537b9ea561079e064bb445304d" prot="public" static="no" mutable="no">
+        <type><ref refid="audio__codec_8h_1a133b2b633c140cbc3cc6cbb2909d269c" kindref="member">PalCodecDataReady_t</ref></type>
+        <definition>PalCodecDataReady_t PalCodecSreamParam_t::rdyCback</definition>
+        <argsstring></argsstring>
+        <name>rdyCback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data ready callback. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/audio_codec.h" line="49" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/audio_codec.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Codec. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/audio_codec.h" line="44" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/audio_codec.h" bodystart="44" bodyend="50"/>
+    <listofallmembers>
+      <member refid="structPalCodecSreamParam__t_1af3d87d2f457460faecd88d6e3f6cd8c3" prot="public" virt="non-virtual"><scope>PalCodecSreamParam_t</scope><name>chMask</name></member>
+      <member refid="structPalCodecSreamParam__t_1a2507785e41cd11260fbaab8a12f60f14" prot="public" virt="non-virtual"><scope>PalCodecSreamParam_t</scope><name>dir</name></member>
+      <member refid="structPalCodecSreamParam__t_1a80eb8a0b5e66caef4acbba99f80e81c3" prot="public" virt="non-virtual"><scope>PalCodecSreamParam_t</scope><name>intervalUsec</name></member>
+      <member refid="structPalCodecSreamParam__t_1a1973255576733732d23620072909c6f5" prot="public" virt="non-virtual"><scope>PalCodecSreamParam_t</scope><name>pktCtr</name></member>
+      <member refid="structPalCodecSreamParam__t_1abfc6ff537b9ea561079e064bb445304d" prot="public" virt="non-virtual"><scope>PalCodecSreamParam_t</scope><name>rdyCback</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

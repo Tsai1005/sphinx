@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structbredr__payload__head" kind="struct" language="C++" prot="public">
+    <compoundname>bredr_payload_head</compoundname>
+    <includes refid="bredr__link_8h" local="no">bredr_link.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structbredr__payload__head_1ae6aba76fad0a75262a100afa18f50f1d" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 bredr_payload_head::index</definition>
+        <argsstring></argsstring>
+        <name>index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="707" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="707" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__payload__head_1a5aeb4f583b72682308fa97cfcab47042" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 bredr_payload_head::llid</definition>
+        <argsstring></argsstring>
+        <name>llid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="708" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="708" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__payload__head_1ab06f13c6ce938f7fc3644d4e08b21ecb" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 bredr_payload_head::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="709" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="709" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__payload__head_1aac1362b8ee1f10d6278470fbca258498" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 bredr_payload_head::len</definition>
+        <argsstring></argsstring>
+        <name>len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="710" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="710" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__payload__head_1ab5bb20568e43c2f11622364ca0415202" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 bredr_payload_head::check</definition>
+        <argsstring></argsstring>
+        <name>check</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="711" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="711" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="706" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="706" bodyend="712"/>
+    <listofallmembers>
+      <member refid="structbredr__payload__head_1ab5bb20568e43c2f11622364ca0415202" prot="public" virt="non-virtual"><scope>bredr_payload_head</scope><name>check</name></member>
+      <member refid="structbredr__payload__head_1ae6aba76fad0a75262a100afa18f50f1d" prot="public" virt="non-virtual"><scope>bredr_payload_head</scope><name>index</name></member>
+      <member refid="structbredr__payload__head_1aac1362b8ee1f10d6278470fbca258498" prot="public" virt="non-virtual"><scope>bredr_payload_head</scope><name>len</name></member>
+      <member refid="structbredr__payload__head_1a5aeb4f583b72682308fa97cfcab47042" prot="public" virt="non-virtual"><scope>bredr_payload_head</scope><name>llid</name></member>
+      <member refid="structbredr__payload__head_1ab06f13c6ce938f7fc3644d4e08b21ecb" prot="public" virt="non-virtual"><scope>bredr_payload_head</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

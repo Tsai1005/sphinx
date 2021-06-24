@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structesco__codec__ops" kind="struct" language="C++" prot="public">
+    <compoundname>esco_codec_ops</compoundname>
+    <includes refid="esco__codec_8h" local="no">esco_codec.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structesco__codec__ops_1a92425190216cabfd9c97912dd79c2e0a" prot="public" static="no" mutable="no">
+        <type>u32(*</type>
+        <definition>u32(* esco_codec_ops::need_buf) (void)</definition>
+        <argsstring>)(void)</argsstring>
+        <name>need_buf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/esco_codec.h" line="9" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/esco_codec.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structesco__codec__ops_1a423fb88b8642cdab1da9c66862636b06" prot="public" static="no" mutable="no">
+        <type>u32(*</type>
+        <definition>u32(* esco_codec_ops::init) (void *ptr)</definition>
+        <argsstring>)(void *ptr)</argsstring>
+        <name>init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/esco_codec.h" line="10" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/esco_codec.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structesco__codec__ops_1a77636f5b2758e26819441bf07510d801" prot="public" static="no" mutable="no">
+        <type>u32(*</type>
+        <definition>u32(* esco_codec_ops::encode) (void *ptr, s16 *indata, u8 *outdata, short len)</definition>
+        <argsstring>)(void *ptr, s16 *indata, u8 *outdata, short len)</argsstring>
+        <name>encode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/esco_codec.h" line="11" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/esco_codec.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structesco__codec__ops_1aa7d89545a0fa76140aeb9cf67054fdfb" prot="public" static="no" mutable="no">
+        <type>u32(*</type>
+        <definition>u32(* esco_codec_ops::decode) (void *ptr, u8 *indata, s16 *outdata, short len)</definition>
+        <argsstring>)(void *ptr, u8 *indata, s16 *outdata, short len)</argsstring>
+        <name>decode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/esco_codec.h" line="12" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/esco_codec.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/esco_codec.h" line="8" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/esco_codec.h" bodystart="8" bodyend="13"/>
+    <listofallmembers>
+      <member refid="structesco__codec__ops_1aa7d89545a0fa76140aeb9cf67054fdfb" prot="public" virt="non-virtual"><scope>esco_codec_ops</scope><name>decode</name></member>
+      <member refid="structesco__codec__ops_1a77636f5b2758e26819441bf07510d801" prot="public" virt="non-virtual"><scope>esco_codec_ops</scope><name>encode</name></member>
+      <member refid="structesco__codec__ops_1a423fb88b8642cdab1da9c66862636b06" prot="public" virt="non-virtual"><scope>esco_codec_ops</scope><name>init</name></member>
+      <member refid="structesco__codec__ops_1a92425190216cabfd9c97912dd79c2e0a" prot="public" virt="non-virtual"><scope>esco_codec_ops</scope><name>need_buf</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

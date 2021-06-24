@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structconnection__parameter" kind="struct" language="C++" prot="public">
+    <compoundname>connection_parameter</compoundname>
+    <includes refid="ll__defines_8h" local="no">ll_defines.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structconnection__parameter_1a59c89bb387310f9ee91afef640ae2c36" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 connection_parameter::le_scan_interval</definition>
+        <argsstring></argsstring>
+        <name>le_scan_interval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1161" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structconnection__parameter_1a99db3e2b6d2184dc5bac93cf86258bc7" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 connection_parameter::le_scan_window</definition>
+        <argsstring></argsstring>
+        <name>le_scan_window</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1162" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structconnection__parameter_1a5da881d213e0cc9479afdd5ce461b126" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 connection_parameter::initiator_filter_policy</definition>
+        <argsstring></argsstring>
+        <name>initiator_filter_policy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1163" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structconnection__parameter_1ab5e28141eb82bc6f9f94af3ec9e16fae" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 connection_parameter::peer_address_type</definition>
+        <argsstring></argsstring>
+        <name>peer_address_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1164" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structconnection__parameter_1a376bc0aad76652bb24753971b05da6eb" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 connection_parameter::peer_address[6]</definition>
+        <argsstring>[6]</argsstring>
+        <name>peer_address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1165" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structconnection__parameter_1a28362c7242677773b7e962a20709c951" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 connection_parameter::own_address_type</definition>
+        <argsstring></argsstring>
+        <name>own_address_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1166" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structconnection__parameter_1a252756b4e1d3e7622570d664013f90bb" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 connection_parameter::conn_interval_min</definition>
+        <argsstring></argsstring>
+        <name>conn_interval_min</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1167" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structconnection__parameter_1afd774d23de273a1e87ce6556826d2d68" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 connection_parameter::conn_interval_max</definition>
+        <argsstring></argsstring>
+        <name>conn_interval_max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1168" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structconnection__parameter_1a5608bb2167a3d681ed80a5eb3bdea8a4" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 connection_parameter::conn_latency</definition>
+        <argsstring></argsstring>
+        <name>conn_latency</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1169" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structconnection__parameter_1a22db7bea064fc3ea31e90c76c30aee0f" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 connection_parameter::supervision_timeout</definition>
+        <argsstring></argsstring>
+        <name>supervision_timeout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1170" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structconnection__parameter_1a24a8c32e92aec352c3e42c7559fc1c1e" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 connection_parameter::minimum_ce_length</definition>
+        <argsstring></argsstring>
+        <name>minimum_ce_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1171" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structconnection__parameter_1aa9643ca2b5a3ae583dc5a85a675b0ffb" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 connection_parameter::maximum_ce_length</definition>
+        <argsstring></argsstring>
+        <name>maximum_ce_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1172" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1172" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1160" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1160" bodyend="1173"/>
+    <listofallmembers>
+      <member refid="structconnection__parameter_1afd774d23de273a1e87ce6556826d2d68" prot="public" virt="non-virtual"><scope>connection_parameter</scope><name>conn_interval_max</name></member>
+      <member refid="structconnection__parameter_1a252756b4e1d3e7622570d664013f90bb" prot="public" virt="non-virtual"><scope>connection_parameter</scope><name>conn_interval_min</name></member>
+      <member refid="structconnection__parameter_1a5608bb2167a3d681ed80a5eb3bdea8a4" prot="public" virt="non-virtual"><scope>connection_parameter</scope><name>conn_latency</name></member>
+      <member refid="structconnection__parameter_1a5da881d213e0cc9479afdd5ce461b126" prot="public" virt="non-virtual"><scope>connection_parameter</scope><name>initiator_filter_policy</name></member>
+      <member refid="structconnection__parameter_1a59c89bb387310f9ee91afef640ae2c36" prot="public" virt="non-virtual"><scope>connection_parameter</scope><name>le_scan_interval</name></member>
+      <member refid="structconnection__parameter_1a99db3e2b6d2184dc5bac93cf86258bc7" prot="public" virt="non-virtual"><scope>connection_parameter</scope><name>le_scan_window</name></member>
+      <member refid="structconnection__parameter_1aa9643ca2b5a3ae583dc5a85a675b0ffb" prot="public" virt="non-virtual"><scope>connection_parameter</scope><name>maximum_ce_length</name></member>
+      <member refid="structconnection__parameter_1a24a8c32e92aec352c3e42c7559fc1c1e" prot="public" virt="non-virtual"><scope>connection_parameter</scope><name>minimum_ce_length</name></member>
+      <member refid="structconnection__parameter_1a28362c7242677773b7e962a20709c951" prot="public" virt="non-virtual"><scope>connection_parameter</scope><name>own_address_type</name></member>
+      <member refid="structconnection__parameter_1a376bc0aad76652bb24753971b05da6eb" prot="public" virt="non-virtual"><scope>connection_parameter</scope><name>peer_address</name></member>
+      <member refid="structconnection__parameter_1ab5e28141eb82bc6f9f94af3ec9e16fae" prot="public" virt="non-virtual"><scope>connection_parameter</scope><name>peer_address_type</name></member>
+      <member refid="structconnection__parameter_1a22db7bea064fc3ea31e90c76c30aee0f" prot="public" virt="non-virtual"><scope>connection_parameter</scope><name>supervision_timeout</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

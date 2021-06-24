@@ -1,0 +1,253 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="lmp__pdu_8h" kind="file" language="C++">
+    <compoundname>lmp_pdu.h</compoundname>
+    <includes local="yes">typedef.h</includes>
+    <includedby refid="bredr__link_8h" local="yes">/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h</includedby>
+    <includedby refid="lmp_8h" local="yes">/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h</includedby>
+    <incdepgraph>
+      <node id="5497">
+        <label>typedef.h</label>
+      </node>
+      <node id="5496">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_pdu.h</label>
+        <link refid="lmp_pdu.h"/>
+        <childnode refid="5497" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5503">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h</label>
+        <link refid="tws__sniff_8h"/>
+      </node>
+      <node id="5505">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_schedule.h</label>
+        <link refid="tws__schedule_8h"/>
+      </node>
+      <node id="5502">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h</label>
+        <link refid="tws__conn_8h"/>
+        <childnode refid="5503" relation="include">
+        </childnode>
+      </node>
+      <node id="5506">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h</label>
+        <link refid="lmp_8h"/>
+        <childnode refid="5507" relation="include">
+        </childnode>
+        <childnode refid="5502" relation="include">
+        </childnode>
+      </node>
+      <node id="5507">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_role_switch.h</label>
+        <link refid="lmp__role__switch_8h"/>
+      </node>
+      <node id="5504">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sbc_sync.h</label>
+        <link refid="tws__sbc__sync_8h"/>
+      </node>
+      <node id="5499">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h</label>
+        <link refid="bredr__link_8h"/>
+        <childnode refid="5500" relation="include">
+        </childnode>
+        <childnode refid="5501" relation="include">
+        </childnode>
+      </node>
+      <node id="5500">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c</label>
+        <link refid="tws__le__link_8c"/>
+      </node>
+      <node id="5501">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h</label>
+        <link refid="tws__link_8h"/>
+        <childnode refid="5502" relation="include">
+        </childnode>
+        <childnode refid="5504" relation="include">
+        </childnode>
+        <childnode refid="5505" relation="include">
+        </childnode>
+        <childnode refid="5503" relation="include">
+        </childnode>
+      </node>
+      <node id="5498">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_pdu.h</label>
+        <link refid="lmp_pdu.h"/>
+        <childnode refid="5499" relation="include">
+        </childnode>
+        <childnode refid="5506" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structlmp__esco__pdu" prot="public">lmp_esco_pdu</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="lmp__pdu_8h_1a1b7a0a01f737cf44202e0e0aaf823496" prot="public" static="no">
+        <name>SCO_HV1</name>
+        <initializer>0X00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_pdu.h" line="7" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_pdu.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lmp__pdu_8h_1a77a5714502150862249cbe36676f116e" prot="public" static="no">
+        <name>SCO_HV2</name>
+        <initializer>0X01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_pdu.h" line="8" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_pdu.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lmp__pdu_8h_1a4127660fff31308790756f9f6fc2cbeb" prot="public" static="no">
+        <name>SCO_HV3</name>
+        <initializer>0X02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_pdu.h" line="9" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_pdu.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lmp__pdu_8h_1a224bf0249ebb34135078fae061008861" prot="public" static="no">
+        <name>ESCO_REQ_EV3</name>
+        <initializer>0X07</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_pdu.h" line="11" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_pdu.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lmp__pdu_8h_1a6d391e98ee7d89635877299f3fa4e7f4" prot="public" static="no">
+        <name>ESCO_REQ_EV4</name>
+        <initializer>0X0C</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_pdu.h" line="12" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_pdu.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lmp__pdu_8h_1a78c5987a8e8c81e1a9adb0903d32da5a" prot="public" static="no">
+        <name>ESCO_REQ_EV5</name>
+        <initializer>0X0D</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_pdu.h" line="13" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_pdu.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lmp__pdu_8h_1a8a79c471c093d6a8c493cbb5c36e0d4f" prot="public" static="no">
+        <name>ESCO_REQ_2EV3</name>
+        <initializer>0X26</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_pdu.h" line="14" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_pdu.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lmp__pdu_8h_1a96a39de02079e5371f553f99e53e14c3" prot="public" static="no">
+        <name>ESCO_REQ_2EV5</name>
+        <initializer>0X2C</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_pdu.h" line="15" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_pdu.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lmp__pdu_8h_1a425a9e1da3bbda17b019af206945a3cb" prot="public" static="no">
+        <name>ESCO_REQ_3EV3</name>
+        <initializer>0X37</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_pdu.h" line="16" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_pdu.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lmp__pdu_8h_1a23c581fce3aac05f644fa882de0982c2" prot="public" static="no">
+        <name>ESCO_REQ_3EV5</name>
+        <initializer>0X3D</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_pdu.h" line="17" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_pdu.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>LMP_PDU_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LMP_PDU_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;typedef.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="lmp__pdu_8h_1a1b7a0a01f737cf44202e0e0aaf823496" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SCO_HV1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0X00</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="lmp__pdu_8h_1a77a5714502150862249cbe36676f116e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SCO_HV2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0X01</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="lmp__pdu_8h_1a4127660fff31308790756f9f6fc2cbeb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SCO_HV3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0X02</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="lmp__pdu_8h_1a224bf0249ebb34135078fae061008861" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ESCO_REQ_EV3<sp/><sp/><sp/>0X07</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="lmp__pdu_8h_1a6d391e98ee7d89635877299f3fa4e7f4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ESCO_REQ_EV4<sp/><sp/><sp/>0X0C</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="lmp__pdu_8h_1a78c5987a8e8c81e1a9adb0903d32da5a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ESCO_REQ_EV5<sp/><sp/><sp/>0X0D</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="lmp__pdu_8h_1a8a79c471c093d6a8c493cbb5c36e0d4f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ESCO_REQ_2EV3<sp/><sp/>0X26</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="lmp__pdu_8h_1a96a39de02079e5371f553f99e53e14c3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ESCO_REQ_2EV5<sp/><sp/>0X2C</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="lmp__pdu_8h_1a425a9e1da3bbda17b019af206945a3cb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ESCO_REQ_3EV3<sp/><sp/>0X37</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="lmp__pdu_8h_1a23c581fce3aac05f644fa882de0982c2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ESCO_REQ_3EV5<sp/><sp/>0X3D</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="structlmp__esco__pdu" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structlmp__esco__pdu" kindref="compound">lmp_esco_pdu</ref><sp/>{</highlight></codeline>
+<codeline lineno="20" refid="structlmp__esco__pdu_1a5f3cdd41a16f67ef4da84bac2354c5ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/><ref refid="structlmp__esco__pdu_1a5f3cdd41a16f67ef4da84bac2354c5ae" kindref="member">handle</ref>;</highlight></codeline>
+<codeline lineno="21" refid="structlmp__esco__pdu_1abe3010c8b4cefd6fde559c2d80a144cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/><ref refid="structlmp__esco__pdu_1abe3010c8b4cefd6fde559c2d80a144cd" kindref="member">lt_addr</ref>:<sp/>4;</highlight></codeline>
+<codeline lineno="22" refid="structlmp__esco__pdu_1a8e9836365e7586f877025b4527a4bf30" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/><ref refid="structlmp__esco__pdu_1a8e9836365e7586f877025b4527a4bf30" kindref="member">tws_lt_addr</ref>:<sp/>4;</highlight></codeline>
+<codeline lineno="23" refid="structlmp__esco__pdu_1a9b8f9131b3d38babd43f0675cda85f40" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/><ref refid="structlmp__esco__pdu_1a9b8f9131b3d38babd43f0675cda85f40" kindref="member">timing_flags</ref>;</highlight></codeline>
+<codeline lineno="24" refid="structlmp__esco__pdu_1a8a0ea8238b6343d4c00a2e31232806f0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/><ref refid="structlmp__esco__pdu_1a8a0ea8238b6343d4c00a2e31232806f0" kindref="member">D_sco</ref>;</highlight></codeline>
+<codeline lineno="25" refid="structlmp__esco__pdu_1a2cca1b0e3fa30273ec55266ac03b9d93" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/><ref refid="structlmp__esco__pdu_1a2cca1b0e3fa30273ec55266ac03b9d93" kindref="member">T_sco</ref>;</highlight></codeline>
+<codeline lineno="26" refid="structlmp__esco__pdu_1a0d3aed6e66bac2ad58af283f0fe053fe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/><ref refid="structlmp__esco__pdu_1a0d3aed6e66bac2ad58af283f0fe053fe" kindref="member">W_sco</ref>;</highlight></codeline>
+<codeline lineno="27" refid="structlmp__esco__pdu_1ab84466de4e8103968af59b8d9e4c92d0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/><ref refid="structlmp__esco__pdu_1ab84466de4e8103968af59b8d9e4c92d0" kindref="member">packet_type_m2s</ref>;</highlight></codeline>
+<codeline lineno="28" refid="structlmp__esco__pdu_1ad26e38674f1c7ac6d427fd6176705614" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/><ref refid="structlmp__esco__pdu_1ad26e38674f1c7ac6d427fd6176705614" kindref="member">packet_type_s2m</ref>;</highlight></codeline>
+<codeline lineno="29" refid="structlmp__esco__pdu_1a2440e31a2dbfda94373defb3fd3426c1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/><ref refid="structlmp__esco__pdu_1a2440e31a2dbfda94373defb3fd3426c1" kindref="member">air_mode</ref>;</highlight></codeline>
+<codeline lineno="30" refid="structlmp__esco__pdu_1a2d9683dd70d32c71ea8f501b529ee919" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/><ref refid="structlmp__esco__pdu_1a2d9683dd70d32c71ea8f501b529ee919" kindref="member">negotiation_state</ref>;</highlight></codeline>
+<codeline lineno="31" refid="structlmp__esco__pdu_1a8825d428c47a863c65c9bcb7a252260a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structlmp__esco__pdu_1a8825d428c47a863c65c9bcb7a252260a" kindref="member">packet_len_m2s</ref>;</highlight></codeline>
+<codeline lineno="32" refid="structlmp__esco__pdu_1ac80b673597f935c76e1513d70078d9e1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structlmp__esco__pdu_1ac80b673597f935c76e1513d70078d9e1" kindref="member">packet_len_s2m</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_pdu.h"/>
+  </compounddef>
+</doxygen>

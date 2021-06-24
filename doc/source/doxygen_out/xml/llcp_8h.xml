@@ -1,0 +1,1746 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="llcp_8h" kind="file" language="C++">
+    <compoundname>llcp.h</compoundname>
+    <includes local="yes">typedef.h</includes>
+    <includes refid="ll__defines_8h" local="yes">ll_defines.h</includes>
+    <includedby refid="link__layer_8h" local="yes">/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h</includedby>
+    <incdepgraph>
+      <node id="5171">
+        <label>typedef.h</label>
+      </node>
+      <node id="5170">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h</label>
+        <link refid="llcp.h"/>
+        <childnode refid="5171" relation="include">
+        </childnode>
+        <childnode refid="5172" relation="include">
+        </childnode>
+      </node>
+      <node id="5172">
+        <label>ll_defines.h</label>
+        <link refid="ll__defines_8h"/>
+        <childnode refid="5171" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5205">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_vendor.c</label>
+        <link refid="ll__vendor_8c"/>
+      </node>
+      <node id="5226">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_manager.h</label>
+        <link refid="link__manager_8h"/>
+      </node>
+      <node id="5176">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/hci_ll_cmds.c</label>
+        <link refid="hci__ll__cmds_8c"/>
+      </node>
+      <node id="5200">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_pc.c</label>
+        <link refid="ll__pc_8c"/>
+      </node>
+      <node id="5215">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_pc.c</label>
+        <link refid="llcp__sm__pc_8c"/>
+      </node>
+      <node id="5186">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_common_iso.c</label>
+        <link refid="ll__common__iso_8c"/>
+      </node>
+      <node id="5204">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_slave.c</label>
+        <link refid="ll__slave_8c"/>
+      </node>
+      <node id="5196">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_keys.c</label>
+        <link refid="ll__keys_8c"/>
+      </node>
+      <node id="5193">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_extended_advertising.c</label>
+        <link refid="ll__extended__advertising_8c"/>
+      </node>
+      <node id="5211">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_conn_update.c</label>
+        <link refid="llcp__sm__conn__update_8c"/>
+      </node>
+      <node id="5177">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/link_layer.c</label>
+        <link refid="link__layer_8c"/>
+      </node>
+      <node id="5218">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_sca.c</label>
+        <link refid="llcp__sm__sca_8c"/>
+      </node>
+      <node id="5180">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis.c</label>
+        <link refid="ll__bis_8c"/>
+      </node>
+      <node id="5181">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis_master.c</label>
+        <link refid="ll__bis__master_8c"/>
+      </node>
+      <node id="5190">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_ext_adv.c</label>
+        <link refid="ll__ext__adv_8c"/>
+      </node>
+      <node id="5210">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_common.c</label>
+        <link refid="llcp__sm__common_8c"/>
+      </node>
+      <node id="5191">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_ext_init.c</label>
+        <link refid="ll__ext__init_8c"/>
+      </node>
+      <node id="5188">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_data_extension.c</label>
+        <link refid="ll__data__extension_8c"/>
+      </node>
+      <node id="5183">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis.c</label>
+        <link refid="ll__cis_8c"/>
+      </node>
+      <node id="5178">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_adv.c</label>
+        <link refid="ll__adv_8c"/>
+      </node>
+      <node id="5187">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cte.c</label>
+        <link refid="ll__cte_8c"/>
+      </node>
+      <node id="5221">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_acc.c</label>
+        <link refid="tws__le__acc_8c"/>
+      </node>
+      <node id="5197">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_master.c</label>
+        <link refid="ll__master_8c"/>
+      </node>
+      <node id="5216">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_phy_update.c</label>
+        <link refid="llcp__sm__phy__update_8c"/>
+      </node>
+      <node id="5175">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/hci_ll.c</label>
+        <link refid="hci__ll_8c"/>
+      </node>
+      <node id="5224">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_scan.c</label>
+        <link refid="tws__ll__scan_8c"/>
+      </node>
+      <node id="5202">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_resolve_list.c</label>
+        <link refid="ll__resolve__list_8c"/>
+      </node>
+      <node id="5209">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_cis_terminate.c</label>
+        <link refid="llcp__sm__cis__terminate_8c"/>
+      </node>
+      <node id="5219">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_template.c</label>
+        <link refid="llcp__sm__template_8c"/>
+      </node>
+      <node id="5206">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_white_list.c</label>
+        <link refid="ll__white__list_8c"/>
+      </node>
+      <node id="5194">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_init.c</label>
+        <link refid="ll__init_8c"/>
+      </node>
+      <node id="5189">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_events.c</label>
+        <link refid="ll__events_8c"/>
+      </node>
+      <node id="5173">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h</label>
+        <link refid="llcp.h"/>
+        <childnode refid="5174" relation="include">
+        </childnode>
+      </node>
+      <node id="5220">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_vendor_jl.c</label>
+        <link refid="llcp__sm__vendor__jl_8c"/>
+      </node>
+      <node id="5208">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_cis.c</label>
+        <link refid="llcp__sm__cis_8c"/>
+      </node>
+      <node id="5222">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c</label>
+        <link refid="tws__le__link_8c"/>
+      </node>
+      <node id="5207">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_bis.c</label>
+        <link refid="llcp__sm__bis_8c"/>
+      </node>
+      <node id="5182">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_bis_slave.c</label>
+        <link refid="ll__bis__slave_8c"/>
+      </node>
+      <node id="5212">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_cte.c</label>
+        <link refid="llcp__sm__cte_8c"/>
+      </node>
+      <node id="5223">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_adv.c</label>
+        <link refid="tws__ll__adv_8c"/>
+      </node>
+      <node id="5217">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_ping.c</label>
+        <link refid="llcp__sm__ping_8c"/>
+      </node>
+      <node id="5185">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis_slave.c</label>
+        <link refid="ll__cis__slave_8c"/>
+      </node>
+      <node id="5198">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_msg.c</label>
+        <link refid="ll__msg_8c"/>
+      </node>
+      <node id="5174">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h</label>
+        <link refid="link__layer_8h"/>
+        <childnode refid="5175" relation="include">
+        </childnode>
+        <childnode refid="5176" relation="include">
+        </childnode>
+        <childnode refid="5177" relation="include">
+        </childnode>
+        <childnode refid="5178" relation="include">
+        </childnode>
+        <childnode refid="5179" relation="include">
+        </childnode>
+        <childnode refid="5180" relation="include">
+        </childnode>
+        <childnode refid="5181" relation="include">
+        </childnode>
+        <childnode refid="5182" relation="include">
+        </childnode>
+        <childnode refid="5183" relation="include">
+        </childnode>
+        <childnode refid="5184" relation="include">
+        </childnode>
+        <childnode refid="5185" relation="include">
+        </childnode>
+        <childnode refid="5186" relation="include">
+        </childnode>
+        <childnode refid="5187" relation="include">
+        </childnode>
+        <childnode refid="5188" relation="include">
+        </childnode>
+        <childnode refid="5189" relation="include">
+        </childnode>
+        <childnode refid="5190" relation="include">
+        </childnode>
+        <childnode refid="5191" relation="include">
+        </childnode>
+        <childnode refid="5192" relation="include">
+        </childnode>
+        <childnode refid="5193" relation="include">
+        </childnode>
+        <childnode refid="5194" relation="include">
+        </childnode>
+        <childnode refid="5195" relation="include">
+        </childnode>
+        <childnode refid="5196" relation="include">
+        </childnode>
+        <childnode refid="5197" relation="include">
+        </childnode>
+        <childnode refid="5198" relation="include">
+        </childnode>
+        <childnode refid="5199" relation="include">
+        </childnode>
+        <childnode refid="5200" relation="include">
+        </childnode>
+        <childnode refid="5201" relation="include">
+        </childnode>
+        <childnode refid="5202" relation="include">
+        </childnode>
+        <childnode refid="5203" relation="include">
+        </childnode>
+        <childnode refid="5204" relation="include">
+        </childnode>
+        <childnode refid="5205" relation="include">
+        </childnode>
+        <childnode refid="5206" relation="include">
+        </childnode>
+        <childnode refid="5207" relation="include">
+        </childnode>
+        <childnode refid="5208" relation="include">
+        </childnode>
+        <childnode refid="5209" relation="include">
+        </childnode>
+        <childnode refid="5210" relation="include">
+        </childnode>
+        <childnode refid="5211" relation="include">
+        </childnode>
+        <childnode refid="5212" relation="include">
+        </childnode>
+        <childnode refid="5213" relation="include">
+        </childnode>
+        <childnode refid="5214" relation="include">
+        </childnode>
+        <childnode refid="5215" relation="include">
+        </childnode>
+        <childnode refid="5216" relation="include">
+        </childnode>
+        <childnode refid="5217" relation="include">
+        </childnode>
+        <childnode refid="5218" relation="include">
+        </childnode>
+        <childnode refid="5219" relation="include">
+        </childnode>
+        <childnode refid="5220" relation="include">
+        </childnode>
+        <childnode refid="5221" relation="include">
+        </childnode>
+        <childnode refid="5222" relation="include">
+        </childnode>
+        <childnode refid="5223" relation="include">
+        </childnode>
+        <childnode refid="5224" relation="include">
+        </childnode>
+        <childnode refid="5225" relation="include">
+        </childnode>
+        <childnode refid="5226" relation="include">
+        </childnode>
+      </node>
+      <node id="5225">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h</label>
+        <link refid="ll__cis_8h"/>
+        <childnode refid="5174" relation="include">
+        </childnode>
+      </node>
+      <node id="5192">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_ext_scan.c</label>
+        <link refid="ll__ext__scan_8c"/>
+      </node>
+      <node id="5213">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_data_extension.c</label>
+        <link refid="llcp__sm__data__extension_8c"/>
+      </node>
+      <node id="5203">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_scan.c</label>
+        <link refid="ll__scan_8c"/>
+      </node>
+      <node id="5199">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_multiple_phys.c</label>
+        <link refid="ll__multiple__phys_8c"/>
+      </node>
+      <node id="5179">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_afh.c</label>
+        <link refid="ll__afh_8c"/>
+      </node>
+      <node id="5195">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_isoal.c</label>
+        <link refid="ll__isoal_8c"/>
+      </node>
+      <node id="5184">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis_master.c</label>
+        <link refid="ll__cis__master_8c"/>
+      </node>
+      <node id="5201">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_periodic_advertising.c</label>
+        <link refid="ll__periodic__advertising_8c"/>
+      </node>
+      <node id="5214">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_encrypt.c</label>
+        <link refid="llcp__sm__encrypt_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structconnection__update__parameter__t" prot="public">connection_update_parameter_t</innerclass>
+    <innerclass refid="structll__msg__conn__update__t" prot="public">ll_msg_conn_update_t</innerclass>
+    <innerclass refid="structll__msg__conn__param__reply__t" prot="public">ll_msg_conn_param_reply_t</innerclass>
+    <innerclass refid="structll__msg__conn__param__nagative__reply__t" prot="public">ll_msg_conn_param_nagative_reply_t</innerclass>
+    <innerclass refid="structll__msg__disconnect__t" prot="public">ll_msg_disconnect_t</innerclass>
+    <innerclass refid="structll__msg__start__encryption__parameter__t" prot="public">ll_msg_start_encryption_parameter_t</innerclass>
+    <innerclass refid="structll__msg__long__term__key__request__reply__parameter__t" prot="public">ll_msg_long_term_key_request_reply_parameter_t</innerclass>
+    <innerclass refid="structhost__channel__classification" prot="public">host_channel_classification</innerclass>
+    <innerclass refid="structll__msg__data__length__t" prot="public">ll_msg_data_length_t</innerclass>
+    <innerclass refid="structll__msg__cte__req__parameter__t" prot="public">ll_msg_cte_req_parameter_t</innerclass>
+    <innerclass refid="structll__msg__cte__respond__t" prot="public">ll_msg_cte_respond_t</innerclass>
+    <innerclass refid="structll__msg__phy__parameter__t" prot="public">ll_msg_phy_parameter_t</innerclass>
+    <innerclass refid="structll__msg__sca__t" prot="public">ll_msg_sca_t</innerclass>
+    <innerclass refid="structll__msg__cis__t" prot="public">ll_msg_cis_t</innerclass>
+    <innerclass refid="structll__msg__bis__t" prot="public">ll_msg_bis_t</innerclass>
+    <innerclass refid="structll__msg__pc__t" prot="public">ll_msg_pc_t</innerclass>
+    <innerclass refid="unionll__conn__msg__t" prot="public">ll_conn_msg_t</innerclass>
+    <innerclass refid="structllcp__ctx__t" prot="public">llcp_ctx_t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="llcp_8h_1ae5781075a72bb4996c28d4f3826e1110" prot="public" static="no">
+        <name>LLCP_PERFERRED_ACTIVE</name>
+        <initializer>0</initializer>
+        <briefdescription>
+<para>LLCP 调度偏好设置，是否优先选择Active 流程 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="24" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="llcp_8h_1aa618c4d8c29ef4efe6f10c741fb1f47a" prot="public" static="no">
+        <name>@73</name>
+        <enumvalue id="llcp_8h_1aa618c4d8c29ef4efe6f10c741fb1f47aa85b1b3d1c5b91fa462cd82408584d63b" prot="public">
+          <name>LLCP_FEAT_COMMON</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp_8h_1aa618c4d8c29ef4efe6f10c741fb1f47aaa4bd1c50f4d62e6d6f64a89eb9113ec6" prot="public">
+          <name>LLCP_FEAT_ENCRYPT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp_8h_1aa618c4d8c29ef4efe6f10c741fb1f47aa25f81b1ebb6efce07bb785c799d5dd5f" prot="public">
+          <name>LLCP_FEAT_CONNECTION_UPDATE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp_8h_1aa618c4d8c29ef4efe6f10c741fb1f47aaa2f2a3b5ce0cf425c82c6adf56fce713" prot="public">
+          <name>LLCP_FEAT_PING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp_8h_1aa618c4d8c29ef4efe6f10c741fb1f47aa3346e1e79887cc9f4633fde99f1ff4f8" prot="public">
+          <name>LLCP_FEAT_DATA_EXTENSION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp_8h_1aa618c4d8c29ef4efe6f10c741fb1f47aaf976356c979ac1a8a1a082deeae49222" prot="public">
+          <name>LLCP_FEAT_PHY_UPDATE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp_8h_1aa618c4d8c29ef4efe6f10c741fb1f47aa1c2a3a84b4525373d63307f18e132623" prot="public">
+          <name>LLCP_FEAT_CTE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp_8h_1aa618c4d8c29ef4efe6f10c741fb1f47aafbf8a79cca36978e2c33f541f8f92450" prot="public">
+          <name>LLCP_FEAT_CIS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp_8h_1aa618c4d8c29ef4efe6f10c741fb1f47aa85a8190cf0d2dbeea67fc2af6e477fc6" prot="public">
+          <name>LLCP_FEAT_CIS_TERM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp_8h_1aa618c4d8c29ef4efe6f10c741fb1f47aabc54f1f07a8ffdd64490dbf24519b7ad" prot="public">
+          <name>LLCP_FEAT_POWER_CONTROL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp_8h_1aa618c4d8c29ef4efe6f10c741fb1f47aa16efb4ae883b76f366e269cbb1dbde24" prot="public">
+          <name>LLCP_FEAT_SCA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp_8h_1aa618c4d8c29ef4efe6f10c741fb1f47aab627d2d892a470f07f99f84cc075a8c8" prot="public">
+          <name>LLCP_FEAT_TOTAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp_8h_1aa618c4d8c29ef4efe6f10c741fb1f47aa8518898ade683df0824a44a852342039" prot="public">
+          <name>LLCP_FEAT_FIRST_SM</name>
+          <initializer>= LLCP_FEAT_COMMON</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>First state machine. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp_8h_1aa618c4d8c29ef4efe6f10c741fb1f47aac0446fa0da77e8e0a8f3c5f72b372f32" prot="public">
+          <name>LLCP_FEAT_LAST_SM</name>
+          <initializer>= LLCP_FEAT_TOTAL</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Last state machine. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp_8h_1aa618c4d8c29ef4efe6f10c741fb1f47aa7c7b76858c8d8a2cf305177cff7d2b65" prot="public">
+          <name>LLCP_FEAT_ALL</name>
+          <initializer>= 0xFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Broadcast message type. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>LLCP Feature Set Table. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="27" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="27" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="enum" id="llcp_8h_1ad63240694c6dc2a28c24bfc2db90ad7a" prot="public" static="no">
+        <name>@74</name>
+        <enumvalue id="llcp_8h_1ad63240694c6dc2a28c24bfc2db90ad7aa5c842f9e4740da29b2c919fb74b71d2f" prot="public">
+          <name>LLCP_CHANNEL_CLASS_UPDATE_MASTER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Channel Map handler Master </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp_8h_1ad63240694c6dc2a28c24bfc2db90ad7aaa1c9486159d4f8e25ab42f00182d672c" prot="public">
+          <name>LLCP_CHANNEL_CLASS_UPDATE_ADV</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Channel Map handler Secondary / Periodic Adv </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp_8h_1ad63240694c6dc2a28c24bfc2db90ad7aa640fcab4c71c73fa096f5d09dcbe6476" prot="public">
+          <name>LLCP_CHANNEL_CLASS_UPDATE_BIS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Channel Map handler BIS Broadcaster </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp_8h_1ad63240694c6dc2a28c24bfc2db90ad7aab523fd865ff5c233877fb31d7ce57bc1" prot="public">
+          <name>LLCP_CHANNEL_CLASS_UPDATE_CIS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Channel Map handler CIS Master </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp_8h_1ad63240694c6dc2a28c24bfc2db90ad7aa9b0044e44597f4e2f850ec7abf21ee8d" prot="public">
+          <name>LLCP_CHANNEL_CLASS_UPDATE_HANDLERS_TOTOAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp_8h_1ad63240694c6dc2a28c24bfc2db90ad7aa500a72e5933da425bda3c8293fed4e6d" prot="public">
+          <name>LLCP_CHANNEL_MAP_FIRST</name>
+          <initializer>= LLCP_CHANNEL_CLASS_UPDATE_MASTER</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>First . </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp_8h_1ad63240694c6dc2a28c24bfc2db90ad7aaa316876e41f151fe2b44c6d1602bc599" prot="public">
+          <name>LLCP_CHANNEL_MAP_LAST</name>
+          <initializer>= LLCP_CHANNEL_CLASS_UPDATE_HANDLERS_TOTOAL</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Last . </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Channel Classification Table. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="50" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="50" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="enum" id="llcp_8h_1a7859c0a3efa8b1c360f5c2376baf051e" prot="public" static="no">
+        <name>@75</name>
+        <enumvalue id="llcp_8h_1a7859c0a3efa8b1c360f5c2376baf051ea54bad06d1d2f12ae53d5529ae78f90df" prot="public">
+          <name>LLCP_STATE_IDLE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp_8h_1a7859c0a3efa8b1c360f5c2376baf051eae7f89dbd485609415a6687b4442f2301" prot="public">
+          <name>LLCP_STATE_BUSY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>LLCP State. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="63" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="63" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="enum" id="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7" prot="public" static="no">
+        <name>@76</name>
+        <enumvalue id="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7ae3283db33818e94cbbdff4358a443dc8" prot="public">
+          <name>LLCP_ID_NULL</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7a90a114aaf23897b6261a25bc7f2c479b" prot="public">
+          <name>LLCP_ID_FEATURES_EXCHANGE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7a3996fe22c155c953e3373fb2b9daf5d7" prot="public">
+          <name>LLCP_ID_VERSION_EXCHANGE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7a95d11b4550b0fb19c2110deed499d5d9" prot="public">
+          <name>LLCP_ID_ENCRYPTION_START</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7a27cc01e9eed9989cd03a9d37e0568922" prot="public">
+          <name>LLCP_ID_CONN_UPDATE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7a4cbd917a271d1297c75d4e2a12f2b037" prot="public">
+          <name>LLCP_ID_TERMINATION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7a337e1b1f9a31d0992fb3f3c5678a7c08" prot="public">
+          <name>LLCP_ID_CHANNEL_MAP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7a403c7ef86434d77efea75801e485a60b" prot="public">
+          <name>LLCP_ID_PING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7a26dc82d3d2fc61c893e25fcae65ac703" prot="public">
+          <name>LLCP_ID_DATA_EXTENSION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7af5d39bcace9d5d8522f95eb4f7ceaacf" prot="public">
+          <name>LLCP_ID_PHY_UPDATE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7a15d8d613cd686e3553a1ebd9c28759fe" prot="public">
+          <name>LLCP_ID_CTE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7a2976a9d0a8b9b02f3c7ae7e75d1d57f8" prot="public">
+          <name>LLCP_ID_CIS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7abb2f74bc09d724d9bfda44f99684d981" prot="public">
+          <name>LLCP_ID_CIS_TERMINATION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7a9c4ae8d39b5e6140182f383f5fee75f3" prot="public">
+          <name>LLCP_ID_SCA_UPDATE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7ab4a00f7c6dd5e5e96ae83fe51b3d8dc7" prot="public">
+          <name>LLCP_ID_PC_UPDATE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7a414152beb6be5f67e4d9ef7c3492731f" prot="public">
+          <name>LLCP_ID_TOTAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7a7623252d7e48d1902c5b9a8ecdd371b7" prot="public">
+          <name>LLCP_ID_FIRST</name>
+          <initializer>= LLCP_ID_FEATURES_EXCHANGE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7a70cf675b52c34ac7c7caec32049969e2" prot="public">
+          <name>LLCP_ID_LAST</name>
+          <initializer>= LLCP_ID_TOTAL</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>LLCP Procedure ID. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="69" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="69" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="enum" id="llcp_8h_1abe974f22edeef8189603ba75fd90ff3c" prot="public" static="no">
+        <name>@77</name>
+        <enumvalue id="llcp_8h_1abe974f22edeef8189603ba75fd90ff3cae93dd01d1f885a11e410c500c99ad6bd" prot="public">
+          <name>LLCP_ENC_DISABLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp_8h_1abe974f22edeef8189603ba75fd90ff3ca62b89c3e1b5bc02ddbad499534b58140" prot="public">
+          <name>LLCP_WAIT_RECV_PAUSE_ENC_RSP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp_8h_1abe974f22edeef8189603ba75fd90ff3cace0fcccefaa5a5e12463f393677ebfee" prot="public">
+          <name>LLCP_WAIT_RECV_ENC_RSP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp_8h_1abe974f22edeef8189603ba75fd90ff3ca1d658f4277ac6fe55e3ac251e76a3f80" prot="public">
+          <name>LLCP_WAIT_RECV_ENC_START_RSP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp_8h_1abe974f22edeef8189603ba75fd90ff3cac85b5feede707e13ba9d2bf236bdf00a" prot="public">
+          <name>LLCP_ENC_ENABLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>LLCP Encryption State. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="92" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="92" bodyend="98"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="llcp_8h_1a9e3b6c56b0186db0ac80c40a32966f6a" prot="public" static="no">
+        <type>struct <ref refid="structhost__channel__classification" kindref="compound">host_channel_classification</ref></type>
+        <definition>typedef struct host_channel_classification  ll_msg_host_channel_classification_t</definition>
+        <argsstring></argsstring>
+        <name>ll_msg_host_channel_classification_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="152" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="llcp_8h_1a10fd612814208aee3eb9e5f62592ceb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ll_msg_string_dump</definition>
+        <argsstring>(uint8_t event)</argsstring>
+        <name>ll_msg_string_dump</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="248" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_strings.c" bodystart="180" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="llcp_8h_1a94712b11c209f1323dfa30034e4c3e84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ll_ctrl_pdu_string_dump</definition>
+        <argsstring>(uint8_t opcode)</argsstring>
+        <name>ll_ctrl_pdu_string_dump</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>opcode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="250" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_strings.c" bodystart="185" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="llcp_8h_1a65c2a9d1a7f00df2b56201bfedf674a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void llcp_mst_common_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>llcp_mst_common_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Feature Exchange Host API. </para>        </briefdescription>
+        <detaileddescription>
+<para>: llcp_mst_common_init </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="253" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_common.c" bodystart="1784" bodyend="1787"/>
+      </memberdef>
+      <memberdef kind="function" id="llcp_8h_1af3bd8caafa761b6e1a20cd491d61e6dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void llcp_slv_common_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>llcp_slv_common_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>: llcp_slv_common_init </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="255" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_common.c" bodystart="1794" bodyend="1797"/>
+      </memberdef>
+      <memberdef kind="function" id="llcp_8h_1af428ab78966fc14289e869727f4ec24e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_features_exchange</definition>
+        <argsstring>(uint16_t handle)</argsstring>
+        <name>ll_features_exchange</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Brief : Host 发起 Features Exchange 流程</para><para>Param : handle ACL Handle</para><para>Return : 命令返回值 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="257" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_common.c" bodystart="1641" bodyend="1666"/>
+      </memberdef>
+      <memberdef kind="function" id="llcp_8h_1a72a5dd7b068a9e7e4b970bdc01a4f356" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_termination</definition>
+        <argsstring>(uint16_t handle, uint8_t reason)</argsstring>
+        <name>ll_termination</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>reason</declname>
+        </param>
+        <briefdescription>
+<para>Termination Host API. </para>        </briefdescription>
+        <detaileddescription>
+<para>: ll_termination</para><para>: handle  : reason</para><para>: </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="260" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_common.c" bodystart="1678" bodyend="1705"/>
+      </memberdef>
+      <memberdef kind="function" id="llcp_8h_1a1ae04641a08ec1c2686f63a854b73f91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_version_exchange</definition>
+        <argsstring>(uint16_t handle)</argsstring>
+        <name>ll_version_exchange</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+<para>Version Exchange Host API. </para>        </briefdescription>
+        <detaileddescription>
+<para>: ll_version_exchange</para><para>: handle</para><para>: </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="263" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_common.c" bodystart="1759" bodyend="1777"/>
+      </memberdef>
+      <memberdef kind="function" id="llcp_8h_1a92f18f22441e210842a629fb6c792508" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_set_host_channel_classification</definition>
+        <argsstring>(const uint8_t *channel_map)</argsstring>
+        <name>ll_set_host_channel_classification</name>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>channel_map</declname>
+        </param>
+        <briefdescription>
+<para>Channel Map Host API. </para>        </briefdescription>
+        <detaileddescription>
+<para>: ll_set_host_channel_classification</para><para>: channel_map</para><para>: </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="266" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_common.c" bodystart="1716" bodyend="1748"/>
+      </memberdef>
+      <memberdef kind="function" id="llcp_8h_1a3787cb867d6d3acae75f1539bc5f2744" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void llcp_mst_encrypt_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>llcp_mst_encrypt_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Encryption Host API. </para>        </briefdescription>
+        <detaileddescription>
+<para>: llcp_mst_encrypt_init </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="269" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_encrypt.c" bodystart="1072" bodyend="1077"/>
+      </memberdef>
+      <memberdef kind="function" id="llcp_8h_1a1b13a7a6cde96bc20bdb33b9b163f709" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void llcp_slv_encrypt_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>llcp_slv_encrypt_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>: llcp_slv_encrypt_init </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="271" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_encrypt.c" bodystart="1060" bodyend="1065"/>
+      </memberdef>
+      <memberdef kind="function" id="llcp_8h_1a638333bd74f320cd5c9943d15bf2fc22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_enable_encryption</definition>
+        <argsstring>(const struct hci_le_start_encryption_parameter *param)</argsstring>
+        <name>ll_enable_encryption</name>
+        <param>
+          <type>const struct <ref refid="structhci__le__start__encryption__parameter" kindref="compound">hci_le_start_encryption_parameter</ref> *</type>
+          <declname>param</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>: Host 发起 Start Encryption 流程</para><para>: param 加密相关内容</para><para>Return : 命令返回值 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="273" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_encrypt.c" bodystart="963" bodyend="996"/>
+      </memberdef>
+      <memberdef kind="function" id="llcp_8h_1a6edd646aeb175eca1bbc47b8dbe956da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_long_term_key_request_reply</definition>
+        <argsstring>(const struct hci_le_long_term_key_request_reply_parameter *param)</argsstring>
+        <name>ll_long_term_key_request_reply</name>
+        <param>
+          <type>const struct <ref refid="structhci__le__long__term__key__request__reply__parameter" kindref="compound">hci_le_long_term_key_request_reply_parameter</ref> *</type>
+          <declname>param</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>: Host 发起 Long Term Key Request Reply 流程</para><para>: param 加密相关内容</para><para>Return : 命令返回值 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="275" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_encrypt.c" bodystart="1007" bodyend="1030"/>
+      </memberdef>
+      <memberdef kind="function" id="llcp_8h_1a75ceb840ac4b75a72e733a3b8566176c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_long_term_key_request_nagative_reply</definition>
+        <argsstring>(uint16_t handle)</argsstring>
+        <name>ll_long_term_key_request_nagative_reply</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>: Host 发起 Long Term Key Request Negative Reply 流程</para><para>Param : handle ACL Handle</para><para>: </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="277" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_encrypt.c" bodystart="1041" bodyend="1053"/>
+      </memberdef>
+      <memberdef kind="function" id="llcp_8h_1a274ce2b5b6f34a79c30d67799b8b7b6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void llcp_mst_ping_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>llcp_mst_ping_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Ping Host API. </para>        </briefdescription>
+        <detaileddescription>
+<para>: llcp_mst_ping_init </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="280" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_ping.c" bodystart="372" bodyend="377"/>
+      </memberdef>
+      <memberdef kind="function" id="llcp_8h_1abb190e77c4ffa4b895ffb35325d3d4fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void llcp_slv_ping_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>llcp_slv_ping_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>: llcp_slv_ping_init </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="282" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_ping.c" bodystart="384" bodyend="389"/>
+      </memberdef>
+      <memberdef kind="function" id="llcp_8h_1a2a79d2c8b4f60c065f71ba17657340ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_write_authenticated_payload_timeout</definition>
+        <argsstring>(uint16_t handle, uint16_t timeout)</argsstring>
+        <name>ll_write_authenticated_payload_timeout</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>: ll_write_authenticated_payload_timeout</para><para>: handle  : timeout</para><para>: </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="284" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_ping.c" bodystart="337" bodyend="365"/>
+      </memberdef>
+      <memberdef kind="function" id="llcp_8h_1a8318097910693d1fb74a9a4cf7881448" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void llcp_mst_conn_update_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>llcp_mst_conn_update_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Connection Update Host API. </para>        </briefdescription>
+        <detaileddescription>
+<para>: llcp_slv_conn_update_init </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="287" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_conn_update.c" bodystart="1489" bodyend="1492"/>
+      </memberdef>
+      <memberdef kind="function" id="llcp_8h_1a0fc21951206c51f68d5c88defb261947" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void llcp_slv_conn_update_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>llcp_slv_conn_update_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>: llcp_slv_conn_update_init </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="289" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_conn_update.c" bodystart="1479" bodyend="1482"/>
+      </memberdef>
+      <memberdef kind="function" id="llcp_8h_1a8716a18d7777da35138f1bea47023dd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_connection_update</definition>
+        <argsstring>(const struct hci_le_connection_update_parameter *param)</argsstring>
+        <name>ll_connection_update</name>
+        <param>
+          <type>const struct <ref refid="structhci__le__connection__update__parameter" kindref="compound">hci_le_connection_update_parameter</ref> *</type>
+          <declname>param</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Brief : Host 发起 Features Exchange 流程</para><para>Param : handle ACL Handle</para><para>Return : 命令返回值 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="291" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_conn_update.c" bodystart="1321" bodyend="1369"/>
+      </memberdef>
+      <memberdef kind="function" id="llcp_8h_1a7029b0e385ae70458228560fff5feffe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_connection_parameters_requst_reply</definition>
+        <argsstring>(const struct hci_le_connection_update_parameter *param)</argsstring>
+        <name>ll_connection_parameters_requst_reply</name>
+        <param>
+          <type>const struct <ref refid="structhci__le__connection__update__parameter" kindref="compound">hci_le_connection_update_parameter</ref> *</type>
+          <declname>param</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>: ll_connection_parameters_requst_reply</para><para>: data</para><para>: </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="293" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_conn_update.c" bodystart="1380" bodyend="1427"/>
+      </memberdef>
+      <memberdef kind="function" id="llcp_8h_1a2c6e38580e2b5ac247722e32517b5aa9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_connection_parameters_requst_negative_reply</definition>
+        <argsstring>(uint16_t handle, uint8_t reason)</argsstring>
+        <name>ll_connection_parameters_requst_negative_reply</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>reason</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>: ll_connection_parameters_requst_negative_reply</para><para>: handle  : reason</para><para>: </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="295" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_conn_update.c" bodystart="1439" bodyend="1472"/>
+      </memberdef>
+      <memberdef kind="function" id="llcp_8h_1a0307f60b056a5ba61ecec1e95f70cfd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void llcp_mst_data_extension_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>llcp_mst_data_extension_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Data Extension Host API. </para>        </briefdescription>
+        <detaileddescription>
+<para>: llcp_mst_data_extension_init </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="298" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_data_extension.c" bodystart="408" bodyend="413"/>
+      </memberdef>
+      <memberdef kind="function" id="llcp_8h_1acc15f7ea9291a0e4279d637f6296bebc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void llcp_slv_data_extension_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>llcp_slv_data_extension_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>: llcp_slv_data_extension_init </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="300" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_data_extension.c" bodystart="420" bodyend="425"/>
+      </memberdef>
+      <memberdef kind="function" id="llcp_8h_1a777ef28bee0dda6ea8c72254e54e7479" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_set_data_length</definition>
+        <argsstring>(const struct hci_le_set_data_length_parameter *param)</argsstring>
+        <name>ll_set_data_length</name>
+        <param>
+          <type>const struct <ref refid="structhci__le__set__data__length__parameter" kindref="compound">hci_le_set_data_length_parameter</ref> *</type>
+          <declname>param</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>: ll_set_data_length</para><para>: param</para><para>: </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="302" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_data_extension.c" bodystart="373" bodyend="401"/>
+      </memberdef>
+      <memberdef kind="function" id="llcp_8h_1a3beed60433001ef61236e3b9c2438261" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void llcp_mst_connection_cte_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>llcp_mst_connection_cte_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Constant Tone Extension Host API. </para>        </briefdescription>
+        <detaileddescription>
+<para>: llcp_mst_connection_cte_init </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="306" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_cte.c" bodystart="318" bodyend="323"/>
+      </memberdef>
+      <memberdef kind="function" id="llcp_8h_1a4cd42e9543e29cab00276f92e8b30632" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void llcp_slv_connection_cte_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>llcp_slv_connection_cte_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>: llcp_slv_connection_cte_init </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="308" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_cte.c" bodystart="330" bodyend="335"/>
+      </memberdef>
+      <memberdef kind="function" id="llcp_8h_1a4c4d7edf9f0cc2d07982dd04b6898dac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_connection_cte_request_enable</definition>
+        <argsstring>(const struct hci_le_connection_cte_req_enable *param)</argsstring>
+        <name>ll_connection_cte_request_enable</name>
+        <param>
+          <type>const struct <ref refid="structhci__le__connection__cte__req__enable" kindref="compound">hci_le_connection_cte_req_enable</ref> *</type>
+          <declname>param</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>: ll_connection_cte_request_enable</para><para>: param</para><para>: </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="310" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_cte.c" bodystart="229" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="function" id="llcp_8h_1a7584ae1b515c0bf22cc18e7b7d33cc08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_connection_cte_respond_enable</definition>
+        <argsstring>(uint16_t conn_handle, uint8_t enable)</argsstring>
+        <name>ll_connection_cte_respond_enable</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>conn_handle</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>: ll_connection_cte_respond_enable</para><para>: conn_handle  : enable</para><para>: </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="312" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_cte.c" bodystart="279" bodyend="311"/>
+      </memberdef>
+      <memberdef kind="function" id="llcp_8h_1ab1af7383cf496159022279ba8bac1731" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void llcp_mst_cis_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>llcp_mst_cis_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Connection Isochronous Stream Host API. </para>        </briefdescription>
+        <detaileddescription>
+<para>: llcp_mst_cis_init </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="315" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_cis.c" bodystart="1406" bodyend="1411"/>
+      </memberdef>
+      <memberdef kind="function" id="llcp_8h_1ab4f37c4365bc67454020d956b77d5400" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void llcp_slv_cis_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>llcp_slv_cis_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>: llcp_slv_cis_init </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="317" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_cis.c" bodystart="1418" bodyend="1423"/>
+      </memberdef>
+      <memberdef kind="function" id="llcp_8h_1a4dca8eeb7912dfa21c9fa56a03ca6ea5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void llcp_mst_cis_term_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>llcp_mst_cis_term_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>: llcp_mst_cis_term_init </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="319" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_cis_terminate.c" bodystart="384" bodyend="387"/>
+      </memberdef>
+      <memberdef kind="function" id="llcp_8h_1a4db72fd6665da81ee7c8cce107627480" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void llcp_slv_cis_term_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>llcp_slv_cis_term_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>: llcp_slv_cis_term_init </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="321" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_cis_terminate.c" bodystart="394" bodyend="397"/>
+      </memberdef>
+      <memberdef kind="function" id="llcp_8h_1a07dd21c1c933ec4663316713e0ab532d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_cis_termination</definition>
+        <argsstring>(uint16_t handle, uint8_t reason)</argsstring>
+        <name>ll_cis_termination</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>reason</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>: ll_cis_termination</para><para>: handle  : reason</para><para>: </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="323" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_cis_terminate.c" bodystart="338" bodyend="377"/>
+      </memberdef>
+      <memberdef kind="function" id="llcp_8h_1ac7eb5c4d8140f3f356f170a40f0b5be7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_modify_sleep_clock_accuracy</definition>
+        <argsstring>(uint8_t action)</argsstring>
+        <name>ll_modify_sleep_clock_accuracy</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+<para>Sleep Clock Accuracy Host API. </para>        </briefdescription>
+        <detaileddescription>
+<para>: ll_modify_sleep_clock_accuracy</para><para>: action </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="326" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_sca.c" bodystart="382" bodyend="447"/>
+      </memberdef>
+      <memberdef kind="function" id="llcp_8h_1a45cbd85b2e8b55886abbb309c493f91a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_request_peer_sca</definition>
+        <argsstring>(uint16_t handle)</argsstring>
+        <name>ll_request_peer_sca</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>: ll_request_peer_sca</para><para>: handle </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="328" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_sca.c" bodystart="456" bodyend="488"/>
+      </memberdef>
+      <memberdef kind="function" id="llcp_8h_1a1d55146776faeca87f154dd6394df1ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void llcp_mst_sca_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>llcp_mst_sca_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>: llcp_mst_sca_init </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="330" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_sca.c" bodystart="496" bodyend="501"/>
+      </memberdef>
+      <memberdef kind="function" id="llcp_8h_1a7a66d125b763d1992935970362649d62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void llcp_slv_sca_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>llcp_slv_sca_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>: llcp_slv_sca_init </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="332" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_sca.c" bodystart="508" bodyend="513"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*********************************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/>Filename<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>llcp.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/>Description<sp/><sp/><sp/><sp/><sp/>:<sp/></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"></highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/>Author<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>Bingquan</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"></highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/>Email<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>caibingquan@zh-jieli.com</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/>Last<sp/>modifiled<sp/><sp/>:<sp/>2020-11-17<sp/>09:58</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"></highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/>Copyright:(c)JIELI<sp/><sp/>2011-2020<sp/><sp/>@<sp/>,<sp/>All<sp/>Rights<sp/>Reserved.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">*********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__LLCP_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__LLCP_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;typedef.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ll__defines_8h" kindref="compound">ll_defines.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/**************************************************************************************************</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/>Data<sp/>Types</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>**************************************************************************************************/</highlight></codeline>
+<codeline lineno="24" refid="llcp_8h_1ae5781075a72bb4996c28d4f3826e1110" refkind="member"><highlight class="preprocessor">#define<sp/>LLCP_PERFERRED_ACTIVE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="28" refid="llcp_8h_1aa618c4d8c29ef4efe6f10c741fb1f47aa85b1b3d1c5b91fa462cd82408584d63b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp_8h_1aa618c4d8c29ef4efe6f10c741fb1f47aa85b1b3d1c5b91fa462cd82408584d63b" kindref="member">LLCP_FEAT_COMMON</ref><sp/><sp/><sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="29" refid="llcp_8h_1aa618c4d8c29ef4efe6f10c741fb1f47aaa4bd1c50f4d62e6d6f64a89eb9113ec6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp_8h_1aa618c4d8c29ef4efe6f10c741fb1f47aaa4bd1c50f4d62e6d6f64a89eb9113ec6" kindref="member">LLCP_FEAT_ENCRYPT</ref>,</highlight></codeline>
+<codeline lineno="30" refid="llcp_8h_1aa618c4d8c29ef4efe6f10c741fb1f47aa25f81b1ebb6efce07bb785c799d5dd5f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp_8h_1aa618c4d8c29ef4efe6f10c741fb1f47aa25f81b1ebb6efce07bb785c799d5dd5f" kindref="member">LLCP_FEAT_CONNECTION_UPDATE</ref>,</highlight></codeline>
+<codeline lineno="31" refid="llcp_8h_1aa618c4d8c29ef4efe6f10c741fb1f47aaa2f2a3b5ce0cf425c82c6adf56fce713" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp_8h_1aa618c4d8c29ef4efe6f10c741fb1f47aaa2f2a3b5ce0cf425c82c6adf56fce713" kindref="member">LLCP_FEAT_PING</ref>,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="32" refid="llcp_8h_1aa618c4d8c29ef4efe6f10c741fb1f47aa3346e1e79887cc9f4633fde99f1ff4f8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp_8h_1aa618c4d8c29ef4efe6f10c741fb1f47aa3346e1e79887cc9f4633fde99f1ff4f8" kindref="member">LLCP_FEAT_DATA_EXTENSION</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="33" refid="llcp_8h_1aa618c4d8c29ef4efe6f10c741fb1f47aaf976356c979ac1a8a1a082deeae49222" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp_8h_1aa618c4d8c29ef4efe6f10c741fb1f47aaf976356c979ac1a8a1a082deeae49222" kindref="member">LLCP_FEAT_PHY_UPDATE</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="34" refid="llcp_8h_1aa618c4d8c29ef4efe6f10c741fb1f47aa1c2a3a84b4525373d63307f18e132623" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp_8h_1aa618c4d8c29ef4efe6f10c741fb1f47aa1c2a3a84b4525373d63307f18e132623" kindref="member">LLCP_FEAT_CTE</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="llcp_8h_1aa618c4d8c29ef4efe6f10c741fb1f47aafbf8a79cca36978e2c33f541f8f92450" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp_8h_1aa618c4d8c29ef4efe6f10c741fb1f47aafbf8a79cca36978e2c33f541f8f92450" kindref="member">LLCP_FEAT_CIS</ref>,</highlight></codeline>
+<codeline lineno="37" refid="llcp_8h_1aa618c4d8c29ef4efe6f10c741fb1f47aa85a8190cf0d2dbeea67fc2af6e477fc6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp_8h_1aa618c4d8c29ef4efe6f10c741fb1f47aa85a8190cf0d2dbeea67fc2af6e477fc6" kindref="member">LLCP_FEAT_CIS_TERM</ref>,</highlight></codeline>
+<codeline lineno="38" refid="llcp_8h_1aa618c4d8c29ef4efe6f10c741fb1f47aabc54f1f07a8ffdd64490dbf24519b7ad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp_8h_1aa618c4d8c29ef4efe6f10c741fb1f47aabc54f1f07a8ffdd64490dbf24519b7ad" kindref="member">LLCP_FEAT_POWER_CONTROL</ref>,</highlight></codeline>
+<codeline lineno="39" refid="llcp_8h_1aa618c4d8c29ef4efe6f10c741fb1f47aa16efb4ae883b76f366e269cbb1dbde24" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp_8h_1aa618c4d8c29ef4efe6f10c741fb1f47aa16efb4ae883b76f366e269cbb1dbde24" kindref="member">LLCP_FEAT_SCA</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="llcp_8h_1aa618c4d8c29ef4efe6f10c741fb1f47aab627d2d892a470f07f99f84cc075a8c8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp_8h_1aa618c4d8c29ef4efe6f10c741fb1f47aab627d2d892a470f07f99f84cc075a8c8" kindref="member">LLCP_FEAT_TOTAL</ref>,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Special<sp/>IDs<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="llcp_8h_1aa618c4d8c29ef4efe6f10c741fb1f47aa8518898ade683df0824a44a852342039" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp_8h_1aa618c4d8c29ef4efe6f10c741fb1f47aa8518898ade683df0824a44a852342039" kindref="member">LLCP_FEAT_FIRST_SM</ref><sp/><sp/>=<sp/><ref refid="llcp_8h_1aa618c4d8c29ef4efe6f10c741fb1f47aa85b1b3d1c5b91fa462cd82408584d63b" kindref="member">LLCP_FEAT_COMMON</ref>,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45" refid="llcp_8h_1aa618c4d8c29ef4efe6f10c741fb1f47aac0446fa0da77e8e0a8f3c5f72b372f32" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp_8h_1aa618c4d8c29ef4efe6f10c741fb1f47aac0446fa0da77e8e0a8f3c5f72b372f32" kindref="member">LLCP_FEAT_LAST_SM</ref><sp/><sp/><sp/>=<sp/><ref refid="llcp_8h_1aa618c4d8c29ef4efe6f10c741fb1f47aab627d2d892a470f07f99f84cc075a8c8" kindref="member">LLCP_FEAT_TOTAL</ref>,<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46" refid="llcp_8h_1aa618c4d8c29ef4efe6f10c741fb1f47aa7c7b76858c8d8a2cf305177cff7d2b65" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp_8h_1aa618c4d8c29ef4efe6f10c741fb1f47aa7c7b76858c8d8a2cf305177cff7d2b65" kindref="member">LLCP_FEAT_ALL</ref><sp/>=<sp/>0xFF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="51" refid="llcp_8h_1ad63240694c6dc2a28c24bfc2db90ad7aa5c842f9e4740da29b2c919fb74b71d2f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp_8h_1ad63240694c6dc2a28c24bfc2db90ad7aa5c842f9e4740da29b2c919fb74b71d2f" kindref="member">LLCP_CHANNEL_CLASS_UPDATE_MASTER</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="52" refid="llcp_8h_1ad63240694c6dc2a28c24bfc2db90ad7aaa1c9486159d4f8e25ab42f00182d672c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp_8h_1ad63240694c6dc2a28c24bfc2db90ad7aaa1c9486159d4f8e25ab42f00182d672c" kindref="member">LLCP_CHANNEL_CLASS_UPDATE_ADV</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="53" refid="llcp_8h_1ad63240694c6dc2a28c24bfc2db90ad7aa640fcab4c71c73fa096f5d09dcbe6476" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp_8h_1ad63240694c6dc2a28c24bfc2db90ad7aa640fcab4c71c73fa096f5d09dcbe6476" kindref="member">LLCP_CHANNEL_CLASS_UPDATE_BIS</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="54" refid="llcp_8h_1ad63240694c6dc2a28c24bfc2db90ad7aab523fd865ff5c233877fb31d7ce57bc1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp_8h_1ad63240694c6dc2a28c24bfc2db90ad7aab523fd865ff5c233877fb31d7ce57bc1" kindref="member">LLCP_CHANNEL_CLASS_UPDATE_CIS</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="56" refid="llcp_8h_1ad63240694c6dc2a28c24bfc2db90ad7aa9b0044e44597f4e2f850ec7abf21ee8d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp_8h_1ad63240694c6dc2a28c24bfc2db90ad7aa9b0044e44597f4e2f850ec7abf21ee8d" kindref="member">LLCP_CHANNEL_CLASS_UPDATE_HANDLERS_TOTOAL</ref>,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Special<sp/>IDs<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="llcp_8h_1ad63240694c6dc2a28c24bfc2db90ad7aa500a72e5933da425bda3c8293fed4e6d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp_8h_1ad63240694c6dc2a28c24bfc2db90ad7aa500a72e5933da425bda3c8293fed4e6d" kindref="member">LLCP_CHANNEL_MAP_FIRST</ref><sp/>=<sp/><ref refid="llcp_8h_1ad63240694c6dc2a28c24bfc2db90ad7aa5c842f9e4740da29b2c919fb74b71d2f" kindref="member">LLCP_CHANNEL_CLASS_UPDATE_MASTER</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="59" refid="llcp_8h_1ad63240694c6dc2a28c24bfc2db90ad7aaa316876e41f151fe2b44c6d1602bc599" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp_8h_1ad63240694c6dc2a28c24bfc2db90ad7aaa316876e41f151fe2b44c6d1602bc599" kindref="member">LLCP_CHANNEL_MAP_LAST</ref><sp/><sp/>=<sp/><ref refid="llcp_8h_1ad63240694c6dc2a28c24bfc2db90ad7aa9b0044e44597f4e2f850ec7abf21ee8d" kindref="member">LLCP_CHANNEL_CLASS_UPDATE_HANDLERS_TOTOAL</ref>,<sp/><sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="64" refid="llcp_8h_1a7859c0a3efa8b1c360f5c2376baf051ea54bad06d1d2f12ae53d5529ae78f90df" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp_8h_1a7859c0a3efa8b1c360f5c2376baf051ea54bad06d1d2f12ae53d5529ae78f90df" kindref="member">LLCP_STATE_IDLE</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="65" refid="llcp_8h_1a7859c0a3efa8b1c360f5c2376baf051eae7f89dbd485609415a6687b4442f2301" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp_8h_1a7859c0a3efa8b1c360f5c2376baf051eae7f89dbd485609415a6687b4442f2301" kindref="member">LLCP_STATE_BUSY</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="66"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="70" refid="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7ae3283db33818e94cbbdff4358a443dc8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7ae3283db33818e94cbbdff4358a443dc8" kindref="member">LLCP_ID_NULL</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="71" refid="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7a90a114aaf23897b6261a25bc7f2c479b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7a90a114aaf23897b6261a25bc7f2c479b" kindref="member">LLCP_ID_FEATURES_EXCHANGE</ref>,</highlight></codeline>
+<codeline lineno="72" refid="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7a3996fe22c155c953e3373fb2b9daf5d7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7a3996fe22c155c953e3373fb2b9daf5d7" kindref="member">LLCP_ID_VERSION_EXCHANGE</ref>,</highlight></codeline>
+<codeline lineno="73" refid="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7a95d11b4550b0fb19c2110deed499d5d9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7a95d11b4550b0fb19c2110deed499d5d9" kindref="member">LLCP_ID_ENCRYPTION_START</ref>,</highlight></codeline>
+<codeline lineno="74" refid="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7a27cc01e9eed9989cd03a9d37e0568922" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7a27cc01e9eed9989cd03a9d37e0568922" kindref="member">LLCP_ID_CONN_UPDATE</ref>,</highlight></codeline>
+<codeline lineno="75" refid="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7a4cbd917a271d1297c75d4e2a12f2b037" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7a4cbd917a271d1297c75d4e2a12f2b037" kindref="member">LLCP_ID_TERMINATION</ref>,</highlight></codeline>
+<codeline lineno="76" refid="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7a337e1b1f9a31d0992fb3f3c5678a7c08" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7a337e1b1f9a31d0992fb3f3c5678a7c08" kindref="member">LLCP_ID_CHANNEL_MAP</ref>,</highlight></codeline>
+<codeline lineno="77" refid="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7a403c7ef86434d77efea75801e485a60b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7a403c7ef86434d77efea75801e485a60b" kindref="member">LLCP_ID_PING</ref>,</highlight></codeline>
+<codeline lineno="78" refid="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7a26dc82d3d2fc61c893e25fcae65ac703" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7a26dc82d3d2fc61c893e25fcae65ac703" kindref="member">LLCP_ID_DATA_EXTENSION</ref>,</highlight></codeline>
+<codeline lineno="79" refid="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7af5d39bcace9d5d8522f95eb4f7ceaacf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7af5d39bcace9d5d8522f95eb4f7ceaacf" kindref="member">LLCP_ID_PHY_UPDATE</ref>,</highlight></codeline>
+<codeline lineno="80" refid="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7a15d8d613cd686e3553a1ebd9c28759fe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7a15d8d613cd686e3553a1ebd9c28759fe" kindref="member">LLCP_ID_CTE</ref>,</highlight></codeline>
+<codeline lineno="81" refid="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7a2976a9d0a8b9b02f3c7ae7e75d1d57f8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7a2976a9d0a8b9b02f3c7ae7e75d1d57f8" kindref="member">LLCP_ID_CIS</ref>,</highlight></codeline>
+<codeline lineno="82" refid="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7abb2f74bc09d724d9bfda44f99684d981" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7abb2f74bc09d724d9bfda44f99684d981" kindref="member">LLCP_ID_CIS_TERMINATION</ref>,</highlight></codeline>
+<codeline lineno="83" refid="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7a9c4ae8d39b5e6140182f383f5fee75f3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7a9c4ae8d39b5e6140182f383f5fee75f3" kindref="member">LLCP_ID_SCA_UPDATE</ref>,</highlight></codeline>
+<codeline lineno="84" refid="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7ab4a00f7c6dd5e5e96ae83fe51b3d8dc7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7ab4a00f7c6dd5e5e96ae83fe51b3d8dc7" kindref="member">LLCP_ID_PC_UPDATE</ref>,</highlight></codeline>
+<codeline lineno="85" refid="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7a414152beb6be5f67e4d9ef7c3492731f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7a414152beb6be5f67e4d9ef7c3492731f" kindref="member">LLCP_ID_TOTAL</ref>,</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7a7623252d7e48d1902c5b9a8ecdd371b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7a7623252d7e48d1902c5b9a8ecdd371b7" kindref="member">LLCP_ID_FIRST</ref><sp/>=<sp/><ref refid="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7a90a114aaf23897b6261a25bc7f2c479b" kindref="member">LLCP_ID_FEATURES_EXCHANGE</ref>,</highlight></codeline>
+<codeline lineno="88" refid="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7a70cf675b52c34ac7c7caec32049969e2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7a70cf675b52c34ac7c7caec32049969e2" kindref="member">LLCP_ID_LAST</ref><sp/><sp/>=<sp/><ref refid="llcp_8h_1a79e9f285d34216706a748fd7ba8941b7a414152beb6be5f67e4d9ef7c3492731f" kindref="member">LLCP_ID_TOTAL</ref>,</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="93" refid="llcp_8h_1abe974f22edeef8189603ba75fd90ff3cae93dd01d1f885a11e410c500c99ad6bd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp_8h_1abe974f22edeef8189603ba75fd90ff3cae93dd01d1f885a11e410c500c99ad6bd" kindref="member">LLCP_ENC_DISABLE</ref>,</highlight></codeline>
+<codeline lineno="94" refid="llcp_8h_1abe974f22edeef8189603ba75fd90ff3ca62b89c3e1b5bc02ddbad499534b58140" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp_8h_1abe974f22edeef8189603ba75fd90ff3ca62b89c3e1b5bc02ddbad499534b58140" kindref="member">LLCP_WAIT_RECV_PAUSE_ENC_RSP</ref>,</highlight></codeline>
+<codeline lineno="95" refid="llcp_8h_1abe974f22edeef8189603ba75fd90ff3cace0fcccefaa5a5e12463f393677ebfee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp_8h_1abe974f22edeef8189603ba75fd90ff3cace0fcccefaa5a5e12463f393677ebfee" kindref="member">LLCP_WAIT_RECV_ENC_RSP</ref>,</highlight></codeline>
+<codeline lineno="96" refid="llcp_8h_1abe974f22edeef8189603ba75fd90ff3ca1d658f4277ac6fe55e3ac251e76a3f80" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp_8h_1abe974f22edeef8189603ba75fd90ff3ca1d658f4277ac6fe55e3ac251e76a3f80" kindref="member">LLCP_WAIT_RECV_ENC_START_RSP</ref>,</highlight></codeline>
+<codeline lineno="97" refid="llcp_8h_1abe974f22edeef8189603ba75fd90ff3cac85b5feede707e13ba9d2bf236bdf00a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp_8h_1abe974f22edeef8189603ba75fd90ff3cac85b5feede707e13ba9d2bf236bdf00a" kindref="member">LLCP_ENC_ENABLE</ref>,</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="structconnection__update__parameter__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="101" refid="structconnection__update__parameter__t_1a2194eab1e8cad893a2826ff6102d9af3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structconnection__update__parameter__t_1a2194eab1e8cad893a2826ff6102d9af3" kindref="member">interval_min</ref>;</highlight></codeline>
+<codeline lineno="102" refid="structconnection__update__parameter__t_1afbcb821ae087fa0be1b40a4e1f806610" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structconnection__update__parameter__t_1afbcb821ae087fa0be1b40a4e1f806610" kindref="member">interval_max</ref>;</highlight></codeline>
+<codeline lineno="103" refid="structconnection__update__parameter__t_1aec97cb0880033152d7b7917a62342c4c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structconnection__update__parameter__t_1aec97cb0880033152d7b7917a62342c4c" kindref="member">latency</ref>;</highlight></codeline>
+<codeline lineno="104" refid="structconnection__update__parameter__t_1a3f683265c8b12ac9a9acbf26b1c910be" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structconnection__update__parameter__t_1a3f683265c8b12ac9a9acbf26b1c910be" kindref="member">timeout</ref>;</highlight></codeline>
+<codeline lineno="105" refid="structconnection__update__parameter__t_1ae05a5fee5abf2952b5bab5ea7916d0c7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structconnection__update__parameter__t_1ae05a5fee5abf2952b5bab5ea7916d0c7" kindref="member">minimum_ce_length</ref>;</highlight></codeline>
+<codeline lineno="106" refid="structconnection__update__parameter__t_1a062f1da1025c35942862ef6c9275aca4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structconnection__update__parameter__t_1a062f1da1025c35942862ef6c9275aca4" kindref="member">maximum_ce_length</ref>;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">}<sp/><ref refid="structconnection__update__parameter__t" kindref="compound">connection_update_parameter_t</ref>;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="structll__msg__conn__update__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="110" refid="structll__msg__conn__update__t_1a71d7dcc576323adffeee942a25cb9973" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structll__msg__hdr__t" kindref="compound">ll_msg_hdr_t</ref><sp/><ref refid="structll__msg__conn__update__t_1a71d7dcc576323adffeee942a25cb9973" kindref="member">hdr</ref>;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="structll__msg__conn__update__t_1ab5286b6c6734b412a3bf2d91454b2449" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structconnection__update__parameter__t" kindref="compound">connection_update_parameter_t</ref><sp/><ref refid="structll__msg__conn__update__t_1ab5286b6c6734b412a3bf2d91454b2449" kindref="member">param</ref>;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">}<sp/><ref refid="structll__msg__conn__update__t" kindref="compound">ll_msg_conn_update_t</ref>;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="structll__msg__conn__param__reply__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="116" refid="structll__msg__conn__param__reply__t_1aaff1f1d68763fb907687200a21d7da0f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structll__msg__hdr__t" kindref="compound">ll_msg_hdr_t</ref><sp/><ref refid="structll__msg__conn__param__reply__t_1aaff1f1d68763fb907687200a21d7da0f" kindref="member">hdr</ref>;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118" refid="structll__msg__conn__param__reply__t_1a997dbaa381b624da175bca1d0cfae052" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structconnection__update__parameter__t" kindref="compound">connection_update_parameter_t</ref><sp/><ref refid="structll__msg__conn__param__reply__t_1a997dbaa381b624da175bca1d0cfae052" kindref="member">param</ref>;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">}<sp/><ref refid="structll__msg__conn__param__reply__t" kindref="compound">ll_msg_conn_param_reply_t</ref>;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121" refid="structll__msg__conn__param__nagative__reply__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="122" refid="structll__msg__conn__param__nagative__reply__t_1af5a8510305cf15a5b61db33e12aa8593" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structll__msg__hdr__t" kindref="compound">ll_msg_hdr_t</ref><sp/><ref refid="structll__msg__conn__param__nagative__reply__t_1af5a8510305cf15a5b61db33e12aa8593" kindref="member">hdr</ref>;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124" refid="structll__msg__conn__param__nagative__reply__t_1af5e93596749cafdff38e1f587d60a6ff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structll__msg__conn__param__nagative__reply__t_1af5e93596749cafdff38e1f587d60a6ff" kindref="member">reason</ref>;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">}<sp/><ref refid="structll__msg__conn__param__nagative__reply__t" kindref="compound">ll_msg_conn_param_nagative_reply_t</ref>;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="structll__msg__disconnect__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="128" refid="structll__msg__disconnect__t_1affbce978402f3f2954d3e4c46b83b26a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structll__msg__hdr__t" kindref="compound">ll_msg_hdr_t</ref><sp/><ref refid="structll__msg__disconnect__t_1affbce978402f3f2954d3e4c46b83b26a" kindref="member">hdr</ref>;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="structll__msg__disconnect__t_1a4df43cfdef1fad43db416aab2150e767" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structll__msg__disconnect__t_1a4df43cfdef1fad43db416aab2150e767" kindref="member">reason</ref>;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal">}<sp/><ref refid="structll__msg__disconnect__t" kindref="compound">ll_msg_disconnect_t</ref>;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133" refid="structll__msg__start__encryption__parameter__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="134" refid="structll__msg__start__encryption__parameter__t_1a59dfa4d26b043e55985b6e8aec6c482f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structll__msg__hdr__t" kindref="compound">ll_msg_hdr_t</ref><sp/><ref refid="structll__msg__start__encryption__parameter__t_1a59dfa4d26b043e55985b6e8aec6c482f" kindref="member">hdr</ref>;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136" refid="structll__msg__start__encryption__parameter__t_1ae2ad4d00eacb20b94201d7fee51c0034" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/>random_number[<ref refid="ll__defines_8h_1ab72b0e02717f0385862f29b6126d3519" kindref="member">LL_RAND_LEN</ref>];</highlight></codeline>
+<codeline lineno="137" refid="structll__msg__start__encryption__parameter__t_1a0916e15a6d4a3864293450b47dcdb949" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><ref refid="structll__msg__start__encryption__parameter__t_1a0916e15a6d4a3864293450b47dcdb949" kindref="member">encrypted_diversifier</ref>;</highlight></codeline>
+<codeline lineno="138" refid="structll__msg__start__encryption__parameter__t_1a5bdff056b373a5b17dd08fed457e059e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/>long_term_key[<ref refid="ll__defines_8h_1a147cfece9ef8ded4897c74e81628758d" kindref="member">LL_KEY_LEN</ref>];</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">}<sp/><ref refid="structll__msg__start__encryption__parameter__t" kindref="compound">ll_msg_start_encryption_parameter_t</ref><sp/>;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="structll__msg__long__term__key__request__reply__parameter__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="142" refid="structll__msg__long__term__key__request__reply__parameter__t_1a688f17c144a5d9251d010b87b65f462a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structll__msg__hdr__t" kindref="compound">ll_msg_hdr_t</ref><sp/><ref refid="structll__msg__long__term__key__request__reply__parameter__t_1a688f17c144a5d9251d010b87b65f462a" kindref="member">hdr</ref>;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144" refid="structll__msg__long__term__key__request__reply__parameter__t_1a245ea7d4497ce8312b8bc8b0f6d2d531" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>long_term_key[<ref refid="ll__defines_8h_1a147cfece9ef8ded4897c74e81628758d" kindref="member">LL_KEY_LEN</ref>];</highlight></codeline>
+<codeline lineno="145"><highlight class="normal">}<sp/><ref refid="structll__msg__long__term__key__request__reply__parameter__t" kindref="compound">ll_msg_long_term_key_request_reply_parameter_t</ref><sp/>;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147" refid="structhost__channel__classification" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structhost__channel__classification" kindref="compound">host_channel_classification</ref><sp/>{</highlight></codeline>
+<codeline lineno="148" refid="structhost__channel__classification_1a48e931089b7b71be676b379f41075778" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structll__msg__hdr__t" kindref="compound">ll_msg_hdr_t</ref><sp/><ref refid="structhost__channel__classification_1a48e931089b7b71be676b379f41075778" kindref="member">hdr</ref>;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>u8<sp/>channel_map[5];</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151" refid="structhost__channel__classification_1af85fdbc5d9a465ec44b60bd197cecbe7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/><ref refid="structhost__channel__classification_1af85fdbc5d9a465ec44b60bd197cecbe7" kindref="member">channel_map</ref>;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal">}<sp/><ref refid="llcp_8h_1a9e3b6c56b0186db0ac80c40a32966f6a" kindref="member">ll_msg_host_channel_classification_t</ref><sp/>;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154" refid="structll__msg__data__length__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="155" refid="structll__msg__data__length__t_1a79c653118cafa39cacded55202609d27" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structll__msg__hdr__t" kindref="compound">ll_msg_hdr_t</ref><sp/><ref refid="structll__msg__data__length__t_1a79c653118cafa39cacded55202609d27" kindref="member">hdr</ref>;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157" refid="structll__msg__data__length__t_1af27389f8967805dde183452abf16dbc1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structll__msg__data__length__t_1af27389f8967805dde183452abf16dbc1" kindref="member">tx_octets</ref>;</highlight></codeline>
+<codeline lineno="158" refid="structll__msg__data__length__t_1a2ad81ae1c01a1e141ccf1fc5bda2c35d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structll__msg__data__length__t_1a2ad81ae1c01a1e141ccf1fc5bda2c35d" kindref="member">tx_time</ref>;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal">}<sp/><ref refid="structll__msg__data__length__t" kindref="compound">ll_msg_data_length_t</ref><sp/>;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161" refid="structll__msg__cte__req__parameter__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="162" refid="structll__msg__cte__req__parameter__t_1a364f1b6e3c1376c3b38d005cbd9c500a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structll__msg__hdr__t" kindref="compound">ll_msg_hdr_t</ref><sp/><ref refid="structll__msg__cte__req__parameter__t_1a364f1b6e3c1376c3b38d005cbd9c500a" kindref="member">hdr</ref>;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164" refid="structll__msg__cte__req__parameter__t_1a1a60440ec826c4f11707bc6e8b3ea376" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/><ref refid="structll__msg__cte__req__parameter__t_1a1a60440ec826c4f11707bc6e8b3ea376" kindref="member">enable</ref>;</highlight></codeline>
+<codeline lineno="165" refid="structll__msg__cte__req__parameter__t_1a8312dc6f08171d63829c38835536f2af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structll__msg__cte__req__parameter__t_1a8312dc6f08171d63829c38835536f2af" kindref="member">cte_request_interval</ref>;</highlight></codeline>
+<codeline lineno="166" refid="structll__msg__cte__req__parameter__t_1a2b8f13a8a0de013653698d5433f55184" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/><ref refid="structll__msg__cte__req__parameter__t_1a2b8f13a8a0de013653698d5433f55184" kindref="member">requested_cte_length</ref>;</highlight></codeline>
+<codeline lineno="167" refid="structll__msg__cte__req__parameter__t_1ab12ebd9093309658dca29194288cddef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/><ref refid="structll__msg__cte__req__parameter__t_1ab12ebd9093309658dca29194288cddef" kindref="member">requested_cte_type</ref>;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal">}<sp/><ref refid="structll__msg__cte__req__parameter__t" kindref="compound">ll_msg_cte_req_parameter_t</ref><sp/>;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170" refid="structll__msg__cte__respond__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="171" refid="structll__msg__cte__respond__t_1a5b7c3956f2a5b016317671cf86cf4764" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structll__msg__hdr__t" kindref="compound">ll_msg_hdr_t</ref><sp/><ref refid="structll__msg__cte__respond__t_1a5b7c3956f2a5b016317671cf86cf4764" kindref="member">hdr</ref>;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173" refid="structll__msg__cte__respond__t_1a6543d207bb4a46cb1a395e1939c14f9c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/><ref refid="structll__msg__cte__respond__t_1a6543d207bb4a46cb1a395e1939c14f9c" kindref="member">enable</ref>;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal">}<sp/><ref refid="structll__msg__cte__respond__t" kindref="compound">ll_msg_cte_respond_t</ref>;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176" refid="structll__msg__phy__parameter__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="177" refid="structll__msg__phy__parameter__t_1ab21ab4621f576f3fa1ab54a43b9efefe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structll__msg__hdr__t" kindref="compound">ll_msg_hdr_t</ref><sp/><ref refid="structll__msg__phy__parameter__t_1ab21ab4621f576f3fa1ab54a43b9efefe" kindref="member">hdr</ref>;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179" refid="structll__msg__phy__parameter__t_1a5c314fd40ffb02167aaec2c17b889f57" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structll__msg__phy__parameter__t_1a5c314fd40ffb02167aaec2c17b889f57" kindref="member">all_phys</ref>;</highlight></codeline>
+<codeline lineno="180" refid="structll__msg__phy__parameter__t_1aed6b2ad3967fd60396d148e84bfacf6c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structll__msg__phy__parameter__t_1aed6b2ad3967fd60396d148e84bfacf6c" kindref="member">tx_phys</ref>;</highlight></codeline>
+<codeline lineno="181" refid="structll__msg__phy__parameter__t_1abc4968d7c87d9e076f0ca3b3c9d1c781" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structll__msg__phy__parameter__t_1abc4968d7c87d9e076f0ca3b3c9d1c781" kindref="member">rx_phys</ref>;</highlight></codeline>
+<codeline lineno="182" refid="structll__msg__phy__parameter__t_1ac3568376cd3ca2cb2a49e89f4cced827" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structll__msg__phy__parameter__t_1ac3568376cd3ca2cb2a49e89f4cced827" kindref="member">phy_options</ref>;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal">}<sp/><ref refid="structll__msg__phy__parameter__t" kindref="compound">ll_msg_phy_parameter_t</ref><sp/>;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185" refid="structll__msg__sca__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="186" refid="structll__msg__sca__t_1a6c5df075a069dc225fb513b33df3f373" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structll__msg__hdr__t" kindref="compound">ll_msg_hdr_t</ref><sp/><ref refid="structll__msg__sca__t_1a6c5df075a069dc225fb513b33df3f373" kindref="member">hdr</ref>;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188" refid="structll__msg__sca__t_1a97652ddd850b841835575c00dc49c78b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structll__msg__sca__t_1a97652ddd850b841835575c00dc49c78b" kindref="member">action</ref>;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal">}<sp/><ref refid="structll__msg__sca__t" kindref="compound">ll_msg_sca_t</ref>;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191" refid="structll__msg__cis__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="192" refid="structll__msg__cis__t_1ae84ce4ea4a6d723d5a586a7ae80b1522" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structll__msg__hdr__t" kindref="compound">ll_msg_hdr_t</ref><sp/><ref refid="structll__msg__cis__t_1ae84ce4ea4a6d723d5a586a7ae80b1522" kindref="member">hdr</ref>;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194" refid="structll__msg__cis__t_1a9464f3d788b51da93c17bf41956b9e35" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><ref refid="structll__msg__cis__t_1a9464f3d788b51da93c17bf41956b9e35" kindref="member">cisHandle</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="195" refid="structll__msg__cis__t_1a1bf4d280c70abef4ef1da371fbd54101" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><ref refid="structll__msg__cis__t_1a1bf4d280c70abef4ef1da371fbd54101" kindref="member">reason</ref>;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal">}<sp/><ref refid="structll__msg__cis__t" kindref="compound">ll_msg_cis_t</ref>;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198" refid="structll__msg__bis__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="199" refid="structll__msg__bis__t_1a20c5777ad7dba26471cb4422e0e69f36" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structll__msg__hdr__t" kindref="compound">ll_msg_hdr_t</ref><sp/><ref refid="structll__msg__bis__t_1a20c5777ad7dba26471cb4422e0e69f36" kindref="member">hdr</ref>;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201" refid="structll__msg__bis__t_1a2c538289327d79b6336a9822c3b798f2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><ref refid="structll__msg__bis__t_1a2c538289327d79b6336a9822c3b798f2" kindref="member">bisHandle</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="202"><highlight class="normal">}<sp/><ref refid="structll__msg__bis__t" kindref="compound">ll_msg_bis_t</ref>;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204" refid="structll__msg__pc__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="205" refid="structll__msg__pc__t_1aad330d0eab4811c17a6b86f3b56927ef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structll__msg__hdr__t" kindref="compound">ll_msg_hdr_t</ref><sp/><ref refid="structll__msg__pc__t_1aad330d0eab4811c17a6b86f3b56927ef" kindref="member">hdr</ref>;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207" refid="structll__msg__pc__t_1a882918af4dbe287e9fcb5e7e7836ebff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structll__msg__pc__t_1a882918af4dbe287e9fcb5e7e7836ebff" kindref="member">phy</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="208" refid="structll__msg__pc__t_1a2207347fe95449f12a6151a48b0be2a2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structll__msg__pc__t_1a2207347fe95449f12a6151a48b0be2a2" kindref="member">delta</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="209" refid="structll__msg__pc__t_1a68a203d6365a42191ac23ac02b74b8bf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structll__msg__pc__t_1a68a203d6365a42191ac23ac02b74b8bf" kindref="member">tx</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="210"><highlight class="normal">}<sp/><ref refid="structll__msg__pc__t" kindref="compound">ll_msg_pc_t</ref>;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213" refid="unionll__conn__msg__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="214" refid="unionll__conn__msg__t_1a9e38a7061e8398bc0b9097895dc045eb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structll__msg__hdr__t" kindref="compound">ll_msg_hdr_t</ref><sp/><ref refid="unionll__conn__msg__t_1a9e38a7061e8398bc0b9097895dc045eb" kindref="member">hdr</ref>;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>Host<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217" refid="unionll__conn__msg__t_1a02b1721e19f93246d025d888ecaedd4a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structll__msg__conn__update__t" kindref="compound">ll_msg_conn_update_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="unionll__conn__msg__t_1a02b1721e19f93246d025d888ecaedd4a" kindref="member">connection_update_param</ref>;</highlight></codeline>
+<codeline lineno="218" refid="unionll__conn__msg__t_1afe1760615da0cbd5c6214ab68622e44b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structll__msg__start__encryption__parameter__t" kindref="compound">ll_msg_start_encryption_parameter_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="unionll__conn__msg__t_1afe1760615da0cbd5c6214ab68622e44b" kindref="member">start_encryption_param</ref>;</highlight></codeline>
+<codeline lineno="219" refid="unionll__conn__msg__t_1a7f565694c3310b8c15ebdc7c929c57f0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structll__msg__long__term__key__request__reply__parameter__t" kindref="compound">ll_msg_long_term_key_request_reply_parameter_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="unionll__conn__msg__t_1a7f565694c3310b8c15ebdc7c929c57f0" kindref="member">long_term_key_request_reply_param</ref>;</highlight></codeline>
+<codeline lineno="220" refid="unionll__conn__msg__t_1a0363855e6ff9737e3a16056a0997dc87" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structhost__channel__classification" kindref="compound">ll_msg_host_channel_classification_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="unionll__conn__msg__t_1a0363855e6ff9737e3a16056a0997dc87" kindref="member">host_channel_param</ref>;</highlight></codeline>
+<codeline lineno="221" refid="unionll__conn__msg__t_1a5905174ebec092ca1859cc526774811e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structll__msg__disconnect__t" kindref="compound">ll_msg_disconnect_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="unionll__conn__msg__t_1a5905174ebec092ca1859cc526774811e" kindref="member">disconnect</ref>;</highlight></codeline>
+<codeline lineno="222" refid="unionll__conn__msg__t_1a7b2e2e77af5e551f2da64851192bd366" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structll__msg__data__length__t" kindref="compound">ll_msg_data_length_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="unionll__conn__msg__t_1a7b2e2e77af5e551f2da64851192bd366" kindref="member">data_length_param</ref>;</highlight></codeline>
+<codeline lineno="223" refid="unionll__conn__msg__t_1a725c17453dfd9e161dfd0aded0c79c79" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structll__msg__cte__req__parameter__t" kindref="compound">ll_msg_cte_req_parameter_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="unionll__conn__msg__t_1a725c17453dfd9e161dfd0aded0c79c79" kindref="member">cte_req_param</ref>;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>uint8_t<sp/>cte_rsp_enable;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>uint8_t<sp/>vs_key_num;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226" refid="unionll__conn__msg__t_1a3ffdc978367fe17f169226ef54a87db1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structll__msg__phy__parameter__t" kindref="compound">ll_msg_phy_parameter_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="unionll__conn__msg__t_1a3ffdc978367fe17f169226ef54a87db1" kindref="member">phy_param</ref>;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228" refid="unionll__conn__msg__t_1aa6ac9fc517a7cda165e8c9fb23ff99ea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structll__msg__cis__t" kindref="compound">ll_msg_cis_t</ref><sp/><ref refid="unionll__conn__msg__t_1aa6ac9fc517a7cda165e8c9fb23ff99ea" kindref="member">cis</ref>;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal">}<sp/><ref refid="unionll__conn__msg__t" kindref="compound">ll_conn_msg_t</ref>;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233" refid="structllcp__ctx__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="234" refid="structllcp__ctx__t_1a4c709725aee10fa97073f1693e7fb777" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><ref refid="structllcp__ctx__t_1a4c709725aee10fa97073f1693e7fb777" kindref="member">state</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="235" refid="structllcp__ctx__t_1a46970a3b7c08b139ca29bd8ebceec3d8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><ref refid="structllcp__ctx__t_1a46970a3b7c08b139ca29bd8ebceec3d8" kindref="member">active_id</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="236" refid="structllcp__ctx__t_1a919c110d7ee37a5e05cdb34e7732ee4f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><ref refid="structllcp__ctx__t_1a919c110d7ee37a5e05cdb34e7732ee4f" kindref="member">notify_host</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="237" refid="structllcp__ctx__t_1aefb8dd1405d7372a1d9fafa6476f1156" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><ref refid="structllcp__ctx__t_1aefb8dd1405d7372a1d9fafa6476f1156" kindref="member">pend_id</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="238" refid="structllcp__ctx__t_1a90aa8708e0d7c84ed3cc094b8c14c45f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/><sp/><sp/><sp/><ref refid="structllcp__ctx__t_1a90aa8708e0d7c84ed3cc094b8c14c45f" kindref="member">wait_ack</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="239" refid="structllcp__ctx__t_1af1dcfd48498279bfa2eb2c17b6623d5e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structllcp__ctx__t_1af1dcfd48498279bfa2eb2c17b6623d5e" kindref="member">data</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="240" refid="structllcp__ctx__t_1a2284c7e54653bc730314a4ab554a838a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlctrDataPdu__t" kindref="compound">lctrDataPdu_t</ref><sp/><ref refid="structllcp__ctx__t_1a2284c7e54653bc730314a4ab554a838a" kindref="member">pdu</ref>;<sp/></highlight></codeline>
+<codeline lineno="241"><highlight class="normal">}<sp/><ref refid="structllcp__ctx__t" kindref="compound">llcp_ctx_t</ref>;</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight><highlight class="comment">/**************************************************************************************************</highlight></codeline>
+<codeline lineno="245"><highlight class="comment"><sp/><sp/>Function<sp/>Declarations</highlight></codeline>
+<codeline lineno="246"><highlight class="comment">**************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="llcp_8h_1a10fd612814208aee3eb9e5f62592ceb5" kindref="member">ll_msg_string_dump</ref>(uint8_t<sp/>event);</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="llcp_8h_1a94712b11c209f1323dfa30034e4c3e84" kindref="member">ll_ctrl_pdu_string_dump</ref>(uint8_t<sp/>opcode);</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="llcp_8h_1a65c2a9d1a7f00df2b56201bfedf674a2" kindref="member">llcp_mst_common_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="llcp_8h_1af3bd8caafa761b6e1a20cd491d61e6dd" kindref="member">llcp_slv_common_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal">uint8_t<sp/><ref refid="llcp_8h_1af428ab78966fc14289e869727f4ec24e" kindref="member">ll_features_exchange</ref>(uint16_t<sp/>handle);</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal">uint8_t<sp/><ref refid="llcp_8h_1a72a5dd7b068a9e7e4b970bdc01a4f356" kindref="member">ll_termination</ref>(uint16_t<sp/>handle,<sp/>uint8_t<sp/>reason);</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal">uint8_t<sp/><ref refid="llcp_8h_1a1ae04641a08ec1c2686f63a854b73f91" kindref="member">ll_version_exchange</ref>(uint16_t<sp/>handle);</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal">uint8_t<sp/><ref refid="llcp_8h_1a92f18f22441e210842a629fb6c792508" kindref="member">ll_set_host_channel_classification</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*channel_map);</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="llcp_8h_1a3787cb867d6d3acae75f1539bc5f2744" kindref="member">llcp_mst_encrypt_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="llcp_8h_1a1b13a7a6cde96bc20bdb33b9b163f709" kindref="member">llcp_slv_encrypt_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal">uint8_t<sp/><ref refid="llcp_8h_1a638333bd74f320cd5c9943d15bf2fc22" kindref="member">ll_enable_encryption</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structhci__le__start__encryption__parameter" kindref="compound">hci_le_start_encryption_parameter</ref><sp/>*param);</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal">uint8_t<sp/><ref refid="llcp_8h_1a6edd646aeb175eca1bbc47b8dbe956da" kindref="member">ll_long_term_key_request_reply</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structhci__le__long__term__key__request__reply__parameter" kindref="compound">hci_le_long_term_key_request_reply_parameter</ref><sp/>*param);</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal">uint8_t<sp/><ref refid="llcp_8h_1a75ceb840ac4b75a72e733a3b8566176c" kindref="member">ll_long_term_key_request_nagative_reply</ref>(uint16_t<sp/>handle);</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="llcp_8h_1a274ce2b5b6f34a79c30d67799b8b7b6b" kindref="member">llcp_mst_ping_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="llcp_8h_1abb190e77c4ffa4b895ffb35325d3d4fb" kindref="member">llcp_slv_ping_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal">uint8_t<sp/><ref refid="llcp_8h_1a2a79d2c8b4f60c065f71ba17657340ec" kindref="member">ll_write_authenticated_payload_timeout</ref>(uint16_t<sp/>handle,<sp/>uint16_t<sp/>timeout);</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="llcp_8h_1a8318097910693d1fb74a9a4cf7881448" kindref="member">llcp_mst_conn_update_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="llcp_8h_1a0fc21951206c51f68d5c88defb261947" kindref="member">llcp_slv_conn_update_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal">uint8_t<sp/><ref refid="llcp_8h_1a8716a18d7777da35138f1bea47023dd6" kindref="member">ll_connection_update</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structhci__le__connection__update__parameter" kindref="compound">hci_le_connection_update_parameter</ref><sp/>*param);</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal">uint8_t<sp/><ref refid="llcp_8h_1a7029b0e385ae70458228560fff5feffe" kindref="member">ll_connection_parameters_requst_reply</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structhci__le__connection__update__parameter" kindref="compound">hci_le_connection_update_parameter</ref><sp/>*param);</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal">uint8_t<sp/><ref refid="llcp_8h_1a2c6e38580e2b5ac247722e32517b5aa9" kindref="member">ll_connection_parameters_requst_negative_reply</ref>(uint16_t<sp/>handle,<sp/>uint8_t<sp/>reason);</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="llcp_8h_1a0307f60b056a5ba61ecec1e95f70cfd7" kindref="member">llcp_mst_data_extension_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="llcp_8h_1acc15f7ea9291a0e4279d637f6296bebc" kindref="member">llcp_slv_data_extension_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal">uint8_t<sp/><ref refid="llcp_8h_1a777ef28bee0dda6ea8c72254e54e7479" kindref="member">ll_set_data_length</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structhci__le__set__data__length__parameter" kindref="compound">hci_le_set_data_length_parameter</ref><sp/>*param);</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight></codeline>
+<codeline lineno="306"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="llcp_8h_1a3beed60433001ef61236e3b9c2438261" kindref="member">llcp_mst_connection_cte_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="llcp_8h_1a4cd42e9543e29cab00276f92e8b30632" kindref="member">llcp_slv_connection_cte_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight></codeline>
+<codeline lineno="310"><highlight class="normal">uint8_t<sp/><ref refid="llcp_8h_1a4c4d7edf9f0cc2d07982dd04b6898dac" kindref="member">ll_connection_cte_request_enable</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structhci__le__connection__cte__req__enable" kindref="compound">hci_le_connection_cte_req_enable</ref><sp/>*param);</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal">uint8_t<sp/><ref refid="llcp_8h_1a7584ae1b515c0bf22cc18e7b7d33cc08" kindref="member">ll_connection_cte_respond_enable</ref>(uint16_t<sp/>conn_handle,<sp/>uint8_t<sp/>enable);</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="llcp_8h_1ab1af7383cf496159022279ba8bac1731" kindref="member">llcp_mst_cis_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="llcp_8h_1ab4f37c4365bc67454020d956b77d5400" kindref="member">llcp_slv_cis_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="llcp_8h_1a4dca8eeb7912dfa21c9fa56a03ca6ea5" kindref="member">llcp_mst_cis_term_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="llcp_8h_1a4db72fd6665da81ee7c8cce107627480" kindref="member">llcp_slv_cis_term_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight></codeline>
+<codeline lineno="323"><highlight class="normal">uint8_t<sp/><ref refid="llcp_8h_1a07dd21c1c933ec4663316713e0ab532d" kindref="member">ll_cis_termination</ref>(uint16_t<sp/>handle,<sp/>uint8_t<sp/>reason);</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight></codeline>
+<codeline lineno="326"><highlight class="normal">uint8_t<sp/><ref refid="llcp_8h_1ac7eb5c4d8140f3f356f170a40f0b5be7" kindref="member">ll_modify_sleep_clock_accuracy</ref>(uint8_t<sp/>action);</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight></codeline>
+<codeline lineno="328"><highlight class="normal">uint8_t<sp/><ref refid="llcp_8h_1a45cbd85b2e8b55886abbb309c493f91a" kindref="member">ll_request_peer_sca</ref>(uint16_t<sp/>handle);</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"></highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="llcp_8h_1a1d55146776faeca87f154dd6394df1ff" kindref="member">llcp_mst_sca_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight></codeline>
+<codeline lineno="332"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="llcp_8h_1a7a66d125b763d1992935970362649d62" kindref="member">llcp_slv_sca_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"></highlight></codeline>
+<codeline lineno="334"><highlight class="normal"></highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h"/>
+  </compounddef>
+</doxygen>

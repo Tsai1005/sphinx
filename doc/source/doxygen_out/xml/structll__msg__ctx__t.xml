@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structll__msg__ctx__t" kind="struct" language="C++" prot="public">
+    <compoundname>ll_msg_ctx_t</compoundname>
+    <includes refid="link__layer_8h" local="no">link_layer.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structll__msg__ctx__t_1af863442b032bd18046d72c15f3089dd3" prot="public" static="no" mutable="no">
+        <type>struct lbuff_head *</type>
+        <definition>struct lbuff_head* ll_msg_ctx_t::pMsgQueue</definition>
+        <argsstring></argsstring>
+        <name>pMsgQueue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>LL Message pool </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="469" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="469" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__msg__ctx__t_1a13149fe4819972c8052c7b95b438e0f3" prot="public" static="no" mutable="no">
+        <type><ref refid="link__layer_8h_1ad1d1a1dee3ae851b9e605cf1214c5042" kindref="member">ll_dispatch_msg_t</ref></type>
+        <definition>ll_dispatch_msg_t ll_msg_ctx_t::ll_dispatch_msg_table[LL_STATE_TOTAL]</definition>
+        <argsstring>[LL_STATE_TOTAL]</argsstring>
+        <name>ll_dispatch_msg_table</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>LL Message Dispatcher </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="471" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="471" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__msg__ctx__t_1a212c618cec5103acd241876032fff25e" prot="public" static="no" mutable="no">
+        <type><ref refid="link__layer_8h_1a5e999d54203250a523f9698ff93f824b" kindref="member">llcp_dispatch_msg_t</ref></type>
+        <definition>llcp_dispatch_msg_t ll_msg_ctx_t::llcp_mst_dispatch_msg_table[LLCP_FEAT_TOTAL]</definition>
+        <argsstring>[LLCP_FEAT_TOTAL]</argsstring>
+        <name>llcp_mst_dispatch_msg_table</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>LLCP Master Message Dispatcher </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="473" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="473" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__msg__ctx__t_1a19335af152e3dc5223593d9424232b52" prot="public" static="no" mutable="no">
+        <type><ref refid="link__layer_8h_1a5e999d54203250a523f9698ff93f824b" kindref="member">llcp_dispatch_msg_t</ref></type>
+        <definition>llcp_dispatch_msg_t ll_msg_ctx_t::llcp_slv_dispatch_msg_table[LLCP_FEAT_TOTAL]</definition>
+        <argsstring>[LLCP_FEAT_TOTAL]</argsstring>
+        <name>llcp_slv_dispatch_msg_table</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>LLCP Slave Message Dispatcher </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="475" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="475" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__msg__ctx__t_1a668021d3fc9e2b28b145484ddcbc8684" prot="public" static="no" mutable="no">
+        <type><ref refid="link__layer_8h_1a16f787a62eec0e7409fe7cdb8f1d6760" kindref="member">llcp_channel_class_handler_t</ref></type>
+        <definition>llcp_channel_class_handler_t ll_msg_ctx_t::llcp_channel_class_handler_table[LLCP_CHANNEL_CLASS_UPDATE_HANDLERS_TOTOAL]</definition>
+        <argsstring>[LLCP_CHANNEL_CLASS_UPDATE_HANDLERS_TOTOAL]</argsstring>
+        <name>llcp_channel_class_handler_table</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>LLCP Channel Map Dispatcher </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="477" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="477" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1481">
+        <label>connection_update_parameter_t</label>
+        <link refid="structconnection__update__parameter__t"/>
+      </node>
+      <node id="1483">
+        <label>connection_param_request</label>
+        <link refid="structconnection__param__request"/>
+      </node>
+      <node id="1485">
+        <label>le_link::ble_phy_update</label>
+        <link refid="structle__link_1_1ble__phy__update"/>
+      </node>
+      <node id="1484">
+        <label>data_length</label>
+        <link refid="structdata__length"/>
+      </node>
+      <node id="1478">
+        <label>ll_msg_ctx_t</label>
+        <link refid="structll__msg__ctx__t"/>
+        <childnode refid="1479" relation="usage">
+          <edgelabel>llcp_slv_dispatch_msg_table</edgelabel>
+          <edgelabel>llcp_mst_dispatch_msg_table</edgelabel>
+        </childnode>
+      </node>
+      <node id="1479">
+        <label>le_link</label>
+        <link refid="structle__link"/>
+        <childnode refid="1480" relation="usage">
+          <edgelabel>cte_rx_param</edgelabel>
+        </childnode>
+        <childnode refid="1481" relation="usage">
+          <edgelabel>conn_update_param</edgelabel>
+        </childnode>
+        <childnode refid="1482" relation="usage">
+          <edgelabel>cte_tx_param</edgelabel>
+        </childnode>
+        <childnode refid="1483" relation="usage">
+          <edgelabel>conn_param_req</edgelabel>
+        </childnode>
+        <childnode refid="1484" relation="usage">
+          <edgelabel>pdu_len</edgelabel>
+        </childnode>
+        <childnode refid="1485" relation="usage">
+          <edgelabel>phy</edgelabel>
+        </childnode>
+        <childnode refid="1486" relation="usage">
+          <edgelabel>llcp</edgelabel>
+        </childnode>
+      </node>
+      <node id="1482">
+        <label>cte_tx_param_t</label>
+        <link refid="structcte__tx__param__t"/>
+      </node>
+      <node id="1486">
+        <label>llcp_ctx_t</label>
+        <link refid="structllcp__ctx__t"/>
+        <childnode refid="1487" relation="usage">
+          <edgelabel>pdu</edgelabel>
+        </childnode>
+      </node>
+      <node id="1480">
+        <label>cte_rx_param_t</label>
+        <link refid="structcte__rx__param__t"/>
+      </node>
+      <node id="1487">
+        <label>lctrDataPdu_t</label>
+        <link refid="structlctrDataPdu__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="468" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="468" bodyend="478"/>
+    <listofallmembers>
+      <member refid="structll__msg__ctx__t_1a13149fe4819972c8052c7b95b438e0f3" prot="public" virt="non-virtual"><scope>ll_msg_ctx_t</scope><name>ll_dispatch_msg_table</name></member>
+      <member refid="structll__msg__ctx__t_1a668021d3fc9e2b28b145484ddcbc8684" prot="public" virt="non-virtual"><scope>ll_msg_ctx_t</scope><name>llcp_channel_class_handler_table</name></member>
+      <member refid="structll__msg__ctx__t_1a212c618cec5103acd241876032fff25e" prot="public" virt="non-virtual"><scope>ll_msg_ctx_t</scope><name>llcp_mst_dispatch_msg_table</name></member>
+      <member refid="structll__msg__ctx__t_1a19335af152e3dc5223593d9424232b52" prot="public" virt="non-virtual"><scope>ll_msg_ctx_t</scope><name>llcp_slv_dispatch_msg_table</name></member>
+      <member refid="structll__msg__ctx__t_1af863442b032bd18046d72c15f3089dd3" prot="public" virt="non-virtual"><scope>ll_msg_ctx_t</scope><name>pMsgQueue</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

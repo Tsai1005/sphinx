@@ -1,0 +1,1393 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>JL Adapter SDK: /data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_afh.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">JL Adapter SDK
+   &#160;<span id="projectnumber">v0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_5aa4d6ccf34d88a270949875c15714e5.html">btctrler</a></li><li class="navelem"><a class="el" href="dir_16b18ce1fc07a124435f964aa38ae307.html">BLE_v2</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle">
+<div class="title">ll_afh.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="link__layer_8h_source.html">ble/link_layer.h</a>&quot;</code><br />
+<code>#include &quot;ble/ll_config.h&quot;</code><br />
+<code>#include &quot;misc_interface.h&quot;</code><br />
+<code>#include &quot;btcontroller_util.h&quot;</code><br />
+<code>#include &quot;common/debug.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+ll_afh.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="ll__afh_8c__incl.png" border="0" usemap="#_2data_2bingquan_2repo_2repo__adapter_2adapter__sdk_2lib_2btctrler_2BLE__v2_2ll__afh_8c" alt=""/></div>
+<map name="_2data_2bingquan_2repo_2repo__adapter_2adapter__sdk_2lib_2btctrler_2BLE__v2_2ll__afh_8c" id="_2data_2bingquan_2repo_2repo__adapter_2adapter__sdk_2lib_2btctrler_2BLE__v2_2ll__afh_8c">
+<area shape="rect" id="node2" href="link__layer_8h.html" title="ble/link_layer.h" alt="" coords="705,124,815,151"/>
+<area shape="rect" id="node8" href="ll__defines_8h.html" title="ll_defines.h" alt="" coords="301,348,389,375"/>
+<area shape="rect" id="node9" href="white__list_8h.html" title="white_list.h" alt="" coords="5,348,93,375"/>
+<area shape="rect" id="node12" href="llcp_8h.html" title="ble/llcp.h" alt="" coords="623,273,697,300"/>
+<area shape="rect" id="node13" href="ll__adv_8h.html" title="ble/ll_adv.h" alt="" coords="1052,199,1140,225"/>
+<area shape="rect" id="node14" href="ll__scan_8h.html" title="ble/ll_scan.h" alt="" coords="1165,199,1259,225"/>
+<area shape="rect" id="node15" href="ll__init_8h.html" title="ble/ll_init.h" alt="" coords="1283,199,1367,225"/>
+<area shape="rect" id="node16" href="resolve__list_8h.html" title="resolve_list.h" alt="" coords="159,348,257,375"/>
+<area shape="rect" id="node17" href="data__extension_8h.html" title="data_extension.h" alt="" coords="745,348,866,375"/>
+<area shape="rect" id="node18" href="multiple__phys_8h.html" title="multiple_phys.h" alt="" coords="823,273,937,300"/>
+<area shape="rect" id="node19" href="ll__cte_8h.html" title="ble/ll_cte.h" alt="" coords="223,273,308,300"/>
+<area shape="rect" id="node20" href="ll__iso_8h.html" title="ble/ll_iso.h" alt="" coords="514,273,598,300"/>
+<area shape="rect" id="node22" href="ll__bis_8h.html" title="ble/ll_bis.h" alt="" coords="403,199,487,225"/>
+<area shape="rect" id="node24" href="ll__cis_8h.html" title="ble/ll_cis.h" alt="" coords="511,199,595,225"/>
+<area shape="rect" id="node25" href="ll__pc_8h.html" title="ble/ll_pc.h" alt="" coords="117,273,198,300"/>
+<area shape="rect" id="node23" href="audio__codec_8h.html" title="audio_codec.h" alt="" coords="383,273,489,300"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+结构体</h2></td></tr>
+<tr class="memitem:struct__channel__quality"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#struct__channel__quality">_channel_quality</a></td></tr>
+<tr class="separator:struct__channel__quality"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:struct__input__info"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#struct__input__info">_input_info</a></td></tr>
+<tr class="separator:struct__input__info"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a6c6991cba0e2995d7d9aec73e0324317"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#a6c6991cba0e2995d7d9aec73e0324317">LOG_TAG_CONST</a>&#160;&#160;&#160;LL_AFH</td></tr>
+<tr class="separator:a6c6991cba0e2995d7d9aec73e0324317"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ce0df38eb467e59f209470c8f5ac4e6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#a7ce0df38eb467e59f209470c8f5ac4e6">LOG_TAG</a>&#160;&#160;&#160;STR(<a class="el" href="tws__ll__scan_8c.html#a6c6991cba0e2995d7d9aec73e0324317">LOG_TAG_CONST</a>)</td></tr>
+<tr class="separator:a7ce0df38eb467e59f209470c8f5ac4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eeb6e067100d0dec6e53bce19a403e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#a9eeb6e067100d0dec6e53bce19a403e0">LOG_ERROR_ENABLE</a></td></tr>
+<tr class="separator:a9eeb6e067100d0dec6e53bce19a403e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69321c8a2a0b07a07fb5088e82e25eb0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#a69321c8a2a0b07a07fb5088e82e25eb0">LOG_INFO_ENABLE</a></td></tr>
+<tr class="separator:a69321c8a2a0b07a07fb5088e82e25eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04135f631fe91199f05b1d816dda8756"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#a04135f631fe91199f05b1d816dda8756">LOG_DUMP_ENABLE</a></td></tr>
+<tr class="separator:a04135f631fe91199f05b1d816dda8756"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4393d7b6ecdd9f3371e031e9d40a0335"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#a4393d7b6ecdd9f3371e031e9d40a0335">AFH_ASSERT</a>(x, ...)</td></tr>
+<tr class="separator:a4393d7b6ecdd9f3371e031e9d40a0335"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cd87cc10b493870de19dfdd19b7926f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#a8cd87cc10b493870de19dfdd19b7926f">afh_debug</a>(x, ...)</td></tr>
+<tr class="separator:a8cd87cc10b493870de19dfdd19b7926f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b9b4e8fafec544e465d90bcd9c781d2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#a4b9b4e8fafec544e465d90bcd9c781d2">afh_warn</a>(x, ...)</td></tr>
+<tr class="separator:a4b9b4e8fafec544e465d90bcd9c781d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad223350d80db21fa8b721107cd1f6442"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#ad223350d80db21fa8b721107cd1f6442">__this</a>&#160;&#160;&#160;(&amp;<a class="el" href="link__layer_8h.html#a11d5b1c8b0def0c238d4700650780724">ll_hdl</a>)</td></tr>
+<tr class="separator:ad223350d80db21fa8b721107cd1f6442"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a840303a8f70faabd6401b93ada563edc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#a840303a8f70faabd6401b93ada563edc">AMPLIFICATION_FACTOR</a>&#160;&#160;&#160;1000</td></tr>
+<tr class="separator:a840303a8f70faabd6401b93ada563edc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d2f6b12269b5b4607a6c1cff59c9fd9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#a1d2f6b12269b5b4607a6c1cff59c9fd9">CHANNEL_EFFECT_TIMES</a>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:a1d2f6b12269b5b4607a6c1cff59c9fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac333c8b9f6812639598cceca38afd6b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#ac333c8b9f6812639598cceca38afd6b8">MIN_ONLINE_CHANNEL_NUMS</a>&#160;&#160;&#160;13</td></tr>
+<tr class="separator:ac333c8b9f6812639598cceca38afd6b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd8aa7348f59062de78e681b2caaf048"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#afd8aa7348f59062de78e681b2caaf048">MAX_ONLINE_CHANNEL_NUMS</a>&#160;&#160;&#160;(<a class="el" href="ll__afh_8c.html#ac333c8b9f6812639598cceca38afd6b8">MIN_ONLINE_CHANNEL_NUMS</a> + 5)</td></tr>
+<tr class="separator:afd8aa7348f59062de78e681b2caaf048"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a686a991566cf9905efda47511234bf61"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#a686a991566cf9905efda47511234bf61">MIN_RETRY_NUMS</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a686a991566cf9905efda47511234bf61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade3e9e99eef1d7792d837a8044279dec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#ade3e9e99eef1d7792d837a8044279dec">MAX_RETRY_NUMS</a>&#160;&#160;&#160;5</td></tr>
+<tr class="separator:ade3e9e99eef1d7792d837a8044279dec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40d32b2f9e1ab4f99988c56bedc35001"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#a40d32b2f9e1ab4f99988c56bedc35001">UPDATE_PERIOD_PROBABLY</a>&#160;&#160;&#160;7000</td></tr>
+<tr class="separator:a40d32b2f9e1ab4f99988c56bedc35001"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa14a65955e759e3dbe7c2ee83be83113"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#aa14a65955e759e3dbe7c2ee83be83113">AFH_ALGORITHM_WAY</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:aa14a65955e759e3dbe7c2ee83be83113"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f622febfac431b0a2c967b85201e5c2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#a7f622febfac431b0a2c967b85201e5c2">GET_BYTE</a>(x)&#160;&#160;&#160;(x &gt;&gt; 3)</td></tr>
+<tr class="separator:a7f622febfac431b0a2c967b85201e5c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6115ef10c1f915c8c47e95361e5419d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#ab6115ef10c1f915c8c47e95361e5419d">GET_BIT</a>(x)&#160;&#160;&#160;(x &amp; 0x07)</td></tr>
+<tr class="separator:ab6115ef10c1f915c8c47e95361e5419d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae221b86652338bea5dc2c70f979f3a74"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#ae221b86652338bea5dc2c70f979f3a74">CONN_INTERVAL_MS</a>(x)&#160;&#160;&#160;(x * 5 / 4)</td></tr>
+<tr class="separator:ae221b86652338bea5dc2c70f979f3a74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4260224e301c33c285aa639e9c6e96ca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#a4260224e301c33c285aa639e9c6e96ca">DATA_CHANNEL_NUMS</a>&#160;&#160;&#160;37</td></tr>
+<tr class="separator:a4260224e301c33c285aa639e9c6e96ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa850c6877eabe7895647653ba4c00b97"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#aa850c6877eabe7895647653ba4c00b97">CHANNEL_MAP_OCTETS</a>&#160;&#160;&#160;5</td></tr>
+<tr class="separator:aa850c6877eabe7895647653ba4c00b97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5176b8881ebc22196ad2e493767ba616"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#a5176b8881ebc22196ad2e493767ba616">CHANNEL_ID</a>(x)&#160;&#160;&#160;((struct <a class="el" href="ll__afh_8c.html#struct__channel__quality">_channel_quality</a> *)x - <a class="el" href="ll__afh_8c.html#a15a8b766c3203d4df6ad1a8830012592">channel_quality</a>)</td></tr>
+<tr class="separator:a5176b8881ebc22196ad2e493767ba616"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2938837cf16a8e208ee2d6adb946fb78"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#a2938837cf16a8e208ee2d6adb946fb78">MEMBER_IS_ALONE</a>(x)&#160;&#160;&#160;((x-&gt;entry.next == &amp;x-&gt;entry) || (x-&gt;entry.next == NULL))</td></tr>
+<tr class="separator:a2938837cf16a8e208ee2d6adb946fb78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a066a2fc24e8383fdf5c15b9958f2911e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#a066a2fc24e8383fdf5c15b9958f2911e">U8_MAX_LIMIT</a>&#160;&#160;&#160;((2 &lt;&lt; 7) - 1)</td></tr>
+<tr class="separator:a066a2fc24e8383fdf5c15b9958f2911e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e5d0d356c54a8d50edae78818e843a1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#a1e5d0d356c54a8d50edae78818e843a1">U12_MAX_LIMIT</a>&#160;&#160;&#160;((2 &lt;&lt; 11) - 1)</td></tr>
+<tr class="separator:a1e5d0d356c54a8d50edae78818e843a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b044af29c292cdca091c887e288be14"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#a1b044af29c292cdca091c887e288be14">U16_MAX_LIMIT</a>&#160;&#160;&#160;((2 &lt;&lt; 15) - 1)</td></tr>
+<tr class="separator:a1b044af29c292cdca091c887e288be14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88d3166cbec3b976d05b1c22ed4a4386"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#a88d3166cbec3b976d05b1c22ed4a4386">U24_MAX_LIMIT</a>&#160;&#160;&#160;((2 &lt;&lt; 23) - 1)</td></tr>
+<tr class="separator:a88d3166cbec3b976d05b1c22ed4a4386"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab72cdee251f9107b020c634646c87d1b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#ab72cdee251f9107b020c634646c87d1b">S16_MIN_LIMIT</a>&#160;&#160;&#160;(-(2 &lt;&lt; 14))</td></tr>
+<tr class="separator:ab72cdee251f9107b020c634646c87d1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1790cf8e7506da554bc1acab1d011cd2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#a1790cf8e7506da554bc1acab1d011cd2">S16_MAX_LIMIT</a>&#160;&#160;&#160;((2 &lt;&lt; 14) - 1)</td></tr>
+<tr class="separator:a1790cf8e7506da554bc1acab1d011cd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0fff37180cb2ff37aca07680deff1b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#ae0fff37180cb2ff37aca07680deff1b8">REDUCE_ONLINE_NUMS</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:ae0fff37180cb2ff37aca07680deff1b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a917dd585688a7a581dd2e0f7522418f7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#a917dd585688a7a581dd2e0f7522418f7">CUR_INTERVAL_EFFECT_TIMES</a>(x)&#160;&#160;&#160;(<a class="el" href="ll__afh_8c.html#a40d32b2f9e1ab4f99988c56bedc35001">UPDATE_PERIOD_PROBABLY</a> / (<a class="el" href="ll__afh_8c.html#a5ce136352acda1caad8bb096e6691763">new_online_channels_nums</a> * <a class="el" href="ll__afh_8c.html#ae221b86652338bea5dc2c70f979f3a74">CONN_INTERVAL_MS</a>(x)))</td></tr>
+<tr class="separator:a917dd585688a7a581dd2e0f7522418f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a06fc87d81c62e9abb8790b6e5713c55b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="ll__afh_8c.html#a06fc87d81c62e9abb8790b6e5713c55baf602a728c42b93395d40e86a5cbb084f">AFH_INPUT_READY</a> = 1, 
+<a class="el" href="ll__afh_8c.html#a06fc87d81c62e9abb8790b6e5713c55baf9864f4fe690c6b9e5b5fc9b21af97e1">AFH_OUTPUT_START</a>, 
+<a class="el" href="ll__afh_8c.html#a06fc87d81c62e9abb8790b6e5713c55ba4036caebdb09384210a115a457bed89d">AFH_OUTPUT_CONTINUE</a>, 
+<a class="el" href="ll__afh_8c.html#a06fc87d81c62e9abb8790b6e5713c55ba484b4cfe1983bd13dc6b6c52d56fde44">AFH_OUTPUT_COMPLETE</a>
+ }</td></tr>
+<tr class="separator:a06fc87d81c62e9abb8790b6e5713c55b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a5e860aba8294c0865bab74c72ce3a8b2"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#a5e860aba8294c0865bab74c72ce3a8b2">le_channel_map_update</a> (const struct <a class="el" href="llcp_8h.html#structhost__channel__classification">host_channel_classification</a> *param)</td></tr>
+<tr class="separator:a5e860aba8294c0865bab74c72ce3a8b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a1dae14f53000ee232bb3203df0b605"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#a2a1dae14f53000ee232bb3203df0b605">afh_printf</a> (const char *format,...)</td></tr>
+<tr class="separator:a2a1dae14f53000ee232bb3203df0b605"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9393ac1815b46780df3fc94e7cf0ec1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#ad9393ac1815b46780df3fc94e7cf0ec1">channle_weight_sort</a> (struct <a class="el" href="ll__afh_8c.html#struct__channel__quality">_channel_quality</a> *member, struct list_head *head)</td></tr>
+<tr class="separator:ad9393ac1815b46780df3fc94e7cf0ec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad507bf4ca22fda726e0a57ff2b6a89ad"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#ad507bf4ca22fda726e0a57ff2b6a89ad">channle_average_weight_sort</a> (struct <a class="el" href="ll__afh_8c.html#struct__channel__quality">_channel_quality</a> *member, struct list_head *head)</td></tr>
+<tr class="separator:ad507bf4ca22fda726e0a57ff2b6a89ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65db42b248368da0bf94942d3bcc5bcb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#a65db42b248368da0bf94942d3bcc5bcb">AFH_info_init</a> (struct ble_conn_param *conn_param)</td></tr>
+<tr class="separator:a65db42b248368da0bf94942d3bcc5bcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d3ab867025491e3f202eec06fde85a5"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#a9d3ab867025491e3f202eec06fde85a5">algorithm_of_weight</a> (struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *link, struct <a class="el" href="ll__afh_8c.html#struct__channel__quality">_channel_quality</a> *current_channel)</td></tr>
+<tr class="separator:a9d3ab867025491e3f202eec06fde85a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad592cad4dd75c346be2ac2d61478aa07"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#ad592cad4dd75c346be2ac2d61478aa07">AFH_input_FromEventIsr</a> (struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *link, int channel_index)</td></tr>
+<tr class="separator:ad592cad4dd75c346be2ac2d61478aa07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f24747d7126a02e6a462dba8a9e2feb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#a5f24747d7126a02e6a462dba8a9e2feb">AFH_input_FromRxIsr</a> (struct <a class="el" href="ll__afh_8c.html#struct__input__info">_input_info</a> *input)</td></tr>
+<tr class="separator:a5f24747d7126a02e6a462dba8a9e2feb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1f77e6afdd628909ff251aa46d49d2e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#aa1f77e6afdd628909ff251aa46d49d2e">ll_channel_map_print</a> (void)</td></tr>
+<tr class="separator:aa1f77e6afdd628909ff251aa46d49d2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd715995fa3b2672a0df0df5e2e40a8a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#afd715995fa3b2672a0df0df5e2e40a8a">AFH_output_UpdateChannelMap</a> (struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *link)</td></tr>
+<tr class="separator:afd715995fa3b2672a0df0df5e2e40a8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a418a3b39b804f31fca736d577a16e608"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#a418a3b39b804f31fca736d577a16e608">master_ll_update_channel_map_done</a> (void)</td></tr>
+<tr class="separator:a418a3b39b804f31fca736d577a16e608"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5005e394524f3252061f4a7749e736b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#a5005e394524f3252061f4a7749e736b9">conn_evt_probe_evtchannel_handler</a> (struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *link, int param)</td></tr>
+<tr class="separator:a5005e394524f3252061f4a7749e736b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1bcacaf9d045509ad21553ec0da301c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#ac1bcacaf9d045509ad21553ec0da301c">conn_rx_probe_channel_handler</a> (struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *link, struct ble_rx *rx)</td></tr>
+<tr class="separator:ac1bcacaf9d045509ad21553ec0da301c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12ab4e73484b34534907707fbac70c98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#a12ab4e73484b34534907707fbac70c98">ll_update_channel_map_post_handler</a> (struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *link)</td></tr>
+<tr class="separator:a12ab4e73484b34534907707fbac70c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af13ece4d6b4e782897f07f64cfc9b322"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#af13ece4d6b4e782897f07f64cfc9b322">ll_channel_info_init</a> (struct ble_conn_param *conn_param)</td></tr>
+<tr class="separator:af13ece4d6b4e782897f07f64cfc9b322"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:a5ce136352acda1caad8bb096e6691763"><td class="memItemLeft" align="right" valign="top">static u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#a5ce136352acda1caad8bb096e6691763">new_online_channels_nums</a></td></tr>
+<tr class="separator:a5ce136352acda1caad8bb096e6691763"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49b19c98f399665e878f43d2bc9113e8"><td class="memItemLeft" align="right" valign="top">static u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#a49b19c98f399665e878f43d2bc9113e8">new_channel_map</a> [<a class="el" href="ll__afh_8c.html#aa850c6877eabe7895647653ba4c00b97">CHANNEL_MAP_OCTETS</a>]</td></tr>
+<tr class="separator:a49b19c98f399665e878f43d2bc9113e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f6af41985bd2c2362e1b6a9f87f0e03"><td class="memItemLeft" align="right" valign="top">static struct list_head&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#a5f6af41985bd2c2362e1b6a9f87f0e03">bad_ch_list_head</a></td></tr>
+<tr class="separator:a5f6af41985bd2c2362e1b6a9f87f0e03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15a8b766c3203d4df6ad1a8830012592"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="ll__afh_8c.html#struct__channel__quality">_channel_quality</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#a15a8b766c3203d4df6ad1a8830012592">channel_quality</a> [<a class="el" href="ll__afh_8c.html#a4260224e301c33c285aa639e9c6e96ca">DATA_CHANNEL_NUMS</a>]</td></tr>
+<tr class="separator:a15a8b766c3203d4df6ad1a8830012592"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3421f3ca17315f03e7508eea1ac1997f"><td class="memItemLeft" align="right" valign="top">static atomic_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#a3421f3ca17315f03e7508eea1ac1997f">afh_pend</a></td></tr>
+<tr class="separator:a3421f3ca17315f03e7508eea1ac1997f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fb82cdfc5ceabd7e6d62df51f99d55e"><td class="memItemLeft" align="right" valign="top">static u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#a0fb82cdfc5ceabd7e6d62df51f99d55e">complete_sample_nums</a></td></tr>
+<tr class="separator:a0fb82cdfc5ceabd7e6d62df51f99d55e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c056244bd921f5b64456a88dfa4299a"><td class="memItemLeft" align="right" valign="top">static struct list_head&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#a4c056244bd921f5b64456a88dfa4299a">good_ch_list_head</a></td></tr>
+<tr class="separator:a4c056244bd921f5b64456a88dfa4299a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78f9c4ff53ebae016be64715daf1e099"><td class="memItemLeft" align="right" valign="top">static u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#a78f9c4ff53ebae016be64715daf1e099">pre_channel_effect_times</a></td></tr>
+<tr class="separator:a78f9c4ff53ebae016be64715daf1e099"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a761bf9755363e31d668226a9c9ca1972"><td class="memItemLeft" align="right" valign="top">const u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__afh_8c.html#a761bf9755363e31d668226a9c9ca1972">first_used_channels</a> [] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36}</td></tr>
+<tr class="separator:a761bf9755363e31d668226a9c9ca1972"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/><h2 class="groupheader">结构体说明</h2>
+<a name="struct__channel__quality" id="struct__channel__quality"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct _channel_quality</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a6d9e81ec492f497d90edc8e3f8f27128"></a>u32</td>
+<td class="fieldname">
+average_weight: 24</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="aa80f28f765139165a2e29ea4a04955dc"></a>u32</td>
+<td class="fieldname">
+effect_times: 8</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="afc4a44e42912e75bd56d151d2c8dc130"></a>struct list_head</td>
+<td class="fieldname">
+entry</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a20acca67dde05d2f6b340bfe73f1f678"></a>u32</td>
+<td class="fieldname">
+expected_rx_cnt: 12</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ae9139898d5ef4d9ffd5ff1eb0bbaf482"></a>u16</td>
+<td class="fieldname">
+history_weight</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="abc6123abec2712709d30bf9201771d55"></a>u32</td>
+<td class="fieldname">
+pre_interval_effect: 8</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a753df6bff1de4051454d0ec76c377d0a"></a>u32</td>
+<td class="fieldname">
+rx_cnt: 12</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a09342210d579e23924903731f1c4198a"></a>s16</td>
+<td class="fieldname">
+rx_rssi_average</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="struct__input__info" id="struct__input__info"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct _input_info</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="aa44a107bcccb29a432f7e94c41fd4626"></a>u8</td>
+<td class="fieldname">
+channel_index</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ae065f845698ee33dec95d834eb99f33b"></a>u8</td>
+<td class="fieldname">
+md</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a96e761481fcef73ede48f2f8d95d46c7"></a>s8</td>
+<td class="fieldname">
+rssi</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">宏定义说明</h2>
+<a class="anchor" id="ad223350d80db21fa8b721107cd1f6442"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __this&#160;&#160;&#160;(&amp;<a class="el" href="link__layer_8h.html#a11d5b1c8b0def0c238d4700650780724">ll_hdl</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa14a65955e759e3dbe7c2ee83be83113"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AFH_ALGORITHM_WAY&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4393d7b6ecdd9f3371e031e9d40a0335"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AFH_ASSERT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line"><span class="keywordflow">if</span> (LOG_IS_ENABLE(LOG_ERROR)) \</div><div class="line">        ASSERT(x, ## __VA_ARGS__)</div></div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a8cd87cc10b493870de19dfdd19b7926f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define afh_debug</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line"><span class="keywordflow">if</span> (LOG_IS_ENABLE(LOG_DEBUG)) <a class="code" href="ll__afh_8c.html#a2a1dae14f53000ee232bb3203df0b605">\</a></div><div class="line"><a class="code" href="ll__afh_8c.html#a2a1dae14f53000ee232bb3203df0b605">        afh_printf</a>(x, ## __VA_ARGS__)</div><div class="ttc" id="ll__afh_8c_html_a2a1dae14f53000ee232bb3203df0b605"><div class="ttname"><a href="ll__afh_8c.html#a2a1dae14f53000ee232bb3203df0b605">afh_printf</a></div><div class="ttdeci">int afh_printf(const char *format,...)</div><div class="ttdef"><b>Definition:</b> ll_afh.c:132</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a4b9b4e8fafec544e465d90bcd9c781d2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define afh_warn</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line"><span class="keywordflow">if</span> (LOG_IS_ENABLE(LOG_WARN)) <a class="code" href="ll__afh_8c.html#a2a1dae14f53000ee232bb3203df0b605">\</a></div><div class="line"><a class="code" href="ll__afh_8c.html#a2a1dae14f53000ee232bb3203df0b605">        afh_printf</a>(x, ## __VA_ARGS__)</div><div class="ttc" id="ll__afh_8c_html_a2a1dae14f53000ee232bb3203df0b605"><div class="ttname"><a href="ll__afh_8c.html#a2a1dae14f53000ee232bb3203df0b605">afh_printf</a></div><div class="ttdeci">int afh_printf(const char *format,...)</div><div class="ttdef"><b>Definition:</b> ll_afh.c:132</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a840303a8f70faabd6401b93ada563edc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AMPLIFICATION_FACTOR&#160;&#160;&#160;1000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1d2f6b12269b5b4607a6c1cff59c9fd9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHANNEL_EFFECT_TIMES&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5176b8881ebc22196ad2e493767ba616"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHANNEL_ID</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;((struct <a class="el" href="ll__afh_8c.html#struct__channel__quality">_channel_quality</a> *)x - <a class="el" href="ll__afh_8c.html#a15a8b766c3203d4df6ad1a8830012592">channel_quality</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa850c6877eabe7895647653ba4c00b97"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHANNEL_MAP_OCTETS&#160;&#160;&#160;5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae221b86652338bea5dc2c70f979f3a74"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CONN_INTERVAL_MS</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;(x * 5 / 4)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a917dd585688a7a581dd2e0f7522418f7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CUR_INTERVAL_EFFECT_TIMES</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;(<a class="el" href="ll__afh_8c.html#a40d32b2f9e1ab4f99988c56bedc35001">UPDATE_PERIOD_PROBABLY</a> / (<a class="el" href="ll__afh_8c.html#a5ce136352acda1caad8bb096e6691763">new_online_channels_nums</a> * <a class="el" href="ll__afh_8c.html#ae221b86652338bea5dc2c70f979f3a74">CONN_INTERVAL_MS</a>(x)))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4260224e301c33c285aa639e9c6e96ca"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DATA_CHANNEL_NUMS&#160;&#160;&#160;37</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab6115ef10c1f915c8c47e95361e5419d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GET_BIT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;(x &amp; 0x07)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7f622febfac431b0a2c967b85201e5c2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GET_BYTE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;(x &gt;&gt; 3)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a04135f631fe91199f05b1d816dda8756"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_DUMP_ENABLE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9eeb6e067100d0dec6e53bce19a403e0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_ERROR_ENABLE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a69321c8a2a0b07a07fb5088e82e25eb0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_INFO_ENABLE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7ce0df38eb467e59f209470c8f5ac4e6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_TAG&#160;&#160;&#160;STR(<a class="el" href="tws__ll__scan_8c.html#a6c6991cba0e2995d7d9aec73e0324317">LOG_TAG_CONST</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6c6991cba0e2995d7d9aec73e0324317"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_TAG_CONST&#160;&#160;&#160;LL_AFH</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afd8aa7348f59062de78e681b2caaf048"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_ONLINE_CHANNEL_NUMS&#160;&#160;&#160;(<a class="el" href="ll__afh_8c.html#ac333c8b9f6812639598cceca38afd6b8">MIN_ONLINE_CHANNEL_NUMS</a> + 5)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ade3e9e99eef1d7792d837a8044279dec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_RETRY_NUMS&#160;&#160;&#160;5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2938837cf16a8e208ee2d6adb946fb78"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MEMBER_IS_ALONE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;((x-&gt;entry.next == &amp;x-&gt;entry) || (x-&gt;entry.next == NULL))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac333c8b9f6812639598cceca38afd6b8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MIN_ONLINE_CHANNEL_NUMS&#160;&#160;&#160;13</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a686a991566cf9905efda47511234bf61"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MIN_RETRY_NUMS&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae0fff37180cb2ff37aca07680deff1b8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REDUCE_ONLINE_NUMS&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1790cf8e7506da554bc1acab1d011cd2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define S16_MAX_LIMIT&#160;&#160;&#160;((2 &lt;&lt; 14) - 1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab72cdee251f9107b020c634646c87d1b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define S16_MIN_LIMIT&#160;&#160;&#160;(-(2 &lt;&lt; 14))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1e5d0d356c54a8d50edae78818e843a1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define U12_MAX_LIMIT&#160;&#160;&#160;((2 &lt;&lt; 11) - 1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1b044af29c292cdca091c887e288be14"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define U16_MAX_LIMIT&#160;&#160;&#160;((2 &lt;&lt; 15) - 1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a88d3166cbec3b976d05b1c22ed4a4386"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define U24_MAX_LIMIT&#160;&#160;&#160;((2 &lt;&lt; 23) - 1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a066a2fc24e8383fdf5c15b9958f2911e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define U8_MAX_LIMIT&#160;&#160;&#160;((2 &lt;&lt; 7) - 1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a40d32b2f9e1ab4f99988c56bedc35001"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UPDATE_PERIOD_PROBABLY&#160;&#160;&#160;7000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">枚举类型说明</h2>
+<a class="anchor" id="a06fc87d81c62e9abb8790b6e5713c55b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="a06fc87d81c62e9abb8790b6e5713c55baf602a728c42b93395d40e86a5cbb084f"></a>AFH_INPUT_READY&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a06fc87d81c62e9abb8790b6e5713c55baf9864f4fe690c6b9e5b5fc9b21af97e1"></a>AFH_OUTPUT_START&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a06fc87d81c62e9abb8790b6e5713c55ba4036caebdb09384210a115a457bed89d"></a>AFH_OUTPUT_CONTINUE&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a06fc87d81c62e9abb8790b6e5713c55ba484b4cfe1983bd13dc6b6c52d56fde44"></a>AFH_OUTPUT_COMPLETE&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a65db42b248368da0bf94942d3bcc5bcb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void AFH_info_init </td>
+          <td>(</td>
+          <td class="paramtype">struct ble_conn_param *&#160;</td>
+          <td class="paramname"><em>conn_param</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad592cad4dd75c346be2ac2d61478aa07"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void AFH_input_FromEventIsr </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *&#160;</td>
+          <td class="paramname"><em>link</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>channel_index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5f24747d7126a02e6a462dba8a9e2feb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void AFH_input_FromRxIsr </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="ll__afh_8c.html#struct__input__info">_input_info</a> *&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afd715995fa3b2672a0df0df5e2e40a8a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void AFH_output_UpdateChannelMap </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *&#160;</td>
+          <td class="paramname"><em>link</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2a1dae14f53000ee232bb3203df0b605"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int afh_printf </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9d3ab867025491e3f202eec06fde85a5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool algorithm_of_weight </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *&#160;</td>
+          <td class="paramname"><em>link</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="ll__afh_8c.html#struct__channel__quality">_channel_quality</a> *&#160;</td>
+          <td class="paramname"><em>current_channel</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad507bf4ca22fda726e0a57ff2b6a89ad"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void channle_average_weight_sort </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="ll__afh_8c.html#struct__channel__quality">_channel_quality</a> *&#160;</td>
+          <td class="paramname"><em>member</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct list_head *&#160;</td>
+          <td class="paramname"><em>head</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad9393ac1815b46780df3fc94e7cf0ec1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void channle_weight_sort </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="ll__afh_8c.html#struct__channel__quality">_channel_quality</a> *&#160;</td>
+          <td class="paramname"><em>member</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct list_head *&#160;</td>
+          <td class="paramname"><em>head</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5005e394524f3252061f4a7749e736b9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void conn_evt_probe_evtchannel_handler </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *&#160;</td>
+          <td class="paramname"><em>link</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>param</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac1bcacaf9d045509ad21553ec0da301c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void conn_rx_probe_channel_handler </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *&#160;</td>
+          <td class="paramname"><em>link</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct ble_rx *&#160;</td>
+          <td class="paramname"><em>rx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5e860aba8294c0865bab74c72ce3a8b2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 le_channel_map_update </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="llcp_8h.html#structhost__channel__classification">host_channel_classification</a> *&#160;</td>
+          <td class="paramname"><em>param</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af13ece4d6b4e782897f07f64cfc9b322"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_channel_info_init </td>
+          <td>(</td>
+          <td class="paramtype">struct ble_conn_param *&#160;</td>
+          <td class="paramname"><em>conn_param</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa1f77e6afdd628909ff251aa46d49d2e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ll_channel_map_print </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a12ab4e73484b34534907707fbac70c98"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_update_channel_map_post_handler </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *&#160;</td>
+          <td class="paramname"><em>link</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a418a3b39b804f31fca736d577a16e608"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void master_ll_update_channel_map_done </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a class="anchor" id="a3421f3ca17315f03e7508eea1ac1997f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">atomic_t afh_pend</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5f6af41985bd2c2362e1b6a9f87f0e03"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct list_head bad_ch_list_head</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a15a8b766c3203d4df6ad1a8830012592"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="ll__afh_8c.html#struct__channel__quality">_channel_quality</a> channel_quality[<a class="el" href="ll__afh_8c.html#a4260224e301c33c285aa639e9c6e96ca">DATA_CHANNEL_NUMS</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0fb82cdfc5ceabd7e6d62df51f99d55e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 complete_sample_nums</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a761bf9755363e31d668226a9c9ca1972"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const u8 first_used_channels[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4c056244bd921f5b64456a88dfa4299a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct list_head good_ch_list_head</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a49b19c98f399665e878f43d2bc9113e8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 new_channel_map[<a class="el" href="ll__afh_8c.html#aa850c6877eabe7895647653ba4c00b97">CHANNEL_MAP_OCTETS</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5ce136352acda1caad8bb096e6691763"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 new_online_channels_nums</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a78f9c4ff53ebae016be64715daf1e099"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 pre_channel_effect_times</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structLlCisCreateCisParam__t" kind="struct" language="C++" prot="public">
+    <compoundname>LlCisCreateCisParam_t</compoundname>
+    <includes refid="ll__cis_8h" local="no">ll_cis.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structLlCisCreateCisParam__t_1a26db2ae4f8d1ce795b5d648b975d9bb9" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t LlCisCreateCisParam_t::cisHandle</definition>
+        <argsstring></argsstring>
+        <name>cisHandle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to the connected isochronous handle array. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="163" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLlCisCreateCisParam__t_1a1ca16f6b719517aad8e15ce6a819364a" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t LlCisCreateCisParam_t::aclHandle</definition>
+        <argsstring></argsstring>
+        <name>aclHandle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to the asynchronous connection link handle array. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="164" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Create CIS parameters. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="162" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="162" bodyend="165"/>
+    <listofallmembers>
+      <member refid="structLlCisCreateCisParam__t_1a1ca16f6b719517aad8e15ce6a819364a" prot="public" virt="non-virtual"><scope>LlCisCreateCisParam_t</scope><name>aclHandle</name></member>
+      <member refid="structLlCisCreateCisParam__t_1a26db2ae4f8d1ce795b5d648b975d9bb9" prot="public" virt="non-virtual"><scope>LlCisCreateCisParam_t</scope><name>cisHandle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

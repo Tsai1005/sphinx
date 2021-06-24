@@ -1,0 +1,379 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="unionlctrDataPdu__t_8pld" kind="union" language="C++" prot="public">
+    <compoundname>lctrDataPdu_t.pld</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unionlctrDataPdu__t_8pld_1a113cba2ecfe5ba8d8bb6dd91e1b0af4a" prot="public" static="no" mutable="no">
+        <type><ref refid="structlctrConnUpdInd__t" kindref="compound">lctrConnUpdInd_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>connUpdInd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Connection update indication. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1080" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlctrDataPdu__t_8pld_1a3691f3d30427fb1e6081da8595271244" prot="public" static="no" mutable="no">
+        <type><ref refid="structlctrChanMapInd__t" kindref="compound">lctrChanMapInd_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>chanMapInd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Channel map request. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1081" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlctrDataPdu__t_8pld_1a985b335869d8854a9348535e4e562804" prot="public" static="no" mutable="no">
+        <type><ref refid="structlctrTermInd__t" kindref="compound">lctrTermInd_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>termInd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Terminate indication. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1082" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlctrDataPdu__t_8pld_1aabb03104c8ca4c6df4ff5f3e130b051b" prot="public" static="no" mutable="no">
+        <type><ref refid="structlctrEncReq__t" kindref="compound">lctrEncReq_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>encReq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Encryption request. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1083" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlctrDataPdu__t_8pld_1ada5604e1eefa8f51247d64eb805b45cf" prot="public" static="no" mutable="no">
+        <type><ref refid="structlctrEncRsp__t" kindref="compound">lctrEncRsp_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>encRsp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Encryption response. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1084" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlctrDataPdu__t_8pld_1ae2dbae26451af43de66fbfe75727d7a8" prot="public" static="no" mutable="no">
+        <type><ref refid="structlctrUnknownRsp__t" kindref="compound">lctrUnknownRsp_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>unknownRsp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Unknown response. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1085" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlctrDataPdu__t_8pld_1a9d6426da0b725f7fedddf4206f756532" prot="public" static="no" mutable="no">
+        <type><ref refid="structlctrFeat__t" kindref="compound">lctrFeat_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>featReqRsp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Feature request or response or slave feature request. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1086" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlctrDataPdu__t_8pld_1a42c8364c2cac00bd23fde5cc8239f15a" prot="public" static="no" mutable="no">
+        <type><ref refid="structlctrVerInd__t" kindref="compound">lctrVerInd_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>verInd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Version indication. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1087" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlctrDataPdu__t_8pld_1a94abc4fe694a4fe863b54f1714f31dd3" prot="public" static="no" mutable="no">
+        <type><ref refid="structlctrRejInd__t" kindref="compound">lctrRejInd_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>rejInd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reject indication. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1088" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlctrDataPdu__t_8pld_1a109712ba6e4868e5be8d108f13ea86e4" prot="public" static="no" mutable="no">
+        <type><ref refid="structlctrConnParam__t" kindref="compound">lctrConnParam_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>connParamReqRsp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Connection parameter request or response. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1089" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlctrDataPdu__t_8pld_1a3c7308ddaaf4721c8817442a5c635631" prot="public" static="no" mutable="no">
+        <type><ref refid="structlctrRejExtInd__t" kindref="compound">lctrRejExtInd_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>rejExtInd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reject Ext indication. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1090" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlctrDataPdu__t_8pld_1adbb512a6b2276ead1892ced7d9c7e507" prot="public" static="no" mutable="no">
+        <type><ref refid="structlctrDataLen__t" kindref="compound">lctrDataLen_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>lenReq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data length request. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1091" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlctrDataPdu__t_8pld_1a8061fb3b4ddb4f1be5b6c719ed354418" prot="public" static="no" mutable="no">
+        <type><ref refid="structlctrDataLen__t" kindref="compound">lctrDataLen_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>lenRsp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data length response. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1092" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlctrDataPdu__t_8pld_1a6e8e20b663224a3774bf291b7b5927a4" prot="public" static="no" mutable="no">
+        <type><ref refid="structlctrPhy__t" kindref="compound">lctrPhy_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>phyReq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>PHY request. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1093" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlctrDataPdu__t_8pld_1a981d0a2b5016cbf21c6ffa801222a3a8" prot="public" static="no" mutable="no">
+        <type><ref refid="structlctrPhy__t" kindref="compound">lctrPhy_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>phyRsp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>PHY response. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1094" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlctrDataPdu__t_8pld_1aa5009903fafea219c0582686f10b4e8a" prot="public" static="no" mutable="no">
+        <type><ref refid="structlctrPhyUpdInd__t" kindref="compound">lctrPhyUpdInd_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>phyUpdInd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>PHY update indication. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1095" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlctrDataPdu__t_8pld_1a500a4276703b143d52c33d32200e1899" prot="public" static="no" mutable="no">
+        <type><ref refid="structlctrMinUsedChanInd__t" kindref="compound">lctrMinUsedChanInd_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>minUsedChanInd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Minimum number of used channels indication. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1096" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlctrDataPdu__t_8pld_1ab552b2287521e11816b6116645e9fb96" prot="public" static="no" mutable="no">
+        <type><ref refid="structlctrPerSyncInd__t" kindref="compound">lctrPerSyncInd_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>perSyncInd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Periodic sync indication. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1097" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlctrDataPdu__t_8pld_1aabb69fc6f1a2879725b390490e3341e7" prot="public" static="no" mutable="no">
+        <type><ref refid="structlctrPeerSca__t" kindref="compound">lctrPeerSca_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>peerSca</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Peer SCA request/response. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1098" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlctrDataPdu__t_8pld_1aee239cc0962269be6094ce9723878a2c" prot="public" static="no" mutable="no">
+        <type><ref refid="structlctrCisReq__t" kindref="compound">lctrCisReq_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>cisReq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CIS request. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1099" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlctrDataPdu__t_8pld_1ab7b3381fbac1d2a049330171e0ad8677" prot="public" static="no" mutable="no">
+        <type><ref refid="structlctrCisRsp__t" kindref="compound">lctrCisRsp_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>cisRsp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CIS response. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1100" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlctrDataPdu__t_8pld_1aca144c7ecb88511dd91a4870d7ef64a8" prot="public" static="no" mutable="no">
+        <type><ref refid="structlctrCisInd__t" kindref="compound">lctrCisInd_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>cisInd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CIS indication. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1101" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlctrDataPdu__t_8pld_1a982eceac36b77e7ca0a2a9f0ef38764f" prot="public" static="no" mutable="no">
+        <type>lctrCisTermInd_t</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>cisTerm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CIS terminate indication. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1102" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlctrDataPdu__t_8pld_1ae444e67668f66ca92e37d674b6a017ca" prot="public" static="no" mutable="no">
+        <type><ref refid="structlctrPwrCtrlReq__t" kindref="compound">lctrPwrCtrlReq_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>pwrCtrlReq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Power control request. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1103" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlctrDataPdu__t_8pld_1aca43358f6c0dc73dbc620d6adbfa3f97" prot="public" static="no" mutable="no">
+        <type><ref refid="structlctrPwrCtrlRsp__t" kindref="compound">lctrPwrCtrlRsp_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>pwrCtrlRsp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Power control response. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1104" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlctrDataPdu__t_8pld_1a23c5c80f6dd9eec5acf282867adc44e8" prot="public" static="no" mutable="no">
+        <type><ref refid="structlctrPwrChngInd__t" kindref="compound">lctrPwrChngInd_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>pwrChngInd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Power change indication. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1105" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1079" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1079" bodyend="1106"/>
+    <listofallmembers>
+      <member refid="unionlctrDataPdu__t_8pld_1a3691f3d30427fb1e6081da8595271244" prot="public" virt="non-virtual"><scope>lctrDataPdu_t.pld</scope><name>chanMapInd</name></member>
+      <member refid="unionlctrDataPdu__t_8pld_1aca144c7ecb88511dd91a4870d7ef64a8" prot="public" virt="non-virtual"><scope>lctrDataPdu_t.pld</scope><name>cisInd</name></member>
+      <member refid="unionlctrDataPdu__t_8pld_1aee239cc0962269be6094ce9723878a2c" prot="public" virt="non-virtual"><scope>lctrDataPdu_t.pld</scope><name>cisReq</name></member>
+      <member refid="unionlctrDataPdu__t_8pld_1ab7b3381fbac1d2a049330171e0ad8677" prot="public" virt="non-virtual"><scope>lctrDataPdu_t.pld</scope><name>cisRsp</name></member>
+      <member refid="unionlctrDataPdu__t_8pld_1a982eceac36b77e7ca0a2a9f0ef38764f" prot="public" virt="non-virtual"><scope>lctrDataPdu_t.pld</scope><name>cisTerm</name></member>
+      <member refid="unionlctrDataPdu__t_8pld_1a109712ba6e4868e5be8d108f13ea86e4" prot="public" virt="non-virtual"><scope>lctrDataPdu_t.pld</scope><name>connParamReqRsp</name></member>
+      <member refid="unionlctrDataPdu__t_8pld_1a113cba2ecfe5ba8d8bb6dd91e1b0af4a" prot="public" virt="non-virtual"><scope>lctrDataPdu_t.pld</scope><name>connUpdInd</name></member>
+      <member refid="unionlctrDataPdu__t_8pld_1aabb03104c8ca4c6df4ff5f3e130b051b" prot="public" virt="non-virtual"><scope>lctrDataPdu_t.pld</scope><name>encReq</name></member>
+      <member refid="unionlctrDataPdu__t_8pld_1ada5604e1eefa8f51247d64eb805b45cf" prot="public" virt="non-virtual"><scope>lctrDataPdu_t.pld</scope><name>encRsp</name></member>
+      <member refid="unionlctrDataPdu__t_8pld_1a9d6426da0b725f7fedddf4206f756532" prot="public" virt="non-virtual"><scope>lctrDataPdu_t.pld</scope><name>featReqRsp</name></member>
+      <member refid="unionlctrDataPdu__t_8pld_1adbb512a6b2276ead1892ced7d9c7e507" prot="public" virt="non-virtual"><scope>lctrDataPdu_t.pld</scope><name>lenReq</name></member>
+      <member refid="unionlctrDataPdu__t_8pld_1a8061fb3b4ddb4f1be5b6c719ed354418" prot="public" virt="non-virtual"><scope>lctrDataPdu_t.pld</scope><name>lenRsp</name></member>
+      <member refid="unionlctrDataPdu__t_8pld_1a500a4276703b143d52c33d32200e1899" prot="public" virt="non-virtual"><scope>lctrDataPdu_t.pld</scope><name>minUsedChanInd</name></member>
+      <member refid="unionlctrDataPdu__t_8pld_1aabb69fc6f1a2879725b390490e3341e7" prot="public" virt="non-virtual"><scope>lctrDataPdu_t.pld</scope><name>peerSca</name></member>
+      <member refid="unionlctrDataPdu__t_8pld_1ab552b2287521e11816b6116645e9fb96" prot="public" virt="non-virtual"><scope>lctrDataPdu_t.pld</scope><name>perSyncInd</name></member>
+      <member refid="unionlctrDataPdu__t_8pld_1a6e8e20b663224a3774bf291b7b5927a4" prot="public" virt="non-virtual"><scope>lctrDataPdu_t.pld</scope><name>phyReq</name></member>
+      <member refid="unionlctrDataPdu__t_8pld_1a981d0a2b5016cbf21c6ffa801222a3a8" prot="public" virt="non-virtual"><scope>lctrDataPdu_t.pld</scope><name>phyRsp</name></member>
+      <member refid="unionlctrDataPdu__t_8pld_1aa5009903fafea219c0582686f10b4e8a" prot="public" virt="non-virtual"><scope>lctrDataPdu_t.pld</scope><name>phyUpdInd</name></member>
+      <member refid="unionlctrDataPdu__t_8pld_1a23c5c80f6dd9eec5acf282867adc44e8" prot="public" virt="non-virtual"><scope>lctrDataPdu_t.pld</scope><name>pwrChngInd</name></member>
+      <member refid="unionlctrDataPdu__t_8pld_1ae444e67668f66ca92e37d674b6a017ca" prot="public" virt="non-virtual"><scope>lctrDataPdu_t.pld</scope><name>pwrCtrlReq</name></member>
+      <member refid="unionlctrDataPdu__t_8pld_1aca43358f6c0dc73dbc620d6adbfa3f97" prot="public" virt="non-virtual"><scope>lctrDataPdu_t.pld</scope><name>pwrCtrlRsp</name></member>
+      <member refid="unionlctrDataPdu__t_8pld_1a3c7308ddaaf4721c8817442a5c635631" prot="public" virt="non-virtual"><scope>lctrDataPdu_t.pld</scope><name>rejExtInd</name></member>
+      <member refid="unionlctrDataPdu__t_8pld_1a94abc4fe694a4fe863b54f1714f31dd3" prot="public" virt="non-virtual"><scope>lctrDataPdu_t.pld</scope><name>rejInd</name></member>
+      <member refid="unionlctrDataPdu__t_8pld_1a985b335869d8854a9348535e4e562804" prot="public" virt="non-virtual"><scope>lctrDataPdu_t.pld</scope><name>termInd</name></member>
+      <member refid="unionlctrDataPdu__t_8pld_1ae2dbae26451af43de66fbfe75727d7a8" prot="public" virt="non-virtual"><scope>lctrDataPdu_t.pld</scope><name>unknownRsp</name></member>
+      <member refid="unionlctrDataPdu__t_8pld_1a42c8364c2cac00bd23fde5cc8239f15a" prot="public" virt="non-virtual"><scope>lctrDataPdu_t.pld</scope><name>verInd</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

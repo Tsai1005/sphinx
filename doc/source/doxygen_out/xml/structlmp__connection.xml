@@ -1,0 +1,663 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structlmp__connection" kind="struct" language="C++" prot="public">
+    <compoundname>lmp_connection</compoundname>
+    <includes refid="lmp_8h" local="no">lmp.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlmp__connection_1a87b9ebb5da20968ebaa84529fc22cec5" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_connection::rejust_esco_req</definition>
+        <argsstring></argsstring>
+        <name>rejust_esco_req</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="663" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="663" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__connection_1a7d20d40a9d35d527f04853538f2263ff" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_connection::tran_id</definition>
+        <argsstring></argsstring>
+        <name>tran_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="664" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="664" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__connection_1a2c44674781c11134ec1c9f0745689bb2" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_connection::err_code</definition>
+        <argsstring></argsstring>
+        <name>err_code</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="665" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="665" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__connection_1a89b5f63ffe44db1e1ea5326cb75268e7" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_connection::cap_adjust</definition>
+        <argsstring></argsstring>
+        <name>cap_adjust</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="666" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="666" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__connection_1af09e3cfa59e14d0a8fccddbe423483cd" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_connection::sniff_req_timer</definition>
+        <argsstring></argsstring>
+        <name>sniff_req_timer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="667" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="667" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__connection_1a8ae5940d8da07a4516e68fd24d2bf655" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_connection::lmp_detch_start</definition>
+        <argsstring></argsstring>
+        <name>lmp_detch_start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="668" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="668" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__connection_1ae63f1d6ad067f9af9a05971e8e297c6a" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_connection::rx_remove_esco_req_before_esco_setup</definition>
+        <argsstring></argsstring>
+        <name>rx_remove_esco_req_before_esco_setup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="669" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="669" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__connection_1a709a6e6d38354df7ef99de3a13ed4089" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_connection::sbc_open</definition>
+        <argsstring></argsstring>
+        <name>sbc_open</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="670" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="670" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__connection_1a7b58f277f05f3bb3d1391b01d1511a5f" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_connection::rxbuf_full</definition>
+        <argsstring></argsstring>
+        <name>rxbuf_full</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="671" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="671" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__connection_1a03ecde5bd2f72a7f252529242abcb828" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_connection::busy</definition>
+        <argsstring></argsstring>
+        <name>busy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="672" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="672" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__connection_1a5ae28084820b3a3ac86a3fc261a8af91" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_connection::codec_type</definition>
+        <argsstring></argsstring>
+        <name>codec_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="673" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="673" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__connection_1a01943fa04446fd346f3b0d925e7ff375" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 lmp_connection::timer</definition>
+        <argsstring></argsstring>
+        <name>timer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="674" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="674" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__connection_1ab11b3241803d14fd702444d6c1f23811" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 lmp_connection::sbc_channel</definition>
+        <argsstring></argsstring>
+        <name>sbc_channel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="675" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="675" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__connection_1a3db8e38acfa3c592e10fc069945018ae" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 lmp_connection::sbc_packet_size</definition>
+        <argsstring></argsstring>
+        <name>sbc_packet_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="676" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="676" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__connection_1abdae66b42f9a50d9b39937686f4e3985" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 lmp_connection::clear_a2dp_packet_num</definition>
+        <argsstring></argsstring>
+        <name>clear_a2dp_packet_num</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="677" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="677" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__connection_1ac7a1bfe63e477cc728d07190f5d17241" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 lmp_connection::wfdet_counter</definition>
+        <argsstring></argsstring>
+        <name>wfdet_counter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="678" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="678" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__connection_1af4cd7047563ae2f43ee5c5ab09ad076a" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 lmp_connection::wf_det_time</definition>
+        <argsstring></argsstring>
+        <name>wf_det_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="679" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="679" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__connection_1a7f4e54ce67529858a4c009081be32645" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 lmp_connection::rx_sbc_instant</definition>
+        <argsstring></argsstring>
+        <name>rx_sbc_instant</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="680" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="680" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__connection_1ad2f64e24f1d5d4046840842367ed9f6a" prot="public" static="no" mutable="no">
+        <type>u8 *</type>
+        <definition>u8* lmp_connection::remote_name</definition>
+        <argsstring></argsstring>
+        <name>remote_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="681" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="681" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__connection_1a2f713790ba4bf70a9d1b268cdb43582a" prot="public" static="no" mutable="no">
+        <type>OS_SEM</type>
+        <definition>OS_SEM lmp_connection::sbc_sem</definition>
+        <argsstring></argsstring>
+        <name>sbc_sem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="682" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="682" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__connection_1aaea2e2760e885b3fa5248af18b93e1c7" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structbredr__rx__bulk" kindref="compound">bredr_rx_bulk</ref> *</type>
+        <definition>struct bredr_rx_bulk* lmp_connection::acl_s_bulk</definition>
+        <argsstring></argsstring>
+        <name>acl_s_bulk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="686" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="686" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__connection_1a14db112e05bacb4f460bf91a789b78d1" prot="public" static="no" mutable="no">
+        <type>struct list_head</type>
+        <definition>struct list_head lmp_connection::rx_acl_u</definition>
+        <argsstring></argsstring>
+        <name>rx_acl_u</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="686" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="687" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__connection_1a2be6858a76d1b333a9234d2be3109315" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structlmp__core__data" kindref="compound">lmp_core_data</ref></type>
+        <definition>struct lmp_core_data lmp_connection::core</definition>
+        <argsstring></argsstring>
+        <name>core</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="686" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="688" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__connection_1a42f76be7cc98e5a6d42dc914c0aecabe" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structlmp__core__data__static" kindref="compound">lmp_core_data_static</ref></type>
+        <definition>struct lmp_core_data_static lmp_connection::core_s</definition>
+        <argsstring></argsstring>
+        <name>core_s</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="686" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="689" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__connection_1a8fbb77bc5576ca74343c415e65328824" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structlink__connection" kindref="compound">link_connection</ref> *</type>
+        <definition>struct link_connection* lmp_connection::link</definition>
+        <argsstring></argsstring>
+        <name>link</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="690" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="690" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__connection_1a7da2a069143c3c3f7eeaf0fbc6cafc8a" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structlmp__sniff" kindref="compound">lmp_sniff</ref> *</type>
+        <definition>struct lmp_sniff* lmp_connection::sniff</definition>
+        <argsstring></argsstring>
+        <name>sniff</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="691" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="691" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__connection_1a014e66c358439780bc4ef4e0fa424317" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structlmp__esco" kindref="compound">lmp_esco</ref> *</type>
+        <definition>struct lmp_esco* lmp_connection::esco_conn</definition>
+        <argsstring></argsstring>
+        <name>esco_conn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="692" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="692" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__connection_1ac85ae1a04df880748aa361af2f8506f3" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structlmp__encrypt" kindref="compound">lmp_encrypt</ref> *</type>
+        <definition>struct lmp_encrypt* lmp_connection::encrypt</definition>
+        <argsstring></argsstring>
+        <name>encrypt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="693" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="693" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__connection_1a465496c9a465638e450dbcba20af15be" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structlmp__role__switch" kindref="compound">lmp_role_switch</ref> *</type>
+        <definition>struct lmp_role_switch* lmp_connection::rs_process</definition>
+        <argsstring></argsstring>
+        <name>rs_process</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="694" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="694" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__connection_1a9add35572bd6b47d0a16507dedbc522f" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structlmp__simple__pair" kindref="compound">lmp_simple_pair</ref> *</type>
+        <definition>struct lmp_simple_pair* lmp_connection::simple</definition>
+        <argsstring></argsstring>
+        <name>simple</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="695" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="695" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__connection_1a4304995c1c65503b99c2e104a0575035" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* lmp_connection::role_machine_handler) (struct lmp_connection *conn, struct bredr_rx_bulk *rx, int *hci_cmd)</definition>
+        <argsstring>)(struct lmp_connection *conn, struct bredr_rx_bulk *rx, int *hci_cmd)</argsstring>
+        <name>role_machine_handler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="696" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="696" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1569">
+        <label>lmp_core_data</label>
+        <link refid="structlmp__core__data"/>
+      </node>
+      <node id="1558">
+        <label>link_page</label>
+        <link refid="structlink__page"/>
+        <childnode refid="1559" relation="usage">
+          <edgelabel>tws_rx_info</edgelabel>
+          <edgelabel>tws_tx_info</edgelabel>
+        </childnode>
+        <childnode refid="1560" relation="usage">
+          <edgelabel>remote</edgelabel>
+        </childnode>
+        <childnode refid="1561" relation="usage">
+          <edgelabel>task</edgelabel>
+        </childnode>
+      </node>
+      <node id="1564">
+        <label>bredr_dut</label>
+        <link refid="structbredr__dut"/>
+      </node>
+      <node id="1556">
+        <label>link_afh_report</label>
+        <link refid="structlink__afh__report"/>
+      </node>
+      <node id="1557">
+        <label>bredr_role_switch</label>
+        <link refid="structbredr__role__switch"/>
+        <childnode refid="1558" relation="usage">
+          <edgelabel>page</edgelabel>
+        </childnode>
+        <childnode refid="1563" relation="usage">
+          <edgelabel>page_scan</edgelabel>
+        </childnode>
+      </node>
+      <node id="1559">
+        <label>tws_pair_info</label>
+        <link refid="structtws__pair__info"/>
+      </node>
+      <node id="1568">
+        <label>esco_codec_ops</label>
+        <link refid="structesco__codec__ops"/>
+      </node>
+      <node id="1554">
+        <label>lmp_esco_pdu</label>
+        <link refid="structlmp__esco__pdu"/>
+      </node>
+      <node id="1570">
+        <label>lmp_encrypt</label>
+        <link refid="structlmp__encrypt"/>
+      </node>
+      <node id="1553">
+        <label>__tws_esco_tx_info_t</label>
+        <link refid="struct____tws__esco__tx__info__t"/>
+      </node>
+      <node id="1572">
+        <label>lmp_device</label>
+        <link refid="structlmp__device"/>
+      </node>
+      <node id="1561">
+        <label>link_task</label>
+        <link refid="structlink__task"/>
+        <childnode refid="1562" relation="usage">
+          <edgelabel>ops</edgelabel>
+        </childnode>
+      </node>
+      <node id="1560">
+        <label>link_remote</label>
+        <link refid="structlink__remote"/>
+      </node>
+      <node id="1549">
+        <label>lmp_role_switch</label>
+        <link refid="structlmp__role__switch"/>
+      </node>
+      <node id="1551">
+        <label>bredr_esco_link</label>
+        <link refid="structbredr__esco__link"/>
+        <childnode refid="1548" relation="usage">
+          <edgelabel>rx_bulk</edgelabel>
+        </childnode>
+        <childnode refid="1552" relation="usage">
+          <edgelabel>tx_bulk</edgelabel>
+        </childnode>
+        <childnode refid="1553" relation="usage">
+          <edgelabel>tws_esco_tx_info</edgelabel>
+        </childnode>
+        <childnode refid="1554" relation="usage">
+          <edgelabel>pdu</edgelabel>
+        </childnode>
+      </node>
+      <node id="1563">
+        <label>link_page_scan</label>
+        <link refid="structlink__page__scan"/>
+        <childnode refid="1560" relation="usage">
+          <edgelabel>remote</edgelabel>
+        </childnode>
+        <childnode refid="1561" relation="usage">
+          <edgelabel>task</edgelabel>
+        </childnode>
+      </node>
+      <node id="1555">
+        <label>link_afh</label>
+        <link refid="structlink__afh"/>
+      </node>
+      <node id="1547">
+        <label>lmp_sniff</label>
+        <link refid="structlmp__sniff"/>
+      </node>
+      <node id="1566">
+        <label>lmp_simple_pair</label>
+        <link refid="structlmp__simple__pair"/>
+      </node>
+      <node id="1562">
+        <label>link_task_ops</label>
+        <link refid="structlink__task__ops"/>
+      </node>
+      <node id="1550">
+        <label>link_connection</label>
+        <link refid="structlink__connection"/>
+        <childnode refid="1551" relation="usage">
+          <edgelabel>esco</edgelabel>
+        </childnode>
+        <childnode refid="1555" relation="usage">
+          <edgelabel>afh</edgelabel>
+        </childnode>
+        <childnode refid="1556" relation="usage">
+          <edgelabel>afh_report</edgelabel>
+        </childnode>
+        <childnode refid="1548" relation="usage">
+          <edgelabel>rx_bulk</edgelabel>
+        </childnode>
+        <childnode refid="1552" relation="usage">
+          <edgelabel>tx_bulk</edgelabel>
+        </childnode>
+        <childnode refid="1557" relation="usage">
+          <edgelabel>rs</edgelabel>
+        </childnode>
+        <childnode refid="1564" relation="usage">
+          <edgelabel>dut</edgelabel>
+        </childnode>
+        <childnode refid="1565" relation="usage">
+          <edgelabel>core</edgelabel>
+        </childnode>
+        <childnode refid="1561" relation="usage">
+          <edgelabel>task</edgelabel>
+        </childnode>
+      </node>
+      <node id="1546">
+        <label>lmp_connection</label>
+        <link refid="structlmp__connection"/>
+        <childnode refid="1547" relation="usage">
+          <edgelabel>sniff</edgelabel>
+        </childnode>
+        <childnode refid="1548" relation="usage">
+          <edgelabel>acl_s_bulk</edgelabel>
+        </childnode>
+        <childnode refid="1549" relation="usage">
+          <edgelabel>rs_process</edgelabel>
+        </childnode>
+        <childnode refid="1550" relation="usage">
+          <edgelabel>link</edgelabel>
+        </childnode>
+        <childnode refid="1566" relation="usage">
+          <edgelabel>simple</edgelabel>
+        </childnode>
+        <childnode refid="1567" relation="usage">
+          <edgelabel>esco_conn</edgelabel>
+        </childnode>
+        <childnode refid="1569" relation="usage">
+          <edgelabel>core</edgelabel>
+        </childnode>
+        <childnode refid="1570" relation="usage">
+          <edgelabel>encrypt</edgelabel>
+        </childnode>
+        <childnode refid="1571" relation="usage">
+          <edgelabel>core_s</edgelabel>
+        </childnode>
+      </node>
+      <node id="1571">
+        <label>lmp_core_data_static</label>
+        <link refid="structlmp__core__data__static"/>
+        <childnode refid="1572" relation="usage">
+          <edgelabel>remote</edgelabel>
+        </childnode>
+      </node>
+      <node id="1567">
+        <label>lmp_esco</label>
+        <link refid="structlmp__esco"/>
+        <childnode refid="1554" relation="usage">
+          <edgelabel>pdu</edgelabel>
+        </childnode>
+        <childnode refid="1568" relation="usage">
+          <edgelabel>codec_ops</edgelabel>
+        </childnode>
+        <childnode refid="1546" relation="usage">
+          <edgelabel>acl_link</edgelabel>
+        </childnode>
+      </node>
+      <node id="1565">
+        <label>link_core_data</label>
+        <link refid="structlink__core__data"/>
+      </node>
+      <node id="1548">
+        <label>bredr_rx_bulk</label>
+        <link refid="structbredr__rx__bulk"/>
+      </node>
+      <node id="1552">
+        <label>bredr_tx_bulk</label>
+        <link refid="structbredr__tx__bulk"/>
+      </node>
+    </collaborationgraph>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="662" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="662" bodyend="697"/>
+    <listofallmembers>
+      <member refid="structlmp__connection_1aaea2e2760e885b3fa5248af18b93e1c7" prot="public" virt="non-virtual"><scope>lmp_connection</scope><name>acl_s_bulk</name></member>
+      <member refid="structlmp__connection_1a03ecde5bd2f72a7f252529242abcb828" prot="public" virt="non-virtual"><scope>lmp_connection</scope><name>busy</name></member>
+      <member refid="structlmp__connection_1a89b5f63ffe44db1e1ea5326cb75268e7" prot="public" virt="non-virtual"><scope>lmp_connection</scope><name>cap_adjust</name></member>
+      <member refid="structlmp__connection_1abdae66b42f9a50d9b39937686f4e3985" prot="public" virt="non-virtual"><scope>lmp_connection</scope><name>clear_a2dp_packet_num</name></member>
+      <member refid="structlmp__connection_1a5ae28084820b3a3ac86a3fc261a8af91" prot="public" virt="non-virtual"><scope>lmp_connection</scope><name>codec_type</name></member>
+      <member refid="structlmp__connection_1a2be6858a76d1b333a9234d2be3109315" prot="public" virt="non-virtual"><scope>lmp_connection</scope><name>core</name></member>
+      <member refid="structlmp__connection_1a42f76be7cc98e5a6d42dc914c0aecabe" prot="public" virt="non-virtual"><scope>lmp_connection</scope><name>core_s</name></member>
+      <member refid="structlmp__connection_1ac85ae1a04df880748aa361af2f8506f3" prot="public" virt="non-virtual"><scope>lmp_connection</scope><name>encrypt</name></member>
+      <member refid="structlmp__connection_1a2c44674781c11134ec1c9f0745689bb2" prot="public" virt="non-virtual"><scope>lmp_connection</scope><name>err_code</name></member>
+      <member refid="structlmp__connection_1a014e66c358439780bc4ef4e0fa424317" prot="public" virt="non-virtual"><scope>lmp_connection</scope><name>esco_conn</name></member>
+      <member refid="structlmp__connection_1a8fbb77bc5576ca74343c415e65328824" prot="public" virt="non-virtual"><scope>lmp_connection</scope><name>link</name></member>
+      <member refid="structlmp__connection_1a8ae5940d8da07a4516e68fd24d2bf655" prot="public" virt="non-virtual"><scope>lmp_connection</scope><name>lmp_detch_start</name></member>
+      <member refid="structlmp__connection_1a87b9ebb5da20968ebaa84529fc22cec5" prot="public" virt="non-virtual"><scope>lmp_connection</scope><name>rejust_esco_req</name></member>
+      <member refid="structlmp__connection_1ad2f64e24f1d5d4046840842367ed9f6a" prot="public" virt="non-virtual"><scope>lmp_connection</scope><name>remote_name</name></member>
+      <member refid="structlmp__connection_1a4304995c1c65503b99c2e104a0575035" prot="public" virt="non-virtual"><scope>lmp_connection</scope><name>role_machine_handler</name></member>
+      <member refid="structlmp__connection_1a465496c9a465638e450dbcba20af15be" prot="public" virt="non-virtual"><scope>lmp_connection</scope><name>rs_process</name></member>
+      <member refid="structlmp__connection_1a14db112e05bacb4f460bf91a789b78d1" prot="public" virt="non-virtual"><scope>lmp_connection</scope><name>rx_acl_u</name></member>
+      <member refid="structlmp__connection_1ae63f1d6ad067f9af9a05971e8e297c6a" prot="public" virt="non-virtual"><scope>lmp_connection</scope><name>rx_remove_esco_req_before_esco_setup</name></member>
+      <member refid="structlmp__connection_1a7f4e54ce67529858a4c009081be32645" prot="public" virt="non-virtual"><scope>lmp_connection</scope><name>rx_sbc_instant</name></member>
+      <member refid="structlmp__connection_1a7b58f277f05f3bb3d1391b01d1511a5f" prot="public" virt="non-virtual"><scope>lmp_connection</scope><name>rxbuf_full</name></member>
+      <member refid="structlmp__connection_1ab11b3241803d14fd702444d6c1f23811" prot="public" virt="non-virtual"><scope>lmp_connection</scope><name>sbc_channel</name></member>
+      <member refid="structlmp__connection_1a709a6e6d38354df7ef99de3a13ed4089" prot="public" virt="non-virtual"><scope>lmp_connection</scope><name>sbc_open</name></member>
+      <member refid="structlmp__connection_1a3db8e38acfa3c592e10fc069945018ae" prot="public" virt="non-virtual"><scope>lmp_connection</scope><name>sbc_packet_size</name></member>
+      <member refid="structlmp__connection_1a2f713790ba4bf70a9d1b268cdb43582a" prot="public" virt="non-virtual"><scope>lmp_connection</scope><name>sbc_sem</name></member>
+      <member refid="structlmp__connection_1a9add35572bd6b47d0a16507dedbc522f" prot="public" virt="non-virtual"><scope>lmp_connection</scope><name>simple</name></member>
+      <member refid="structlmp__connection_1a7da2a069143c3c3f7eeaf0fbc6cafc8a" prot="public" virt="non-virtual"><scope>lmp_connection</scope><name>sniff</name></member>
+      <member refid="structlmp__connection_1af09e3cfa59e14d0a8fccddbe423483cd" prot="public" virt="non-virtual"><scope>lmp_connection</scope><name>sniff_req_timer</name></member>
+      <member refid="structlmp__connection_1a01943fa04446fd346f3b0d925e7ff375" prot="public" virt="non-virtual"><scope>lmp_connection</scope><name>timer</name></member>
+      <member refid="structlmp__connection_1a7d20d40a9d35d527f04853538f2263ff" prot="public" virt="non-virtual"><scope>lmp_connection</scope><name>tran_id</name></member>
+      <member refid="structlmp__connection_1af4cd7047563ae2f43ee5c5ab09ad076a" prot="public" virt="non-virtual"><scope>lmp_connection</scope><name>wf_det_time</name></member>
+      <member refid="structlmp__connection_1ac7a1bfe63e477cc728d07190f5d17241" prot="public" virt="non-virtual"><scope>lmp_connection</scope><name>wfdet_counter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

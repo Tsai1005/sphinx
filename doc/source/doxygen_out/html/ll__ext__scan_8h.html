@@ -1,0 +1,865 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>JL Adapter SDK: /data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_scan.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">JL Adapter SDK
+   &#160;<span id="projectnumber">v0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_5aa4d6ccf34d88a270949875c15714e5.html">btctrler</a></li><li class="navelem"><a class="el" href="dir_119de8fbed06b648fc4b1712ddece599.html">include_v2</a></li><li class="navelem"><a class="el" href="dir_11c925b722666962fce8d6f7c0ca7e4f.html">ble</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle">
+<div class="title">ll_ext_scan.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;typedef.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+ll_ext_scan.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="ll__ext__scan_8h__incl.png" border="0" usemap="#_2data_2bingquan_2repo_2repo__adapter_2adapter__sdk_2lib_2btctrler_2include__v2_2ble_2ll__ext__scan_8h" alt=""/></div>
+<map name="_2data_2bingquan_2repo_2repo__adapter_2adapter__sdk_2lib_2btctrler_2include__v2_2ble_2ll__ext__scan_8h" id="_2data_2bingquan_2repo_2repo__adapter_2adapter__sdk_2lib_2btctrler_2include__v2_2ble_2ll__ext__scan_8h">
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="ll__ext__scan_8h__dep__incl.png" border="0" usemap="#_2data_2bingquan_2repo_2repo__adapter_2adapter__sdk_2lib_2btctrler_2include__v2_2ble_2ll__ext__scan_8hdep" alt=""/></div>
+<map name="_2data_2bingquan_2repo_2repo__adapter_2adapter__sdk_2lib_2btctrler_2include__v2_2ble_2ll__ext__scan_8hdep" id="_2data_2bingquan_2repo_2repo__adapter_2adapter__sdk_2lib_2btctrler_2include__v2_2ble_2ll__ext__scan_8hdep">
+<area shape="rect" id="node2" href="extended__advertising_8h.html" title="/data/bingquan/repo\l/repo_adapter/adapter\l_sdk/lib/btctrler/include\l_v2/ble/extended_advertising.h" alt="" coords="5,124,208,195"/>
+</map>
+</div>
+</div>
+<p><a href="ll__ext__scan_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+结构体</h2></td></tr>
+<tr class="memitem:union____ExtAdv__EventType"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__ext__scan_8h.html#union____ExtAdv__EventType">__ExtAdv_EventType</a></td></tr>
+<tr class="separator:union____ExtAdv__EventType"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:struct____ext__adv__report__event"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__ext__scan_8h.html#struct____ext__adv__report__event">__ext_adv_report_event</a></td></tr>
+<tr class="separator:struct____ext__adv__report__event"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structle__ext__adv__report"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__ext__scan_8h.html#structle__ext__adv__report">le_ext_adv_report</a></td></tr>
+<tr class="separator:structle__ext__adv__report"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structle__ext__scan__link"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__ext__scan_8h.html#structle__ext__scan__link">le_ext_scan_link</a></td></tr>
+<tr class="separator:structle__ext__scan__link"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:struct____ExtAdv__EventType_8____unnamed____"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__ext__scan_8h.html#struct____ExtAdv__EventType_8____unnamed____">__ExtAdv_EventType.__unnamed__</a></td></tr>
+<tr class="separator:struct____ExtAdv__EventType_8____unnamed____"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a2b5c7ef5af92b367d121312c78628cdd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__ext__scan_8h.html#a2b5c7ef5af92b367d121312c78628cdd">EXT_SCAN_DURATION_UNIT_MS</a>&#160;&#160;&#160;10L</td></tr>
+<tr class="separator:a2b5c7ef5af92b367d121312c78628cdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a028a8ab6611a0cdec1bcbf8a675d72dc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__ext__scan_8h.html#a028a8ab6611a0cdec1bcbf8a675d72dc">EXT_SCAN_PERIOD_UNIT_MS</a>&#160;&#160;&#160;1280L</td></tr>
+<tr class="separator:a028a8ab6611a0cdec1bcbf8a675d72dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77eb2e1fc1adf9d966a9b49cf8739a09"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__ext__scan_8h.html#a77eb2e1fc1adf9d966a9b49cf8739a09">GET_SYNC_INFO</a>()</td></tr>
+<tr class="separator:a77eb2e1fc1adf9d966a9b49cf8739a09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa8428cfa3a9fb61b026d517abd908e4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__ext__scan_8h.html#afa8428cfa3a9fb61b026d517abd908e4">MAKE_REPORT</a>(x,  y)&#160;&#160;&#160;__ble5_ops-&gt;ext_ioctrl(NULL, BLE_GET_EXT_HEADER_RESOLVE, ext_flag, &amp;rx-&gt;data[2], x, y)</td></tr>
+<tr class="separator:afa8428cfa3a9fb61b026d517abd908e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31edb8834d915e6d288298493ba1c6b7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__ext__scan_8h.html#a31edb8834d915e6d288298493ba1c6b7">SET_BIT</a>(value,  start,  len,  dat)&#160;&#160;&#160;(value = (value &amp; ~((~(0xffffffff &lt;&lt; (len))) &lt;&lt; (start))) | (((dat) &amp; (~(0xffffffff &lt;&lt; (len)))) &lt;&lt; (start)))</td></tr>
+<tr class="separator:a31edb8834d915e6d288298493ba1c6b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c4399aafaff083644508e724756c134"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__ext__scan_8h.html#a2c4399aafaff083644508e724756c134">LL_EXT_PUBLIC_PRIMARY_SCAN_CREAT_PROCEDURE</a>()</td></tr>
+<tr class="separator:a2c4399aafaff083644508e724756c134"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d55e23de39519e4fb9b904df0876790"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__ext__scan_8h.html#a7d55e23de39519e4fb9b904df0876790">LL_EXT_PUBLIC_PRIMARY_SCAN_DESTROY_PROCEDURE</a>(x)&#160;&#160;&#160;__ble5_ops-&gt;legacy_close(x);</td></tr>
+<tr class="separator:a7d55e23de39519e4fb9b904df0876790"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa94aeb30150d5436d38dd0b2aef2fc27"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__ext__scan_8h.html#aa94aeb30150d5436d38dd0b2aef2fc27">EXT_REPORT_EVENT_MAX_DATA_LEN</a>&#160;&#160;&#160;( 0xff - sizeof(struct __ext_adv_report_event) )</td></tr>
+<tr class="separator:aa94aeb30150d5436d38dd0b2aef2fc27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a8f5e0748087b87d63826c26de3e9ab94"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__ext__scan_8h.html#a8f5e0748087b87d63826c26de3e9ab94">__report_event_type</a> { <br />
+&#160;&#160;<a class="el" href="ll__ext__scan_8h.html#a8f5e0748087b87d63826c26de3e9ab94a0942121ad971374a0a42662db4e9ccdd">REPORT_CONNECTABLE_ADV</a> = 0, 
+<a class="el" href="ll__ext__scan_8h.html#a8f5e0748087b87d63826c26de3e9ab94a22e2f447fdae8ae5ed8084bec1c5f557">REPORT_SCANNABLE_ADV</a>, 
+<a class="el" href="ll__ext__scan_8h.html#a8f5e0748087b87d63826c26de3e9ab94aeebedd486df2e1f5a4a2202dbd14a816">REPORT_DIRECTED_ADV</a>, 
+<a class="el" href="ll__ext__scan_8h.html#a8f5e0748087b87d63826c26de3e9ab94ac2b98df6f424919de4036e3e0814020f">REPORT_SCAN_RSP</a>, 
+<br />
+&#160;&#160;<a class="el" href="ll__ext__scan_8h.html#a8f5e0748087b87d63826c26de3e9ab94a491a3dd7c0cdad7d591db104e73508ff">REPORT_LEGACY_ADV</a>
+<br />
+ }</td></tr>
+<tr class="separator:a8f5e0748087b87d63826c26de3e9ab94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24734c34558385990915f413953c6a12"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__ext__scan_8h.html#a24734c34558385990915f413953c6a12">__ext_sync_filter_policy</a> { <a class="el" href="ll__ext__scan_8h.html#a24734c34558385990915f413953c6a12a9c851e958a51c43a9cb08c9cbd7515be">NOT_USE_PERIODIC_ADV_LIST</a> = 0, 
+<a class="el" href="ll__ext__scan_8h.html#a24734c34558385990915f413953c6a12a1858dc01ce82cad717613bc361102200">USE_PERIODIC_ADV_LIST</a>
+ }</td></tr>
+<tr class="separator:a24734c34558385990915f413953c6a12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a221c4b601e98bc1d1ca824ebb153c862"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__ext__scan_8h.html#a221c4b601e98bc1d1ca824ebb153c862">build_ext_aux_adv_report</a> (struct <a class="el" href="ll__ext__scan_8h.html#structle__ext__scan__link">le_ext_scan_link</a> *link, struct ble_ext_rx *rx, u8 *offset)</td></tr>
+<tr class="separator:a221c4b601e98bc1d1ca824ebb153c862"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b20604feb2c552a003e02022e7132cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__ext__scan_8h.html#a6b20604feb2c552a003e02022e7132cd">ll_ext_scan_rx_post_process</a> (int *empty)</td></tr>
+<tr class="separator:a6b20604feb2c552a003e02022e7132cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20e06cdf14a775b8b694fe278c00b1aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__ext__scan_8h.html#a20e06cdf14a775b8b694fe278c00b1aa">destroy_le_ext_scan</a> (void)</td></tr>
+<tr class="separator:a20e06cdf14a775b8b694fe278c00b1aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9eef021572c00f9f7f9f042c812f82a"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__ext__scan_8h.html#ad9eef021572c00f9f7f9f042c812f82a">ll_get_ext_scan_link</a> (u16 sync_handle)</td></tr>
+<tr class="separator:ad9eef021572c00f9f7f9f042c812f82a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4bfb24266d7b367c6661bf6265e1691"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__ext__scan_8h.html#af4bfb24266d7b367c6661bf6265e1691">ll_ext_scan_open</a> (void)</td></tr>
+<tr class="separator:af4bfb24266d7b367c6661bf6265e1691"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade4085d263f6f451ccd74a02e2f9f561"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__ext__scan_8h.html#ade4085d263f6f451ccd74a02e2f9f561">ll_ext_scan_close</a> (void)</td></tr>
+<tr class="separator:ade4085d263f6f451ccd74a02e2f9f561"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae42b06eba6fea0d078b7a08f61705572"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__ext__scan_8h.html#ae42b06eba6fea0d078b7a08f61705572">le_cmd_set_ext_scan</a> (u16 opcode, const u8 *data, u32 size)</td></tr>
+<tr class="separator:ae42b06eba6fea0d078b7a08f61705572"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:aa4dd745a3521839a479790391389c1bf"><td class="memItemLeft" align="right" valign="top">union <a class="el" href="ll__ext__scan_8h.html#union____ExtAdv__EventType">__ExtAdv_EventType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__ext__scan_8h.html#aa4dd745a3521839a479790391389c1bf">_GNU_PACKED_</a></td></tr>
+<tr class="separator:aa4dd745a3521839a479790391389c1bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/><h2 class="groupheader">结构体说明</h2>
+<a name="union____ExtAdv__EventType" id="union____ExtAdv__EventType"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">union __ExtAdv_EventType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a1c6d18e9e897d276535b32e8110561e3"></a>struct <a class="el" href="ll__ext__scan_8h.html#struct____ExtAdv__EventType_8____unnamed____">__ExtAdv_EventType</a></td>
+<td class="fieldname">
+__unnamed__</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="affb2636c8d80af4395c50954f048c78b"></a>u16</td>
+<td class="fieldname">
+event_type</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="struct____ext__adv__report__event" id="struct____ext__adv__report__event"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct __ext_adv_report_event</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><div class="dynheader">
+__ext_adv_report_event 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct____ext__adv__report__event__coll__graph.png" border="0" usemap="#____ext__adv__report__event_coll__map" alt="Collaboration graph"/></div>
+<map name="____ext__adv__report__event_coll__map" id="____ext__adv__report__event_coll__map">
+<area shape="rect" id="node2" href="ll__ext__scan_8h.html#union____ExtAdv__EventType" title="__ExtAdv_EventType" alt="" coords="11,5,161,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a970a5b8d609f3cdc5272a800c8a814bc"></a>u8</td>
+<td class="fieldname">
+Address[6]</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="af2841e894ab4c6993907dbf41caeb895"></a>u8</td>
+<td class="fieldname">
+Address_Type</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a659e4e94fc12d760e6d5a16375285395"></a>u8</td>
+<td class="fieldname">
+Advertising_SID</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="aa1ae2c1c1c6d4bdafa8037409ddf51e3"></a>u8</td>
+<td class="fieldname">
+Data[0]</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a523f235fbcb328b645b3c6cc8fc47668"></a>u8</td>
+<td class="fieldname">
+Data_Length</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ad61e5614ecbc4eecffc71b1a46e54465"></a>u8</td>
+<td class="fieldname">
+Direct_Address[6]</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ae72b60cfa4bc7abdb3fd43fae7c740f1"></a>u8</td>
+<td class="fieldname">
+Direct_Address_Type</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ace7eaf15d00e906496b05ede1d9b99f0"></a>union <a class="el" href="ll__ext__scan_8h.html#union____ExtAdv__EventType">__ExtAdv_EventType</a></td>
+<td class="fieldname">
+Event_Type</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a6ad249cdf7178cb272ff2c4d2878555d"></a>u8</td>
+<td class="fieldname">
+Num_Reports</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a399071635c7e3000a1407c9de225c356"></a>u16</td>
+<td class="fieldname">
+Periodic_Advertising_Interval</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a69823e2a048fa9df6cd06305858f7410"></a>u8</td>
+<td class="fieldname">
+Primary_PHY</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="afa1e0c4348b165dca7a31aa3721c41d6"></a>u8</td>
+<td class="fieldname">
+RSSI</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a45ef045c50df5af2661e4698c7dffaee"></a>u8</td>
+<td class="fieldname">
+Secondary_PHY</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="acede40c6765775738442d1422a8b358b"></a>u8</td>
+<td class="fieldname">
+Subevent_Code</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a3824843bf0b8e560481baf3a5ed1af4f"></a>u8</td>
+<td class="fieldname">
+Tx_Power</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structle__ext__adv__report" id="structle__ext__adv__report"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct le_ext_adv_report</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a5258855e162cee869cb31d363aae3aeb"></a>u8</td>
+<td class="fieldname">
+address[6]</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a6a5e8bfd5dee48062ee3c1f919bd23bc"></a>u16</td>
+<td class="fieldname">
+advertising_adi</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ae2b5ba6ee38e03f19e7cdf4a467a4179"></a>u8</td>
+<td class="fieldname">
+cte_type</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ad0be59bf450c185a6b76136fc698add9"></a>u8</td>
+<td class="fieldname">
+direct_address[6]</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ae7c314a0b5f87a827f1bb13c8083e433"></a>u8</td>
+<td class="fieldname">
+event_type</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a6299f19426dabcc1a728d56d9d855de0"></a>u16</td>
+<td class="fieldname">
+periodic_adv_interval</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="aa6eaae2ee50ad78f66efcc1b95f29daa"></a>u8</td>
+<td class="fieldname">
+tx_power</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structle__ext__scan__link" id="structle__ext__scan__link"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct le_ext_scan_link</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><div class="dynheader">
+le_ext_scan_link 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="structle__ext__scan__link__coll__graph.png" border="0" usemap="#le__ext__scan__link_coll__map" alt="Collaboration graph"/></div>
+<map name="le__ext__scan__link_coll__map" id="le__ext__scan__link_coll__map">
+<area shape="rect" id="node2" href="ll__ext__scan_8h.html#structle__ext__adv__report" title="le_ext_adv_report" alt="" coords="5,5,131,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a59757ed828e1643e723853635286a6d2"></a>struct ble_cte_iq_sample *</td>
+<td class="fieldname">
+cte_iq_sample</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a5e817b5ba0949889b86d1b13e0b36cb1"></a>struct <a class="el" href="ll__ext__scan_8h.html#structle__ext__adv__report">le_ext_adv_report</a></td>
+<td class="fieldname">
+ext_adv_report</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a1f599a5a3aefab84126e1a5e350ca656"></a>struct ble_ext_scan</td>
+<td class="fieldname">
+extended_scan</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ad7fb35738ce774536efaaaec6e7e15d2"></a>void *</td>
+<td class="fieldname">
+hw</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a2c24ea1b469c7e40bd1fb3a818ba1726"></a>struct ble_ext_period_sync *</td>
+<td class="fieldname">
+period_sync</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a8ae19b5c0deba0c2e240a28887215b1f"></a>void *</td>
+<td class="fieldname">
+primary_legacy_hw</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ade0e603045828a52ca79cf4915c9ca2f"></a>u8</td>
+<td class="fieldname">
+state</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="struct____ExtAdv__EventType_8____unnamed____" id="struct____ExtAdv__EventType_8____unnamed____"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct __ExtAdv_EventType.__unnamed__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a9857af1fffa8241d55bf0762d6849133"></a>u16</td>
+<td class="fieldname">
+All_other_bits: 9</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a4e6f8d8d47c6e07a63f2929e6d1d5927"></a>u16</td>
+<td class="fieldname">
+Connectable_advertising: 1</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a6870cdf3c19daf95cb9603608bcadbbd"></a>u16</td>
+<td class="fieldname">
+Data_status: 2</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a3400d55dafc5389db793cb3320d64582"></a>u16</td>
+<td class="fieldname">
+Directed_advertising: 1</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a15a4978915ff0d3d69c85c552e46df6f"></a>u16</td>
+<td class="fieldname">
+Legacy_adv_PDUs_used: 1</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a00a4d1a60134160df0dba117fb990094"></a>u16</td>
+<td class="fieldname">
+Scan_response: 1</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ac49c8b1d009e01ea1e6d9e9509f54889"></a>u16</td>
+<td class="fieldname">
+Scannable_advertising: 1</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">宏定义说明</h2>
+<a class="anchor" id="aa94aeb30150d5436d38dd0b2aef2fc27"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EXT_REPORT_EVENT_MAX_DATA_LEN&#160;&#160;&#160;( 0xff - sizeof(struct __ext_adv_report_event) )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2b5c7ef5af92b367d121312c78628cdd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EXT_SCAN_DURATION_UNIT_MS&#160;&#160;&#160;10L</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a028a8ab6611a0cdec1bcbf8a675d72dc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EXT_SCAN_PERIOD_UNIT_MS&#160;&#160;&#160;1280L</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a77eb2e1fc1adf9d966a9b49cf8739a09"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GET_SYNC_INFO</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">ext_adv_hdr_t  ext_adv_hdr = { \</div><div class="line">        .ext_hdr_len = rx-&gt;data[0] &amp; EXT_HEADER_LEN_MASK, \</div><div class="line">    }; \</div><div class="line">    if (ext_adv_hdr.ext_hdr_len) { \</div><div class="line">        ext_flag = rx-&gt;data[1]; \</div><div class="line">        if (ext_flag &amp; FLAG_SYNCINFO) { <a class="code" href="ll__ext__scan_8h.html#afa8428cfa3a9fb61b026d517abd908e4">\</a></div><div class="line"><a class="code" href="ll__ext__scan_8h.html#afa8428cfa3a9fb61b026d517abd908e4">            MAKE_REPORT</a>(FLAG_SYNCINFO, &amp;sync_info); \</div><div class="line">            link-&gt;ext_adv_report.periodic_adv_interval = sync_info.interval; \</div><div class="line">        } \</div><div class="line">    }</div><div class="ttc" id="ll__ext__scan_8h_html_afa8428cfa3a9fb61b026d517abd908e4"><div class="ttname"><a href="ll__ext__scan_8h.html#afa8428cfa3a9fb61b026d517abd908e4">MAKE_REPORT</a></div><div class="ttdeci">#define MAKE_REPORT(x, y)</div><div class="ttdef"><b>Definition:</b> ll_ext_scan.h:21</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a2c4399aafaff083644508e724756c134"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LL_EXT_PUBLIC_PRIMARY_SCAN_CREAT_PROCEDURE</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">link-&gt;primary_legacy_hw = __ble_ops-&gt;open(); \</div><div class="line">    ASSERT(link-&gt;primary_legacy_hw != NULL, <span class="stringliteral">&quot;%s/n&quot;</span>, <span class="stringliteral">&quot;hw legacy open error&quot;</span>); \</div><div class="line">    __ble5_ops-&gt;ext_adv_ctrl(link-&gt;hw, BLE_SET_EXT_CORRELATED_HW, link-&gt;primary_legacy_hw); \</div><div class="line">    __ble5_ops-&gt;ext_adv_ctrl(link-&gt;primary_legacy_hw, BLE_SET_EXT_CORRELATED_HW, link-&gt;hw);</div></div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a7d55e23de39519e4fb9b904df0876790"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LL_EXT_PUBLIC_PRIMARY_SCAN_DESTROY_PROCEDURE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;__ble5_ops-&gt;legacy_close(x);</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afa8428cfa3a9fb61b026d517abd908e4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAKE_REPORT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">y&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;__ble5_ops-&gt;ext_ioctrl(NULL, BLE_GET_EXT_HEADER_RESOLVE, ext_flag, &amp;rx-&gt;data[2], x, y)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a31edb8834d915e6d288298493ba1c6b7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SET_BIT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">value, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">start, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">len, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">dat&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(value = (value &amp; ~((~(0xffffffff &lt;&lt; (len))) &lt;&lt; (start))) | (((dat) &amp; (~(0xffffffff &lt;&lt; (len)))) &lt;&lt; (start)))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">枚举类型说明</h2>
+<a class="anchor" id="a24734c34558385990915f413953c6a12"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="ll__ext__scan_8h.html#a24734c34558385990915f413953c6a12">__ext_sync_filter_policy</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="a24734c34558385990915f413953c6a12a9c851e958a51c43a9cb08c9cbd7515be"></a>NOT_USE_PERIODIC_ADV_LIST&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a24734c34558385990915f413953c6a12a1858dc01ce82cad717613bc361102200"></a>USE_PERIODIC_ADV_LIST&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="a8f5e0748087b87d63826c26de3e9ab94"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="ll__ext__scan_8h.html#a8f5e0748087b87d63826c26de3e9ab94">__report_event_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="a8f5e0748087b87d63826c26de3e9ab94a0942121ad971374a0a42662db4e9ccdd"></a>REPORT_CONNECTABLE_ADV&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a8f5e0748087b87d63826c26de3e9ab94a22e2f447fdae8ae5ed8084bec1c5f557"></a>REPORT_SCANNABLE_ADV&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a8f5e0748087b87d63826c26de3e9ab94aeebedd486df2e1f5a4a2202dbd14a816"></a>REPORT_DIRECTED_ADV&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a8f5e0748087b87d63826c26de3e9ab94ac2b98df6f424919de4036e3e0814020f"></a>REPORT_SCAN_RSP&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a8f5e0748087b87d63826c26de3e9ab94a491a3dd7c0cdad7d591db104e73508ff"></a>REPORT_LEGACY_ADV&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a221c4b601e98bc1d1ca824ebb153c862"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool build_ext_aux_adv_report </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="ll__ext__scan_8h.html#structle__ext__scan__link">le_ext_scan_link</a> *&#160;</td>
+          <td class="paramname"><em>link</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct ble_ext_rx *&#160;</td>
+          <td class="paramname"><em>rx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramname"><em>offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a20e06cdf14a775b8b694fe278c00b1aa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void destroy_le_ext_scan </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae42b06eba6fea0d078b7a08f61705572"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int le_cmd_set_ext_scan </td>
+          <td>(</td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>opcode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const u8 *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ade4085d263f6f451ccd74a02e2f9f561"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_ext_scan_close </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af4bfb24266d7b367c6661bf6265e1691"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ll_ext_scan_open </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6b20604feb2c552a003e02022e7132cd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_ext_scan_rx_post_process </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>empty</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad9eef021572c00f9f7f9f042c812f82a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* ll_get_ext_scan_link </td>
+          <td>(</td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>sync_handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a class="anchor" id="aa4dd745a3521839a479790391389c1bf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="ll__ext__scan_8h.html#struct____ext__adv__report__event">__ext_adv_report_event</a>  <a class="el" href="ll__ext__adv_8h.html#struct__GNU__PACKED__">_GNU_PACKED_</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

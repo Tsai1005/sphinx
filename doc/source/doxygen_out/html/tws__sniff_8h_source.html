@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>JL Adapter SDK: /data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">JL Adapter SDK
+   &#160;<span id="projectnumber">v0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_5aa4d6ccf34d88a270949875c15714e5.html">btctrler</a></li><li class="navelem"><a class="el" href="dir_119de8fbed06b648fc4b1712ddece599.html">include_v2</a></li><li class="navelem"><a class="el" href="dir_76e74953703e3f33853ddacc6ea00c88.html">classic</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">tws_sniff.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="tws__sniff_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#ifndef TWS_SNIFF_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#define TWS_SNIFF_H</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="tws__link_8h.html">classic/tws_link.h</a>&quot;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;classic/tws_event.h&quot;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="tws__conn_8h.html">classic/tws_conn.h</a>&quot;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="tws__link_8h.html">classic/tws_link.h</a>&quot;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;system/includes.h&quot;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="tws__sniff_8h.html">   12</a></span>&#160;<span class="keyword">struct </span><a class="code" href="tws__sniff_8h.html#structlmp__tws__sniff">lmp_tws_sniff</a> {</div><div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="tws__sniff_8h.html#a1c3bbdf9c50e4f2524cc35d7a4f243c9">   13</a></span>&#160;    u8 <a class="code" href="tws__sniff_8h.html#a1c3bbdf9c50e4f2524cc35d7a4f243c9">enable</a> : 1;</div><div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="tws__sniff_8h.html#ac53269ea4de97e6ebcea5efc15ea5575">   14</a></span>&#160;    u8 <a class="code" href="tws__sniff_8h.html#ac53269ea4de97e6ebcea5efc15ea5575">sync</a> : 1;</div><div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="tws__sniff_8h.html#a6bef54e0c4008c4ca25fead094c3bb75">   15</a></span>&#160;    u8 <a class="code" href="tws__sniff_8h.html#a6bef54e0c4008c4ca25fead094c3bb75">witchout_phone</a>: 1;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="tws__sniff_8h.html#a4c43f4cfb3c68e12b776c315f2e90e86">   17</a></span>&#160;    u8 <a class="code" href="tws__sniff_8h.html#a4c43f4cfb3c68e12b776c315f2e90e86">unsniff_retry</a>;</div><div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="tws__sniff_8h.html#a19b429f6e29e6bf78bd9a3113da2eb1b">   18</a></span>&#160;    u8 <a class="code" href="tws__sniff_8h.html#a19b429f6e29e6bf78bd9a3113da2eb1b">ap_check_retry</a>;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="tws__sniff_8h.html#aa396625f3d59e5ade8187609b4ccb090">   20</a></span>&#160;    u8 <a class="code" href="tws__sniff_8h.html#aa396625f3d59e5ade8187609b4ccb090">state</a>;</div><div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="tws__sniff_8h.html#ab39cc14b29aff94eb8828dad96f8d208">   21</a></span>&#160;    s8 <a class="code" href="tws__sniff_8h.html#ab39cc14b29aff94eb8828dad96f8d208">wakeup_offset</a>;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="comment">//schedule timer</span></div><div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="tws__sniff_8h.html#a5fafa76e441b7b57d30ec14c3803ca6c">   24</a></span>&#160;    u8 <a class="code" href="tws__sniff_8h.html#a5fafa76e441b7b57d30ec14c3803ca6c">timer</a>;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">//reset timer</span></div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="tws__sniff_8h.html#a956165a7c2d5ccff668144e6064a9273">   27</a></span>&#160;    u8 <a class="code" href="tws__sniff_8h.html#a956165a7c2d5ccff668144e6064a9273">reset_timer</a>;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">// sniff parm</span></div><div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="tws__sniff_8h.html#a76a9472f179eb1ae9b17629caf9cb0bb">   30</a></span>&#160;    u8 <a class="code" href="tws__sniff_8h.html#a76a9472f179eb1ae9b17629caf9cb0bb">timing_control_flags</a>;</div><div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="tws__sniff_8h.html#ac1d3b556e820352c0bba87215e6b40c4">   31</a></span>&#160;    u16 <a class="code" href="tws__sniff_8h.html#ac1d3b556e820352c0bba87215e6b40c4">D_sniff</a>;</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="tws__sniff_8h.html#ac2c9a263f77b16c0501e6a800c131e3b">   32</a></span>&#160;    u16 <a class="code" href="tws__sniff_8h.html#ac2c9a263f77b16c0501e6a800c131e3b">T_sniff</a>;</div><div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="tws__sniff_8h.html#aa05bdff673cce4d161199a6bcfe18ec7">   33</a></span>&#160;    u16 <a class="code" href="tws__sniff_8h.html#aa05bdff673cce4d161199a6bcfe18ec7">attempt</a>;</div><div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="tws__sniff_8h.html#a3c4183179eee3a2b96240cc9fe19652c">   34</a></span>&#160;    u16 <a class="code" href="tws__sniff_8h.html#a3c4183179eee3a2b96240cc9fe19652c">timeout</a>;</div><div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="tws__sniff_8h.html#ae0b2a6238c28edc58327fd2b99b0a09d">   35</a></span>&#160;    u16 <a class="code" href="tws__sniff_8h.html#ae0b2a6238c28edc58327fd2b99b0a09d">D_sniff_bk</a>;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="tws__sniff_8h.html#ac48f88e84e824bfb7066eca74cca2cc0">   37</a></span>&#160;    u32 <a class="code" href="tws__sniff_8h.html#ac48f88e84e824bfb7066eca74cca2cc0">wake_instant</a>;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">//new_baseband</span></div><div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="tws__sniff_8h.html#a192798fd4a016c92ba5d4471d112fc93">   40</a></span>&#160;    u32 <a class="code" href="tws__sniff_8h.html#a192798fd4a016c92ba5d4471d112fc93">pclkoffset</a>;</div><div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="tws__sniff_8h.html#a34a758e6850d9830e8a3bec16f60b6af">   41</a></span>&#160;    u16 <a class="code" href="tws__sniff_8h.html#a34a758e6850d9830e8a3bec16f60b6af">pbitoffset</a>;</div><div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="tws__sniff_8h.html#a4aab8a25d7b50f61db5c8fe6b116c589">   42</a></span>&#160;    u16 <a class="code" href="tws__sniff_8h.html#a4aab8a25d7b50f61db5c8fe6b116c589">tbitoffset</a>;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="tws__sniff_8h.html#a4563f9b9b9f172f70a13f2907ff4146b">   44</a></span>&#160;    u32 <a class="code" href="tws__sniff_8h.html#a4563f9b9b9f172f70a13f2907ff4146b">cnt</a>;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="tws__sniff_8h.html#structlmp__tws__sniff">lmp_tws_sniff</a> <a class="code" href="tws__sniff_8h.html#aa10f558bd115f32d7666d0aa87392023">tws_sniff</a>;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">void</span> <a class="code" href="tws__sniff_8h.html#a1b7b4622aa98cddf268121a31dc4fc69">tws_sniff_ap_enter</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">void</span> <a class="code" href="tws__sniff_8h.html#ae583c23f4cb14f9dafac02a8c43a5979">tws_sniff_ap_exit</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">void</span> <a class="code" href="tws__sniff_8h.html#af7e9bd2e05aa0382280ea8afb6185e3e">tws_sniff_detach</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keywordtype">void</span> <a class="code" href="tws__sniff_8h.html#a05f63366c2db1a72b19335a9356ca016">tws_tx_sniff_req</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keywordtype">void</span> <a class="code" href="tws__sniff_8h.html#af6a451cead40c4ac50e8555090461011">tws_rx_sniff_req</a>(u8 *rx);</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keywordtype">void</span> <a class="code" href="tws__sniff_8h.html#a06e98b099c9f8a63d30b4148d181b46f">tws_tx_unsniff_req</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keywordtype">void</span> <a class="code" href="tws__sniff_8h.html#a9108b077a093336e80d5a8dd1310d1b4">tws_rx_unsniff_req</a>(u8 *rx);</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keywordtype">void</span> <a class="code" href="tws__sniff_8h.html#a5bd3f3ce4e7173cb45faa5f10af9ffce">tws_rx_unsniff_accept</a>(u8 *rx);</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keywordtype">void</span> <a class="code" href="tws__sniff_8h.html#adcfb56b1d17341d727ed574214d8d5ff">tws_rx_sniff_accept</a>(u8 *rx);</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keywordtype">void</span> <a class="code" href="tws__sniff_8h.html#a6986dc25004b5e53fc3aa4a3c4a4b5d3">tws_lmp_rx_sniff_sync</a>(<span class="keyword">struct</span> <a class="code" href="structlmp__connection.html">lmp_connection</a> *conn, <span class="keyword">struct</span> <a class="code" href="lmp_8h.html#structlmp__sniff">lmp_sniff</a> *sniff_parm);</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keywordtype">void</span> <a class="code" href="tws__sniff_8h.html#a1eb3cacc00cdc86f9e9fbfceb7c963da">tws_sniff_with_phone</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keywordtype">void</span> <a class="code" href="tws__sniff_8h.html#aeeba49a61b01b1e90c012d1a4a4f2ad4">tws_rx_sniff_info</a>(u8 *rx);</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keywordtype">int</span> <a class="code" href="tws__sniff_8h.html#a0d13979cfe53ecb00e994c46ab9df167">tws_in_sniff_state</a>();</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="tws__sniff_8h_html_ac48f88e84e824bfb7066eca74cca2cc0"><div class="ttname"><a href="tws__sniff_8h.html#ac48f88e84e824bfb7066eca74cca2cc0">lmp_tws_sniff::wake_instant</a></div><div class="ttdeci">u32 wake_instant</div><div class="ttdef"><b>Definition:</b> tws_sniff.h:37</div></div>
+<div class="ttc" id="tws__sniff_8h_html_ab39cc14b29aff94eb8828dad96f8d208"><div class="ttname"><a href="tws__sniff_8h.html#ab39cc14b29aff94eb8828dad96f8d208">lmp_tws_sniff::wakeup_offset</a></div><div class="ttdeci">s8 wakeup_offset</div><div class="ttdef"><b>Definition:</b> tws_sniff.h:21</div></div>
+<div class="ttc" id="tws__sniff_8h_html_adcfb56b1d17341d727ed574214d8d5ff"><div class="ttname"><a href="tws__sniff_8h.html#adcfb56b1d17341d727ed574214d8d5ff">tws_rx_sniff_accept</a></div><div class="ttdeci">void tws_rx_sniff_accept(u8 *rx)</div></div>
+<div class="ttc" id="tws__sniff_8h_html_a6bef54e0c4008c4ca25fead094c3bb75"><div class="ttname"><a href="tws__sniff_8h.html#a6bef54e0c4008c4ca25fead094c3bb75">lmp_tws_sniff::witchout_phone</a></div><div class="ttdeci">u8 witchout_phone</div><div class="ttdef"><b>Definition:</b> tws_sniff.h:15</div></div>
+<div class="ttc" id="tws__link_8h_html"><div class="ttname"><a href="tws__link_8h.html">tws_link.h</a></div></div>
+<div class="ttc" id="tws__sniff_8h_html_a3c4183179eee3a2b96240cc9fe19652c"><div class="ttname"><a href="tws__sniff_8h.html#a3c4183179eee3a2b96240cc9fe19652c">lmp_tws_sniff::timeout</a></div><div class="ttdeci">u16 timeout</div><div class="ttdef"><b>Definition:</b> tws_sniff.h:34</div></div>
+<div class="ttc" id="tws__sniff_8h_html_a1c3bbdf9c50e4f2524cc35d7a4f243c9"><div class="ttname"><a href="tws__sniff_8h.html#a1c3bbdf9c50e4f2524cc35d7a4f243c9">lmp_tws_sniff::enable</a></div><div class="ttdeci">u8 enable</div><div class="ttdef"><b>Definition:</b> tws_sniff.h:13</div></div>
+<div class="ttc" id="tws__sniff_8h_html_a956165a7c2d5ccff668144e6064a9273"><div class="ttname"><a href="tws__sniff_8h.html#a956165a7c2d5ccff668144e6064a9273">lmp_tws_sniff::reset_timer</a></div><div class="ttdeci">u8 reset_timer</div><div class="ttdef"><b>Definition:</b> tws_sniff.h:27</div></div>
+<div class="ttc" id="tws__sniff_8h_html_aa10f558bd115f32d7666d0aa87392023"><div class="ttname"><a href="tws__sniff_8h.html#aa10f558bd115f32d7666d0aa87392023">tws_sniff</a></div><div class="ttdeci">struct lmp_tws_sniff tws_sniff</div></div>
+<div class="ttc" id="tws__sniff_8h_html_af7e9bd2e05aa0382280ea8afb6185e3e"><div class="ttname"><a href="tws__sniff_8h.html#af7e9bd2e05aa0382280ea8afb6185e3e">tws_sniff_detach</a></div><div class="ttdeci">void tws_sniff_detach(void)</div></div>
+<div class="ttc" id="tws__sniff_8h_html_aa05bdff673cce4d161199a6bcfe18ec7"><div class="ttname"><a href="tws__sniff_8h.html#aa05bdff673cce4d161199a6bcfe18ec7">lmp_tws_sniff::attempt</a></div><div class="ttdeci">u16 attempt</div><div class="ttdef"><b>Definition:</b> tws_sniff.h:33</div></div>
+<div class="ttc" id="tws__sniff_8h_html_a19b429f6e29e6bf78bd9a3113da2eb1b"><div class="ttname"><a href="tws__sniff_8h.html#a19b429f6e29e6bf78bd9a3113da2eb1b">lmp_tws_sniff::ap_check_retry</a></div><div class="ttdeci">u8 ap_check_retry</div><div class="ttdef"><b>Definition:</b> tws_sniff.h:18</div></div>
+<div class="ttc" id="tws__sniff_8h_html_a192798fd4a016c92ba5d4471d112fc93"><div class="ttname"><a href="tws__sniff_8h.html#a192798fd4a016c92ba5d4471d112fc93">lmp_tws_sniff::pclkoffset</a></div><div class="ttdeci">u32 pclkoffset</div><div class="ttdef"><b>Definition:</b> tws_sniff.h:40</div></div>
+<div class="ttc" id="structlmp__connection_html"><div class="ttname"><a href="structlmp__connection.html">lmp_connection</a></div><div class="ttdef"><b>Definition:</b> lmp.h:662</div></div>
+<div class="ttc" id="tws__sniff_8h_html_a76a9472f179eb1ae9b17629caf9cb0bb"><div class="ttname"><a href="tws__sniff_8h.html#a76a9472f179eb1ae9b17629caf9cb0bb">lmp_tws_sniff::timing_control_flags</a></div><div class="ttdeci">u8 timing_control_flags</div><div class="ttdef"><b>Definition:</b> tws_sniff.h:30</div></div>
+<div class="ttc" id="tws__sniff_8h_html_ac2c9a263f77b16c0501e6a800c131e3b"><div class="ttname"><a href="tws__sniff_8h.html#ac2c9a263f77b16c0501e6a800c131e3b">lmp_tws_sniff::T_sniff</a></div><div class="ttdeci">u16 T_sniff</div><div class="ttdef"><b>Definition:</b> tws_sniff.h:32</div></div>
+<div class="ttc" id="tws__sniff_8h_html_a05f63366c2db1a72b19335a9356ca016"><div class="ttname"><a href="tws__sniff_8h.html#a05f63366c2db1a72b19335a9356ca016">tws_tx_sniff_req</a></div><div class="ttdeci">void tws_tx_sniff_req(void)</div></div>
+<div class="ttc" id="tws__sniff_8h_html_a1b7b4622aa98cddf268121a31dc4fc69"><div class="ttname"><a href="tws__sniff_8h.html#a1b7b4622aa98cddf268121a31dc4fc69">tws_sniff_ap_enter</a></div><div class="ttdeci">void tws_sniff_ap_enter(void)</div></div>
+<div class="ttc" id="lmp_8h_html_structlmp__sniff"><div class="ttname"><a href="lmp_8h.html#structlmp__sniff">lmp_sniff</a></div><div class="ttdef"><b>Definition:</b> lmp.h:505</div></div>
+<div class="ttc" id="tws__sniff_8h_html_aa396625f3d59e5ade8187609b4ccb090"><div class="ttname"><a href="tws__sniff_8h.html#aa396625f3d59e5ade8187609b4ccb090">lmp_tws_sniff::state</a></div><div class="ttdeci">u8 state</div><div class="ttdef"><b>Definition:</b> tws_sniff.h:20</div></div>
+<div class="ttc" id="tws__sniff_8h_html_ae0b2a6238c28edc58327fd2b99b0a09d"><div class="ttname"><a href="tws__sniff_8h.html#ae0b2a6238c28edc58327fd2b99b0a09d">lmp_tws_sniff::D_sniff_bk</a></div><div class="ttdeci">u16 D_sniff_bk</div><div class="ttdef"><b>Definition:</b> tws_sniff.h:35</div></div>
+<div class="ttc" id="tws__sniff_8h_html_ae583c23f4cb14f9dafac02a8c43a5979"><div class="ttname"><a href="tws__sniff_8h.html#ae583c23f4cb14f9dafac02a8c43a5979">tws_sniff_ap_exit</a></div><div class="ttdeci">void tws_sniff_ap_exit(void)</div></div>
+<div class="ttc" id="tws__conn_8h_html"><div class="ttname"><a href="tws__conn_8h.html">tws_conn.h</a></div></div>
+<div class="ttc" id="tws__sniff_8h_html_a0d13979cfe53ecb00e994c46ab9df167"><div class="ttname"><a href="tws__sniff_8h.html#a0d13979cfe53ecb00e994c46ab9df167">tws_in_sniff_state</a></div><div class="ttdeci">int tws_in_sniff_state()</div></div>
+<div class="ttc" id="tws__sniff_8h_html_a4563f9b9b9f172f70a13f2907ff4146b"><div class="ttname"><a href="tws__sniff_8h.html#a4563f9b9b9f172f70a13f2907ff4146b">lmp_tws_sniff::cnt</a></div><div class="ttdeci">u32 cnt</div><div class="ttdef"><b>Definition:</b> tws_sniff.h:44</div></div>
+<div class="ttc" id="tws__sniff_8h_html_ac1d3b556e820352c0bba87215e6b40c4"><div class="ttname"><a href="tws__sniff_8h.html#ac1d3b556e820352c0bba87215e6b40c4">lmp_tws_sniff::D_sniff</a></div><div class="ttdeci">u16 D_sniff</div><div class="ttdef"><b>Definition:</b> tws_sniff.h:31</div></div>
+<div class="ttc" id="tws__sniff_8h_html_ac53269ea4de97e6ebcea5efc15ea5575"><div class="ttname"><a href="tws__sniff_8h.html#ac53269ea4de97e6ebcea5efc15ea5575">lmp_tws_sniff::sync</a></div><div class="ttdeci">u8 sync</div><div class="ttdef"><b>Definition:</b> tws_sniff.h:14</div></div>
+<div class="ttc" id="tws__sniff_8h_html_structlmp__tws__sniff"><div class="ttname"><a href="tws__sniff_8h.html#structlmp__tws__sniff">lmp_tws_sniff</a></div><div class="ttdef"><b>Definition:</b> tws_sniff.h:12</div></div>
+<div class="ttc" id="tws__sniff_8h_html_a6986dc25004b5e53fc3aa4a3c4a4b5d3"><div class="ttname"><a href="tws__sniff_8h.html#a6986dc25004b5e53fc3aa4a3c4a4b5d3">tws_lmp_rx_sniff_sync</a></div><div class="ttdeci">void tws_lmp_rx_sniff_sync(struct lmp_connection *conn, struct lmp_sniff *sniff_parm)</div></div>
+<div class="ttc" id="tws__sniff_8h_html_a4c43f4cfb3c68e12b776c315f2e90e86"><div class="ttname"><a href="tws__sniff_8h.html#a4c43f4cfb3c68e12b776c315f2e90e86">lmp_tws_sniff::unsniff_retry</a></div><div class="ttdeci">u8 unsniff_retry</div><div class="ttdef"><b>Definition:</b> tws_sniff.h:17</div></div>
+<div class="ttc" id="tws__sniff_8h_html_a1eb3cacc00cdc86f9e9fbfceb7c963da"><div class="ttname"><a href="tws__sniff_8h.html#a1eb3cacc00cdc86f9e9fbfceb7c963da">tws_sniff_with_phone</a></div><div class="ttdeci">void tws_sniff_with_phone(void)</div></div>
+<div class="ttc" id="tws__sniff_8h_html_a34a758e6850d9830e8a3bec16f60b6af"><div class="ttname"><a href="tws__sniff_8h.html#a34a758e6850d9830e8a3bec16f60b6af">lmp_tws_sniff::pbitoffset</a></div><div class="ttdeci">u16 pbitoffset</div><div class="ttdef"><b>Definition:</b> tws_sniff.h:41</div></div>
+<div class="ttc" id="tws__sniff_8h_html_af6a451cead40c4ac50e8555090461011"><div class="ttname"><a href="tws__sniff_8h.html#af6a451cead40c4ac50e8555090461011">tws_rx_sniff_req</a></div><div class="ttdeci">void tws_rx_sniff_req(u8 *rx)</div></div>
+<div class="ttc" id="tws__sniff_8h_html_a5bd3f3ce4e7173cb45faa5f10af9ffce"><div class="ttname"><a href="tws__sniff_8h.html#a5bd3f3ce4e7173cb45faa5f10af9ffce">tws_rx_unsniff_accept</a></div><div class="ttdeci">void tws_rx_unsniff_accept(u8 *rx)</div></div>
+<div class="ttc" id="tws__sniff_8h_html_aeeba49a61b01b1e90c012d1a4a4f2ad4"><div class="ttname"><a href="tws__sniff_8h.html#aeeba49a61b01b1e90c012d1a4a4f2ad4">tws_rx_sniff_info</a></div><div class="ttdeci">void tws_rx_sniff_info(u8 *rx)</div></div>
+<div class="ttc" id="tws__sniff_8h_html_a4aab8a25d7b50f61db5c8fe6b116c589"><div class="ttname"><a href="tws__sniff_8h.html#a4aab8a25d7b50f61db5c8fe6b116c589">lmp_tws_sniff::tbitoffset</a></div><div class="ttdeci">u16 tbitoffset</div><div class="ttdef"><b>Definition:</b> tws_sniff.h:42</div></div>
+<div class="ttc" id="tws__sniff_8h_html_a9108b077a093336e80d5a8dd1310d1b4"><div class="ttname"><a href="tws__sniff_8h.html#a9108b077a093336e80d5a8dd1310d1b4">tws_rx_unsniff_req</a></div><div class="ttdeci">void tws_rx_unsniff_req(u8 *rx)</div></div>
+<div class="ttc" id="tws__sniff_8h_html_a06e98b099c9f8a63d30b4148d181b46f"><div class="ttname"><a href="tws__sniff_8h.html#a06e98b099c9f8a63d30b4148d181b46f">tws_tx_unsniff_req</a></div><div class="ttdeci">void tws_tx_unsniff_req(void)</div></div>
+<div class="ttc" id="tws__sniff_8h_html_a5fafa76e441b7b57d30ec14c3803ca6c"><div class="ttname"><a href="tws__sniff_8h.html#a5fafa76e441b7b57d30ec14c3803ca6c">lmp_tws_sniff::timer</a></div><div class="ttdeci">u8 timer</div><div class="ttdef"><b>Definition:</b> tws_sniff.h:24</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

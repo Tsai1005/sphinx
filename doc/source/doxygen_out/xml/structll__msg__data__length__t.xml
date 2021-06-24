@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structll__msg__data__length__t" kind="struct" language="C++" prot="public">
+    <compoundname>ll_msg_data_length_t</compoundname>
+    <includes refid="llcp_8h" local="no">llcp.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structll__msg__data__length__t_1a79c653118cafa39cacded55202609d27" prot="public" static="no" mutable="no">
+        <type><ref refid="structll__msg__hdr__t" kindref="compound">ll_msg_hdr_t</ref></type>
+        <definition>ll_msg_hdr_t ll_msg_data_length_t::hdr</definition>
+        <argsstring></argsstring>
+        <name>hdr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="155" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__msg__data__length__t_1af27389f8967805dde183452abf16dbc1" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t ll_msg_data_length_t::tx_octets</definition>
+        <argsstring></argsstring>
+        <name>tx_octets</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="157" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__msg__data__length__t_1a2ad81ae1c01a1e141ccf1fc5bda2c35d" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t ll_msg_data_length_t::tx_time</definition>
+        <argsstring></argsstring>
+        <name>tx_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="158" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1489">
+        <label>ll_msg_data_length_t</label>
+        <link refid="structll__msg__data__length__t"/>
+        <childnode refid="1490" relation="usage">
+          <edgelabel>hdr</edgelabel>
+        </childnode>
+      </node>
+      <node id="1490">
+        <label>ll_msg_hdr_t</label>
+        <link refid="structll__msg__hdr__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="154" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="154" bodyend="159"/>
+    <listofallmembers>
+      <member refid="structll__msg__data__length__t_1a79c653118cafa39cacded55202609d27" prot="public" virt="non-virtual"><scope>ll_msg_data_length_t</scope><name>hdr</name></member>
+      <member refid="structll__msg__data__length__t_1af27389f8967805dde183452abf16dbc1" prot="public" virt="non-virtual"><scope>ll_msg_data_length_t</scope><name>tx_octets</name></member>
+      <member refid="structll__msg__data__length__t_1a2ad81ae1c01a1e141ccf1fc5bda2c35d" prot="public" virt="non-virtual"><scope>ll_msg_data_length_t</scope><name>tx_time</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

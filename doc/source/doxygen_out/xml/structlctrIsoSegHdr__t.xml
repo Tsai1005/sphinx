@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structlctrIsoSegHdr__t" kind="struct" language="C++" prot="public">
+    <compoundname>lctrIsoSegHdr_t</compoundname>
+    <includes refid="ll__iso_8h" local="no">ll_iso.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlctrIsoSegHdr__t_1a96be3cbbeaf349d685dcf422c9e4113d" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref></type>
+        <definition>bool_t lctrIsoSegHdr_t::sc</definition>
+        <argsstring></argsstring>
+        <name>sc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Segment continuation flag. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="150" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrIsoSegHdr__t_1a739867946fb463188e7e566ce8ae0ef3" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref></type>
+        <definition>bool_t lctrIsoSegHdr_t::cmplt</definition>
+        <argsstring></argsstring>
+        <name>cmplt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Segment complete flag. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="151" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrIsoSegHdr__t_1a7ee038d9b10c009a324a41dffdbabb6e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lctrIsoSegHdr_t::len</definition>
+        <argsstring></argsstring>
+        <name>len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Payload length. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="152" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrIsoSegHdr__t_1afdcb4c8f2e10d8905f7444ec06913051" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t lctrIsoSegHdr_t::toffs</definition>
+        <argsstring></argsstring>
+        <name>toffs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Time offset. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="153" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>ISOAL Segmentation Header. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="149" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="149" bodyend="154"/>
+    <listofallmembers>
+      <member refid="structlctrIsoSegHdr__t_1a739867946fb463188e7e566ce8ae0ef3" prot="public" virt="non-virtual"><scope>lctrIsoSegHdr_t</scope><name>cmplt</name></member>
+      <member refid="structlctrIsoSegHdr__t_1a7ee038d9b10c009a324a41dffdbabb6e" prot="public" virt="non-virtual"><scope>lctrIsoSegHdr_t</scope><name>len</name></member>
+      <member refid="structlctrIsoSegHdr__t_1a96be3cbbeaf349d685dcf422c9e4113d" prot="public" virt="non-virtual"><scope>lctrIsoSegHdr_t</scope><name>sc</name></member>
+      <member refid="structlctrIsoSegHdr__t_1afdcb4c8f2e10d8905f7444ec06913051" prot="public" virt="non-virtual"><scope>lctrIsoSegHdr_t</scope><name>toffs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

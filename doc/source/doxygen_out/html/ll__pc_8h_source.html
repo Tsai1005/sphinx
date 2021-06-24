@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>JL Adapter SDK: /data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_pc.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">JL Adapter SDK
+   &#160;<span id="projectnumber">v0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_5aa4d6ccf34d88a270949875c15714e5.html">btctrler</a></li><li class="navelem"><a class="el" href="dir_119de8fbed06b648fc4b1712ddece599.html">include_v2</a></li><li class="navelem"><a class="el" href="dir_11c925b722666962fce8d6f7c0ca7e4f.html">ble</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">ll_pc.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="ll__pc_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*********************************************************************************************</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">    *   Filename        : ll_pc.h</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"></span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">    *   Description     : </span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"></span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">    *   Author          : Bingquan</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"></span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">    *   Email           : caibingquan@zh-jieli.com</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"></span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">    *   Last modifiled  : 2021-05-24 16:19</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"></span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">    *   Copyright:(c)JIELI  2011-2021  @ , All Rights Reserved.</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">*********************************************************************************************/</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#ifndef _LL_PC_H_</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#define _LL_PC_H_</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ll__defines_8h.html">ll_defines.h</a>&quot;</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">/**************************************************************************************************</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">  Function Declarations</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">**************************************************************************************************/</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keywordtype">int</span> <a class="code" href="ll__pc_8h.html#afbd6428fae4ac7e7116bf2e5171bd9d8">le_cmd_set_pc</a>(u16 opcode, <span class="keyword">const</span> u8 *data, u32 size);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;uint8_t <a class="code" href="ll__pc_8h.html#a9f6286c48031e7b763b39743d9f639f8">ll_enhanced_read_tx_power_level</a>(uint16_t handle, uint8_t phy, uint16_t *cur_tx_pwr_level, uint16_t *max_tx_pwr_level);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;uint8_t <a class="code" href="ll__pc_8h.html#a3b888e4a90ff0bb0e96370fde6e265a5">ll_read_remote_tx_power_level</a>(uint16_t handle, uint8_t phy);</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;uint8_t <a class="code" href="ll__pc_8h.html#a2daf4878a1943810bd4961d6a39a051f">ll_set_path_loss_reporting_params</a>(uint16_t handle, uint8_t high_threshold, uint8_t high_hysteresis, uint8_t low_threshold, uint8_t low_hysteresis, uint16_t min_time_spent);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;uint8_t <a class="code" href="ll__pc_8h.html#a28554d963b864d8c5c86e85e87a5b3f1">ll_set_path_loss_reporting_enable</a>(uint16_t handle, uint8_t enable);</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;uint8_t <a class="code" href="ll__pc_8h.html#adf3c0ccc4034529cb2aca99defea9903">ll_set_tx_power_reporting_enable</a>(uint16_t handle, uint8_t local_enable, uint8_t remote_enable);</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ll__pc_8h.html#a86c45f3fcf0bee8f0619499f641018c0">llcp_mst_pc_init</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ll__pc_8h.html#acd1761e26cdf089e2fea8eaf7ba3e14b">llcp_slv_pc_init</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="ll__pc_8h_html_acd1761e26cdf089e2fea8eaf7ba3e14b"><div class="ttname"><a href="ll__pc_8h.html#acd1761e26cdf089e2fea8eaf7ba3e14b">llcp_slv_pc_init</a></div><div class="ttdeci">void llcp_slv_pc_init(void)</div><div class="ttdef"><b>Definition:</b> llcp_sm_pc.c:987</div></div>
+<div class="ttc" id="ll__pc_8h_html_adf3c0ccc4034529cb2aca99defea9903"><div class="ttname"><a href="ll__pc_8h.html#adf3c0ccc4034529cb2aca99defea9903">ll_set_tx_power_reporting_enable</a></div><div class="ttdeci">uint8_t ll_set_tx_power_reporting_enable(uint16_t handle, uint8_t local_enable, uint8_t remote_enable)</div><div class="ttdef"><b>Definition:</b> llcp_sm_pc.c:932</div></div>
+<div class="ttc" id="ll__pc_8h_html_a2daf4878a1943810bd4961d6a39a051f"><div class="ttname"><a href="ll__pc_8h.html#a2daf4878a1943810bd4961d6a39a051f">ll_set_path_loss_reporting_params</a></div><div class="ttdeci">uint8_t ll_set_path_loss_reporting_params(uint16_t handle, uint8_t high_threshold, uint8_t high_hysteresis, uint8_t low_threshold, uint8_t low_hysteresis, uint16_t min_time_spent)</div><div class="ttdef"><b>Definition:</b> llcp_sm_pc.c:871</div></div>
+<div class="ttc" id="ll__pc_8h_html_a86c45f3fcf0bee8f0619499f641018c0"><div class="ttname"><a href="ll__pc_8h.html#a86c45f3fcf0bee8f0619499f641018c0">llcp_mst_pc_init</a></div><div class="ttdeci">void llcp_mst_pc_init(void)</div><div class="ttdef"><b>Definition:</b> llcp_sm_pc.c:971</div></div>
+<div class="ttc" id="ll__pc_8h_html_a3b888e4a90ff0bb0e96370fde6e265a5"><div class="ttname"><a href="ll__pc_8h.html#a3b888e4a90ff0bb0e96370fde6e265a5">ll_read_remote_tx_power_level</a></div><div class="ttdeci">uint8_t ll_read_remote_tx_power_level(uint16_t handle, uint8_t phy)</div><div class="ttdef"><b>Definition:</b> llcp_sm_pc.c:816</div></div>
+<div class="ttc" id="ll__pc_8h_html_a28554d963b864d8c5c86e85e87a5b3f1"><div class="ttname"><a href="ll__pc_8h.html#a28554d963b864d8c5c86e85e87a5b3f1">ll_set_path_loss_reporting_enable</a></div><div class="ttdeci">uint8_t ll_set_path_loss_reporting_enable(uint16_t handle, uint8_t enable)</div><div class="ttdef"><b>Definition:</b> llcp_sm_pc.c:910</div></div>
+<div class="ttc" id="ll__defines_8h_html"><div class="ttname"><a href="ll__defines_8h.html">ll_defines.h</a></div></div>
+<div class="ttc" id="ll__pc_8h_html_a9f6286c48031e7b763b39743d9f639f8"><div class="ttname"><a href="ll__pc_8h.html#a9f6286c48031e7b763b39743d9f639f8">ll_enhanced_read_tx_power_level</a></div><div class="ttdeci">uint8_t ll_enhanced_read_tx_power_level(uint16_t handle, uint8_t phy, uint16_t *cur_tx_pwr_level, uint16_t *max_tx_pwr_level)</div><div class="ttdoc">Power Control Host API. </div><div class="ttdef"><b>Definition:</b> ll_pc.c:105</div></div>
+<div class="ttc" id="ll__pc_8h_html_afbd6428fae4ac7e7116bf2e5171bd9d8"><div class="ttname"><a href="ll__pc_8h.html#afbd6428fae4ac7e7116bf2e5171bd9d8">le_cmd_set_pc</a></div><div class="ttdeci">int le_cmd_set_pc(u16 opcode, const u8 *data, u32 size)</div><div class="ttdef"><b>Definition:</b> ll_pc.c:134</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

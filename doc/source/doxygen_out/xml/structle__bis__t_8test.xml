@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structle__bis__t_8test" kind="struct" language="C++" prot="public">
+    <compoundname>le_bis_t.test</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structle__bis__t_8test_1aa10311459433adf322f2590a4987c423" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>enabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TRUE ISO test enabled, FALSE otherwise. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="204" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__bis__t_8test_1ab4dad0fe5fbef2c0e24d9db1cc69e5a2" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>term</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flag for ISO test termination. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="205" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__bis__t_8test_1aa6018cc7ec0a2f29423e192f91db6124" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>pendInit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Receive pending init. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="206" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__bis__t_8test_1a05c7e24700502a079cdd88012b5a76d3" prot="public" static="no" mutable="no">
+        <type>union le_bis_t::@23::@24</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>util</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Role-based utility variables. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="214" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__bis__t_8test_1a9e257790136c665286eff091a953225a" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__iso_8h_1a7fd3a11b71f060e138c02f9594b7188d" kindref="member">LlIsoPldType_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>pldType</name>
+        <bitfield> 8</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Test payload type. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="215" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__bis__t_8test_1a2b50ffa289df14190efa218a3313bcd6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>numRxSuccess</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ISO Rx received payload counter. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="216" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__bis__t_8test_1a5baadc2d728b51627537d0b8f2c9967e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>numRxMissed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ISO Rx missed payload counter. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="217" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__bis__t_8test_1a87bdfa8d6f9f5a4561806e6fd85c5dfe" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>numRxFailed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ISO Rx failed payload counter. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="218" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="203" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="203" bodyend="219"/>
+    <listofallmembers>
+      <member refid="structle__bis__t_8test_1aa10311459433adf322f2590a4987c423" prot="public" virt="non-virtual"><scope>le_bis_t.test</scope><name>enabled</name></member>
+      <member refid="structle__bis__t_8test_1a87bdfa8d6f9f5a4561806e6fd85c5dfe" prot="public" virt="non-virtual"><scope>le_bis_t.test</scope><name>numRxFailed</name></member>
+      <member refid="structle__bis__t_8test_1a5baadc2d728b51627537d0b8f2c9967e" prot="public" virt="non-virtual"><scope>le_bis_t.test</scope><name>numRxMissed</name></member>
+      <member refid="structle__bis__t_8test_1a2b50ffa289df14190efa218a3313bcd6" prot="public" virt="non-virtual"><scope>le_bis_t.test</scope><name>numRxSuccess</name></member>
+      <member refid="structle__bis__t_8test_1aa6018cc7ec0a2f29423e192f91db6124" prot="public" virt="non-virtual"><scope>le_bis_t.test</scope><name>pendInit</name></member>
+      <member refid="structle__bis__t_8test_1a9e257790136c665286eff091a953225a" prot="public" virt="non-virtual"><scope>le_bis_t.test</scope><name>pldType</name></member>
+      <member refid="structle__bis__t_8test_1ab4dad0fe5fbef2c0e24d9db1cc69e5a2" prot="public" virt="non-virtual"><scope>le_bis_t.test</scope><name>term</name></member>
+      <member refid="structle__bis__t_8test_1a05c7e24700502a079cdd88012b5a76d3" prot="public" virt="non-virtual"><scope>le_bis_t.test</scope><name>util</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

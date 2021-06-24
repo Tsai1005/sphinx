@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structext__link__layer__handle" kind="struct" language="C++" prot="public">
+    <compoundname>ext_link_layer_handle</compoundname>
+    <includes refid="extended__advertising_8h" local="no">extended_advertising.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structext__link__layer__handle_1a65f0347abb9fd5ba1d8810a15f37021a" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 ext_link_layer_handle::ext_number</definition>
+        <argsstring></argsstring>
+        <name>ext_number</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/extended_advertising.h" line="24" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/extended_advertising.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structext__link__layer__handle_1a5addd6dcdd598e638c2ed2872f0e0d44" prot="public" static="no" mutable="no">
+        <type>struct list_head</type>
+        <definition>struct list_head ext_link_layer_handle::ext_adv_links</definition>
+        <argsstring></argsstring>
+        <name>ext_adv_links</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/extended_advertising.h" line="24" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/extended_advertising.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structext__link__layer__handle_1ac29634438a52c938fe211d7cc1d575fa" prot="public" static="no" mutable="no">
+        <type>struct list_head</type>
+        <definition>struct list_head ext_link_layer_handle::ext_periodic_adv_links</definition>
+        <argsstring></argsstring>
+        <name>ext_periodic_adv_links</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/extended_advertising.h" line="24" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/extended_advertising.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structext__link__layer__handle_1a7f36a37181e1e7e637bde97c1b9be489" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structle__ext__scan__link" kindref="compound">le_ext_scan_link</ref> *</type>
+        <definition>struct le_ext_scan_link* ext_link_layer_handle::ext_scan_link</definition>
+        <argsstring></argsstring>
+        <name>ext_scan_link</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/extended_advertising.h" line="30" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/extended_advertising.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structext__link__layer__handle_1ace6c71f0e28a99140c401ef95ecf9caa" prot="public" static="no" mutable="no">
+        <type>sys_timer</type>
+        <definition>sys_timer ext_link_layer_handle::ext_scan_timer</definition>
+        <argsstring></argsstring>
+        <name>ext_scan_timer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/extended_advertising.h" line="31" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/extended_advertising.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structext__link__layer__handle_1ac6355a67721e3676f6d55cdce082e2ca" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structle__ext__init__link" kindref="compound">le_ext_init_link</ref> *</type>
+        <definition>struct le_ext_init_link* ext_link_layer_handle::ext_init_link</definition>
+        <argsstring></argsstring>
+        <name>ext_init_link</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/extended_advertising.h" line="33" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/extended_advertising.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1044">
+        <label>connection_update_parameter_t</label>
+        <link refid="structconnection__update__parameter__t"/>
+      </node>
+      <node id="1041">
+        <label>le_ext_init_link</label>
+        <link refid="structle__ext__init__link"/>
+        <childnode refid="1042" relation="usage">
+          <edgelabel>connect_link</edgelabel>
+        </childnode>
+      </node>
+      <node id="1046">
+        <label>connection_param_request</label>
+        <link refid="structconnection__param__request"/>
+      </node>
+      <node id="1048">
+        <label>le_link::ble_phy_update</label>
+        <link refid="structle__link_1_1ble__phy__update"/>
+      </node>
+      <node id="1047">
+        <label>data_length</label>
+        <link refid="structdata__length"/>
+      </node>
+      <node id="1039">
+        <label>le_ext_scan_link</label>
+        <link refid="structle__ext__scan__link"/>
+        <childnode refid="1040" relation="usage">
+          <edgelabel>ext_adv_report</edgelabel>
+        </childnode>
+      </node>
+      <node id="1042">
+        <label>le_link</label>
+        <link refid="structle__link"/>
+        <childnode refid="1043" relation="usage">
+          <edgelabel>cte_rx_param</edgelabel>
+        </childnode>
+        <childnode refid="1044" relation="usage">
+          <edgelabel>conn_update_param</edgelabel>
+        </childnode>
+        <childnode refid="1045" relation="usage">
+          <edgelabel>cte_tx_param</edgelabel>
+        </childnode>
+        <childnode refid="1046" relation="usage">
+          <edgelabel>conn_param_req</edgelabel>
+        </childnode>
+        <childnode refid="1047" relation="usage">
+          <edgelabel>pdu_len</edgelabel>
+        </childnode>
+        <childnode refid="1048" relation="usage">
+          <edgelabel>phy</edgelabel>
+        </childnode>
+        <childnode refid="1049" relation="usage">
+          <edgelabel>llcp</edgelabel>
+        </childnode>
+      </node>
+      <node id="1045">
+        <label>cte_tx_param_t</label>
+        <link refid="structcte__tx__param__t"/>
+      </node>
+      <node id="1049">
+        <label>llcp_ctx_t</label>
+        <link refid="structllcp__ctx__t"/>
+        <childnode refid="1050" relation="usage">
+          <edgelabel>pdu</edgelabel>
+        </childnode>
+      </node>
+      <node id="1043">
+        <label>cte_rx_param_t</label>
+        <link refid="structcte__rx__param__t"/>
+      </node>
+      <node id="1050">
+        <label>lctrDataPdu_t</label>
+        <link refid="structlctrDataPdu__t"/>
+      </node>
+      <node id="1038">
+        <label>ext_link_layer_handle</label>
+        <link refid="structext__link__layer__handle"/>
+        <childnode refid="1039" relation="usage">
+          <edgelabel>ext_scan_link</edgelabel>
+        </childnode>
+        <childnode refid="1041" relation="usage">
+          <edgelabel>ext_init_link</edgelabel>
+        </childnode>
+      </node>
+      <node id="1040">
+        <label>le_ext_adv_report</label>
+        <link refid="structle__ext__adv__report"/>
+      </node>
+    </collaborationgraph>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/extended_advertising.h" line="23" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/extended_advertising.h" bodystart="23" bodyend="34"/>
+    <listofallmembers>
+      <member refid="structext__link__layer__handle_1a5addd6dcdd598e638c2ed2872f0e0d44" prot="public" virt="non-virtual"><scope>ext_link_layer_handle</scope><name>ext_adv_links</name></member>
+      <member refid="structext__link__layer__handle_1ac6355a67721e3676f6d55cdce082e2ca" prot="public" virt="non-virtual"><scope>ext_link_layer_handle</scope><name>ext_init_link</name></member>
+      <member refid="structext__link__layer__handle_1a65f0347abb9fd5ba1d8810a15f37021a" prot="public" virt="non-virtual"><scope>ext_link_layer_handle</scope><name>ext_number</name></member>
+      <member refid="structext__link__layer__handle_1ac29634438a52c938fe211d7cc1d575fa" prot="public" virt="non-virtual"><scope>ext_link_layer_handle</scope><name>ext_periodic_adv_links</name></member>
+      <member refid="structext__link__layer__handle_1a7f36a37181e1e7e637bde97c1b9be489" prot="public" virt="non-virtual"><scope>ext_link_layer_handle</scope><name>ext_scan_link</name></member>
+      <member refid="structext__link__layer__handle_1ace6c71f0e28a99140c401ef95ecf9caa" prot="public" virt="non-virtual"><scope>ext_link_layer_handle</scope><name>ext_scan_timer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

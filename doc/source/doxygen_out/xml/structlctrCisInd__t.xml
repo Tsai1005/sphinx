@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structlctrCisInd__t" kind="struct" language="C++" prot="public">
+    <compoundname>lctrCisInd_t</compoundname>
+    <includes refid="ll__defines_8h" local="no">ll_defines.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlctrCisInd__t_1a12b7ce0e39bfe938a6ec62be1d465624" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t lctrCisInd_t::accessAddr</definition>
+        <argsstring></argsstring>
+        <name>accessAddr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Contain the access address of the CIS. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="976" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="976" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrCisInd__t_1aa7d108255a885ee79335606c5f04b1b0" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t lctrCisInd_t::cisOffUsec</definition>
+        <argsstring></argsstring>
+        <name>cisOffUsec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Contain the time from the start of the referenced CE to the first CIS anchor point. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="977" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="977" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrCisInd__t_1a3bb2b1968cfef8e5ae9d030ef05ec44f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t lctrCisInd_t::cigSyncDelayUsec</definition>
+        <argsstring></argsstring>
+        <name>cigSyncDelayUsec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CIG synchronization delay in usec. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="978" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="978" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrCisInd__t_1aef4bf385dfde7c6e63c05fc9c4e1cd09" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t lctrCisInd_t::cisSyncDelayUsec</definition>
+        <argsstring></argsstring>
+        <name>cisSyncDelayUsec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CIG synchronization delay in usec. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="979" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="979" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrCisInd__t_1a6dae777c5daa606b43147e489e5c8afd" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lctrCisInd_t::ceRef</definition>
+        <argsstring></argsstring>
+        <name>ceRef</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Contain the reference CE where offsets are applied. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="980" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="980" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>CIS indication PDU. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="975" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="975" bodyend="981"/>
+    <listofallmembers>
+      <member refid="structlctrCisInd__t_1a12b7ce0e39bfe938a6ec62be1d465624" prot="public" virt="non-virtual"><scope>lctrCisInd_t</scope><name>accessAddr</name></member>
+      <member refid="structlctrCisInd__t_1a6dae777c5daa606b43147e489e5c8afd" prot="public" virt="non-virtual"><scope>lctrCisInd_t</scope><name>ceRef</name></member>
+      <member refid="structlctrCisInd__t_1a3bb2b1968cfef8e5ae9d030ef05ec44f" prot="public" virt="non-virtual"><scope>lctrCisInd_t</scope><name>cigSyncDelayUsec</name></member>
+      <member refid="structlctrCisInd__t_1aa7d108255a885ee79335606c5f04b1b0" prot="public" virt="non-virtual"><scope>lctrCisInd_t</scope><name>cisOffUsec</name></member>
+      <member refid="structlctrCisInd__t_1aef4bf385dfde7c6e63c05fc9c4e1cd09" prot="public" virt="non-virtual"><scope>lctrCisInd_t</scope><name>cisSyncDelayUsec</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

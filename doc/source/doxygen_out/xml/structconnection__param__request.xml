@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structconnection__param__request" kind="struct" language="C++" prot="public">
+    <compoundname>connection_param_request</compoundname>
+    <includes refid="link__layer_8h" local="no">link_layer.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structconnection__param__request_1a61ed7eba7282d17d84de0aee11ce9796" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 connection_param_request::PreferredPeriodicity</definition>
+        <argsstring></argsstring>
+        <name>PreferredPeriodicity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="297" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="297" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structconnection__param__request_1a37a1a3900a487b8b5a28da44d8e81305" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 connection_param_request::ReferenceConnEventCount</definition>
+        <argsstring></argsstring>
+        <name>ReferenceConnEventCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="298" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="298" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structconnection__param__request_1a22130f734b11f61704cb810d2973fc55" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 connection_param_request::offset[6]</definition>
+        <argsstring>[6]</argsstring>
+        <name>offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="299" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="299" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="296" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="296" bodyend="300"/>
+    <listofallmembers>
+      <member refid="structconnection__param__request_1a22130f734b11f61704cb810d2973fc55" prot="public" virt="non-virtual"><scope>connection_param_request</scope><name>offset</name></member>
+      <member refid="structconnection__param__request_1a61ed7eba7282d17d84de0aee11ce9796" prot="public" virt="non-virtual"><scope>connection_param_request</scope><name>PreferredPeriodicity</name></member>
+      <member refid="structconnection__param__request_1a37a1a3900a487b8b5a28da44d8e81305" prot="public" virt="non-virtual"><scope>connection_param_request</scope><name>ReferenceConnEventCount</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

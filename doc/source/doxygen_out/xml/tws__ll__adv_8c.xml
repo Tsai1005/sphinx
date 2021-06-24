@@ -1,0 +1,794 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="tws__ll__adv_8c" kind="file" language="C++">
+    <compoundname>tws_ll_adv.c</compoundname>
+    <includes refid="link__layer_8h" local="yes">ble/link_layer.h</includes>
+    <includes local="yes">stdarg.h</includes>
+    <includes refid="h4__transport_8h" local="yes">h4_transport.h</includes>
+    <includes local="yes">RF_ble.h</includes>
+    <includes local="yes">btcontroller_util.h</includes>
+    <includes local="yes">btcontroller_heap.h</includes>
+    <includes local="yes">tomcrypt.h</includes>
+    <includes local="yes">hci_controller.h</includes>
+    <includes local="yes">misc_interface.h</includes>
+    <includes refid="resolve__list_8h" local="yes">ble/resolve_list.h</includes>
+    <includes local="yes">common/debug.h</includes>
+    <incdepgraph>
+      <node id="4429">
+        <label>stdarg.h</label>
+      </node>
+      <node id="4414">
+        <label>os/os_type.h</label>
+      </node>
+      <node id="4410">
+        <label>common/atomic.h</label>
+      </node>
+      <node id="4424">
+        <label>common/lbuf.h</label>
+      </node>
+      <node id="4407">
+        <label>common/list.h</label>
+      </node>
+      <node id="4413">
+        <label>common/thread.h</label>
+      </node>
+      <node id="4416">
+        <label>ble/ll_adv.h</label>
+        <link refid="ll__adv_8h"/>
+        <childnode refid="4408" relation="include">
+        </childnode>
+      </node>
+      <node id="4430">
+        <label>h4_transport.h</label>
+        <link refid="h4__transport_8h"/>
+        <childnode refid="4406" relation="include">
+        </childnode>
+      </node>
+      <node id="4437">
+        <label>common/debug.h</label>
+      </node>
+      <node id="4432">
+        <label>btcontroller_util.h</label>
+      </node>
+      <node id="4418">
+        <label>ble/ll_init.h</label>
+        <link refid="ll__init_8h"/>
+        <childnode refid="4408" relation="include">
+        </childnode>
+      </node>
+      <node id="4420">
+        <label>data_extension.h</label>
+        <link refid="data__extension_8h"/>
+        <childnode refid="4406" relation="include">
+        </childnode>
+      </node>
+      <node id="4423">
+        <label>ble/ll_iso.h</label>
+        <link refid="ll__iso_8h"/>
+        <childnode refid="4411" relation="include">
+        </childnode>
+        <childnode refid="4424" relation="include">
+        </childnode>
+        <childnode refid="4413" relation="include">
+        </childnode>
+      </node>
+      <node id="4431">
+        <label>RF_ble.h</label>
+      </node>
+      <node id="4406">
+        <label>typedef.h</label>
+      </node>
+      <node id="4433">
+        <label>btcontroller_heap.h</label>
+      </node>
+      <node id="4412">
+        <label>white_list.h</label>
+        <link refid="white__list_8h"/>
+        <childnode refid="4406" relation="include">
+        </childnode>
+      </node>
+      <node id="4426">
+        <label>audio_codec.h</label>
+        <link refid="audio__codec_8h"/>
+        <childnode refid="4411" relation="include">
+        </childnode>
+      </node>
+      <node id="4417">
+        <label>ble/ll_scan.h</label>
+        <link refid="ll__scan_8h"/>
+        <childnode refid="4408" relation="include">
+        </childnode>
+      </node>
+      <node id="4415">
+        <label>ble/llcp.h</label>
+        <link refid="llcp_8h"/>
+        <childnode refid="4406" relation="include">
+        </childnode>
+        <childnode refid="4411" relation="include">
+        </childnode>
+      </node>
+      <node id="4421">
+        <label>multiple_phys.h</label>
+        <link refid="multiple__phys_8h"/>
+        <childnode refid="4406" relation="include">
+        </childnode>
+      </node>
+      <node id="4419">
+        <label>resolve_list.h</label>
+        <link refid="resolve__list_8h"/>
+        <childnode refid="4406" relation="include">
+        </childnode>
+      </node>
+      <node id="4408">
+        <label>ble_interface.h</label>
+      </node>
+      <node id="4434">
+        <label>tomcrypt.h</label>
+      </node>
+      <node id="4422">
+        <label>ble/ll_cte.h</label>
+        <link refid="ll__cte_8h"/>
+        <childnode refid="4411" relation="include">
+        </childnode>
+      </node>
+      <node id="4435">
+        <label>hci_controller.h</label>
+      </node>
+      <node id="4409">
+        <label>common/sys_timer.h</label>
+      </node>
+      <node id="4404">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_adv.c</label>
+        <link refid="tws_ll_adv.c"/>
+        <childnode refid="4405" relation="include">
+        </childnode>
+        <childnode refid="4429" relation="include">
+        </childnode>
+        <childnode refid="4430" relation="include">
+        </childnode>
+        <childnode refid="4431" relation="include">
+        </childnode>
+        <childnode refid="4432" relation="include">
+        </childnode>
+        <childnode refid="4433" relation="include">
+        </childnode>
+        <childnode refid="4434" relation="include">
+        </childnode>
+        <childnode refid="4435" relation="include">
+        </childnode>
+        <childnode refid="4436" relation="include">
+        </childnode>
+        <childnode refid="4419" relation="include">
+        </childnode>
+        <childnode refid="4437" relation="include">
+        </childnode>
+      </node>
+      <node id="4405">
+        <label>ble/link_layer.h</label>
+        <link refid="link__layer_8h"/>
+        <childnode refid="4406" relation="include">
+        </childnode>
+        <childnode refid="4407" relation="include">
+        </childnode>
+        <childnode refid="4408" relation="include">
+        </childnode>
+        <childnode refid="4409" relation="include">
+        </childnode>
+        <childnode refid="4410" relation="include">
+        </childnode>
+        <childnode refid="4411" relation="include">
+        </childnode>
+        <childnode refid="4412" relation="include">
+        </childnode>
+        <childnode refid="4413" relation="include">
+        </childnode>
+        <childnode refid="4414" relation="include">
+        </childnode>
+        <childnode refid="4415" relation="include">
+        </childnode>
+        <childnode refid="4416" relation="include">
+        </childnode>
+        <childnode refid="4417" relation="include">
+        </childnode>
+        <childnode refid="4418" relation="include">
+        </childnode>
+        <childnode refid="4419" relation="include">
+        </childnode>
+        <childnode refid="4420" relation="include">
+        </childnode>
+        <childnode refid="4421" relation="include">
+        </childnode>
+        <childnode refid="4422" relation="include">
+        </childnode>
+        <childnode refid="4423" relation="include">
+        </childnode>
+        <childnode refid="4425" relation="include">
+        </childnode>
+        <childnode refid="4427" relation="include">
+        </childnode>
+        <childnode refid="4428" relation="include">
+        </childnode>
+      </node>
+      <node id="4411">
+        <label>ll_defines.h</label>
+        <link refid="ll__defines_8h"/>
+        <childnode refid="4406" relation="include">
+        </childnode>
+      </node>
+      <node id="4427">
+        <label>ble/ll_cis.h</label>
+        <link refid="ll__cis_8h"/>
+        <childnode refid="4423" relation="include">
+        </childnode>
+        <childnode refid="4405" relation="include">
+        </childnode>
+      </node>
+      <node id="4425">
+        <label>ble/ll_bis.h</label>
+        <link refid="ll__bis_8h"/>
+        <childnode refid="4423" relation="include">
+        </childnode>
+        <childnode refid="4426" relation="include">
+        </childnode>
+      </node>
+      <node id="4428">
+        <label>ble/ll_pc.h</label>
+        <link refid="ll__pc_8h"/>
+        <childnode refid="4411" relation="include">
+        </childnode>
+      </node>
+      <node id="4436">
+        <label>misc_interface.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structll__adv__hdl" prot="public">ll_adv_hdl</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="tws__ll__adv_8c_1a6c6991cba0e2995d7d9aec73e0324317" prot="public" static="no">
+        <name>LOG_TAG_CONST</name>
+        <initializer>LL_TWS_ADV</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_adv.c" line="12" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_adv.c" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tws__ll__adv_8c_1a7ce0df38eb467e59f209470c8f5ac4e6" prot="public" static="no">
+        <name>LOG_TAG</name>
+        <initializer>&quot;[LL-TWS Adv]&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_adv.c" line="13" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_adv.c" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tws__ll__adv_8c_1abe76095a81e694a670d6c0e663cbff0f" prot="public" static="no">
+        <name>LOG_DEBUG_ENABLE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_adv.c" line="16" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_adv.c" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tws__ll__adv_8c_1a9eeb6e067100d0dec6e53bce19a403e0" prot="public" static="no">
+        <name>LOG_ERROR_ENABLE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_adv.c" line="17" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_adv.c" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="tws__ll__adv_8c_1ad223350d80db21fa8b721107cd1f6442" prot="public" static="no">
+        <name>__this</name>
+        <initializer>(<ref refid="tws__ll__adv_8c_1a71b4413e4495da67422e0eca74f5115e" kindref="member">adv_hdl</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_adv.c" line="37" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_adv.c" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="tws__ll__adv_8c_1a71b4413e4495da67422e0eca74f5115e" prot="public" static="yes" mutable="no">
+        <type>struct <ref refid="structll__adv__hdl" kindref="compound">ll_adv_hdl</ref> *</type>
+        <definition>struct ll_adv_hdl* adv_hdl</definition>
+        <argsstring></argsstring>
+        <name>adv_hdl</name>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_adv.c" line="35" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_adv.c" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tws__ll__adv_8c_1ae28d1e9bac11d2e921e6754454f9239f" prot="public" static="yes" mutable="no">
+        <type>const struct ble_handler</type>
+        <definition>const struct ble_handler adv_handler</definition>
+        <argsstring></argsstring>
+        <name>adv_handler</name>
+        <initializer>= {
+    .tws_rx_probe_handler   = <ref refid="tws__ll__adv_8c_1a8ed1d677950088b6f8daa733feb57f4d" kindref="member">adv_rx_probe_handler</ref>,
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_adv.c" line="94" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_adv.c" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="tws__ll__adv_8c_1ad19204de0002c264867d785c01789725" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ll_adv_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>ll_adv_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_adv.c" line="40" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_adv.c" bodystart="40" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__ll__adv_8c_1acc878a4c395774dd5acd4823149473bf" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ll_adv_destroy</definition>
+        <argsstring>(void)</argsstring>
+        <name>ll_adv_destroy</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_adv.c" line="47" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_adv.c" bodystart="47" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__ll__adv_8c_1a59c6d028a82fcf9959585a47f6dffe90" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void __set_ll_adv_local_addr</definition>
+        <argsstring>(struct le_adv_link *adv_link)</argsstring>
+        <name>__set_ll_adv_local_addr</name>
+        <param>
+          <type>struct <ref refid="structle__adv__link" kindref="compound">le_adv_link</ref> *</type>
+          <declname>adv_link</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_adv.c" line="58" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_adv.c" bodystart="58" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__ll__adv_8c_1a2f81e6fde1aec1e97c31d1ab8d1eb205" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void __set_ll_adv_state</definition>
+        <argsstring>(struct le_adv_link *adv_link)</argsstring>
+        <name>__set_ll_adv_state</name>
+        <param>
+          <type>struct <ref refid="structle__adv__link" kindref="compound">le_adv_link</ref> *</type>
+          <declname>adv_link</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_adv.c" line="63" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_adv.c" bodystart="63" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__ll__adv_8c_1a618262020cd2ce1ff8a8936149a9af01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tws_rx_probe_adv_pdu_handler</definition>
+        <argsstring>(struct le_adv_link *link, struct ble_rx *rx)</argsstring>
+        <name>tws_rx_probe_adv_pdu_handler</name>
+        <param>
+          <type>struct <ref refid="structle__adv__link" kindref="compound">le_adv_link</ref> *</type>
+          <declname>link</declname>
+        </param>
+        <param>
+          <type>struct ble_rx *</type>
+          <declname>rx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_adv.c" line="92" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c" bodystart="219" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__ll__adv_8c_1a8ed1d677950088b6f8daa733feb57f4d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void adv_rx_probe_handler</definition>
+        <argsstring>(void *priv, struct ble_rx *rx)</argsstring>
+        <name>adv_rx_probe_handler</name>
+        <param>
+          <type>void *</type>
+          <declname>priv</declname>
+        </param>
+        <param>
+          <type>struct ble_rx *</type>
+          <declname>rx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_adv.c" line="94" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_adv.c" bodystart="94" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__ll__adv_8c_1a7541285524351d11b20ff6e0b37f7d9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tws_ll_adv_set_params</definition>
+        <argsstring>(const u8 *data)</argsstring>
+        <name>tws_ll_adv_set_params</name>
+        <param>
+          <type>const u8 *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_adv.c" line="116" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_adv.c" bodystart="116" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__ll__adv_8c_1a0842a440c7e09ff061a6bb178fd9a6f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tws_ll_adv_set_scan_rsp_data</definition>
+        <argsstring>(const u8 *data)</argsstring>
+        <name>tws_ll_adv_set_scan_rsp_data</name>
+        <param>
+          <type>const u8 *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_adv.c" line="128" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_adv.c" bodystart="128" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__ll__adv_8c_1a92b33de8e007fdaf0b9af0981f130271" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tws_dump</definition>
+        <argsstring>(void)</argsstring>
+        <name>tws_dump</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_adv.c" line="151" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_adv.c" bodystart="151" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__ll__adv_8c_1a226e7478623cf52034d47fef47bd71a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tws_ll_adv_open</definition>
+        <argsstring>(void)</argsstring>
+        <name>tws_ll_adv_open</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_adv.c" line="157" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_adv.c" bodystart="157" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__ll__adv_8c_1a4a74a65644ca79f3fa7c88a1491a8d64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tws_ll_adv_close</definition>
+        <argsstring>(void)</argsstring>
+        <name>tws_ll_adv_close</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_adv.c" line="202" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_adv.c" bodystart="202" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__ll__adv_8c_1a5307c960a473117c3005c1c9086f9528" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structle__adv__link" kindref="compound">le_adv_link</ref> *</type>
+        <definition>struct le_adv_link* tws_ll_adv_link_get</definition>
+        <argsstring>(void)</argsstring>
+        <name>tws_ll_adv_link_get</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_adv.c" line="238" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_adv.c" bodystart="238" bodyend="246"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="link__layer_8h" kindref="compound">ble/link_layer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;stdarg.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="h4__transport_8h" kindref="compound">h4_transport.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;RF_ble.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;btcontroller_util.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;btcontroller_heap.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;tomcrypt.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;hci_controller.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;misc_interface.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="resolve__list_8h" kindref="compound">ble/resolve_list.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_TAG_CONST<sp/><sp/><sp/><sp/><sp/>LL_TWS_ADV</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_TAG<sp/><sp/><sp/><sp/><sp/>&quot;[LL-TWS<sp/>Adv]&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>#define<sp/>LOG_INFO_ENABLE<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_DEBUG_ENABLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_ERROR_ENABLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>#define<sp/>LOG_DUMP_ENABLE<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;common/debug.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>SUPPORT_MS_EXTENSIONS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>bss_seg(&quot;.ble_ll_bss&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>data_seg(&quot;.ble_ll_data&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>const_seg(&quot;.ble_ll_const&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>code_seg(&quot;.ble_ll_code&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//TWS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structll__adv__hdl" kindref="compound">ll_adv_hdl</ref><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structle__adv__link" kindref="compound">le_adv_link</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structll__adv__hdl_1ad48c89258997e283d9055438c08edc20" kindref="member">adv_link</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtws__advertising__param" kindref="compound">tws_advertising_param</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structll__adv__hdl_1a12be2e3e01cdbcf3798448d0aa55100f" kindref="member">adv_param</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structscan__response" kindref="compound">scan_response</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structll__adv__hdl_1acaf3f3ba1d2723e79b524b7e7db3f57a" kindref="member">scan_resp_data</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structll__adv__hdl" kindref="compound">ll_adv_hdl</ref><sp/>*<ref refid="tws__ll__adv_8c_1a71b4413e4495da67422e0eca74f5115e" kindref="member">adv_hdl</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__this<sp/><sp/>(adv_hdl)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__ll__adv_8c_1ad19204de0002c264867d785c01789725" kindref="member">ll_adv_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>log_info(</highlight><highlight class="stringliteral">&quot;LL<sp/>ADV<sp/>-<sp/>init&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="tws__ll__adv_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref><sp/>=<sp/>__bt_malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structll__adv__hdl" kindref="compound">ll_adv_hdl</ref>));</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__ll__adv_8c_1acc878a4c395774dd5acd4823149473bf" kindref="member">ll_adv_destroy</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>log_info(</highlight><highlight class="stringliteral">&quot;LL<sp/>ADV<sp/>-<sp/>destroy&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="tws__ll__adv_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__bt_free(<ref refid="tws__ll__adv_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref>);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tws__ll__adv_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__ll__adv_8c_1a59c6d028a82fcf9959585a47f6dffe90" kindref="member">__set_ll_adv_local_addr</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structle__adv__link" kindref="compound">le_adv_link</ref><sp/>*<ref refid="structll__adv__hdl_1ad48c89258997e283d9055438c08edc20" kindref="member">adv_link</ref>)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="link__layer_8c_1adfe227fcb9e3cd5517eb4074f28168fe" kindref="member">__set_ll_local_addr</ref>(adv_link-&gt;<ref refid="structle__adv__link_1a9e4566deccbc5cb2383f5a63139ff5ef" kindref="member">hw</ref>,<sp/>&amp;adv_link-&gt;<ref refid="structle__adv__link_1a793ffbe91120a25fcaa07f16447bd38b" kindref="member">local</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__ll__adv_8c_1a2f81e6fde1aec1e97c31d1ab8d1eb205" kindref="member">__set_ll_adv_state</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structle__adv__link" kindref="compound">le_adv_link</ref><sp/>*<ref refid="structll__adv__hdl_1ad48c89258997e283d9055438c08edc20" kindref="member">adv_link</ref>)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">ble_tws_adv<sp/>adv;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>log_info(</highlight><highlight class="stringliteral">&quot;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>i;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>adv.channel_map<sp/>=<sp/><ref refid="tws__ll__adv_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref>-&gt;adv_param.Advertising_Channel_Map;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0,<sp/>adv.pkt_cnt<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>3;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(adv.channel_map<sp/>&amp;<sp/>BIT(i))<sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>adv.pkt_cnt++;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>adv.aa<sp/>=<sp/><ref refid="tws__ll__adv_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref>-&gt;adv_param.AA;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>log_info(</highlight><highlight class="stringliteral">&quot;adv<sp/>AA<sp/>:<sp/>0x%x&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>adv.aa);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>log_info(</highlight><highlight class="stringliteral">&quot;adv<sp/>channel<sp/>map:<sp/>0x%x&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>adv.channel_map);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="tws__ll__adv_8c_1a59c6d028a82fcf9959585a47f6dffe90" kindref="member">__set_ll_adv_local_addr</ref>(adv_link);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>log_info(&quot;SCAN<sp/>RSP<sp/>data<sp/>:<sp/>%d&quot;,<sp/>__this-&gt;scan_resp_data.length);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>log_info_hexdump(__this-&gt;scan_resp_data.data,<sp/>__this-&gt;scan_resp_data.length);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>log_info(</highlight><highlight class="stringliteral">&quot;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>__ble_ops-&gt;ioctrl(adv_link-&gt;<ref refid="structle__adv__link_1a9e4566deccbc5cb2383f5a63139ff5ef" kindref="member">hw</ref>,<sp/>BLE_SET_SCAN_RSP_DATA,<sp/><ref refid="tws__ll__adv_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref>-&gt;scan_resp_data);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>__ble_ops-&gt;tws_advertising(adv_link-&gt;<ref refid="structle__adv__link_1a9e4566deccbc5cb2383f5a63139ff5ef" kindref="member">hw</ref>,<sp/>&amp;adv);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__ll__adv_8c_1a618262020cd2ce1ff8a8936149a9af01" kindref="member">tws_rx_probe_adv_pdu_handler</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structle__adv__link" kindref="compound">le_adv_link</ref><sp/>*link,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>ble_rx<sp/>*rx);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__ll__adv_8c_1a8ed1d677950088b6f8daa733feb57f4d" kindref="member">adv_rx_probe_handler</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*priv,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>ble_rx<sp/>*rx)</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structle__adv__link" kindref="compound">le_adv_link</ref><sp/>*adv_link<sp/>=<sp/>(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structle__adv__link" kindref="compound">le_adv_link</ref><sp/>*)priv;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(rx-&gt;type)<sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>SCAN_REQ:</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_info(</highlight><highlight class="stringliteral">&quot;SCAN_REQ&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>log_debug_hexdump(rx-&gt;data,<sp/>rx-&gt;len);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="tws__ll__adv_8c_1a618262020cd2ce1ff8a8936149a9af01" kindref="member">tws_rx_probe_adv_pdu_handler</ref>(adv_link,<sp/>rx);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>RX_PACKET_SET_INVALID(rx);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="comment">//Bottom<sp/>upload<sp/>from<sp/>Baseband<sp/>API</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">ble_handler<sp/><ref refid="tws__ll__adv_8c_1ae28d1e9bac11d2e921e6754454f9239f" kindref="member">adv_handler</ref><sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>.tws_rx_probe_handler<sp/><sp/><sp/>=<sp/><ref refid="tws__ll__adv_8c_1a8ed1d677950088b6f8daa733feb57f4d" kindref="member">adv_rx_probe_handler</ref>,</highlight></codeline>
+<codeline lineno="114"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="tws__ll__adv_8c_1a7541285524351d11b20ff6e0b37f7d9d" kindref="member">tws_ll_adv_set_params</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>*data)</highlight></codeline>
+<codeline lineno="117"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="tws__ll__adv_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref><sp/>==<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tws__ll__adv_8c_1ad19204de0002c264867d785c01789725" kindref="member">ll_adv_init</ref>();</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>memcpy((u8<sp/>*)&amp;<ref refid="tws__ll__adv_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref>-&gt;adv_param,<sp/>data,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structtws__advertising__param" kindref="compound">tws_advertising_param</ref>));</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>SUCCESS;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="tws__ll__adv_8c_1a0842a440c7e09ff061a6bb178fd9a6f1" kindref="member">tws_ll_adv_set_scan_rsp_data</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>*data)</highlight></codeline>
+<codeline lineno="129"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="tws__ll__adv_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref><sp/>==<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tws__ll__adv_8c_1ad19204de0002c264867d785c01789725" kindref="member">ll_adv_init</ref>();</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structle__adv__link" kindref="compound">le_adv_link</ref><sp/>*adv_link<sp/>=<sp/><ref refid="tws__ll__adv_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref>-&gt;adv_link;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>memset((u8<sp/>*)&amp;<ref refid="tws__ll__adv_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref>-&gt;scan_resp_data,<sp/>0x0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structscan__response" kindref="compound">scan_response</ref>));</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="tws__ll__adv_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref>-&gt;scan_resp_data.length<sp/>=<sp/>data[0];</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>memcpy((u8<sp/>*)&amp;<ref refid="tws__ll__adv_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref>-&gt;scan_resp_data.data,<sp/>&amp;data[1],<sp/>data[0]);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>log_info(</highlight><highlight class="stringliteral">&quot;SCAN<sp/>RSP<sp/>data<sp/>:<sp/>%d&quot;</highlight><highlight class="normal">,<sp/><ref refid="tws__ll__adv_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref>-&gt;scan_resp_data.length);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>log_info_hexdump(<ref refid="tws__ll__adv_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref>-&gt;scan_resp_data.data,<sp/><ref refid="tws__ll__adv_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref>-&gt;scan_resp_data.length);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//If<sp/>advertising<sp/>is<sp/>currently<sp/>enabled,<sp/>the<sp/>Controller<sp/>shall<sp/>use<sp/>the<sp/>new<sp/>data<sp/>in<sp/>subsequent<sp/>advertising<sp/>events</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(adv_link<sp/>&amp;&amp;<sp/>adv_link-&gt;<ref refid="structle__adv__link_1a9e4566deccbc5cb2383f5a63139ff5ef" kindref="member">hw</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__ble_ops-&gt;ioctrl(adv_link-&gt;<ref refid="structle__adv__link_1a9e4566deccbc5cb2383f5a63139ff5ef" kindref="member">hw</ref>,<sp/>BLE_SET_SCAN_RSP_DATA,<sp/>data);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>SUCCESS;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__ll__adv_8c_1a92b33de8e007fdaf0b9af0981f130271" kindref="member">tws_dump</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="152"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>log_info(</highlight><highlight class="stringliteral">&quot;X-SCAN<sp/>RSP<sp/>data<sp/>:<sp/>%d&quot;</highlight><highlight class="normal">,<sp/><ref refid="tws__ll__adv_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref>-&gt;scan_resp_data.length);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>log_info_hexdump(<ref refid="tws__ll__adv_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref>-&gt;scan_resp_data.data,<sp/><ref refid="tws__ll__adv_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref>-&gt;scan_resp_data.length);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="tws__ll__adv_8c_1a226e7478623cf52034d47fef47bd71a9" kindref="member">tws_ll_adv_open</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="158"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="tws__ll__adv_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref><sp/>==<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="tws__ll__adv_8c_1ad19204de0002c264867d785c01789725" kindref="member">ll_adv_init</ref>();</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>log_info(</highlight><highlight class="stringliteral">&quot;ll_adv_open&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>local_irq_disable();</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structle__adv__link" kindref="compound">le_adv_link</ref><sp/>*adv_link<sp/>=<sp/><ref refid="tws__ll__adv_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref>-&gt;adv_link;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(adv_link)<sp/>{</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_error(</highlight><highlight class="stringliteral">&quot;adv<sp/>link<sp/>already<sp/>open&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>local_irq_enable();</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>COMMAND_DISALLOWED;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>adv_link<sp/>=<sp/>__bt_malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structle__adv__link" kindref="compound">le_adv_link</ref>));</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(adv_link<sp/>==<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_error(</highlight><highlight class="stringliteral">&quot;adv<sp/>link<sp/>NULL&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>local_irq_enable();</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>COMMAND_DISALLOWED;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="tws__ll__adv_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref>-&gt;adv_link<sp/>=<sp/><ref refid="structll__adv__hdl_1ad48c89258997e283d9055438c08edc20" kindref="member">adv_link</ref>;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>local_irq_enable();</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>adv_link-&gt;<ref refid="structle__adv__link_1a9e4566deccbc5cb2383f5a63139ff5ef" kindref="member">hw</ref><sp/>=<sp/>__ble_ops-&gt;open();</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>ASSERT(link-&gt;hw<sp/>!=<sp/>NULL,<sp/>&quot;%s/n&quot;,<sp/>&quot;hw<sp/>open<sp/>error&quot;);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(adv_link-&gt;<ref refid="structle__adv__link_1a9e4566deccbc5cb2383f5a63139ff5ef" kindref="member">hw</ref><sp/>==<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_error(</highlight><highlight class="stringliteral">&quot;adv<sp/>hw<sp/>NULL&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>CONTROLLER_BUSY;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>__ble_ops-&gt;handler_register(adv_link-&gt;<ref refid="structle__adv__link_1a9e4566deccbc5cb2383f5a63139ff5ef" kindref="member">hw</ref>,<sp/>adv_link,<sp/>&amp;adv_handler);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="tws__ll__adv_8c_1a2f81e6fde1aec1e97c31d1ab8d1eb205" kindref="member">__set_ll_adv_state</ref>(adv_link);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>SUCCESS;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="tws__ll__adv_8c_1a4a74a65644ca79f3fa7c88a1491a8d64" kindref="member">tws_ll_adv_close</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="203"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/>log_info(</highlight><highlight class="stringliteral">&quot;ll_adv_close&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>local_irq_disable();</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="tws__ll__adv_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref><sp/>==<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_error(</highlight><highlight class="stringliteral">&quot;LL<sp/>Adv<sp/>already<sp/>destroy&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>local_irq_enable();</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>SUCCESS;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structle__adv__link" kindref="compound">le_adv_link</ref><sp/>*adv_link<sp/>=<sp/><ref refid="tws__ll__adv_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref>-&gt;adv_link;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(adv_link<sp/>==<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_error(</highlight><highlight class="stringliteral">&quot;adv<sp/>link<sp/>NULL&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>local_irq_enable();</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>UNKNOWN_CONNECTION_IDENTIFIER;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="tws__ll__adv_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref>-&gt;adv_link<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/>local_irq_enable();</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//close<sp/>the<sp/>hardware<sp/>first<sp/>to<sp/>avoid<sp/>race<sp/>condition</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(adv_link-&gt;<ref refid="structle__adv__link_1a9e4566deccbc5cb2383f5a63139ff5ef" kindref="member">hw</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__ble_ops-&gt;close(adv_link-&gt;<ref refid="structle__adv__link_1a9e4566deccbc5cb2383f5a63139ff5ef" kindref="member">hw</ref>);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/>__bt_free(adv_link);</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="tws__ll__adv_8c_1acc878a4c395774dd5acd4823149473bf" kindref="member">ll_adv_destroy</ref>();</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>SUCCESS;</highlight></codeline>
+<codeline lineno="236"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structle__adv__link" kindref="compound">le_adv_link</ref><sp/>*<ref refid="tws__ll__adv_8c_1a5307c960a473117c3005c1c9086f9528" kindref="member">tws_ll_adv_link_get</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="239"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="tws__ll__adv_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref><sp/>==<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_error(</highlight><highlight class="stringliteral">&quot;LL<sp/>Adv<sp/>not<sp/>init<sp/>yet&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="tws__ll__adv_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref>-&gt;adv_link;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_adv.c"/>
+  </compounddef>
+</doxygen>

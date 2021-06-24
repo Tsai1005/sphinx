@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="struct____period__adv__report__event" kind="struct" language="C++" prot="public">
+    <compoundname>__period_adv_report_event</compoundname>
+    <includes refid="periodic__advertising_8h" local="no">periodic_advertising.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct____period__adv__report__event_1a991cfed4678c7c99c408a65c0c9b60cc" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 __period_adv_report_event::Subevent_Code</definition>
+        <argsstring></argsstring>
+        <name>Subevent_Code</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/periodic_advertising.h" line="24" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/periodic_advertising.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct____period__adv__report__event_1a7d81678d9bd3cdebef6a6442d04c35d8" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 __period_adv_report_event::Sync_Handle</definition>
+        <argsstring></argsstring>
+        <name>Sync_Handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/periodic_advertising.h" line="25" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/periodic_advertising.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct____period__adv__report__event_1a5705aadb8ab5d7681c60cad4ea356c91" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 __period_adv_report_event::Tx_Power</definition>
+        <argsstring></argsstring>
+        <name>Tx_Power</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/periodic_advertising.h" line="26" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/periodic_advertising.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct____period__adv__report__event_1a86068558e938b0a6729fd82608f14686" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 __period_adv_report_event::RSSI</definition>
+        <argsstring></argsstring>
+        <name>RSSI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/periodic_advertising.h" line="27" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/periodic_advertising.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct____period__adv__report__event_1aea1c44426251e5cc6e628b0eb5400ef6" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 __period_adv_report_event::CTE_Type</definition>
+        <argsstring></argsstring>
+        <name>CTE_Type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/periodic_advertising.h" line="28" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/periodic_advertising.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct____period__adv__report__event_1a469363139edc97b5c4fa472e959bd95c" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 __period_adv_report_event::Data_Status</definition>
+        <argsstring></argsstring>
+        <name>Data_Status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/periodic_advertising.h" line="29" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/periodic_advertising.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct____period__adv__report__event_1ac079a9c8d3d6e2899c4a6801f64ded0b" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 __period_adv_report_event::Data_Length</definition>
+        <argsstring></argsstring>
+        <name>Data_Length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/periodic_advertising.h" line="30" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/periodic_advertising.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct____period__adv__report__event_1afa366f7fbadab19c04f5aa19b9833c9a" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 __period_adv_report_event::Data[0]</definition>
+        <argsstring>[0]</argsstring>
+        <name>Data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/periodic_advertising.h" line="31" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/periodic_advertising.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/periodic_advertising.h" line="23" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/periodic_advertising.h" bodystart="23" bodyend="32"/>
+    <listofallmembers>
+      <member refid="struct____period__adv__report__event_1aea1c44426251e5cc6e628b0eb5400ef6" prot="public" virt="non-virtual"><scope>__period_adv_report_event</scope><name>CTE_Type</name></member>
+      <member refid="struct____period__adv__report__event_1afa366f7fbadab19c04f5aa19b9833c9a" prot="public" virt="non-virtual"><scope>__period_adv_report_event</scope><name>Data</name></member>
+      <member refid="struct____period__adv__report__event_1ac079a9c8d3d6e2899c4a6801f64ded0b" prot="public" virt="non-virtual"><scope>__period_adv_report_event</scope><name>Data_Length</name></member>
+      <member refid="struct____period__adv__report__event_1a469363139edc97b5c4fa472e959bd95c" prot="public" virt="non-virtual"><scope>__period_adv_report_event</scope><name>Data_Status</name></member>
+      <member refid="struct____period__adv__report__event_1a86068558e938b0a6729fd82608f14686" prot="public" virt="non-virtual"><scope>__period_adv_report_event</scope><name>RSSI</name></member>
+      <member refid="struct____period__adv__report__event_1a991cfed4678c7c99c408a65c0c9b60cc" prot="public" virt="non-virtual"><scope>__period_adv_report_event</scope><name>Subevent_Code</name></member>
+      <member refid="struct____period__adv__report__event_1a7d81678d9bd3cdebef6a6442d04c35d8" prot="public" virt="non-virtual"><scope>__period_adv_report_event</scope><name>Sync_Handle</name></member>
+      <member refid="struct____period__adv__report__event_1a5705aadb8ab5d7681c60cad4ea356c91" prot="public" virt="non-virtual"><scope>__period_adv_report_event</scope><name>Tx_Power</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

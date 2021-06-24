@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structlmp__device" kind="struct" language="C++" prot="public">
+    <compoundname>lmp_device</compoundname>
+    <includes refid="lmp_8h" local="no">lmp.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlmp__device_1a6d0438135757dfb02809741d0c790616" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_device::features[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>features</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="447" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="447" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__device_1a1f4767b51fb24c04f95c9e38efa0cfab" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_device::ext_features[8 *2]</definition>
+        <argsstring>[8 *2]</argsstring>
+        <name>ext_features</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="448" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="448" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="443" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="443" bodyend="453"/>
+    <listofallmembers>
+      <member refid="structlmp__device_1a1f4767b51fb24c04f95c9e38efa0cfab" prot="public" virt="non-virtual"><scope>lmp_device</scope><name>ext_features</name></member>
+      <member refid="structlmp__device_1a6d0438135757dfb02809741d0c790616" prot="public" virt="non-virtual"><scope>lmp_device</scope><name>features</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

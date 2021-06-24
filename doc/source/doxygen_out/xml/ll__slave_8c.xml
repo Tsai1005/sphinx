@@ -1,0 +1,647 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="ll__slave_8c" kind="file" language="C++">
+    <compoundname>ll_slave.c</compoundname>
+    <includes refid="link__layer_8h" local="yes">ble/link_layer.h</includes>
+    <includes local="yes">stdarg.h</includes>
+    <includes refid="h4__transport_8h" local="yes">h4_transport.h</includes>
+    <includes local="yes">RF_ble.h</includes>
+    <includes local="yes">btcontroller_util.h</includes>
+    <includes local="yes">btcontroller_heap.h</includes>
+    <includes local="yes">tomcrypt.h</includes>
+    <includes local="yes">hci_controller.h</includes>
+    <includes local="yes">misc_interface.h</includes>
+    <includes local="yes">btctrler_task.h</includes>
+    <includes local="yes">common/debug.h</includes>
+    <incdepgraph>
+      <node id="3846">
+        <label>stdarg.h</label>
+      </node>
+      <node id="3831">
+        <label>os/os_type.h</label>
+      </node>
+      <node id="3827">
+        <label>common/atomic.h</label>
+      </node>
+      <node id="3841">
+        <label>common/lbuf.h</label>
+      </node>
+      <node id="3821">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_slave.c</label>
+        <link refid="ll_slave.c"/>
+        <childnode refid="3822" relation="include">
+        </childnode>
+        <childnode refid="3846" relation="include">
+        </childnode>
+        <childnode refid="3847" relation="include">
+        </childnode>
+        <childnode refid="3848" relation="include">
+        </childnode>
+        <childnode refid="3849" relation="include">
+        </childnode>
+        <childnode refid="3850" relation="include">
+        </childnode>
+        <childnode refid="3851" relation="include">
+        </childnode>
+        <childnode refid="3852" relation="include">
+        </childnode>
+        <childnode refid="3853" relation="include">
+        </childnode>
+        <childnode refid="3854" relation="include">
+        </childnode>
+        <childnode refid="3855" relation="include">
+        </childnode>
+      </node>
+      <node id="3824">
+        <label>common/list.h</label>
+      </node>
+      <node id="3854">
+        <label>btctrler_task.h</label>
+      </node>
+      <node id="3830">
+        <label>common/thread.h</label>
+      </node>
+      <node id="3833">
+        <label>ble/ll_adv.h</label>
+        <link refid="ll__adv_8h"/>
+        <childnode refid="3825" relation="include">
+        </childnode>
+      </node>
+      <node id="3847">
+        <label>h4_transport.h</label>
+        <link refid="h4__transport_8h"/>
+        <childnode refid="3823" relation="include">
+        </childnode>
+      </node>
+      <node id="3855">
+        <label>common/debug.h</label>
+      </node>
+      <node id="3849">
+        <label>btcontroller_util.h</label>
+      </node>
+      <node id="3835">
+        <label>ble/ll_init.h</label>
+        <link refid="ll__init_8h"/>
+        <childnode refid="3825" relation="include">
+        </childnode>
+      </node>
+      <node id="3837">
+        <label>data_extension.h</label>
+        <link refid="data__extension_8h"/>
+        <childnode refid="3823" relation="include">
+        </childnode>
+      </node>
+      <node id="3840">
+        <label>ble/ll_iso.h</label>
+        <link refid="ll__iso_8h"/>
+        <childnode refid="3828" relation="include">
+        </childnode>
+        <childnode refid="3841" relation="include">
+        </childnode>
+        <childnode refid="3830" relation="include">
+        </childnode>
+      </node>
+      <node id="3848">
+        <label>RF_ble.h</label>
+      </node>
+      <node id="3823">
+        <label>typedef.h</label>
+      </node>
+      <node id="3850">
+        <label>btcontroller_heap.h</label>
+      </node>
+      <node id="3829">
+        <label>white_list.h</label>
+        <link refid="white__list_8h"/>
+        <childnode refid="3823" relation="include">
+        </childnode>
+      </node>
+      <node id="3843">
+        <label>audio_codec.h</label>
+        <link refid="audio__codec_8h"/>
+        <childnode refid="3828" relation="include">
+        </childnode>
+      </node>
+      <node id="3834">
+        <label>ble/ll_scan.h</label>
+        <link refid="ll__scan_8h"/>
+        <childnode refid="3825" relation="include">
+        </childnode>
+      </node>
+      <node id="3832">
+        <label>ble/llcp.h</label>
+        <link refid="llcp_8h"/>
+        <childnode refid="3823" relation="include">
+        </childnode>
+        <childnode refid="3828" relation="include">
+        </childnode>
+      </node>
+      <node id="3838">
+        <label>multiple_phys.h</label>
+        <link refid="multiple__phys_8h"/>
+        <childnode refid="3823" relation="include">
+        </childnode>
+      </node>
+      <node id="3836">
+        <label>resolve_list.h</label>
+        <link refid="resolve__list_8h"/>
+        <childnode refid="3823" relation="include">
+        </childnode>
+      </node>
+      <node id="3825">
+        <label>ble_interface.h</label>
+      </node>
+      <node id="3851">
+        <label>tomcrypt.h</label>
+      </node>
+      <node id="3839">
+        <label>ble/ll_cte.h</label>
+        <link refid="ll__cte_8h"/>
+        <childnode refid="3828" relation="include">
+        </childnode>
+      </node>
+      <node id="3852">
+        <label>hci_controller.h</label>
+      </node>
+      <node id="3826">
+        <label>common/sys_timer.h</label>
+      </node>
+      <node id="3822">
+        <label>ble/link_layer.h</label>
+        <link refid="link__layer_8h"/>
+        <childnode refid="3823" relation="include">
+        </childnode>
+        <childnode refid="3824" relation="include">
+        </childnode>
+        <childnode refid="3825" relation="include">
+        </childnode>
+        <childnode refid="3826" relation="include">
+        </childnode>
+        <childnode refid="3827" relation="include">
+        </childnode>
+        <childnode refid="3828" relation="include">
+        </childnode>
+        <childnode refid="3829" relation="include">
+        </childnode>
+        <childnode refid="3830" relation="include">
+        </childnode>
+        <childnode refid="3831" relation="include">
+        </childnode>
+        <childnode refid="3832" relation="include">
+        </childnode>
+        <childnode refid="3833" relation="include">
+        </childnode>
+        <childnode refid="3834" relation="include">
+        </childnode>
+        <childnode refid="3835" relation="include">
+        </childnode>
+        <childnode refid="3836" relation="include">
+        </childnode>
+        <childnode refid="3837" relation="include">
+        </childnode>
+        <childnode refid="3838" relation="include">
+        </childnode>
+        <childnode refid="3839" relation="include">
+        </childnode>
+        <childnode refid="3840" relation="include">
+        </childnode>
+        <childnode refid="3842" relation="include">
+        </childnode>
+        <childnode refid="3844" relation="include">
+        </childnode>
+        <childnode refid="3845" relation="include">
+        </childnode>
+      </node>
+      <node id="3828">
+        <label>ll_defines.h</label>
+        <link refid="ll__defines_8h"/>
+        <childnode refid="3823" relation="include">
+        </childnode>
+      </node>
+      <node id="3844">
+        <label>ble/ll_cis.h</label>
+        <link refid="ll__cis_8h"/>
+        <childnode refid="3840" relation="include">
+        </childnode>
+        <childnode refid="3822" relation="include">
+        </childnode>
+      </node>
+      <node id="3842">
+        <label>ble/ll_bis.h</label>
+        <link refid="ll__bis_8h"/>
+        <childnode refid="3840" relation="include">
+        </childnode>
+        <childnode refid="3843" relation="include">
+        </childnode>
+      </node>
+      <node id="3845">
+        <label>ble/ll_pc.h</label>
+        <link refid="ll__pc_8h"/>
+        <childnode refid="3828" relation="include">
+        </childnode>
+      </node>
+      <node id="3853">
+        <label>misc_interface.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="ll__slave_8c_1a6c6991cba0e2995d7d9aec73e0324317" prot="public" static="no">
+        <name>LOG_TAG_CONST</name>
+        <initializer>LL_S</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_slave.c" line="12" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_slave.c" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__slave_8c_1a7ce0df38eb467e59f209470c8f5ac4e6" prot="public" static="no">
+        <name>LOG_TAG</name>
+        <initializer>&quot;[LL-S]&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_slave.c" line="13" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_slave.c" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__slave_8c_1a9eeb6e067100d0dec6e53bce19a403e0" prot="public" static="no">
+        <name>LOG_ERROR_ENABLE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_slave.c" line="15" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_slave.c" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__slave_8c_1a69321c8a2a0b07a07fb5088e82e25eb0" prot="public" static="no">
+        <name>LOG_INFO_ENABLE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_slave.c" line="16" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_slave.c" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__slave_8c_1ad223350d80db21fa8b721107cd1f6442" prot="public" static="no">
+        <name>__this</name>
+        <initializer>(&amp;<ref refid="link__layer_8h_1a11d5b1c8b0def0c238d4700650780724" kindref="member">ll_hdl</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_slave.c" line="30" column="10" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_slave.c" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="ll__slave_8c_1a7fb7ff658cb448efba3ed3fc80f79f5d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void llcp_slv_sm_run</definition>
+        <argsstring>(struct le_link *link, uint8_t event, void *data)</argsstring>
+        <name>llcp_slv_sm_run</name>
+        <param>
+          <type>struct <ref refid="structle__link" kindref="compound">le_link</ref> *</type>
+          <declname>link</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>event</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_slave.c" line="33" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_slave.c" bodystart="33" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__slave_8c_1a252819a22bedf72c4efa291528775fc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void slave_rx_conn_post_handler</definition>
+        <argsstring>(struct le_link *link, struct ble_rx *rx)</argsstring>
+        <name>slave_rx_conn_post_handler</name>
+        <param>
+          <type>struct <ref refid="structle__link" kindref="compound">le_link</ref> *</type>
+          <declname>link</declname>
+        </param>
+        <param>
+          <type>struct ble_rx *</type>
+          <declname>rx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_slave.c" line="68" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_slave.c" bodystart="68" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__slave_8c_1a07a1ca2597fdf06cf6c0f97892c0ef78" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void slave_rx_acl_c_post_handler</definition>
+        <argsstring>(struct le_link *link, struct ble_rx *rx)</argsstring>
+        <name>slave_rx_acl_c_post_handler</name>
+        <param>
+          <type>struct <ref refid="structle__link" kindref="compound">le_link</ref> *</type>
+          <declname>link</declname>
+        </param>
+        <param>
+          <type>struct ble_rx *</type>
+          <declname>rx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_slave.c" line="94" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_slave.c" bodystart="94" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__slave_8c_1a3f67ae62a26aa3c7c97abe119bae7613" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void __conn_slave_rx_post_handler</definition>
+        <argsstring>(void *priv, struct ble_rx *rx)</argsstring>
+        <name>__conn_slave_rx_post_handler</name>
+        <param>
+          <type>void *</type>
+          <declname>priv</declname>
+        </param>
+        <param>
+          <type>struct ble_rx *</type>
+          <declname>rx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_slave.c" line="101" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_slave.c" bodystart="101" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__slave_8c_1a4d892bec22bedd11795dfc4c21510e28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void conn_slave_rx_post_handler</definition>
+        <argsstring>(struct le_link *link)</argsstring>
+        <name>conn_slave_rx_post_handler</name>
+        <param>
+          <type>struct <ref refid="structle__link" kindref="compound">le_link</ref> *</type>
+          <declname>link</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_slave.c" line="127" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_slave.c" bodystart="127" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__slave_8c_1adecfd58b4f2e5ea87d5ea87c2b18142d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ll_slv_msg_handler</definition>
+        <argsstring>(uint8_t msg_id, void *payload)</argsstring>
+        <name>ll_slv_msg_handler</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>msg_id</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>payload</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_slave.c" line="134" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_slave.c" bodystart="134" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__slave_8c_1ad38dcfa616c59a729a33ef2484595f4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ll_slave_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>ll_slave_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_slave.c" line="147" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_slave.c" bodystart="147" bodyend="192"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="link__layer_8h" kindref="compound">ble/link_layer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;stdarg.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="h4__transport_8h" kindref="compound">h4_transport.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;RF_ble.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;btcontroller_util.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;btcontroller_heap.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;tomcrypt.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;hci_controller.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;misc_interface.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;btctrler_task.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_TAG_CONST<sp/><sp/><sp/><sp/><sp/>LL_S</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_TAG<sp/><sp/><sp/><sp/><sp/>&quot;[LL-S]&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_ERROR_ENABLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_INFO_ENABLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>#define<sp/>LOG_DUMP_ENABLE<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;common/debug.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>SUPPORT_MS_EXTENSIONS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>bss_seg(&quot;.ble_ll_bss&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>data_seg(&quot;.ble_ll_data&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>const_seg(&quot;.ble_ll_const&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>code_seg(&quot;.ble_ll_code&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>HAVE_MALLOC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__this<sp/><sp/><sp/><sp/><sp/><sp/>(ll_hdl)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__this<sp/><sp/><sp/><sp/><sp/><sp/>(&amp;ll_hdl)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__slave_8c_1a7fb7ff658cb448efba3ed3fc80f79f5d" kindref="member">llcp_slv_sm_run</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structle__link" kindref="compound">le_link</ref><sp/>*link,<sp/>uint8_t<sp/>event,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LLCP_PERFERRED_ACTIVE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>Active<sp/>LLCP<sp/>respond<sp/>first*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(link-&gt;<ref refid="structle__link_1a60d57a3fb584828cdbe02b61dff358fd" kindref="member">llcp</ref>.<ref refid="structllcp__ctx__t_1a4c709725aee10fa97073f1693e7fb777" kindref="member">state</ref><sp/>==<sp/><ref refid="llcp_8h_1a7859c0a3efa8b1c360f5c2376baf051eae7f89dbd485609415a6687b4442f2301" kindref="member">LLCP_STATE_BUSY</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i<sp/>=<sp/>link-&gt;<ref refid="structle__link_1a60d57a3fb584828cdbe02b61dff358fd" kindref="member">llcp</ref>.<ref refid="structllcp__ctx__t_1a46970a3b7c08b139ca29bd8ebceec3d8" kindref="member">active_id</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="ll__slave_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref>-&gt;msg_ctx.llcp_slv_dispatch_msg_table[i]<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>llcp_slv_dispatch_msg_table[i](link,<sp/>event,<sp/>data))<sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_info(</highlight><highlight class="stringliteral">&quot;LLCP<sp/>Slave<sp/>SM<sp/>run<sp/>Active<sp/>[%d]&quot;</highlight><highlight class="normal">,<sp/>i);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/><ref refid="llcp_8h_1aa618c4d8c29ef4efe6f10c741fb1f47aa8518898ade683df0824a44a852342039" kindref="member">LLCP_FEAT_FIRST_SM</ref>;<sp/>i<sp/>&lt;<sp/><ref refid="llcp_8h_1aa618c4d8c29ef4efe6f10c741fb1f47aac0446fa0da77e8e0a8f3c5f72b372f32" kindref="member">LLCP_FEAT_LAST_SM</ref>;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>LLCP_PERFERRED_ACTIVE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(i<sp/>==<sp/>link-&gt;<ref refid="structle__link_1a60d57a3fb584828cdbe02b61dff358fd" kindref="member">llcp</ref>.<ref refid="structllcp__ctx__t_1a46970a3b7c08b139ca29bd8ebceec3d8" kindref="member">active_id</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="ll__slave_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref>-&gt;msg_ctx.llcp_slv_dispatch_msg_table[i]<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="ll__slave_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref>-&gt;msg_ctx.llcp_slv_dispatch_msg_table[i](link,<sp/>event,<sp/>data))<sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>log_info(&quot;LLCP<sp/>Slave<sp/>SM<sp/>run<sp/>[%d]&quot;,<sp/>i);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(i<sp/>==<sp/><ref refid="llcp_8h_1aa618c4d8c29ef4efe6f10c741fb1f47aab627d2d892a470f07f99f84cc075a8c8" kindref="member">LLCP_FEAT_TOTAL</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="llcp__sm__common_8c_1aaec1ee55f07511a6dffca5b5082e463b" kindref="member">llcp_common_msg_sm_run</ref>(link,<sp/>event,<sp/>data);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__slave_8c_1a252819a22bedf72c4efa291528775fc4" kindref="member">slave_rx_conn_post_handler</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structle__link" kindref="compound">le_link</ref><sp/>*link,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>ble_rx<sp/>*rx)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Adv<sp/>-&gt;<sp/>Conn<sp/>REQ</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>LE_ROLES_IS_SUPPORT_OPTIMIZE(LE_SLAVE);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(rx-&gt;type)<sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>SCAN_REQ:</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_info(</highlight><highlight class="stringliteral">&quot;SCAN_REQ&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CONNECT_REQ:</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_info(</highlight><highlight class="stringliteral">&quot;CONNECT_REQ&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="link__layer_8c_1a40ded10d498adb7d518e5a0e15016532" kindref="member">ll_debug_info</ref>(link);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>log_info(</highlight><highlight class="stringliteral">&quot;link-&gt;state<sp/>:<sp/>%s&quot;</highlight><highlight class="normal">,<sp/>(link-&gt;<ref refid="structle__link_1a3d4a7395fc00c95d0f8edebb98d87721" kindref="member">state</ref><sp/>==<sp/><ref refid="link__layer_8h_1ac36f475ca5b446f4fde4c9b90bec77c8ad94641dceaa42b8c9d91d2231c06b76c" kindref="member">LL_CONNECTION_CREATE</ref>)<sp/>?<sp/></highlight><highlight class="stringliteral">&quot;LL_CONNECTION_CREATE&quot;</highlight><highlight class="normal"><sp/>:<sp/></highlight><highlight class="stringliteral">&quot;LL_CONNECTION_ESTABLISHED&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="link__layer_8c_1aa9eb9f1e5abe4f9a25af82c730b9d308" kindref="member">ll_supervision_timeout_start</ref>(link,<sp/>link-&gt;<ref refid="structle__link_1ab37919366a48faa1b5e84c8b141cd189" kindref="member">ll_data</ref>.timeout<sp/>*<sp/>10);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__events_8c_1a1faa8c6cc4630f86be67aee15e74f41a" kindref="member">le_connection_complete_event_emit</ref>(link);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>BLUETOOTH_5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="chsel__algorithm_8h_1a6d31cf28bc7490d43417ec9c8c3f8b07" kindref="member">le_channel_selection_algorithm_event</ref>(link,<sp/>rx-&gt;chsel_algorithm);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__ext__adv_8h_1ab523110b389ba5ceeb9865ad65f4ffab" kindref="member">ll_exit_ext_legacy_adv_status</ref>(link-&gt;<ref refid="structle__link_1a6843fe2a32b8f30d12019f50f0363a91" kindref="member">handle</ref>);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__slave_8c_1a07a1ca2597fdf06cf6c0f97892c0ef78" kindref="member">slave_rx_acl_c_post_handler</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structle__link" kindref="compound">le_link</ref><sp/>*link,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>ble_rx<sp/>*rx)</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>LE_ROLES_IS_SUPPORT_OPTIMIZE(LE_SLAVE);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__slave_8c_1a7fb7ff658cb448efba3ed3fc80f79f5d" kindref="member">llcp_slv_sm_run</ref>(link,<sp/><ref refid="link__layer_8h_1a0411cd49bb5b71852cecd93bcbf0ca2dadbccec5f7f5480de190e2262bdd04783" kindref="member">LLCP_MSG_RECV_DATA</ref>,<sp/>rx);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__slave_8c_1a3f67ae62a26aa3c7c97abe119bae7613" kindref="member">__conn_slave_rx_post_handler</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*priv,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>ble_rx<sp/>*rx)</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structle__link" kindref="compound">le_link</ref><sp/>*link<sp/>=<sp/>(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structle__link" kindref="compound">le_link</ref><sp/>*)priv;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(RX_IS_VALID(rx)<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="llcp__sm__common_8c_1a12bbe680e52ca6f38b8c4a45e06460a8" kindref="member">ll_send_msg_id</ref>(link,<sp/><ref refid="link__layer_8h_1a0411cd49bb5b71852cecd93bcbf0ca2da143cd9da7c0d6b9c49e9e141e696354d" kindref="member">LLCP_MSG_MIC_FAILDED</ref>);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(rx-&gt;llid)<sp/>{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>LL_RESERVED:</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>slave_rx_conn_post_handler(link,<sp/>rx);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>LL_DATA_PDU_START:</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>LL_DATA_PDU_CONTINUE:</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="link__layer_8c_1ae7b0aca03048f3626e0e4833835b0fc2" kindref="member">conn_rx_acl_u_post_handler</ref>(link,<sp/>rx);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>LL_CONTROL_PDU:</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="ll__slave_8c_1a07a1ca2597fdf06cf6c0f97892c0ef78" kindref="member">slave_rx_acl_c_post_handler</ref>(link,<sp/>rx);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__slave_8c_1a4d892bec22bedd11795dfc4c21510e28" kindref="member">conn_slave_rx_post_handler</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structle__link" kindref="compound">le_link</ref><sp/>*link)</highlight></codeline>
+<codeline lineno="128"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>__ble_ops-&gt;upload_data(link-&gt;<ref refid="structle__link_1aa5f51601aa9fec985c79140bbc6cc139" kindref="member">hw</ref>,<sp/><ref refid="ll__slave_8c_1a3f67ae62a26aa3c7c97abe119bae7613" kindref="member">__conn_slave_rx_post_handler</ref>);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__slave_8c_1adecfd58b4f2e5ea87d5ea87c2b18142d" kindref="member">ll_slv_msg_handler</ref>(uint8_t<sp/>msg_id,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*payload)</highlight></codeline>
+<codeline lineno="135"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structll__msg__hdr__t" kindref="compound">ll_msg_hdr_t</ref><sp/>*msg<sp/>=<sp/>(<ref refid="structll__msg__hdr__t" kindref="compound">ll_msg_hdr_t</ref><sp/>*)payload;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structle__link" kindref="compound">le_link</ref><sp/>*link<sp/>=<sp/><ref refid="link__layer_8c_1ad0cf3cf97fdaf769c891098d100efedc" kindref="member">ll_link_for_handle</ref>(msg-&gt;<ref refid="structll__msg__hdr__t_1a3994318b478f52ef63f0f9a71a609b4d" kindref="member">handle</ref>);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>log_info(&quot;slv<sp/>msg<sp/>recv<sp/>:<sp/>&quot;);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>ll_msg_string_dump(msg_id);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(link);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__slave_8c_1a7fb7ff658cb448efba3ed3fc80f79f5d" kindref="member">llcp_slv_sm_run</ref>(link,<sp/>msg_id,<sp/>msg);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__slave_8c_1ad38dcfa616c59a729a33ef2484595f4f" kindref="member">ll_slave_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="148"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>LE_ROLES_IS_SUPPORT_OPTIMIZE(LE_SLAVE);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>log_info(</highlight><highlight class="stringliteral">&quot;Conn<sp/>Slave<sp/>Init&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__slave_8c_1ad223350d80db21fa8b721107cd1f6442" kindref="member">__this</ref>-&gt;msg_ctx.ll_dispatch_msg_table[<ref refid="link__layer_8h_1a726ca809ffd3d67ab4b8476646f26635a53e6ba59eedda5a3e77671e3e36775b1" kindref="member">LL_STATE_SLAVE</ref>]<sp/>=<sp/><ref refid="ll__slave_8c_1adecfd58b4f2e5ea87d5ea87c2b18142d" kindref="member">ll_slv_msg_handler</ref>;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp__sm__common_8c_1af3bd8caafa761b6e1a20cd491d61e6dd" kindref="member">llcp_slv_common_init</ref>();</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp__sm__conn__update_8c_1a0fc21951206c51f68d5c88defb261947" kindref="member">llcp_slv_conn_update_init</ref>();</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(LE_FEATURES_IS_SUPPORT(LL_FEAT_ENCRYPTION))<sp/>{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="llcp__sm__encrypt_8c_1a1b13a7a6cde96bc20bdb33b9b163f709" kindref="member">llcp_slv_encrypt_init</ref>();</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(LE_FEATURES_IS_SUPPORT(LL_FEAT_LE_PING))<sp/>{</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="llcp__sm__ping_8c_1abb190e77c4ffa4b895ffb35325d3d4fb" kindref="member">llcp_slv_ping_init</ref>();</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(LE_FEATURES_IS_SUPPORT(LL_FEAT_DATA_LEN_EXT))<sp/>{</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="llcp__sm__data__extension_8c_1acc15f7ea9291a0e4279d637f6296bebc" kindref="member">llcp_slv_data_extension_init</ref>();</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(LE_FEATURES_IS_SUPPORT(LL_FEAT_LE_2M_PHY<sp/>|<sp/>LL_FEAT_LE_CODED_PHY))<sp/>{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="llcp__sm__phy__update_8c_1a57a7a4fa92bff3548024ac786c7f92a9" kindref="member">llcp_slv_phy_update_init</ref>();</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(LE_FEATURES_IS_SUPPORT(LE_FEATURES_CONST_TONE))<sp/>{</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="llcp__sm__cte_8c_1a4cd42e9543e29cab00276f92e8b30632" kindref="member">llcp_slv_connection_cte_init</ref>();</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(LE_FEATURES_IS_SUPPORT(LL_FEAT_SCA_UPDATE))<sp/>{</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="llcp__sm__sca_8c_1a7a66d125b763d1992935970362649d62" kindref="member">llcp_slv_sca_init</ref>();</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(LE_FEATURES_IS_SUPPORT(LE_FEATURES_POWER_CONTROL))<sp/>{</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="llcp__sm__pc_8c_1acd1761e26cdf089e2fea8eaf7ba3e14b" kindref="member">llcp_slv_pc_init</ref>();</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(LE_FEATURES_IS_SUPPORT(LL_FEAT_CIS_SLAVE_ROLE))<sp/>{</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="llcp__sm__cis_8c_1ab4f37c4365bc67454020d956b77d5400" kindref="member">llcp_slv_cis_init</ref>();</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="llcp__sm__cis__terminate_8c_1a4db72fd6665da81ee7c8cce107627480" kindref="member">llcp_slv_cis_term_init</ref>();</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="192"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_slave.c"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structle__scan__parm__t" kind="struct" language="C++" prot="public">
+    <compoundname>le_scan_parm_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structle__scan__parm__t_1a645b34aed799193adea3e6825edc0e08" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 le_scan_parm_t::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c" line="98" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__scan__parm__t_1aea87a75b0d9369a47263cc59e4662bc4" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 le_scan_parm_t::role_type</definition>
+        <argsstring></argsstring>
+        <name>role_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c" line="99" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__scan__parm__t_1acd20b2d81f4b59bcf3ceef88fd0a7001" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 le_scan_parm_t::task_type</definition>
+        <argsstring></argsstring>
+        <name>task_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c" line="100" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__scan__parm__t_1af0978a912d12e94d1a86a753f6690fae" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 le_scan_parm_t::channel_map</definition>
+        <argsstring></argsstring>
+        <name>channel_map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c" line="101" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__scan__parm__t_1a5d87c46fcbe6712c4feb9f19d42d6154" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 le_scan_parm_t::timeout</definition>
+        <argsstring></argsstring>
+        <name>timeout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c" line="102" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__scan__parm__t_1ade344ee3f3b7266139c38edb2950be80" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 le_scan_parm_t::AA</definition>
+        <argsstring></argsstring>
+        <name>AA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c" line="103" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__scan__parm__t_1a98a158695d011c0162c086787237ac61" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* le_scan_parm_t::completed) (struct ble_rx *, u8 role)</definition>
+        <argsstring>)(struct ble_rx *, u8 role)</argsstring>
+        <name>completed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c" line="104" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__scan__parm__t_1ae34331ca88711fe4fdf97a7916eae42a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int le_scan_parm_t::sys_time_id</definition>
+        <argsstring></argsstring>
+        <name>sys_time_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c" line="105" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c" line="97" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c" bodystart="97" bodyend="106"/>
+    <listofallmembers>
+      <member refid="structle__scan__parm__t_1ade344ee3f3b7266139c38edb2950be80" prot="public" virt="non-virtual"><scope>le_scan_parm_t</scope><name>AA</name></member>
+      <member refid="structle__scan__parm__t_1af0978a912d12e94d1a86a753f6690fae" prot="public" virt="non-virtual"><scope>le_scan_parm_t</scope><name>channel_map</name></member>
+      <member refid="structle__scan__parm__t_1a98a158695d011c0162c086787237ac61" prot="public" virt="non-virtual"><scope>le_scan_parm_t</scope><name>completed</name></member>
+      <member refid="structle__scan__parm__t_1aea87a75b0d9369a47263cc59e4662bc4" prot="public" virt="non-virtual"><scope>le_scan_parm_t</scope><name>role_type</name></member>
+      <member refid="structle__scan__parm__t_1ae34331ca88711fe4fdf97a7916eae42a" prot="public" virt="non-virtual"><scope>le_scan_parm_t</scope><name>sys_time_id</name></member>
+      <member refid="structle__scan__parm__t_1acd20b2d81f4b59bcf3ceef88fd0a7001" prot="public" virt="non-virtual"><scope>le_scan_parm_t</scope><name>task_type</name></member>
+      <member refid="structle__scan__parm__t_1a5d87c46fcbe6712c4feb9f19d42d6154" prot="public" virt="non-virtual"><scope>le_scan_parm_t</scope><name>timeout</name></member>
+      <member refid="structle__scan__parm__t_1a645b34aed799193adea3e6825edc0e08" prot="public" virt="non-virtual"><scope>le_scan_parm_t</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

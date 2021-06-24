@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>JL Adapter SDK: /data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_pdu.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">JL Adapter SDK
+   &#160;<span id="projectnumber">v0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_5aa4d6ccf34d88a270949875c15714e5.html">btctrler</a></li><li class="navelem"><a class="el" href="dir_119de8fbed06b648fc4b1712ddece599.html">include_v2</a></li><li class="navelem"><a class="el" href="dir_76e74953703e3f33853ddacc6ea00c88.html">classic</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">lmp_pdu.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="lmp__pdu_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef LMP_PDU_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define LMP_PDU_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;typedef.h&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="lmp__pdu_8h.html#a1b7a0a01f737cf44202e0e0aaf823496">    7</a></span>&#160;<span class="preprocessor">#define SCO_HV1         0X00</span></div><div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="lmp__pdu_8h.html#a77a5714502150862249cbe36676f116e">    8</a></span>&#160;<span class="preprocessor">#define SCO_HV2         0X01</span></div><div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="lmp__pdu_8h.html#a4127660fff31308790756f9f6fc2cbeb">    9</a></span>&#160;<span class="preprocessor">#define SCO_HV3         0X02</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="lmp__pdu_8h.html#a224bf0249ebb34135078fae061008861">   11</a></span>&#160;<span class="preprocessor">#define ESCO_REQ_EV3   0X07</span></div><div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="lmp__pdu_8h.html#a6d391e98ee7d89635877299f3fa4e7f4">   12</a></span>&#160;<span class="preprocessor">#define ESCO_REQ_EV4   0X0C</span></div><div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="lmp__pdu_8h.html#a78c5987a8e8c81e1a9adb0903d32da5a">   13</a></span>&#160;<span class="preprocessor">#define ESCO_REQ_EV5   0X0D</span></div><div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="lmp__pdu_8h.html#a8a79c471c093d6a8c493cbb5c36e0d4f">   14</a></span>&#160;<span class="preprocessor">#define ESCO_REQ_2EV3  0X26</span></div><div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="lmp__pdu_8h.html#a96a39de02079e5371f553f99e53e14c3">   15</a></span>&#160;<span class="preprocessor">#define ESCO_REQ_2EV5  0X2C</span></div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="lmp__pdu_8h.html#a425a9e1da3bbda17b019af206945a3cb">   16</a></span>&#160;<span class="preprocessor">#define ESCO_REQ_3EV3  0X37</span></div><div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="lmp__pdu_8h.html#a23c581fce3aac05f644fa882de0982c2">   17</a></span>&#160;<span class="preprocessor">#define ESCO_REQ_3EV5  0X3D</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="lmp__pdu_8h.html">   19</a></span>&#160;<span class="keyword">struct </span><a class="code" href="lmp__pdu_8h.html#structlmp__esco__pdu">lmp_esco_pdu</a> {</div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="lmp__pdu_8h.html#a5f3cdd41a16f67ef4da84bac2354c5ae">   20</a></span>&#160;    u8  <a class="code" href="lmp__pdu_8h.html#a5f3cdd41a16f67ef4da84bac2354c5ae">handle</a>;</div><div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="lmp__pdu_8h.html#abe3010c8b4cefd6fde559c2d80a144cd">   21</a></span>&#160;    u8  <a class="code" href="lmp__pdu_8h.html#abe3010c8b4cefd6fde559c2d80a144cd">lt_addr</a>: 4;</div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="lmp__pdu_8h.html#a8e9836365e7586f877025b4527a4bf30">   22</a></span>&#160;    u8  <a class="code" href="lmp__pdu_8h.html#a8e9836365e7586f877025b4527a4bf30">tws_lt_addr</a>: 4;</div><div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="lmp__pdu_8h.html#a9b8f9131b3d38babd43f0675cda85f40">   23</a></span>&#160;    u8  <a class="code" href="lmp__pdu_8h.html#a9b8f9131b3d38babd43f0675cda85f40">timing_flags</a>;</div><div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="lmp__pdu_8h.html#a8a0ea8238b6343d4c00a2e31232806f0">   24</a></span>&#160;    u8  <a class="code" href="lmp__pdu_8h.html#a8a0ea8238b6343d4c00a2e31232806f0">D_sco</a>;</div><div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="lmp__pdu_8h.html#a2cca1b0e3fa30273ec55266ac03b9d93">   25</a></span>&#160;    u8  <a class="code" href="lmp__pdu_8h.html#a2cca1b0e3fa30273ec55266ac03b9d93">T_sco</a>;</div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="lmp__pdu_8h.html#a0d3aed6e66bac2ad58af283f0fe053fe">   26</a></span>&#160;    u8  <a class="code" href="lmp__pdu_8h.html#a0d3aed6e66bac2ad58af283f0fe053fe">W_sco</a>;</div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="lmp__pdu_8h.html#ab84466de4e8103968af59b8d9e4c92d0">   27</a></span>&#160;    u8  <a class="code" href="lmp__pdu_8h.html#ab84466de4e8103968af59b8d9e4c92d0">packet_type_m2s</a>;</div><div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="lmp__pdu_8h.html#ad26e38674f1c7ac6d427fd6176705614">   28</a></span>&#160;    u8  <a class="code" href="lmp__pdu_8h.html#ad26e38674f1c7ac6d427fd6176705614">packet_type_s2m</a>;</div><div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="lmp__pdu_8h.html#a2440e31a2dbfda94373defb3fd3426c1">   29</a></span>&#160;    u8  <a class="code" href="lmp__pdu_8h.html#a2440e31a2dbfda94373defb3fd3426c1">air_mode</a>;</div><div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="lmp__pdu_8h.html#a2d9683dd70d32c71ea8f501b529ee919">   30</a></span>&#160;    u8  <a class="code" href="lmp__pdu_8h.html#a2d9683dd70d32c71ea8f501b529ee919">negotiation_state</a>;</div><div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="lmp__pdu_8h.html#a8825d428c47a863c65c9bcb7a252260a">   31</a></span>&#160;    u16 <a class="code" href="lmp__pdu_8h.html#a8825d428c47a863c65c9bcb7a252260a">packet_len_m2s</a>;</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="lmp__pdu_8h.html#ac80b673597f935c76e1513d70078d9e1">   32</a></span>&#160;    u16 <a class="code" href="lmp__pdu_8h.html#ac80b673597f935c76e1513d70078d9e1">packet_len_s2m</a>;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;};</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="lmp__pdu_8h_html_a8825d428c47a863c65c9bcb7a252260a"><div class="ttname"><a href="lmp__pdu_8h.html#a8825d428c47a863c65c9bcb7a252260a">lmp_esco_pdu::packet_len_m2s</a></div><div class="ttdeci">u16 packet_len_m2s</div><div class="ttdef"><b>Definition:</b> lmp_pdu.h:31</div></div>
+<div class="ttc" id="lmp__pdu_8h_html_a2cca1b0e3fa30273ec55266ac03b9d93"><div class="ttname"><a href="lmp__pdu_8h.html#a2cca1b0e3fa30273ec55266ac03b9d93">lmp_esco_pdu::T_sco</a></div><div class="ttdeci">u8 T_sco</div><div class="ttdef"><b>Definition:</b> lmp_pdu.h:25</div></div>
+<div class="ttc" id="lmp__pdu_8h_html_ad26e38674f1c7ac6d427fd6176705614"><div class="ttname"><a href="lmp__pdu_8h.html#ad26e38674f1c7ac6d427fd6176705614">lmp_esco_pdu::packet_type_s2m</a></div><div class="ttdeci">u8 packet_type_s2m</div><div class="ttdef"><b>Definition:</b> lmp_pdu.h:28</div></div>
+<div class="ttc" id="lmp__pdu_8h_html_a2d9683dd70d32c71ea8f501b529ee919"><div class="ttname"><a href="lmp__pdu_8h.html#a2d9683dd70d32c71ea8f501b529ee919">lmp_esco_pdu::negotiation_state</a></div><div class="ttdeci">u8 negotiation_state</div><div class="ttdef"><b>Definition:</b> lmp_pdu.h:30</div></div>
+<div class="ttc" id="lmp__pdu_8h_html_ac80b673597f935c76e1513d70078d9e1"><div class="ttname"><a href="lmp__pdu_8h.html#ac80b673597f935c76e1513d70078d9e1">lmp_esco_pdu::packet_len_s2m</a></div><div class="ttdeci">u16 packet_len_s2m</div><div class="ttdef"><b>Definition:</b> lmp_pdu.h:32</div></div>
+<div class="ttc" id="lmp__pdu_8h_html_a8e9836365e7586f877025b4527a4bf30"><div class="ttname"><a href="lmp__pdu_8h.html#a8e9836365e7586f877025b4527a4bf30">lmp_esco_pdu::tws_lt_addr</a></div><div class="ttdeci">u8 tws_lt_addr</div><div class="ttdef"><b>Definition:</b> lmp_pdu.h:22</div></div>
+<div class="ttc" id="lmp__pdu_8h_html_a0d3aed6e66bac2ad58af283f0fe053fe"><div class="ttname"><a href="lmp__pdu_8h.html#a0d3aed6e66bac2ad58af283f0fe053fe">lmp_esco_pdu::W_sco</a></div><div class="ttdeci">u8 W_sco</div><div class="ttdef"><b>Definition:</b> lmp_pdu.h:26</div></div>
+<div class="ttc" id="lmp__pdu_8h_html_a2440e31a2dbfda94373defb3fd3426c1"><div class="ttname"><a href="lmp__pdu_8h.html#a2440e31a2dbfda94373defb3fd3426c1">lmp_esco_pdu::air_mode</a></div><div class="ttdeci">u8 air_mode</div><div class="ttdef"><b>Definition:</b> lmp_pdu.h:29</div></div>
+<div class="ttc" id="lmp__pdu_8h_html_abe3010c8b4cefd6fde559c2d80a144cd"><div class="ttname"><a href="lmp__pdu_8h.html#abe3010c8b4cefd6fde559c2d80a144cd">lmp_esco_pdu::lt_addr</a></div><div class="ttdeci">u8 lt_addr</div><div class="ttdef"><b>Definition:</b> lmp_pdu.h:21</div></div>
+<div class="ttc" id="lmp__pdu_8h_html_a8a0ea8238b6343d4c00a2e31232806f0"><div class="ttname"><a href="lmp__pdu_8h.html#a8a0ea8238b6343d4c00a2e31232806f0">lmp_esco_pdu::D_sco</a></div><div class="ttdeci">u8 D_sco</div><div class="ttdef"><b>Definition:</b> lmp_pdu.h:24</div></div>
+<div class="ttc" id="lmp__pdu_8h_html_ab84466de4e8103968af59b8d9e4c92d0"><div class="ttname"><a href="lmp__pdu_8h.html#ab84466de4e8103968af59b8d9e4c92d0">lmp_esco_pdu::packet_type_m2s</a></div><div class="ttdeci">u8 packet_type_m2s</div><div class="ttdef"><b>Definition:</b> lmp_pdu.h:27</div></div>
+<div class="ttc" id="lmp__pdu_8h_html_a5f3cdd41a16f67ef4da84bac2354c5ae"><div class="ttname"><a href="lmp__pdu_8h.html#a5f3cdd41a16f67ef4da84bac2354c5ae">lmp_esco_pdu::handle</a></div><div class="ttdeci">u8 handle</div><div class="ttdef"><b>Definition:</b> lmp_pdu.h:20</div></div>
+<div class="ttc" id="lmp__pdu_8h_html_structlmp__esco__pdu"><div class="ttname"><a href="lmp__pdu_8h.html#structlmp__esco__pdu">lmp_esco_pdu</a></div><div class="ttdef"><b>Definition:</b> lmp_pdu.h:19</div></div>
+<div class="ttc" id="lmp__pdu_8h_html_a9b8f9131b3d38babd43f0675cda85f40"><div class="ttname"><a href="lmp__pdu_8h.html#a9b8f9131b3d38babd43f0675cda85f40">lmp_esco_pdu::timing_flags</a></div><div class="ttdeci">u8 timing_flags</div><div class="ttdef"><b>Definition:</b> lmp_pdu.h:23</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

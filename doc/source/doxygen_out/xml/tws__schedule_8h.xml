@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="tws__schedule_8h" kind="file" language="C++">
+    <compoundname>tws_schedule.h</compoundname>
+    <includes refid="tws__link_8h" local="yes">classic/tws_link.h</includes>
+    <incdepgraph>
+      <node id="5600">
+        <label>classic/bredr_frame.h</label>
+      </node>
+      <node id="5593">
+        <label>generic/list.h</label>
+      </node>
+      <node id="5597">
+        <label>common/link_task.h</label>
+        <link refid="link__task_8h"/>
+        <childnode refid="5592" relation="include">
+        </childnode>
+        <childnode refid="5593" relation="include">
+        </childnode>
+      </node>
+      <node id="5596">
+        <label>classic/bredr_device.h</label>
+        <link refid="bredr__device_8h"/>
+      </node>
+      <node id="5587">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_schedule.h</label>
+        <link refid="tws_schedule.h"/>
+        <childnode refid="5588" relation="include">
+        </childnode>
+      </node>
+      <node id="5599">
+        <label>wifi_detect.h</label>
+        <link refid="wifi__detect_8h"/>
+      </node>
+      <node id="5594">
+        <label>classic/bredr_types.h</label>
+        <link refid="bredr__types_8h"/>
+      </node>
+      <node id="5589">
+        <label>classic/bredr_link.h</label>
+        <link refid="bredr__link_8h"/>
+        <childnode refid="5590" relation="include">
+        </childnode>
+        <childnode refid="5591" relation="include">
+        </childnode>
+        <childnode refid="5595" relation="include">
+        </childnode>
+        <childnode refid="5596" relation="include">
+        </childnode>
+        <childnode refid="5597" relation="include">
+        </childnode>
+        <childnode refid="5598" relation="include">
+        </childnode>
+        <childnode refid="5599" relation="include">
+        </childnode>
+        <childnode refid="5600" relation="include">
+        </childnode>
+      </node>
+      <node id="5590">
+        <label>typedef.h</label>
+      </node>
+      <node id="5592">
+        <label>generic/typedef.h</label>
+      </node>
+      <node id="5598">
+        <label>system/task.h</label>
+      </node>
+      <node id="5591">
+        <label>classic/link_bulk.h</label>
+        <link refid="link__bulk_8h"/>
+        <childnode refid="5592" relation="include">
+        </childnode>
+        <childnode refid="5593" relation="include">
+        </childnode>
+        <childnode refid="5594" relation="include">
+        </childnode>
+      </node>
+      <node id="5588">
+        <label>classic/tws_link.h</label>
+        <link refid="tws__link_8h"/>
+        <childnode refid="5589" relation="include">
+        </childnode>
+        <childnode refid="5594" relation="include">
+        </childnode>
+        <childnode refid="5600" relation="include">
+        </childnode>
+      </node>
+      <node id="5595">
+        <label>classic/lmp_pdu.h</label>
+        <link refid="lmp__pdu_8h"/>
+        <childnode refid="5590" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="tws__schedule_8h_1a569ef39d4240200d324a9d697c0f46f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tws_sch_tlink_connection</definition>
+        <argsstring>(struct link_connection *tlink, int role)</argsstring>
+        <name>tws_sch_tlink_connection</name>
+        <param>
+          <type>struct <ref refid="structlink__connection" kindref="compound">link_connection</ref> *</type>
+          <declname>tlink</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>role</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_schedule.h" line="12" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__schedule_8h_1a88aa6c738aa7387fff9b6716f525e533" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tws_sch_tws_link_disconnection</definition>
+        <argsstring>()</argsstring>
+        <name>tws_sch_tws_link_disconnection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_schedule.h" line="14" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__schedule_8h_1a6a6422f5521fcf54f7f6d719269f2c83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tws_sch_plink_disconnection</definition>
+        <argsstring>()</argsstring>
+        <name>tws_sch_plink_disconnection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_schedule.h" line="16" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="tws__schedule_8h_1a7e93176a5cf938c75360ef3065aaa448" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tws_sch_rx_irq_handler</definition>
+        <argsstring>(struct link_connection *link, struct bredr_payload_head *head)</argsstring>
+        <name>tws_sch_rx_irq_handler</name>
+        <param>
+          <type>struct <ref refid="structlink__connection" kindref="compound">link_connection</ref> *</type>
+          <declname>link</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structbredr__payload__head" kindref="compound">bredr_payload_head</ref> *</type>
+          <declname>head</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_schedule.h" line="18" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>TWS_SCHEDULE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TWS_SCHEDULE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="tws__link_8h" kindref="compound">classic/tws_link.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__schedule_8h_1a569ef39d4240200d324a9d697c0f46f6" kindref="member">tws_sch_tlink_connection</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structlink__connection" kindref="compound">link_connection</ref><sp/>*tlink,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structlink__connection_1a5099fcbcb1924e221be70d02308eb330" kindref="member">role</ref>);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__schedule_8h_1a88aa6c738aa7387fff9b6716f525e533" kindref="member">tws_sch_tws_link_disconnection</ref>();</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__schedule_8h_1a6a6422f5521fcf54f7f6d719269f2c83" kindref="member">tws_sch_plink_disconnection</ref>();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tws__schedule_8h_1a7e93176a5cf938c75360ef3065aaa448" kindref="member">tws_sch_rx_irq_handler</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structlink__connection" kindref="compound">link_connection</ref><sp/>*link,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbredr__payload__head" kindref="compound">bredr_payload_head</ref><sp/>*head);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_schedule.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structlctrIsoalRxCtx__t" kind="struct" language="C++" prot="public">
+    <compoundname>lctrIsoalRxCtx_t</compoundname>
+    <includes refid="ll__iso_8h" local="no">ll_iso.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlctrIsoalRxCtx__t_1a35b9f0c6bd71d28e1ebcd4fc77f1d6f4" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* lctrIsoalRxCtx_t::pPendSduBuf</definition>
+        <argsstring></argsstring>
+        <name>pPendSduBuf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to incomplete SDU buffer. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="190" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrIsoalRxCtx__t_1af7f7d95319c2279cbad7d998d2a139fd" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lctrIsoalRxCtx_t::rxSduOffset</definition>
+        <argsstring></argsstring>
+        <name>rxSduOffset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset of SDU currently being assembled. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="191" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrIsoalRxCtx__t_1ae582702a5db3e8aeecf5e8ed8a1610be" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref></type>
+        <definition>bool_t lctrIsoalRxCtx_t::pduFlushed</definition>
+        <argsstring></argsstring>
+        <name>pduFlushed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Most recent PDU was flushed due to failed RXs. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="192" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrIsoalRxCtx__t_1a3928b0ce9fff0f2d45d5e2a71619cd0f" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lctrIsoalRxCtx_t::rxState</definition>
+        <argsstring></argsstring>
+        <name>rxState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RX state. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="193" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrIsoalRxCtx__t_1afdb8e2a09119e4907bd8d6f414961029" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lctrIsoalRxCtx_t::packetSequence</definition>
+        <argsstring></argsstring>
+        <name>packetSequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Packet sequence number. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="194" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrIsoalRxCtx__t_1ade9f18223d9ce206947c5be942fbcb83" prot="public" static="no" mutable="no">
+        <type>union lctrIsoalRxCtx_t::@70</type>
+        <definition>union lctrIsoalRxCtx_t::@70  lctrIsoalRxCtx_t::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Framing-specific data. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="206" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Receive ISOAL Context. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="189" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="189" bodyend="207"/>
+    <listofallmembers>
+      <member refid="structlctrIsoalRxCtx__t_1ade9f18223d9ce206947c5be942fbcb83" prot="public" virt="non-virtual"><scope>lctrIsoalRxCtx_t</scope><name>data</name></member>
+      <member refid="structlctrIsoalRxCtx__t_1afdb8e2a09119e4907bd8d6f414961029" prot="public" virt="non-virtual"><scope>lctrIsoalRxCtx_t</scope><name>packetSequence</name></member>
+      <member refid="structlctrIsoalRxCtx__t_1ae582702a5db3e8aeecf5e8ed8a1610be" prot="public" virt="non-virtual"><scope>lctrIsoalRxCtx_t</scope><name>pduFlushed</name></member>
+      <member refid="structlctrIsoalRxCtx__t_1a35b9f0c6bd71d28e1ebcd4fc77f1d6f4" prot="public" virt="non-virtual"><scope>lctrIsoalRxCtx_t</scope><name>pPendSduBuf</name></member>
+      <member refid="structlctrIsoalRxCtx__t_1af7f7d95319c2279cbad7d998d2a139fd" prot="public" virt="non-virtual"><scope>lctrIsoalRxCtx_t</scope><name>rxSduOffset</name></member>
+      <member refid="structlctrIsoalRxCtx__t_1a3928b0ce9fff0f2d45d5e2a71619cd0f" prot="public" virt="non-virtual"><scope>lctrIsoalRxCtx_t</scope><name>rxState</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

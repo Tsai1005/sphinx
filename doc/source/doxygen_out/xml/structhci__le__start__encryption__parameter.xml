@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structhci__le__start__encryption__parameter" kind="struct" language="C++" prot="public">
+    <compoundname>hci_le_start_encryption_parameter</compoundname>
+    <includes refid="ll__defines_8h" local="no">ll_defines.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structhci__le__start__encryption__parameter_1a435f202c1413fc6dfc47922dcdd1b41e" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 hci_le_start_encryption_parameter::connection_handle</definition>
+        <argsstring></argsstring>
+        <name>connection_handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1187" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhci__le__start__encryption__parameter_1a8b49f6f47ef8ce124698a5337c3305f8" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 hci_le_start_encryption_parameter::random_number[LL_RAND_LEN]</definition>
+        <argsstring>[LL_RAND_LEN]</argsstring>
+        <name>random_number</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1188" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhci__le__start__encryption__parameter_1a2daee9870a0b7b8986180234ed9e901c" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 hci_le_start_encryption_parameter::encrypted_diversifier</definition>
+        <argsstring></argsstring>
+        <name>encrypted_diversifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1189" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhci__le__start__encryption__parameter_1ab7aff87125644d840d30c81cbcfe28c6" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 hci_le_start_encryption_parameter::long_term_key[LL_KEY_LEN]</definition>
+        <argsstring>[LL_KEY_LEN]</argsstring>
+        <name>long_term_key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1190" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1190" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1186" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1186" bodyend="1191"/>
+    <listofallmembers>
+      <member refid="structhci__le__start__encryption__parameter_1a435f202c1413fc6dfc47922dcdd1b41e" prot="public" virt="non-virtual"><scope>hci_le_start_encryption_parameter</scope><name>connection_handle</name></member>
+      <member refid="structhci__le__start__encryption__parameter_1a2daee9870a0b7b8986180234ed9e901c" prot="public" virt="non-virtual"><scope>hci_le_start_encryption_parameter</scope><name>encrypted_diversifier</name></member>
+      <member refid="structhci__le__start__encryption__parameter_1ab7aff87125644d840d30c81cbcfe28c6" prot="public" virt="non-virtual"><scope>hci_le_start_encryption_parameter</scope><name>long_term_key</name></member>
+      <member refid="structhci__le__start__encryption__parameter_1a8b49f6f47ef8ce124698a5337c3305f8" prot="public" virt="non-virtual"><scope>hci_le_start_encryption_parameter</scope><name>random_number</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

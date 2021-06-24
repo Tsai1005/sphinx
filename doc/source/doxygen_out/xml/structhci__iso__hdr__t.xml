@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structhci__iso__hdr__t" kind="struct" language="C++" prot="public">
+    <compoundname>hci_iso_hdr_t</compoundname>
+    <includes refid="ll__iso_8h" local="no">ll_iso.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structhci__iso__hdr__t_1ab6411ca501b348706934c9a9a569063f" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 hci_iso_hdr_t::handle</definition>
+        <argsstring></argsstring>
+        <name>handle</name>
+        <bitfield> 12</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="237" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhci__iso__hdr__t_1a9eb5dc235805bb3beb9a9e115cd51d90" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 hci_iso_hdr_t::pb_flag</definition>
+        <argsstring></argsstring>
+        <name>pb_flag</name>
+        <bitfield> 2</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="242" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhci__iso__hdr__t_1a09943049b6a6ddd0b30bd5bf66ec5204" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 hci_iso_hdr_t::ts_flag</definition>
+        <argsstring></argsstring>
+        <name>ts_flag</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="243" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhci__iso__hdr__t_1a5bb82e1f6282ecde9bdcdb5106b1ea1a" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 hci_iso_hdr_t::rfu</definition>
+        <argsstring></argsstring>
+        <name>rfu</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="244" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhci__iso__hdr__t_1ab516b151e70097656e6d98197fd74fbe" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 hci_iso_hdr_t::iso_data_load_length</definition>
+        <argsstring></argsstring>
+        <name>iso_data_load_length</name>
+        <bitfield> 14</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="245" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhci__iso__hdr__t_1a25e71d570c48d4fce2b419bb224641bd" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 hci_iso_hdr_t::rfu2</definition>
+        <argsstring></argsstring>
+        <name>rfu2</name>
+        <bitfield> 2</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="246" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhci__iso__hdr__t_1af9d008f73ab3bbdc7a5a4029805e3da3" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 hci_iso_hdr_t::time_stamp</definition>
+        <argsstring></argsstring>
+        <name>time_stamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="248" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhci__iso__hdr__t_1a26ea77e253611b5b7df360541fb6294c" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 hci_iso_hdr_t::packet_sequence_num</definition>
+        <argsstring></argsstring>
+        <name>packet_sequence_num</name>
+        <bitfield> 16</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="250" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="250" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhci__iso__hdr__t_1a545dff8af110e6ee347aff3d83ceadeb" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 hci_iso_hdr_t::iso_sdu_length</definition>
+        <argsstring></argsstring>
+        <name>iso_sdu_length</name>
+        <bitfield> 12</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="251" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhci__iso__hdr__t_1aa93e66e6f947d446eed34912ca1667b6" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 hci_iso_hdr_t::rfu3</definition>
+        <argsstring></argsstring>
+        <name>rfu3</name>
+        <bitfield> 2</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="252" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhci__iso__hdr__t_1a2ed5faed500798347b1cb60a8cbf9c8a" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 hci_iso_hdr_t::packet_status_flag</definition>
+        <argsstring></argsstring>
+        <name>packet_status_flag</name>
+        <bitfield> 2</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="259" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhci__iso__hdr__t_1afc15d07b2a5ca9463127cf0077178f3c" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* hci_iso_hdr_t::iso_sdu</definition>
+        <argsstring></argsstring>
+        <name>iso_sdu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="261" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="261" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="236" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="236" bodyend="262"/>
+    <listofallmembers>
+      <member refid="structhci__iso__hdr__t_1ab6411ca501b348706934c9a9a569063f" prot="public" virt="non-virtual"><scope>hci_iso_hdr_t</scope><name>handle</name></member>
+      <member refid="structhci__iso__hdr__t_1ab516b151e70097656e6d98197fd74fbe" prot="public" virt="non-virtual"><scope>hci_iso_hdr_t</scope><name>iso_data_load_length</name></member>
+      <member refid="structhci__iso__hdr__t_1afc15d07b2a5ca9463127cf0077178f3c" prot="public" virt="non-virtual"><scope>hci_iso_hdr_t</scope><name>iso_sdu</name></member>
+      <member refid="structhci__iso__hdr__t_1a545dff8af110e6ee347aff3d83ceadeb" prot="public" virt="non-virtual"><scope>hci_iso_hdr_t</scope><name>iso_sdu_length</name></member>
+      <member refid="structhci__iso__hdr__t_1a26ea77e253611b5b7df360541fb6294c" prot="public" virt="non-virtual"><scope>hci_iso_hdr_t</scope><name>packet_sequence_num</name></member>
+      <member refid="structhci__iso__hdr__t_1a2ed5faed500798347b1cb60a8cbf9c8a" prot="public" virt="non-virtual"><scope>hci_iso_hdr_t</scope><name>packet_status_flag</name></member>
+      <member refid="structhci__iso__hdr__t_1a9eb5dc235805bb3beb9a9e115cd51d90" prot="public" virt="non-virtual"><scope>hci_iso_hdr_t</scope><name>pb_flag</name></member>
+      <member refid="structhci__iso__hdr__t_1a5bb82e1f6282ecde9bdcdb5106b1ea1a" prot="public" virt="non-virtual"><scope>hci_iso_hdr_t</scope><name>rfu</name></member>
+      <member refid="structhci__iso__hdr__t_1a25e71d570c48d4fce2b419bb224641bd" prot="public" virt="non-virtual"><scope>hci_iso_hdr_t</scope><name>rfu2</name></member>
+      <member refid="structhci__iso__hdr__t_1aa93e66e6f947d446eed34912ca1667b6" prot="public" virt="non-virtual"><scope>hci_iso_hdr_t</scope><name>rfu3</name></member>
+      <member refid="structhci__iso__hdr__t_1af9d008f73ab3bbdc7a5a4029805e3da3" prot="public" virt="non-virtual"><scope>hci_iso_hdr_t</scope><name>time_stamp</name></member>
+      <member refid="structhci__iso__hdr__t_1a09943049b6a6ddd0b30bd5bf66ec5204" prot="public" virt="non-virtual"><scope>hci_iso_hdr_t</scope><name>ts_flag</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

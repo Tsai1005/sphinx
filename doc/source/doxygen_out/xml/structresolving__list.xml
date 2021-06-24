@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structresolving__list" kind="struct" language="C++" prot="public">
+    <compoundname>resolving_list</compoundname>
+    <includes refid="resolve__list_8h" local="no">resolve_list.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structresolving__list_1ab0e3085d46800278307f1ed504939f10" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structresolving__list__parameter" kindref="compound">resolving_list_parameter</ref></type>
+        <definition>struct resolving_list_parameter resolving_list::resolving_list_param</definition>
+        <argsstring></argsstring>
+        <name>resolving_list_param</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/resolve_list.h" line="16" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/resolve_list.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structresolving__list_1a40bb1d4f97437474544f9afb269f8d60" prot="public" static="no" mutable="no">
+        <type>struct list_head</type>
+        <definition>struct list_head resolving_list::entry</definition>
+        <argsstring></argsstring>
+        <name>entry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/resolve_list.h" line="16" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/resolve_list.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structresolving__list_1a9a3a770532b382ad65e328d4558eece9" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 resolving_list::local_PRA[6]</definition>
+        <argsstring>[6]</argsstring>
+        <name>local_PRA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/resolve_list.h" line="24" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/resolve_list.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structresolving__list_1a9eb5c175877889a123a496180ac06323" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 resolving_list::peer_PRA[6]</definition>
+        <argsstring>[6]</argsstring>
+        <name>peer_PRA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/resolve_list.h" line="25" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/resolve_list.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1631">
+        <label>resolving_list</label>
+        <link refid="structresolving__list"/>
+        <childnode refid="1632" relation="usage">
+          <edgelabel>resolving_list_param</edgelabel>
+        </childnode>
+      </node>
+      <node id="1632">
+        <label>resolving_list_parameter</label>
+        <link refid="structresolving__list__parameter"/>
+      </node>
+    </collaborationgraph>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/resolve_list.h" line="19" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/resolve_list.h" bodystart="19" bodyend="26"/>
+    <listofallmembers>
+      <member refid="structresolving__list_1a40bb1d4f97437474544f9afb269f8d60" prot="public" virt="non-virtual"><scope>resolving_list</scope><name>entry</name></member>
+      <member refid="structresolving__list_1a9a3a770532b382ad65e328d4558eece9" prot="public" virt="non-virtual"><scope>resolving_list</scope><name>local_PRA</name></member>
+      <member refid="structresolving__list_1a9eb5c175877889a123a496180ac06323" prot="public" virt="non-virtual"><scope>resolving_list</scope><name>peer_PRA</name></member>
+      <member refid="structresolving__list_1ab0e3085d46800278307f1ed504939f10" prot="public" virt="non-virtual"><scope>resolving_list</scope><name>resolving_list_param</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

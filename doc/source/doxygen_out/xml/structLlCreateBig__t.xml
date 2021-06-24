@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structLlCreateBig__t" kind="struct" language="C++" prot="public">
+    <compoundname>LlCreateBig_t</compoundname>
+    <includes refid="ll__bis_8h" local="no">ll_bis.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structLlCreateBig__t_1a8f9a96219f01654b0765a0fb58ba12d8" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t LlCreateBig_t::bigHandle</definition>
+        <argsstring></argsstring>
+        <name>bigHandle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Used to identify the BIG. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="50" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLlCreateBig__t_1a280c45f37053fe4f3921d5f91e645058" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t LlCreateBig_t::advHandle</definition>
+        <argsstring></argsstring>
+        <name>advHandle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Used to identify the periodic advertising train. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="51" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLlCreateBig__t_1ae65e08daf3e4927d3feab86bfb5bb870" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t LlCreateBig_t::numBis</definition>
+        <argsstring></argsstring>
+        <name>numBis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Total number of BISes in the BIG. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="52" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLlCreateBig__t_1a85a19c58e3594eb75a52263fbbb33b1c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t LlCreateBig_t::sduInterUsec</definition>
+        <argsstring></argsstring>
+        <name>sduInterUsec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Interval, in microseconds, of BIG SDUs. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="53" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLlCreateBig__t_1ad547d0be7cbdc3fb8cf4d616e9d7729c" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t LlCreateBig_t::maxSdu</definition>
+        <argsstring></argsstring>
+        <name>maxSdu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum size of an SDU. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="54" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLlCreateBig__t_1aec8a6c243dacb0915beb89a62e79497c" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t LlCreateBig_t::mtlMs</definition>
+        <argsstring></argsstring>
+        <name>mtlMs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum time in milliseconds. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="55" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLlCreateBig__t_1aae42868c79480017565fe802942566e6" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t LlCreateBig_t::rtn</definition>
+        <argsstring></argsstring>
+        <name>rtn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retransmitted number. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="56" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLlCreateBig__t_1ab09912dae404c64e5306a9775527d118" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t LlCreateBig_t::phys</definition>
+        <argsstring></argsstring>
+        <name>phys</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Transmitter PHYs of packets. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="57" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLlCreateBig__t_1a35b01609bf25b85d150956450758317a" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t LlCreateBig_t::packing</definition>
+        <argsstring></argsstring>
+        <name>packing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sequential or Interleaved packing. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="58" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLlCreateBig__t_1a314cc186fb609829e8ead2f58849c6c4" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__defines_8h_1abc82a5d7375f4c58cf47b3b284b24c49" kindref="member">LlFraming_t</ref></type>
+        <definition>LlFraming_t LlCreateBig_t::framing</definition>
+        <argsstring></argsstring>
+        <name>framing</name>
+        <bitfield> 8</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Unframed or Framed. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="59" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLlCreateBig__t_1a5a0f4bf41145d2b22d4270d18916c678" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t LlCreateBig_t::encrypt</definition>
+        <argsstring></argsstring>
+        <name>encrypt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Unencrypted or Encrypted. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="60" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLlCreateBig__t_1a041fc0b73444f3e9b5acdadddfb57b74" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t LlCreateBig_t::bcstCode[LL_BC_LEN]</definition>
+        <argsstring>[LL_BC_LEN]</argsstring>
+        <name>bcstCode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Session key used to encrypt and decrypt BIS payloads. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="61" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>BIG Create BIG message. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="49" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="49" bodyend="62"/>
+    <listofallmembers>
+      <member refid="structLlCreateBig__t_1a280c45f37053fe4f3921d5f91e645058" prot="public" virt="non-virtual"><scope>LlCreateBig_t</scope><name>advHandle</name></member>
+      <member refid="structLlCreateBig__t_1a041fc0b73444f3e9b5acdadddfb57b74" prot="public" virt="non-virtual"><scope>LlCreateBig_t</scope><name>bcstCode</name></member>
+      <member refid="structLlCreateBig__t_1a8f9a96219f01654b0765a0fb58ba12d8" prot="public" virt="non-virtual"><scope>LlCreateBig_t</scope><name>bigHandle</name></member>
+      <member refid="structLlCreateBig__t_1a5a0f4bf41145d2b22d4270d18916c678" prot="public" virt="non-virtual"><scope>LlCreateBig_t</scope><name>encrypt</name></member>
+      <member refid="structLlCreateBig__t_1a314cc186fb609829e8ead2f58849c6c4" prot="public" virt="non-virtual"><scope>LlCreateBig_t</scope><name>framing</name></member>
+      <member refid="structLlCreateBig__t_1ad547d0be7cbdc3fb8cf4d616e9d7729c" prot="public" virt="non-virtual"><scope>LlCreateBig_t</scope><name>maxSdu</name></member>
+      <member refid="structLlCreateBig__t_1aec8a6c243dacb0915beb89a62e79497c" prot="public" virt="non-virtual"><scope>LlCreateBig_t</scope><name>mtlMs</name></member>
+      <member refid="structLlCreateBig__t_1ae65e08daf3e4927d3feab86bfb5bb870" prot="public" virt="non-virtual"><scope>LlCreateBig_t</scope><name>numBis</name></member>
+      <member refid="structLlCreateBig__t_1a35b01609bf25b85d150956450758317a" prot="public" virt="non-virtual"><scope>LlCreateBig_t</scope><name>packing</name></member>
+      <member refid="structLlCreateBig__t_1ab09912dae404c64e5306a9775527d118" prot="public" virt="non-virtual"><scope>LlCreateBig_t</scope><name>phys</name></member>
+      <member refid="structLlCreateBig__t_1aae42868c79480017565fe802942566e6" prot="public" virt="non-virtual"><scope>LlCreateBig_t</scope><name>rtn</name></member>
+      <member refid="structLlCreateBig__t_1a85a19c58e3594eb75a52263fbbb33b1c" prot="public" virt="non-virtual"><scope>LlCreateBig_t</scope><name>sduInterUsec</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

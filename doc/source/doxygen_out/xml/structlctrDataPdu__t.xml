@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structlctrDataPdu__t" kind="struct" language="C++" prot="public">
+    <compoundname>lctrDataPdu_t</compoundname>
+    <includes refid="ll__defines_8h" local="no">ll_defines.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlctrDataPdu__t_1ac2ac4478113968d407d9fe449f2cb0d8" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lctrDataPdu_t::opcode</definition>
+        <argsstring></argsstring>
+        <name>opcode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Control PDU opcode. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1077" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1077" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrDataPdu__t_1a8ef60736497cb155e8eeb6997e6f5629" prot="public" static="no" mutable="no">
+        <type>union lctrDataPdu_t::@57</type>
+        <definition>union lctrDataPdu_t::@57  lctrDataPdu_t::pld</definition>
+        <argsstring></argsstring>
+        <name>pld</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Unpacked PDU payload. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1106" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data channel control PDU. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1076" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1076" bodyend="1107"/>
+    <listofallmembers>
+      <member refid="structlctrDataPdu__t_1ac2ac4478113968d407d9fe449f2cb0d8" prot="public" virt="non-virtual"><scope>lctrDataPdu_t</scope><name>opcode</name></member>
+      <member refid="structlctrDataPdu__t_1a8ef60736497cb155e8eeb6997e6f5629" prot="public" virt="non-virtual"><scope>lctrDataPdu_t</scope><name>pld</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

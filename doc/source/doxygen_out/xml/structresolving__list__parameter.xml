@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structresolving__list__parameter" kind="struct" language="C++" prot="public">
+    <compoundname>resolving_list_parameter</compoundname>
+    <includes refid="resolve__list_8h" local="no">resolve_list.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structresolving__list__parameter_1adfc3b04f4e4ee4f0a0734851ed57da00" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 resolving_list_parameter::Peer_Identity_Address_Type</definition>
+        <argsstring></argsstring>
+        <name>Peer_Identity_Address_Type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/resolve_list.h" line="13" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/resolve_list.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structresolving__list__parameter_1a1949b335de50c67f5d13cf434304a603" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 resolving_list_parameter::Peer_Identity_Address[6]</definition>
+        <argsstring>[6]</argsstring>
+        <name>Peer_Identity_Address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/resolve_list.h" line="14" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/resolve_list.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structresolving__list__parameter_1a94bb1b7a68089f95cf0bc9d4719b7e43" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 resolving_list_parameter::Peer_IRK[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>Peer_IRK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/resolve_list.h" line="15" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/resolve_list.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structresolving__list__parameter_1adf9ce025198ad79f47dab65d383a98c5" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 resolving_list_parameter::Local_IRK[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>Local_IRK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/resolve_list.h" line="16" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/resolve_list.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/resolve_list.h" line="12" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/resolve_list.h" bodystart="12" bodyend="17"/>
+    <listofallmembers>
+      <member refid="structresolving__list__parameter_1adf9ce025198ad79f47dab65d383a98c5" prot="public" virt="non-virtual"><scope>resolving_list_parameter</scope><name>Local_IRK</name></member>
+      <member refid="structresolving__list__parameter_1a1949b335de50c67f5d13cf434304a603" prot="public" virt="non-virtual"><scope>resolving_list_parameter</scope><name>Peer_Identity_Address</name></member>
+      <member refid="structresolving__list__parameter_1adfc3b04f4e4ee4f0a0734851ed57da00" prot="public" virt="non-virtual"><scope>resolving_list_parameter</scope><name>Peer_Identity_Address_Type</name></member>
+      <member refid="structresolving__list__parameter_1a94bb1b7a68089f95cf0bc9d4719b7e43" prot="public" virt="non-virtual"><scope>resolving_list_parameter</scope><name>Peer_IRK</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

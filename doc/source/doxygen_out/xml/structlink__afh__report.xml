@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structlink__afh__report" kind="struct" language="C++" prot="public">
+    <compoundname>link_afh_report</compoundname>
+    <includes refid="bredr__link_8h" local="no">bredr_link.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlink__afh__report_1ac3c3d01f3002946754537b6a45ca4d38" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 link_afh_report::mode</definition>
+        <argsstring></argsstring>
+        <name>mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="453" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="453" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__afh__report_1a5c482faeeb7534b9bf49bf01b0699e57" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 link_afh_report::timer</definition>
+        <argsstring></argsstring>
+        <name>timer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="454" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="454" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__afh__report_1a2c134184ad9963ad1445477f000892dc" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 link_afh_report::min_interval</definition>
+        <argsstring></argsstring>
+        <name>min_interval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="455" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="455" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__afh__report_1a9d15f3e8bcb338563a3f205bc8b45487" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 link_afh_report::max_interval</definition>
+        <argsstring></argsstring>
+        <name>max_interval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="456" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="456" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__afh__report_1a1120ae791246ee062a957c5bdb209eed" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 link_afh_report::tx_channel_classification[10]</definition>
+        <argsstring>[10]</argsstring>
+        <name>tx_channel_classification</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="457" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="457" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__afh__report_1a1fd9d71dafbede22c291eed8064f0734" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 link_afh_report::rx_channel_classification[10]</definition>
+        <argsstring>[10]</argsstring>
+        <name>rx_channel_classification</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="458" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="458" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="452" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="452" bodyend="459"/>
+    <listofallmembers>
+      <member refid="structlink__afh__report_1a9d15f3e8bcb338563a3f205bc8b45487" prot="public" virt="non-virtual"><scope>link_afh_report</scope><name>max_interval</name></member>
+      <member refid="structlink__afh__report_1a2c134184ad9963ad1445477f000892dc" prot="public" virt="non-virtual"><scope>link_afh_report</scope><name>min_interval</name></member>
+      <member refid="structlink__afh__report_1ac3c3d01f3002946754537b6a45ca4d38" prot="public" virt="non-virtual"><scope>link_afh_report</scope><name>mode</name></member>
+      <member refid="structlink__afh__report_1a1fd9d71dafbede22c291eed8064f0734" prot="public" virt="non-virtual"><scope>link_afh_report</scope><name>rx_channel_classification</name></member>
+      <member refid="structlink__afh__report_1a5c482faeeb7534b9bf49bf01b0699e57" prot="public" virt="non-virtual"><scope>link_afh_report</scope><name>timer</name></member>
+      <member refid="structlink__afh__report_1a1120ae791246ee062a957c5bdb209eed" prot="public" virt="non-virtual"><scope>link_afh_report</scope><name>tx_channel_classification</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

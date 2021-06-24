@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structle__cis__t_8data_8mst" kind="struct" language="C++" prot="public">
+    <compoundname>le_cis_t.data.mst</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structle__cis__t_8data_8mst_1a0c7aa08a90f15e5ef06abb94852acd14" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>txPduIsAcked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TRUE if the PDU is acked. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="272" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_8data_8mst_1a8611802759326566f4f940340f0a5775" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>rxFromSlave</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>At least one packet received from slave. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="273" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="271" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="271" bodyend="274"/>
+    <listofallmembers>
+      <member refid="structle__cis__t_8data_8mst_1a8611802759326566f4f940340f0a5775" prot="public" virt="non-virtual"><scope>le_cis_t.data.mst</scope><name>rxFromSlave</name></member>
+      <member refid="structle__cis__t_8data_8mst_1a0c7aa08a90f15e5ef06abb94852acd14" prot="public" virt="non-virtual"><scope>le_cis_t.data.mst</scope><name>txPduIsAcked</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

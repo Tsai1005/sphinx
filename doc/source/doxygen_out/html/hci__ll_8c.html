@@ -1,0 +1,1547 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>JL Adapter SDK: /data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/hci_ll.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">JL Adapter SDK
+   &#160;<span id="projectnumber">v0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_5aa4d6ccf34d88a270949875c15714e5.html">btctrler</a></li><li class="navelem"><a class="el" href="dir_16b18ce1fc07a124435f964aa38ae307.html">BLE_v2</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle">
+<div class="title">hci_ll.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;bluetooth.h&quot;</code><br />
+<code>#include &quot;btctrler_task.h&quot;</code><br />
+<code>#include &quot;hci_controller.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="link__layer_8h_source.html">ble/link_layer.h</a>&quot;</code><br />
+<code>#include &quot;ble/hci_ll.h&quot;</code><br />
+<code>#include &quot;tomcrypt.h&quot;</code><br />
+<code>#include &quot;misc_interface.h&quot;</code><br />
+<code>#include &quot;hw_dma.h&quot;</code><br />
+<code>#include &quot;common/debug.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+hci_ll.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="hci__ll_8c__incl.png" border="0" usemap="#_2data_2bingquan_2repo_2repo__adapter_2adapter__sdk_2lib_2btctrler_2BLE__v2_2hci__ll_8c" alt=""/></div>
+<map name="_2data_2bingquan_2repo_2repo__adapter_2adapter__sdk_2lib_2btctrler_2BLE__v2_2hci__ll_8c" id="_2data_2bingquan_2repo_2repo__adapter_2adapter__sdk_2lib_2btctrler_2BLE__v2_2hci__ll_8c">
+<area shape="rect" id="node5" href="link__layer_8h.html" title="ble/link_layer.h" alt="" coords="705,124,815,151"/>
+<area shape="rect" id="node11" href="ll__defines_8h.html" title="ll_defines.h" alt="" coords="301,348,389,375"/>
+<area shape="rect" id="node12" href="white__list_8h.html" title="white_list.h" alt="" coords="5,348,93,375"/>
+<area shape="rect" id="node15" href="llcp_8h.html" title="ble/llcp.h" alt="" coords="623,273,697,300"/>
+<area shape="rect" id="node16" href="ll__adv_8h.html" title="ble/ll_adv.h" alt="" coords="1052,199,1140,225"/>
+<area shape="rect" id="node17" href="ll__scan_8h.html" title="ble/ll_scan.h" alt="" coords="1165,199,1259,225"/>
+<area shape="rect" id="node18" href="ll__init_8h.html" title="ble/ll_init.h" alt="" coords="1283,199,1367,225"/>
+<area shape="rect" id="node19" href="resolve__list_8h.html" title="resolve_list.h" alt="" coords="159,348,257,375"/>
+<area shape="rect" id="node20" href="data__extension_8h.html" title="data_extension.h" alt="" coords="745,348,866,375"/>
+<area shape="rect" id="node21" href="multiple__phys_8h.html" title="multiple_phys.h" alt="" coords="823,273,937,300"/>
+<area shape="rect" id="node22" href="ll__cte_8h.html" title="ble/ll_cte.h" alt="" coords="223,273,308,300"/>
+<area shape="rect" id="node23" href="ll__iso_8h.html" title="ble/ll_iso.h" alt="" coords="514,273,598,300"/>
+<area shape="rect" id="node25" href="ll__bis_8h.html" title="ble/ll_bis.h" alt="" coords="403,199,487,225"/>
+<area shape="rect" id="node27" href="ll__cis_8h.html" title="ble/ll_cis.h" alt="" coords="511,199,595,225"/>
+<area shape="rect" id="node28" href="ll__pc_8h.html" title="ble/ll_pc.h" alt="" coords="117,273,198,300"/>
+<area shape="rect" id="node26" href="audio__codec_8h.html" title="audio_codec.h" alt="" coords="383,273,489,300"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+结构体</h2></td></tr>
+<tr class="memitem:union__adv__data"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#union__adv__data">_adv_data</a></td></tr>
+<tr class="separator:union__adv__data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a6c6991cba0e2995d7d9aec73e0324317"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#a6c6991cba0e2995d7d9aec73e0324317">LOG_TAG_CONST</a>&#160;&#160;&#160;HCI_LL</td></tr>
+<tr class="separator:a6c6991cba0e2995d7d9aec73e0324317"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ce0df38eb467e59f209470c8f5ac4e6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#a7ce0df38eb467e59f209470c8f5ac4e6">LOG_TAG</a>&#160;&#160;&#160;&quot;[HCI LL]&quot;</td></tr>
+<tr class="separator:a7ce0df38eb467e59f209470c8f5ac4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69321c8a2a0b07a07fb5088e82e25eb0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#a69321c8a2a0b07a07fb5088e82e25eb0">LOG_INFO_ENABLE</a></td></tr>
+<tr class="separator:a69321c8a2a0b07a07fb5088e82e25eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04135f631fe91199f05b1d816dda8756"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#a04135f631fe91199f05b1d816dda8756">LOG_DUMP_ENABLE</a></td></tr>
+<tr class="separator:a04135f631fe91199f05b1d816dda8756"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a996a3658d1dc07709f7962fa7c464e39"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#a996a3658d1dc07709f7962fa7c464e39">HAVE_CMD_BUFF_EN</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a996a3658d1dc07709f7962fa7c464e39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:acf28d249637b617a4c1cbdf202c9bdf0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#acf28d249637b617a4c1cbdf202c9bdf0">ll_hci_init</a> (void)</td></tr>
+<tr class="separator:acf28d249637b617a4c1cbdf202c9bdf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa338695088a8c21f70e03f6e2f46553e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#aa338695088a8c21f70e03f6e2f46553e">ll_hci_reset</a> (void)</td></tr>
+<tr class="separator:aa338695088a8c21f70e03f6e2f46553e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c454349609bd939408825400f2a9d15"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#a7c454349609bd939408825400f2a9d15">ll_hci_destory</a> (void)</td></tr>
+<tr class="separator:a7c454349609bd939408825400f2a9d15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b21ded1a4f0e063ee7698f17c3c7f94"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#a5b21ded1a4f0e063ee7698f17c3c7f94">ll_hci_set_event_mask</a> (const u8 *mask)</td></tr>
+<tr class="separator:a5b21ded1a4f0e063ee7698f17c3c7f94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8deded2a4ff9e585a671f560603a1718"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#a8deded2a4ff9e585a671f560603a1718">ll_hci_adv_set_params</a> (uint16_t adv_int_min, uint16_t adv_int_max, uint8_t adv_type, uint8_t direct_address_type, btctler_bd_addr_t direct_address, uint8_t channel_map, uint8_t filter_policy)</td></tr>
+<tr class="separator:a8deded2a4ff9e585a671f560603a1718"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5ae3168613b0072c6355f2d6c7136e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#aa5ae3168613b0072c6355f2d6c7136e1">ll_hci_adv_set_data</a> (uint8_t advertising_data_length, uint8_t *<a class="el" href="ll__defines_8h.html#structadvertising__data">advertising_data</a>)</td></tr>
+<tr class="separator:aa5ae3168613b0072c6355f2d6c7136e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accbcf0c9b36f409e740672ddf76a0489"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#accbcf0c9b36f409e740672ddf76a0489">ll_hci_adv_scan_response_set_data</a> (uint8_t scan_response_data_length, uint8_t *scan_response_data)</td></tr>
+<tr class="separator:accbcf0c9b36f409e740672ddf76a0489"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefa2af90040d2010b07b8aec8701b927"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#aefa2af90040d2010b07b8aec8701b927">ll_hci_set_random_address</a> (u8 *addr)</td></tr>
+<tr class="separator:aefa2af90040d2010b07b8aec8701b927"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf1e49da876df3f434668045f6d3ceee"><td class="memItemLeft" align="right" valign="top">u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#aaf1e49da876df3f434668045f6d3ceee">ll_hci_get_acl_data_len</a> (void)</td></tr>
+<tr class="separator:aaf1e49da876df3f434668045f6d3ceee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1775007889b96592f2c8493087390780"><td class="memItemLeft" align="right" valign="top">u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#a1775007889b96592f2c8493087390780">ll_hci_get_acl_total_num</a> (void)</td></tr>
+<tr class="separator:a1775007889b96592f2c8493087390780"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3197b61e8e4e22920fdb43f890942e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#af3197b61e8e4e22920fdb43f890942e5">ll_hci_set_name</a> (const char *name)</td></tr>
+<tr class="separator:af3197b61e8e4e22920fdb43f890942e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9149d25f26cf50ac977ae82aa6331488"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#a9149d25f26cf50ac977ae82aa6331488">ll_hci_scan_set_params</a> (uint8_t scan_type, uint16_t scan_interval, uint16_t scan_window)</td></tr>
+<tr class="separator:a9149d25f26cf50ac977ae82aa6331488"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0398a4cbfecc49f2a7816fd84ee77182"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#a0398a4cbfecc49f2a7816fd84ee77182">ll_hci_adv_enable</a> (bool enable)</td></tr>
+<tr class="separator:a0398a4cbfecc49f2a7816fd84ee77182"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ec21cfed85459155ad76652a6b0aa55"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#a2ec21cfed85459155ad76652a6b0aa55">ll_hci_scan_enable</a> (bool enable, u8 filter_duplicates)</td></tr>
+<tr class="separator:a2ec21cfed85459155ad76652a6b0aa55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add4c9cf43ccca17ff0ae427c085112e6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#add4c9cf43ccca17ff0ae427c085112e6">ll_hci_create_conn</a> (u8 *conn_param, u8 *addr_param)</td></tr>
+<tr class="separator:add4c9cf43ccca17ff0ae427c085112e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2d4656ace43aac4639a3da1c21201d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#ac2d4656ace43aac4639a3da1c21201d4">ll_hci_create_conn_cancel</a> (void)</td></tr>
+<tr class="separator:ac2d4656ace43aac4639a3da1c21201d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a608048b53d1da33ce1ddfb49031046"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#a9a608048b53d1da33ce1ddfb49031046">ll_hci_vendor_send_key_num</a> (u16 conn_handle, u8 num)</td></tr>
+<tr class="separator:a9a608048b53d1da33ce1ddfb49031046"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2b7304a0e0ebbd4c8a74281d1765260"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#aa2b7304a0e0ebbd4c8a74281d1765260">ll_vendor_latency_hold_cnt</a> (u16 conn_handle, u16 hold_cnt)</td></tr>
+<tr class="separator:aa2b7304a0e0ebbd4c8a74281d1765260"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fa0187cd6972fec29c61fbcaa82a6b1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#a5fa0187cd6972fec29c61fbcaa82a6b1">ll_hci_encryption</a> (u8 *key, u8 *plaintext_data)</td></tr>
+<tr class="separator:a5fa0187cd6972fec29c61fbcaa82a6b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b58a638204121715aca436bd51bf367"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#a4b58a638204121715aca436bd51bf367">ll_hci_get_le_rand</a> (void)</td></tr>
+<tr class="separator:a4b58a638204121715aca436bd51bf367"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a281a058608e4dd212e7d14dc56441d9a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#a281a058608e4dd212e7d14dc56441d9a">ll_hci_start_encryption</a> (u16 handle, u32 rand_low, u32 rand_high, u16 peer_ediv, u8 *ltk)</td></tr>
+<tr class="separator:a281a058608e4dd212e7d14dc56441d9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa75500e50b980ce381cf9994a980f635"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#aa75500e50b980ce381cf9994a980f635">ll_hci_long_term_key_request_reply</a> (u16 handle, u8 *ltk)</td></tr>
+<tr class="separator:aa75500e50b980ce381cf9994a980f635"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85be9dfc3f43fed420e42458d7afad31"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#a85be9dfc3f43fed420e42458d7afad31">ll_hci_long_term_key_request_nagative_reply</a> (u16 handle)</td></tr>
+<tr class="separator:a85be9dfc3f43fed420e42458d7afad31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae82e69505f122ada3449eb1f249f6d1f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#ae82e69505f122ada3449eb1f249f6d1f">ll_hci_connection_update</a> (u16 handle, u16 conn_interval_min, u16 conn_interval_max, u16 conn_latency, u16 supervision_timeout, u16 minimum_ce_length, u16 maximum_ce_length)</td></tr>
+<tr class="separator:ae82e69505f122ada3449eb1f249f6d1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26958f498950b66d52a275b0c556f2ae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#a26958f498950b66d52a275b0c556f2ae">ll_hci_disconnect</a> (u16 handle, u8 reason)</td></tr>
+<tr class="separator:a26958f498950b66d52a275b0c556f2ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e19a2fbf5866b83ced12023a518357e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#a9e19a2fbf5866b83ced12023a518357e">ll_hci_read_local_p256_pb_key</a> (void)</td></tr>
+<tr class="separator:a9e19a2fbf5866b83ced12023a518357e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aceacc6cad915382a40c0389bcd74be8c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#aceacc6cad915382a40c0389bcd74be8c">ll_hci_generate_dhkey</a> (const u8 *data, u32 size)</td></tr>
+<tr class="separator:aceacc6cad915382a40c0389bcd74be8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26402e5bd1058183da458438d7ed20a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#a26402e5bd1058183da458438d7ed20a7">ll_hci_set_data_length</a> (u16 conn_handle, u16 tx_octets, u16 tx_time)</td></tr>
+<tr class="separator:a26402e5bd1058183da458438d7ed20a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ba4c4ddbb6a1799d36c2ce6f97650c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#a0ba4c4ddbb6a1799d36c2ce6f97650c9">ll_hci_set_ext_adv_params</a> (u8 *data, u32 size)</td></tr>
+<tr class="separator:a0ba4c4ddbb6a1799d36c2ce6f97650c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add7d6dc583ff343548dbb3e8de1d931c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#add7d6dc583ff343548dbb3e8de1d931c">ll_hci_set_ext_adv_data</a> (u8 *data, u32 size)</td></tr>
+<tr class="separator:add7d6dc583ff343548dbb3e8de1d931c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54e0ad93d7cde18eb637a0549a4cdced"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#a54e0ad93d7cde18eb637a0549a4cdced">ll_hci_set_ext_adv_enable</a> (u8 *data, u32 size)</td></tr>
+<tr class="separator:a54e0ad93d7cde18eb637a0549a4cdced"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1ed5743f4e7aa6e30c54693395667d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#ae1ed5743f4e7aa6e30c54693395667d4">ll_hci_set_phy</a> (u16 conn_handle, u8 all_phys, u8 tx_phy, u8 rx_phy, u16 phy_options)</td></tr>
+<tr class="separator:ae1ed5743f4e7aa6e30c54693395667d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adda44554fa73b519b356409c69d5271b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#adda44554fa73b519b356409c69d5271b">ll_hci_set_ext_scan_params</a> (u8 *data, u32 size)</td></tr>
+<tr class="separator:adda44554fa73b519b356409c69d5271b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a0ab9a3f99770cc28757d468ad866f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#a1a0ab9a3f99770cc28757d468ad866f2">ll_hci_set_ext_scan_enable</a> (u8 *data, u32 size)</td></tr>
+<tr class="separator:a1a0ab9a3f99770cc28757d468ad866f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aded0e41d057cc19758cd101c82d9c5ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#aded0e41d057cc19758cd101c82d9c5ba">ll_hci_ext_create_conn</a> (u8 *data, u32 size)</td></tr>
+<tr class="separator:aded0e41d057cc19758cd101c82d9c5ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae84ea842f2d51a553fd2758f8d14f43a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#ae84ea842f2d51a553fd2758f8d14f43a">ll_hci_set_periodic_adv_params</a> (u8 *data, u32 size)</td></tr>
+<tr class="separator:ae84ea842f2d51a553fd2758f8d14f43a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3468fb4eb6015f0b110e0df8df6f0736"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#a3468fb4eb6015f0b110e0df8df6f0736">ll_hci_set_periodic_adv_data</a> (u8 *data, u32 size)</td></tr>
+<tr class="separator:a3468fb4eb6015f0b110e0df8df6f0736"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70894b777b4b2df6489c059eb1d23dba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#a70894b777b4b2df6489c059eb1d23dba">ll_hci_set_periodic_adv_enable</a> (u8 *data, u32 size)</td></tr>
+<tr class="separator:a70894b777b4b2df6489c059eb1d23dba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cc8bcf5b5d446dbb997825bc57dc649"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#a1cc8bcf5b5d446dbb997825bc57dc649">ll_hci_periodic_adv_creat_sync</a> (u8 *data, u32 size)</td></tr>
+<tr class="separator:a1cc8bcf5b5d446dbb997825bc57dc649"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d656dc009d1c40a6c85cfbd3025f3a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#a3d656dc009d1c40a6c85cfbd3025f3a9">ll_hci_cmd_handler</a> (int *cmd)</td></tr>
+<tr class="separator:a3d656dc009d1c40a6c85cfbd3025f3a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b6fb7a968146074a6701e14135d98bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#a3b6fb7a968146074a6701e14135d98bb">ll_event_handler</a> (int *msg)</td></tr>
+<tr class="separator:a3b6fb7a968146074a6701e14135d98bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30fb274d9cffc3ab22cf97d9dae3a9f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#a30fb274d9cffc3ab22cf97d9dae3a9f8">ll_hci_private_free_dma_rx</a> (u8 *rx_head)</td></tr>
+<tr class="separator:a30fb274d9cffc3ab22cf97d9dae3a9f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96391ec96506f7515a0c63498c05da43"><td class="memItemLeft" align="right" valign="top">hci_ll_param_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#a96391ec96506f7515a0c63498c05da43">ll_hci_param_config_get</a> (void)</td></tr>
+<tr class="separator:a96391ec96506f7515a0c63498c05da43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeebdb1c20c26ddbca0e9551106f03a96"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#aeebdb1c20c26ddbca0e9551106f03a96">le_controller_get_mac</a> (void *addr)</td></tr>
+<tr class="separator:aeebdb1c20c26ddbca0e9551106f03a96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44bacfe5ea2134704dc94464edefa973"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#a44bacfe5ea2134704dc94464edefa973">le_controller_get_random_mac</a> (void *addr)</td></tr>
+<tr class="separator:a44bacfe5ea2134704dc94464edefa973"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4b35f54bae5945839793bf0aff5c17f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#ae4b35f54bae5945839793bf0aff5c17f">hci_ll_get_device_address</a> (uint8_t *addr_type, u8 *addr)</td></tr>
+<tr class="separator:ae4b35f54bae5945839793bf0aff5c17f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:a073b3c35a82efb22a6b3b4196b0cee22"><td class="memItemLeft" align="right" valign="top">static u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#a073b3c35a82efb22a6b3b4196b0cee22">hci_cmd_tmp_buff</a> [32]</td></tr>
+<tr class="separator:a073b3c35a82efb22a6b3b4196b0cee22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34ccea6ef5826bd08e5303ba92dbf6ae"><td class="memItemLeft" align="right" valign="top">static hci_ll_param_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#a34ccea6ef5826bd08e5303ba92dbf6ae">config_hci_ll_param</a></td></tr>
+<tr class="separator:a34ccea6ef5826bd08e5303ba92dbf6ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeeff252aa3abfa4e4d3fae6c189fb84f"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#aeeff252aa3abfa4e4d3fae6c189fb84f">g_le_name</a> [18]</td></tr>
+<tr class="separator:aeeff252aa3abfa4e4d3fae6c189fb84f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dacf3eb0de58fe35ca3afb587a686d4"><td class="memItemLeft" align="right" valign="top">static const struct <a class="el" href="ll__defines_8h.html#structconnection__parameter">connection_parameter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hci__ll_8c.html#a8dacf3eb0de58fe35ca3afb587a686d4">create_param_default</a></td></tr>
+<tr class="separator:a8dacf3eb0de58fe35ca3afb587a686d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/><h2 class="groupheader">结构体说明</h2>
+<a name="union__adv__data" id="union__adv__data"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">union _adv_data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><div class="dynheader">
+_adv_data 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="union__adv__data__coll__graph.png" border="0" usemap="#__adv__data_coll__map" alt="Collaboration graph"/></div>
+<map name="__adv__data_coll__map" id="__adv__data_coll__map">
+<area shape="rect" id="node2" href="ll__defines_8h.html#structadvertising__data" title="advertising_data" alt="" coords="5,5,123,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ae3f9636f87dd15824e8fc06fc613133c"></a>struct <a class="el" href="ll__defines_8h.html#structadvertising__data">advertising_data</a></td>
+<td class="fieldname">
+adv_data</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a542bf8c66d53b9b953c102727af05903"></a>u32</td>
+<td class="fieldname">
+buf[(32+3)/4]</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">宏定义说明</h2>
+<a class="anchor" id="a996a3658d1dc07709f7962fa7c464e39"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HAVE_CMD_BUFF_EN&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a04135f631fe91199f05b1d816dda8756"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_DUMP_ENABLE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a69321c8a2a0b07a07fb5088e82e25eb0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_INFO_ENABLE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7ce0df38eb467e59f209470c8f5ac4e6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_TAG&#160;&#160;&#160;&quot;[HCI LL]&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6c6991cba0e2995d7d9aec73e0324317"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_TAG_CONST&#160;&#160;&#160;HCI_LL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="ae4b35f54bae5945839793bf0aff5c17f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hci_ll_get_device_address </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>addr_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramname"><em>addr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aeebdb1c20c26ddbca0e9551106f03a96"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int le_controller_get_mac </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>addr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a44bacfe5ea2134704dc94464edefa973"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int le_controller_get_random_mac </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>addr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3b6fb7a968146074a6701e14135d98bb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_event_handler </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>msg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0398a4cbfecc49f2a7816fd84ee77182"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ll_hci_adv_enable </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="accbcf0c9b36f409e740672ddf76a0489"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_hci_adv_scan_response_set_data </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>scan_response_data_length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>scan_response_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa5ae3168613b0072c6355f2d6c7136e1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_hci_adv_set_data </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>advertising_data_length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>advertising_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8deded2a4ff9e585a671f560603a1718"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_hci_adv_set_params </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>adv_int_min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>adv_int_max</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>adv_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>direct_address_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">btctler_bd_addr_t&#160;</td>
+          <td class="paramname"><em>direct_address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>channel_map</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>filter_policy</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3d656dc009d1c40a6c85cfbd3025f3a9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_hci_cmd_handler </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>cmd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae82e69505f122ada3449eb1f249f6d1f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ll_hci_connection_update </td>
+          <td>(</td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>conn_interval_min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>conn_interval_max</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>conn_latency</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>supervision_timeout</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>minimum_ce_length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>maximum_ce_length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="add4c9cf43ccca17ff0ae427c085112e6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ll_hci_create_conn </td>
+          <td>(</td>
+          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramname"><em>conn_param</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramname"><em>addr_param</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac2d4656ace43aac4639a3da1c21201d4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ll_hci_create_conn_cancel </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7c454349609bd939408825400f2a9d15"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_hci_destory </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a26958f498950b66d52a275b0c556f2ae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ll_hci_disconnect </td>
+          <td>(</td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>reason</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5fa0187cd6972fec29c61fbcaa82a6b1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ll_hci_encryption </td>
+          <td>(</td>
+          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramname"><em>plaintext_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aded0e41d057cc19758cd101c82d9c5ba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_hci_ext_create_conn </td>
+          <td>(</td>
+          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aceacc6cad915382a40c0389bcd74be8c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ll_hci_generate_dhkey </td>
+          <td>(</td>
+          <td class="paramtype">const u8 *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aaf1e49da876df3f434668045f6d3ceee"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u16 ll_hci_get_acl_data_len </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1775007889b96592f2c8493087390780"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u16 ll_hci_get_acl_total_num </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4b58a638204121715aca436bd51bf367"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ll_hci_get_le_rand </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acf28d249637b617a4c1cbdf202c9bdf0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_hci_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a85be9dfc3f43fed420e42458d7afad31"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ll_hci_long_term_key_request_nagative_reply </td>
+          <td>(</td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa75500e50b980ce381cf9994a980f635"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ll_hci_long_term_key_request_reply </td>
+          <td>(</td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramname"><em>ltk</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a96391ec96506f7515a0c63498c05da43"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">hci_ll_param_t* ll_hci_param_config_get </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1cc8bcf5b5d446dbb997825bc57dc649"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_hci_periodic_adv_creat_sync </td>
+          <td>(</td>
+          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a30fb274d9cffc3ab22cf97d9dae3a9f8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_hci_private_free_dma_rx </td>
+          <td>(</td>
+          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramname"><em>rx_head</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9e19a2fbf5866b83ced12023a518357e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ll_hci_read_local_p256_pb_key </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa338695088a8c21f70e03f6e2f46553e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_hci_reset </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2ec21cfed85459155ad76652a6b0aa55"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ll_hci_scan_enable </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>filter_duplicates</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9149d25f26cf50ac977ae82aa6331488"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_hci_scan_set_params </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>scan_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>scan_interval</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>scan_window</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a26402e5bd1058183da458438d7ed20a7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_hci_set_data_length </td>
+          <td>(</td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>conn_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>tx_octets</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>tx_time</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5b21ded1a4f0e063ee7698f17c3c7f94"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_hci_set_event_mask </td>
+          <td>(</td>
+          <td class="paramtype">const u8 *&#160;</td>
+          <td class="paramname"><em>mask</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="add7d6dc583ff343548dbb3e8de1d931c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_hci_set_ext_adv_data </td>
+          <td>(</td>
+          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a54e0ad93d7cde18eb637a0549a4cdced"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_hci_set_ext_adv_enable </td>
+          <td>(</td>
+          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0ba4c4ddbb6a1799d36c2ce6f97650c9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_hci_set_ext_adv_params </td>
+          <td>(</td>
+          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1a0ab9a3f99770cc28757d468ad866f2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_hci_set_ext_scan_enable </td>
+          <td>(</td>
+          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adda44554fa73b519b356409c69d5271b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_hci_set_ext_scan_params </td>
+          <td>(</td>
+          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af3197b61e8e4e22920fdb43f890942e5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_hci_set_name </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3468fb4eb6015f0b110e0df8df6f0736"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_hci_set_periodic_adv_data </td>
+          <td>(</td>
+          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a70894b777b4b2df6489c059eb1d23dba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_hci_set_periodic_adv_enable </td>
+          <td>(</td>
+          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae84ea842f2d51a553fd2758f8d14f43a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_hci_set_periodic_adv_params </td>
+          <td>(</td>
+          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae1ed5743f4e7aa6e30c54693395667d4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_hci_set_phy </td>
+          <td>(</td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>conn_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>all_phys</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>tx_phy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>rx_phy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>phy_options</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aefa2af90040d2010b07b8aec8701b927"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_hci_set_random_address </td>
+          <td>(</td>
+          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramname"><em>addr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a281a058608e4dd212e7d14dc56441d9a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ll_hci_start_encryption </td>
+          <td>(</td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>rand_low</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>rand_high</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>peer_ediv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramname"><em>ltk</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9a608048b53d1da33ce1ddfb49031046"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ll_hci_vendor_send_key_num </td>
+          <td>(</td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>conn_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa2b7304a0e0ebbd4c8a74281d1765260"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ll_vendor_latency_hold_cnt </td>
+          <td>(</td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>conn_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>hold_cnt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a class="anchor" id="a34ccea6ef5826bd08e5303ba92dbf6ae"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">hci_ll_param_t config_hci_ll_param</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>初始值:</b><div class="fragment"><div class="line">= {</div><div class="line">    .Own_Address_Type = 0,</div><div class="line">    .Adv_Filter_Policy = 0,</div><div class="line">    .Scan_Filter_Policy = 0,</div><div class="line">    .initiator_filter_policy = 0,</div><div class="line">}</div></div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a8dacf3eb0de58fe35ca3afb587a686d4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const struct <a class="el" href="ll__defines_8h.html#structconnection__parameter">connection_parameter</a> create_param_default</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>初始值:</b><div class="fragment"><div class="line">= {</div><div class="line">    .le_scan_interval = 60,</div><div class="line">    .le_scan_window = 30,</div><div class="line">    </div><div class="line">    .peer_address_type = 0,</div><div class="line">    .peer_address = {0, 0, 0, 0, 0, 0},</div><div class="line">    </div><div class="line">    .conn_interval_min = 0x6,</div><div class="line">    .conn_interval_max = 0x20,</div><div class="line">    .conn_latency = 0,</div><div class="line">    .supervision_timeout = 0x180,</div><div class="line">    .minimum_ce_length = 1,</div><div class="line">    .maximum_ce_length = 1,</div><div class="line">}</div></div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="aeeff252aa3abfa4e4d3fae6c189fb84f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char g_le_name[18]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a073b3c35a82efb22a6b3b4196b0cee22"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">u32 hci_cmd_tmp_buff[32]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

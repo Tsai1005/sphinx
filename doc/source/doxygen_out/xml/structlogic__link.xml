@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structlogic__link" kind="struct" language="C++" prot="public">
+    <compoundname>logic_link</compoundname>
+    <includes refid="link__manager_8h" local="no">link_manager.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlogic__link_1a30c53a8a42a8adc184ac2339e0cc024a" prot="public" static="no" mutable="no">
+        <type>struct list_head</type>
+        <definition>struct list_head logic_link::entry</definition>
+        <argsstring></argsstring>
+        <name>entry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_manager.h" line="30" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_manager.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlogic__link_1a955b994f1c6a3ac9d74b121d544d833a" prot="public" static="no" mutable="no">
+        <type><ref refid="link__manager_8h_1a024a536642a4a0e426ef6518f1bc2fbb" kindref="member">link_type_t</ref></type>
+        <definition>link_type_t logic_link::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_manager.h" line="19" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_manager.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlogic__link_1a1850f7bcf73f04fa27ae1d904b2beb52" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 logic_link::conn_handle</definition>
+        <argsstring></argsstring>
+        <name>conn_handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_manager.h" line="20" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_manager.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlogic__link_1a04924207738dc0d3d143a70e806d315d" prot="public" static="no" mutable="no">
+        <type>union logic_link::@97</type>
+        <definition>union logic_link::@97 logic_link::@98</definition>
+        <argsstring></argsstring>
+        <name>@98</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_manager.h" line="25" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_manager.h" line="17" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_manager.h" bodystart="17" bodyend="26"/>
+    <listofallmembers>
+      <member refid="structlogic__link_1a1850f7bcf73f04fa27ae1d904b2beb52" prot="public" virt="non-virtual"><scope>logic_link</scope><name>conn_handle</name></member>
+      <member refid="structlogic__link_1a30c53a8a42a8adc184ac2339e0cc024a" prot="public" virt="non-virtual"><scope>logic_link</scope><name>entry</name></member>
+      <member refid="structlogic__link_1a955b994f1c6a3ac9d74b121d544d833a" prot="public" virt="non-virtual"><scope>logic_link</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

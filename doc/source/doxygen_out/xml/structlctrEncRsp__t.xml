@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structlctrEncRsp__t" kind="struct" language="C++" prot="public">
+    <compoundname>lctrEncRsp_t</compoundname>
+    <includes refid="ll__defines_8h" local="no">ll_defines.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlctrEncRsp__t_1a29aad951ae46c4a20621734a2cd84adb" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lctrEncRsp_t::skd_s[LL_SKD_LEN/2]</definition>
+        <argsstring>[LL_SKD_LEN/2]</argsstring>
+        <name>skd_s</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Slave&apos;s session key diversifier. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="853" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="853" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrEncRsp__t_1afa4e084b518b6a1de042488210846d2e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lctrEncRsp_t::iv_s[LL_IV_LEN/2]</definition>
+        <argsstring>[LL_IV_LEN/2]</argsstring>
+        <name>iv_s</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Slave&apos;s initialization vector. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="854" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="854" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Encryption response control PDU. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="852" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="852" bodyend="855"/>
+    <listofallmembers>
+      <member refid="structlctrEncRsp__t_1afa4e084b518b6a1de042488210846d2e" prot="public" virt="non-virtual"><scope>lctrEncRsp_t</scope><name>iv_s</name></member>
+      <member refid="structlctrEncRsp__t_1a29aad951ae46c4a20621734a2cd84adb" prot="public" virt="non-virtual"><scope>lctrEncRsp_t</scope><name>skd_s</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

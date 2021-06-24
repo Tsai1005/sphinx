@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structruntime__callback__t" kind="struct" language="C++" prot="public">
+    <compoundname>runtime_callback_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structruntime__callback__t_1a2a0545bc36fb2d42fb810393da1d2238" prot="public" static="no" mutable="no">
+        <type>struct list_head</type>
+        <definition>struct list_head runtime_callback_t::entry</definition>
+        <argsstring></argsstring>
+        <name>entry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis.c" line="1690" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis.c" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structruntime__callback__t_1ab5b5d26cbaad6ad70cbef5bf25d1d0ea" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* runtime_callback_t::callback) (void *priv)</definition>
+        <argsstring>)(void *priv)</argsstring>
+        <name>callback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis.c" line="48" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis.c" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structruntime__callback__t_1a599114b4f471f718c54d7166b0c8bd94" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int runtime_callback_t::data[0]</definition>
+        <argsstring>[0]</argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis.c" line="49" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis.c" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis.c" line="46" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_cis.c" bodystart="46" bodyend="50"/>
+    <listofallmembers>
+      <member refid="structruntime__callback__t_1ab5b5d26cbaad6ad70cbef5bf25d1d0ea" prot="public" virt="non-virtual"><scope>runtime_callback_t</scope><name>callback</name></member>
+      <member refid="structruntime__callback__t_1a599114b4f471f718c54d7166b0c8bd94" prot="public" virt="non-virtual"><scope>runtime_callback_t</scope><name>data</name></member>
+      <member refid="structruntime__callback__t_1a2a0545bc36fb2d42fb810393da1d2238" prot="public" virt="non-virtual"><scope>runtime_callback_t</scope><name>entry</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

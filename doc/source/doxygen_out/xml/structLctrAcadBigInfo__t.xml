@@ -1,0 +1,365 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structLctrAcadBigInfo__t" kind="struct" language="C++" prot="public">
+    <compoundname>LctrAcadBigInfo_t</compoundname>
+    <includes refid="ll__defines_8h" local="no">ll_defines.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structLctrAcadBigInfo__t_1a351e4cf7681999ca914af182491c63dd" prot="public" static="no" mutable="no">
+        <type><ref refid="structLctrAcadHdr__t" kindref="compound">LctrAcadHdr_t</ref></type>
+        <definition>LctrAcadHdr_t LctrAcadBigInfo_t::hdr</definition>
+        <argsstring></argsstring>
+        <name>hdr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ACAD header. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1047" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1047" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLctrAcadBigInfo__t_1a3d85a47a79daa5747135dc5dac6fe9f9" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t LctrAcadBigInfo_t::bigAnchorPoint</definition>
+        <argsstring></argsstring>
+        <name>bigAnchorPoint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>BIG Anchor Point time. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1049" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1049" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLctrAcadBigInfo__t_1a2d07f9a2c4b68b04cf4eb82b594e1bdc" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t LctrAcadBigInfo_t::bigOffs</definition>
+        <argsstring></argsstring>
+        <name>bigOffs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>BIG offset. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1051" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1051" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLctrAcadBigInfo__t_1a7b926c7083f6f00e0bc2e660da9fbee0" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t LctrAcadBigInfo_t::bigOffsUnits</definition>
+        <argsstring></argsstring>
+        <name>bigOffsUnits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>BIG offset units. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1052" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1052" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLctrAcadBigInfo__t_1ade97cd89c3b00349ebc7bc980f2fbb63" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t LctrAcadBigInfo_t::isoInter</definition>
+        <argsstring></argsstring>
+        <name>isoInter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ISO interval in units of 1.25ms. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1053" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1053" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLctrAcadBigInfo__t_1ade67431fad46bc14b1e9abf0a4757aff" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t LctrAcadBigInfo_t::numBis</definition>
+        <argsstring></argsstring>
+        <name>numBis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of BISs. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1054" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1054" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLctrAcadBigInfo__t_1ac5d8ef3a7ff710a8d36cdca563eda483" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t LctrAcadBigInfo_t::nse</definition>
+        <argsstring></argsstring>
+        <name>nse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of subevents. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1055" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1055" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLctrAcadBigInfo__t_1a15c7b3570ba4d9011b02743e1e0bafcd" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t LctrAcadBigInfo_t::bn</definition>
+        <argsstring></argsstring>
+        <name>bn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Burst number. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1056" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1056" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLctrAcadBigInfo__t_1a0e42f933291839a5649746a20069fe9b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t LctrAcadBigInfo_t::subEvtInterUsec</definition>
+        <argsstring></argsstring>
+        <name>subEvtInterUsec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Subevent interval in microseconds. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1057" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1057" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLctrAcadBigInfo__t_1aa84311755ae828530c509daa711c7a6a" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t LctrAcadBigInfo_t::pto</definition>
+        <argsstring></argsstring>
+        <name>pto</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pre-transmission offset. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1058" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1058" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLctrAcadBigInfo__t_1ac0f518622e3449509ff0b3a626d47432" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t LctrAcadBigInfo_t::bisSpaceUsec</definition>
+        <argsstring></argsstring>
+        <name>bisSpaceUsec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>BIS spacing in microseconds. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1059" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1059" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLctrAcadBigInfo__t_1a0e85c8fee71ed85f6ed2e74877e8dc77" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t LctrAcadBigInfo_t::irc</definition>
+        <argsstring></argsstring>
+        <name>irc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Immediate repetition count. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1060" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1060" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLctrAcadBigInfo__t_1a63ba0577aa1e18bee5327f45c6c4465e" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t LctrAcadBigInfo_t::maxPdu</definition>
+        <argsstring></argsstring>
+        <name>maxPdu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum PDU size. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1061" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1061" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLctrAcadBigInfo__t_1a35111a84b8b99a65da18cd917c667f42" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t LctrAcadBigInfo_t::seedAccAddr</definition>
+        <argsstring></argsstring>
+        <name>seedAccAddr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Seed access address. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1062" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1062" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLctrAcadBigInfo__t_1a7c6ab78100eba18cd61f805fc7ee62ff" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t LctrAcadBigInfo_t::sduInterUsec</definition>
+        <argsstring></argsstring>
+        <name>sduInterUsec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SDU interval in microseconds. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1063" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1063" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLctrAcadBigInfo__t_1afde337a70f0ca50627d581359349096b" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t LctrAcadBigInfo_t::maxSdu</definition>
+        <argsstring></argsstring>
+        <name>maxSdu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum SDU size. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1064" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1064" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLctrAcadBigInfo__t_1aec616c5ec38260daa4a9d67154514846" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t LctrAcadBigInfo_t::baseCrcInit</definition>
+        <argsstring></argsstring>
+        <name>baseCrcInit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Base CRC init. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1065" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1065" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLctrAcadBigInfo__t_1acd44ae7d337320b132a974560d6ad137" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t LctrAcadBigInfo_t::chanMap</definition>
+        <argsstring></argsstring>
+        <name>chanMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Channel map. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1066" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1066" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLctrAcadBigInfo__t_1a0bd1b06f0a104fe18fcf8f1732cdb6e7" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t LctrAcadBigInfo_t::phy</definition>
+        <argsstring></argsstring>
+        <name>phy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>PHY used by BIG. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1067" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1067" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLctrAcadBigInfo__t_1a2eb1d793f05aeff90dc9b94b6b383d76" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t LctrAcadBigInfo_t::bisPldCtr</definition>
+        <argsstring></argsstring>
+        <name>bisPldCtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>BIS payload counter. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1068" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1068" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLctrAcadBigInfo__t_1a74c338d4fede82682f39823c2b3a3576" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t LctrAcadBigInfo_t::framing</definition>
+        <argsstring></argsstring>
+        <name>framing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>BIG carries framed or unframed data. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1069" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1069" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLctrAcadBigInfo__t_1a6354bc7a3bdea1054f03eba485aa9a5e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t LctrAcadBigInfo_t::encrypt</definition>
+        <argsstring></argsstring>
+        <name>encrypt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Encryption mode of the BISes in the BIG. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1070" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1070" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLctrAcadBigInfo__t_1a56d152c04cb21d116ae874f30457741d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t LctrAcadBigInfo_t::giv[LL_GIV_LEN]</definition>
+        <argsstring>[LL_GIV_LEN]</argsstring>
+        <name>giv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>GIV. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1071" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1071" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLctrAcadBigInfo__t_1ab1b3fc0c1f28c6c397c91b9c4b646bb6" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t LctrAcadBigInfo_t::gskd[LL_GSKD_LEN]</definition>
+        <argsstring>[LL_GSKD_LEN]</argsstring>
+        <name>gskd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>GSKD. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1072" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1072" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>ACAD data field for channel map update. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1083">
+        <label>LctrAcadHdr_t</label>
+        <link refid="structLctrAcadHdr__t"/>
+      </node>
+      <node id="1082">
+        <label>LctrAcadBigInfo_t</label>
+        <link refid="structLctrAcadBigInfo__t"/>
+        <childnode refid="1083" relation="usage">
+          <edgelabel>hdr</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1046" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1046" bodyend="1073"/>
+    <listofallmembers>
+      <member refid="structLctrAcadBigInfo__t_1aec616c5ec38260daa4a9d67154514846" prot="public" virt="non-virtual"><scope>LctrAcadBigInfo_t</scope><name>baseCrcInit</name></member>
+      <member refid="structLctrAcadBigInfo__t_1a3d85a47a79daa5747135dc5dac6fe9f9" prot="public" virt="non-virtual"><scope>LctrAcadBigInfo_t</scope><name>bigAnchorPoint</name></member>
+      <member refid="structLctrAcadBigInfo__t_1a2d07f9a2c4b68b04cf4eb82b594e1bdc" prot="public" virt="non-virtual"><scope>LctrAcadBigInfo_t</scope><name>bigOffs</name></member>
+      <member refid="structLctrAcadBigInfo__t_1a7b926c7083f6f00e0bc2e660da9fbee0" prot="public" virt="non-virtual"><scope>LctrAcadBigInfo_t</scope><name>bigOffsUnits</name></member>
+      <member refid="structLctrAcadBigInfo__t_1a2eb1d793f05aeff90dc9b94b6b383d76" prot="public" virt="non-virtual"><scope>LctrAcadBigInfo_t</scope><name>bisPldCtr</name></member>
+      <member refid="structLctrAcadBigInfo__t_1ac0f518622e3449509ff0b3a626d47432" prot="public" virt="non-virtual"><scope>LctrAcadBigInfo_t</scope><name>bisSpaceUsec</name></member>
+      <member refid="structLctrAcadBigInfo__t_1a15c7b3570ba4d9011b02743e1e0bafcd" prot="public" virt="non-virtual"><scope>LctrAcadBigInfo_t</scope><name>bn</name></member>
+      <member refid="structLctrAcadBigInfo__t_1acd44ae7d337320b132a974560d6ad137" prot="public" virt="non-virtual"><scope>LctrAcadBigInfo_t</scope><name>chanMap</name></member>
+      <member refid="structLctrAcadBigInfo__t_1a6354bc7a3bdea1054f03eba485aa9a5e" prot="public" virt="non-virtual"><scope>LctrAcadBigInfo_t</scope><name>encrypt</name></member>
+      <member refid="structLctrAcadBigInfo__t_1a74c338d4fede82682f39823c2b3a3576" prot="public" virt="non-virtual"><scope>LctrAcadBigInfo_t</scope><name>framing</name></member>
+      <member refid="structLctrAcadBigInfo__t_1a56d152c04cb21d116ae874f30457741d" prot="public" virt="non-virtual"><scope>LctrAcadBigInfo_t</scope><name>giv</name></member>
+      <member refid="structLctrAcadBigInfo__t_1ab1b3fc0c1f28c6c397c91b9c4b646bb6" prot="public" virt="non-virtual"><scope>LctrAcadBigInfo_t</scope><name>gskd</name></member>
+      <member refid="structLctrAcadBigInfo__t_1a351e4cf7681999ca914af182491c63dd" prot="public" virt="non-virtual"><scope>LctrAcadBigInfo_t</scope><name>hdr</name></member>
+      <member refid="structLctrAcadBigInfo__t_1a0e85c8fee71ed85f6ed2e74877e8dc77" prot="public" virt="non-virtual"><scope>LctrAcadBigInfo_t</scope><name>irc</name></member>
+      <member refid="structLctrAcadBigInfo__t_1ade97cd89c3b00349ebc7bc980f2fbb63" prot="public" virt="non-virtual"><scope>LctrAcadBigInfo_t</scope><name>isoInter</name></member>
+      <member refid="structLctrAcadBigInfo__t_1a63ba0577aa1e18bee5327f45c6c4465e" prot="public" virt="non-virtual"><scope>LctrAcadBigInfo_t</scope><name>maxPdu</name></member>
+      <member refid="structLctrAcadBigInfo__t_1afde337a70f0ca50627d581359349096b" prot="public" virt="non-virtual"><scope>LctrAcadBigInfo_t</scope><name>maxSdu</name></member>
+      <member refid="structLctrAcadBigInfo__t_1ac5d8ef3a7ff710a8d36cdca563eda483" prot="public" virt="non-virtual"><scope>LctrAcadBigInfo_t</scope><name>nse</name></member>
+      <member refid="structLctrAcadBigInfo__t_1ade67431fad46bc14b1e9abf0a4757aff" prot="public" virt="non-virtual"><scope>LctrAcadBigInfo_t</scope><name>numBis</name></member>
+      <member refid="structLctrAcadBigInfo__t_1a0bd1b06f0a104fe18fcf8f1732cdb6e7" prot="public" virt="non-virtual"><scope>LctrAcadBigInfo_t</scope><name>phy</name></member>
+      <member refid="structLctrAcadBigInfo__t_1aa84311755ae828530c509daa711c7a6a" prot="public" virt="non-virtual"><scope>LctrAcadBigInfo_t</scope><name>pto</name></member>
+      <member refid="structLctrAcadBigInfo__t_1a7c6ab78100eba18cd61f805fc7ee62ff" prot="public" virt="non-virtual"><scope>LctrAcadBigInfo_t</scope><name>sduInterUsec</name></member>
+      <member refid="structLctrAcadBigInfo__t_1a35111a84b8b99a65da18cd917c667f42" prot="public" virt="non-virtual"><scope>LctrAcadBigInfo_t</scope><name>seedAccAddr</name></member>
+      <member refid="structLctrAcadBigInfo__t_1a0e42f933291839a5649746a20069fe9b" prot="public" virt="non-virtual"><scope>LctrAcadBigInfo_t</scope><name>subEvtInterUsec</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

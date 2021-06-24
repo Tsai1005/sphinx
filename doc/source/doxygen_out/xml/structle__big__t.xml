@@ -1,0 +1,453 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structle__big__t" kind="struct" language="C++" prot="public">
+    <compoundname>le_big_t</compoundname>
+    <includes refid="ll__bis_8h" local="no">ll_bis.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structle__big__t_1ad39175de42c3c27aa564e3a2c64be9ff" prot="public" static="no" mutable="no">
+        <type>struct list_head</type>
+        <definition>struct list_head le_big_t::entry</definition>
+        <argsstring></argsstring>
+        <name>entry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>List entry </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="93" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__big__t_1a0a814e20299b999f85afe260abb8f5e0" prot="public" static="no" mutable="no">
+        <type>struct list_head</type>
+        <definition>struct list_head le_big_t::bis_head</definition>
+        <argsstring></argsstring>
+        <name>bis_head</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>List entry </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="93" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__big__t_1ad2d41933109e17bd2b79c0a47d2d1d0b" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* le_big_t::hw</definition>
+        <argsstring></argsstring>
+        <name>hw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="102" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__big__t_1a302b5a41685a4b5875dc9dd6fb00438e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_big_t::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Current state. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="105" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__big__t_1a8c51844165f820888b9a71e3e8fadabc" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_big_t::handle</definition>
+        <argsstring></argsstring>
+        <name>handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>BIG handle. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="106" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__big__t_1ae29aa1216dbd6efe1269694c0ff7915e" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__defines_8h_1acb969664188d3b5c343b54570b707cd9" kindref="member">LlRole_t</ref></type>
+        <definition>LlRole_t le_big_t::role</definition>
+        <argsstring></argsstring>
+        <name>role</name>
+        <bitfield> 8</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Role. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="107" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__big__t_1af67168b7c3135d1cf9ad5cf6042b724b" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t le_big_t::maxPdu</definition>
+        <argsstring></argsstring>
+        <name>maxPdu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum size of BIS Data PDU. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="110" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__big__t_1aeaa76e7393e0ac5321ee1d76177d3296" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t le_big_t::maxSdu</definition>
+        <argsstring></argsstring>
+        <name>maxSdu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum size of ISO SDU. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="111" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__big__t_1adc4c659401867a7e3382c300d9046c5c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t le_big_t::sduInterUsec</definition>
+        <argsstring></argsstring>
+        <name>sduInterUsec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SDU interval in microseconds. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="114" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__big__t_1a263055c665a85faf5bdfa3860ad39dc3" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t le_big_t::bisSpaceUsec</definition>
+        <argsstring></argsstring>
+        <name>bisSpaceUsec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>BIS space in microseconds. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="115" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__big__t_1afb550fe0e67e8960b0762f8175b9ede9" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t le_big_t::isoInterUsec</definition>
+        <argsstring></argsstring>
+        <name>isoInterUsec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Isochronous PDU interval in microseconds. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="116" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__big__t_1add7ca06e23e5918c77acbf4e5ae0b33f" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_big_t::bn</definition>
+        <argsstring></argsstring>
+        <name>bn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Burst number. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="117" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__big__t_1a9fb9f8a0ddc0e146a0c0b914ce3c0e26" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_big_t::nse</definition>
+        <argsstring></argsstring>
+        <name>nse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum number of subevent in each interval on BIS. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="118" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__big__t_1a9f1995b0bc3ce621b995e4a4298a2441" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_big_t::pto</definition>
+        <argsstring></argsstring>
+        <name>pto</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pre-transmission offset. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="119" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__big__t_1aefc1238eec0062d8cb9c07482ebb9ae2" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_big_t::irc</definition>
+        <argsstring></argsstring>
+        <name>irc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Immediate repetition count. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="120" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__big__t_1a5c805071cf61a105aa27b33fd9c1ca86" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__defines_8h_1abc82a5d7375f4c58cf47b3b284b24c49" kindref="member">LlFraming_t</ref></type>
+        <definition>LlFraming_t le_big_t::framing</definition>
+        <argsstring></argsstring>
+        <name>framing</name>
+        <bitfield> 8</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>BIS Data PDU format. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="121" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__big__t_1aaf8a0b50ed05ab82bbcbd74b238031d0" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__iso_8h_1a670cd0842150eedf5fa09adca1f054b2" kindref="member">LlPacking_t</ref></type>
+        <definition>LlPacking_t le_big_t::packing</definition>
+        <argsstring></argsstring>
+        <name>packing</name>
+        <bitfield> 8</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Packing sequence scheme. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="122" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__big__t_1a62fdab0525a42f6dac459f7199295078" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t le_big_t::eventCounter</definition>
+        <argsstring></argsstring>
+        <name>eventCounter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Event counter. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="125" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__big__t_1a78932c6ad77f32daf61e0f51e4bd8876" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t le_big_t::syncDelayUsec</definition>
+        <argsstring></argsstring>
+        <name>syncDelayUsec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Synchronization delay in microseconds. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="126" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__big__t_1ab80e473fd6fab9ff7a21d505071cd9e5" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t le_big_t::transLatUsec</definition>
+        <argsstring></argsstring>
+        <name>transLatUsec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The maximum transmission latency, in microseconds. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="127" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__big__t_1ac476aa9144dd7b58cfc1037db8c72d0f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t le_big_t::subInterUsec</definition>
+        <argsstring></argsstring>
+        <name>subInterUsec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Subevent interval in microseconds. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="128" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__big__t_1abdc5031680c739b09c1367249fc906cf" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_big_t::phy</definition>
+        <argsstring></argsstring>
+        <name>phy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="130" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__big__t_1a87434bacf4e16752ec41a7d203c5e642" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_big_t::numBis</definition>
+        <argsstring></argsstring>
+        <name>numBis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of BISs. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="133" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__big__t_1a622908664b0333397aa763c61473d886" prot="public" static="no" mutable="no">
+        <type>union le_big_t::@17</type>
+        <definition>union le_big_t::@17  le_big_t::roleData</definition>
+        <argsstring></argsstring>
+        <name>roleData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Role-specific data. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="162" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__big__t_1a1fd56a690bafc53a6a8bc658ee54d00a" prot="public" static="no" mutable="no">
+        <type>struct le_big_t::@18</type>
+        <definition>struct le_big_t::@18  le_big_t::bcp</definition>
+        <argsstring></argsstring>
+        <name>bcp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>BIG Control Procedure data. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="177" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__big__t_1a37811274ea6af5868e0e07043d5acfae" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t le_big_t::seedAccAddr</definition>
+        <argsstring></argsstring>
+        <name>seedAccAddr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Seed access address. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="180" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__big__t_1aa02661b6f83341729f8f46e76ed796a6" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t le_big_t::baseCrcInit</definition>
+        <argsstring></argsstring>
+        <name>baseCrcInit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Base CRC Init. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="181" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__big__t_1afcf71d726fe9228df00efe53d751db8c" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref></type>
+        <definition>bool_t le_big_t::encrypt</definition>
+        <argsstring></argsstring>
+        <name>encrypt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Encryption enable for BIS. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="185" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__big__t_1adbbbad79ea22bf8c4b33dea8f55db56f" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_big_t::giv[LL_GIV_LEN]</definition>
+        <argsstring>[LL_GIV_LEN]</argsstring>
+        <name>giv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>GIV. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="186" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__big__t_1ad1f12d259c16eba98171c7f012c6393c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_big_t::gskd[LL_GSKD_LEN]</definition>
+        <argsstring>[LL_GSKD_LEN]</argsstring>
+        <name>gskd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>GSKD. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="187" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__big__t_1a2231d6bed805cc48d5bf40c9d9d938dc" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref></type>
+        <definition>bool_t le_big_t::lastPduMissed</definition>
+        <argsstring></argsstring>
+        <name>lastPduMissed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Rx failure on last PDU. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="190" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Broadcast Isochronous Group (BIG) context. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="97" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="97" bodyend="191"/>
+    <listofallmembers>
+      <member refid="structle__big__t_1aa02661b6f83341729f8f46e76ed796a6" prot="public" virt="non-virtual"><scope>le_big_t</scope><name>baseCrcInit</name></member>
+      <member refid="structle__big__t_1a1fd56a690bafc53a6a8bc658ee54d00a" prot="public" virt="non-virtual"><scope>le_big_t</scope><name>bcp</name></member>
+      <member refid="structle__big__t_1a0a814e20299b999f85afe260abb8f5e0" prot="public" virt="non-virtual"><scope>le_big_t</scope><name>bis_head</name></member>
+      <member refid="structle__big__t_1a263055c665a85faf5bdfa3860ad39dc3" prot="public" virt="non-virtual"><scope>le_big_t</scope><name>bisSpaceUsec</name></member>
+      <member refid="structle__big__t_1add7ca06e23e5918c77acbf4e5ae0b33f" prot="public" virt="non-virtual"><scope>le_big_t</scope><name>bn</name></member>
+      <member refid="structle__big__t_1afcf71d726fe9228df00efe53d751db8c" prot="public" virt="non-virtual"><scope>le_big_t</scope><name>encrypt</name></member>
+      <member refid="structle__big__t_1ad39175de42c3c27aa564e3a2c64be9ff" prot="public" virt="non-virtual"><scope>le_big_t</scope><name>entry</name></member>
+      <member refid="structle__big__t_1a62fdab0525a42f6dac459f7199295078" prot="public" virt="non-virtual"><scope>le_big_t</scope><name>eventCounter</name></member>
+      <member refid="structle__big__t_1a5c805071cf61a105aa27b33fd9c1ca86" prot="public" virt="non-virtual"><scope>le_big_t</scope><name>framing</name></member>
+      <member refid="structle__big__t_1adbbbad79ea22bf8c4b33dea8f55db56f" prot="public" virt="non-virtual"><scope>le_big_t</scope><name>giv</name></member>
+      <member refid="structle__big__t_1ad1f12d259c16eba98171c7f012c6393c" prot="public" virt="non-virtual"><scope>le_big_t</scope><name>gskd</name></member>
+      <member refid="structle__big__t_1a8c51844165f820888b9a71e3e8fadabc" prot="public" virt="non-virtual"><scope>le_big_t</scope><name>handle</name></member>
+      <member refid="structle__big__t_1ad2d41933109e17bd2b79c0a47d2d1d0b" prot="public" virt="non-virtual"><scope>le_big_t</scope><name>hw</name></member>
+      <member refid="structle__big__t_1aefc1238eec0062d8cb9c07482ebb9ae2" prot="public" virt="non-virtual"><scope>le_big_t</scope><name>irc</name></member>
+      <member refid="structle__big__t_1afb550fe0e67e8960b0762f8175b9ede9" prot="public" virt="non-virtual"><scope>le_big_t</scope><name>isoInterUsec</name></member>
+      <member refid="structle__big__t_1a2231d6bed805cc48d5bf40c9d9d938dc" prot="public" virt="non-virtual"><scope>le_big_t</scope><name>lastPduMissed</name></member>
+      <member refid="structle__big__t_1af67168b7c3135d1cf9ad5cf6042b724b" prot="public" virt="non-virtual"><scope>le_big_t</scope><name>maxPdu</name></member>
+      <member refid="structle__big__t_1aeaa76e7393e0ac5321ee1d76177d3296" prot="public" virt="non-virtual"><scope>le_big_t</scope><name>maxSdu</name></member>
+      <member refid="structle__big__t_1a9fb9f8a0ddc0e146a0c0b914ce3c0e26" prot="public" virt="non-virtual"><scope>le_big_t</scope><name>nse</name></member>
+      <member refid="structle__big__t_1a87434bacf4e16752ec41a7d203c5e642" prot="public" virt="non-virtual"><scope>le_big_t</scope><name>numBis</name></member>
+      <member refid="structle__big__t_1aaf8a0b50ed05ab82bbcbd74b238031d0" prot="public" virt="non-virtual"><scope>le_big_t</scope><name>packing</name></member>
+      <member refid="structle__big__t_1abdc5031680c739b09c1367249fc906cf" prot="public" virt="non-virtual"><scope>le_big_t</scope><name>phy</name></member>
+      <member refid="structle__big__t_1a9f1995b0bc3ce621b995e4a4298a2441" prot="public" virt="non-virtual"><scope>le_big_t</scope><name>pto</name></member>
+      <member refid="structle__big__t_1ae29aa1216dbd6efe1269694c0ff7915e" prot="public" virt="non-virtual"><scope>le_big_t</scope><name>role</name></member>
+      <member refid="structle__big__t_1a622908664b0333397aa763c61473d886" prot="public" virt="non-virtual"><scope>le_big_t</scope><name>roleData</name></member>
+      <member refid="structle__big__t_1adc4c659401867a7e3382c300d9046c5c" prot="public" virt="non-virtual"><scope>le_big_t</scope><name>sduInterUsec</name></member>
+      <member refid="structle__big__t_1a37811274ea6af5868e0e07043d5acfae" prot="public" virt="non-virtual"><scope>le_big_t</scope><name>seedAccAddr</name></member>
+      <member refid="structle__big__t_1a302b5a41685a4b5875dc9dd6fb00438e" prot="public" virt="non-virtual"><scope>le_big_t</scope><name>state</name></member>
+      <member refid="structle__big__t_1ac476aa9144dd7b58cfc1037db8c72d0f" prot="public" virt="non-virtual"><scope>le_big_t</scope><name>subInterUsec</name></member>
+      <member refid="structle__big__t_1a78932c6ad77f32daf61e0f51e4bd8876" prot="public" virt="non-virtual"><scope>le_big_t</scope><name>syncDelayUsec</name></member>
+      <member refid="structle__big__t_1ab80e473fd6fab9ff7a21d505071cd9e5" prot="public" virt="non-virtual"><scope>le_big_t</scope><name>transLatUsec</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

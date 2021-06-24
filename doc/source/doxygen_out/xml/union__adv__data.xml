@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="union__adv__data" kind="union" language="C++" prot="public">
+    <compoundname>_adv_data</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="union__adv__data_1ae3f9636f87dd15824e8fc06fc613133c" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structadvertising__data" kindref="compound">advertising_data</ref></type>
+        <definition>struct advertising_data _adv_data::adv_data</definition>
+        <argsstring></argsstring>
+        <name>adv_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/hci_ll.c" line="682" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/hci_ll.c" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__adv__data_1a542bf8c66d53b9b953c102727af05903" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 _adv_data::buf[(32+3)/4]</definition>
+        <argsstring>[(32+3)/4]</argsstring>
+        <name>buf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/hci_ll.c" line="104" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/hci_ll.c" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="916">
+        <label>advertising_data</label>
+        <link refid="structadvertising__data"/>
+      </node>
+      <node id="915">
+        <label>_adv_data</label>
+        <link refid="union__adv__data"/>
+        <childnode refid="916" relation="usage">
+          <edgelabel>adv_data</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/hci_ll.c" line="101" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/hci_ll.c" bodystart="101" bodyend="105"/>
+    <listofallmembers>
+      <member refid="union__adv__data_1ae3f9636f87dd15824e8fc06fc613133c" prot="public" virt="non-virtual"><scope>_adv_data</scope><name>adv_data</name></member>
+      <member refid="union__adv__data_1a542bf8c66d53b9b953c102727af05903" prot="public" virt="non-virtual"><scope>_adv_data</scope><name>buf</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

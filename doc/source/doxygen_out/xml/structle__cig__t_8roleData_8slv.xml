@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structle__cig__t_8roleData_8slv" kind="struct" language="C++" prot="public">
+    <compoundname>le_cig_t.roleData.slv</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structle__cig__t_8roleData_8slv_1adb8a8423d1e9d146b168900d2e8e364f" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>cigEvtCounter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Event counter. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="200" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cig__t_8roleData_8slv_1a41d17710f27a9f0cf7e985c2fde27e29" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>anchorPointUsec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Anchor point in microseconds. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="201" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cig__t_8roleData_8slv_1ab9038301d7413c816e2e14c8f891f51e" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>lastActiveEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Last active event counter. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="202" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cig__t_8roleData_8slv_1a22bf0a1edbd857e52277cd16fc494fbe" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>totalAcc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Combined sleep clock inaccuracy. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="203" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="199" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="199" bodyend="204"/>
+    <listofallmembers>
+      <member refid="structle__cig__t_8roleData_8slv_1a41d17710f27a9f0cf7e985c2fde27e29" prot="public" virt="non-virtual"><scope>le_cig_t.roleData.slv</scope><name>anchorPointUsec</name></member>
+      <member refid="structle__cig__t_8roleData_8slv_1adb8a8423d1e9d146b168900d2e8e364f" prot="public" virt="non-virtual"><scope>le_cig_t.roleData.slv</scope><name>cigEvtCounter</name></member>
+      <member refid="structle__cig__t_8roleData_8slv_1ab9038301d7413c816e2e14c8f891f51e" prot="public" virt="non-virtual"><scope>le_cig_t.roleData.slv</scope><name>lastActiveEvent</name></member>
+      <member refid="structle__cig__t_8roleData_8slv_1a22bf0a1edbd857e52277cd16fc494fbe" prot="public" virt="non-virtual"><scope>le_cig_t.roleData.slv</scope><name>totalAcc</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structle__scan__link" kind="struct" language="C++" prot="public">
+    <compoundname>le_scan_link</compoundname>
+    <includes refid="ll__scan_8h" local="no">ll_scan.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structle__scan__link_1a5d2ca26d956253d21d3bd97593faf52c" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* le_scan_link::hw</definition>
+        <argsstring></argsstring>
+        <name>hw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_scan.h" line="7" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_scan.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__scan__link_1aef53ec6054aeaa2a9b4ec45dc8aaeb10" prot="public" static="no" mutable="no">
+        <type>struct le_addr</type>
+        <definition>struct le_addr le_scan_link::local</definition>
+        <argsstring></argsstring>
+        <name>local</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_scan.h" line="7" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_scan.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__scan__link_1addfde98e7c6f92a200b9ef4be373e444" prot="public" static="no" mutable="no">
+        <type>struct le_addr</type>
+        <definition>struct le_addr le_scan_link::peer</definition>
+        <argsstring></argsstring>
+        <name>peer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_scan.h" line="7" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_scan.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_scan.h" line="6" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_scan.h" bodystart="6" bodyend="11"/>
+    <listofallmembers>
+      <member refid="structle__scan__link_1a5d2ca26d956253d21d3bd97593faf52c" prot="public" virt="non-virtual"><scope>le_scan_link</scope><name>hw</name></member>
+      <member refid="structle__scan__link_1aef53ec6054aeaa2a9b4ec45dc8aaeb10" prot="public" virt="non-virtual"><scope>le_scan_link</scope><name>local</name></member>
+      <member refid="structle__scan__link_1addfde98e7c6f92a200b9ef4be373e444" prot="public" virt="non-virtual"><scope>le_scan_link</scope><name>peer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

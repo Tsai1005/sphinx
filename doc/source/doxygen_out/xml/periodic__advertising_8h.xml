@@ -1,0 +1,394 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="periodic__advertising_8h" kind="file" language="C++">
+    <compoundname>periodic_advertising.h</compoundname>
+    <includes local="yes">typedef.h</includes>
+    <incdepgraph>
+      <node id="5283">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/periodic_advertising.h</label>
+        <link refid="periodic_advertising.h"/>
+        <childnode refid="5284" relation="include">
+        </childnode>
+      </node>
+      <node id="5284">
+        <label>typedef.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structle__ext__periodic__link" prot="public">le_ext_periodic_link</innerclass>
+    <innerclass refid="struct____period__adv__report__event" prot="public">__period_adv_report_event</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="periodic__advertising_8h_1ae152f66024b15e6a1bd2fb2f38916080" prot="public" static="no">
+        <name>PERIOD_REPORT_EVENT_MAX_DATA_LEN</name>
+        <initializer>( 0xff - sizeof(struct __period_adv_report_event) )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/periodic_advertising.h" line="6" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/periodic_advertising.h" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="periodic__advertising_8h_1a1b70d876770ccff427513794d6b0b2a7" prot="public" static="no">
+        <name>@78</name>
+        <enumvalue id="periodic__advertising_8h_1a1b70d876770ccff427513794d6b0b2a7ae734f6924c889f1d83cab6d6c1dbd3ee" prot="public">
+          <name>PERIOD_SYNC_READY</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="periodic__advertising_8h_1a1b70d876770ccff427513794d6b0b2a7ab5580f71c9cb9364d815f75d99ae7777" prot="public">
+          <name>PERIOD_SYNC_CREATE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="periodic__advertising_8h_1a1b70d876770ccff427513794d6b0b2a7ad3020ea9ce7aa6aa9f89f8a3eab0a482" prot="public">
+          <name>PERIOD_SYNC_ESTABLISHED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="periodic__advertising_8h_1a1b70d876770ccff427513794d6b0b2a7a3bd470b9c23664a75d039fa267e2384c" prot="public">
+          <name>PERIOD_SYNC_TIMEOUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/periodic_advertising.h" line="8" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/periodic_advertising.h" bodystart="8" bodyend="13"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="periodic__advertising_8h_1a74e511c8d41ac66c0e336bc75ad3899f" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="struct____period__adv__report__event" kindref="compound">__period_adv_report_event</ref></type>
+        <definition>struct __period_adv_report_event  _GNU_PACKED_</definition>
+        <argsstring></argsstring>
+        <name>_GNU_PACKED_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/periodic_advertising.h" line="32" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="periodic__advertising_8h_1ae4c1173b1ac6bea157840c6ac6b761bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void le_periodic_adv_report_event_handle</definition>
+        <argsstring>(struct le_ext_scan_link *link, struct ble_ext_rx *rx)</argsstring>
+        <name>le_periodic_adv_report_event_handle</name>
+        <param>
+          <type>struct <ref refid="structle__ext__scan__link" kindref="compound">le_ext_scan_link</ref> *</type>
+          <declname>link</declname>
+        </param>
+        <param>
+          <type>struct ble_ext_rx *</type>
+          <declname>rx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/periodic_advertising.h" line="39" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="periodic__advertising_8h_1a89142a8970ae5b4af3c3c23ed18d7b25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ll_periodic_sync_open</definition>
+        <argsstring>(struct le_ext_scan_link *link, struct __SyncInfo_field *sync_info)</argsstring>
+        <name>ll_periodic_sync_open</name>
+        <param>
+          <type>struct <ref refid="structle__ext__scan__link" kindref="compound">le_ext_scan_link</ref> *</type>
+          <declname>link</declname>
+        </param>
+        <param>
+          <type>struct __SyncInfo_field *</type>
+          <declname>sync_info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/periodic_advertising.h" line="40" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="periodic__advertising_8h_1af49afe5c179976ba5bdfcae51ef44c1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void le_periodic_sync_timeout_close</definition>
+        <argsstring>(struct le_ext_scan_link *link)</argsstring>
+        <name>le_periodic_sync_timeout_close</name>
+        <param>
+          <type>struct <ref refid="structle__ext__scan__link" kindref="compound">le_ext_scan_link</ref> *</type>
+          <declname>link</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/periodic_advertising.h" line="41" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="periodic__advertising_8h_1a5d89d9c21ff50556913584d80de3d5fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ll_periodic_adv_data_update</definition>
+        <argsstring>(const struct __ext_adv_group *adv_set, ble_adv_set_t *bb_adv_set)</argsstring>
+        <name>ll_periodic_adv_data_update</name>
+        <param>
+          <type>const struct <ref refid="struct____ext__adv__group" kindref="compound">__ext_adv_group</ref> *</type>
+          <declname>adv_set</declname>
+        </param>
+        <param>
+          <type>ble_adv_set_t *</type>
+          <declname>bb_adv_set</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/periodic_advertising.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="periodic__advertising_8h_1a484edae6dbb9c79a7d8c7e934dccd64b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ll_periodic_advertising_create_sync</definition>
+        <argsstring>(void)</argsstring>
+        <name>ll_periodic_advertising_create_sync</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/periodic_advertising.h" line="50" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="periodic__advertising_8h_1afd2d2fbd19668e7559a29911bbd9a86e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ll_periodic_advertising_create_sync_cancel</definition>
+        <argsstring>(void)</argsstring>
+        <name>ll_periodic_advertising_create_sync_cancel</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/periodic_advertising.h" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="periodic__advertising_8h_1ab7ae6278cd3c4c7cfb049d39c26c2ded" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ll_periodic_advertising_terminate_sync</definition>
+        <argsstring>(u16 sync_handle)</argsstring>
+        <name>ll_periodic_advertising_terminate_sync</name>
+        <param>
+          <type>u16</type>
+          <declname>sync_handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/periodic_advertising.h" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="periodic__advertising_8h_1a1f3130c7e0993f56b48043e48f134abe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ll_periodic_adv_open</definition>
+        <argsstring>(u8 adv_handle, struct __ext_adv_group *adv_set)</argsstring>
+        <name>ll_periodic_adv_open</name>
+        <param>
+          <type>u8</type>
+          <declname>adv_handle</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="struct____ext__adv__group" kindref="compound">__ext_adv_group</ref> *</type>
+          <declname>adv_set</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/periodic_advertising.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="periodic__advertising_8h_1a69e4ba4b247ecec757e0c8ea22368b9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ll_periodic_adv_close</definition>
+        <argsstring>(u8 adv_handle)</argsstring>
+        <name>ll_periodic_adv_close</name>
+        <param>
+          <type>u8</type>
+          <declname>adv_handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/periodic_advertising.h" line="55" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="periodic__advertising_8h_1ad1c69a6b96fe71f20c4473d0c3471c5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* ll_get_periodic_link</definition>
+        <argsstring>(u8 adv_handle)</argsstring>
+        <name>ll_get_periodic_link</name>
+        <param>
+          <type>u8</type>
+          <declname>adv_handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/periodic_advertising.h" line="56" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="periodic__advertising_8h_1adb35ac2bf109737407038cac05c47148" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int le_cmd_set_periodic_adv</definition>
+        <argsstring>(u16 opcode, const u8 *data, u32 size)</argsstring>
+        <name>le_cmd_set_periodic_adv</name>
+        <param>
+          <type>u16</type>
+          <declname>opcode</declname>
+        </param>
+        <param>
+          <type>const u8 *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/periodic_advertising.h" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="periodic__advertising_8h_1ad61f03a6e6ac6a14b9a9e7bc44a74963" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int le_cmd_set_periodic_adv_sync</definition>
+        <argsstring>(u16 opcode, const u8 *data, u32 size)</argsstring>
+        <name>le_cmd_set_periodic_adv_sync</name>
+        <param>
+          <type>u16</type>
+          <declname>opcode</declname>
+        </param>
+        <param>
+          <type>const u8 *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/periodic_advertising.h" line="59" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>__PERIODIC_ADVERTISING_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__PERIODIC_ADVERTISING_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;typedef.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="periodic__advertising_8h_1ae152f66024b15e6a1bd2fb2f38916080" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PERIOD_REPORT_EVENT_MAX_DATA_LEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>0xff<sp/>-<sp/>sizeof(struct<sp/>__period_adv_report_event)<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="9" refid="periodic__advertising_8h_1a1b70d876770ccff427513794d6b0b2a7ae734f6924c889f1d83cab6d6c1dbd3ee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="periodic__advertising_8h_1a1b70d876770ccff427513794d6b0b2a7ae734f6924c889f1d83cab6d6c1dbd3ee" kindref="member">PERIOD_SYNC_READY</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="10" refid="periodic__advertising_8h_1a1b70d876770ccff427513794d6b0b2a7ab5580f71c9cb9364d815f75d99ae7777" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="periodic__advertising_8h_1a1b70d876770ccff427513794d6b0b2a7ab5580f71c9cb9364d815f75d99ae7777" kindref="member">PERIOD_SYNC_CREATE</ref>,</highlight></codeline>
+<codeline lineno="11" refid="periodic__advertising_8h_1a1b70d876770ccff427513794d6b0b2a7ad3020ea9ce7aa6aa9f89f8a3eab0a482" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="periodic__advertising_8h_1a1b70d876770ccff427513794d6b0b2a7ad3020ea9ce7aa6aa9f89f8a3eab0a482" kindref="member">PERIOD_SYNC_ESTABLISHED</ref>,</highlight></codeline>
+<codeline lineno="12" refid="periodic__advertising_8h_1a1b70d876770ccff427513794d6b0b2a7a3bd470b9c23664a75d039fa267e2384c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="periodic__advertising_8h_1a1b70d876770ccff427513794d6b0b2a7a3bd470b9c23664a75d039fa267e2384c" kindref="member">PERIOD_SYNC_TIMEOUT</ref>,</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="structle__ext__periodic__link" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structle__ext__periodic__link" kindref="compound">le_ext_periodic_link</ref><sp/>{</highlight></codeline>
+<codeline lineno="16" refid="structle__ext__periodic__link_1a3fe230ef16d4d3ffc0466079e9e1ceac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">list_head<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structle__ext__periodic__link_1a3fe230ef16d4d3ffc0466079e9e1ceac" kindref="member">entry</ref>;</highlight></codeline>
+<codeline lineno="17" refid="structle__ext__periodic__link_1a21586b2213c30ac5c88235898a85650a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structle__ext__periodic__link_1a21586b2213c30ac5c88235898a85650a" kindref="member">hw</ref>;</highlight></codeline>
+<codeline lineno="18" refid="structle__ext__periodic__link_1ac4bf8e0aec83f03c757ba9ab077c483d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">periodic_hw_info<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structle__ext__periodic__link_1ac4bf8e0aec83f03c757ba9ab077c483d" kindref="member">sync_hw_info</ref>;</highlight></codeline>
+<codeline lineno="19" refid="structle__ext__periodic__link_1aa1f1dedc91d818befdb11b10e446fe80" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structle__ext__periodic__link_1aa1f1dedc91d818befdb11b10e446fe80" kindref="member">adv_handle</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//&lt;<sp/>must<sp/>follow<sp/>Core_v5.0<sp/>struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="struct____period__adv__report__event" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct____period__adv__report__event" kindref="compound">__period_adv_report_event</ref><sp/>{</highlight></codeline>
+<codeline lineno="24" refid="struct____period__adv__report__event_1a991cfed4678c7c99c408a65c0c9b60cc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/><ref refid="struct____period__adv__report__event_1a991cfed4678c7c99c408a65c0c9b60cc" kindref="member">Subevent_Code</ref>;</highlight></codeline>
+<codeline lineno="25" refid="struct____period__adv__report__event_1a7d81678d9bd3cdebef6a6442d04c35d8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="struct____period__adv__report__event_1a7d81678d9bd3cdebef6a6442d04c35d8" kindref="member">Sync_Handle</ref>;</highlight></codeline>
+<codeline lineno="26" refid="struct____period__adv__report__event_1a5705aadb8ab5d7681c60cad4ea356c91" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/><ref refid="struct____period__adv__report__event_1a5705aadb8ab5d7681c60cad4ea356c91" kindref="member">Tx_Power</ref>;</highlight></codeline>
+<codeline lineno="27" refid="struct____period__adv__report__event_1a86068558e938b0a6729fd82608f14686" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/><ref refid="struct____period__adv__report__event_1a86068558e938b0a6729fd82608f14686" kindref="member">RSSI</ref>;</highlight></codeline>
+<codeline lineno="28" refid="struct____period__adv__report__event_1aea1c44426251e5cc6e628b0eb5400ef6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/><ref refid="struct____period__adv__report__event_1aea1c44426251e5cc6e628b0eb5400ef6" kindref="member">CTE_Type</ref>;</highlight></codeline>
+<codeline lineno="29" refid="struct____period__adv__report__event_1a469363139edc97b5c4fa472e959bd95c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/><ref refid="struct____period__adv__report__event_1a469363139edc97b5c4fa472e959bd95c" kindref="member">Data_Status</ref>;</highlight></codeline>
+<codeline lineno="30" refid="struct____period__adv__report__event_1ac079a9c8d3d6e2899c4a6801f64ded0b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/><ref refid="struct____period__adv__report__event_1ac079a9c8d3d6e2899c4a6801f64ded0b" kindref="member">Data_Length</ref>;</highlight></codeline>
+<codeline lineno="31" refid="struct____period__adv__report__event_1afa366f7fbadab19c04f5aa19b9833c9a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/>Data[0];</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}<sp/><ref refid="periodic__advertising_8h_1a74e511c8d41ac66c0e336bc75ad3899f" kindref="member">_GNU_PACKED_</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">/*-----------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>LL<sp/>Internal<sp/>API</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">//&lt;<sp/>Master<sp/>part</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="periodic__advertising_8h_1ae4c1173b1ac6bea157840c6ac6b761bb" kindref="member">le_periodic_adv_report_event_handle</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structle__ext__scan__link" kindref="compound">le_ext_scan_link</ref><sp/>*link,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>ble_ext_rx<sp/>*rx);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="periodic__advertising_8h_1a89142a8970ae5b4af3c3c23ed18d7b25" kindref="member">ll_periodic_sync_open</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structle__ext__scan__link" kindref="compound">le_ext_scan_link</ref><sp/>*link,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>__SyncInfo_field<sp/>*sync_info);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="periodic__advertising_8h_1af49afe5c179976ba5bdfcae51ef44c1b" kindref="member">le_periodic_sync_timeout_close</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structle__ext__scan__link" kindref="compound">le_ext_scan_link</ref><sp/>*link);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">//&lt;<sp/>Slave<sp/>part</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="periodic__advertising_8h_1a5d89d9c21ff50556913584d80de3d5fb" kindref="member">ll_periodic_adv_data_update</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct____ext__adv__group" kindref="compound">__ext_adv_group</ref><sp/>*adv_set,<sp/>ble_adv_set_t<sp/><sp/>*bb_adv_set);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">/*-----------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Link<sp/>Layer<sp/>API</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">//&lt;<sp/>Master<sp/>part</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="periodic__advertising_8h_1a484edae6dbb9c79a7d8c7e934dccd64b" kindref="member">ll_periodic_advertising_create_sync</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="periodic__advertising_8h_1afd2d2fbd19668e7559a29911bbd9a86e" kindref="member">ll_periodic_advertising_create_sync_cancel</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="periodic__advertising_8h_1ab7ae6278cd3c4c7cfb049d39c26c2ded" kindref="member">ll_periodic_advertising_terminate_sync</ref>(u16<sp/>sync_handle);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">//&lt;<sp/>Slave<sp/>part</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="periodic__advertising_8h_1a1f3130c7e0993f56b48043e48f134abe" kindref="member">ll_periodic_adv_open</ref>(u8<sp/><ref refid="structle__ext__periodic__link_1aa1f1dedc91d818befdb11b10e446fe80" kindref="member">adv_handle</ref>,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct____ext__adv__group" kindref="compound">__ext_adv_group</ref><sp/>*adv_set);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="periodic__advertising_8h_1a69e4ba4b247ecec757e0c8ea22368b9e" kindref="member">ll_periodic_adv_close</ref>(u8<sp/><ref refid="structle__ext__periodic__link_1aa1f1dedc91d818befdb11b10e446fe80" kindref="member">adv_handle</ref>);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="periodic__advertising_8h_1ad1c69a6b96fe71f20c4473d0c3471c5f" kindref="member">ll_get_periodic_link</ref>(u8<sp/><ref refid="structle__ext__periodic__link_1aa1f1dedc91d818befdb11b10e446fe80" kindref="member">adv_handle</ref>);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">//&lt;<sp/>Common<sp/>part</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="periodic__advertising_8h_1adb35ac2bf109737407038cac05c47148" kindref="member">le_cmd_set_periodic_adv</ref>(u16<sp/>opcode,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>*data,<sp/>u32<sp/>size);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="periodic__advertising_8h_1ad61f03a6e6ac6a14b9a9e7bc44a74963" kindref="member">le_cmd_set_periodic_adv_sync</ref>(u16<sp/>opcode,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>*data,<sp/>u32<sp/>size);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__PERIODIC_ADVERTISING_H__<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/periodic_advertising.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,648 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="ll__ext__init_8c" kind="file" language="C++">
+    <compoundname>ll_ext_init.c</compoundname>
+    <includes refid="link__layer_8h" local="yes">ble/link_layer.h</includes>
+    <includes local="yes">RF_ble.h</includes>
+    <includes local="yes">hci_controller.h</includes>
+    <includes local="yes">btcontroller_heap.h</includes>
+    <includes local="yes">common/debug.h</includes>
+    <incdepgraph>
+      <node id="3406">
+        <label>os/os_type.h</label>
+      </node>
+      <node id="3402">
+        <label>common/atomic.h</label>
+      </node>
+      <node id="3416">
+        <label>common/lbuf.h</label>
+      </node>
+      <node id="3399">
+        <label>common/list.h</label>
+      </node>
+      <node id="3405">
+        <label>common/thread.h</label>
+      </node>
+      <node id="3408">
+        <label>ble/ll_adv.h</label>
+        <link refid="ll__adv_8h"/>
+        <childnode refid="3400" relation="include">
+        </childnode>
+      </node>
+      <node id="3424">
+        <label>common/debug.h</label>
+      </node>
+      <node id="3396">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_ext_init.c</label>
+        <link refid="ll_ext_init.c"/>
+        <childnode refid="3397" relation="include">
+        </childnode>
+        <childnode refid="3421" relation="include">
+        </childnode>
+        <childnode refid="3422" relation="include">
+        </childnode>
+        <childnode refid="3423" relation="include">
+        </childnode>
+        <childnode refid="3424" relation="include">
+        </childnode>
+      </node>
+      <node id="3410">
+        <label>ble/ll_init.h</label>
+        <link refid="ll__init_8h"/>
+        <childnode refid="3400" relation="include">
+        </childnode>
+      </node>
+      <node id="3412">
+        <label>data_extension.h</label>
+        <link refid="data__extension_8h"/>
+        <childnode refid="3398" relation="include">
+        </childnode>
+      </node>
+      <node id="3415">
+        <label>ble/ll_iso.h</label>
+        <link refid="ll__iso_8h"/>
+        <childnode refid="3403" relation="include">
+        </childnode>
+        <childnode refid="3416" relation="include">
+        </childnode>
+        <childnode refid="3405" relation="include">
+        </childnode>
+      </node>
+      <node id="3421">
+        <label>RF_ble.h</label>
+      </node>
+      <node id="3398">
+        <label>typedef.h</label>
+      </node>
+      <node id="3423">
+        <label>btcontroller_heap.h</label>
+      </node>
+      <node id="3404">
+        <label>white_list.h</label>
+        <link refid="white__list_8h"/>
+        <childnode refid="3398" relation="include">
+        </childnode>
+      </node>
+      <node id="3418">
+        <label>audio_codec.h</label>
+        <link refid="audio__codec_8h"/>
+        <childnode refid="3403" relation="include">
+        </childnode>
+      </node>
+      <node id="3409">
+        <label>ble/ll_scan.h</label>
+        <link refid="ll__scan_8h"/>
+        <childnode refid="3400" relation="include">
+        </childnode>
+      </node>
+      <node id="3407">
+        <label>ble/llcp.h</label>
+        <link refid="llcp_8h"/>
+        <childnode refid="3398" relation="include">
+        </childnode>
+        <childnode refid="3403" relation="include">
+        </childnode>
+      </node>
+      <node id="3413">
+        <label>multiple_phys.h</label>
+        <link refid="multiple__phys_8h"/>
+        <childnode refid="3398" relation="include">
+        </childnode>
+      </node>
+      <node id="3411">
+        <label>resolve_list.h</label>
+        <link refid="resolve__list_8h"/>
+        <childnode refid="3398" relation="include">
+        </childnode>
+      </node>
+      <node id="3400">
+        <label>ble_interface.h</label>
+      </node>
+      <node id="3414">
+        <label>ble/ll_cte.h</label>
+        <link refid="ll__cte_8h"/>
+        <childnode refid="3403" relation="include">
+        </childnode>
+      </node>
+      <node id="3422">
+        <label>hci_controller.h</label>
+      </node>
+      <node id="3401">
+        <label>common/sys_timer.h</label>
+      </node>
+      <node id="3397">
+        <label>ble/link_layer.h</label>
+        <link refid="link__layer_8h"/>
+        <childnode refid="3398" relation="include">
+        </childnode>
+        <childnode refid="3399" relation="include">
+        </childnode>
+        <childnode refid="3400" relation="include">
+        </childnode>
+        <childnode refid="3401" relation="include">
+        </childnode>
+        <childnode refid="3402" relation="include">
+        </childnode>
+        <childnode refid="3403" relation="include">
+        </childnode>
+        <childnode refid="3404" relation="include">
+        </childnode>
+        <childnode refid="3405" relation="include">
+        </childnode>
+        <childnode refid="3406" relation="include">
+        </childnode>
+        <childnode refid="3407" relation="include">
+        </childnode>
+        <childnode refid="3408" relation="include">
+        </childnode>
+        <childnode refid="3409" relation="include">
+        </childnode>
+        <childnode refid="3410" relation="include">
+        </childnode>
+        <childnode refid="3411" relation="include">
+        </childnode>
+        <childnode refid="3412" relation="include">
+        </childnode>
+        <childnode refid="3413" relation="include">
+        </childnode>
+        <childnode refid="3414" relation="include">
+        </childnode>
+        <childnode refid="3415" relation="include">
+        </childnode>
+        <childnode refid="3417" relation="include">
+        </childnode>
+        <childnode refid="3419" relation="include">
+        </childnode>
+        <childnode refid="3420" relation="include">
+        </childnode>
+      </node>
+      <node id="3403">
+        <label>ll_defines.h</label>
+        <link refid="ll__defines_8h"/>
+        <childnode refid="3398" relation="include">
+        </childnode>
+      </node>
+      <node id="3419">
+        <label>ble/ll_cis.h</label>
+        <link refid="ll__cis_8h"/>
+        <childnode refid="3415" relation="include">
+        </childnode>
+        <childnode refid="3397" relation="include">
+        </childnode>
+      </node>
+      <node id="3417">
+        <label>ble/ll_bis.h</label>
+        <link refid="ll__bis_8h"/>
+        <childnode refid="3415" relation="include">
+        </childnode>
+        <childnode refid="3418" relation="include">
+        </childnode>
+      </node>
+      <node id="3420">
+        <label>ble/ll_pc.h</label>
+        <link refid="ll__pc_8h"/>
+        <childnode refid="3403" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="ll__ext__init_8c_1a6c6991cba0e2995d7d9aec73e0324317" prot="public" static="no">
+        <name>LOG_TAG_CONST</name>
+        <initializer>LL_EXT_INIT</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_ext_init.c" line="6" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_ext_init.c" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__ext__init_8c_1a7ce0df38eb467e59f209470c8f5ac4e6" prot="public" static="no">
+        <name>LOG_TAG</name>
+        <initializer>&quot;[LL-Ext INIT]&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_ext_init.c" line="7" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_ext_init.c" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__ext__init_8c_1a9eeb6e067100d0dec6e53bce19a403e0" prot="public" static="no">
+        <name>LOG_ERROR_ENABLE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_ext_init.c" line="8" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_ext_init.c" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__ext__init_8c_1a69321c8a2a0b07a07fb5088e82e25eb0" prot="public" static="no">
+        <name>LOG_INFO_ENABLE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_ext_init.c" line="9" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_ext_init.c" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__ext__init_8c_1a04135f631fe91199f05b1d816dda8756" prot="public" static="no">
+        <name>LOG_DUMP_ENABLE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_ext_init.c" line="10" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_ext_init.c" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__ext__init_8c_1a163fc974f6617f7f5c44dec8f5390964" prot="public" static="no">
+        <name>AT_BLE5_LL_CODE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_ext_init.c" line="20" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_ext_init.c" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__ext__init_8c_1a533eccbb5f4284123f0ba67115b0a883" prot="public" static="no">
+        <name>AT_BLE5_LL_PROBE_CODE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_ext_init.c" line="21" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_ext_init.c" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="link__layer_8h" kindref="compound">ble/link_layer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;RF_ble.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;hci_controller.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;btcontroller_heap.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_TAG_CONST<sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL_EXT_INIT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_TAG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;[LL-Ext<sp/>INIT]&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_ERROR_ENABLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_INFO_ENABLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_DUMP_ENABLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;common/debug.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>SUPPORT_MS_EXTENSIONS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>bss_seg(&quot;.ble_ll_bss&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>data_seg(&quot;.ble_ll_data&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>const_seg(&quot;.ble_ll_const&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>code_seg(&quot;.ble_ll_code&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AT_BLE5_LL_CODE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AT_BLE5_LL_PROBE_CODE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>BLUETOOTH_5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>HAVE_MALLOC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__ext_this<sp/><sp/><sp/><sp/><sp/><sp/>(ext_ll_hdl)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__ext_this<sp/><sp/><sp/><sp/><sp/><sp/>(&amp;ext_ll_hdl)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//&lt;<sp/>external<sp/>file<sp/>declaration</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__afh_8c_1af13ece4d6b4e782897f07f64cfc9b322" kindref="member">ll_channel_info_init</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>ble_conn_param<sp/>*conn_param);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//&lt;<sp/>local<sp/>file<sp/>declaration</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ll_ext_init_rx_probe_handler(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*priv,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>ble_ext_rx<sp/>*rx);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ll_ext_init_event_probe_handler(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*priv,<sp/>u32<sp/>param);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><ref refid="ll__ext__init_8c_1a533eccbb5f4284123f0ba67115b0a883" kindref="member">AT_BLE5_LL_PROBE_CODE</ref></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">ble_ext_handler<sp/>ll_ext_init_handler<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>.ext_rx_probe_handler<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>ll_ext_init_rx_probe_handler,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>.ext_event_probe_handler<sp/><sp/><sp/><sp/>=<sp/>ll_ext_init_event_probe_handler,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><ref refid="ll__ext__init_8c_1a533eccbb5f4284123f0ba67115b0a883" kindref="member">AT_BLE5_LL_PROBE_CODE</ref></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ll_ext_init_create_connection(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structle__ext__init__link" kindref="compound">le_ext_init_link</ref><sp/>*init_link,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>ble_ext_rx<sp/>*rx)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>__ble5_ops-&gt;legacy_open(init_link-&gt;<ref refid="structle__ext__init__link_1a00b103b11fcfde7da1bfc7b756511d98" kindref="member">hw</ref>);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>__ble5_ops-&gt;ext_ioctrl(init_link-&gt;<ref refid="structle__ext__init__link_1a00b103b11fcfde7da1bfc7b756511d98" kindref="member">hw</ref>,<sp/>BLE_SET_EXT_INIT_CREATE_CONNECT);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>__ble_ops-&gt;ioctrl(init_link-&gt;<ref refid="structle__ext__init__link_1a00b103b11fcfde7da1bfc7b756511d98" kindref="member">hw</ref>,<sp/>BLE_WHITE_LIST_ADDR,</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>init_link-&gt;<ref refid="structle__ext__init__link_1a096b39863b58bdb271b7ea7468f45e16" kindref="member">extended_init</ref>.ext_init-&gt;Peer_Address_Type,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>init_link-&gt;<ref refid="structle__ext__init__link_1a096b39863b58bdb271b7ea7468f45e16" kindref="member">extended_init</ref>.ext_init-&gt;Peer_Address);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>init_link-&gt;<ref refid="structle__ext__init__link_1ab3e6c539fa0261f055497833c686e514" kindref="member">connect_link</ref><sp/>=<sp/><ref refid="link__layer_8c_1a500af8812cc7e935661ef18be52a97d1" kindref="member">ll_create_conn_link</ref>(init_link-&gt;<ref refid="structle__ext__init__link_1a00b103b11fcfde7da1bfc7b756511d98" kindref="member">hw</ref>,<sp/>\</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;init_link-&gt;<ref refid="structle__ext__init__link_1a096b39863b58bdb271b7ea7468f45e16" kindref="member">extended_init</ref>.local,<sp/>\</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="ll__defines_8h_1ab17b69004eb9a80a36916e2e8baf21f8" kindref="member">BLE_MASTER</ref>,<sp/>\</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rx-&gt;txadd,<sp/>rx-&gt;data<sp/>+<sp/>2,<sp/>\</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;init_link-&gt;<ref refid="structle__ext__init__link_1a096b39863b58bdb271b7ea7468f45e16" kindref="member">extended_init</ref>.conn_param);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><ref refid="ll__ext__init_8c_1a533eccbb5f4284123f0ba67115b0a883" kindref="member">AT_BLE5_LL_PROBE_CODE</ref></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ll_ext_init_rx_probe_handler(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*priv,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>ble_ext_rx<sp/>*rx)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>LE_ROLES_IS_SUPPORT_OPTIMIZE(LE_MASTER);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structle__ext__init__link" kindref="compound">le_ext_init_link</ref><sp/>*init_link<sp/>=<sp/>(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structle__ext__init__link" kindref="compound">le_ext_init_link</ref><sp/>*)priv;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(rx-&gt;type)<sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ll__defines_8h_1a16685eea158879e41b101ca3634de462a9daf1661889e234074b75141c44e8797" kindref="member">LL_PDU_AUX_ADV_IND</ref>:</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>probe<sp/>process<sp/>should<sp/>not<sp/>printf<sp/>or<sp/>reduce<sp/>printf</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>log_info(&quot;rx<sp/>AUX_ADV_IND&quot;);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>AUX_CONNECT_RSP:</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ll_ext_init_create_connection(init_link,<sp/>rx);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>probe<sp/>process<sp/>should<sp/>not<sp/>printf<sp/>or<sp/>reduce<sp/>printf</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;rx<sp/>AUX_CONNECT_RSP&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//&lt;<sp/>empty<sp/>packet<sp/>not<sp/>notify<sp/>to<sp/>upper<sp/>layer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(EXT_RX_PACKET_IS_VALID(rx))<sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//&lt;<sp/>resume<sp/>ll<sp/>thread</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="link__layer_8c_1af5e4ac77575bf70aae9293b0c2925f61" kindref="member">ll_thread_resume</ref>();</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><ref refid="ll__ext__init_8c_1a533eccbb5f4284123f0ba67115b0a883" kindref="member">AT_BLE5_LL_PROBE_CODE</ref></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ll_ext_init_event_probe_handler(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*priv,<sp/>u32<sp/>param)</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structle__ext__init__link" kindref="compound">le_ext_init_link</ref><sp/>*init_link<sp/>=<sp/>(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structle__ext__init__link" kindref="compound">le_ext_init_link</ref><sp/>*)priv;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(param<sp/>==<sp/>EXT_MASTER_INIT_RECEIVE_AUX)<sp/>{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>init_link-&gt;<ref refid="structle__ext__init__link_1a202f1b33c4f769946bf9c1522e48761c" kindref="member">state</ref><sp/>=<sp/><ref refid="extended__advertising_8h_1a61dadd085c1777f559549e05962b2c9ea7c73b05ae7f51865f0b5736b9a4f2489" kindref="member">LL_EXT_INITIATING_FAIL</ref>;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="link__layer_8c_1af5e4ac77575bf70aae9293b0c2925f61" kindref="member">ll_thread_resume</ref>();</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><ref refid="ll__ext__init_8c_1a163fc974f6617f7f5c44dec8f5390964" kindref="member">AT_BLE5_LL_CODE</ref></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structle__ext__init__link" kindref="compound">le_ext_init_link</ref><sp/>*ll_create_ext_init_link(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structle__ext__init__link" kindref="compound">le_ext_init_link</ref><sp/>*link;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>link<sp/>=<sp/>(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structle__ext__init__link" kindref="compound">le_ext_init_link</ref><sp/>*)<ref refid="extended__advertising_8h_1a7cbafb36b7563c43bb77255c47dfd5fd" kindref="member">__new_ext_link</ref>(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(*link));</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(NULL<sp/>==<sp/>link)<sp/>{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>BLE5_FRAME_DEBUG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>link-&gt;<ref refid="structle__ext__init__link_1a00b103b11fcfde7da1bfc7b756511d98" kindref="member">hw</ref><sp/>=<sp/>__ble5_ops-&gt;ext_open(EXT_2ND_INIT_PARAM);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>link-&gt;<ref refid="structle__ext__init__link_1a00b103b11fcfde7da1bfc7b756511d98" kindref="member">hw</ref><sp/>=<sp/>__ble5_ops-&gt;ext_open();</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>BLE5_FRAME_DEBUG<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(NULL<sp/>==<sp/>link-&gt;<ref refid="structle__ext__init__link_1a00b103b11fcfde7da1bfc7b756511d98" kindref="member">hw</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__bt_free(link);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>link;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><ref refid="ll__ext__init_8c_1a163fc974f6617f7f5c44dec8f5390964" kindref="member">AT_BLE5_LL_CODE</ref></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ll_ext_init_create_primary(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structle__ext__init__link" kindref="compound">le_ext_init_link</ref><sp/>*link)</highlight></codeline>
+<codeline lineno="124"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>link-&gt;<ref refid="structle__ext__init__link_1ae78483c9f037f3116f8bfdd42433fa67" kindref="member">primary_legacy_hw</ref><sp/>=<sp/>__ble_ops-&gt;open();</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(NULL<sp/>==<sp/>link-&gt;<ref refid="structle__ext__init__link_1ae78483c9f037f3116f8bfdd42433fa67" kindref="member">primary_legacy_hw</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_error(</highlight><highlight class="stringliteral">&quot;ext<sp/>init<sp/>primary<sp/>create<sp/>error&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>MEMORY_CAPACITY_EXCEEDED;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>BLE5_FRAME_DEBUG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>__bb_ext_alloc_1st_init_param(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structle__ext__init__link_1a00b103b11fcfde7da1bfc7b756511d98" kindref="member">hw</ref>);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>__bb_ext_init_link_to_1st_hw(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structle__ext__init__link_1a00b103b11fcfde7da1bfc7b756511d98" kindref="member">hw</ref>,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*primary_hw);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>__bb_ext_init_link_to_2nd_hw(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structle__ext__init__link_1a00b103b11fcfde7da1bfc7b756511d98" kindref="member">hw</ref>,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*secondary_hw);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>__bb_ext_alloc_1st_init_param(link-&gt;<ref refid="structle__ext__init__link_1ae78483c9f037f3116f8bfdd42433fa67" kindref="member">primary_legacy_hw</ref>);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>__bb_ext_init_link_to_1st_hw(link-&gt;<ref refid="structle__ext__init__link_1a00b103b11fcfde7da1bfc7b756511d98" kindref="member">hw</ref>,<sp/>link-&gt;<ref refid="structle__ext__init__link_1ae78483c9f037f3116f8bfdd42433fa67" kindref="member">primary_legacy_hw</ref>);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>__bb_ext_init_link_to_2nd_hw(link-&gt;<ref refid="structle__ext__init__link_1ae78483c9f037f3116f8bfdd42433fa67" kindref="member">primary_legacy_hw</ref>,<sp/>link-&gt;<ref refid="structle__ext__init__link_1a00b103b11fcfde7da1bfc7b756511d98" kindref="member">hw</ref>);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>__ble5_ops-&gt;ext_adv_ctrl(link-&gt;<ref refid="structle__ext__init__link_1a00b103b11fcfde7da1bfc7b756511d98" kindref="member">hw</ref>,<sp/>BLE_SET_EXT_CORRELATED_HW,<sp/>link-&gt;<ref refid="structle__ext__init__link_1ae78483c9f037f3116f8bfdd42433fa67" kindref="member">primary_legacy_hw</ref>);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>__ble5_ops-&gt;ext_adv_ctrl(link-&gt;<ref refid="structle__ext__init__link_1ae78483c9f037f3116f8bfdd42433fa67" kindref="member">primary_legacy_hw</ref>,<sp/>BLE_SET_EXT_CORRELATED_HW,<sp/>link-&gt;<ref refid="structle__ext__init__link_1a00b103b11fcfde7da1bfc7b756511d98" kindref="member">hw</ref>);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>BLE5_FRAME_DEBUG<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>SUCCESS;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><ref refid="ll__ext__init_8c_1a163fc974f6617f7f5c44dec8f5390964" kindref="member">AT_BLE5_LL_CODE</ref></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structle__ext__init__link" kindref="compound">le_ext_init_link</ref><sp/>*ll_ext_init_create_secondary(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="150"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//&lt;<sp/>create<sp/>secondary<sp/>ble5<sp/>init<sp/>link</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structle__ext__init__link" kindref="compound">le_ext_init_link</ref><sp/>*ext_init_link;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>ext_init_link<sp/>=<sp/>ll_create_ext_init_link();</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(NULL<sp/>==<sp/>ext_init_link)<sp/>{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_error(</highlight><highlight class="stringliteral">&quot;ext<sp/>init<sp/>secondary<sp/>create<sp/>error&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>__ext_this-&gt;ext_init_link<sp/>=<sp/>ext_init_link;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>BLE5_FRAME_DEBUG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>__bb_ext_reg_2nd_init_handler(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structle__ext__init__link_1a00b103b11fcfde7da1bfc7b756511d98" kindref="member">hw</ref>,</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*priv,</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>ble_ext_handler<sp/>*<sp/>handler);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>__bb_ext_reg_2nd_init_handler(ext_init_link-&gt;<ref refid="structle__ext__init__link_1a00b103b11fcfde7da1bfc7b756511d98" kindref="member">hw</ref>,<sp/>ext_init_link,<sp/>&amp;ll_ext_init_handler);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>__ble5_ops-&gt;ext_handler_register(ext_init_link-&gt;<ref refid="structle__ext__init__link_1a00b103b11fcfde7da1bfc7b756511d98" kindref="member">hw</ref>,<sp/>ext_init_link,<sp/>&amp;ll_ext_init_handler);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>BLE5_FRAME_DEBUG<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ext_init_link;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><ref refid="ll__ext__init_8c_1a163fc974f6617f7f5c44dec8f5390964" kindref="member">AT_BLE5_LL_CODE</ref></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>secondary_conn_param_info_debug(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>ble_conn_param<sp/>*conn_param)</highlight></codeline>
+<codeline lineno="176"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>log_info(</highlight><highlight class="stringliteral">&quot;init<sp/>AA<sp/>=<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>log_info_hexdump(conn_param-&gt;aa,<sp/>4);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>log_info(</highlight><highlight class="stringliteral">&quot;init<sp/>CRCInit<sp/>=<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>log_info_hexdump(conn_param-&gt;crcinit,<sp/>3);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>log_info(</highlight><highlight class="stringliteral">&quot;init<sp/>WinSize:<sp/>0x%x&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>conn_param-&gt;winsize);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>log_info(</highlight><highlight class="stringliteral">&quot;init<sp/>WinOffset:<sp/>0x%x&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>conn_param-&gt;winoffset);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>log_info(</highlight><highlight class="stringliteral">&quot;init<sp/>interval:<sp/>0x%x&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>conn_param-&gt;interval);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>log_info(</highlight><highlight class="stringliteral">&quot;init<sp/>latency:<sp/>0x%x&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>conn_param-&gt;latency);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>log_info(</highlight><highlight class="stringliteral">&quot;init<sp/>timeout:<sp/>0x%x&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>conn_param-&gt;timeout);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>log_info(</highlight><highlight class="stringliteral">&quot;init<sp/>channel<sp/>=<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>log_info_hexdump(conn_param-&gt;channel,<sp/>5);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>log_info(</highlight><highlight class="stringliteral">&quot;init<sp/>hop:<sp/>0x%x&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>conn_param-&gt;hop);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>log_info(</highlight><highlight class="stringliteral">&quot;init<sp/>sca:<sp/>0x%x&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>conn_param-&gt;sca);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><ref refid="ll__ext__init_8c_1a163fc974f6617f7f5c44dec8f5390964" kindref="member">AT_BLE5_LL_CODE</ref></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>__set_ll_ext_init_state(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structle__ext__init__link" kindref="compound">le_ext_init_link</ref><sp/>*link)</highlight></codeline>
+<codeline lineno="194"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">ble_ext_init<sp/>*init<sp/>=<sp/>&amp;link-&gt;<ref refid="structle__ext__init__link_1a096b39863b58bdb271b7ea7468f45e16" kindref="member">extended_init</ref>;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">ble_conn_param<sp/>*conn_param<sp/>=<sp/>&amp;init-&gt;conn_param;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>log_info(</highlight><highlight class="stringliteral">&quot;--func=%s&quot;</highlight><highlight class="normal">,<sp/>__FUNCTION__);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>init-&gt;ext_init<sp/>=<sp/><ref refid="hci__ll__cmds_8c_1ae306cbc8d57487606be6ee2a0740747f" kindref="member">ext_le_param</ref>.<ref refid="structext__le__parameter_1ac3a98a8c18b7d13b302d0be263a525b6" kindref="member">ext_init</ref>;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*--------------Primary<sp/>legacy<sp/>init-----------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="link__layer_8c_1adfe227fcb9e3cd5517eb4074f28168fe" kindref="member">__set_ll_local_addr</ref>(link-&gt;<ref refid="structle__ext__init__link_1ae78483c9f037f3116f8bfdd42433fa67" kindref="member">primary_legacy_hw</ref>,<sp/>\</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;init-&gt;local,<sp/>\</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>init-&gt;ext_init-&gt;Own_Address_Type);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*--------------Secondary<sp/>init-----------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//&lt;<sp/>LL<sp/>DATA<sp/>Part</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>memcpy(conn_param,<sp/>&amp;<ref refid="link__layer_8c_1a6c1bee17cae2c6493a7048cfc0955160" kindref="member">sample_conn_param</ref>,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>ble_conn_param));</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="link__layer_8c_1a3a2400b844a72da830a66dc84f77b865" kindref="member">access_addr_generate</ref>(conn_param-&gt;aa);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>conn_param-&gt;latency<sp/><sp/><sp/><sp/><sp/>=<sp/>init-&gt;ext_init-&gt;init_phy_param[0].Conn_Latency;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/>conn_param-&gt;timeout<sp/><sp/><sp/><sp/><sp/>=<sp/>init-&gt;ext_init-&gt;init_phy_param[0].Supervision_Timeout;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/>conn_param-&gt;interval<sp/><sp/><sp/><sp/>=<sp/>init-&gt;ext_init-&gt;init_phy_param[0].Conn_Interval_Max;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>conn_param-&gt;sca<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>conn_param-&gt;widening<sp/><sp/><sp/><sp/>=<sp/>(((<ref refid="link__layer_8c_1a2c573303905fa0cedf41096fb1b64eed" kindref="member">sca_ppm_tbl</ref>[conn_param-&gt;sca]<sp/>+<sp/>500)<sp/>*<sp/>conn_param-&gt;interval<sp/>*<sp/>(conn_param-&gt;latency<sp/>+<sp/>1)<sp/>*<sp/>1250)<sp/>/<sp/>1000000)<sp/>+<sp/>1;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/>conn_param-&gt;widening<sp/><sp/><sp/><sp/>&lt;&lt;=<sp/>1;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>conn_param-&gt;hop<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="link__layer_8c_1ac6a987f10797d3dcd080f25b9c6f038f" kindref="member">hop_generarate</ref>();</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/>conn_param-&gt;winoffset<sp/><sp/><sp/>=<sp/>conn_param-&gt;interval<sp/>/<sp/>2<sp/>+<sp/>(JL_RAND-&gt;R64L<sp/>%<sp/>(conn_param-&gt;interval<sp/>/<sp/>2));</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>conn_param-&gt;hop<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>6;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>conn_param-&gt;winoffset<sp/><sp/><sp/>=<sp/>0;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/>secondary_conn_param_info_debug(conn_param);</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="extended__advertising_8h_1a7676b55f4bcfbbbb802bbcd723b241fa" kindref="member">__set_ll_ext_local_addr</ref>(link-&gt;<ref refid="structle__ext__init__link_1a00b103b11fcfde7da1bfc7b756511d98" kindref="member">hw</ref>,<sp/>\</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;init-&gt;local,<sp/>\</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>init-&gt;ext_init-&gt;Own_Address_Type);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/>__ble5_ops-&gt;ext_ioctrl(link-&gt;<ref refid="structle__ext__init__link_1a00b103b11fcfde7da1bfc7b756511d98" kindref="member">hw</ref>,<sp/>BLE_SET_EXT_WHITE_LIST_ADDR,</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>init-&gt;ext_init-&gt;Peer_Address_Type,</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>init-&gt;ext_init-&gt;Peer_Address);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/>link-&gt;<ref refid="structle__ext__init__link_1a202f1b33c4f769946bf9c1522e48761c" kindref="member">state</ref><sp/>=<sp/><ref refid="extended__advertising_8h_1a61dadd085c1777f559549e05962b2c9ea0274b12373fa029a07fbc36d35f9797e" kindref="member">LL_EXT_INITIATING</ref>;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//&lt;&lt;<sp/>LL<sp/>phy<sp/>init</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/>init-&gt;coded_s<sp/>=<sp/>LE_DEFAULT_CODED_S;</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__afh_8c_1af13ece4d6b4e782897f07f64cfc9b322" kindref="member">ll_channel_info_init</ref>(conn_param);</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/>__ble5_ops-&gt;ext_initiating(link-&gt;<ref refid="structle__ext__init__link_1a00b103b11fcfde7da1bfc7b756511d98" kindref="member">hw</ref>,<sp/>link-&gt;<ref refid="structle__ext__init__link_1ae78483c9f037f3116f8bfdd42433fa67" kindref="member">primary_legacy_hw</ref>,<sp/>init);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><ref refid="ll__ext__init_8c_1a163fc974f6617f7f5c44dec8f5390964" kindref="member">AT_BLE5_LL_CODE</ref></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ll_exit_ext_init_status(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="242"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>log_info(</highlight><highlight class="stringliteral">&quot;--func=%s&quot;</highlight><highlight class="normal">,<sp/>__FUNCTION__);</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//&lt;<sp/>remove<sp/>contact<sp/>first,<sp/>avoid<sp/>destroy_le_ext_init()<sp/>destroy<sp/>the<sp/>connect<sp/>link</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/>__ext_this-&gt;ext_init_link-&gt;connect_link<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__ext__init_8h_1afedf924f916f4ab3efce694f0676d90b" kindref="member">destroy_le_ext_init</ref>();</highlight></codeline>
+<codeline lineno="249"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><ref refid="ll__ext__init_8c_1a163fc974f6617f7f5c44dec8f5390964" kindref="member">AT_BLE5_LL_CODE</ref></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ll_ext_init_rx_post(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*priv,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>ble_ext_rx<sp/>*rx)</highlight></codeline>
+<codeline lineno="253"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structle__ext__init__link" kindref="compound">le_ext_init_link</ref><sp/>*init_link<sp/>=<sp/>(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structle__ext__init__link" kindref="compound">le_ext_init_link</ref><sp/>*)priv;</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/>log_info(</highlight><highlight class="stringliteral">&quot;rx<sp/>post<sp/>rx-&gt;type=0x%x&quot;</highlight><highlight class="normal">,<sp/>rx-&gt;type);</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(rx-&gt;type)<sp/>{</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>AUX_CONNECT_RSP:</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Init<sp/>post<sp/>rx<sp/>AUX_CONNECT_RSP&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="extended__advertising_8h_1a5667ca4aaee9174a8865dcfb4a4c426f" kindref="member">ll_ext_create_legacy_connection</ref>(init_link-&gt;<ref refid="structle__ext__init__link_1ab3e6c539fa0261f055497833c686e514" kindref="member">connect_link</ref>);</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>init_link-&gt;<ref refid="structle__ext__init__link_1a202f1b33c4f769946bf9c1522e48761c" kindref="member">state</ref><sp/>=<sp/><ref refid="extended__advertising_8h_1a61dadd085c1777f559549e05962b2c9ea36aa5ea1b40353e601166ceb980a2a1a" kindref="member">LL_EXT_INITIATING_SUCC</ref>;</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="264"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><ref refid="ll__ext__init_8c_1a163fc974f6617f7f5c44dec8f5390964" kindref="member">AT_BLE5_LL_CODE</ref></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ll_ext_init_close(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="268"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(NULL<sp/>==<sp/>__ext_this-&gt;ext_init_link)<sp/>{</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//&lt;<sp/>destroy<sp/>ext<sp/>primary<sp/>init<sp/>hw</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__ext__scan_8h_1a7d55e23de39519e4fb9b904df0876790" kindref="member">LL_EXT_PUBLIC_PRIMARY_SCAN_DESTROY_PROCEDURE</ref>(__ext_this-&gt;ext_init_link-&gt;primary_legacy_hw);</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//&lt;<sp/>destroy<sp/>ext<sp/>secondary<sp/>init<sp/>link</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(__ext_this-&gt;ext_init_link-&gt;connect_link)<sp/>{</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="link__layer_8c_1a95a914a1e7d9133f5fb1d9108937a881" kindref="member">ll_close_conn_link</ref>(__ext_this-&gt;ext_init_link-&gt;connect_link);</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="extended__advertising_8h_1a41cfd30fc29fab68d65c3df6baa10dbd" kindref="member">__ll_ext_link_close</ref>(__ext_this-&gt;ext_init_link,<sp/>__ext_this-&gt;ext_init_link-&gt;hw);</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/>__ext_this-&gt;ext_init_link<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="281"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight><highlight class="comment">/*-----------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="285"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>LL<sp/>Internal<sp/>API</highlight></codeline>
+<codeline lineno="286"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><ref refid="ll__ext__init_8c_1a163fc974f6617f7f5c44dec8f5390964" kindref="member">AT_BLE5_LL_CODE</ref></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__ext__init_8h_1afedf924f916f4ab3efce694f0676d90b" kindref="member">destroy_le_ext_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="290"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//&lt;<sp/>creat<sp/>by<sp/>ble<sp/>hci,<sp/>remove<sp/>ext<sp/>init<sp/>param</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="hci__ll__cmds_8c_1ae306cbc8d57487606be6ee2a0740747f" kindref="member">ext_le_param</ref>.<ref refid="structext__le__parameter_1ac3a98a8c18b7d13b302d0be263a525b6" kindref="member">ext_init</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__bt_free(<ref refid="hci__ll__cmds_8c_1ae306cbc8d57487606be6ee2a0740747f" kindref="member">ext_le_param</ref>.<ref refid="structext__le__parameter_1ac3a98a8c18b7d13b302d0be263a525b6" kindref="member">ext_init</ref>);</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="hci__ll__cmds_8c_1ae306cbc8d57487606be6ee2a0740747f" kindref="member">ext_le_param</ref>.<ref refid="structext__le__parameter_1ac3a98a8c18b7d13b302d0be263a525b6" kindref="member">ext_init</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//&lt;<sp/>creat<sp/>by<sp/>ll,<sp/>close<sp/>ext<sp/>init<sp/>link</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/>ll_ext_init_close();</highlight></codeline>
+<codeline lineno="298"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><ref refid="ll__ext__init_8c_1a163fc974f6617f7f5c44dec8f5390964" kindref="member">AT_BLE5_LL_CODE</ref></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__ext__init_8h_1a9fb95cddb7888c44f8b8d7cc2fd9ba99" kindref="member">ll_ext_init_rx_post_process</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*empty)</highlight></codeline>
+<codeline lineno="302"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/>LE_ROLES_IS_SUPPORT_OPTIMIZE(LE_MASTER);</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(__ext_this-&gt;ext_init_link)<sp/>{</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>BLE5_FRAME_DEBUG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>__bb_ext_upload_2nd_init_rx_data(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structle__ext__init__link_1a00b103b11fcfde7da1bfc7b756511d98" kindref="member">hw</ref>,</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*rx_handler)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*priv,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>ble_ext_rx<sp/>*<sp/>rx));</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__bb_ext_upload_2nd_init_rx_data(__ext_this-&gt;ext_init_link-&gt;hw,<sp/>ll_ext_init_rx_post);</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__ble5_ops-&gt;ext_upload_data(__ext_this-&gt;ext_init_link-&gt;hw,<sp/>ll_ext_init_rx_post);</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>BLE5_FRAME_DEBUG<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="extended__advertising_8h_1a61dadd085c1777f559549e05962b2c9ea7c73b05ae7f51865f0b5736b9a4f2489" kindref="member">LL_EXT_INITIATING_FAIL</ref><sp/>==<sp/>__ext_this-&gt;ext_init_link-&gt;state)<sp/>{</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_error(</highlight><highlight class="stringliteral">&quot;init<sp/>post<sp/>LL_EXT_INITIATING_FAIL&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ll_ext_init_close();</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="ll__ext__init_8h_1ae84f6e47dae6779629f5e8c6b5c0153b" kindref="member">ll_ext_init_open</ref>();</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="extended__advertising_8h_1a61dadd085c1777f559549e05962b2c9ea36aa5ea1b40353e601166ceb980a2a1a" kindref="member">LL_EXT_INITIATING_SUCC</ref><sp/>==<sp/>__ext_this-&gt;ext_init_link-&gt;state)<sp/>{</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_info(</highlight><highlight class="stringliteral">&quot;init<sp/>post<sp/>LL_EXT_CONNECTION_CREATE&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ll_exit_ext_init_status();</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__ble5_ops-&gt;ext_ioctrl(__ext_this-&gt;ext_init_link-&gt;hw,<sp/>BLE_GET_EXT_RX_EMPTY,<sp/>empty);</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="329"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight><highlight class="comment">/*-----------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="332"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="333"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Link<sp/>Layer<sp/>API</highlight></codeline>
+<codeline lineno="334"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><ref refid="ll__ext__init_8c_1a163fc974f6617f7f5c44dec8f5390964" kindref="member">AT_BLE5_LL_CODE</ref></highlight></codeline>
+<codeline lineno="337"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ll__ext__init_8h_1ae84f6e47dae6779629f5e8c6b5c0153b" kindref="member">ll_ext_init_open</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="338"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structle__ext__init__link" kindref="compound">le_ext_init_link</ref><sp/>*ext_init_link;</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"></highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//&lt;<sp/>create<sp/>secondary<sp/>init</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/>ext_init_link<sp/>=<sp/>ll_ext_init_create_secondary();</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(NULL<sp/>==<sp/>ext_init_link)<sp/>{</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>MEMORY_CAPACITY_EXCEEDED;</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//&lt;<sp/>create<sp/>primary<sp/>init<sp/>scan</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>status<sp/>=<sp/>ll_ext_init_create_primary(ext_init_link);</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(status)<sp/>{</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>status;</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"></highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/>__set_ll_ext_init_state(ext_init_link);</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"></highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>SUCCESS;</highlight></codeline>
+<codeline lineno="356"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"></highlight></codeline>
+<codeline lineno="358"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>BLUETOOTH_5<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_ext_init.c"/>
+  </compounddef>
+</doxygen>

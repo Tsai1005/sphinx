@@ -1,0 +1,587 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>JL Adapter SDK: /data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/periodic_advertising.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">JL Adapter SDK
+   &#160;<span id="projectnumber">v0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_5aa4d6ccf34d88a270949875c15714e5.html">btctrler</a></li><li class="navelem"><a class="el" href="dir_119de8fbed06b648fc4b1712ddece599.html">include_v2</a></li><li class="navelem"><a class="el" href="dir_11c925b722666962fce8d6f7c0ca7e4f.html">ble</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle">
+<div class="title">periodic_advertising.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;typedef.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+periodic_advertising.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="periodic__advertising_8h__incl.png" border="0" usemap="#_2data_2bingquan_2repo_2repo__adapter_2adapter__sdk_2lib_2btctrler_2include__v2_2ble_2periodic__advertising_8h" alt=""/></div>
+<map name="_2data_2bingquan_2repo_2repo__adapter_2adapter__sdk_2lib_2btctrler_2include__v2_2ble_2periodic__advertising_8h" id="_2data_2bingquan_2repo_2repo__adapter_2adapter__sdk_2lib_2btctrler_2include__v2_2ble_2periodic__advertising_8h">
+</map>
+</div>
+</div>
+<p><a href="periodic__advertising_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+结构体</h2></td></tr>
+<tr class="memitem:structle__ext__periodic__link"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="periodic__advertising_8h.html#structle__ext__periodic__link">le_ext_periodic_link</a></td></tr>
+<tr class="separator:structle__ext__periodic__link"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:struct____period__adv__report__event"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="periodic__advertising_8h.html#struct____period__adv__report__event">__period_adv_report_event</a></td></tr>
+<tr class="separator:struct____period__adv__report__event"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:ae152f66024b15e6a1bd2fb2f38916080"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="periodic__advertising_8h.html#ae152f66024b15e6a1bd2fb2f38916080">PERIOD_REPORT_EVENT_MAX_DATA_LEN</a>&#160;&#160;&#160;( 0xff - sizeof(struct __period_adv_report_event) )</td></tr>
+<tr class="separator:ae152f66024b15e6a1bd2fb2f38916080"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a1b70d876770ccff427513794d6b0b2a7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="periodic__advertising_8h.html#a1b70d876770ccff427513794d6b0b2a7ae734f6924c889f1d83cab6d6c1dbd3ee">PERIOD_SYNC_READY</a> = 0, 
+<a class="el" href="periodic__advertising_8h.html#a1b70d876770ccff427513794d6b0b2a7ab5580f71c9cb9364d815f75d99ae7777">PERIOD_SYNC_CREATE</a>, 
+<a class="el" href="periodic__advertising_8h.html#a1b70d876770ccff427513794d6b0b2a7ad3020ea9ce7aa6aa9f89f8a3eab0a482">PERIOD_SYNC_ESTABLISHED</a>, 
+<a class="el" href="periodic__advertising_8h.html#a1b70d876770ccff427513794d6b0b2a7a3bd470b9c23664a75d039fa267e2384c">PERIOD_SYNC_TIMEOUT</a>
+ }</td></tr>
+<tr class="separator:a1b70d876770ccff427513794d6b0b2a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ae4c1173b1ac6bea157840c6ac6b761bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="periodic__advertising_8h.html#ae4c1173b1ac6bea157840c6ac6b761bb">le_periodic_adv_report_event_handle</a> (struct <a class="el" href="ll__ext__scan_8h.html#structle__ext__scan__link">le_ext_scan_link</a> *link, struct ble_ext_rx *rx)</td></tr>
+<tr class="separator:ae4c1173b1ac6bea157840c6ac6b761bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89142a8970ae5b4af3c3c23ed18d7b25"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="periodic__advertising_8h.html#a89142a8970ae5b4af3c3c23ed18d7b25">ll_periodic_sync_open</a> (struct <a class="el" href="ll__ext__scan_8h.html#structle__ext__scan__link">le_ext_scan_link</a> *link, struct __SyncInfo_field *sync_info)</td></tr>
+<tr class="separator:a89142a8970ae5b4af3c3c23ed18d7b25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af49afe5c179976ba5bdfcae51ef44c1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="periodic__advertising_8h.html#af49afe5c179976ba5bdfcae51ef44c1b">le_periodic_sync_timeout_close</a> (struct <a class="el" href="ll__ext__scan_8h.html#structle__ext__scan__link">le_ext_scan_link</a> *link)</td></tr>
+<tr class="separator:af49afe5c179976ba5bdfcae51ef44c1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d89d9c21ff50556913584d80de3d5fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="periodic__advertising_8h.html#a5d89d9c21ff50556913584d80de3d5fb">ll_periodic_adv_data_update</a> (const struct <a class="el" href="ll__ext__adv_8h.html#struct____ext__adv__group">__ext_adv_group</a> *adv_set, ble_adv_set_t *bb_adv_set)</td></tr>
+<tr class="separator:a5d89d9c21ff50556913584d80de3d5fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a484edae6dbb9c79a7d8c7e934dccd64b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="periodic__advertising_8h.html#a484edae6dbb9c79a7d8c7e934dccd64b">ll_periodic_advertising_create_sync</a> (void)</td></tr>
+<tr class="separator:a484edae6dbb9c79a7d8c7e934dccd64b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd2d2fbd19668e7559a29911bbd9a86e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="periodic__advertising_8h.html#afd2d2fbd19668e7559a29911bbd9a86e">ll_periodic_advertising_create_sync_cancel</a> (void)</td></tr>
+<tr class="separator:afd2d2fbd19668e7559a29911bbd9a86e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7ae6278cd3c4c7cfb049d39c26c2ded"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="periodic__advertising_8h.html#ab7ae6278cd3c4c7cfb049d39c26c2ded">ll_periodic_advertising_terminate_sync</a> (u16 sync_handle)</td></tr>
+<tr class="separator:ab7ae6278cd3c4c7cfb049d39c26c2ded"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f3130c7e0993f56b48043e48f134abe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="periodic__advertising_8h.html#a1f3130c7e0993f56b48043e48f134abe">ll_periodic_adv_open</a> (u8 adv_handle, struct <a class="el" href="ll__ext__adv_8h.html#struct____ext__adv__group">__ext_adv_group</a> *adv_set)</td></tr>
+<tr class="separator:a1f3130c7e0993f56b48043e48f134abe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69e4ba4b247ecec757e0c8ea22368b9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="periodic__advertising_8h.html#a69e4ba4b247ecec757e0c8ea22368b9e">ll_periodic_adv_close</a> (u8 adv_handle)</td></tr>
+<tr class="separator:a69e4ba4b247ecec757e0c8ea22368b9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1c69a6b96fe71f20c4473d0c3471c5f"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="periodic__advertising_8h.html#ad1c69a6b96fe71f20c4473d0c3471c5f">ll_get_periodic_link</a> (u8 adv_handle)</td></tr>
+<tr class="separator:ad1c69a6b96fe71f20c4473d0c3471c5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb35ac2bf109737407038cac05c47148"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="periodic__advertising_8h.html#adb35ac2bf109737407038cac05c47148">le_cmd_set_periodic_adv</a> (u16 opcode, const u8 *data, u32 size)</td></tr>
+<tr class="separator:adb35ac2bf109737407038cac05c47148"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad61f03a6e6ac6a14b9a9e7bc44a74963"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="periodic__advertising_8h.html#ad61f03a6e6ac6a14b9a9e7bc44a74963">le_cmd_set_periodic_adv_sync</a> (u16 opcode, const u8 *data, u32 size)</td></tr>
+<tr class="separator:ad61f03a6e6ac6a14b9a9e7bc44a74963"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:a74e511c8d41ac66c0e336bc75ad3899f"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="periodic__advertising_8h.html#struct____period__adv__report__event">__period_adv_report_event</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="periodic__advertising_8h.html#a74e511c8d41ac66c0e336bc75ad3899f">_GNU_PACKED_</a></td></tr>
+<tr class="separator:a74e511c8d41ac66c0e336bc75ad3899f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/><h2 class="groupheader">结构体说明</h2>
+<a name="structle__ext__periodic__link" id="structle__ext__periodic__link"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct le_ext_periodic_link</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="aa1f1dedc91d818befdb11b10e446fe80"></a>u8</td>
+<td class="fieldname">
+adv_handle</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a3fe230ef16d4d3ffc0466079e9e1ceac"></a>struct list_head</td>
+<td class="fieldname">
+entry</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a21586b2213c30ac5c88235898a85650a"></a>void *</td>
+<td class="fieldname">
+hw</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ac4bf8e0aec83f03c757ba9ab077c483d"></a>struct periodic_hw_info</td>
+<td class="fieldname">
+sync_hw_info</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="struct____period__adv__report__event" id="struct____period__adv__report__event"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct __period_adv_report_event</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="aea1c44426251e5cc6e628b0eb5400ef6"></a>u8</td>
+<td class="fieldname">
+CTE_Type</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="afa366f7fbadab19c04f5aa19b9833c9a"></a>u8</td>
+<td class="fieldname">
+Data[0]</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ac079a9c8d3d6e2899c4a6801f64ded0b"></a>u8</td>
+<td class="fieldname">
+Data_Length</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a469363139edc97b5c4fa472e959bd95c"></a>u8</td>
+<td class="fieldname">
+Data_Status</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a86068558e938b0a6729fd82608f14686"></a>u8</td>
+<td class="fieldname">
+RSSI</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a991cfed4678c7c99c408a65c0c9b60cc"></a>u8</td>
+<td class="fieldname">
+Subevent_Code</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a7d81678d9bd3cdebef6a6442d04c35d8"></a>u16</td>
+<td class="fieldname">
+Sync_Handle</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a5705aadb8ab5d7681c60cad4ea356c91"></a>u8</td>
+<td class="fieldname">
+Tx_Power</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">宏定义说明</h2>
+<a class="anchor" id="ae152f66024b15e6a1bd2fb2f38916080"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PERIOD_REPORT_EVENT_MAX_DATA_LEN&#160;&#160;&#160;( 0xff - sizeof(struct __period_adv_report_event) )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">枚举类型说明</h2>
+<a class="anchor" id="a1b70d876770ccff427513794d6b0b2a7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="a1b70d876770ccff427513794d6b0b2a7ae734f6924c889f1d83cab6d6c1dbd3ee"></a>PERIOD_SYNC_READY&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a1b70d876770ccff427513794d6b0b2a7ab5580f71c9cb9364d815f75d99ae7777"></a>PERIOD_SYNC_CREATE&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a1b70d876770ccff427513794d6b0b2a7ad3020ea9ce7aa6aa9f89f8a3eab0a482"></a>PERIOD_SYNC_ESTABLISHED&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a1b70d876770ccff427513794d6b0b2a7a3bd470b9c23664a75d039fa267e2384c"></a>PERIOD_SYNC_TIMEOUT&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="adb35ac2bf109737407038cac05c47148"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int le_cmd_set_periodic_adv </td>
+          <td>(</td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>opcode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const u8 *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad61f03a6e6ac6a14b9a9e7bc44a74963"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int le_cmd_set_periodic_adv_sync </td>
+          <td>(</td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>opcode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const u8 *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae4c1173b1ac6bea157840c6ac6b761bb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void le_periodic_adv_report_event_handle </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="ll__ext__scan_8h.html#structle__ext__scan__link">le_ext_scan_link</a> *&#160;</td>
+          <td class="paramname"><em>link</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct ble_ext_rx *&#160;</td>
+          <td class="paramname"><em>rx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af49afe5c179976ba5bdfcae51ef44c1b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void le_periodic_sync_timeout_close </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="ll__ext__scan_8h.html#structle__ext__scan__link">le_ext_scan_link</a> *&#160;</td>
+          <td class="paramname"><em>link</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad1c69a6b96fe71f20c4473d0c3471c5f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* ll_get_periodic_link </td>
+          <td>(</td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>adv_handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a69e4ba4b247ecec757e0c8ea22368b9e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_periodic_adv_close </td>
+          <td>(</td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>adv_handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5d89d9c21ff50556913584d80de3d5fb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_periodic_adv_data_update </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="ll__ext__adv_8h.html#struct____ext__adv__group">__ext_adv_group</a> *&#160;</td>
+          <td class="paramname"><em>adv_set</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ble_adv_set_t *&#160;</td>
+          <td class="paramname"><em>bb_adv_set</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1f3130c7e0993f56b48043e48f134abe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ll_periodic_adv_open </td>
+          <td>(</td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>adv_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="ll__ext__adv_8h.html#struct____ext__adv__group">__ext_adv_group</a> *&#160;</td>
+          <td class="paramname"><em>adv_set</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a484edae6dbb9c79a7d8c7e934dccd64b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_periodic_advertising_create_sync </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afd2d2fbd19668e7559a29911bbd9a86e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_periodic_advertising_create_sync_cancel </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab7ae6278cd3c4c7cfb049d39c26c2ded"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ll_periodic_advertising_terminate_sync </td>
+          <td>(</td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>sync_handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a89142a8970ae5b4af3c3c23ed18d7b25"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_periodic_sync_open </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="ll__ext__scan_8h.html#structle__ext__scan__link">le_ext_scan_link</a> *&#160;</td>
+          <td class="paramname"><em>link</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct __SyncInfo_field *&#160;</td>
+          <td class="paramname"><em>sync_info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a class="anchor" id="a74e511c8d41ac66c0e336bc75ad3899f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="periodic__advertising_8h.html#struct____period__adv__report__event">__period_adv_report_event</a>  <a class="el" href="ll__ext__adv_8h.html#struct__GNU__PACKED__">_GNU_PACKED_</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

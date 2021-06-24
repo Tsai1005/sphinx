@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structll__init__hdl" kind="struct" language="C++" prot="public">
+    <compoundname>ll_init_hdl</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structll__init__hdl_1a62c12a0452ad9a564e743eaa761bc81b" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structle__init__link" kindref="compound">le_init_link</ref> *</type>
+        <definition>struct le_init_link* ll_init_hdl::init_link</definition>
+        <argsstring></argsstring>
+        <name>init_link</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_init.c" line="29" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_init.c" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__init__hdl_1adef26aa6e7451fe79a31627782fee5fd" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structconnection__parameter" kindref="compound">connection_parameter</ref></type>
+        <definition>struct connection_parameter ll_init_hdl::conn_param</definition>
+        <argsstring></argsstring>
+        <name>conn_param</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_init.c" line="29" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_init.c" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1442">
+        <label>le_init_link</label>
+        <link refid="structle__init__link"/>
+      </node>
+      <node id="1441">
+        <label>connection_parameter</label>
+        <link refid="structconnection__parameter"/>
+      </node>
+      <node id="1440">
+        <label>ll_init_hdl</label>
+        <link refid="structll__init__hdl"/>
+        <childnode refid="1441" relation="usage">
+          <edgelabel>conn_param</edgelabel>
+        </childnode>
+        <childnode refid="1442" relation="usage">
+          <edgelabel>init_link</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_init.c" line="28" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_init.c" bodystart="28" bodyend="31"/>
+    <listofallmembers>
+      <member refid="structll__init__hdl_1adef26aa6e7451fe79a31627782fee5fd" prot="public" virt="non-virtual"><scope>ll_init_hdl</scope><name>conn_param</name></member>
+      <member refid="structll__init__hdl_1a62c12a0452ad9a564e743eaa761bc81b" prot="public" virt="non-virtual"><scope>ll_init_hdl</scope><name>init_link</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

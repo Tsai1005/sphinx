@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structLlIsoSetupDataPath__t" kind="struct" language="C++" prot="public">
+    <compoundname>LlIsoSetupDataPath_t</compoundname>
+    <includes refid="ll__iso_8h" local="no">ll_iso.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structLlIsoSetupDataPath__t_1a615d459130c030b3334b486cf96447e7" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t LlIsoSetupDataPath_t::handle</definition>
+        <argsstring></argsstring>
+        <name>handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Handle of CIS or BIS. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="69" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLlIsoSetupDataPath__t_1a3a401d3146d399dbad21a682c28e6a39" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__iso_8h_1ac6b0e5b32a70e2319903fb13194e7666" kindref="member">LlIsoDataPathDir_t</ref></type>
+        <definition>LlIsoDataPathDir_t LlIsoSetupDataPath_t::dpDir</definition>
+        <argsstring></argsstring>
+        <name>dpDir</name>
+        <bitfield> 8</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data path direction. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="70" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLlIsoSetupDataPath__t_1af91cdd02fd4ae16d5aaa30670f128b65" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t LlIsoSetupDataPath_t::dpId</definition>
+        <argsstring></argsstring>
+        <name>dpId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data path ID. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="71" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLlIsoSetupDataPath__t_1a05c599e84b19c45fa53e07d7ce3d0a36" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t LlIsoSetupDataPath_t::codecFormat</definition>
+        <argsstring></argsstring>
+        <name>codecFormat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Codec Format. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="72" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLlIsoSetupDataPath__t_1a6e48944592d45b185d8c33c29578a1f4" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t LlIsoSetupDataPath_t::codecCompId</definition>
+        <argsstring></argsstring>
+        <name>codecCompId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Codec Company ID. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="73" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLlIsoSetupDataPath__t_1a940f4a694fe1e13f219f13047eccd138" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t LlIsoSetupDataPath_t::codecId</definition>
+        <argsstring></argsstring>
+        <name>codecId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Codec ID. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="74" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLlIsoSetupDataPath__t_1aae0ef20f39fd9576b65ed2083725ef32" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t LlIsoSetupDataPath_t::ctrDly</definition>
+        <argsstring></argsstring>
+        <name>ctrDly</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Codec ID. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="75" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLlIsoSetupDataPath__t_1a9c56f2f7da5b0c099c117e7c32410e45" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t LlIsoSetupDataPath_t::codecConfigLen</definition>
+        <argsstring></argsstring>
+        <name>codecConfigLen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Codec configuration length. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="76" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLlIsoSetupDataPath__t_1a85a6ca41144ce0fe57661144dfdc61e8" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* LlIsoSetupDataPath_t::pCodecConfig</definition>
+        <argsstring></argsstring>
+        <name>pCodecConfig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Codec configuration. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="77" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>LE setup ISO Data Path command. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="68" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="68" bodyend="78"/>
+    <listofallmembers>
+      <member refid="structLlIsoSetupDataPath__t_1a6e48944592d45b185d8c33c29578a1f4" prot="public" virt="non-virtual"><scope>LlIsoSetupDataPath_t</scope><name>codecCompId</name></member>
+      <member refid="structLlIsoSetupDataPath__t_1a9c56f2f7da5b0c099c117e7c32410e45" prot="public" virt="non-virtual"><scope>LlIsoSetupDataPath_t</scope><name>codecConfigLen</name></member>
+      <member refid="structLlIsoSetupDataPath__t_1a05c599e84b19c45fa53e07d7ce3d0a36" prot="public" virt="non-virtual"><scope>LlIsoSetupDataPath_t</scope><name>codecFormat</name></member>
+      <member refid="structLlIsoSetupDataPath__t_1a940f4a694fe1e13f219f13047eccd138" prot="public" virt="non-virtual"><scope>LlIsoSetupDataPath_t</scope><name>codecId</name></member>
+      <member refid="structLlIsoSetupDataPath__t_1aae0ef20f39fd9576b65ed2083725ef32" prot="public" virt="non-virtual"><scope>LlIsoSetupDataPath_t</scope><name>ctrDly</name></member>
+      <member refid="structLlIsoSetupDataPath__t_1a3a401d3146d399dbad21a682c28e6a39" prot="public" virt="non-virtual"><scope>LlIsoSetupDataPath_t</scope><name>dpDir</name></member>
+      <member refid="structLlIsoSetupDataPath__t_1af91cdd02fd4ae16d5aaa30670f128b65" prot="public" virt="non-virtual"><scope>LlIsoSetupDataPath_t</scope><name>dpId</name></member>
+      <member refid="structLlIsoSetupDataPath__t_1a615d459130c030b3334b486cf96447e7" prot="public" virt="non-virtual"><scope>LlIsoSetupDataPath_t</scope><name>handle</name></member>
+      <member refid="structLlIsoSetupDataPath__t_1a85a6ca41144ce0fe57661144dfdc61e8" prot="public" virt="non-virtual"><scope>LlIsoSetupDataPath_t</scope><name>pCodecConfig</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

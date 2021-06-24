@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structLctrAcadChanMapUpd__t" kind="struct" language="C++" prot="public">
+    <compoundname>LctrAcadChanMapUpd_t</compoundname>
+    <includes refid="ll__defines_8h" local="no">ll_defines.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structLctrAcadChanMapUpd__t_1af5c0e6afa478b6850745e22e8d9b98e3" prot="public" static="no" mutable="no">
+        <type><ref refid="structLctrAcadHdr__t" kindref="compound">LctrAcadHdr_t</ref></type>
+        <definition>LctrAcadHdr_t LctrAcadChanMapUpd_t::hdr</definition>
+        <argsstring></argsstring>
+        <name>hdr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ACAD header. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1040" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1040" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLctrAcadChanMapUpd__t_1a58520d5ba25ece340dd90a0280aee238" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t LctrAcadChanMapUpd_t::chanMask</definition>
+        <argsstring></argsstring>
+        <name>chanMask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Channel mask for the update. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1041" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1041" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLctrAcadChanMapUpd__t_1af6194f7a19b43f9a88231ed5f75ad286" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t LctrAcadChanMapUpd_t::instant</definition>
+        <argsstring></argsstring>
+        <name>instant</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Instant for the update. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1042" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1042" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>ACAD data field for channel map update. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1086">
+        <label>LctrAcadHdr_t</label>
+        <link refid="structLctrAcadHdr__t"/>
+      </node>
+      <node id="1085">
+        <label>LctrAcadChanMapUpd_t</label>
+        <link refid="structLctrAcadChanMapUpd__t"/>
+        <childnode refid="1086" relation="usage">
+          <edgelabel>hdr</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1039" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1039" bodyend="1043"/>
+    <listofallmembers>
+      <member refid="structLctrAcadChanMapUpd__t_1a58520d5ba25ece340dd90a0280aee238" prot="public" virt="non-virtual"><scope>LctrAcadChanMapUpd_t</scope><name>chanMask</name></member>
+      <member refid="structLctrAcadChanMapUpd__t_1af5c0e6afa478b6850745e22e8d9b98e3" prot="public" virt="non-virtual"><scope>LctrAcadChanMapUpd_t</scope><name>hdr</name></member>
+      <member refid="structLctrAcadChanMapUpd__t_1af6194f7a19b43f9a88231ed5f75ad286" prot="public" virt="non-virtual"><scope>LctrAcadChanMapUpd_t</scope><name>instant</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

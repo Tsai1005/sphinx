@@ -1,0 +1,947 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="lmp__utils_8h" kind="file" language="C++">
+    <compoundname>lmp_utils.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes local="yes">typedef.h</includes>
+    <incdepgraph>
+      <node id="5524">
+        <label>stdint.h</label>
+      </node>
+      <node id="5525">
+        <label>typedef.h</label>
+      </node>
+      <node id="5523">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h</label>
+        <link refid="lmp_utils.h"/>
+        <childnode refid="5524" relation="include">
+        </childnode>
+        <childnode refid="5525" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="lmp__utils_8h_1adc5356a86213ced2eebbc50b6251f6fe" prot="public" static="no">
+        <name>BD_ADDR_LEN</name>
+        <initializer>6</initializer>
+        <briefdescription>
+<para>Length of a bluetooth device address. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" line="65" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lmp__utils_8h_1a348deb818473ff185ce675bcdbe605b9" prot="public" static="no">
+        <name>LINK_KEY_LEN</name>
+        <initializer>16</initializer>
+        <briefdescription>
+<para>link key and its type </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" line="71" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lmp__utils_8h_1a63c64db5e4ac32a74a5a91a0a69c784c" prot="public" static="no">
+        <name>LINK_KEY_STR_LEN</name>
+        <initializer>(<ref refid="lmp__utils_8h_1a348deb818473ff185ce675bcdbe605b9" kindref="member">LINK_KEY_LEN</ref>*2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" line="72" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lmp__utils_8h_1a59d73f6a31546fd8a60b6e3939ba747c" prot="public" static="no">
+        <name>DEVICE_NAME_LEN</name>
+        <initializer>248</initializer>
+        <briefdescription>
+<para>The device name type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" line="95" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lmp__utils_8h_1a649984b3cda33717d06e0a8f4ce5206e" prot="public" static="no">
+        <name>READ_BT_8</name>
+        <param><defname>buffer</defname></param>
+        <param><defname>pos</defname></param>
+        <initializer>( ((u8) buffer[pos]))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" line="100" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lmp__utils_8h_1a7e2d929fd73d9bf2feba13300726daed" prot="public" static="no">
+        <name>READ_BT_16</name>
+        <param><defname>buffer</defname></param>
+        <param><defname>pos</defname></param>
+        <initializer>( ((uint16_t) buffer[pos]) | (((uint16_t)buffer[pos+1]) &lt;&lt; 8))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" line="101" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lmp__utils_8h_1af272661bd3ef018e45275e220fb9e207" prot="public" static="no">
+        <name>READ_BT_24</name>
+        <param><defname>buffer</defname></param>
+        <param><defname>pos</defname></param>
+        <initializer>( ((uint32_t) buffer[pos]) | (((uint32_t)buffer[pos+1]) &lt;&lt; 8) | (((uint32_t)buffer[pos+2]) &lt;&lt; 16))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" line="102" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lmp__utils_8h_1a6f2204adaa58132ff46799a6085adf54" prot="public" static="no">
+        <name>READ_BT_32</name>
+        <param><defname>buffer</defname></param>
+        <param><defname>pos</defname></param>
+        <initializer>( ((uint32_t) buffer[pos]) | (((uint32_t)buffer[pos+1]) &lt;&lt; 8) | (((uint32_t)buffer[pos+2]) &lt;&lt; 16) | (((uint32_t) buffer[pos+3])) &lt;&lt; 24)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" line="103" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lmp__utils_8h_1a2591bb0bcc8143bbdf290c6b8cdc7392" prot="public" static="no">
+        <name>READ_NET_16</name>
+        <param><defname>buffer</defname></param>
+        <param><defname>pos</defname></param>
+        <initializer>( ((uint16_t) buffer[pos+1]) | (((uint16_t)buffer[pos  ]) &lt;&lt; 8))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" line="106" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lmp__utils_8h_1a234e9ba984dea5712c9fff9ff1cec711" prot="public" static="no">
+        <name>READ_NET_32</name>
+        <param><defname>buffer</defname></param>
+        <param><defname>pos</defname></param>
+        <initializer>( ((uint32_t) buffer[pos+3]) | (((uint32_t)buffer[pos+2]) &lt;&lt; 8) | (((uint32_t)buffer[pos+1]) &lt;&lt; 16) | (((uint32_t) buffer[pos])) &lt;&lt; 24)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" line="107" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lmp__utils_8h_1a3563f53461b75b6c19fa66f158988999" prot="public" static="no">
+        <name>READ_CMD_OGF</name>
+        <param><defname>buffer</defname></param>
+        <initializer>(buffer[1] &gt;&gt; 2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" line="110" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lmp__utils_8h_1a041e2bbdd1ad65ffd08a85d21671a040" prot="public" static="no">
+        <name>READ_CMD_OCF</name>
+        <param><defname>buffer</defname></param>
+        <initializer>((buffer[1] &amp; 0x03) &lt;&lt; 8 | buffer[0])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" line="111" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lmp__utils_8h_1a13c0493e07445687ff4e7698c55335a6" prot="public" static="no">
+        <name>COMMAND_COMPLETE_EVENT</name>
+        <param><defname>event</defname></param>
+        <param><defname>cmd</defname></param>
+        <initializer>( event[0] == HCI_EVENT_COMMAND_COMPLETE &amp;&amp; <ref refid="lmp__utils_8h_1a7e2d929fd73d9bf2feba13300726daed" kindref="member">READ_BT_16</ref>(event,3) == cmd.opcode)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" line="114" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lmp__utils_8h_1aa5194f516ee9b0c9c8fb04c0392f941c" prot="public" static="no">
+        <name>COMMAND_STATUS_EVENT</name>
+        <param><defname>event</defname></param>
+        <param><defname>cmd</defname></param>
+        <initializer>( event[0] == HCI_EVENT_COMMAND_STATUS &amp;&amp; <ref refid="lmp__utils_8h_1a7e2d929fd73d9bf2feba13300726daed" kindref="member">READ_BT_16</ref>(event,4) == cmd.opcode)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" line="115" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lmp__utils_8h_1af45cc543422093fb6d9ad5829aa09e49" prot="public" static="no">
+        <name>OFFSET_OF_DATA_IN_COMMAND_COMPLETE</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" line="118" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lmp__utils_8h_1a4d1fdd50842c81a28cf30061eb23a5b2" prot="public" static="no">
+        <name>READ_ACL_CONNECTION_HANDLE</name>
+        <param><defname>buffer</defname></param>
+        <initializer>( <ref refid="lmp__utils_8h_1a7e2d929fd73d9bf2feba13300726daed" kindref="member">READ_BT_16</ref>(buffer,0) &amp; 0x0fff)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" line="122" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lmp__utils_8h_1a5a9dda43fa87d4324909aac1a0732935" prot="public" static="no">
+        <name>READ_ACL_FLAGS</name>
+        <param><defname>buffer</defname></param>
+        <initializer>( buffer[1] &gt;&gt; 4 )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" line="123" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lmp__utils_8h_1a607d0ab6601a0857700fec563efa38a5" prot="public" static="no">
+        <name>READ_ACL_LENGTH</name>
+        <param><defname>buffer</defname></param>
+        <initializer>(<ref refid="lmp__utils_8h_1a7e2d929fd73d9bf2feba13300726daed" kindref="member">READ_BT_16</ref>(buffer, 2))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" line="124" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lmp__utils_8h_1a21b480b9da2bda4b0bf5d9df8b0b683d" prot="public" static="no">
+        <name>READ_L2CAP_LENGTH</name>
+        <param><defname>buffer</defname></param>
+        <initializer>( <ref refid="lmp__utils_8h_1a7e2d929fd73d9bf2feba13300726daed" kindref="member">READ_BT_16</ref>(buffer, 4))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" line="127" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lmp__utils_8h_1ad19af5a3d9b0ae6948d5c84b784be736" prot="public" static="no">
+        <name>READ_L2CAP_CHANNEL_ID</name>
+        <param><defname>buffer</defname></param>
+        <initializer>( <ref refid="lmp__utils_8h_1a7e2d929fd73d9bf2feba13300726daed" kindref="member">READ_BT_16</ref>(buffer, 6))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" line="128" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lmp__utils_8h_1a68ba483e04c76b6eac957ae540723c4f" prot="public" static="no">
+        <name>READ_SCO_CONNECTION_HANDLE</name>
+        <param><defname>buffer</defname></param>
+        <initializer>( <ref refid="lmp__utils_8h_1a7e2d929fd73d9bf2feba13300726daed" kindref="member">READ_BT_16</ref>(buffer,0) &amp; 0x0fff)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" line="131" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lmp__utils_8h_1a62259956e2567c1555be47d31429419d" prot="public" static="no">
+        <name>READ_SCO_FLAGS</name>
+        <param><defname>buffer</defname></param>
+        <initializer>( buffer[1] &gt;&gt; 4 )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" line="132" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lmp__utils_8h_1a0242af7ae672afd74de40ff007bdd727" prot="public" static="no">
+        <name>READ_SCO_LENGTH</name>
+        <param><defname>buffer</defname></param>
+        <initializer>(<ref refid="lmp__utils_8h_1a649984b3cda33717d06e0a8f4ce5206e" kindref="member">READ_BT_8</ref>(buffer, 2))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" line="133" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lmp__utils_8h_1a63953239218754cbb3ffb0fd85a63718" prot="public" static="no">
+        <name>HCI_VERSION</name>
+        <initializer>0x04</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parameter Name Assigned Values HCI_Version 0 Bluetooth? Core Specification 1.0b 1 Bluetooth Core Specification 1.1 2 Bluetooth Core Specification 1.2 3 Bluetooth Core Specification 2.0 + EDR 4 Bluetooth Core Specification 2.1 + EDR 5 Bluetooth Core Specification 3.0 + HS 6 Bluetooth Core Specification 4.0 ? ?7 ?Bluetooth Core Specification 4.1 8?- 255 Reserved</para><para>Link Manager Protocol (LMP) The Link Manager Version parameter Parameter Name Assigned Values VersNr 0 Bluetooth? Core Specification 1.0b 1 Bluetooth Core Specification 1.1 2 Bluetooth Core Specification 1.2 3 Bluetooth Core Specification 2.0 + EDR 4 Bluetooth Core Specification 2.1 + EDR 5 Bluetooth Core Specification 3.0 + HS 6 Bluetooth Core Specification 4.0 ?7 ?Bluetooth Core Specification 4.1 8?– 255 Reserved </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" line="162" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lmp__utils_8h_1a86e0265a4fbeae8ed36c11b00407a2f0" prot="public" static="no">
+        <name>HCI_REVISION</name>
+        <initializer>0x0106</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" line="163" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lmp__utils_8h_1a88942cbd396a5034506748ebcbac7190" prot="public" static="no">
+        <name>LMP_VERSION</name>
+        <initializer>0x04</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" line="164" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lmp__utils_8h_1aaa2b8f5b105c3019df0cb346f472e803" prot="public" static="no">
+        <name>MANUFACTURER_NAME</name>
+        <initializer>0x000A</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" line="165" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lmp__utils_8h_1a2a13d87e68455f7bef8d9802b79accaa" prot="public" static="no">
+        <name>LMP_SUBVERSION</name>
+        <initializer>0x0106</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" line="166" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lmp__utils_8h_1a7d7d1051dc9231951f6f6b8a831d27dd" prot="public" static="no">
+        <name>BD_LINKKEY_CMP</name>
+        <param><defname>a</defname></param>
+        <param><defname>b</defname></param>
+        <initializer>memcmp(a,b, <ref refid="lmp__utils_8h_1a348deb818473ff185ce675bcdbe605b9" kindref="member">LINK_KEY_LEN</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" line="195" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lmp__utils_8h_1abb5392de5219aadb33379031f5e27370" prot="public" static="no">
+        <name>BD_ADDR_COPY</name>
+        <param><defname>dest</defname></param>
+        <param><defname>src</defname></param>
+        <initializer>memcpy(dest,src,<ref refid="lmp__utils_8h_1adc5356a86213ced2eebbc50b6251f6fe" kindref="member">BD_ADDR_LEN</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" line="196" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="lmp__utils_8h_1a9db736772fabb24631e5950236371f5b" prot="public" static="no">
+        <type>uint16_t</type>
+        <definition>typedef uint16_t hci_con_handle_t</definition>
+        <argsstring></argsstring>
+        <name>hci_con_handle_t</name>
+        <briefdescription>
+<para>hci connection handle type </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" line="60" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="lmp__utils_8h_1ae1a2a6111ced15a86a97f388a0ae9b6d" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t bd_addr_t[BD_ADDR_LEN]</definition>
+        <argsstring>[BD_ADDR_LEN]</argsstring>
+        <name>bd_addr_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" line="66" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="lmp__utils_8h_1ac72e910067ba72640dcf235212fe9913" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t link_key_t[LINK_KEY_LEN]</definition>
+        <argsstring>[LINK_KEY_LEN]</argsstring>
+        <name>link_key_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" line="73" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="lmp__utils_8h_1aebe8b0658d5608f23ce04328c28064fc" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t sm_key_t[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>sm_key_t</name>
+        <briefdescription>
+<para>128 bit key used with AES128 in Security Manager </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" line="90" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="lmp__utils_8h_1aafeb8d1dbdd47338437335ed57c7edc5" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t device_name_t[DEVICE_NAME_LEN+1]</definition>
+        <argsstring>[DEVICE_NAME_LEN+1]</argsstring>
+        <name>device_name_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" line="96" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lmp__utils_8h_1a978cd6f190bc1de342a6516115448695" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void endian_change</definition>
+        <argsstring>(uint8_t *src, uint16_t len)</argsstring>
+        <name>endian_change</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" line="167" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="lmp__utils_8h_1a12ea9b196e105b9936f1ad71414d530d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmp_bt_store_16</definition>
+        <argsstring>(uint8_t *buffer, uint16_t pos, uint16_t value)</argsstring>
+        <name>lmp_bt_store_16</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" line="168" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="lmp__utils_8h_1a7a76cb5b05827645a26cbe0c472c7654" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmp_bt_store_32</definition>
+        <argsstring>(uint8_t *buffer, uint16_t pos, uint32_t value)</argsstring>
+        <name>lmp_bt_store_32</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" line="169" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="lmp__utils_8h_1a8523a56dbb2a7941fa23da1b96c99301" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmp_bt_flip_addr</definition>
+        <argsstring>(bd_addr_t dest, bd_addr_t src)</argsstring>
+        <name>lmp_bt_flip_addr</name>
+        <param>
+          <type><ref refid="lmp__utils_8h_1ae1a2a6111ced15a86a97f388a0ae9b6d" kindref="member">bd_addr_t</ref></type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type><ref refid="lmp__utils_8h_1ae1a2a6111ced15a86a97f388a0ae9b6d" kindref="member">bd_addr_t</ref></type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" line="170" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="lmp__utils_8h_1aac7a5e684b80f4cbfd7f175e45d96c01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmp_net_store_16</definition>
+        <argsstring>(uint8_t *buffer, uint16_t pos, uint16_t value)</argsstring>
+        <name>lmp_net_store_16</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" line="172" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="lmp__utils_8h_1a0eb02f25caf8f94495bd2e5da86964b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmp_net_store_32</definition>
+        <argsstring>(uint8_t *buffer, uint16_t pos, uint32_t value)</argsstring>
+        <name>lmp_net_store_32</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" line="173" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="lmp__utils_8h_1a0a54aea7bf053689fbe90e3381dfcb40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void swapX</definition>
+        <argsstring>(const uint8_t *src, uint8_t *dst, int len)</argsstring>
+        <name>swapX</name>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" line="180" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="lmp__utils_8h_1aacfe6ce5c58e8f43d0269d6b7a299f46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void swap24</definition>
+        <argsstring>(const uint8_t src[3], uint8_t dst[3])</argsstring>
+        <name>swap24</name>
+        <param>
+          <type>const uint8_t</type>
+          <declname>src</declname>
+          <array>[3]</array>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>dst</declname>
+          <array>[3]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" line="181" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="lmp__utils_8h_1ac7fa4ed48861c2a261748dd7ea42e47f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void swap56</definition>
+        <argsstring>(const uint8_t src[7], uint8_t dst[7])</argsstring>
+        <name>swap56</name>
+        <param>
+          <type>const uint8_t</type>
+          <declname>src</declname>
+          <array>[7]</array>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>dst</declname>
+          <array>[7]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" line="182" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="lmp__utils_8h_1a1a77e6e7a5b1e6e660a87e59412e72e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void swap64</definition>
+        <argsstring>(const uint8_t src[8], uint8_t dst[8])</argsstring>
+        <name>swap64</name>
+        <param>
+          <type>const uint8_t</type>
+          <declname>src</declname>
+          <array>[8]</array>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>dst</declname>
+          <array>[8]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" line="183" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="lmp__utils_8h_1a971266656f52982191886b18a44f73ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void swap128</definition>
+        <argsstring>(const uint8_t src[16], uint8_t dst[16])</argsstring>
+        <name>swap128</name>
+        <param>
+          <type>const uint8_t</type>
+          <declname>src</declname>
+          <array>[16]</array>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>dst</declname>
+          <array>[16]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" line="184" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="lmp__utils_8h_1ade1596fe713e8abb4596c560f895ef86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* lmp_bd_addr_to_str</definition>
+        <argsstring>(bd_addr_t addr)</argsstring>
+        <name>lmp_bd_addr_to_str</name>
+        <param>
+          <type><ref refid="lmp__utils_8h_1ae1a2a6111ced15a86a97f388a0ae9b6d" kindref="member">bd_addr_t</ref></type>
+          <declname>addr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" line="192" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="lmp__utils_8h_1a818b1656df8aff934300f7a2c9e2086a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void __get_access_addr</definition>
+        <argsstring>(u8 *access, const u8 *addr)</argsstring>
+        <name>__get_access_addr</name>
+        <param>
+          <type>u8 *</type>
+          <declname>access</declname>
+        </param>
+        <param>
+          <type>const u8 *</type>
+          <declname>addr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" line="198" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="lmp__utils_8h_1a88b4799a072d8e8263993dd464ea2315" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t crc8</definition>
+        <argsstring>(uint8_t *data, uint16_t len)</argsstring>
+        <name>crc8</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h" line="200" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2014<sp/>BlueKitchen<sp/>GmbH</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>1.<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>2.<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>documentation<sp/>and/or<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>3.<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>copyright<sp/>holders<sp/>nor<sp/>the<sp/>names<sp/>of</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>contributors<sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>from<sp/>this<sp/>software<sp/>without<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>4.<sp/>Any<sp/>redistribution,<sp/>use,<sp/>or<sp/>modification<sp/>is<sp/>done<sp/>solely<sp/>for</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>personal<sp/>benefit<sp/>and<sp/>not<sp/>for<sp/>any<sp/>commercial<sp/>purpose<sp/>or<sp/>for</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>monetary<sp/>gain.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>BLUEKITCHEN<sp/>GMBH<sp/>AND<sp/>CONTRIBUTORS</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>``AS<sp/>IS&apos;&apos;<sp/>AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>MATTHIAS</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>RINGWALD<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;<sp/>LOSS</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*<sp/>AND<sp/>ON<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/>OR<sp/>TORT<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*<sp/>THE<sp/>USE<sp/>OF<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/>*<sp/>Please<sp/>inquire<sp/>about<sp/>commercial<sp/>licensing<sp/>options<sp/>at</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>*<sp/>contact@bluekitchen-gmbh.com</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/>*<sp/><sp/>utils.h</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/>*<sp/><sp/>General<sp/>utility<sp/>functions</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/>*<sp/><sp/>Created<sp/>by<sp/>Matthias<sp/>Ringwald<sp/>on<sp/>7/23/09.</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__UTILS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__UTILS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">//<sp/>extern<sp/>&quot;C&quot;<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;typedef.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="lmp__utils_8h_1a9db736772fabb24631e5950236371f5b" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="lmp__utils_8h_1a9db736772fabb24631e5950236371f5b" kindref="member">hci_con_handle_t</ref>;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="lmp__utils_8h_1adc5356a86213ced2eebbc50b6251f6fe" refkind="member"><highlight class="preprocessor">#define<sp/>BD_ADDR_LEN<sp/>6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="lmp__utils_8h_1ae1a2a6111ced15a86a97f388a0ae9b6d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="lmp__utils_8h_1ae1a2a6111ced15a86a97f388a0ae9b6d" kindref="member">bd_addr_t</ref>[<ref refid="lmp__utils_8h_1adc5356a86213ced2eebbc50b6251f6fe" kindref="member">BD_ADDR_LEN</ref>];</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="lmp__utils_8h_1a348deb818473ff185ce675bcdbe605b9" refkind="member"><highlight class="preprocessor">#define<sp/>LINK_KEY_LEN<sp/>16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="lmp__utils_8h_1a63c64db5e4ac32a74a5a91a0a69c784c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LINK_KEY_STR_LEN<sp/>(LINK_KEY_LEN*2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="lmp__utils_8h_1ac72e910067ba72640dcf235212fe9913" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="lmp__utils_8h_1ac72e910067ba72640dcf235212fe9913" kindref="member">link_key_t</ref>[<ref refid="lmp__utils_8h_1a348deb818473ff185ce675bcdbe605b9" kindref="member">LINK_KEY_LEN</ref>];</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="comment">//typedef<sp/>enum<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>COMBINATION_KEY<sp/>=<sp/>0,<sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>standard<sp/>pairing</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>LOCAL_UNIT_KEY,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>REMOTE_UNIT_KEY,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>DEBUG_COMBINATION_KEY,<sp/><sp/><sp/><sp/>//<sp/>SSP<sp/>with<sp/>debug</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>UNAUTHENTICATED_COMBINATION_KEY_GENERATED_FROM_P192,<sp/>//<sp/>SSP<sp/>Simple<sp/>Pairing</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>AUTHENTICATED_COMBINATION_KEY_GENERATED_FROM_P192,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>SSP<sp/>Passkey,<sp/>Number<sp/>confirm,<sp/>OOB</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>CHANGED_COMBINATION_KEY,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Link<sp/>key<sp/>changed<sp/>using<sp/>Change<sp/>Connection<sp/>Lnk<sp/>Key</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>UNAUTHENTICATED_COMBINATION_KEY_GENERATED_FROM_P256,<sp/>//<sp/>SSP<sp/>Simpe<sp/>Pairing</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>AUTHENTICATED_COMBINATION_KEY_GENERATED_FROM_P256,<sp/><sp/><sp/>//<sp/>SSP<sp/>Passkey,<sp/>Number<sp/>confirm,<sp/>OOB</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="comment">//}<sp/>link_key_type_t;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="lmp__utils_8h_1aebe8b0658d5608f23ce04328c28064fc" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="lmp__utils_8h_1aebe8b0658d5608f23ce04328c28064fc" kindref="member">sm_key_t</ref>[16];</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="lmp__utils_8h_1a59d73f6a31546fd8a60b6e3939ba747c" refkind="member"><highlight class="preprocessor">#define<sp/>DEVICE_NAME_LEN<sp/>248</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="lmp__utils_8h_1aafeb8d1dbdd47338437335ed57c7edc5" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="lmp__utils_8h_1aafeb8d1dbdd47338437335ed57c7edc5" kindref="member">device_name_t</ref>[<ref refid="lmp__utils_8h_1a59d73f6a31546fd8a60b6e3939ba747c" kindref="member">DEVICE_NAME_LEN</ref><sp/>+<sp/>1];</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="comment">//<sp/>helper<sp/>for<sp/>BT<sp/>little<sp/>endian<sp/>format</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="lmp__utils_8h_1a649984b3cda33717d06e0a8f4ce5206e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>READ_BT_8(<sp/>buffer,<sp/>pos)<sp/>(<sp/>((u8)<sp/>buffer[pos]))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="lmp__utils_8h_1a7e2d929fd73d9bf2feba13300726daed" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>READ_BT_16(<sp/>buffer,<sp/>pos)<sp/>(<sp/>((uint16_t)<sp/>buffer[pos])<sp/>|<sp/>(((uint16_t)buffer[pos+1])<sp/>&lt;&lt;<sp/>8))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="lmp__utils_8h_1af272661bd3ef018e45275e220fb9e207" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>READ_BT_24(<sp/>buffer,<sp/>pos)<sp/>(<sp/>((uint32_t)<sp/>buffer[pos])<sp/>|<sp/>(((uint32_t)buffer[pos+1])<sp/>&lt;&lt;<sp/>8)<sp/>|<sp/>(((uint32_t)buffer[pos+2])<sp/>&lt;&lt;<sp/>16))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="lmp__utils_8h_1a6f2204adaa58132ff46799a6085adf54" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>READ_BT_32(<sp/>buffer,<sp/>pos)<sp/>(<sp/>((uint32_t)<sp/>buffer[pos])<sp/>|<sp/>(((uint32_t)buffer[pos+1])<sp/>&lt;&lt;<sp/>8)<sp/>|<sp/>(((uint32_t)buffer[pos+2])<sp/>&lt;&lt;<sp/>16)<sp/>|<sp/>(((uint32_t)<sp/>buffer[pos+3]))<sp/>&lt;&lt;<sp/>24)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="comment">//<sp/>helper<sp/>for<sp/>SDP<sp/>big<sp/>endian<sp/>format</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="lmp__utils_8h_1a2591bb0bcc8143bbdf290c6b8cdc7392" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>READ_NET_16(<sp/>buffer,<sp/>pos)<sp/>(<sp/>((uint16_t)<sp/>buffer[pos+1])<sp/>|<sp/>(((uint16_t)buffer[pos<sp/><sp/>])<sp/>&lt;&lt;<sp/>8))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="lmp__utils_8h_1a234e9ba984dea5712c9fff9ff1cec711" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>READ_NET_32(<sp/>buffer,<sp/>pos)<sp/>(<sp/>((uint32_t)<sp/>buffer[pos+3])<sp/>|<sp/>(((uint32_t)buffer[pos+2])<sp/>&lt;&lt;<sp/>8)<sp/>|<sp/>(((uint32_t)buffer[pos+1])<sp/>&lt;&lt;<sp/>16)<sp/>|<sp/>(((uint32_t)<sp/>buffer[pos]))<sp/>&lt;&lt;<sp/>24)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="comment">//<sp/>HCI<sp/>CMD<sp/>OGF/OCF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="lmp__utils_8h_1a3563f53461b75b6c19fa66f158988999" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>READ_CMD_OGF(buffer)<sp/>(buffer[1]<sp/>&gt;&gt;<sp/>2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="lmp__utils_8h_1a041e2bbdd1ad65ffd08a85d21671a040" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>READ_CMD_OCF(buffer)<sp/>((buffer[1]<sp/>&amp;<sp/>0x03)<sp/>&lt;&lt;<sp/>8<sp/>|<sp/>buffer[0])</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="comment">//<sp/>check<sp/>if<sp/>command<sp/>complete<sp/>event<sp/>for<sp/>given<sp/>command</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="lmp__utils_8h_1a13c0493e07445687ff4e7698c55335a6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COMMAND_COMPLETE_EVENT(event,cmd)<sp/>(<sp/>event[0]<sp/>==<sp/>HCI_EVENT_COMMAND_COMPLETE<sp/>&amp;&amp;<sp/>READ_BT_16(event,3)<sp/>==<sp/>cmd.opcode)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="lmp__utils_8h_1aa5194f516ee9b0c9c8fb04c0392f941c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COMMAND_STATUS_EVENT(event,cmd)<sp/>(<sp/>event[0]<sp/>==<sp/>HCI_EVENT_COMMAND_STATUS<sp/>&amp;&amp;<sp/>READ_BT_16(event,4)<sp/>==<sp/>cmd.opcode)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Code+Len=2,<sp/>Pkts+Opcode=3;<sp/>total=5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118" refid="lmp__utils_8h_1af45cc543422093fb6d9ad5829aa09e49" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OFFSET_OF_DATA_IN_COMMAND_COMPLETE<sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>READ_CONNECTION_HANDLE(buffer)<sp/><sp/>(READ_BT_16(buffer,0)<sp/>&amp;<sp/>0x0fff)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="comment">//<sp/>ACL<sp/>Packet</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="lmp__utils_8h_1a4d1fdd50842c81a28cf30061eb23a5b2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>READ_ACL_CONNECTION_HANDLE(<sp/>buffer<sp/>)<sp/>(<sp/>READ_BT_16(buffer,0)<sp/>&amp;<sp/>0x0fff)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="lmp__utils_8h_1a5a9dda43fa87d4324909aac1a0732935" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>READ_ACL_FLAGS(<sp/>buffer<sp/>)<sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>buffer[1]<sp/>&gt;&gt;<sp/>4<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124" refid="lmp__utils_8h_1a607d0ab6601a0857700fec563efa38a5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>READ_ACL_LENGTH(<sp/>buffer<sp/>)<sp/><sp/><sp/><sp/><sp/>(READ_BT_16(buffer,<sp/>2))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="comment">//<sp/>L2CAP<sp/>Packet</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="lmp__utils_8h_1a21b480b9da2bda4b0bf5d9df8b0b683d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>READ_L2CAP_LENGTH(buffer)<sp/><sp/><sp/><sp/><sp/>(<sp/>READ_BT_16(buffer,<sp/>4))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128" refid="lmp__utils_8h_1ad19af5a3d9b0ae6948d5c84b784be736" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>READ_L2CAP_CHANNEL_ID(buffer)<sp/>(<sp/>READ_BT_16(buffer,<sp/>6))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SCo<sp/>Packet</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="lmp__utils_8h_1a68ba483e04c76b6eac957ae540723c4f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>READ_SCO_CONNECTION_HANDLE(<sp/>buffer<sp/>)<sp/>(<sp/>READ_BT_16(buffer,0)<sp/>&amp;<sp/>0x0fff)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132" refid="lmp__utils_8h_1a62259956e2567c1555be47d31429419d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>READ_SCO_FLAGS(<sp/>buffer<sp/>)<sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>buffer[1]<sp/>&gt;&gt;<sp/>4<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133" refid="lmp__utils_8h_1a0242af7ae672afd74de40ff007bdd727" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>READ_SCO_LENGTH(<sp/>buffer<sp/>)<sp/><sp/><sp/><sp/><sp/>(READ_BT_8(buffer,<sp/>2))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="comment">//BT<sp/>version</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162" refid="lmp__utils_8h_1a63953239218754cbb3ffb0fd85a63718" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HCI_VERSION<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x04</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163" refid="lmp__utils_8h_1a86e0265a4fbeae8ed36c11b00407a2f0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HCI_REVISION<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0106</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164" refid="lmp__utils_8h_1a88942cbd396a5034506748ebcbac7190" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LMP_VERSION<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x04</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165" refid="lmp__utils_8h_1aaa2b8f5b105c3019df0cb346f472e803" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MANUFACTURER_NAME<sp/><sp/><sp/>0x000A<sp/><sp/>//csr</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166" refid="lmp__utils_8h_1a2a13d87e68455f7bef8d9802b79accaa" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LMP_SUBVERSION<sp/><sp/><sp/><sp/><sp/><sp/>0x0106</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lmp__utils_8h_1a978cd6f190bc1de342a6516115448695" kindref="member">endian_change</ref>(uint8_t<sp/>*src,<sp/>uint16_t<sp/>len);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lmp__utils_8h_1a12ea9b196e105b9936f1ad71414d530d" kindref="member">lmp_bt_store_16</ref>(uint8_t<sp/>*buffer,<sp/>uint16_t<sp/>pos,<sp/>uint16_t<sp/>value);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lmp__utils_8h_1a7a76cb5b05827645a26cbe0c472c7654" kindref="member">lmp_bt_store_32</ref>(uint8_t<sp/>*buffer,<sp/>uint16_t<sp/>pos,<sp/>uint32_t<sp/>value);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lmp__utils_8h_1a8523a56dbb2a7941fa23da1b96c99301" kindref="member">lmp_bt_flip_addr</ref>(<ref refid="lmp__utils_8h_1ae1a2a6111ced15a86a97f388a0ae9b6d" kindref="member">bd_addr_t</ref><sp/>dest,<sp/><ref refid="lmp__utils_8h_1ae1a2a6111ced15a86a97f388a0ae9b6d" kindref="member">bd_addr_t</ref><sp/>src);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lmp__utils_8h_1aac7a5e684b80f4cbfd7f175e45d96c01" kindref="member">lmp_net_store_16</ref>(uint8_t<sp/>*buffer,<sp/>uint16_t<sp/>pos,<sp/>uint16_t<sp/>value);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lmp__utils_8h_1a0eb02f25caf8f94495bd2e5da86964b7" kindref="member">lmp_net_store_32</ref>(uint8_t<sp/>*buffer,<sp/>uint16_t<sp/>pos,<sp/>uint32_t<sp/>value);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="comment">//<sp/>hack:<sp/>compilation<sp/>with<sp/>the<sp/>android<sp/>ndk<sp/>causes<sp/>an<sp/>error<sp/>as<sp/>there&apos;s<sp/>a<sp/>swap64<sp/>macro</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>swap64</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>swap64</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lmp__utils_8h_1a0a54aea7bf053689fbe90e3381dfcb40" kindref="member">swapX</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*src,<sp/>uint8_t<sp/>*dst,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lmp__utils_8h_1aacfe6ce5c58e8f43d0269d6b7a299f46" kindref="member">swap24</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/><sp/>src[3],<sp/><sp/>uint8_t<sp/>dst[3]);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lmp__utils_8h_1ac7fa4ed48861c2a261748dd7ea42e47f" kindref="member">swap56</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/><sp/>src[7],<sp/><sp/>uint8_t<sp/>dst[7]);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lmp__utils_8h_1a1a77e6e7a5b1e6e660a87e59412e72e2" kindref="member">swap64</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/><sp/>src[8],<sp/><sp/>uint8_t<sp/>dst[8]);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lmp__utils_8h_1a971266656f52982191886b18a44f73ed" kindref="member">swap128</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>src[16],<sp/>uint8_t<sp/>dst[16]);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight><highlight class="comment">//<sp/>@deprecated<sp/>please<sp/>use<sp/>more<sp/>convenient<sp/>bd_addr_to_str</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="lmp__utils_8h_1ade1596fe713e8abb4596c560f895ef86" kindref="member">lmp_bd_addr_to_str</ref>(<ref refid="lmp__utils_8h_1ae1a2a6111ced15a86a97f388a0ae9b6d" kindref="member">bd_addr_t</ref><sp/>addr);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>BD_ADDR_CMP(a,b)<sp/>memcmp(a,b,<sp/>BD_ADDR_LEN)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195" refid="lmp__utils_8h_1a7d7d1051dc9231951f6f6b8a831d27dd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BD_LINKKEY_CMP(a,b)<sp/>memcmp(a,b,<sp/>LINK_KEY_LEN)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196" refid="lmp__utils_8h_1abb5392de5219aadb33379031f5e27370" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BD_ADDR_COPY(dest,src)<sp/>memcpy(dest,src,BD_ADDR_LEN)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lmp__utils_8h_1a818b1656df8aff934300f7a2c9e2086a" kindref="member">__get_access_addr</ref>(u8<sp/>*access,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>*addr);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="lmp__utils_8h_1a88b4799a072d8e8263993dd464ea2315" kindref="member">crc8</ref>(uint8_t<sp/>*data,<sp/>uint16_t<sp/>len);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight><highlight class="comment">//<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>__UTILS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_utils.h"/>
+  </compounddef>
+</doxygen>

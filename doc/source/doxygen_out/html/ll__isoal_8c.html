@@ -1,0 +1,727 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>JL Adapter SDK: /data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_isoal.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">JL Adapter SDK
+   &#160;<span id="projectnumber">v0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_5aa4d6ccf34d88a270949875c15714e5.html">btctrler</a></li><li class="navelem"><a class="el" href="dir_16b18ce1fc07a124435f964aa38ae307.html">BLE_v2</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">ll_isoal.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="link__layer_8h_source.html">ble/link_layer.h</a>&quot;</code><br />
+<code>#include &quot;hci_controller.h&quot;</code><br />
+<code>#include &quot;bluetooth.h&quot;</code><br />
+<code>#include &quot;system/timer.h&quot;</code><br />
+<code>#include &quot;hci_transport.h&quot;</code><br />
+<code>#include &lt;math.h&gt;</code><br />
+<code>#include &quot;bb_le_api.h&quot;</code><br />
+<code>#include &quot;common/task_config.h&quot;</code><br />
+<code>#include &quot;common/debug.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+ll_isoal.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="ll__isoal_8c__incl.png" border="0" usemap="#_2data_2bingquan_2repo_2repo__adapter_2adapter__sdk_2lib_2btctrler_2BLE__v2_2ll__isoal_8c" alt=""/></div>
+<map name="_2data_2bingquan_2repo_2repo__adapter_2adapter__sdk_2lib_2btctrler_2BLE__v2_2ll__isoal_8c" id="_2data_2bingquan_2repo_2repo__adapter_2adapter__sdk_2lib_2btctrler_2BLE__v2_2ll__isoal_8c">
+<area shape="rect" id="node2" href="link__layer_8h.html" title="ble/link_layer.h" alt="" coords="705,124,815,151"/>
+<area shape="rect" id="node8" href="ll__defines_8h.html" title="ll_defines.h" alt="" coords="301,348,389,375"/>
+<area shape="rect" id="node9" href="white__list_8h.html" title="white_list.h" alt="" coords="5,348,93,375"/>
+<area shape="rect" id="node12" href="llcp_8h.html" title="ble/llcp.h" alt="" coords="623,273,697,300"/>
+<area shape="rect" id="node13" href="ll__adv_8h.html" title="ble/ll_adv.h" alt="" coords="1052,199,1140,225"/>
+<area shape="rect" id="node14" href="ll__scan_8h.html" title="ble/ll_scan.h" alt="" coords="1165,199,1259,225"/>
+<area shape="rect" id="node15" href="ll__init_8h.html" title="ble/ll_init.h" alt="" coords="1283,199,1367,225"/>
+<area shape="rect" id="node16" href="resolve__list_8h.html" title="resolve_list.h" alt="" coords="159,348,257,375"/>
+<area shape="rect" id="node17" href="data__extension_8h.html" title="data_extension.h" alt="" coords="745,348,866,375"/>
+<area shape="rect" id="node18" href="multiple__phys_8h.html" title="multiple_phys.h" alt="" coords="823,273,937,300"/>
+<area shape="rect" id="node19" href="ll__cte_8h.html" title="ble/ll_cte.h" alt="" coords="223,273,308,300"/>
+<area shape="rect" id="node20" href="ll__iso_8h.html" title="ble/ll_iso.h" alt="" coords="514,273,598,300"/>
+<area shape="rect" id="node22" href="ll__bis_8h.html" title="ble/ll_bis.h" alt="" coords="403,199,487,225"/>
+<area shape="rect" id="node24" href="ll__cis_8h.html" title="ble/ll_cis.h" alt="" coords="511,199,595,225"/>
+<area shape="rect" id="node25" href="ll__pc_8h.html" title="ble/ll_pc.h" alt="" coords="117,273,198,300"/>
+<area shape="rect" id="node23" href="audio__codec_8h.html" title="audio_codec.h" alt="" coords="383,273,489,300"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a6c6991cba0e2995d7d9aec73e0324317"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__isoal_8c.html#a6c6991cba0e2995d7d9aec73e0324317">LOG_TAG_CONST</a>&#160;&#160;&#160;LL_ISO</td></tr>
+<tr class="separator:a6c6991cba0e2995d7d9aec73e0324317"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ce0df38eb467e59f209470c8f5ac4e6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__isoal_8c.html#a7ce0df38eb467e59f209470c8f5ac4e6">LOG_TAG</a>&#160;&#160;&#160;&quot;[LL-ISO]&quot;</td></tr>
+<tr class="separator:a7ce0df38eb467e59f209470c8f5ac4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eeb6e067100d0dec6e53bce19a403e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__isoal_8c.html#a9eeb6e067100d0dec6e53bce19a403e0">LOG_ERROR_ENABLE</a></td></tr>
+<tr class="separator:a9eeb6e067100d0dec6e53bce19a403e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69321c8a2a0b07a07fb5088e82e25eb0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__isoal_8c.html#a69321c8a2a0b07a07fb5088e82e25eb0">LOG_INFO_ENABLE</a></td></tr>
+<tr class="separator:a69321c8a2a0b07a07fb5088e82e25eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04135f631fe91199f05b1d816dda8756"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__isoal_8c.html#a04135f631fe91199f05b1d816dda8756">LOG_DUMP_ENABLE</a></td></tr>
+<tr class="separator:a04135f631fe91199f05b1d816dda8756"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad223350d80db21fa8b721107cd1f6442"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__isoal_8c.html#ad223350d80db21fa8b721107cd1f6442">__this</a>&#160;&#160;&#160;(&amp;<a class="el" href="link__layer_8h.html#a11d5b1c8b0def0c238d4700650780724">ll_hdl</a>)</td></tr>
+<tr class="separator:ad223350d80db21fa8b721107cd1f6442"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a8f2d7816f90d628ce81f2425491f090d"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__isoal_8c.html#a8f2d7816f90d628ce81f2425491f090d">ll_iso_pack_hdr</a> (uint8_t *sdu, const <a class="el" href="ll__iso_8h.html#structhci__iso__hdr__t">hci_iso_hdr_t</a> *hdr)</td></tr>
+<tr class="memdesc:a8f2d7816f90d628ce81f2425491f090d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pack an ISO header.  <a href="#a8f2d7816f90d628ce81f2425491f090d">更多...</a><br /></td></tr>
+<tr class="separator:a8f2d7816f90d628ce81f2425491f090d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affc326042b3a59d0434f6ce05a70d930"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__isoal_8c.html#affc326042b3a59d0434f6ce05a70d930">ll_iso_unpack_hdr</a> (const uint8_t *sdu, <a class="el" href="ll__iso_8h.html#structhci__iso__hdr__t">hci_iso_hdr_t</a> *hdr)</td></tr>
+<tr class="memdesc:affc326042b3a59d0434f6ce05a70d930"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unpack an ISO header.  <a href="#affc326042b3a59d0434f6ce05a70d930">更多...</a><br /></td></tr>
+<tr class="separator:affc326042b3a59d0434f6ce05a70d930"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83364720d4c63af0a947bcacb3eb80c0"><td class="memItemLeft" align="right" valign="top">static uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__isoal_8c.html#a83364720d4c63af0a947bcacb3eb80c0">ll_iso_pack_seg_hdr</a> (uint8_t *pdu, const <a class="el" href="ll__defines_8h.html#structsegm__hdr__t">segm_hdr_t</a> *seg_hdr)</td></tr>
+<tr class="memdesc:a83364720d4c63af0a947bcacb3eb80c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pack a ISOAL Segmentation header.  <a href="#a83364720d4c63af0a947bcacb3eb80c0">更多...</a><br /></td></tr>
+<tr class="separator:a83364720d4c63af0a947bcacb3eb80c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bf2c6a3d81b23ce9b903d5ca48daaf7"><td class="memItemLeft" align="right" valign="top">static uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__isoal_8c.html#a2bf2c6a3d81b23ce9b903d5ca48daaf7">ll_iso_unpack_seg_hdr</a> (const uint8_t *pdu, <a class="el" href="ll__defines_8h.html#structsegm__hdr__t">segm_hdr_t</a> *seg_hdr)</td></tr>
+<tr class="memdesc:a2bf2c6a3d81b23ce9b903d5ca48daaf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unpack a ISOAL Segmentation header.  <a href="#a2bf2c6a3d81b23ce9b903d5ca48daaf7">更多...</a><br /></td></tr>
+<tr class="separator:a2bf2c6a3d81b23ce9b903d5ca48daaf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4466f0dd5f5e204861f3ae9a76f8da9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__isoal_8c.html#a4466f0dd5f5e204861f3ae9a76f8da9b">ll_iso_enq</a> (struct list_head *pHead, uint8_t *pBuffer)</td></tr>
+<tr class="separator:a4466f0dd5f5e204861f3ae9a76f8da9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf1ed6cae1b60f65c5de8040caf5e2b9"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__isoal_8c.html#aaf1ed6cae1b60f65c5de8040caf5e2b9">ll_iso_deq</a> (struct list_head *pHead)</td></tr>
+<tr class="separator:aaf1ed6cae1b60f65c5de8040caf5e2b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a144540f155fe9e0dccd1e27a55660b61"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__isoal_8c.html#a144540f155fe9e0dccd1e27a55660b61">ll_iso_peek</a> (struct list_head *pHead)</td></tr>
+<tr class="separator:a144540f155fe9e0dccd1e27a55660b61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bfa6cd5befa349441eac875fbe4fffa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__isoal_8c.html#a4bfa6cd5befa349441eac875fbe4fffa">ll_iso_free</a> (uint8_t *pBuffer)</td></tr>
+<tr class="separator:a4bfa6cd5befa349441eac875fbe4fffa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b5e13ab3f68f7acfbcf2f6845e4b15b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__isoal_8c.html#a7b5e13ab3f68f7acfbcf2f6845e4b15b">ll_iso_cis_sdu_recombination</a> (<a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *cis, <a class="el" href="ll__defines_8h.html#adad37d985a545b165cae3973b9db27a7">cis_pdu_t</a> *pdu)</td></tr>
+<tr class="separator:a7b5e13ab3f68f7acfbcf2f6845e4b15b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9999748144a476ddf5cc4b8ac7d03213"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__isoal_8c.html#a9999748144a476ddf5cc4b8ac7d03213">ll_iso_cis_sdu_fragmentation</a> (<a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *cis, uint8_t *iso_data, uint16_t size)</td></tr>
+<tr class="separator:a9999748144a476ddf5cc4b8ac7d03213"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a768db9a792e5842907adb66152b69624"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__isoal_8c.html#a768db9a792e5842907adb66152b69624">ll_iso_cis_sdu_segmentation</a> (<a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *cis, uint8_t *iso_data, uint16_t sdu_size)</td></tr>
+<tr class="separator:a768db9a792e5842907adb66152b69624"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0357ffc71d6eeeea7d3a769bef0d3ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__isoal_8c.html#aa0357ffc71d6eeeea7d3a769bef0d3ca">ll_iso_cis_sdu_reassembly</a> (<a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *cis, <a class="el" href="ll__defines_8h.html#adad37d985a545b165cae3973b9db27a7">cis_pdu_t</a> *pdu)</td></tr>
+<tr class="separator:aa0357ffc71d6eeeea7d3a769bef0d3ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c2385571a577d45ac1daf487dd05c72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__isoal_8c.html#a9c2385571a577d45ac1daf487dd05c72">ll_iso_bis_sdu_recombination</a> (<a class="el" href="ll__bis_8h.html#structle__bis__t">le_bis_t</a> *bis, <a class="el" href="ll__defines_8h.html#a194765d07627a538aa212cf97446626c">bis_pdu_t</a> *pdu)</td></tr>
+<tr class="separator:a9c2385571a577d45ac1daf487dd05c72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56193d0367d03ff83847e2a529a2e0b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__isoal_8c.html#a56193d0367d03ff83847e2a529a2e0b8">ll_iso_bis_sdu_fragmentation</a> (<a class="el" href="ll__bis_8h.html#structle__bis__t">le_bis_t</a> *bis, uint8_t *iso_data, uint16_t size)</td></tr>
+<tr class="separator:a56193d0367d03ff83847e2a529a2e0b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c2701aff88af47c4b9e15297655b75d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__isoal_8c.html#a3c2701aff88af47c4b9e15297655b75d">hci_push_iso_sdu</a> (uint8_t *packet, uint16_t size)</td></tr>
+<tr class="separator:a3c2701aff88af47c4b9e15297655b75d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">宏定义说明</h2>
+<a class="anchor" id="ad223350d80db21fa8b721107cd1f6442"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __this&#160;&#160;&#160;(&amp;<a class="el" href="link__layer_8h.html#a11d5b1c8b0def0c238d4700650780724">ll_hdl</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a04135f631fe91199f05b1d816dda8756"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_DUMP_ENABLE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9eeb6e067100d0dec6e53bce19a403e0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_ERROR_ENABLE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a69321c8a2a0b07a07fb5088e82e25eb0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_INFO_ENABLE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7ce0df38eb467e59f209470c8f5ac4e6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_TAG&#160;&#160;&#160;&quot;[LL-ISO]&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6c6991cba0e2995d7d9aec73e0324317"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_TAG_CONST&#160;&#160;&#160;LL_ISO</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a3c2701aff88af47c4b9e15297655b75d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hci_push_iso_sdu </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>packet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>: hci_push_iso_sdu</p>
+<p>: packet  : size </p>
+
+</div>
+</div>
+<a class="anchor" id="a56193d0367d03ff83847e2a529a2e0b8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_iso_bis_sdu_fragmentation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__bis_8h.html#structle__bis__t">le_bis_t</a> *&#160;</td>
+          <td class="paramname"><em>bis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>iso_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>: ll_iso_bis_sdu_fragmentation</p>
+<p>: bis  : iso_data  : size </p>
+
+</div>
+</div>
+<a class="anchor" id="a9c2385571a577d45ac1daf487dd05c72"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_iso_bis_sdu_recombination </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__bis_8h.html#structle__bis__t">le_bis_t</a> *&#160;</td>
+          <td class="paramname"><em>bis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ll__defines_8h.html#a194765d07627a538aa212cf97446626c">bis_pdu_t</a> *&#160;</td>
+          <td class="paramname"><em>pdu</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>: ll_iso_bis_sdu_recombination</p>
+<p>: bis  : pdu </p>
+<p>&lt; Complete SDU</p>
+<p>&lt; End SDU</p>
+<p>&lt; First SDU</p>
+<p>&lt; Continue SDU </p>
+
+</div>
+</div>
+<a class="anchor" id="a9999748144a476ddf5cc4b8ac7d03213"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_iso_cis_sdu_fragmentation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *&#160;</td>
+          <td class="paramname"><em>cis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>iso_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>: ll_iso_cis_sdu_fragmentation</p>
+<p>: cis  : iso_data  : size </p>
+
+</div>
+</div>
+<a class="anchor" id="aa0357ffc71d6eeeea7d3a769bef0d3ca"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_iso_cis_sdu_reassembly </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *&#160;</td>
+          <td class="paramname"><em>cis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ll__defines_8h.html#adad37d985a545b165cae3973b9db27a7">cis_pdu_t</a> *&#160;</td>
+          <td class="paramname"><em>pdu</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>: ll_iso_cis_sdu_reassembly</p>
+<p>: cis  : pdu </p>
+<p>&lt; Sync </p>
+
+</div>
+</div>
+<a class="anchor" id="a7b5e13ab3f68f7acfbcf2f6845e4b15b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_iso_cis_sdu_recombination </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *&#160;</td>
+          <td class="paramname"><em>cis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ll__defines_8h.html#adad37d985a545b165cae3973b9db27a7">cis_pdu_t</a> *&#160;</td>
+          <td class="paramname"><em>pdu</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>: ll_iso_cis_sdu_recombination</p>
+<p>: cis  : pdu </p>
+<p>&lt; Complete SDU</p>
+<p>&lt; End SDU</p>
+<p>&lt; First SDU</p>
+<p>&lt; Continue SDU </p>
+
+</div>
+</div>
+<a class="anchor" id="a768db9a792e5842907adb66152b69624"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_iso_cis_sdu_segmentation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__cis_8h.html#structle__cis__t">le_cis_t</a> *&#160;</td>
+          <td class="paramname"><em>cis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>iso_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>sdu_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aaf1ed6cae1b60f65c5de8040caf5e2b9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t* ll_iso_deq </td>
+          <td>(</td>
+          <td class="paramtype">struct list_head *&#160;</td>
+          <td class="paramname"><em>pHead</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>: ll_iso_deq</p>
+<p>: pHead</p>
+<p>: </p>
+
+</div>
+</div>
+<a class="anchor" id="a4466f0dd5f5e204861f3ae9a76f8da9b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_iso_enq </td>
+          <td>(</td>
+          <td class="paramtype">struct list_head *&#160;</td>
+          <td class="paramname"><em>pHead</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>pBuffer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>: ll_iso_enq</p>
+<p>: pHead  : pBuffer </p>
+
+</div>
+</div>
+<a class="anchor" id="a4bfa6cd5befa349441eac875fbe4fffa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_iso_free </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>pBuffer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>: ll_iso_free</p>
+<p>: pBuffer </p>
+
+</div>
+</div>
+<a class="anchor" id="a8f2d7816f90d628ce81f2425491f090d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t ll_iso_pack_hdr </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>sdu</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="ll__iso_8h.html#structhci__iso__hdr__t">hci_iso_hdr_t</a> *&#160;</td>
+          <td class="paramname"><em>hdr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pack an ISO header. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sdu</td><td>SDU context </td></tr>
+    <tr><td class="paramname">hdr</td><td>ISO Data Load Header.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Header length. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a83364720d4c63af0a947bcacb3eb80c0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint8_t ll_iso_pack_seg_hdr </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>pdu</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="ll__defines_8h.html#structsegm__hdr__t">segm_hdr_t</a> *&#160;</td>
+          <td class="paramname"><em>seg_hdr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pack a ISOAL Segmentation header. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pdu</td><td>PDU payload buffer. </td></tr>
+    <tr><td class="paramname">seg_hdr</td><td>Packed PDU header.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Segmentation header length. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a144540f155fe9e0dccd1e27a55660b61"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t* ll_iso_peek </td>
+          <td>(</td>
+          <td class="paramtype">struct list_head *&#160;</td>
+          <td class="paramname"><em>pHead</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>: ll_iso_peek</p>
+<p>: pHead</p>
+<p>: </p>
+
+</div>
+</div>
+<a class="anchor" id="affc326042b3a59d0434f6ce05a70d930"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t ll_iso_unpack_hdr </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>sdu</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ll__iso_8h.html#structhci__iso__hdr__t">hci_iso_hdr_t</a> *&#160;</td>
+          <td class="paramname"><em>hdr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unpack an ISO header. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sdu</td><td>SDU context </td></tr>
+    <tr><td class="paramname">hdr</td><td>ISO Data Load Header.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Header length. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2bf2c6a3d81b23ce9b903d5ca48daaf7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint8_t ll_iso_unpack_seg_hdr </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>pdu</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ll__defines_8h.html#structsegm__hdr__t">segm_hdr_t</a> *&#160;</td>
+          <td class="paramname"><em>seg_hdr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Unpack a ISOAL Segmentation header. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pdu</td><td>PDU payload buffer. </td></tr>
+    <tr><td class="paramname">seg_hdr</td><td>Unpacked PDU header.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Segmentation header length. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

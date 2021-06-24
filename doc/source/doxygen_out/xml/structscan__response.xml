@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structscan__response" kind="struct" language="C++" prot="public">
+    <compoundname>scan_response</compoundname>
+    <includes refid="ll__defines_8h" local="no">ll_defines.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structscan__response_1a7360e25049f28935dd0b63914adf5878" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 scan_response::length</definition>
+        <argsstring></argsstring>
+        <name>length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1156" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscan__response_1ae5e2a6a3fc40b7bfb6b43cd1fb1f4101" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 scan_response::data[31]</definition>
+        <argsstring>[31]</argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1157" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1157" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1155" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1155" bodyend="1158"/>
+    <listofallmembers>
+      <member refid="structscan__response_1ae5e2a6a3fc40b7bfb6b43cd1fb1f4101" prot="public" virt="non-virtual"><scope>scan_response</scope><name>data</name></member>
+      <member refid="structscan__response_1a7360e25049f28935dd0b63914adf5878" prot="public" virt="non-virtual"><scope>scan_response</scope><name>length</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

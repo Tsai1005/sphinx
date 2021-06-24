@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structllcp__ctx__t" kind="struct" language="C++" prot="public">
+    <compoundname>llcp_ctx_t</compoundname>
+    <includes refid="llcp_8h" local="no">llcp.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structllcp__ctx__t_1a4c709725aee10fa97073f1693e7fb777" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t llcp_ctx_t::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>LL Control Procedure State : Idle/Busy </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="234" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structllcp__ctx__t_1a46970a3b7c08b139ca29bd8ebceec3d8" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t llcp_ctx_t::active_id</definition>
+        <argsstring></argsstring>
+        <name>active_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>LL Control Procedure Active ID </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="235" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structllcp__ctx__t_1a919c110d7ee37a5e05cdb34e7732ee4f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t llcp_ctx_t::notify_host</definition>
+        <argsstring></argsstring>
+        <name>notify_host</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>LL Control Procedure Notify Host </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="236" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structllcp__ctx__t_1aefb8dd1405d7372a1d9fafa6476f1156" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t llcp_ctx_t::pend_id</definition>
+        <argsstring></argsstring>
+        <name>pend_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>LL Control Procedure Pend ID </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="237" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structllcp__ctx__t_1a90aa8708e0d7c84ed3cc094b8c14c45f" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t llcp_ctx_t::wait_ack</definition>
+        <argsstring></argsstring>
+        <name>wait_ack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>LL Control Procedure Opcode wait ack </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="238" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structllcp__ctx__t_1af1dcfd48498279bfa2eb2c17b6623d5e" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* llcp_ctx_t::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>LL Control Data PDU Pointer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="239" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structllcp__ctx__t_1a2284c7e54653bc730314a4ab554a838a" prot="public" static="no" mutable="no">
+        <type><ref refid="structlctrDataPdu__t" kindref="compound">lctrDataPdu_t</ref></type>
+        <definition>lctrDataPdu_t llcp_ctx_t::pdu</definition>
+        <argsstring></argsstring>
+        <name>pdu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="240" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>LL Control procedure abstract context,sub context of logic link. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1527">
+        <label>llcp_ctx_t</label>
+        <link refid="structllcp__ctx__t"/>
+        <childnode refid="1528" relation="usage">
+          <edgelabel>pdu</edgelabel>
+        </childnode>
+      </node>
+      <node id="1528">
+        <label>lctrDataPdu_t</label>
+        <link refid="structlctrDataPdu__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="233" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="233" bodyend="241"/>
+    <listofallmembers>
+      <member refid="structllcp__ctx__t_1a46970a3b7c08b139ca29bd8ebceec3d8" prot="public" virt="non-virtual"><scope>llcp_ctx_t</scope><name>active_id</name></member>
+      <member refid="structllcp__ctx__t_1af1dcfd48498279bfa2eb2c17b6623d5e" prot="public" virt="non-virtual"><scope>llcp_ctx_t</scope><name>data</name></member>
+      <member refid="structllcp__ctx__t_1a919c110d7ee37a5e05cdb34e7732ee4f" prot="public" virt="non-virtual"><scope>llcp_ctx_t</scope><name>notify_host</name></member>
+      <member refid="structllcp__ctx__t_1a2284c7e54653bc730314a4ab554a838a" prot="public" virt="non-virtual"><scope>llcp_ctx_t</scope><name>pdu</name></member>
+      <member refid="structllcp__ctx__t_1aefb8dd1405d7372a1d9fafa6476f1156" prot="public" virt="non-virtual"><scope>llcp_ctx_t</scope><name>pend_id</name></member>
+      <member refid="structllcp__ctx__t_1a4c709725aee10fa97073f1693e7fb777" prot="public" virt="non-virtual"><scope>llcp_ctx_t</scope><name>state</name></member>
+      <member refid="structllcp__ctx__t_1a90aa8708e0d7c84ed3cc094b8c14c45f" prot="public" virt="non-virtual"><scope>llcp_ctx_t</scope><name>wait_ack</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

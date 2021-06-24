@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structtws__forward__head" kind="struct" language="C++" prot="public">
+    <compoundname>tws_forward_head</compoundname>
+    <includes refid="tws__conn_8h" local="no">tws_conn.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtws__forward__head_1a7d0ca2b21609d2c359df6194f544331a" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structtws__channel__head" kindref="compound">tws_channel_head</ref></type>
+        <definition>struct tws_channel_head tws_forward_head::head</definition>
+        <argsstring></argsstring>
+        <name>head</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="183" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__forward__head_1ae81d62de3fd1567446223fc6f3c4a9a8" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tws_forward_head::end_flag</definition>
+        <argsstring></argsstring>
+        <name>end_flag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="193" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__forward__head_1acc2040125ded270ab40165dff8732ec0" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tws_forward_head::end_seqnum</definition>
+        <argsstring></argsstring>
+        <name>end_seqnum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="194" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__forward__head_1a5a45a83b14a671c8e3f9fbb72f9ee663" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 tws_forward_head::prev_hash</definition>
+        <argsstring></argsstring>
+        <name>prev_hash</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="195" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__forward__head_1afff799d6f864d58bc96ec522cbdd14d0" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tws_forward_head::data[0]</definition>
+        <argsstring>[0]</argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="196" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1692">
+        <label>tws_forward_head</label>
+        <link refid="structtws__forward__head"/>
+        <childnode refid="1693" relation="usage">
+          <edgelabel>head</edgelabel>
+        </childnode>
+      </node>
+      <node id="1693">
+        <label>tws_channel_head</label>
+        <link refid="structtws__channel__head"/>
+      </node>
+    </collaborationgraph>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="191" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="191" bodyend="197"/>
+    <listofallmembers>
+      <member refid="structtws__forward__head_1afff799d6f864d58bc96ec522cbdd14d0" prot="public" virt="non-virtual"><scope>tws_forward_head</scope><name>data</name></member>
+      <member refid="structtws__forward__head_1ae81d62de3fd1567446223fc6f3c4a9a8" prot="public" virt="non-virtual"><scope>tws_forward_head</scope><name>end_flag</name></member>
+      <member refid="structtws__forward__head_1acc2040125ded270ab40165dff8732ec0" prot="public" virt="non-virtual"><scope>tws_forward_head</scope><name>end_seqnum</name></member>
+      <member refid="structtws__forward__head_1a7d0ca2b21609d2c359df6194f544331a" prot="public" virt="non-virtual"><scope>tws_forward_head</scope><name>head</name></member>
+      <member refid="structtws__forward__head_1a5a45a83b14a671c8e3f9fbb72f9ee663" prot="public" virt="non-virtual"><scope>tws_forward_head</scope><name>prev_hash</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

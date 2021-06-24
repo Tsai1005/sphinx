@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structbredr__rx__bulk" kind="struct" language="C++" prot="public">
+    <compoundname>bredr_rx_bulk</compoundname>
+    <includes refid="link__bulk_8h" local="no">link_bulk.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structbredr__rx__bulk_1af72bbd706a1936eacb90d0c36c372519" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 bredr_rx_bulk::len</definition>
+        <argsstring></argsstring>
+        <name>len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" line="12" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__rx__bulk_1a591b25ebd9c5fc8ba6bbe2552614d553" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 bredr_rx_bulk::llid</definition>
+        <argsstring></argsstring>
+        <name>llid</name>
+        <bitfield> 3</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" line="13" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__rx__bulk_1ac9e36c4d7951855d1b33e33e16e944d9" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 bredr_rx_bulk::delete</definition>
+        <argsstring></argsstring>
+        <name>delete</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" line="14" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__rx__bulk_1a15f3a655b74bae01707ea4fae51ae359" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 bredr_rx_bulk::hold</definition>
+        <argsstring></argsstring>
+        <name>hold</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" line="15" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__rx__bulk_1a1ec97ce97c2db2a10df4c9562e88e67d" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 bredr_rx_bulk::send2host</definition>
+        <argsstring></argsstring>
+        <name>send2host</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" line="16" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__rx__bulk_1a8282598a12f79e13e11ff9bb8a9c16f5" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 bredr_rx_bulk::sbc_flag</definition>
+        <argsstring></argsstring>
+        <name>sbc_flag</name>
+        <bitfield> 2</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" line="17" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__rx__bulk_1afa2cc0f97003b9ed96e63fef9c18c66c" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 bredr_rx_bulk::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" line="18" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__rx__bulk_1ac6ad4f5a52b552abdeeac91244b7af3e" prot="public" static="no" mutable="no">
+        <type>struct list_head</type>
+        <definition>struct list_head bredr_rx_bulk::entry</definition>
+        <argsstring></argsstring>
+        <name>entry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" line="18" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__rx__bulk_1a5ac761bc82d6299920d730ad9b764f03" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 bredr_rx_bulk::payload_head[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>payload_head</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" line="35" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__rx__bulk_1a6cd93df295e36df959c7587abb4b991c" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 bredr_rx_bulk::data[0]</definition>
+        <argsstring>[0]</argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" line="36" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" line="11" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" bodystart="11" bodyend="37"/>
+    <listofallmembers>
+      <member refid="structbredr__rx__bulk_1a6cd93df295e36df959c7587abb4b991c" prot="public" virt="non-virtual"><scope>bredr_rx_bulk</scope><name>data</name></member>
+      <member refid="structbredr__rx__bulk_1ac9e36c4d7951855d1b33e33e16e944d9" prot="public" virt="non-virtual"><scope>bredr_rx_bulk</scope><name>delete</name></member>
+      <member refid="structbredr__rx__bulk_1ac6ad4f5a52b552abdeeac91244b7af3e" prot="public" virt="non-virtual"><scope>bredr_rx_bulk</scope><name>entry</name></member>
+      <member refid="structbredr__rx__bulk_1a15f3a655b74bae01707ea4fae51ae359" prot="public" virt="non-virtual"><scope>bredr_rx_bulk</scope><name>hold</name></member>
+      <member refid="structbredr__rx__bulk_1afa2cc0f97003b9ed96e63fef9c18c66c" prot="public" virt="non-virtual"><scope>bredr_rx_bulk</scope><name>id</name></member>
+      <member refid="structbredr__rx__bulk_1af72bbd706a1936eacb90d0c36c372519" prot="public" virt="non-virtual"><scope>bredr_rx_bulk</scope><name>len</name></member>
+      <member refid="structbredr__rx__bulk_1a591b25ebd9c5fc8ba6bbe2552614d553" prot="public" virt="non-virtual"><scope>bredr_rx_bulk</scope><name>llid</name></member>
+      <member refid="structbredr__rx__bulk_1a5ac761bc82d6299920d730ad9b764f03" prot="public" virt="non-virtual"><scope>bredr_rx_bulk</scope><name>payload_head</name></member>
+      <member refid="structbredr__rx__bulk_1a8282598a12f79e13e11ff9bb8a9c16f5" prot="public" virt="non-virtual"><scope>bredr_rx_bulk</scope><name>sbc_flag</name></member>
+      <member refid="structbredr__rx__bulk_1a1ec97ce97c2db2a10df4c9562e88e67d" prot="public" virt="non-virtual"><scope>bredr_rx_bulk</scope><name>send2host</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

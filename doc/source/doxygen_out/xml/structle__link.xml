@@ -1,0 +1,1143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structle__link" kind="struct" language="C++" prot="public">
+    <compoundname>le_link</compoundname>
+    <includes refid="link__layer_8h" local="no">link_layer.h</includes>
+    <innerclass refid="structle__link_1_1ble__phy__update" prot="public">le_link::ble_phy_update</innerclass>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structle__link_1aa5f51601aa9fec985c79140bbc6cc139" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* le_link::hw</definition>
+        <argsstring></argsstring>
+        <name>hw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="328" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="328" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1a3e93293e6726eb0cee1b5702b0587eef" prot="public" static="no" mutable="no">
+        <type>struct le_addr</type>
+        <definition>struct le_addr le_link::local</definition>
+        <argsstring></argsstring>
+        <name>local</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="328" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="330" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1a52d479673baea4451d7fabf6b91916ee" prot="public" static="no" mutable="no">
+        <type>struct le_addr</type>
+        <definition>struct le_addr le_link::peer</definition>
+        <argsstring></argsstring>
+        <name>peer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="328" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="331" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1ab37919366a48faa1b5e84c8b141cd189" prot="public" static="no" mutable="no">
+        <type>struct ble_conn_param</type>
+        <definition>struct ble_conn_param le_link::ll_data</definition>
+        <argsstring></argsstring>
+        <name>ll_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="328" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="333" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1a5ef73f659542ece19d89bc99d9e326d6" prot="public" static="no" mutable="no">
+        <type>struct list_head</type>
+        <definition>struct list_head le_link::entry</definition>
+        <argsstring></argsstring>
+        <name>entry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="328" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="335" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1a3d4a7395fc00c95d0f8edebb98d87721" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 le_link::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="336" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="336" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1ac771cd600e00debf1db06d88887f6f95" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 le_link::role</definition>
+        <argsstring></argsstring>
+        <name>role</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="337" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="337" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1a9f245f64d2d868c243d1b1f9a8456c5e" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 le_link::master_clock_accuracy</definition>
+        <argsstring></argsstring>
+        <name>master_clock_accuracy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="340" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="340" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1a75c477a07f25586b3821b57a6ce78496" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 le_link::peer_sca</definition>
+        <argsstring></argsstring>
+        <name>peer_sca</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="341" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="341" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1a110d6defcd65ab188de2cdb21ec7db07" prot="public" static="no" mutable="no">
+        <type>OS_MUTEX</type>
+        <definition>OS_MUTEX le_link::lock</definition>
+        <argsstring></argsstring>
+        <name>lock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="343" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="343" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1ab536d4abf9812e1363ff90ae8b96d91a" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>volatile u16 le_link::event_cnt</definition>
+        <argsstring></argsstring>
+        <name>event_cnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="345" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="345" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1a51ae7d04254574488b7bda4baba0d209" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 le_link::last_opcode</definition>
+        <argsstring></argsstring>
+        <name>last_opcode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="346" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="346" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1a94ded8da30a4a6ec944191cb332d9139" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 le_link::disconnect</definition>
+        <argsstring></argsstring>
+        <name>disconnect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="347" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="347" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1a8beaaf6b9df9a7000cc0846feac83bb6" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 le_link::blocking</definition>
+        <argsstring></argsstring>
+        <name>blocking</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="348" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="348" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1a6843fe2a32b8f30d12019f50f0363a91" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 le_link::handle</definition>
+        <argsstring></argsstring>
+        <name>handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="352" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="352" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1adbc8a5c160dbe93c4edbd0610c1defea" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>volatile u16 le_link::instant</definition>
+        <argsstring></argsstring>
+        <name>instant</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="353" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="353" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1a37bcf7d359f060c690eab6669d58a2f4" prot="public" static="no" mutable="no">
+        <type>atomic_t</type>
+        <definition>atomic_t le_link::air_sent_acl_u_num</definition>
+        <argsstring></argsstring>
+        <name>air_sent_acl_u_num</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="354" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="354" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1a5600a094ae0648be6a67ed72eeb27c9d" prot="public" static="no" mutable="no">
+        <type>atomic_t</type>
+        <definition>atomic_t le_link::air_sent_acl_c_num</definition>
+        <argsstring></argsstring>
+        <name>air_sent_acl_c_num</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="355" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="355" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1a7f819d0d18a748b355c9277d2bb0f226" prot="public" static="no" mutable="no">
+        <type>struct list_head</type>
+        <definition>struct list_head le_link::acl_packet_head</definition>
+        <argsstring></argsstring>
+        <name>acl_packet_head</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="355" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="357" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1a88fb391038e5fe54238931374d8d7a71" prot="public" static="no" mutable="no">
+        <type>struct list_head</type>
+        <definition>struct list_head le_link::rx_oneshot_head</definition>
+        <argsstring></argsstring>
+        <name>rx_oneshot_head</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="355" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="360" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1afce6e4811f1c0343b6017b56dc04d519" prot="public" static="no" mutable="no">
+        <type>struct list_head</type>
+        <definition>struct list_head le_link::event_oneshot_head</definition>
+        <argsstring></argsstring>
+        <name>event_oneshot_head</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="355" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="361" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1a664ff487ad99834e931a73e512e81e77" prot="public" static="no" mutable="no">
+        <type>struct list_head</type>
+        <definition>struct list_head le_link::event_oneshot_post_head</definition>
+        <argsstring></argsstring>
+        <name>event_oneshot_post_head</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="355" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="362" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1ab523599771d088f9452e37bd2d2baa46" prot="public" static="no" mutable="no">
+        <type>sys_timer</type>
+        <definition>sys_timer le_link::response_timeout</definition>
+        <argsstring></argsstring>
+        <name>response_timeout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="365" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="365" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1aaedac40124ec9a83ddd2c7b57c97f9e2" prot="public" static="no" mutable="no">
+        <type>sys_timer</type>
+        <definition>sys_timer le_link::supervision_timeout</definition>
+        <argsstring></argsstring>
+        <name>supervision_timeout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="366" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="366" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1a1ff576bdbb2004a16fff3b5a63424783" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 le_link::send_buf[48]</definition>
+        <argsstring>[48]</argsstring>
+        <name>send_buf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ACL-C Command buffer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="369" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="369" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1a4cad8d2447d4239912dbc2360152017d" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 le_link::remote_features[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>remote_features</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="372" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="372" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1a82288dfae57505a14e9ef8c579f62fe6" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 le_link::remote_versnr</definition>
+        <argsstring></argsstring>
+        <name>remote_versnr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="373" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="373" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1ae6addbb7730222fb6a742e81fa035277" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 le_link::remote_compld</definition>
+        <argsstring></argsstring>
+        <name>remote_compld</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="374" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="374" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1ac82cd89d332a6911c3cc3516c98b80ed" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 le_link::remote_subversnr</definition>
+        <argsstring></argsstring>
+        <name>remote_subversnr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="375" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="375" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1a60d57a3fb584828cdbe02b61dff358fd" prot="public" static="no" mutable="no">
+        <type><ref refid="structllcp__ctx__t" kindref="compound">llcp_ctx_t</ref></type>
+        <definition>llcp_ctx_t le_link::llcp</definition>
+        <argsstring></argsstring>
+        <name>llcp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>LLCP Context </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="377" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="377" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1ab8733119f04b51cbb0e9b720a4fbd698" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t le_link::channel_class</definition>
+        <argsstring></argsstring>
+        <name>channel_class</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="380" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="380" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1a3888c6a1a9674ae79eb36cd7dbf1ce39" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 le_link::encrypt_reset_flag</definition>
+        <argsstring></argsstring>
+        <name>encrypt_reset_flag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="384" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="384" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1a466268a12c08ec9be75352cbf778c420" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 le_link::encrypt_enable</definition>
+        <argsstring></argsstring>
+        <name>encrypt_enable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="385" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="385" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1af6008bd119403eb0ba6c6fd526d0680b" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 le_link::long_term_key[LL_KEY_LEN]</definition>
+        <argsstring>[LL_KEY_LEN]</argsstring>
+        <name>long_term_key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="386" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="386" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1a531c92681380420897f16dfb2a9a02e1" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 le_link::random_number[LL_RAND_LEN]</definition>
+        <argsstring>[LL_RAND_LEN]</argsstring>
+        <name>random_number</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="387" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="387" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1a7e3a0081c98c6515e5d0a69cc1e326bd" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 le_link::encrypted_diversifier</definition>
+        <argsstring></argsstring>
+        <name>encrypted_diversifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="388" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="388" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1adeeeaef5b220e0028b387c6ec22f5c1b" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 le_link::skdm[64/8]</definition>
+        <argsstring>[64/8]</argsstring>
+        <name>skdm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="389" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="389" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1a89f9788fa5d16f8a17dd5f42f231c46d" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 le_link::skds[64/8]</definition>
+        <argsstring>[64/8]</argsstring>
+        <name>skds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="390" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="390" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1aa26057df5a0f54fbc62bce8cdaf79b21" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 le_link::ivm[32/8]</definition>
+        <argsstring>[32/8]</argsstring>
+        <name>ivm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="391" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="391" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1a0ecbaf8e5efcf69a1c4bf52337374f7f" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 le_link::ivs[32/8]</definition>
+        <argsstring>[32/8]</argsstring>
+        <name>ivs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="392" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="392" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1adbfcbaae2237116dbbe73adc984e3a9a" prot="public" static="no" mutable="no">
+        <type>sys_timer</type>
+        <definition>sys_timer le_link::ping_timeout</definition>
+        <argsstring></argsstring>
+        <name>ping_timeout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="396" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="396" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1a76973c395d239899ceebed57430aee68" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t le_link::ping_timeout_ms</definition>
+        <argsstring></argsstring>
+        <name>ping_timeout_ms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="397" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="397" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1ad9e02ac50aa1acfd3bedc34e8d9a0ed6" prot="public" static="no" mutable="no">
+        <type>sys_timer</type>
+        <definition>sys_timer le_link::auth_timeout</definition>
+        <argsstring></argsstring>
+        <name>auth_timeout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="399" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="399" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1adfe0094f7a3b886e14b4f8b9496588d6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t le_link::auth_timeout_ms</definition>
+        <argsstring></argsstring>
+        <name>auth_timeout_ms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="400" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="400" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1aef20608fdf71f86f131fbd0ad768bf1b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_link::conn_req_flag</definition>
+        <argsstring></argsstring>
+        <name>conn_req_flag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="403" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="403" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1a9186bbdd4cb80d9ab2c63966f293c68e" prot="public" static="no" mutable="no">
+        <type><ref refid="structconnection__update__parameter__t" kindref="compound">connection_update_parameter_t</ref></type>
+        <definition>connection_update_parameter_t le_link::conn_update_param</definition>
+        <argsstring></argsstring>
+        <name>conn_update_param</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="404" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="404" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1a0ec0328b57bba35a673a583d60c727c1" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structconnection__param__request" kindref="compound">connection_param_request</ref></type>
+        <definition>struct connection_param_request le_link::conn_param_req</definition>
+        <argsstring></argsstring>
+        <name>conn_param_req</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="404" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="405" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1aaae575da78dd226d0a35d6765af60788" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structdata__length" kindref="compound">data_length</ref></type>
+        <definition>struct data_length le_link::pdu_len</definition>
+        <argsstring></argsstring>
+        <name>pdu_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="404" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="408" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1aa685de712384856f5020af7a71360e9d" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structle__link_1_1ble__phy__update" kindref="compound">le_link::ble_phy_update</ref></type>
+        <definition>struct le_link::ble_phy_update  le_link::phy</definition>
+        <argsstring></argsstring>
+        <name>phy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="415" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1a3ff09b17080dd2b967c5fdcfb6032e41" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_link::all_phys</definition>
+        <argsstring></argsstring>
+        <name>all_phys</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="417" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="417" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1a5989270df9deda07cf80e36d7e5f6558" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_link::phy_options</definition>
+        <argsstring></argsstring>
+        <name>phy_options</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="418" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="418" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1a49c1c3eef1a18ed6ecd7b183885acf40" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_link::prefer_tx_phys</definition>
+        <argsstring></argsstring>
+        <name>prefer_tx_phys</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="419" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="419" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1a6b8e2fcdfeccece4048b46d3fa31407d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_link::prefer_rx_phys</definition>
+        <argsstring></argsstring>
+        <name>prefer_rx_phys</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="420" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="420" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1a8da7f28bfe09b62a982b20ec242b6f99" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_link::peer_tx_phys</definition>
+        <argsstring></argsstring>
+        <name>peer_tx_phys</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="421" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="421" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1ad7edfb3cad0701a04ef67d2cfd9c155d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_link::peer_rx_phys</definition>
+        <argsstring></argsstring>
+        <name>peer_rx_phys</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="422" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="422" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1a3dbd4c799d08675a606da2a5f7e70acb" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_link::tx_phy</definition>
+        <argsstring></argsstring>
+        <name>tx_phy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Current Tx PHY </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="425" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="425" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1ab4c6e85731c6d157f42e03ca9d0cde67" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_link::rx_phy</definition>
+        <argsstring></argsstring>
+        <name>rx_phy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Current Rx PHY </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="426" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="426" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1aba23986a7ccaab4cf5ef1fe16bb06160" prot="public" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t le_link::phy_tx_pwr[LL_PC_PHY_TOTAL]</definition>
+        <argsstring>[LL_PC_PHY_TOTAL]</argsstring>
+        <name>phy_tx_pwr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Power Manage </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="428" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="428" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1a29831ff77d2ce522910178e30b94da63" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structcte__rx__param__t" kindref="compound">cte_rx_param_t</ref> *</type>
+        <definition>struct cte_rx_param_t* le_link::cte_rx_param</definition>
+        <argsstring></argsstring>
+        <name>cte_rx_param</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="431" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="431" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1a3323edf6ca0af83ed4491ef733b641f3" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structcte__tx__param__t" kindref="compound">cte_tx_param_t</ref> *</type>
+        <definition>struct cte_tx_param_t* le_link::cte_tx_param</definition>
+        <argsstring></argsstring>
+        <name>cte_tx_param</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="432" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="432" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1a1a01a8d39083ca3ab21dd4e2dc1a6d09" prot="public" static="no" mutable="no">
+        <type>s8</type>
+        <definition>s8 le_link::rssi</definition>
+        <argsstring></argsstring>
+        <name>rssi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="436" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="436" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1a876d9d1bbdf8903ac13b853901e7587c" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 le_link::reason</definition>
+        <argsstring></argsstring>
+        <name>reason</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="439" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="439" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1a55fbe182a7f487a61e0b10c1abffac16" prot="public" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t le_link::tx_power</definition>
+        <argsstring></argsstring>
+        <name>tx_power</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Current Tx Power </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="442" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="442" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1ad307801aea1af51e62f08feab676a913" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_link::pwr_phy</definition>
+        <argsstring></argsstring>
+        <name>pwr_phy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Host </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="444" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="444" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1aa6d0079f784bc041c11af9a280a81c54" prot="public" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t le_link::pwr_delta</definition>
+        <argsstring></argsstring>
+        <name>pwr_delta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Host </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="445" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="445" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1a22d58a407926284501665712e19d20e0" prot="public" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t le_link::pwr_tx</definition>
+        <argsstring></argsstring>
+        <name>pwr_tx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Host </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="446" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="446" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1ab955b893bbfc75e84081fd84069daf4d" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref></type>
+        <definition>bool_t le_link::pwr_host_init</definition>
+        <argsstring></argsstring>
+        <name>pwr_host_init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="448" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="448" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1a46ea7ea5c72b40764c04ee888e242467" prot="public" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t le_link::peer_tx_pwr</definition>
+        <argsstring></argsstring>
+        <name>peer_tx_pwr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="450" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="450" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1a6536ef1995bce91305111de818f75612" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_link::peer_pwr_limits</definition>
+        <argsstring></argsstring>
+        <name>peer_pwr_limits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="451" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="451" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1ab9903ef26665114c84f7aabad35e284a" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_link::peer_pwr_arp[LL_PC_PHY_TOTAL]</definition>
+        <argsstring>[LL_PC_PHY_TOTAL]</argsstring>
+        <name>peer_pwr_arp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="452" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="452" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1ac023ba7a425c67a343cc4297b7da85f9" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref></type>
+        <definition>bool_t le_link::pwr_report_remote</definition>
+        <argsstring></argsstring>
+        <name>pwr_report_remote</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="454" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="454" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1aaf15c3f683ab98c40670da8afaa30198" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref></type>
+        <definition>bool_t le_link::pwr_report_local</definition>
+        <argsstring></argsstring>
+        <name>pwr_report_local</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="455" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="455" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1add65229fd7e562b3466bbb7fea8c8792" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref></type>
+        <definition>bool_t le_link::peer_req_recv</definition>
+        <argsstring></argsstring>
+        <name>peer_req_recv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="457" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="457" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1a9b26b19197acc3e1f6fc29c9f7299650" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t le_link::cisHandle</definition>
+        <argsstring></argsstring>
+        <name>cisHandle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="462" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="462" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1ae133655e9b63208594750a4ed36960b7" prot="public" static="no" mutable="no">
+        <type>s8</type>
+        <definition>s8 le_link::scaMod</definition>
+        <argsstring></argsstring>
+        <name>scaMod</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SCA override value. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="464" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="464" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__link_1a1307208cbd03e4fd416e3b3f0bb0f506" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 le_link::sca_action</definition>
+        <argsstring></argsstring>
+        <name>sca_action</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="465" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="465" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1287">
+        <label>connection_update_parameter_t</label>
+        <link refid="structconnection__update__parameter__t"/>
+      </node>
+      <node id="1289">
+        <label>connection_param_request</label>
+        <link refid="structconnection__param__request"/>
+      </node>
+      <node id="1291">
+        <label>le_link::ble_phy_update</label>
+        <link refid="structle__link_1_1ble__phy__update"/>
+      </node>
+      <node id="1290">
+        <label>data_length</label>
+        <link refid="structdata__length"/>
+      </node>
+      <node id="1285">
+        <label>le_link</label>
+        <link refid="structle__link"/>
+        <childnode refid="1286" relation="usage">
+          <edgelabel>cte_rx_param</edgelabel>
+        </childnode>
+        <childnode refid="1287" relation="usage">
+          <edgelabel>conn_update_param</edgelabel>
+        </childnode>
+        <childnode refid="1288" relation="usage">
+          <edgelabel>cte_tx_param</edgelabel>
+        </childnode>
+        <childnode refid="1289" relation="usage">
+          <edgelabel>conn_param_req</edgelabel>
+        </childnode>
+        <childnode refid="1290" relation="usage">
+          <edgelabel>pdu_len</edgelabel>
+        </childnode>
+        <childnode refid="1291" relation="usage">
+          <edgelabel>phy</edgelabel>
+        </childnode>
+        <childnode refid="1292" relation="usage">
+          <edgelabel>llcp</edgelabel>
+        </childnode>
+      </node>
+      <node id="1288">
+        <label>cte_tx_param_t</label>
+        <link refid="structcte__tx__param__t"/>
+      </node>
+      <node id="1292">
+        <label>llcp_ctx_t</label>
+        <link refid="structllcp__ctx__t"/>
+        <childnode refid="1293" relation="usage">
+          <edgelabel>pdu</edgelabel>
+        </childnode>
+      </node>
+      <node id="1286">
+        <label>cte_rx_param_t</label>
+        <link refid="structcte__rx__param__t"/>
+      </node>
+      <node id="1293">
+        <label>lctrDataPdu_t</label>
+        <link refid="structlctrDataPdu__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="327" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="327" bodyend="466"/>
+    <listofallmembers>
+      <member refid="structle__link_1a7f819d0d18a748b355c9277d2bb0f226" prot="public" virt="non-virtual"><scope>le_link</scope><name>acl_packet_head</name></member>
+      <member refid="structle__link_1a5600a094ae0648be6a67ed72eeb27c9d" prot="public" virt="non-virtual"><scope>le_link</scope><name>air_sent_acl_c_num</name></member>
+      <member refid="structle__link_1a37bcf7d359f060c690eab6669d58a2f4" prot="public" virt="non-virtual"><scope>le_link</scope><name>air_sent_acl_u_num</name></member>
+      <member refid="structle__link_1a3ff09b17080dd2b967c5fdcfb6032e41" prot="public" virt="non-virtual"><scope>le_link</scope><name>all_phys</name></member>
+      <member refid="structle__link_1ad9e02ac50aa1acfd3bedc34e8d9a0ed6" prot="public" virt="non-virtual"><scope>le_link</scope><name>auth_timeout</name></member>
+      <member refid="structle__link_1adfe0094f7a3b886e14b4f8b9496588d6" prot="public" virt="non-virtual"><scope>le_link</scope><name>auth_timeout_ms</name></member>
+      <member refid="structle__link_1a8beaaf6b9df9a7000cc0846feac83bb6" prot="public" virt="non-virtual"><scope>le_link</scope><name>blocking</name></member>
+      <member refid="structle__link_1ab8733119f04b51cbb0e9b720a4fbd698" prot="public" virt="non-virtual"><scope>le_link</scope><name>channel_class</name></member>
+      <member refid="structle__link_1a9b26b19197acc3e1f6fc29c9f7299650" prot="public" virt="non-virtual"><scope>le_link</scope><name>cisHandle</name></member>
+      <member refid="structle__link_1a0ec0328b57bba35a673a583d60c727c1" prot="public" virt="non-virtual"><scope>le_link</scope><name>conn_param_req</name></member>
+      <member refid="structle__link_1aef20608fdf71f86f131fbd0ad768bf1b" prot="public" virt="non-virtual"><scope>le_link</scope><name>conn_req_flag</name></member>
+      <member refid="structle__link_1a9186bbdd4cb80d9ab2c63966f293c68e" prot="public" virt="non-virtual"><scope>le_link</scope><name>conn_update_param</name></member>
+      <member refid="structle__link_1a29831ff77d2ce522910178e30b94da63" prot="public" virt="non-virtual"><scope>le_link</scope><name>cte_rx_param</name></member>
+      <member refid="structle__link_1a3323edf6ca0af83ed4491ef733b641f3" prot="public" virt="non-virtual"><scope>le_link</scope><name>cte_tx_param</name></member>
+      <member refid="structle__link_1a94ded8da30a4a6ec944191cb332d9139" prot="public" virt="non-virtual"><scope>le_link</scope><name>disconnect</name></member>
+      <member refid="structle__link_1a466268a12c08ec9be75352cbf778c420" prot="public" virt="non-virtual"><scope>le_link</scope><name>encrypt_enable</name></member>
+      <member refid="structle__link_1a3888c6a1a9674ae79eb36cd7dbf1ce39" prot="public" virt="non-virtual"><scope>le_link</scope><name>encrypt_reset_flag</name></member>
+      <member refid="structle__link_1a7e3a0081c98c6515e5d0a69cc1e326bd" prot="public" virt="non-virtual"><scope>le_link</scope><name>encrypted_diversifier</name></member>
+      <member refid="structle__link_1a5ef73f659542ece19d89bc99d9e326d6" prot="public" virt="non-virtual"><scope>le_link</scope><name>entry</name></member>
+      <member refid="structle__link_1ab536d4abf9812e1363ff90ae8b96d91a" prot="public" virt="non-virtual"><scope>le_link</scope><name>event_cnt</name></member>
+      <member refid="structle__link_1afce6e4811f1c0343b6017b56dc04d519" prot="public" virt="non-virtual"><scope>le_link</scope><name>event_oneshot_head</name></member>
+      <member refid="structle__link_1a664ff487ad99834e931a73e512e81e77" prot="public" virt="non-virtual"><scope>le_link</scope><name>event_oneshot_post_head</name></member>
+      <member refid="structle__link_1a6843fe2a32b8f30d12019f50f0363a91" prot="public" virt="non-virtual"><scope>le_link</scope><name>handle</name></member>
+      <member refid="structle__link_1aa5f51601aa9fec985c79140bbc6cc139" prot="public" virt="non-virtual"><scope>le_link</scope><name>hw</name></member>
+      <member refid="structle__link_1adbc8a5c160dbe93c4edbd0610c1defea" prot="public" virt="non-virtual"><scope>le_link</scope><name>instant</name></member>
+      <member refid="structle__link_1aa26057df5a0f54fbc62bce8cdaf79b21" prot="public" virt="non-virtual"><scope>le_link</scope><name>ivm</name></member>
+      <member refid="structle__link_1a0ecbaf8e5efcf69a1c4bf52337374f7f" prot="public" virt="non-virtual"><scope>le_link</scope><name>ivs</name></member>
+      <member refid="structle__link_1a51ae7d04254574488b7bda4baba0d209" prot="public" virt="non-virtual"><scope>le_link</scope><name>last_opcode</name></member>
+      <member refid="structle__link_1ab37919366a48faa1b5e84c8b141cd189" prot="public" virt="non-virtual"><scope>le_link</scope><name>ll_data</name></member>
+      <member refid="structle__link_1a60d57a3fb584828cdbe02b61dff358fd" prot="public" virt="non-virtual"><scope>le_link</scope><name>llcp</name></member>
+      <member refid="structle__link_1a3e93293e6726eb0cee1b5702b0587eef" prot="public" virt="non-virtual"><scope>le_link</scope><name>local</name></member>
+      <member refid="structle__link_1a110d6defcd65ab188de2cdb21ec7db07" prot="public" virt="non-virtual"><scope>le_link</scope><name>lock</name></member>
+      <member refid="structle__link_1af6008bd119403eb0ba6c6fd526d0680b" prot="public" virt="non-virtual"><scope>le_link</scope><name>long_term_key</name></member>
+      <member refid="structle__link_1a9f245f64d2d868c243d1b1f9a8456c5e" prot="public" virt="non-virtual"><scope>le_link</scope><name>master_clock_accuracy</name></member>
+      <member refid="structle__link_1aaae575da78dd226d0a35d6765af60788" prot="public" virt="non-virtual"><scope>le_link</scope><name>pdu_len</name></member>
+      <member refid="structle__link_1a52d479673baea4451d7fabf6b91916ee" prot="public" virt="non-virtual"><scope>le_link</scope><name>peer</name></member>
+      <member refid="structle__link_1ab9903ef26665114c84f7aabad35e284a" prot="public" virt="non-virtual"><scope>le_link</scope><name>peer_pwr_arp</name></member>
+      <member refid="structle__link_1a6536ef1995bce91305111de818f75612" prot="public" virt="non-virtual"><scope>le_link</scope><name>peer_pwr_limits</name></member>
+      <member refid="structle__link_1add65229fd7e562b3466bbb7fea8c8792" prot="public" virt="non-virtual"><scope>le_link</scope><name>peer_req_recv</name></member>
+      <member refid="structle__link_1ad7edfb3cad0701a04ef67d2cfd9c155d" prot="public" virt="non-virtual"><scope>le_link</scope><name>peer_rx_phys</name></member>
+      <member refid="structle__link_1a75c477a07f25586b3821b57a6ce78496" prot="public" virt="non-virtual"><scope>le_link</scope><name>peer_sca</name></member>
+      <member refid="structle__link_1a8da7f28bfe09b62a982b20ec242b6f99" prot="public" virt="non-virtual"><scope>le_link</scope><name>peer_tx_phys</name></member>
+      <member refid="structle__link_1a46ea7ea5c72b40764c04ee888e242467" prot="public" virt="non-virtual"><scope>le_link</scope><name>peer_tx_pwr</name></member>
+      <member refid="structle__link_1aa685de712384856f5020af7a71360e9d" prot="public" virt="non-virtual"><scope>le_link</scope><name>phy</name></member>
+      <member refid="structle__link_1a5989270df9deda07cf80e36d7e5f6558" prot="public" virt="non-virtual"><scope>le_link</scope><name>phy_options</name></member>
+      <member refid="structle__link_1aba23986a7ccaab4cf5ef1fe16bb06160" prot="public" virt="non-virtual"><scope>le_link</scope><name>phy_tx_pwr</name></member>
+      <member refid="structle__link_1adbfcbaae2237116dbbe73adc984e3a9a" prot="public" virt="non-virtual"><scope>le_link</scope><name>ping_timeout</name></member>
+      <member refid="structle__link_1a76973c395d239899ceebed57430aee68" prot="public" virt="non-virtual"><scope>le_link</scope><name>ping_timeout_ms</name></member>
+      <member refid="structle__link_1a6b8e2fcdfeccece4048b46d3fa31407d" prot="public" virt="non-virtual"><scope>le_link</scope><name>prefer_rx_phys</name></member>
+      <member refid="structle__link_1a49c1c3eef1a18ed6ecd7b183885acf40" prot="public" virt="non-virtual"><scope>le_link</scope><name>prefer_tx_phys</name></member>
+      <member refid="structle__link_1aa6d0079f784bc041c11af9a280a81c54" prot="public" virt="non-virtual"><scope>le_link</scope><name>pwr_delta</name></member>
+      <member refid="structle__link_1ab955b893bbfc75e84081fd84069daf4d" prot="public" virt="non-virtual"><scope>le_link</scope><name>pwr_host_init</name></member>
+      <member refid="structle__link_1ad307801aea1af51e62f08feab676a913" prot="public" virt="non-virtual"><scope>le_link</scope><name>pwr_phy</name></member>
+      <member refid="structle__link_1aaf15c3f683ab98c40670da8afaa30198" prot="public" virt="non-virtual"><scope>le_link</scope><name>pwr_report_local</name></member>
+      <member refid="structle__link_1ac023ba7a425c67a343cc4297b7da85f9" prot="public" virt="non-virtual"><scope>le_link</scope><name>pwr_report_remote</name></member>
+      <member refid="structle__link_1a22d58a407926284501665712e19d20e0" prot="public" virt="non-virtual"><scope>le_link</scope><name>pwr_tx</name></member>
+      <member refid="structle__link_1a531c92681380420897f16dfb2a9a02e1" prot="public" virt="non-virtual"><scope>le_link</scope><name>random_number</name></member>
+      <member refid="structle__link_1a876d9d1bbdf8903ac13b853901e7587c" prot="public" virt="non-virtual"><scope>le_link</scope><name>reason</name></member>
+      <member refid="structle__link_1ae6addbb7730222fb6a742e81fa035277" prot="public" virt="non-virtual"><scope>le_link</scope><name>remote_compld</name></member>
+      <member refid="structle__link_1a4cad8d2447d4239912dbc2360152017d" prot="public" virt="non-virtual"><scope>le_link</scope><name>remote_features</name></member>
+      <member refid="structle__link_1ac82cd89d332a6911c3cc3516c98b80ed" prot="public" virt="non-virtual"><scope>le_link</scope><name>remote_subversnr</name></member>
+      <member refid="structle__link_1a82288dfae57505a14e9ef8c579f62fe6" prot="public" virt="non-virtual"><scope>le_link</scope><name>remote_versnr</name></member>
+      <member refid="structle__link_1ab523599771d088f9452e37bd2d2baa46" prot="public" virt="non-virtual"><scope>le_link</scope><name>response_timeout</name></member>
+      <member refid="structle__link_1ac771cd600e00debf1db06d88887f6f95" prot="public" virt="non-virtual"><scope>le_link</scope><name>role</name></member>
+      <member refid="structle__link_1a1a01a8d39083ca3ab21dd4e2dc1a6d09" prot="public" virt="non-virtual"><scope>le_link</scope><name>rssi</name></member>
+      <member refid="structle__link_1a88fb391038e5fe54238931374d8d7a71" prot="public" virt="non-virtual"><scope>le_link</scope><name>rx_oneshot_head</name></member>
+      <member refid="structle__link_1ab4c6e85731c6d157f42e03ca9d0cde67" prot="public" virt="non-virtual"><scope>le_link</scope><name>rx_phy</name></member>
+      <member refid="structle__link_1a1307208cbd03e4fd416e3b3f0bb0f506" prot="public" virt="non-virtual"><scope>le_link</scope><name>sca_action</name></member>
+      <member refid="structle__link_1ae133655e9b63208594750a4ed36960b7" prot="public" virt="non-virtual"><scope>le_link</scope><name>scaMod</name></member>
+      <member refid="structle__link_1a1ff576bdbb2004a16fff3b5a63424783" prot="public" virt="non-virtual"><scope>le_link</scope><name>send_buf</name></member>
+      <member refid="structle__link_1adeeeaef5b220e0028b387c6ec22f5c1b" prot="public" virt="non-virtual"><scope>le_link</scope><name>skdm</name></member>
+      <member refid="structle__link_1a89f9788fa5d16f8a17dd5f42f231c46d" prot="public" virt="non-virtual"><scope>le_link</scope><name>skds</name></member>
+      <member refid="structle__link_1a3d4a7395fc00c95d0f8edebb98d87721" prot="public" virt="non-virtual"><scope>le_link</scope><name>state</name></member>
+      <member refid="structle__link_1aaedac40124ec9a83ddd2c7b57c97f9e2" prot="public" virt="non-virtual"><scope>le_link</scope><name>supervision_timeout</name></member>
+      <member refid="structle__link_1a3dbd4c799d08675a606da2a5f7e70acb" prot="public" virt="non-virtual"><scope>le_link</scope><name>tx_phy</name></member>
+      <member refid="structle__link_1a55fbe182a7f487a61e0b10c1abffac16" prot="public" virt="non-virtual"><scope>le_link</scope><name>tx_power</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structlctrPhyUpdInd__t" kind="struct" language="C++" prot="public">
+    <compoundname>lctrPhyUpdInd_t</compoundname>
+    <includes refid="ll__defines_8h" local="no">ll_defines.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlctrPhyUpdInd__t_1a54150fd104157eb6478d71bc2756da2b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lctrPhyUpdInd_t::masterToSlavePhy</definition>
+        <argsstring></argsstring>
+        <name>masterToSlavePhy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Master-to-slave PHY. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="912" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="912" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrPhyUpdInd__t_1a873ab8ddd68b233db70e14055981c381" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lctrPhyUpdInd_t::slaveToMasterPhy</definition>
+        <argsstring></argsstring>
+        <name>slaveToMasterPhy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Slave-to-master PHY. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="913" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="913" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrPhyUpdInd__t_1ada8fcef9320247f45667bd45ef8cfbd9" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lctrPhyUpdInd_t::instant</definition>
+        <argsstring></argsstring>
+        <name>instant</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Instant. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="914" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="914" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>PHY update indication PDU. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="911" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="911" bodyend="915"/>
+    <listofallmembers>
+      <member refid="structlctrPhyUpdInd__t_1ada8fcef9320247f45667bd45ef8cfbd9" prot="public" virt="non-virtual"><scope>lctrPhyUpdInd_t</scope><name>instant</name></member>
+      <member refid="structlctrPhyUpdInd__t_1a54150fd104157eb6478d71bc2756da2b" prot="public" virt="non-virtual"><scope>lctrPhyUpdInd_t</scope><name>masterToSlavePhy</name></member>
+      <member refid="structlctrPhyUpdInd__t_1a873ab8ddd68b233db70e14055981c381" prot="public" virt="non-virtual"><scope>lctrPhyUpdInd_t</scope><name>slaveToMasterPhy</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

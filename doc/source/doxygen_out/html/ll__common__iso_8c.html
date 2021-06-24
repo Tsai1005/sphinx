@@ -1,0 +1,1057 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>JL Adapter SDK: /data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_common_iso.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">JL Adapter SDK
+   &#160;<span id="projectnumber">v0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_5aa4d6ccf34d88a270949875c15714e5.html">btctrler</a></li><li class="navelem"><a class="el" href="dir_16b18ce1fc07a124435f964aa38ae307.html">BLE_v2</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle">
+<div class="title">ll_common_iso.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="link__layer_8h_source.html">ble/link_layer.h</a>&quot;</code><br />
+<code>#include &quot;hci_controller.h&quot;</code><br />
+<code>#include &quot;bluetooth.h&quot;</code><br />
+<code>#include &quot;system/timer.h&quot;</code><br />
+<code>#include &quot;hci_transport.h&quot;</code><br />
+<code>#include &lt;math.h&gt;</code><br />
+<code>#include &quot;common/task_config.h&quot;</code><br />
+<code>#include &quot;bb_le_clk.h&quot;</code><br />
+<code>#include &quot;common/debug.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+ll_common_iso.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="ll__common__iso_8c__incl.png" border="0" usemap="#_2data_2bingquan_2repo_2repo__adapter_2adapter__sdk_2lib_2btctrler_2BLE__v2_2ll__common__iso_8c" alt=""/></div>
+<map name="_2data_2bingquan_2repo_2repo__adapter_2adapter__sdk_2lib_2btctrler_2BLE__v2_2ll__common__iso_8c" id="_2data_2bingquan_2repo_2repo__adapter_2adapter__sdk_2lib_2btctrler_2BLE__v2_2ll__common__iso_8c">
+<area shape="rect" id="node2" href="link__layer_8h.html" title="ble/link_layer.h" alt="" coords="705,124,815,151"/>
+<area shape="rect" id="node8" href="ll__defines_8h.html" title="ll_defines.h" alt="" coords="301,348,389,375"/>
+<area shape="rect" id="node9" href="white__list_8h.html" title="white_list.h" alt="" coords="5,348,93,375"/>
+<area shape="rect" id="node12" href="llcp_8h.html" title="ble/llcp.h" alt="" coords="623,273,697,300"/>
+<area shape="rect" id="node13" href="ll__adv_8h.html" title="ble/ll_adv.h" alt="" coords="1052,199,1140,225"/>
+<area shape="rect" id="node14" href="ll__scan_8h.html" title="ble/ll_scan.h" alt="" coords="1165,199,1259,225"/>
+<area shape="rect" id="node15" href="ll__init_8h.html" title="ble/ll_init.h" alt="" coords="1283,199,1367,225"/>
+<area shape="rect" id="node16" href="resolve__list_8h.html" title="resolve_list.h" alt="" coords="159,348,257,375"/>
+<area shape="rect" id="node17" href="data__extension_8h.html" title="data_extension.h" alt="" coords="745,348,866,375"/>
+<area shape="rect" id="node18" href="multiple__phys_8h.html" title="multiple_phys.h" alt="" coords="823,273,937,300"/>
+<area shape="rect" id="node19" href="ll__cte_8h.html" title="ble/ll_cte.h" alt="" coords="223,273,308,300"/>
+<area shape="rect" id="node20" href="ll__iso_8h.html" title="ble/ll_iso.h" alt="" coords="514,273,598,300"/>
+<area shape="rect" id="node22" href="ll__bis_8h.html" title="ble/ll_bis.h" alt="" coords="403,199,487,225"/>
+<area shape="rect" id="node24" href="ll__cis_8h.html" title="ble/ll_cis.h" alt="" coords="511,199,595,225"/>
+<area shape="rect" id="node25" href="ll__pc_8h.html" title="ble/ll_pc.h" alt="" coords="117,273,198,300"/>
+<area shape="rect" id="node23" href="audio__codec_8h.html" title="audio_codec.h" alt="" coords="383,273,489,300"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a6c6991cba0e2995d7d9aec73e0324317"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__common__iso_8c.html#a6c6991cba0e2995d7d9aec73e0324317">LOG_TAG_CONST</a>&#160;&#160;&#160;LL_ISO</td></tr>
+<tr class="separator:a6c6991cba0e2995d7d9aec73e0324317"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ce0df38eb467e59f209470c8f5ac4e6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__common__iso_8c.html#a7ce0df38eb467e59f209470c8f5ac4e6">LOG_TAG</a>&#160;&#160;&#160;&quot;[LL-ISO]&quot;</td></tr>
+<tr class="separator:a7ce0df38eb467e59f209470c8f5ac4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eeb6e067100d0dec6e53bce19a403e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__common__iso_8c.html#a9eeb6e067100d0dec6e53bce19a403e0">LOG_ERROR_ENABLE</a></td></tr>
+<tr class="separator:a9eeb6e067100d0dec6e53bce19a403e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69321c8a2a0b07a07fb5088e82e25eb0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__common__iso_8c.html#a69321c8a2a0b07a07fb5088e82e25eb0">LOG_INFO_ENABLE</a></td></tr>
+<tr class="separator:a69321c8a2a0b07a07fb5088e82e25eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04135f631fe91199f05b1d816dda8756"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__common__iso_8c.html#a04135f631fe91199f05b1d816dda8756">LOG_DUMP_ENABLE</a></td></tr>
+<tr class="separator:a04135f631fe91199f05b1d816dda8756"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad223350d80db21fa8b721107cd1f6442"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__common__iso_8c.html#ad223350d80db21fa8b721107cd1f6442">__this</a>&#160;&#160;&#160;(&amp;<a class="el" href="link__layer_8h.html#a11d5b1c8b0def0c238d4700650780724">ll_hdl</a>)</td></tr>
+<tr class="separator:ad223350d80db21fa8b721107cd1f6442"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11821d1dd74b0eec8a3450c251d55987"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__common__iso_8c.html#a11821d1dd74b0eec8a3450c251d55987">hci_transport</a>&#160;&#160;&#160;<a class="el" href="ll__common__iso_8c.html#a379b1e8deb165c388b8e4c16c79f9d5e">h4_transport</a></td></tr>
+<tr class="separator:a11821d1dd74b0eec8a3450c251d55987"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ac8eb30328fd0c659f9ddb1389ec77788"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__common__iso_8c.html#ac8eb30328fd0c659f9ddb1389ec77788">le_cmd_unpack_setup_iso_data_path</a> (<a class="el" href="ll__iso_8h.html#structLlIsoSetupDataPath__t">LlIsoSetupDataPath_t</a> *param, uint8_t const *pBuf)</td></tr>
+<tr class="separator:ac8eb30328fd0c659f9ddb1389ec77788"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac57bc659aa060b54c5d2fcb5ca6bdf5d"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__common__iso_8c.html#ac57bc659aa060b54c5d2fcb5ca6bdf5d">ll_read_iso_tx_sync</a> (u16 handle, u16 *pPsn, u32 *pTime_stamp, u32 *pTime_offset)</td></tr>
+<tr class="memdesc:ac57bc659aa060b54c5d2fcb5ca6bdf5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to identify and enable the isochronous data path between the host and the controller for each connected isochronous or broadcast isochronous stream.  <a href="#ac57bc659aa060b54c5d2fcb5ca6bdf5d">更多...</a><br /></td></tr>
+<tr class="separator:ac57bc659aa060b54c5d2fcb5ca6bdf5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9433eb0c37706d47104fef15bd6bba09"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__common__iso_8c.html#a9433eb0c37706d47104fef15bd6bba09">lctrIsoOutDataPathSetup</a> (<a class="el" href="ll__iso_8h.html#structlctrOutDataPathCtx__t">lctrOutDataPathCtx_t</a> *pOutCtx)</td></tr>
+<tr class="memdesc:a9433eb0c37706d47104fef15bd6bba09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setup a datapath context.  <a href="#a9433eb0c37706d47104fef15bd6bba09">更多...</a><br /></td></tr>
+<tr class="separator:a9433eb0c37706d47104fef15bd6bba09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ad77c5718fe769b120f583a07595926"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__common__iso_8c.html#a4ad77c5718fe769b120f583a07595926">lctrIsoOutDataPathClear</a> (<a class="el" href="ll__iso_8h.html#structlctrOutDataPathCtx__t">lctrOutDataPathCtx_t</a> *pOutCtx)</td></tr>
+<tr class="memdesc:a4ad77c5718fe769b120f583a07595926"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear a datapath context.  <a href="#a4ad77c5718fe769b120f583a07595926">更多...</a><br /></td></tr>
+<tr class="separator:a4ad77c5718fe769b120f583a07595926"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37dc7bea5e08f0deb16d0931c88f5fdd"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__common__iso_8c.html#a37dc7bea5e08f0deb16d0931c88f5fdd">lctrSetupIsoDataPath</a> (<a class="el" href="ll__iso_8h.html#structLlIsoSetupDataPath__t">LlIsoSetupDataPath_t</a> *pSetupDataPath, <a class="el" href="ll__iso_8h.html#unionlctrDataPathCtx__t">lctrDataPathCtx_t</a> *pDataPathCtx)</td></tr>
+<tr class="separator:a37dc7bea5e08f0deb16d0931c88f5fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50c2eabdddb63705bdfd638a208eb73a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__common__iso_8c.html#a50c2eabdddb63705bdfd638a208eb73a">lctrIsoSendCodecSdu</a> (uint16_t handle)</td></tr>
+<tr class="memdesc:a50c2eabdddb63705bdfd638a208eb73a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send Codec SDU data.  <a href="#a50c2eabdddb63705bdfd638a208eb73a">更多...</a><br /></td></tr>
+<tr class="separator:a50c2eabdddb63705bdfd638a208eb73a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96372fd0d5dd1c53475b49c39437d6f2"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__common__iso_8c.html#a96372fd0d5dd1c53475b49c39437d6f2">ll_iso_setup_data_path</a> (<a class="el" href="ll__iso_8h.html#structLlIsoSetupDataPath__t">LlIsoSetupDataPath_t</a> *param)</td></tr>
+<tr class="memdesc:a96372fd0d5dd1c53475b49c39437d6f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to identify and enable the isochronous data path between the host and the controller for each connected isochronous stream or broadcast isochronous stream.  <a href="#a96372fd0d5dd1c53475b49c39437d6f2">更多...</a><br /></td></tr>
+<tr class="separator:a96372fd0d5dd1c53475b49c39437d6f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c836a4da7eb07cc7b89b1bc78acd5b6"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__common__iso_8c.html#a0c836a4da7eb07cc7b89b1bc78acd5b6">ll_iso_remove_data_path</a> (u16 handle, u8 dpDir)</td></tr>
+<tr class="memdesc:a0c836a4da7eb07cc7b89b1bc78acd5b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to remove the isochronous data path associated with the connected isochronous stream or broadcast isochronous stream.  <a href="#a0c836a4da7eb07cc7b89b1bc78acd5b6">更多...</a><br /></td></tr>
+<tr class="separator:a0c836a4da7eb07cc7b89b1bc78acd5b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e04ca4857d76a6dabd8af1a0108180f"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__common__iso_8c.html#a8e04ca4857d76a6dabd8af1a0108180f">ll_iso_tx_test</a> (u16 handle, u8 payload_type)</td></tr>
+<tr class="memdesc:a8e04ca4857d76a6dabd8af1a0108180f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable ISO Tx test.  <a href="#a8e04ca4857d76a6dabd8af1a0108180f">更多...</a><br /></td></tr>
+<tr class="separator:a8e04ca4857d76a6dabd8af1a0108180f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1653fcbbf0c0dc9366676f2a400fdca"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__common__iso_8c.html#ae1653fcbbf0c0dc9366676f2a400fdca">ll_iso_rx_test</a> (u16 handle, u8 payload_type)</td></tr>
+<tr class="memdesc:ae1653fcbbf0c0dc9366676f2a400fdca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable ISO Rx test.  <a href="#ae1653fcbbf0c0dc9366676f2a400fdca">更多...</a><br /></td></tr>
+<tr class="separator:ae1653fcbbf0c0dc9366676f2a400fdca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d50e758e909b29bf2af2cf3b1af795d"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__common__iso_8c.html#a1d50e758e909b29bf2af2cf3b1af795d">ll_iso_read_test_counters</a> (u16 handle, <a class="el" href="ll__iso_8h.html#structLlIsoTestCtrs__t">LlIsoTestCtrs_t</a> *pTest)</td></tr>
+<tr class="memdesc:a1d50e758e909b29bf2af2cf3b1af795d"><td class="mdescLeft">&#160;</td><td class="mdescRight">ISO read test counter.  <a href="#a1d50e758e909b29bf2af2cf3b1af795d">更多...</a><br /></td></tr>
+<tr class="separator:a1d50e758e909b29bf2af2cf3b1af795d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a310ff9220572e70d5f7c28080097eec5"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__common__iso_8c.html#a310ff9220572e70d5f7c28080097eec5">ll_iso_test_end</a> (u16 handle, <a class="el" href="ll__iso_8h.html#structLlIsoTestCtrs__t">LlIsoTestCtrs_t</a> *pTest)</td></tr>
+<tr class="memdesc:a310ff9220572e70d5f7c28080097eec5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Terminate ISO Rx test.  <a href="#a310ff9220572e70d5f7c28080097eec5">更多...</a><br /></td></tr>
+<tr class="separator:a310ff9220572e70d5f7c28080097eec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4bf3cd128d50bcd4c9bd4ea233b2799"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__common__iso_8c.html#ac4bf3cd128d50bcd4c9bd4ea233b2799">ll_read_iso_link_quality</a> (u16 handle, <a class="el" href="ll__iso_8h.html#structLlIsoLinkQual__t">LlIsoLinkQual_t</a> *pTest)</td></tr>
+<tr class="memdesc:ac4bf3cd128d50bcd4c9bd4ea233b2799"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read ISO Link Quality action.  <a href="#ac4bf3cd128d50bcd4c9bd4ea233b2799">更多...</a><br /></td></tr>
+<tr class="separator:ac4bf3cd128d50bcd4c9bd4ea233b2799"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5a97cbba3c50cca0ef55e13e6d4c1dc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__common__iso_8c.html#ab5a97cbba3c50cca0ef55e13e6d4c1dc">le_cmd_set_iso</a> (u16 opcode, const u8 *data, u32 size)</td></tr>
+<tr class="memdesc:ab5a97cbba3c50cca0ef55e13e6d4c1dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Common ISO command packet decode.  <a href="#ab5a97cbba3c50cca0ef55e13e6d4c1dc">更多...</a><br /></td></tr>
+<tr class="separator:ab5a97cbba3c50cca0ef55e13e6d4c1dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6c253e9805e050d59971c2362c5c7f1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__common__iso_8c.html#ad6c253e9805e050d59971c2362c5c7f1">ll_codec_init</a> (void)</td></tr>
+<tr class="memdesc:ad6c253e9805e050d59971c2362c5c7f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize codec resources.  <a href="#ad6c253e9805e050d59971c2362c5c7f1">更多...</a><br /></td></tr>
+<tr class="separator:ad6c253e9805e050d59971c2362c5c7f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cfe680fba0f8d66ec42191e6b2b3e48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__common__iso_8c.html#a6cfe680fba0f8d66ec42191e6b2b3e48">ll_bis_process</a> (void)</td></tr>
+<tr class="separator:a6cfe680fba0f8d66ec42191e6b2b3e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1419c3436fd1ba2950c2d21975dffa46"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__common__iso_8c.html#a1419c3436fd1ba2950c2d21975dffa46">ll_set_audio_sync</a> (u16 handle, u8 sel)</td></tr>
+<tr class="separator:a1419c3436fd1ba2950c2d21975dffa46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11567f0f175ea53e4c673482ab872091"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__common__iso_8c.html#a11567f0f175ea53e4c673482ab872091">ll_get_audio_sync</a> (u16 handle, u16 *us_1per12, u32 *pClk_us, u32 *pEvt_cnt)</td></tr>
+<tr class="separator:a11567f0f175ea53e4c673482ab872091"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef585efcb3745391e704ecf47fab8b3e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__common__iso_8c.html#aef585efcb3745391e704ecf47fab8b3e">ll_iso_init</a> (void)</td></tr>
+<tr class="separator:aef585efcb3745391e704ecf47fab8b3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9927ae58774746ed7e9e2cb6278c53c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__common__iso_8c.html#aa9927ae58774746ed7e9e2cb6278c53c">ll_iso_destroy</a> (void)</td></tr>
+<tr class="separator:aa9927ae58774746ed7e9e2cb6278c53c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a966b2ce1847ef9469802ff762c46e2ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__common__iso_8c.html#a966b2ce1847ef9469802ff762c46e2ec">ll_isoal_test</a> (void)</td></tr>
+<tr class="separator:a966b2ce1847ef9469802ff762c46e2ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:a935e0247fb944b4be8cb8723e638e7c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ll__iso_8h.html#structll__iso__rt__cfg__t">ll_iso_rt_cfg_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__common__iso_8c.html#a935e0247fb944b4be8cb8723e638e7c7">ll_iso_rt_cfg</a></td></tr>
+<tr class="separator:a935e0247fb944b4be8cb8723e638e7c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a379b1e8deb165c388b8e4c16c79f9d5e"><td class="memItemLeft" align="right" valign="top">const hci_transport_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__common__iso_8c.html#a379b1e8deb165c388b8e4c16c79f9d5e">h4_transport</a></td></tr>
+<tr class="separator:a379b1e8deb165c388b8e4c16c79f9d5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1e65f2a672b1526c01f098ec8b268fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ll__bis_8h.html#structll__codec__t">ll_codec_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__common__iso_8c.html#ae1e65f2a672b1526c01f098ec8b268fb">ll_codec</a></td></tr>
+<tr class="memdesc:ae1e65f2a672b1526c01f098ec8b268fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Codec event handlers (function pointers to decouple linker dependencies).  <a href="#ae1e65f2a672b1526c01f098ec8b268fb">更多...</a><br /></td></tr>
+<tr class="separator:ae1e65f2a672b1526c01f098ec8b268fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">宏定义说明</h2>
+<a class="anchor" id="ad223350d80db21fa8b721107cd1f6442"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __this&#160;&#160;&#160;(&amp;<a class="el" href="link__layer_8h.html#a11d5b1c8b0def0c238d4700650780724">ll_hdl</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a11821d1dd74b0eec8a3450c251d55987"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define hci_transport&#160;&#160;&#160;<a class="el" href="ll__common__iso_8c.html#a379b1e8deb165c388b8e4c16c79f9d5e">h4_transport</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a04135f631fe91199f05b1d816dda8756"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_DUMP_ENABLE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9eeb6e067100d0dec6e53bce19a403e0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_ERROR_ENABLE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a69321c8a2a0b07a07fb5088e82e25eb0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_INFO_ENABLE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7ce0df38eb467e59f209470c8f5ac4e6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_TAG&#160;&#160;&#160;&quot;[LL-ISO]&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6c6991cba0e2995d7d9aec73e0324317"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_TAG_CONST&#160;&#160;&#160;LL_ISO</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a4ad77c5718fe769b120f583a07595926"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void lctrIsoOutDataPathClear </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__iso_8h.html#structlctrOutDataPathCtx__t">lctrOutDataPathCtx_t</a> *&#160;</td>
+          <td class="paramname"><em>pOutCtx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Clear a datapath context. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pOutCtx</td><td>Output datapath context. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a9433eb0c37706d47104fef15bd6bba09"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void lctrIsoOutDataPathSetup </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__iso_8h.html#structlctrOutDataPathCtx__t">lctrOutDataPathCtx_t</a> *&#160;</td>
+          <td class="paramname"><em>pOutCtx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Setup a datapath context. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pOutCtx</td><td>Output datapath context. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a50c2eabdddb63705bdfd638a208eb73a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lctrIsoSendCodecSdu </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Send Codec SDU data. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>Stream ID. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a37dc7bea5e08f0deb16d0931c88f5fdd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int lctrSetupIsoDataPath </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__iso_8h.html#structLlIsoSetupDataPath__t">LlIsoSetupDataPath_t</a> *&#160;</td>
+          <td class="paramname"><em>pSetupDataPath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ll__iso_8h.html#unionlctrDataPathCtx__t">lctrDataPathCtx_t</a> *&#160;</td>
+          <td class="paramname"><em>pDataPathCtx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab5a97cbba3c50cca0ef55e13e6d4c1dc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int le_cmd_set_iso </td>
+          <td>(</td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>opcode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const u8 *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Common ISO command packet decode. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">opcode</td><td>Opcode </td></tr>
+    <tr><td class="paramname">*data</td><td>Pointer to the command packet </td></tr>
+    <tr><td class="paramname">size</td><td>Size of the command packet</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Status command match. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac8eb30328fd0c659f9ddb1389ec77788"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void le_cmd_unpack_setup_iso_data_path </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__iso_8h.html#structLlIsoSetupDataPath__t">LlIsoSetupDataPath_t</a> *&#160;</td>
+          <td class="paramname"><em>param</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t const *&#160;</td>
+          <td class="paramname"><em>pBuf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6cfe680fba0f8d66ec42191e6b2b3e48"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_bis_process </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad6c253e9805e050d59971c2362c5c7f1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ll_codec_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initialize codec resources. </p>
+<p>Map codec handlers for codec operations. Function pointer abstraction is used to decouple linker dependencies when a codec is not required by the system. </p>
+
+</div>
+</div>
+<a class="anchor" id="a11567f0f175ea53e4c673482ab872091"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_get_audio_sync </td>
+          <td>(</td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u16 *&#160;</td>
+          <td class="paramname"><em>us_1per12</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32 *&#160;</td>
+          <td class="paramname"><em>pClk_us</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32 *&#160;</td>
+          <td class="paramname"><em>pEvt_cnt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa9927ae58774746ed7e9e2cb6278c53c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_iso_destroy </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aef585efcb3745391e704ecf47fab8b3e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_iso_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1d50e758e909b29bf2af2cf3b1af795d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ll_iso_read_test_counters </td>
+          <td>(</td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ll__iso_8h.html#structLlIsoTestCtrs__t">LlIsoTestCtrs_t</a> *&#160;</td>
+          <td class="paramname"><em>pTest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ISO read test counter. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>CIS or BIS handle. </td></tr>
+    <tr><td class="paramname">pTest</td><td>Pointer to the test report.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Status code. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0c836a4da7eb07cc7b89b1bc78acd5b6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ll_iso_remove_data_path </td>
+          <td>(</td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>dpDir</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Used to remove the isochronous data path associated with the connected isochronous stream or broadcast isochronous stream. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>CIS or BIS handle. </td></tr>
+    <tr><td class="paramname">dpDir</td><td>Direction of data path to remove.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Status error code. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae1653fcbbf0c0dc9366676f2a400fdca"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ll_iso_rx_test </td>
+          <td>(</td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>payload_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Enable ISO Rx test. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>CIS or BIS handle. </td></tr>
+    <tr><td class="paramname">payload_type</td><td>Payload length type.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Status error code. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a96372fd0d5dd1c53475b49c39437d6f2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ll_iso_setup_data_path </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ll__iso_8h.html#structLlIsoSetupDataPath__t">LlIsoSetupDataPath_t</a> *&#160;</td>
+          <td class="paramname"><em>param</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Used to identify and enable the isochronous data path between the host and the controller for each connected isochronous stream or broadcast isochronous stream. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pSetupDataPath</td><td>Parameters for setup ISO data path.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Status error code. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a310ff9220572e70d5f7c28080097eec5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ll_iso_test_end </td>
+          <td>(</td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ll__iso_8h.html#structLlIsoTestCtrs__t">LlIsoTestCtrs_t</a> *&#160;</td>
+          <td class="paramname"><em>pTest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Terminate ISO Rx test. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>CIS or BIS handle. </td></tr>
+    <tr><td class="paramname">pTest</td><td>Pointer to the test report.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Status error code. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8e04ca4857d76a6dabd8af1a0108180f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ll_iso_tx_test </td>
+          <td>(</td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>payload_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Enable ISO Tx test. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>CIS or BIS handle. </td></tr>
+    <tr><td class="paramname">payload_type</td><td>Payload length type.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Status error code. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a966b2ce1847ef9469802ff762c46e2ec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_isoal_test </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac4bf3cd128d50bcd4c9bd4ea233b2799"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ll_read_iso_link_quality </td>
+          <td>(</td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ll__iso_8h.html#structLlIsoLinkQual__t">LlIsoLinkQual_t</a> *&#160;</td>
+          <td class="paramname"><em>pTest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Read ISO Link Quality action. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>CIS or BIS handle. </td></tr>
+    <tr><td class="paramname">pTest</td><td>Storage for statistics.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Status error code. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac57bc659aa060b54c5d2fcb5ca6bdf5d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ll_read_iso_tx_sync </td>
+          <td>(</td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u16 *&#160;</td>
+          <td class="paramname"><em>pPsn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32 *&#160;</td>
+          <td class="paramname"><em>pTime_stamp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32 *&#160;</td>
+          <td class="paramname"><em>pTime_offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Used to identify and enable the isochronous data path between the host and the controller for each connected isochronous or broadcast isochronous stream. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>BIS or CIS handle. </td></tr>
+    <tr><td class="paramname">psn</td><td>Packet sequence number. </td></tr>
+    <tr><td class="paramname">pTime_stamp</td><td>Timestamp. </td></tr>
+    <tr><td class="paramname">pTime_offset</td><td>Time offset.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Status error code. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1419c3436fd1ba2950c2d21975dffa46"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_set_audio_sync </td>
+          <td>(</td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>sel</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a class="anchor" id="a379b1e8deb165c388b8e4c16c79f9d5e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const hci_transport_t* h4_transport</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae1e65f2a672b1526c01f098ec8b268fb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ll__bis_8h.html#structll__codec__t">ll_codec_t</a> ll_codec</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Codec event handlers (function pointers to decouple linker dependencies). </p>
+<p>Codec event handlers. </p>
+
+</div>
+</div>
+<a class="anchor" id="a935e0247fb944b4be8cb8723e638e7c7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ll__iso_8h.html#structll__iso__rt__cfg__t">ll_iso_rt_cfg_t</a> ll_iso_rt_cfg</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>初始值:</b><div class="fragment"><div class="line">= {</div><div class="line">    </div><div class="line">    .numIsoTxBuf        = 0,</div><div class="line">    .numIsoRxBuf        = 0,</div><div class="line">    .maxIsoSduLen       = 0,</div><div class="line">    .maxIsoPduLen       = 0,</div><div class="line">    .maxCig             = 0,</div><div class="line">    .maxCis             = 0,  </div><div class="line">    .cisSubEvtSpaceDelay = 0,</div><div class="line">    .maxBig             = 0,</div><div class="line">    .maxBis             = 0,</div><div class="line">}</div></div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

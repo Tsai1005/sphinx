@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structbredr__role__switch" kind="struct" language="C++" prot="public">
+    <compoundname>bredr_role_switch</compoundname>
+    <includes refid="bredr__link_8h" local="no">bredr_link.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structbredr__role__switch_1a292c9b6df4e224aeb37189f6314159b0" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 bredr_role_switch::slot_offset</definition>
+        <argsstring></argsstring>
+        <name>slot_offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="599" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="599" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__role__switch_1a3abe6caa686993d0fbe896637379bd64" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 bredr_role_switch::rs_timeout_en</definition>
+        <argsstring></argsstring>
+        <name>rs_timeout_en</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="600" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="600" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__role__switch_1a6c3e1b0d94a939d3a7018d4c43ba9572" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 bredr_role_switch::bitoff</definition>
+        <argsstring></argsstring>
+        <name>bitoff</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="601" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="601" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__role__switch_1a20192ffc4fb6a7213aa5c3d62b55de34" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 bredr_role_switch::clk_offset</definition>
+        <argsstring></argsstring>
+        <name>clk_offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="602" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="602" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__role__switch_1aaa9273ae77a39a6a1eecb6635227832f" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structlink__page" kindref="compound">link_page</ref> *</type>
+        <definition>struct link_page* bredr_role_switch::page</definition>
+        <argsstring></argsstring>
+        <name>page</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="603" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="603" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__role__switch_1a1cadb59364870488c0bc7384aaa35610" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structlink__page__scan" kindref="compound">link_page_scan</ref> *</type>
+        <definition>struct link_page_scan* bredr_role_switch::page_scan</definition>
+        <argsstring></argsstring>
+        <name>page_scan</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="604" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="604" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="985">
+        <label>link_page</label>
+        <link refid="structlink__page"/>
+        <childnode refid="986" relation="usage">
+          <edgelabel>tws_rx_info</edgelabel>
+          <edgelabel>tws_tx_info</edgelabel>
+        </childnode>
+        <childnode refid="987" relation="usage">
+          <edgelabel>remote</edgelabel>
+        </childnode>
+        <childnode refid="988" relation="usage">
+          <edgelabel>task</edgelabel>
+        </childnode>
+      </node>
+      <node id="984">
+        <label>bredr_role_switch</label>
+        <link refid="structbredr__role__switch"/>
+        <childnode refid="985" relation="usage">
+          <edgelabel>page</edgelabel>
+        </childnode>
+        <childnode refid="990" relation="usage">
+          <edgelabel>page_scan</edgelabel>
+        </childnode>
+      </node>
+      <node id="986">
+        <label>tws_pair_info</label>
+        <link refid="structtws__pair__info"/>
+      </node>
+      <node id="988">
+        <label>link_task</label>
+        <link refid="structlink__task"/>
+        <childnode refid="989" relation="usage">
+          <edgelabel>ops</edgelabel>
+        </childnode>
+      </node>
+      <node id="987">
+        <label>link_remote</label>
+        <link refid="structlink__remote"/>
+      </node>
+      <node id="990">
+        <label>link_page_scan</label>
+        <link refid="structlink__page__scan"/>
+        <childnode refid="987" relation="usage">
+          <edgelabel>remote</edgelabel>
+        </childnode>
+        <childnode refid="988" relation="usage">
+          <edgelabel>task</edgelabel>
+        </childnode>
+      </node>
+      <node id="989">
+        <label>link_task_ops</label>
+        <link refid="structlink__task__ops"/>
+      </node>
+    </collaborationgraph>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="598" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="598" bodyend="606"/>
+    <listofallmembers>
+      <member refid="structbredr__role__switch_1a6c3e1b0d94a939d3a7018d4c43ba9572" prot="public" virt="non-virtual"><scope>bredr_role_switch</scope><name>bitoff</name></member>
+      <member refid="structbredr__role__switch_1a20192ffc4fb6a7213aa5c3d62b55de34" prot="public" virt="non-virtual"><scope>bredr_role_switch</scope><name>clk_offset</name></member>
+      <member refid="structbredr__role__switch_1aaa9273ae77a39a6a1eecb6635227832f" prot="public" virt="non-virtual"><scope>bredr_role_switch</scope><name>page</name></member>
+      <member refid="structbredr__role__switch_1a1cadb59364870488c0bc7384aaa35610" prot="public" virt="non-virtual"><scope>bredr_role_switch</scope><name>page_scan</name></member>
+      <member refid="structbredr__role__switch_1a3abe6caa686993d0fbe896637379bd64" prot="public" virt="non-virtual"><scope>bredr_role_switch</scope><name>rs_timeout_en</name></member>
+      <member refid="structbredr__role__switch_1a292c9b6df4e224aeb37189f6314159b0" prot="public" virt="non-virtual"><scope>bredr_role_switch</scope><name>slot_offset</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

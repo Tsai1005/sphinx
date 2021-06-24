@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structlink__inquiry__result" kind="struct" language="C++" prot="public">
+    <compoundname>link_inquiry_result</compoundname>
+    <includes refid="bredr__link_8h" local="no">bredr_link.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlink__inquiry__result_1aa981dfc024bdc6bee8fd36f368b4dd26" prot="public" static="no" mutable="no">
+        <type>struct list_head</type>
+        <definition>struct list_head link_inquiry_result::entry</definition>
+        <argsstring></argsstring>
+        <name>entry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="141" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__inquiry__result_1a1117db81bdc5f0df9a1313ab9c9df50c" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structlink__remote" kindref="compound">link_remote</ref></type>
+        <definition>struct link_remote link_inquiry_result::remote</definition>
+        <argsstring></argsstring>
+        <name>remote</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="141" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__inquiry__result_1a185e34487b3a6dc3a5dff20b6d3276d5" prot="public" static="no" mutable="no">
+        <type>u8 *</type>
+        <definition>u8* link_inquiry_result::eir_data</definition>
+        <argsstring></argsstring>
+        <name>eir_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="147" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__inquiry__result_1abf232ca55c87f2742077354e3a3b9a44" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 link_inquiry_result::eir_len</definition>
+        <argsstring></argsstring>
+        <name>eir_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="148" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1345">
+        <label>link_remote</label>
+        <link refid="structlink__remote"/>
+      </node>
+      <node id="1344">
+        <label>link_inquiry_result</label>
+        <link refid="structlink__inquiry__result"/>
+        <childnode refid="1345" relation="usage">
+          <edgelabel>remote</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="144" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="144" bodyend="149"/>
+    <listofallmembers>
+      <member refid="structlink__inquiry__result_1a185e34487b3a6dc3a5dff20b6d3276d5" prot="public" virt="non-virtual"><scope>link_inquiry_result</scope><name>eir_data</name></member>
+      <member refid="structlink__inquiry__result_1abf232ca55c87f2742077354e3a3b9a44" prot="public" virt="non-virtual"><scope>link_inquiry_result</scope><name>eir_len</name></member>
+      <member refid="structlink__inquiry__result_1aa981dfc024bdc6bee8fd36f368b4dd26" prot="public" virt="non-virtual"><scope>link_inquiry_result</scope><name>entry</name></member>
+      <member refid="structlink__inquiry__result_1a1117db81bdc5f0df9a1313ab9c9df50c" prot="public" virt="non-virtual"><scope>link_inquiry_result</scope><name>remote</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

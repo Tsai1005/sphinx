@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structcte__connection__rx__param" kind="struct" language="C++" prot="public">
+    <compoundname>cte_connection_rx_param</compoundname>
+    <includes refid="ll__cte_8h" local="no">ll_cte.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcte__connection__rx__param_1a8ed664b6eabe5dbaf0719d96d7e692fb" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 cte_connection_rx_param::Connection_Handle</definition>
+        <argsstring></argsstring>
+        <name>Connection_Handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cte.h" line="31" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cte.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcte__connection__rx__param_1aaa30b573af9716cb747e9a15bfbeae0e" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 cte_connection_rx_param::Sampling_Enable</definition>
+        <argsstring></argsstring>
+        <name>Sampling_Enable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cte.h" line="32" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cte.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcte__connection__rx__param_1a066a3f6e5b151610e50099754446776f" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 cte_connection_rx_param::Slot_Durations</definition>
+        <argsstring></argsstring>
+        <name>Slot_Durations</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cte.h" line="33" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cte.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcte__connection__rx__param_1ad9f3a10649d5fb3ccbee8c837083f2d6" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 cte_connection_rx_param::Switching_Pattern_Length</definition>
+        <argsstring></argsstring>
+        <name>Switching_Pattern_Length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cte.h" line="34" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cte.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcte__connection__rx__param_1a8fdf544f00361d27f3a3bc57a0966bf1" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 cte_connection_rx_param::Antenna_ID[0]</definition>
+        <argsstring>[0]</argsstring>
+        <name>Antenna_ID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cte.h" line="35" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cte.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cte.h" line="30" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cte.h" bodystart="30" bodyend="36"/>
+    <listofallmembers>
+      <member refid="structcte__connection__rx__param_1a8fdf544f00361d27f3a3bc57a0966bf1" prot="public" virt="non-virtual"><scope>cte_connection_rx_param</scope><name>Antenna_ID</name></member>
+      <member refid="structcte__connection__rx__param_1a8ed664b6eabe5dbaf0719d96d7e692fb" prot="public" virt="non-virtual"><scope>cte_connection_rx_param</scope><name>Connection_Handle</name></member>
+      <member refid="structcte__connection__rx__param_1aaa30b573af9716cb747e9a15bfbeae0e" prot="public" virt="non-virtual"><scope>cte_connection_rx_param</scope><name>Sampling_Enable</name></member>
+      <member refid="structcte__connection__rx__param_1a066a3f6e5b151610e50099754446776f" prot="public" virt="non-virtual"><scope>cte_connection_rx_param</scope><name>Slot_Durations</name></member>
+      <member refid="structcte__connection__rx__param_1ad9f3a10649d5fb3ccbee8c837083f2d6" prot="public" virt="non-virtual"><scope>cte_connection_rx_param</scope><name>Switching_Pattern_Length</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

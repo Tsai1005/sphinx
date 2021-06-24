@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structle__cis__t_8data_8slv" kind="struct" language="C++" prot="public">
+    <compoundname>le_cis_t.data.slv</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structle__cis__t_8data_8slv_1a7302c799b59b3ca99303a1ab6cb41ad4" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>anchorOffsetUsec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset to the stream anchor point. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="260" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_8data_8slv_1aee239cc0962269be6094ce9723878a2c" prot="public" static="no" mutable="no">
+        <type><ref refid="structlctrCisReq__t" kindref="compound">lctrCisReq_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>cisReq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CIS request parameters. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="261" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_8data_8slv_1aaed7387490678bc7495b8e0bbdf29b09" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>syncWithMaster</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flag indicating synchronize packet received from master. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="262" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_8data_8slv_1ac6ba5dfa28c63a6b3a4b4da9059bd18b" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>rxFromMaster</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>At least one successful packet received from master. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="263" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_8data_8slv_1a684f71f19eb3a9c21d9b35f371c37b15" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>firstRxFromMaster</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TRUE if the first Rx from master. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="264" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_8data_8slv_1a58ba172b3f322254f6c7b3c36e97e476" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>offsetUsec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset to the next Rx. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="265" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_8data_8slv_1a06d09825d89ff868bde11daa85670eba" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>firstRxStartTsUsec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Timestamp of the first received frame regardless of CRC error in microseconds. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="266" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_8data_8slv_1a51b24a68b873f276a5f3fd49a9c8d94c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>consCrcFailed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of consecutive CRC failures. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="267" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_8data_8slv_1a8cd5f5b77ad20d362727fe2c955881ba" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>rxStatus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Rx status. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="268" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="259" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="259" bodyend="269"/>
+    <listofallmembers>
+      <member refid="structle__cis__t_8data_8slv_1a7302c799b59b3ca99303a1ab6cb41ad4" prot="public" virt="non-virtual"><scope>le_cis_t.data.slv</scope><name>anchorOffsetUsec</name></member>
+      <member refid="structle__cis__t_8data_8slv_1aee239cc0962269be6094ce9723878a2c" prot="public" virt="non-virtual"><scope>le_cis_t.data.slv</scope><name>cisReq</name></member>
+      <member refid="structle__cis__t_8data_8slv_1a51b24a68b873f276a5f3fd49a9c8d94c" prot="public" virt="non-virtual"><scope>le_cis_t.data.slv</scope><name>consCrcFailed</name></member>
+      <member refid="structle__cis__t_8data_8slv_1a684f71f19eb3a9c21d9b35f371c37b15" prot="public" virt="non-virtual"><scope>le_cis_t.data.slv</scope><name>firstRxFromMaster</name></member>
+      <member refid="structle__cis__t_8data_8slv_1a06d09825d89ff868bde11daa85670eba" prot="public" virt="non-virtual"><scope>le_cis_t.data.slv</scope><name>firstRxStartTsUsec</name></member>
+      <member refid="structle__cis__t_8data_8slv_1a58ba172b3f322254f6c7b3c36e97e476" prot="public" virt="non-virtual"><scope>le_cis_t.data.slv</scope><name>offsetUsec</name></member>
+      <member refid="structle__cis__t_8data_8slv_1ac6ba5dfa28c63a6b3a4b4da9059bd18b" prot="public" virt="non-virtual"><scope>le_cis_t.data.slv</scope><name>rxFromMaster</name></member>
+      <member refid="structle__cis__t_8data_8slv_1a8cd5f5b77ad20d362727fe2c955881ba" prot="public" virt="non-virtual"><scope>le_cis_t.data.slv</scope><name>rxStatus</name></member>
+      <member refid="structle__cis__t_8data_8slv_1aaed7387490678bc7495b8e0bbdf29b09" prot="public" virt="non-virtual"><scope>le_cis_t.data.slv</scope><name>syncWithMaster</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structll__iso__rt__cfg__t" kind="struct" language="C++" prot="public">
+    <compoundname>ll_iso_rt_cfg_t</compoundname>
+    <includes refid="ll__iso_8h" local="no">ll_iso.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structll__iso__rt__cfg__t_1a32d08d0e93665fb39effdeed2196af20" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_iso_rt_cfg_t::numIsoTxBuf</definition>
+        <argsstring></argsstring>
+        <name>numIsoTxBuf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default number of ISO transmit buffers. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="212" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__iso__rt__cfg__t_1a11ec47b66a784fb2bac9a0c05baa0e94" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_iso_rt_cfg_t::numIsoRxBuf</definition>
+        <argsstring></argsstring>
+        <name>numIsoRxBuf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default number of ISO receive buffers. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="213" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__iso__rt__cfg__t_1ad692e4aacb1c82f4c1150e5a931732e7" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t ll_iso_rt_cfg_t::maxIsoSduLen</definition>
+        <argsstring></argsstring>
+        <name>maxIsoSduLen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum ISO SDU size between host and controller. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="214" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__iso__rt__cfg__t_1ad894eb16a4365d0a777cca7e69b63952" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t ll_iso_rt_cfg_t::maxIsoPduLen</definition>
+        <argsstring></argsstring>
+        <name>maxIsoPduLen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum ISO Data PDU buffer size. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="215" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__iso__rt__cfg__t_1a7ca353c3787b674b0ec6698e8ce79533" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_iso_rt_cfg_t::maxCig</definition>
+        <argsstring></argsstring>
+        <name>maxCig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum number of CIG. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="217" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__iso__rt__cfg__t_1af647a062ee9bd551d188de1ceccc26c7" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_iso_rt_cfg_t::maxCis</definition>
+        <argsstring></argsstring>
+        <name>maxCis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum number of CIS, it is shared by the CIGs. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="218" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__iso__rt__cfg__t_1a3564c496b419bf56950a4c59fcdcdb8e" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t ll_iso_rt_cfg_t::cisSubEvtSpaceDelay</definition>
+        <argsstring></argsstring>
+        <name>cisSubEvtSpaceDelay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Subevent spacing above T_MSS in microsecond. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="219" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__iso__rt__cfg__t_1a163b797cd0b7cbaf4b908cd063d7f7f2" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_iso_rt_cfg_t::maxBig</definition>
+        <argsstring></argsstring>
+        <name>maxBig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum number of BIG. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="221" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__iso__rt__cfg__t_1aec8792bc6211573594a658932a5929ca" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_iso_rt_cfg_t::maxBis</definition>
+        <argsstring></argsstring>
+        <name>maxBis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum number of BIS. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="222" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__iso__rt__cfg__t_1ac2769ecf3c5c7944eeedbbaa017fa34d" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t ll_iso_rt_cfg_t::dtmRxSyncMs</definition>
+        <argsstring></argsstring>
+        <name>dtmRxSyncMs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DTM Rx synchronization window in milliseconds. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="224" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>LL ISO runtime configuration parameters. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="210" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="210" bodyend="225"/>
+    <listofallmembers>
+      <member refid="structll__iso__rt__cfg__t_1a3564c496b419bf56950a4c59fcdcdb8e" prot="public" virt="non-virtual"><scope>ll_iso_rt_cfg_t</scope><name>cisSubEvtSpaceDelay</name></member>
+      <member refid="structll__iso__rt__cfg__t_1ac2769ecf3c5c7944eeedbbaa017fa34d" prot="public" virt="non-virtual"><scope>ll_iso_rt_cfg_t</scope><name>dtmRxSyncMs</name></member>
+      <member refid="structll__iso__rt__cfg__t_1a163b797cd0b7cbaf4b908cd063d7f7f2" prot="public" virt="non-virtual"><scope>ll_iso_rt_cfg_t</scope><name>maxBig</name></member>
+      <member refid="structll__iso__rt__cfg__t_1aec8792bc6211573594a658932a5929ca" prot="public" virt="non-virtual"><scope>ll_iso_rt_cfg_t</scope><name>maxBis</name></member>
+      <member refid="structll__iso__rt__cfg__t_1a7ca353c3787b674b0ec6698e8ce79533" prot="public" virt="non-virtual"><scope>ll_iso_rt_cfg_t</scope><name>maxCig</name></member>
+      <member refid="structll__iso__rt__cfg__t_1af647a062ee9bd551d188de1ceccc26c7" prot="public" virt="non-virtual"><scope>ll_iso_rt_cfg_t</scope><name>maxCis</name></member>
+      <member refid="structll__iso__rt__cfg__t_1ad894eb16a4365d0a777cca7e69b63952" prot="public" virt="non-virtual"><scope>ll_iso_rt_cfg_t</scope><name>maxIsoPduLen</name></member>
+      <member refid="structll__iso__rt__cfg__t_1ad692e4aacb1c82f4c1150e5a931732e7" prot="public" virt="non-virtual"><scope>ll_iso_rt_cfg_t</scope><name>maxIsoSduLen</name></member>
+      <member refid="structll__iso__rt__cfg__t_1a11ec47b66a784fb2bac9a0c05baa0e94" prot="public" virt="non-virtual"><scope>ll_iso_rt_cfg_t</scope><name>numIsoRxBuf</name></member>
+      <member refid="structll__iso__rt__cfg__t_1a32d08d0e93665fb39effdeed2196af20" prot="public" virt="non-virtual"><scope>ll_iso_rt_cfg_t</scope><name>numIsoTxBuf</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

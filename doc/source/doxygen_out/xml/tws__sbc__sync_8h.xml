@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="tws__sbc__sync_8h" kind="file" language="C++">
+    <compoundname>tws_sbc_sync.h</compoundname>
+    <includes refid="tws__link_8h" local="yes">tws_link.h</includes>
+    <incdepgraph>
+      <node id="5585">
+        <label>classic/bredr_frame.h</label>
+      </node>
+      <node id="5578">
+        <label>generic/list.h</label>
+      </node>
+      <node id="5582">
+        <label>common/link_task.h</label>
+        <link refid="link__task_8h"/>
+        <childnode refid="5577" relation="include">
+        </childnode>
+        <childnode refid="5578" relation="include">
+        </childnode>
+      </node>
+      <node id="5581">
+        <label>classic/bredr_device.h</label>
+        <link refid="bredr__device_8h"/>
+      </node>
+      <node id="5584">
+        <label>wifi_detect.h</label>
+        <link refid="wifi__detect_8h"/>
+      </node>
+      <node id="5572">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sbc_sync.h</label>
+        <link refid="tws_sbc_sync.h"/>
+        <childnode refid="5573" relation="include">
+        </childnode>
+      </node>
+      <node id="5579">
+        <label>classic/bredr_types.h</label>
+        <link refid="bredr__types_8h"/>
+      </node>
+      <node id="5574">
+        <label>classic/bredr_link.h</label>
+        <link refid="bredr__link_8h"/>
+        <childnode refid="5575" relation="include">
+        </childnode>
+        <childnode refid="5576" relation="include">
+        </childnode>
+        <childnode refid="5580" relation="include">
+        </childnode>
+        <childnode refid="5581" relation="include">
+        </childnode>
+        <childnode refid="5582" relation="include">
+        </childnode>
+        <childnode refid="5583" relation="include">
+        </childnode>
+        <childnode refid="5584" relation="include">
+        </childnode>
+        <childnode refid="5585" relation="include">
+        </childnode>
+      </node>
+      <node id="5575">
+        <label>typedef.h</label>
+      </node>
+      <node id="5577">
+        <label>generic/typedef.h</label>
+      </node>
+      <node id="5583">
+        <label>system/task.h</label>
+      </node>
+      <node id="5576">
+        <label>classic/link_bulk.h</label>
+        <link refid="link__bulk_8h"/>
+        <childnode refid="5577" relation="include">
+        </childnode>
+        <childnode refid="5578" relation="include">
+        </childnode>
+        <childnode refid="5579" relation="include">
+        </childnode>
+      </node>
+      <node id="5573">
+        <label>tws_link.h</label>
+        <link refid="tws__link_8h"/>
+        <childnode refid="5574" relation="include">
+        </childnode>
+        <childnode refid="5579" relation="include">
+        </childnode>
+        <childnode refid="5585" relation="include">
+        </childnode>
+      </node>
+      <node id="5580">
+        <label>classic/lmp_pdu.h</label>
+        <link refid="lmp__pdu_8h"/>
+        <childnode refid="5575" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*****************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">&gt;file<sp/>name<sp/>:<sp/>tws_sync.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">&gt;author<sp/>:<sp/>lichao</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">&gt;create<sp/>time<sp/>:<sp/>Tue<sp/>15<sp/>Jan<sp/>2019<sp/>10:14:24<sp/>AM<sp/>CST</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*****************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_TWS_SYNC_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_TWS_SYNC_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="tws__link_8h" kindref="compound">tws_link.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sbc_sync.h"/>
+  </compounddef>
+</doxygen>

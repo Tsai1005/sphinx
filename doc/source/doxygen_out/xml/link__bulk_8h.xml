@@ -1,0 +1,832 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="link__bulk_8h" kind="file" language="C++">
+    <compoundname>link_bulk.h</compoundname>
+    <includes local="yes">generic/typedef.h</includes>
+    <includes local="yes">generic/list.h</includes>
+    <includes refid="bredr__types_8h" local="yes">classic/bredr_types.h</includes>
+    <includedby refid="tws__le__link_8c" local="yes">/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c</includedby>
+    <includedby refid="bredr__link_8h" local="yes">/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h</includedby>
+    <includedby refid="lmp_8h" local="yes">/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h</includedby>
+    <includedby refid="lmp__hci_8h" local="yes">/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_hci.h</includedby>
+    <includedby refid="tws__data__sync_8h" local="yes">/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_data_sync.h</includedby>
+    <incdepgraph>
+      <node id="5460">
+        <label>generic/list.h</label>
+      </node>
+      <node id="5461">
+        <label>classic/bredr_types.h</label>
+        <link refid="bredr__types_8h"/>
+      </node>
+      <node id="5459">
+        <label>generic/typedef.h</label>
+      </node>
+      <node id="5458">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h</label>
+        <link refid="link_bulk.h"/>
+        <childnode refid="5459" relation="include">
+        </childnode>
+        <childnode refid="5460" relation="include">
+        </childnode>
+        <childnode refid="5461" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5473">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_data_sync.h</label>
+        <link refid="tws__data__sync_8h"/>
+      </node>
+      <node id="5467">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sniff.h</label>
+        <link refid="tws__sniff_8h"/>
+      </node>
+      <node id="5469">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_schedule.h</label>
+        <link refid="tws__schedule_8h"/>
+      </node>
+      <node id="5466">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h</label>
+        <link refid="tws__conn_8h"/>
+        <childnode refid="5467" relation="include">
+        </childnode>
+      </node>
+      <node id="5470">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h</label>
+        <link refid="lmp_8h"/>
+        <childnode refid="5471" relation="include">
+        </childnode>
+        <childnode refid="5466" relation="include">
+        </childnode>
+      </node>
+      <node id="5471">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_role_switch.h</label>
+        <link refid="lmp__role__switch_8h"/>
+      </node>
+      <node id="5468">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_sbc_sync.h</label>
+        <link refid="tws__sbc__sync_8h"/>
+      </node>
+      <node id="5464">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h</label>
+        <link refid="bredr__link_8h"/>
+        <childnode refid="5463" relation="include">
+        </childnode>
+        <childnode refid="5465" relation="include">
+        </childnode>
+      </node>
+      <node id="5472">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_hci.h</label>
+        <link refid="lmp__hci_8h"/>
+      </node>
+      <node id="5463">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_le_link.c</label>
+        <link refid="tws__le__link_8c"/>
+      </node>
+      <node id="5462">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h</label>
+        <link refid="link_bulk.h"/>
+        <childnode refid="5463" relation="include">
+        </childnode>
+        <childnode refid="5464" relation="include">
+        </childnode>
+        <childnode refid="5470" relation="include">
+        </childnode>
+        <childnode refid="5472" relation="include">
+        </childnode>
+        <childnode refid="5473" relation="include">
+        </childnode>
+      </node>
+      <node id="5465">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_link.h</label>
+        <link refid="tws__link_8h"/>
+        <childnode refid="5466" relation="include">
+        </childnode>
+        <childnode refid="5468" relation="include">
+        </childnode>
+        <childnode refid="5469" relation="include">
+        </childnode>
+        <childnode refid="5467" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structbredr__rx__bulk" prot="public">bredr_rx_bulk</innerclass>
+    <innerclass refid="structbredr__tx__bulk" prot="public">bredr_tx_bulk</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="link__bulk_8h_1a12920b15b2bab6ff7a3011ac224047d5" prot="public" static="no">
+        <name>LMP_RX_BULK_SIZE</name>
+        <initializer>sizeof(struct lmp_rx_bulk)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" line="75" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="link__bulk_8h_1ac5c932fe78179b3269e0bf3c7f8587fa" prot="public" static="no">
+        <name>ACL_RX_BULK_SIZE</name>
+        <initializer>(sizeof(struct acl_rx_bulk) + <ref refid="bredr__types_8h_1a4c5c6bf400fad989b1f5b7f9a95449cd" kindref="member">ACL_SIZE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" line="76" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="link__bulk_8h_1abc97ac910302e5cadba2f3c36e2f97d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int link_bulk_init</definition>
+        <argsstring>()</argsstring>
+        <name>link_bulk_init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" line="64" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__bulk_8h_1a2101e5b34c5d480fd33aa49c831656e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* bt_malloc</definition>
+        <argsstring>(int size)</argsstring>
+        <name>bt_malloc</name>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__bulk_8h_1aaf597bf191cdf99bfa94da9d60ef68b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bt_free</definition>
+        <argsstring>(void *buf)</argsstring>
+        <name>bt_free</name>
+        <param>
+          <type>void *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" line="68" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__bulk_8h_1adc9a5aac6acc3eaedf489b3e4d682b7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* lmp_malloc</definition>
+        <argsstring>(int size)</argsstring>
+        <name>lmp_malloc</name>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" line="70" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__bulk_8h_1afdca6485acfc2ce0a19a70b3be2d494f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lmp_free</definition>
+        <argsstring>(void *buf)</argsstring>
+        <name>lmp_free</name>
+        <param>
+          <type>void *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" line="72" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__bulk_8h_1a6ad92eb3238325a1eef4393479898be1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structbredr__rx__bulk" kindref="compound">bredr_rx_bulk</ref> *</type>
+        <definition>struct bredr_rx_bulk* __bredr_rx_bulk_alloc</definition>
+        <argsstring>(void *pool, int size)</argsstring>
+        <name>__bredr_rx_bulk_alloc</name>
+        <param>
+          <type>void *</type>
+          <declname>pool</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" line="79" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__bulk_8h_1a01bbcc3f7d08863494809c6a5729d56b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structbredr__rx__bulk" kindref="compound">bredr_rx_bulk</ref> *</type>
+        <definition>struct bredr_rx_bulk* bredr_rx_bulk_alloc</definition>
+        <argsstring>(int id, int len)</argsstring>
+        <name>bredr_rx_bulk_alloc</name>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" line="83" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__bulk_8h_1a3b6e93faaa345bc78a504eb2c746fd4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structbredr__rx__bulk" kindref="compound">bredr_rx_bulk</ref> *</type>
+        <definition>struct bredr_rx_bulk* bredr_rx_bulk_alloc_for</definition>
+        <argsstring>(int id, int len)</argsstring>
+        <name>bredr_rx_bulk_alloc_for</name>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" line="85" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__bulk_8h_1afae3e8678c67e6b666bca6a080d13053" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bredr_rx_bulk_push</definition>
+        <argsstring>(struct list_head *, struct bredr_rx_bulk *bulk)</argsstring>
+        <name>bredr_rx_bulk_push</name>
+        <param>
+          <type>struct list_head *</type>
+        </param>
+        <param>
+          <type>struct <ref refid="structbredr__rx__bulk" kindref="compound">bredr_rx_bulk</ref> *</type>
+          <declname>bulk</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" line="89" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__bulk_8h_1ae9f90e8caae58bd8a428479a74c4bd5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structbredr__rx__bulk" kindref="compound">bredr_rx_bulk</ref> *</type>
+        <definition>struct bredr_rx_bulk* bredr_rx_bulk_pop</definition>
+        <argsstring>(struct list_head *)</argsstring>
+        <name>bredr_rx_bulk_pop</name>
+        <param>
+          <type>struct list_head *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" line="91" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__bulk_8h_1af0a5009a2d7290bd4a5a6f9356796617" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bredr_rx_bulk_free</definition>
+        <argsstring>(struct bredr_rx_bulk *bulk)</argsstring>
+        <name>bredr_rx_bulk_free</name>
+        <param>
+          <type>struct <ref refid="structbredr__rx__bulk" kindref="compound">bredr_rx_bulk</ref> *</type>
+          <declname>bulk</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" line="93" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__bulk_8h_1a88df3d4b2f88740ff310eb0662a16a17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bredr_rx_bulk_state</definition>
+        <argsstring>()</argsstring>
+        <name>bredr_rx_bulk_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" line="95" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__bulk_8h_1a07e657d5980ac6b7be24ee6cdd05be61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int bredr_rx_bulk_total_size</definition>
+        <argsstring>(int id)</argsstring>
+        <name>bredr_rx_bulk_total_size</name>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" line="97" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__bulk_8h_1a0f39a28283251df86b339aa09bd14131" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int bredr_rx_bulk_remain_size</definition>
+        <argsstring>(int id, int unit_size)</argsstring>
+        <name>bredr_rx_bulk_remain_size</name>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>unit_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" line="99" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__bulk_8h_1a9831eeab2ca08b8940576e5b9a8ba404" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bredr_rx_bulk_set_max_used_persent</definition>
+        <argsstring>(int id, int persent)</argsstring>
+        <name>bredr_rx_bulk_set_max_used_persent</name>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>persent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" line="101" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__bulk_8h_1a92ea19fc861c4d025386b1087ae0a8c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bredr_rx_bulk_used_reset</definition>
+        <argsstring>(int id, int percent)</argsstring>
+        <name>bredr_rx_bulk_used_reset</name>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>percent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" line="103" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__bulk_8h_1a5046d64d4ebcd6b2409db2ace64d2500" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structbredr__tx__bulk" kindref="compound">bredr_tx_bulk</ref> *</type>
+        <definition>struct bredr_tx_bulk* bredr_tx_bulk_alloc</definition>
+        <argsstring>(int size)</argsstring>
+        <name>bredr_tx_bulk_alloc</name>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" line="105" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__bulk_8h_1a88cb2316b25afecadcff5600e55f6c74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bredr_tx_bulk_realloc</definition>
+        <argsstring>(struct bredr_tx_bulk *bulk, int size)</argsstring>
+        <name>bredr_tx_bulk_realloc</name>
+        <param>
+          <type>struct <ref refid="structbredr__tx__bulk" kindref="compound">bredr_tx_bulk</ref> *</type>
+          <declname>bulk</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" line="107" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__bulk_8h_1afe5944210e3f3e9c35eb5319c243fdcf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bredr_tx_bulk_push</definition>
+        <argsstring>(struct list_head *, struct bredr_tx_bulk *bulk)</argsstring>
+        <name>bredr_tx_bulk_push</name>
+        <param>
+          <type>struct list_head *</type>
+        </param>
+        <param>
+          <type>struct <ref refid="structbredr__tx__bulk" kindref="compound">bredr_tx_bulk</ref> *</type>
+          <declname>bulk</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" line="109" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__bulk_8h_1a4a5eefa35d33b1e51a709ffe3fab8ef8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structbredr__tx__bulk" kindref="compound">bredr_tx_bulk</ref> *</type>
+        <definition>struct bredr_tx_bulk* bredr_tx_bulk_pop</definition>
+        <argsstring>(struct list_head *head)</argsstring>
+        <name>bredr_tx_bulk_pop</name>
+        <param>
+          <type>struct list_head *</type>
+          <declname>head</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" line="111" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__bulk_8h_1a79da8012a2b9d01e7baf6aa9c5a745b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bredr_tx_bulk_free</definition>
+        <argsstring>(struct bredr_tx_bulk *bulk)</argsstring>
+        <name>bredr_tx_bulk_free</name>
+        <param>
+          <type>struct <ref refid="structbredr__tx__bulk" kindref="compound">bredr_tx_bulk</ref> *</type>
+          <declname>bulk</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" line="113" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__bulk_8h_1a7bf098935c217aff993f47b56b46a79c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bredr_goto_background</definition>
+        <argsstring>()</argsstring>
+        <name>bredr_goto_background</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" line="117" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__bulk_8h_1a38c51c0a3cb18caf9b7f9e750bf593b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bredr_rx_bulk_suspend</definition>
+        <argsstring>()</argsstring>
+        <name>bredr_rx_bulk_suspend</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" line="119" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__bulk_8h_1a925834863da2f2bccc8fc24d6e17c729" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bredr_rx_bulk_resume</definition>
+        <argsstring>()</argsstring>
+        <name>bredr_rx_bulk_resume</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" line="121" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__bulk_8h_1a54516c28d8ea3cf46658e5e486e85f30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u8</type>
+        <definition>u8 bredr_rx_bulk_get_suspend</definition>
+        <argsstring>()</argsstring>
+        <name>bredr_rx_bulk_get_suspend</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" line="123" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__bulk_8h_1a5c1c6c41d1b45a0d025a3397fa23b6d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int bredr_rx_bulk_empty</definition>
+        <argsstring>()</argsstring>
+        <name>bredr_rx_bulk_empty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" line="125" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__bulk_8h_1a8f72de870e791616b89ae6769111ae1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bredr_rx_bulk_resume_wait</definition>
+        <argsstring>()</argsstring>
+        <name>bredr_rx_bulk_resume_wait</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" line="127" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__bulk_8h_1a49e5652f18b2268917de880b8816485b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structbredr__rx__bulk" kindref="compound">bredr_rx_bulk</ref> *</type>
+        <definition>struct bredr_rx_bulk* bredr_rx_bulk_alloc_reserve</definition>
+        <argsstring>(int id, int len, int reserved_len)</argsstring>
+        <name>bredr_rx_bulk_alloc_reserve</name>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>reserved_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" line="130" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__bulk_8h_1a4049b2b2dfdaabf4543af15293cdb7e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bredr_rx_bulk_inc_ref</definition>
+        <argsstring>(struct bredr_rx_bulk *bulk)</argsstring>
+        <name>bredr_rx_bulk_inc_ref</name>
+        <param>
+          <type>struct <ref refid="structbredr__rx__bulk" kindref="compound">bredr_rx_bulk</ref> *</type>
+          <declname>bulk</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" line="133" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__bulk_8h_1a894e2ded1a3d49e2f1b9e9897bd76408" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int link_change_rx_bulk_size</definition>
+        <argsstring>(u8 mode)</argsstring>
+        <name>link_change_rx_bulk_size</name>
+        <param>
+          <type>u8</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" line="134" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="link__bulk_8h_1ae23005b0307991eea5c1ae78e52b0579" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int bredr_rx_remain_bulk_empty</definition>
+        <argsstring>()</argsstring>
+        <name>bredr_rx_remain_bulk_empty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h" line="135" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>LINK_BULK_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LINK_BULK_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;generic/typedef.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;generic/list.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="bredr__types_8h" kindref="compound">classic/bredr_types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="structbredr__rx__bulk" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbredr__rx__bulk" kindref="compound">bredr_rx_bulk</ref><sp/>{</highlight></codeline>
+<codeline lineno="12" refid="structbredr__rx__bulk_1af72bbd706a1936eacb90d0c36c372519" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structbredr__rx__bulk_1af72bbd706a1936eacb90d0c36c372519" kindref="member">len</ref>;</highlight></codeline>
+<codeline lineno="13" refid="structbredr__rx__bulk_1a591b25ebd9c5fc8ba6bbe2552614d553" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structbredr__rx__bulk_1a591b25ebd9c5fc8ba6bbe2552614d553" kindref="member">llid</ref><sp/>:<sp/>3;</highlight></codeline>
+<codeline lineno="14" refid="structbredr__rx__bulk_1ac9e36c4d7951855d1b33e33e16e944d9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="15" refid="structbredr__rx__bulk_1a15f3a655b74bae01707ea4fae51ae359" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structbredr__rx__bulk_1a15f3a655b74bae01707ea4fae51ae359" kindref="member">hold</ref><sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="16" refid="structbredr__rx__bulk_1a1ec97ce97c2db2a10df4c9562e88e67d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structbredr__rx__bulk_1a1ec97ce97c2db2a10df4c9562e88e67d" kindref="member">send2host</ref><sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="17" refid="structbredr__rx__bulk_1a8282598a12f79e13e11ff9bb8a9c16f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structbredr__rx__bulk_1a8282598a12f79e13e11ff9bb8a9c16f5" kindref="member">sbc_flag</ref><sp/>:<sp/>2;</highlight></codeline>
+<codeline lineno="18" refid="structbredr__rx__bulk_1afa2cc0f97003b9ed96e63fef9c18c66c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>CONFIG_TWS_ENABLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/>ready:<sp/>1;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/>lost:<sp/>1;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/>send:<sp/>1;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/>rev:<sp/>4;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>head_offset;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>CONFIG_NEW_BREDR_ENABLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>seqnum;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/>hash;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/>offset;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>clkn;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hash;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="structbredr__rx__bulk_1ac6ad4f5a52b552abdeeac91244b7af3e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">list_head<sp/><ref refid="structbredr__rx__bulk_1ac6ad4f5a52b552abdeeac91244b7af3e" kindref="member">entry</ref>;</highlight></codeline>
+<codeline lineno="35" refid="structbredr__rx__bulk_1a5ac761bc82d6299920d730ad9b764f03" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structbredr__rx__bulk_1a5ac761bc82d6299920d730ad9b764f03" kindref="member">payload_head</ref>[4];</highlight></codeline>
+<codeline lineno="36" refid="structbredr__rx__bulk_1a6cd93df295e36df959c7587abb4b991c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structbredr__rx__bulk_1a6cd93df295e36df959c7587abb4b991c" kindref="member">data</ref>[0];</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="structbredr__tx__bulk" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbredr__tx__bulk" kindref="compound">bredr_tx_bulk</ref><sp/>{</highlight></codeline>
+<codeline lineno="41" refid="structbredr__tx__bulk_1a0557e20a2fb61554ffb4fffe8f1e5dfc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structbredr__tx__bulk_1a0557e20a2fb61554ffb4fffe8f1e5dfc" kindref="member">enc_prob</ref>;</highlight></codeline>
+<codeline lineno="42" refid="structbredr__tx__bulk_1a4e0b7e4162404d3e514aebbbc9934f31" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structbredr__tx__bulk_1a4e0b7e4162404d3e514aebbbc9934f31" kindref="member">enc_post</ref>;</highlight></codeline>
+<codeline lineno="43" refid="structbredr__tx__bulk_1aef79d2e02ddd2054fd7f41ba6e7ad92b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structbredr__tx__bulk_1aef79d2e02ddd2054fd7f41ba6e7ad92b" kindref="member">event_prob</ref>;</highlight></codeline>
+<codeline lineno="44" refid="structbredr__tx__bulk_1aafdadc2c23eb700c4b191a72d8f874fa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structbredr__tx__bulk_1aafdadc2c23eb700c4b191a72d8f874fa" kindref="member">event_post</ref>;</highlight></codeline>
+<codeline lineno="45" refid="structbredr__tx__bulk_1a6b454678c829f6b49bd99b7b0be7d20d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structbredr__tx__bulk_1a6b454678c829f6b49bd99b7b0be7d20d" kindref="member">max_slot_post</ref>;</highlight></codeline>
+<codeline lineno="46" refid="structbredr__tx__bulk_1aa7b080db786aadfc74d8bef411adcd60" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>pwr_post:<sp/>1;</highlight></codeline>
+<codeline lineno="47" refid="structbredr__tx__bulk_1aa53120c69ac51e30a1e649f925f322b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>dut_post:<sp/>1;</highlight></codeline>
+<codeline lineno="48" refid="structbredr__tx__bulk_1a08b66ffbc3312f9f672bc5aa984c465e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>unsniff_ack_check:<sp/>1;</highlight></codeline>
+<codeline lineno="49" refid="structbredr__tx__bulk_1a65f4ffaf88917cc8400651c6bb8f0eae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>pause_enc_debug:<sp/>1;</highlight></codeline>
+<codeline lineno="50" refid="structbredr__tx__bulk_1abcc8f463c37d5e5e98bbda4a8acaaddb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>set_afh:<sp/>1;</highlight></codeline>
+<codeline lineno="51" refid="structbredr__tx__bulk_1a0ffc9defeed617abc2e2fcae1d2d100b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structbredr__rx__bulk_1a15f3a655b74bae01707ea4fae51ae359" kindref="member">hold</ref><sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="52" refid="structbredr__tx__bulk_1a64b4c75a3685019d9a114f4c24890222" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>tws_start_req<sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="53" refid="structbredr__tx__bulk_1a8b95c42b77c57540e905ac266d7afe4d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structbredr__tx__bulk_1a8b95c42b77c57540e905ac266d7afe4d" kindref="member">llid</ref>;</highlight></codeline>
+<codeline lineno="54" refid="structbredr__tx__bulk_1a17475184d676ade688dff713d68fd168" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structbredr__tx__bulk_1a17475184d676ade688dff713d68fd168" kindref="member">packet</ref>;</highlight></codeline>
+<codeline lineno="55" refid="structbredr__tx__bulk_1a9680561dab61bb0e9af0d5e753c82123" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structbredr__tx__bulk_1a9680561dab61bb0e9af0d5e753c82123" kindref="member">rx_head_offset</ref>;</highlight></codeline>
+<codeline lineno="56" refid="structbredr__tx__bulk_1a3404b913a912a1512a422ba6cbebed37" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structbredr__tx__bulk_1a3404b913a912a1512a422ba6cbebed37" kindref="member">len</ref>;</highlight></codeline>
+<codeline lineno="57" refid="structbredr__tx__bulk_1a6094ca69cd5d7e8f5feb5f7fb3d3a6ac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structbredr__tx__bulk_1a6094ca69cd5d7e8f5feb5f7fb3d3a6ac" kindref="member">offset</ref>;</highlight></codeline>
+<codeline lineno="58" refid="structbredr__tx__bulk_1ac09047a8e2171b83d4d8ed53421c4301" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">list_head<sp/><ref refid="structbredr__rx__bulk_1ac6ad4f5a52b552abdeeac91244b7af3e" kindref="member">entry</ref>;</highlight></codeline>
+<codeline lineno="59" refid="structbredr__tx__bulk_1ad14b188f4ebbdc82bd305b5fe6399489" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structbredr__rx__bulk_1a5ac761bc82d6299920d730ad9b764f03" kindref="member">payload_head</ref>[4];</highlight></codeline>
+<codeline lineno="60" refid="structbredr__tx__bulk_1ac2b8ac690b46537203627b5aed2c2c9a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structbredr__rx__bulk_1a6cd93df295e36df959c7587abb4b991c" kindref="member">data</ref>[0];</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="link__bulk_8h_1abc97ac910302e5cadba2f3c36e2f97d5" kindref="member">link_bulk_init</ref>();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="link__bulk_8h_1a2101e5b34c5d480fd33aa49c831656e1" kindref="member">bt_malloc</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="link__bulk_8h_1aaf597bf191cdf99bfa94da9d60ef68b3" kindref="member">bt_free</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*buf);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="link__bulk_8h_1adc9a5aac6acc3eaedf489b3e4d682b7d" kindref="member">lmp_malloc</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="link__bulk_8h_1afdca6485acfc2ce0a19a70b3be2d494f" kindref="member">lmp_free</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*buf);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="link__bulk_8h_1a12920b15b2bab6ff7a3011ac224047d5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LMP_RX_BULK_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sizeof(struct<sp/>lmp_rx_bulk)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="link__bulk_8h_1ac5c932fe78179b3269e0bf3c7f8587fa" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ACL_RX_BULK_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(sizeof(struct<sp/>acl_rx_bulk)<sp/>+<sp/>ACL_SIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbredr__rx__bulk" kindref="compound">bredr_rx_bulk</ref><sp/>*<ref refid="link__bulk_8h_1a6ad92eb3238325a1eef4393479898be1" kindref="member">__bredr_rx_bulk_alloc</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*pool,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="comment">/*struct<sp/>bredr_rx_bulk<sp/>*bredr_rx_bulk_alloc_in_irq(int<sp/>llid);*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbredr__rx__bulk" kindref="compound">bredr_rx_bulk</ref><sp/>*<ref refid="link__bulk_8h_1a01bbcc3f7d08863494809c6a5729d56b" kindref="member">bredr_rx_bulk_alloc</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structbredr__rx__bulk_1af72bbd706a1936eacb90d0c36c372519" kindref="member">len</ref>);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbredr__rx__bulk" kindref="compound">bredr_rx_bulk</ref><sp/>*<ref refid="link__bulk_8h_1a3b6e93faaa345bc78a504eb2c746fd4c" kindref="member">bredr_rx_bulk_alloc_for</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structbredr__rx__bulk_1af72bbd706a1936eacb90d0c36c372519" kindref="member">len</ref>);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="comment">/*void<sp/>bredr_rx_bulk_realloc_in_irq(struct<sp/>bredr_rx_bulk<sp/>*bulk,<sp/>int<sp/>size);*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="link__bulk_8h_1afae3e8678c67e6b666bca6a080d13053" kindref="member">bredr_rx_bulk_push</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>list_head<sp/>*,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbredr__rx__bulk" kindref="compound">bredr_rx_bulk</ref><sp/>*bulk);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbredr__rx__bulk" kindref="compound">bredr_rx_bulk</ref><sp/>*<ref refid="link__bulk_8h_1ae9f90e8caae58bd8a428479a74c4bd5e" kindref="member">bredr_rx_bulk_pop</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>list_head<sp/>*);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="link__bulk_8h_1af0a5009a2d7290bd4a5a6f9356796617" kindref="member">bredr_rx_bulk_free</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbredr__rx__bulk" kindref="compound">bredr_rx_bulk</ref><sp/>*bulk);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="link__bulk_8h_1a88df3d4b2f88740ff310eb0662a16a17" kindref="member">bredr_rx_bulk_state</ref>();</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="link__bulk_8h_1a07e657d5980ac6b7be24ee6cdd05be61" kindref="member">bredr_rx_bulk_total_size</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="link__bulk_8h_1a0f39a28283251df86b339aa09bd14131" kindref="member">bredr_rx_bulk_remain_size</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>unit_size);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="link__bulk_8h_1a9831eeab2ca08b8940576e5b9a8ba404" kindref="member">bredr_rx_bulk_set_max_used_persent</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>persent);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="link__bulk_8h_1a92ea19fc861c4d025386b1087ae0a8c0" kindref="member">bredr_rx_bulk_used_reset</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>percent);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbredr__tx__bulk" kindref="compound">bredr_tx_bulk</ref><sp/>*<ref refid="link__bulk_8h_1a5046d64d4ebcd6b2409db2ace64d2500" kindref="member">bredr_tx_bulk_alloc</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="link__bulk_8h_1a88cb2316b25afecadcff5600e55f6c74" kindref="member">bredr_tx_bulk_realloc</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbredr__tx__bulk" kindref="compound">bredr_tx_bulk</ref><sp/>*bulk,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="link__bulk_8h_1afe5944210e3f3e9c35eb5319c243fdcf" kindref="member">bredr_tx_bulk_push</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>list_head<sp/>*,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbredr__tx__bulk" kindref="compound">bredr_tx_bulk</ref><sp/>*bulk);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbredr__tx__bulk" kindref="compound">bredr_tx_bulk</ref><sp/>*<ref refid="link__bulk_8h_1a4a5eefa35d33b1e51a709ffe3fab8ef8" kindref="member">bredr_tx_bulk_pop</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>list_head<sp/>*head);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="link__bulk_8h_1a79da8012a2b9d01e7baf6aa9c5a745b5" kindref="member">bredr_tx_bulk_free</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbredr__tx__bulk" kindref="compound">bredr_tx_bulk</ref><sp/>*bulk);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="link__bulk_8h_1a79da8012a2b9d01e7baf6aa9c5a745b5" kindref="member">bredr_tx_bulk_free</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbredr__tx__bulk" kindref="compound">bredr_tx_bulk</ref><sp/>*bulk);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="link__bulk_8h_1a7bf098935c217aff993f47b56b46a79c" kindref="member">bredr_goto_background</ref>();</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="link__bulk_8h_1a38c51c0a3cb18caf9b7f9e750bf593b3" kindref="member">bredr_rx_bulk_suspend</ref>();</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="link__bulk_8h_1a925834863da2f2bccc8fc24d6e17c729" kindref="member">bredr_rx_bulk_resume</ref>();</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal">u8<sp/><ref refid="link__bulk_8h_1a54516c28d8ea3cf46658e5e486e85f30" kindref="member">bredr_rx_bulk_get_suspend</ref>();</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="link__bulk_8h_1a5c1c6c41d1b45a0d025a3397fa23b6d3" kindref="member">bredr_rx_bulk_empty</ref>();</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="link__bulk_8h_1a8f72de870e791616b89ae6769111ae1e" kindref="member">bredr_rx_bulk_resume_wait</ref>();</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbredr__rx__bulk" kindref="compound">bredr_rx_bulk</ref><sp/>*<ref refid="link__bulk_8h_1a49e5652f18b2268917de880b8816485b" kindref="member">bredr_rx_bulk_alloc_reserve</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structbredr__rx__bulk_1af72bbd706a1936eacb90d0c36c372519" kindref="member">len</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>reserved_len);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="link__bulk_8h_1a4049b2b2dfdaabf4543af15293cdb7e5" kindref="member">bredr_rx_bulk_inc_ref</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbredr__rx__bulk" kindref="compound">bredr_rx_bulk</ref><sp/>*bulk);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="link__bulk_8h_1a894e2ded1a3d49e2f1b9e9897bd76408" kindref="member">link_change_rx_bulk_size</ref>(u8<sp/>mode);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="link__bulk_8h_1ae23005b0307991eea5c1ae78e52b0579" kindref="member">bredr_rx_remain_bulk_empty</ref>();</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/link_bulk.h"/>
+  </compounddef>
+</doxygen>

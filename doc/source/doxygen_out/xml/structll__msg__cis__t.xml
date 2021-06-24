@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structll__msg__cis__t" kind="struct" language="C++" prot="public">
+    <compoundname>ll_msg_cis_t</compoundname>
+    <includes refid="llcp_8h" local="no">llcp.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structll__msg__cis__t_1ae84ce4ea4a6d723d5a586a7ae80b1522" prot="public" static="no" mutable="no">
+        <type><ref refid="structll__msg__hdr__t" kindref="compound">ll_msg_hdr_t</ref></type>
+        <definition>ll_msg_hdr_t ll_msg_cis_t::hdr</definition>
+        <argsstring></argsstring>
+        <name>hdr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="192" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__msg__cis__t_1a9464f3d788b51da93c17bf41956b9e35" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t ll_msg_cis_t::cisHandle</definition>
+        <argsstring></argsstring>
+        <name>cisHandle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CIS handle. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="194" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__msg__cis__t_1a1bf4d280c70abef4ef1da371fbd54101" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_msg_cis_t::reason</definition>
+        <argsstring></argsstring>
+        <name>reason</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="195" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1458">
+        <label>ll_msg_cis_t</label>
+        <link refid="structll__msg__cis__t"/>
+        <childnode refid="1459" relation="usage">
+          <edgelabel>hdr</edgelabel>
+        </childnode>
+      </node>
+      <node id="1459">
+        <label>ll_msg_hdr_t</label>
+        <link refid="structll__msg__hdr__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="191" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="191" bodyend="196"/>
+    <listofallmembers>
+      <member refid="structll__msg__cis__t_1a9464f3d788b51da93c17bf41956b9e35" prot="public" virt="non-virtual"><scope>ll_msg_cis_t</scope><name>cisHandle</name></member>
+      <member refid="structll__msg__cis__t_1ae84ce4ea4a6d723d5a586a7ae80b1522" prot="public" virt="non-virtual"><scope>ll_msg_cis_t</scope><name>hdr</name></member>
+      <member refid="structll__msg__cis__t_1a1bf4d280c70abef4ef1da371fbd54101" prot="public" virt="non-virtual"><scope>ll_msg_cis_t</scope><name>reason</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

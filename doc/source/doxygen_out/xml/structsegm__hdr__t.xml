@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structsegm__hdr__t" kind="struct" language="C++" prot="public">
+    <compoundname>segm_hdr_t</compoundname>
+    <includes refid="ll__defines_8h" local="no">ll_defines.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsegm__hdr__t_1aa37bf2bf49b4c3f27411878d1679597a" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 segm_hdr_t::sc</definition>
+        <argsstring></argsstring>
+        <name>sc</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>0 : Start of a new SDU </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="793" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="793" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsegm__hdr__t_1a511d0c36522862185896c6d19c231108" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 segm_hdr_t::cmplt</definition>
+        <argsstring></argsstring>
+        <name>cmplt</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>1 : Complete of a SDU </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="794" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="794" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsegm__hdr__t_1a248c96351c70965575932283557bbc7d" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 segm_hdr_t::rfu</definition>
+        <argsstring></argsstring>
+        <name>rfu</name>
+        <bitfield> 6</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="795" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="795" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsegm__hdr__t_1a8d4d2f9556da152eeee521396a89225b" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 segm_hdr_t::length</definition>
+        <argsstring></argsstring>
+        <name>length</name>
+        <bitfield> 8</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="796" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="796" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsegm__hdr__t_1a02cc00e20a38d024947b68116dfbbbe6" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 segm_hdr_t::timeoffset</definition>
+        <argsstring></argsstring>
+        <name>timeoffset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="798" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="798" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="792" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="792" bodyend="799"/>
+    <listofallmembers>
+      <member refid="structsegm__hdr__t_1a511d0c36522862185896c6d19c231108" prot="public" virt="non-virtual"><scope>segm_hdr_t</scope><name>cmplt</name></member>
+      <member refid="structsegm__hdr__t_1a8d4d2f9556da152eeee521396a89225b" prot="public" virt="non-virtual"><scope>segm_hdr_t</scope><name>length</name></member>
+      <member refid="structsegm__hdr__t_1a248c96351c70965575932283557bbc7d" prot="public" virt="non-virtual"><scope>segm_hdr_t</scope><name>rfu</name></member>
+      <member refid="structsegm__hdr__t_1aa37bf2bf49b4c3f27411878d1679597a" prot="public" virt="non-virtual"><scope>segm_hdr_t</scope><name>sc</name></member>
+      <member refid="structsegm__hdr__t_1a02cc00e20a38d024947b68116dfbbbe6" prot="public" virt="non-virtual"><scope>segm_hdr_t</scope><name>timeoffset</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

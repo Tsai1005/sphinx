@@ -1,0 +1,613 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>JL Adapter SDK: /data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_adv.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">JL Adapter SDK
+   &#160;<span id="projectnumber">v0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_5aa4d6ccf34d88a270949875c15714e5.html">btctrler</a></li><li class="navelem"><a class="el" href="dir_16b18ce1fc07a124435f964aa38ae307.html">BLE_v2</a></li><li class="navelem"><a class="el" href="dir_5640cad4df81f1d58994303d9e099d51.html">tws</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle">
+<div class="title">tws_ll_adv.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="link__layer_8h_source.html">ble/link_layer.h</a>&quot;</code><br />
+<code>#include &quot;stdarg.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="h4__transport_8h_source.html">h4_transport.h</a>&quot;</code><br />
+<code>#include &quot;RF_ble.h&quot;</code><br />
+<code>#include &quot;btcontroller_util.h&quot;</code><br />
+<code>#include &quot;btcontroller_heap.h&quot;</code><br />
+<code>#include &quot;tomcrypt.h&quot;</code><br />
+<code>#include &quot;hci_controller.h&quot;</code><br />
+<code>#include &quot;misc_interface.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="resolve__list_8h_source.html">ble/resolve_list.h</a>&quot;</code><br />
+<code>#include &quot;common/debug.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tws_ll_adv.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="tws__ll__adv_8c__incl.png" border="0" usemap="#_2data_2bingquan_2repo_2repo__adapter_2adapter__sdk_2lib_2btctrler_2BLE__v2_2tws_2tws__ll__adv_8c" alt=""/></div>
+<map name="_2data_2bingquan_2repo_2repo__adapter_2adapter__sdk_2lib_2btctrler_2BLE__v2_2tws_2tws__ll__adv_8c" id="_2data_2bingquan_2repo_2repo__adapter_2adapter__sdk_2lib_2btctrler_2BLE__v2_2tws_2tws__ll__adv_8c">
+<area shape="rect" id="node2" href="link__layer_8h.html" title="ble/link_layer.h" alt="" coords="967,124,1076,151"/>
+<area shape="rect" id="node16" href="resolve__list_8h.html" title="resolve_list.h" alt="" coords="1658,199,1756,225"/>
+<area shape="rect" id="node27" href="h4__transport_8h.html" title="h4_transport.h" alt="" coords="1732,273,1837,300"/>
+<area shape="rect" id="node8" href="ll__defines_8h.html" title="ll_defines.h" alt="" coords="1318,348,1406,375"/>
+<area shape="rect" id="node9" href="white__list_8h.html" title="white_list.h" alt="" coords="1540,348,1628,375"/>
+<area shape="rect" id="node12" href="llcp_8h.html" title="ble/llcp.h" alt="" coords="1508,273,1583,300"/>
+<area shape="rect" id="node13" href="ll__adv_8h.html" title="ble/ll_adv.h" alt="" coords="726,199,814,225"/>
+<area shape="rect" id="node14" href="ll__scan_8h.html" title="ble/ll_scan.h" alt="" coords="838,199,933,225"/>
+<area shape="rect" id="node15" href="ll__init_8h.html" title="ble/ll_init.h" alt="" coords="445,199,529,225"/>
+<area shape="rect" id="node17" href="data__extension_8h.html" title="data_extension.h" alt="" coords="377,348,498,375"/>
+<area shape="rect" id="node18" href="multiple__phys_8h.html" title="multiple_phys.h" alt="" coords="604,348,717,375"/>
+<area shape="rect" id="node19" href="ll__cte_8h.html" title="ble/ll_cte.h" alt="" coords="1399,273,1484,300"/>
+<area shape="rect" id="node20" href="ll__iso_8h.html" title="ble/ll_iso.h" alt="" coords="1002,273,1086,300"/>
+<area shape="rect" id="node22" href="ll__bis_8h.html" title="ble/ll_bis.h" alt="" coords="1168,199,1252,225"/>
+<area shape="rect" id="node24" href="ll__cis_8h.html" title="ble/ll_cis.h" alt="" coords="1060,199,1144,225"/>
+<area shape="rect" id="node25" href="ll__pc_8h.html" title="ble/ll_pc.h" alt="" coords="1242,273,1324,300"/>
+<area shape="rect" id="node23" href="audio__codec_8h.html" title="audio_codec.h" alt="" coords="1111,273,1218,300"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+结构体</h2></td></tr>
+<tr class="memitem:structll__adv__hdl"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__ll__adv_8c.html#structll__adv__hdl">ll_adv_hdl</a></td></tr>
+<tr class="separator:structll__adv__hdl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a6c6991cba0e2995d7d9aec73e0324317"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__ll__adv_8c.html#a6c6991cba0e2995d7d9aec73e0324317">LOG_TAG_CONST</a>&#160;&#160;&#160;LL_TWS_ADV</td></tr>
+<tr class="separator:a6c6991cba0e2995d7d9aec73e0324317"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ce0df38eb467e59f209470c8f5ac4e6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__ll__adv_8c.html#a7ce0df38eb467e59f209470c8f5ac4e6">LOG_TAG</a>&#160;&#160;&#160;&quot;[LL-TWS Adv]&quot;</td></tr>
+<tr class="separator:a7ce0df38eb467e59f209470c8f5ac4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe76095a81e694a670d6c0e663cbff0f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__ll__adv_8c.html#abe76095a81e694a670d6c0e663cbff0f">LOG_DEBUG_ENABLE</a></td></tr>
+<tr class="separator:abe76095a81e694a670d6c0e663cbff0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eeb6e067100d0dec6e53bce19a403e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__ll__adv_8c.html#a9eeb6e067100d0dec6e53bce19a403e0">LOG_ERROR_ENABLE</a></td></tr>
+<tr class="separator:a9eeb6e067100d0dec6e53bce19a403e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad223350d80db21fa8b721107cd1f6442"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__ll__adv_8c.html#ad223350d80db21fa8b721107cd1f6442">__this</a>&#160;&#160;&#160;(<a class="el" href="tws__ll__adv_8c.html#a71b4413e4495da67422e0eca74f5115e">adv_hdl</a>)</td></tr>
+<tr class="separator:ad223350d80db21fa8b721107cd1f6442"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ad19204de0002c264867d785c01789725"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__ll__adv_8c.html#ad19204de0002c264867d785c01789725">ll_adv_init</a> (void)</td></tr>
+<tr class="separator:ad19204de0002c264867d785c01789725"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc878a4c395774dd5acd4823149473bf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__ll__adv_8c.html#acc878a4c395774dd5acd4823149473bf">ll_adv_destroy</a> (void)</td></tr>
+<tr class="separator:acc878a4c395774dd5acd4823149473bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59c6d028a82fcf9959585a47f6dffe90"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__ll__adv_8c.html#a59c6d028a82fcf9959585a47f6dffe90">__set_ll_adv_local_addr</a> (struct <a class="el" href="ll__adv_8h.html#structle__adv__link">le_adv_link</a> *adv_link)</td></tr>
+<tr class="separator:a59c6d028a82fcf9959585a47f6dffe90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f81e6fde1aec1e97c31d1ab8d1eb205"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__ll__adv_8c.html#a2f81e6fde1aec1e97c31d1ab8d1eb205">__set_ll_adv_state</a> (struct <a class="el" href="ll__adv_8h.html#structle__adv__link">le_adv_link</a> *adv_link)</td></tr>
+<tr class="separator:a2f81e6fde1aec1e97c31d1ab8d1eb205"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a618262020cd2ce1ff8a8936149a9af01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__ll__adv_8c.html#a618262020cd2ce1ff8a8936149a9af01">tws_rx_probe_adv_pdu_handler</a> (struct <a class="el" href="ll__adv_8h.html#structle__adv__link">le_adv_link</a> *link, struct ble_rx *rx)</td></tr>
+<tr class="separator:a618262020cd2ce1ff8a8936149a9af01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ed1d677950088b6f8daa733feb57f4d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__ll__adv_8c.html#a8ed1d677950088b6f8daa733feb57f4d">adv_rx_probe_handler</a> (void *priv, struct ble_rx *rx)</td></tr>
+<tr class="separator:a8ed1d677950088b6f8daa733feb57f4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7541285524351d11b20ff6e0b37f7d9d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__ll__adv_8c.html#a7541285524351d11b20ff6e0b37f7d9d">tws_ll_adv_set_params</a> (const u8 *data)</td></tr>
+<tr class="separator:a7541285524351d11b20ff6e0b37f7d9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0842a440c7e09ff061a6bb178fd9a6f1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__ll__adv_8c.html#a0842a440c7e09ff061a6bb178fd9a6f1">tws_ll_adv_set_scan_rsp_data</a> (const u8 *data)</td></tr>
+<tr class="separator:a0842a440c7e09ff061a6bb178fd9a6f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92b33de8e007fdaf0b9af0981f130271"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__ll__adv_8c.html#a92b33de8e007fdaf0b9af0981f130271">tws_dump</a> (void)</td></tr>
+<tr class="separator:a92b33de8e007fdaf0b9af0981f130271"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a226e7478623cf52034d47fef47bd71a9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__ll__adv_8c.html#a226e7478623cf52034d47fef47bd71a9">tws_ll_adv_open</a> (void)</td></tr>
+<tr class="separator:a226e7478623cf52034d47fef47bd71a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a74a65644ca79f3fa7c88a1491a8d64"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__ll__adv_8c.html#a4a74a65644ca79f3fa7c88a1491a8d64">tws_ll_adv_close</a> (void)</td></tr>
+<tr class="separator:a4a74a65644ca79f3fa7c88a1491a8d64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5307c960a473117c3005c1c9086f9528"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="ll__adv_8h.html#structle__adv__link">le_adv_link</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__ll__adv_8c.html#a5307c960a473117c3005c1c9086f9528">tws_ll_adv_link_get</a> (void)</td></tr>
+<tr class="separator:a5307c960a473117c3005c1c9086f9528"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:a71b4413e4495da67422e0eca74f5115e"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="tws__ll__adv_8c.html#structll__adv__hdl">ll_adv_hdl</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__ll__adv_8c.html#a71b4413e4495da67422e0eca74f5115e">adv_hdl</a> = NULL</td></tr>
+<tr class="separator:a71b4413e4495da67422e0eca74f5115e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae28d1e9bac11d2e921e6754454f9239f"><td class="memItemLeft" align="right" valign="top">static const struct ble_handler&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__ll__adv_8c.html#ae28d1e9bac11d2e921e6754454f9239f">adv_handler</a></td></tr>
+<tr class="separator:ae28d1e9bac11d2e921e6754454f9239f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/><h2 class="groupheader">结构体说明</h2>
+<a name="structll__adv__hdl" id="structll__adv__hdl"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct ll_adv_hdl</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><div class="dynheader">
+ll_adv_hdl 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="structll__adv__hdl__coll__graph.png" border="0" usemap="#ll__adv__hdl_coll__map" alt="Collaboration graph"/></div>
+<map name="ll__adv__hdl_coll__map" id="ll__adv__hdl_coll__map">
+<area shape="rect" id="node2" href="ll__defines_8h.html#structscan__response" title="scan_response" alt="" coords="5,95,116,121"/>
+<area shape="rect" id="node3" href="ll__defines_8h.html#structtws__advertising__param" title="tws_advertising_param" alt="" coords="140,95,296,121"/>
+<area shape="rect" id="node4" href="link__task_8h.html#structlink__task" title="link_task" alt="" coords="321,95,395,121"/>
+<area shape="rect" id="node5" href="structlink__task__ops.html" title="link_task_ops" alt="" coords="307,5,409,32"/>
+<area shape="rect" id="node6" href="ll__adv_8h.html#structle__adv__link" title="le_adv_link" alt="" coords="420,95,507,121"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ad48c89258997e283d9055438c08edc20"></a>struct <a class="el" href="ll__adv_8h.html#structle__adv__link">le_adv_link</a> *</td>
+<td class="fieldname">
+adv_link</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a12be2e3e01cdbcf3798448d0aa55100f"></a>struct <a class="el" href="ll__defines_8h.html#structtws__advertising__param">tws_advertising_param</a></td>
+<td class="fieldname">
+adv_param</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a6996bd34599c44f2c2b45ce907c07503"></a>u8</td>
+<td class="fieldname">
+enable</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="acaf3f3ba1d2723e79b524b7e7db3f57a"></a>struct <a class="el" href="ll__defines_8h.html#structscan__response">scan_response</a></td>
+<td class="fieldname">
+scan_resp_data</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ab13f404a2b4e20aee85c3600887e72ec"></a>u8</td>
+<td class="fieldname">
+state</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a3dd4c79a7fedc9d56230b0322a3da428"></a>struct <a class="el" href="link__task_8h.html#structlink__task">link_task</a></td>
+<td class="fieldname">
+task</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">宏定义说明</h2>
+<a class="anchor" id="ad223350d80db21fa8b721107cd1f6442"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __this&#160;&#160;&#160;(<a class="el" href="tws__ll__adv_8c.html#a71b4413e4495da67422e0eca74f5115e">adv_hdl</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abe76095a81e694a670d6c0e663cbff0f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_DEBUG_ENABLE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9eeb6e067100d0dec6e53bce19a403e0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_ERROR_ENABLE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7ce0df38eb467e59f209470c8f5ac4e6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_TAG&#160;&#160;&#160;&quot;[LL-TWS Adv]&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6c6991cba0e2995d7d9aec73e0324317"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_TAG_CONST&#160;&#160;&#160;LL_TWS_ADV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a59c6d028a82fcf9959585a47f6dffe90"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void __set_ll_adv_local_addr </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="ll__adv_8h.html#structle__adv__link">le_adv_link</a> *&#160;</td>
+          <td class="paramname"><em>adv_link</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2f81e6fde1aec1e97c31d1ab8d1eb205"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void __set_ll_adv_state </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="ll__adv_8h.html#structle__adv__link">le_adv_link</a> *&#160;</td>
+          <td class="paramname"><em>adv_link</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8ed1d677950088b6f8daa733feb57f4d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void adv_rx_probe_handler </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>priv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct ble_rx *&#160;</td>
+          <td class="paramname"><em>rx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acc878a4c395774dd5acd4823149473bf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ll_adv_destroy </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad19204de0002c264867d785c01789725"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ll_adv_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a92b33de8e007fdaf0b9af0981f130271"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_dump </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4a74a65644ca79f3fa7c88a1491a8d64"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tws_ll_adv_close </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5307c960a473117c3005c1c9086f9528"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="ll__adv_8h.html#structle__adv__link">le_adv_link</a>* tws_ll_adv_link_get </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a226e7478623cf52034d47fef47bd71a9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tws_ll_adv_open </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7541285524351d11b20ff6e0b37f7d9d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tws_ll_adv_set_params </td>
+          <td>(</td>
+          <td class="paramtype">const u8 *&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0842a440c7e09ff061a6bb178fd9a6f1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tws_ll_adv_set_scan_rsp_data </td>
+          <td>(</td>
+          <td class="paramtype">const u8 *&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a618262020cd2ce1ff8a8936149a9af01"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_rx_probe_adv_pdu_handler </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="ll__adv_8h.html#structle__adv__link">le_adv_link</a> *&#160;</td>
+          <td class="paramname"><em>link</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct ble_rx *&#160;</td>
+          <td class="paramname"><em>rx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a class="anchor" id="ae28d1e9bac11d2e921e6754454f9239f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const struct ble_handler adv_handler</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>初始值:</b><div class="fragment"><div class="line">= {</div><div class="line">    .tws_rx_probe_handler   = <a class="code" href="tws__ll__adv_8c.html#a8ed1d677950088b6f8daa733feb57f4d">adv_rx_probe_handler</a>,</div><div class="line">}</div><div class="ttc" id="tws__ll__adv_8c_html_a8ed1d677950088b6f8daa733feb57f4d"><div class="ttname"><a href="tws__ll__adv_8c.html#a8ed1d677950088b6f8daa733feb57f4d">adv_rx_probe_handler</a></div><div class="ttdeci">static void adv_rx_probe_handler(void *priv, struct ble_rx *rx)</div><div class="ttdef"><b>Definition:</b> tws_ll_adv.c:94</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a71b4413e4495da67422e0eca74f5115e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="tws__ll__adv_8c.html#structll__adv__hdl">ll_adv_hdl</a>* adv_hdl = NULL</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

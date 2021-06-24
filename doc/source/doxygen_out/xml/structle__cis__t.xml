@@ -1,0 +1,1185 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structle__cis__t" kind="struct" language="C++" prot="public">
+    <compoundname>le_cis_t</compoundname>
+    <includes refid="ll__cis_8h" local="no">ll_cis.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structle__cis__t_1ab2033cd04dd8782e88e9fd96a2d0a687" prot="public" static="no" mutable="no">
+        <type>struct list_head</type>
+        <definition>struct list_head le_cis_t::entry</definition>
+        <argsstring></argsstring>
+        <name>entry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>List entry </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="207" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1aeba172b70aab05d8de38e0b002a08ba2" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* le_cis_t::hw</definition>
+        <argsstring></argsstring>
+        <name>hw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="217" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1afc352e6358a86a4545372691b4fb8e47" prot="public" static="no" mutable="no">
+        <type><ref refid="structle__cig__t" kindref="compound">le_cig_t</ref> *</type>
+        <definition>le_cig_t* le_cis_t::cig</definition>
+        <argsstring></argsstring>
+        <name>cig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CIG context </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="220" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1a5baa39bdfd79a8f845260e7822ae4d53" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_cis_t::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>main state. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="223" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1aef7a0458444dfebb98bd642f5d2c8d44" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_cis_t::estState</definition>
+        <argsstring></argsstring>
+        <name>estState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Establishment procedure state. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="224" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1a2c238f7178e9630e4f947b11551a5b29" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_cis_t::termState</definition>
+        <argsstring></argsstring>
+        <name>termState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Termination procedure state. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="225" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1a4aecbea9f073c04936a05387fc623cd6" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t le_cis_t::aclHandle</definition>
+        <argsstring></argsstring>
+        <name>aclHandle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ACL handle. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="226" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1a81af7634174d497a19ee0c0f96e000d5" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t le_cis_t::cisHandle</definition>
+        <argsstring></argsstring>
+        <name>cisHandle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CIS handle. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="227" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1a00c3f369b06b5134ef19ede250030e82" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_cis_t::role</definition>
+        <argsstring></argsstring>
+        <name>role</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Role. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="228" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1a8bbce01c98cf295967d31eac1fdc89be" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_cis_t::cisId</definition>
+        <argsstring></argsstring>
+        <name>cisId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Used to identify a connected isochronous stream. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="229" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1a974d3104ab5ee5c6a7aab82ff4fde464" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t le_cis_t::cisEvtCounter</definition>
+        <argsstring></argsstring>
+        <name>cisEvtCounter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Event counter. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="230" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1a8f364b2b4cc23931abdc1a3a61edc824" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t le_cis_t::cisSyncDelayUsec</definition>
+        <argsstring></argsstring>
+        <name>cisSyncDelayUsec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CIS synchronous delay in microsecond. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="231" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1a6a1dd817d41df2dfbe5c31bb43f26dd7" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t le_cis_t::cigSyncDelayUsec</definition>
+        <argsstring></argsstring>
+        <name>cigSyncDelayUsec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CIG synchronous delay in microsecond. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="232" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1af5040fe0cd6dd5687adbe2db89e784d3" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref></type>
+        <definition>bool_t le_cis_t::cisDone</definition>
+        <argsstring></argsstring>
+        <name>cisDone</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CIS transfer is done, no more subevent for the CIS. Used for interleaved CIS only. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="233" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1a1541db4585e1b6ef5d5241bc834b2fa0" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref></type>
+        <definition>bool_t le_cis_t::isClosing</definition>
+        <argsstring></argsstring>
+        <name>isClosing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TRUE if the context is closing. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="234" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1a4ea3dce08f5f1025330c7eb1e0934177" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_cis_t::subEvtCounter</definition>
+        <argsstring></argsstring>
+        <name>subEvtCounter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sub event counter. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="236" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1a49bd9cd4590d9fcfe91609108589a4e1" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref></type>
+        <definition>bool_t le_cis_t::isTxDone</definition>
+        <argsstring></argsstring>
+        <name>isTxDone</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TRUE if all the Tx are done, start sending NULL packet. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="237" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1ad900ec3570752d1e34f73d9d76cbc68c" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref></type>
+        <definition>bool_t le_cis_t::pduFlushed</definition>
+        <argsstring></argsstring>
+        <name>pduFlushed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TRUE if the PDU is flushed, for Tx only. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="238" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1a11c813fd65d10e27566b8e8579881aa2" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_cis_t::reason</definition>
+        <argsstring></argsstring>
+        <name>reason</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Disconnect reason. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="240" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1a2b4d4042f3c169a70f8b2061d37d787c" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t le_cis_t::txPktCounter</definition>
+        <argsstring></argsstring>
+        <name>txPktCounter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Transmit packet counter. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="243" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1a3912a47a77a334ecc09ede4d47d0d9ac" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t le_cis_t::rxPktCounter</definition>
+        <argsstring></argsstring>
+        <name>rxPktCounter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Receive packet counter. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="244" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1ad6f551b6e0e959c334b0eae27a9d18c9" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_cis_t::dataHdrBuf[LL_DATA_HDR_LEN]</definition>
+        <argsstring>[LL_DATA_HDR_LEN]</argsstring>
+        <name>dataHdrBuf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data header buffer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="247" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1a15f6a110dfc4ee95ebc4889edf899784" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_cis_t::dataBuf[10]</definition>
+        <argsstring>[10]</argsstring>
+        <name>dataBuf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data header buffer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="248" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1a93ce16c208a972fb8357a486b24ec9a4" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t le_cis_t::dataCounter</definition>
+        <argsstring></argsstring>
+        <name>dataCounter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data counter. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="249" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1ad6e92355e0a14f77324714db8df8a92c" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref></type>
+        <definition>bool_t le_cis_t::isCisReqPend</definition>
+        <argsstring></argsstring>
+        <name>isCisReqPend</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>True if CIS_REQ is sent and response is not received yet. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="252" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1a15c33690ebf3ef2348ce8501afcaf59d" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t le_cis_t::ceRef</definition>
+        <argsstring></argsstring>
+        <name>ceRef</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ACL connection event where the offset referenced. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="253" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="253" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1ae6cdd6cfa17c6b3367fa09839f5543cf" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t le_cis_t::cisCeRef</definition>
+        <argsstring></argsstring>
+        <name>cisCeRef</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of CIS event before CIS is started. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="254" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1a9704a447dc861d9b87555f18595bbf04" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t le_cis_t::offsetUsec</definition>
+        <argsstring></argsstring>
+        <name>offsetUsec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Time in microsecond between the start of the referenced CE to the start of first CIS event. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="255" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1a6d8f21a13598bb6a6478c86f5c350932" prot="public" static="no" mutable="no">
+        <type>sys_timer</type>
+        <definition>sys_timer le_cis_t::tmrProcRsp</definition>
+        <argsstring></argsstring>
+        <name>tmrProcRsp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Procedure response timer. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="256" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1a6b3daf4be974f9f72a66664486245bfe" prot="public" static="no" mutable="no">
+        <type>union le_cis_t::@35</type>
+        <definition>union le_cis_t::@35  le_cis_t::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>role-specific data. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="275" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1a7d5c3494cc5e1eba07709b3f2117f612" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_cis_t::chIdx</definition>
+        <argsstring></argsstring>
+        <name>chIdx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>LL channel index. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="279" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="279" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1a404940f0500e117fcee9e7a5e8c45e8e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_cis_t::nextSubEvtChanIdx</definition>
+        <argsstring></argsstring>
+        <name>nextSubEvtChanIdx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Next subevent channel index. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="280" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1a38a1c67f7d31c4732ad1ee4497bc8df5" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t le_cis_t::accessAddr</definition>
+        <argsstring></argsstring>
+        <name>accessAddr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Access address. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="281" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="281" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1a502fe4fb2e3e49c1d6dd8df785018227" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t le_cis_t::crcInit</definition>
+        <argsstring></argsstring>
+        <name>crcInit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CRC initialization value. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="282" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="282" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1ad7de9cd1e516032081a003c018199eb3" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t le_cis_t::supTimeoutMs</definition>
+        <argsstring></argsstring>
+        <name>supTimeoutMs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Supervision timeout in milliseconds. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="285" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="285" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1abde36d49d16f19e68668c9b394a23107" prot="public" static="no" mutable="no">
+        <type>sys_timer</type>
+        <definition>sys_timer le_cis_t::tmrSupTimeout</definition>
+        <argsstring></argsstring>
+        <name>tmrSupTimeout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Supervision timer. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="286" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="286" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1ab0c6fa6596b208d8a3812027e89c4975" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref></type>
+        <definition>bool_t le_cis_t::connEst</definition>
+        <argsstring></argsstring>
+        <name>connEst</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Connection established. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="287" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="287" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1a2de047c2ddb58caa2f6a007da6612ad9" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref></type>
+        <definition>bool_t le_cis_t::powerIndReq</definition>
+        <argsstring></argsstring>
+        <name>powerIndReq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Power control indication required when established conn. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="288" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="288" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1ae80b5d0b5ac57515aa31ad7fea6248be" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t le_cis_t::delayUsec</definition>
+        <argsstring></argsstring>
+        <name>delayUsec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Time between the start of subevent to the start of next subevent in microsecond. Same as subEvtInter for sequential scheme, different for interleaved scheme. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="290" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="290" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1a43b4b51927e797da1b61817be3ea3087" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_cis_t::iv[LL_IV_LEN]</definition>
+        <argsstring>[LL_IV_LEN]</argsstring>
+        <name>iv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialization vector. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="294" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="294" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1a83b6cab376be83fbcf1184b87faa6d82" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_cis_t::phyMToS</definition>
+        <argsstring></argsstring>
+        <name>phyMToS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Master to slave PHY. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="297" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="297" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1a229f91cbddf6fc4a57c45f0d7ba36497" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_cis_t::phySToM</definition>
+        <argsstring></argsstring>
+        <name>phySToM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Slave to master PHY. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="298" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="298" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1ae829148645ec2c31ab4f875f6a5d1990" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_cis_t::sca</definition>
+        <argsstring></argsstring>
+        <name>sca</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sleep clock accuracy. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="301" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="301" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1a651a07e79625dc497c0d89e043607fc2" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_cis_t::packing</definition>
+        <argsstring></argsstring>
+        <name>packing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Packing scheme. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="302" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="302" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1aa5d22f775b1ef54993f7afd837c558f5" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_cis_t::framing</definition>
+        <argsstring></argsstring>
+        <name>framing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indicates the format of CIS Data PDUs. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="303" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="303" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1a748baded9c94408fc646e41f755adebd" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t le_cis_t::sduSizeMToS</definition>
+        <argsstring></argsstring>
+        <name>sduSizeMToS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum SDU size from the master Host. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="304" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="304" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1a3f3c065caf401e7c3f30dde18ee65866" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t le_cis_t::sduSizeSToM</definition>
+        <argsstring></argsstring>
+        <name>sduSizeSToM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum SDU size from the slave Host. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="305" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1a2779b619da3ba06ad50af197591b133e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t le_cis_t::sduIntervalMToS</definition>
+        <argsstring></argsstring>
+        <name>sduIntervalMToS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Time interval between the start of consecutive SDUs from the master Host in microseconds </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="306" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="306" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1aee15148a654842d8fe8c2b95112052f9" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t le_cis_t::sduIntervalSToM</definition>
+        <argsstring></argsstring>
+        <name>sduIntervalSToM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Time interval between the start of consecutive SDUs from the master Host in microseconds </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="307" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="307" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1aeee53d7d191737569e0902c610604a43" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t le_cis_t::isoInterval</definition>
+        <argsstring></argsstring>
+        <name>isoInterval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Isochronous PDU interval in 1.25ms unit. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="308" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1ac85d4c255894c3d265ea242cedb5ebbd" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t le_cis_t::pduSizeMToS</definition>
+        <argsstring></argsstring>
+        <name>pduSizeMToS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum PDU size from the slave Host / transmit length. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="309" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="309" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1ae6768f6f18b55d9493804512009a7bd7" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t le_cis_t::pduSizeSToM</definition>
+        <argsstring></argsstring>
+        <name>pduSizeSToM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum PDU size from the master Host / receive length. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="310" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="310" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1a417739ebc20a65396eeaae8b5897d0ad" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_cis_t::ftMToS</definition>
+        <argsstring></argsstring>
+        <name>ftMToS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Master to slave flush time. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="311" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="311" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1ab592f14474302e80c671bd6aa6775fad" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_cis_t::ftSToM</definition>
+        <argsstring></argsstring>
+        <name>ftSToM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Slave to master flush time. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="312" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="312" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1af2255b118470fca72d16b168bea0df92" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_cis_t::nse</definition>
+        <argsstring></argsstring>
+        <name>nse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum number of subevent in each interval on CIS. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="313" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="313" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1a44bc21834c39f5d23b953697175750ac" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t le_cis_t::subIntervUsec</definition>
+        <argsstring></argsstring>
+        <name>subIntervUsec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Subevent duration in microsecond. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="314" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1a8e0e0662f9cc3635b4ad3e605c21b6bc" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_cis_t::bnMToS</definition>
+        <argsstring></argsstring>
+        <name>bnMToS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Master to slave burst number. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="315" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="315" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1a1f1d6de567ca6507fb403f329ce96ed3" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_cis_t::bnSToM</definition>
+        <argsstring></argsstring>
+        <name>bnSToM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Slave to master burst number. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="316" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="316" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1a9369d50b07b9ab8b35f62818e812aca5" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t le_cis_t::transLatUsec</definition>
+        <argsstring></argsstring>
+        <name>transLatUsec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The maximum time, in microseconds, for transmission of SDUs of all CISes. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="317" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="317" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1ace35786dfe0091be1e10bfadc0c6df2b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t le_cis_t::nextCisOffsetUsec</definition>
+        <argsstring></argsstring>
+        <name>nextCisOffsetUsec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>For slave sequential packing only, from the start of this CIS to the start of the next CIS. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="318" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="318" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1a076c6cb3a3cea0743a560ff26da8bd32" prot="public" static="no" mutable="no">
+        <type><ref refid="structlctrInDataPathCtx__t" kindref="compound">lctrInDataPathCtx_t</ref></type>
+        <definition>lctrInDataPathCtx_t le_cis_t::dataPathInCtx</definition>
+        <argsstring></argsstring>
+        <name>dataPathInCtx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Input data path config. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="321" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="321" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1ac3b2f89e67b54dfd2419e5e8d51b7e44" prot="public" static="no" mutable="no">
+        <type><ref refid="structlctrOutDataPathCtx__t" kindref="compound">lctrOutDataPathCtx_t</ref></type>
+        <definition>lctrOutDataPathCtx_t le_cis_t::dataPathOutCtx</definition>
+        <argsstring></argsstring>
+        <name>dataPathOutCtx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Output data path context. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="322" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="322" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1a32b8f82992aba5f2f2909023c9e05edb" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref></type>
+        <definition>bool_t le_cis_t::txTestEnabled</definition>
+        <argsstring></argsstring>
+        <name>txTestEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TRUE ISO test enabled, FALSE otherwise. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="326" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="326" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1adbb0353d9bda1d74ce0255c5e629befc" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref></type>
+        <definition>bool_t le_cis_t::rxTestEnabled</definition>
+        <argsstring></argsstring>
+        <name>rxTestEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TRUE if ISO RX test enabled, FALSE otherwise. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="327" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="327" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1a92b30cddf2a3545de7137cc8249dc3c4" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t le_cis_t::testSduTs</definition>
+        <argsstring></argsstring>
+        <name>testSduTs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Timestamp of last tx sdu. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="328" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="328" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1ad3d3d6e126a5eeb448a3e48542c0c33e" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__iso_8h_1a7fd3a11b71f060e138c02f9594b7188d" kindref="member">LlIsoPldType_t</ref></type>
+        <definition>LlIsoPldType_t le_cis_t::testPldType</definition>
+        <argsstring></argsstring>
+        <name>testPldType</name>
+        <bitfield> 8</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Test payload type. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="329" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="329" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1a0a9ff594912623b3279b01a3e49ff84d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t le_cis_t::expectedPkt</definition>
+        <argsstring></argsstring>
+        <name>expectedPkt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Next expected packet for Rx test. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="331" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="331" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1a611352ffb1c82d237ef9955c5b72e845" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t le_cis_t::testTxPktCtr</definition>
+        <argsstring></argsstring>
+        <name>testTxPktCtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Packet counter for TX test. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="332" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="332" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1a366b299dbc6635fac4e0a0e8e2aae4d1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t le_cis_t::numRxSuccess</definition>
+        <argsstring></argsstring>
+        <name>numRxSuccess</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ISO Rx received payload counter. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="333" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="333" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1af84644c45f2cde8d9ecd951dcd79b1c5" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t le_cis_t::numRxMissed</definition>
+        <argsstring></argsstring>
+        <name>numRxMissed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ISO Rx missed payload counter. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="334" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="334" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1a458e18252bd11046d354f64431e19126" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t le_cis_t::numRxFailed</definition>
+        <argsstring></argsstring>
+        <name>numRxFailed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ISO Rx failed payload counter. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="335" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="335" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1a1b47db9eb82fa320ddf593bebfd55188" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_cis_t::isoRxPldType</definition>
+        <argsstring></argsstring>
+        <name>isoRxPldType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ISO RX payload length type. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="336" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="336" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1a0ac5abb9867bfc843175248b8aa726ce" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref></type>
+        <definition>bool_t le_cis_t::rxPendInit</definition>
+        <argsstring></argsstring>
+        <name>rxPendInit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ISO test pending initialization flag. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="337" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="337" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1ac8bc64b39260769e14d25d7529a8b3d5" prot="public" static="no" mutable="no">
+        <type><ref refid="structLlIsoLinkQual__t" kindref="compound">LlIsoLinkQual_t</ref></type>
+        <definition>LlIsoLinkQual_t le_cis_t::isoLinkQualStats</definition>
+        <argsstring></argsstring>
+        <name>isoLinkQualStats</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ISO Link quality statistics. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="340" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="340" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1a1e3c3ef61ea9f84d1c00b55b1521671e" prot="public" static="no" mutable="no">
+        <type><ref refid="structlctrIsoalTxCtx__t" kindref="compound">lctrIsoalTxCtx_t</ref></type>
+        <definition>lctrIsoalTxCtx_t le_cis_t::isoalTxCtx</definition>
+        <argsstring></argsstring>
+        <name>isoalTxCtx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ISOAL transmit context. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="342" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="342" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1a6aede7e76acccb98a50913be5fb53966" prot="public" static="no" mutable="no">
+        <type><ref refid="structlctrIsoalRxCtx__t" kindref="compound">lctrIsoalRxCtx_t</ref></type>
+        <definition>lctrIsoalRxCtx_t le_cis_t::isoalRxCtx</definition>
+        <argsstring></argsstring>
+        <name>isoalRxCtx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Partial receive context. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="343" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="343" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1ad0d95d3ae060acbf89cc06f97e16b6e8" prot="public" static="no" mutable="no">
+        <type>struct list_head</type>
+        <definition>struct list_head le_cis_t::rx_runtime_head</definition>
+        <argsstring></argsstring>
+        <name>rx_runtime_head</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="343" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="346" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1a46e55ad6247055f6f7476b03eec0c163" prot="public" static="no" mutable="no">
+        <type>struct list_head</type>
+        <definition>struct list_head le_cis_t::evt_runtime_head</definition>
+        <argsstring></argsstring>
+        <name>evt_runtime_head</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="343" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="347" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1a9b26c6eac8b90b53d7451f5ad7fc58d1" prot="public" static="no" mutable="no">
+        <type>struct list_head</type>
+        <definition>struct list_head le_cis_t::evt_runtime_post_head</definition>
+        <argsstring></argsstring>
+        <name>evt_runtime_post_head</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="343" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="348" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cis__t_1a4cdefe04a114cd3fde4a296d204ec0c0" prot="public" static="no" mutable="no">
+        <type>atomic_t</type>
+        <definition>atomic_t le_cis_t::air_sent_iso_num</definition>
+        <argsstring></argsstring>
+        <name>air_sent_iso_num</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="350" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="350" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Connected isochronous stream context. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1221">
+        <label>le_cis_t</label>
+        <link refid="structle__cis__t"/>
+        <childnode refid="1222" relation="usage">
+          <edgelabel>isoalTxCtx</edgelabel>
+        </childnode>
+        <childnode refid="1223" relation="usage">
+          <edgelabel>isoalRxCtx</edgelabel>
+        </childnode>
+        <childnode refid="1224" relation="usage">
+          <edgelabel>dataPathOutCtx</edgelabel>
+        </childnode>
+        <childnode refid="1225" relation="usage">
+          <edgelabel>dataPathInCtx</edgelabel>
+        </childnode>
+        <childnode refid="1226" relation="usage">
+          <edgelabel>isoLinkQualStats</edgelabel>
+        </childnode>
+        <childnode refid="1227" relation="usage">
+          <edgelabel>cig</edgelabel>
+        </childnode>
+      </node>
+      <node id="1226">
+        <label>LlIsoLinkQual_t</label>
+        <link refid="structLlIsoLinkQual__t"/>
+      </node>
+      <node id="1222">
+        <label>lctrIsoalTxCtx_t</label>
+        <link refid="structlctrIsoalTxCtx__t"/>
+      </node>
+      <node id="1223">
+        <label>lctrIsoalRxCtx_t</label>
+        <link refid="structlctrIsoalRxCtx__t"/>
+      </node>
+      <node id="1225">
+        <label>lctrInDataPathCtx_t</label>
+        <link refid="structlctrInDataPathCtx__t"/>
+      </node>
+      <node id="1224">
+        <label>lctrOutDataPathCtx_t</label>
+        <link refid="structlctrOutDataPathCtx__t"/>
+      </node>
+      <node id="1227">
+        <label>le_cig_t</label>
+        <link refid="structle__cig__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="213" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="213" bodyend="351"/>
+    <listofallmembers>
+      <member refid="structle__cis__t_1a38a1c67f7d31c4732ad1ee4497bc8df5" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>accessAddr</name></member>
+      <member refid="structle__cis__t_1a4aecbea9f073c04936a05387fc623cd6" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>aclHandle</name></member>
+      <member refid="structle__cis__t_1a4cdefe04a114cd3fde4a296d204ec0c0" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>air_sent_iso_num</name></member>
+      <member refid="structle__cis__t_1a8e0e0662f9cc3635b4ad3e605c21b6bc" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>bnMToS</name></member>
+      <member refid="structle__cis__t_1a1f1d6de567ca6507fb403f329ce96ed3" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>bnSToM</name></member>
+      <member refid="structle__cis__t_1a15c33690ebf3ef2348ce8501afcaf59d" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>ceRef</name></member>
+      <member refid="structle__cis__t_1a7d5c3494cc5e1eba07709b3f2117f612" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>chIdx</name></member>
+      <member refid="structle__cis__t_1afc352e6358a86a4545372691b4fb8e47" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>cig</name></member>
+      <member refid="structle__cis__t_1a6a1dd817d41df2dfbe5c31bb43f26dd7" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>cigSyncDelayUsec</name></member>
+      <member refid="structle__cis__t_1ae6cdd6cfa17c6b3367fa09839f5543cf" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>cisCeRef</name></member>
+      <member refid="structle__cis__t_1af5040fe0cd6dd5687adbe2db89e784d3" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>cisDone</name></member>
+      <member refid="structle__cis__t_1a974d3104ab5ee5c6a7aab82ff4fde464" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>cisEvtCounter</name></member>
+      <member refid="structle__cis__t_1a81af7634174d497a19ee0c0f96e000d5" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>cisHandle</name></member>
+      <member refid="structle__cis__t_1a8bbce01c98cf295967d31eac1fdc89be" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>cisId</name></member>
+      <member refid="structle__cis__t_1a8f364b2b4cc23931abdc1a3a61edc824" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>cisSyncDelayUsec</name></member>
+      <member refid="structle__cis__t_1ab0c6fa6596b208d8a3812027e89c4975" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>connEst</name></member>
+      <member refid="structle__cis__t_1a502fe4fb2e3e49c1d6dd8df785018227" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>crcInit</name></member>
+      <member refid="structle__cis__t_1a6b3daf4be974f9f72a66664486245bfe" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>data</name></member>
+      <member refid="structle__cis__t_1a15f6a110dfc4ee95ebc4889edf899784" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>dataBuf</name></member>
+      <member refid="structle__cis__t_1a93ce16c208a972fb8357a486b24ec9a4" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>dataCounter</name></member>
+      <member refid="structle__cis__t_1ad6f551b6e0e959c334b0eae27a9d18c9" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>dataHdrBuf</name></member>
+      <member refid="structle__cis__t_1a076c6cb3a3cea0743a560ff26da8bd32" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>dataPathInCtx</name></member>
+      <member refid="structle__cis__t_1ac3b2f89e67b54dfd2419e5e8d51b7e44" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>dataPathOutCtx</name></member>
+      <member refid="structle__cis__t_1ae80b5d0b5ac57515aa31ad7fea6248be" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>delayUsec</name></member>
+      <member refid="structle__cis__t_1ab2033cd04dd8782e88e9fd96a2d0a687" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>entry</name></member>
+      <member refid="structle__cis__t_1aef7a0458444dfebb98bd642f5d2c8d44" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>estState</name></member>
+      <member refid="structle__cis__t_1a46e55ad6247055f6f7476b03eec0c163" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>evt_runtime_head</name></member>
+      <member refid="structle__cis__t_1a9b26c6eac8b90b53d7451f5ad7fc58d1" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>evt_runtime_post_head</name></member>
+      <member refid="structle__cis__t_1a0a9ff594912623b3279b01a3e49ff84d" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>expectedPkt</name></member>
+      <member refid="structle__cis__t_1aa5d22f775b1ef54993f7afd837c558f5" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>framing</name></member>
+      <member refid="structle__cis__t_1a417739ebc20a65396eeaae8b5897d0ad" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>ftMToS</name></member>
+      <member refid="structle__cis__t_1ab592f14474302e80c671bd6aa6775fad" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>ftSToM</name></member>
+      <member refid="structle__cis__t_1aeba172b70aab05d8de38e0b002a08ba2" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>hw</name></member>
+      <member refid="structle__cis__t_1ad6e92355e0a14f77324714db8df8a92c" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>isCisReqPend</name></member>
+      <member refid="structle__cis__t_1a1541db4585e1b6ef5d5241bc834b2fa0" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>isClosing</name></member>
+      <member refid="structle__cis__t_1a6aede7e76acccb98a50913be5fb53966" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>isoalRxCtx</name></member>
+      <member refid="structle__cis__t_1a1e3c3ef61ea9f84d1c00b55b1521671e" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>isoalTxCtx</name></member>
+      <member refid="structle__cis__t_1aeee53d7d191737569e0902c610604a43" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>isoInterval</name></member>
+      <member refid="structle__cis__t_1ac8bc64b39260769e14d25d7529a8b3d5" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>isoLinkQualStats</name></member>
+      <member refid="structle__cis__t_1a1b47db9eb82fa320ddf593bebfd55188" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>isoRxPldType</name></member>
+      <member refid="structle__cis__t_1a49bd9cd4590d9fcfe91609108589a4e1" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>isTxDone</name></member>
+      <member refid="structle__cis__t_1a43b4b51927e797da1b61817be3ea3087" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>iv</name></member>
+      <member refid="structle__cis__t_1ace35786dfe0091be1e10bfadc0c6df2b" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>nextCisOffsetUsec</name></member>
+      <member refid="structle__cis__t_1a404940f0500e117fcee9e7a5e8c45e8e" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>nextSubEvtChanIdx</name></member>
+      <member refid="structle__cis__t_1af2255b118470fca72d16b168bea0df92" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>nse</name></member>
+      <member refid="structle__cis__t_1a458e18252bd11046d354f64431e19126" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>numRxFailed</name></member>
+      <member refid="structle__cis__t_1af84644c45f2cde8d9ecd951dcd79b1c5" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>numRxMissed</name></member>
+      <member refid="structle__cis__t_1a366b299dbc6635fac4e0a0e8e2aae4d1" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>numRxSuccess</name></member>
+      <member refid="structle__cis__t_1a9704a447dc861d9b87555f18595bbf04" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>offsetUsec</name></member>
+      <member refid="structle__cis__t_1a651a07e79625dc497c0d89e043607fc2" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>packing</name></member>
+      <member refid="structle__cis__t_1ad900ec3570752d1e34f73d9d76cbc68c" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>pduFlushed</name></member>
+      <member refid="structle__cis__t_1ac85d4c255894c3d265ea242cedb5ebbd" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>pduSizeMToS</name></member>
+      <member refid="structle__cis__t_1ae6768f6f18b55d9493804512009a7bd7" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>pduSizeSToM</name></member>
+      <member refid="structle__cis__t_1a83b6cab376be83fbcf1184b87faa6d82" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>phyMToS</name></member>
+      <member refid="structle__cis__t_1a229f91cbddf6fc4a57c45f0d7ba36497" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>phySToM</name></member>
+      <member refid="structle__cis__t_1a2de047c2ddb58caa2f6a007da6612ad9" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>powerIndReq</name></member>
+      <member refid="structle__cis__t_1a11c813fd65d10e27566b8e8579881aa2" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>reason</name></member>
+      <member refid="structle__cis__t_1a00c3f369b06b5134ef19ede250030e82" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>role</name></member>
+      <member refid="structle__cis__t_1ad0d95d3ae060acbf89cc06f97e16b6e8" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>rx_runtime_head</name></member>
+      <member refid="structle__cis__t_1a0ac5abb9867bfc843175248b8aa726ce" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>rxPendInit</name></member>
+      <member refid="structle__cis__t_1a3912a47a77a334ecc09ede4d47d0d9ac" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>rxPktCounter</name></member>
+      <member refid="structle__cis__t_1adbb0353d9bda1d74ce0255c5e629befc" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>rxTestEnabled</name></member>
+      <member refid="structle__cis__t_1ae829148645ec2c31ab4f875f6a5d1990" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>sca</name></member>
+      <member refid="structle__cis__t_1a2779b619da3ba06ad50af197591b133e" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>sduIntervalMToS</name></member>
+      <member refid="structle__cis__t_1aee15148a654842d8fe8c2b95112052f9" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>sduIntervalSToM</name></member>
+      <member refid="structle__cis__t_1a748baded9c94408fc646e41f755adebd" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>sduSizeMToS</name></member>
+      <member refid="structle__cis__t_1a3f3c065caf401e7c3f30dde18ee65866" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>sduSizeSToM</name></member>
+      <member refid="structle__cis__t_1a5baa39bdfd79a8f845260e7822ae4d53" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>state</name></member>
+      <member refid="structle__cis__t_1a4ea3dce08f5f1025330c7eb1e0934177" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>subEvtCounter</name></member>
+      <member refid="structle__cis__t_1a44bc21834c39f5d23b953697175750ac" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>subIntervUsec</name></member>
+      <member refid="structle__cis__t_1ad7de9cd1e516032081a003c018199eb3" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>supTimeoutMs</name></member>
+      <member refid="structle__cis__t_1a2c238f7178e9630e4f947b11551a5b29" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>termState</name></member>
+      <member refid="structle__cis__t_1ad3d3d6e126a5eeb448a3e48542c0c33e" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>testPldType</name></member>
+      <member refid="structle__cis__t_1a92b30cddf2a3545de7137cc8249dc3c4" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>testSduTs</name></member>
+      <member refid="structle__cis__t_1a611352ffb1c82d237ef9955c5b72e845" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>testTxPktCtr</name></member>
+      <member refid="structle__cis__t_1a6d8f21a13598bb6a6478c86f5c350932" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>tmrProcRsp</name></member>
+      <member refid="structle__cis__t_1abde36d49d16f19e68668c9b394a23107" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>tmrSupTimeout</name></member>
+      <member refid="structle__cis__t_1a9369d50b07b9ab8b35f62818e812aca5" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>transLatUsec</name></member>
+      <member refid="structle__cis__t_1a2b4d4042f3c169a70f8b2061d37d787c" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>txPktCounter</name></member>
+      <member refid="structle__cis__t_1a32b8f82992aba5f2f2909023c9e05edb" prot="public" virt="non-virtual"><scope>le_cis_t</scope><name>txTestEnabled</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

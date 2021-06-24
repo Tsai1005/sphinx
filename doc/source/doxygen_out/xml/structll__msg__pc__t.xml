@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structll__msg__pc__t" kind="struct" language="C++" prot="public">
+    <compoundname>ll_msg_pc_t</compoundname>
+    <includes refid="llcp_8h" local="no">llcp.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structll__msg__pc__t_1aad330d0eab4811c17a6b86f3b56927ef" prot="public" static="no" mutable="no">
+        <type><ref refid="structll__msg__hdr__t" kindref="compound">ll_msg_hdr_t</ref></type>
+        <definition>ll_msg_hdr_t ll_msg_pc_t::hdr</definition>
+        <argsstring></argsstring>
+        <name>hdr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="205" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__msg__pc__t_1a882918af4dbe287e9fcb5e7e7836ebff" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_msg_pc_t::phy</definition>
+        <argsstring></argsstring>
+        <name>phy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>PHY requested </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="207" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__msg__pc__t_1a2207347fe95449f12a6151a48b0be2a2" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_msg_pc_t::delta</definition>
+        <argsstring></argsstring>
+        <name>delta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delta requested </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="208" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__msg__pc__t_1a68a203d6365a42191ac23ac02b74b8bf" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_msg_pc_t::tx</definition>
+        <argsstring></argsstring>
+        <name>tx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tx Power </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="209" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1501">
+        <label>ll_msg_hdr_t</label>
+        <link refid="structll__msg__hdr__t"/>
+      </node>
+      <node id="1500">
+        <label>ll_msg_pc_t</label>
+        <link refid="structll__msg__pc__t"/>
+        <childnode refid="1501" relation="usage">
+          <edgelabel>hdr</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="204" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="204" bodyend="210"/>
+    <listofallmembers>
+      <member refid="structll__msg__pc__t_1a2207347fe95449f12a6151a48b0be2a2" prot="public" virt="non-virtual"><scope>ll_msg_pc_t</scope><name>delta</name></member>
+      <member refid="structll__msg__pc__t_1aad330d0eab4811c17a6b86f3b56927ef" prot="public" virt="non-virtual"><scope>ll_msg_pc_t</scope><name>hdr</name></member>
+      <member refid="structll__msg__pc__t_1a882918af4dbe287e9fcb5e7e7836ebff" prot="public" virt="non-virtual"><scope>ll_msg_pc_t</scope><name>phy</name></member>
+      <member refid="structll__msg__pc__t_1a68a203d6365a42191ac23ac02b74b8bf" prot="public" virt="non-virtual"><scope>ll_msg_pc_t</scope><name>tx</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

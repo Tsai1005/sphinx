@@ -1,0 +1,616 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="ll__data__extension_8c" kind="file" language="C++">
+    <compoundname>ll_data_extension.c</compoundname>
+    <includes refid="link__layer_8h" local="yes">ble/link_layer.h</includes>
+    <includes local="yes">stdarg.h</includes>
+    <includes refid="h4__transport_8h" local="yes">h4_transport.h</includes>
+    <includes local="yes">RF_ble.h</includes>
+    <includes local="yes">btcontroller_util.h</includes>
+    <includes local="yes">btcontroller_heap.h</includes>
+    <includes local="yes">tomcrypt.h</includes>
+    <includes local="yes">hci_controller.h</includes>
+    <includes local="yes">common/debug.h</includes>
+    <incdepgraph>
+      <node id="3319">
+        <label>stdarg.h</label>
+      </node>
+      <node id="3304">
+        <label>os/os_type.h</label>
+      </node>
+      <node id="3300">
+        <label>common/atomic.h</label>
+      </node>
+      <node id="3314">
+        <label>common/lbuf.h</label>
+      </node>
+      <node id="3297">
+        <label>common/list.h</label>
+      </node>
+      <node id="3303">
+        <label>common/thread.h</label>
+      </node>
+      <node id="3306">
+        <label>ble/ll_adv.h</label>
+        <link refid="ll__adv_8h"/>
+        <childnode refid="3298" relation="include">
+        </childnode>
+      </node>
+      <node id="3320">
+        <label>h4_transport.h</label>
+        <link refid="h4__transport_8h"/>
+        <childnode refid="3296" relation="include">
+        </childnode>
+      </node>
+      <node id="3326">
+        <label>common/debug.h</label>
+      </node>
+      <node id="3322">
+        <label>btcontroller_util.h</label>
+      </node>
+      <node id="3308">
+        <label>ble/ll_init.h</label>
+        <link refid="ll__init_8h"/>
+        <childnode refid="3298" relation="include">
+        </childnode>
+      </node>
+      <node id="3294">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_data_extension.c</label>
+        <link refid="ll_data_extension.c"/>
+        <childnode refid="3295" relation="include">
+        </childnode>
+        <childnode refid="3319" relation="include">
+        </childnode>
+        <childnode refid="3320" relation="include">
+        </childnode>
+        <childnode refid="3321" relation="include">
+        </childnode>
+        <childnode refid="3322" relation="include">
+        </childnode>
+        <childnode refid="3323" relation="include">
+        </childnode>
+        <childnode refid="3324" relation="include">
+        </childnode>
+        <childnode refid="3325" relation="include">
+        </childnode>
+        <childnode refid="3326" relation="include">
+        </childnode>
+      </node>
+      <node id="3310">
+        <label>data_extension.h</label>
+        <link refid="data__extension_8h"/>
+        <childnode refid="3296" relation="include">
+        </childnode>
+      </node>
+      <node id="3313">
+        <label>ble/ll_iso.h</label>
+        <link refid="ll__iso_8h"/>
+        <childnode refid="3301" relation="include">
+        </childnode>
+        <childnode refid="3314" relation="include">
+        </childnode>
+        <childnode refid="3303" relation="include">
+        </childnode>
+      </node>
+      <node id="3321">
+        <label>RF_ble.h</label>
+      </node>
+      <node id="3296">
+        <label>typedef.h</label>
+      </node>
+      <node id="3323">
+        <label>btcontroller_heap.h</label>
+      </node>
+      <node id="3302">
+        <label>white_list.h</label>
+        <link refid="white__list_8h"/>
+        <childnode refid="3296" relation="include">
+        </childnode>
+      </node>
+      <node id="3316">
+        <label>audio_codec.h</label>
+        <link refid="audio__codec_8h"/>
+        <childnode refid="3301" relation="include">
+        </childnode>
+      </node>
+      <node id="3307">
+        <label>ble/ll_scan.h</label>
+        <link refid="ll__scan_8h"/>
+        <childnode refid="3298" relation="include">
+        </childnode>
+      </node>
+      <node id="3305">
+        <label>ble/llcp.h</label>
+        <link refid="llcp_8h"/>
+        <childnode refid="3296" relation="include">
+        </childnode>
+        <childnode refid="3301" relation="include">
+        </childnode>
+      </node>
+      <node id="3311">
+        <label>multiple_phys.h</label>
+        <link refid="multiple__phys_8h"/>
+        <childnode refid="3296" relation="include">
+        </childnode>
+      </node>
+      <node id="3309">
+        <label>resolve_list.h</label>
+        <link refid="resolve__list_8h"/>
+        <childnode refid="3296" relation="include">
+        </childnode>
+      </node>
+      <node id="3298">
+        <label>ble_interface.h</label>
+      </node>
+      <node id="3324">
+        <label>tomcrypt.h</label>
+      </node>
+      <node id="3312">
+        <label>ble/ll_cte.h</label>
+        <link refid="ll__cte_8h"/>
+        <childnode refid="3301" relation="include">
+        </childnode>
+      </node>
+      <node id="3325">
+        <label>hci_controller.h</label>
+      </node>
+      <node id="3299">
+        <label>common/sys_timer.h</label>
+      </node>
+      <node id="3295">
+        <label>ble/link_layer.h</label>
+        <link refid="link__layer_8h"/>
+        <childnode refid="3296" relation="include">
+        </childnode>
+        <childnode refid="3297" relation="include">
+        </childnode>
+        <childnode refid="3298" relation="include">
+        </childnode>
+        <childnode refid="3299" relation="include">
+        </childnode>
+        <childnode refid="3300" relation="include">
+        </childnode>
+        <childnode refid="3301" relation="include">
+        </childnode>
+        <childnode refid="3302" relation="include">
+        </childnode>
+        <childnode refid="3303" relation="include">
+        </childnode>
+        <childnode refid="3304" relation="include">
+        </childnode>
+        <childnode refid="3305" relation="include">
+        </childnode>
+        <childnode refid="3306" relation="include">
+        </childnode>
+        <childnode refid="3307" relation="include">
+        </childnode>
+        <childnode refid="3308" relation="include">
+        </childnode>
+        <childnode refid="3309" relation="include">
+        </childnode>
+        <childnode refid="3310" relation="include">
+        </childnode>
+        <childnode refid="3311" relation="include">
+        </childnode>
+        <childnode refid="3312" relation="include">
+        </childnode>
+        <childnode refid="3313" relation="include">
+        </childnode>
+        <childnode refid="3315" relation="include">
+        </childnode>
+        <childnode refid="3317" relation="include">
+        </childnode>
+        <childnode refid="3318" relation="include">
+        </childnode>
+      </node>
+      <node id="3301">
+        <label>ll_defines.h</label>
+        <link refid="ll__defines_8h"/>
+        <childnode refid="3296" relation="include">
+        </childnode>
+      </node>
+      <node id="3317">
+        <label>ble/ll_cis.h</label>
+        <link refid="ll__cis_8h"/>
+        <childnode refid="3313" relation="include">
+        </childnode>
+        <childnode refid="3295" relation="include">
+        </childnode>
+      </node>
+      <node id="3315">
+        <label>ble/ll_bis.h</label>
+        <link refid="ll__bis_8h"/>
+        <childnode refid="3313" relation="include">
+        </childnode>
+        <childnode refid="3316" relation="include">
+        </childnode>
+      </node>
+      <node id="3318">
+        <label>ble/ll_pc.h</label>
+        <link refid="ll__pc_8h"/>
+        <childnode refid="3301" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="ll__data__extension_8c_1a6c6991cba0e2995d7d9aec73e0324317" prot="public" static="no">
+        <name>LOG_TAG_CONST</name>
+        <initializer>LL_DX</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_data_extension.c" line="10" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_data_extension.c" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__data__extension_8c_1a7ce0df38eb467e59f209470c8f5ac4e6" prot="public" static="no">
+        <name>LOG_TAG</name>
+        <initializer>&quot;[LL_DX]&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_data_extension.c" line="11" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_data_extension.c" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__data__extension_8c_1a9eeb6e067100d0dec6e53bce19a403e0" prot="public" static="no">
+        <name>LOG_ERROR_ENABLE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_data_extension.c" line="13" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_data_extension.c" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__data__extension_8c_1a69321c8a2a0b07a07fb5088e82e25eb0" prot="public" static="no">
+        <name>LOG_INFO_ENABLE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_data_extension.c" line="14" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_data_extension.c" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__data__extension_8c_1a04135f631fe91199f05b1d816dda8756" prot="public" static="no">
+        <name>LOG_DUMP_ENABLE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_data_extension.c" line="15" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_data_extension.c" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__data__extension_8c_1aeb3cf46e5bcf4641fdd900483a391889" prot="public" static="no">
+        <name>AT_BLE_LL_CODE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_data_extension.c" line="26" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_data_extension.c" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__data__extension_8c_1a4e9230faf14e858ac362f0451d4164a5" prot="public" static="no">
+        <name>LL_TXMAXOCTETS_IS_EXCEED</name>
+        <param><defname>x</defname></param>
+        <initializer>(x &gt; le_data_length.supportedMaxTxOctets)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_data_extension.c" line="36" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_data_extension.c" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__data__extension_8c_1a362ca99e28c35c5cc671c37fa1f5dfe3" prot="public" static="no">
+        <name>LL_RXMAXOCTETS_IS_EXCEED</name>
+        <param><defname>x</defname></param>
+        <initializer>(x &gt; le_data_length.supportedMaxRxOctets)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_data_extension.c" line="37" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_data_extension.c" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__data__extension_8c_1a8f9e11093c712fb5ce2ad21eff478912" prot="public" static="no">
+        <name>LL_TXMAXTIME_IS_EXCEED</name>
+        <param><defname>x</defname></param>
+        <initializer>(x &gt; le_data_length.supportedMaxTxTime)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_data_extension.c" line="38" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_data_extension.c" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__data__extension_8c_1a7c81ffef1f8c4ce32c7257583d07b8b1" prot="public" static="no">
+        <name>LL_RXMAXTIME_IS_EXCEED</name>
+        <param><defname>x</defname></param>
+        <initializer>(x &gt; le_data_length.supportedMaxRxTime)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_data_extension.c" line="39" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_data_extension.c" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="ll__data__extension_8c_1ae0897f5e7eafd91c3a4dfb16d5826a6a" prot="public" static="yes" mutable="no">
+        <type>struct <ref refid="structll__data__pdu__length" kindref="compound">ll_data_pdu_length</ref></type>
+        <definition>struct ll_data_pdu_length le_data_length</definition>
+        <argsstring></argsstring>
+        <name>le_data_length</name>
+        <initializer>= {
+    .supportedMaxTxOctets = BLE_HW_MAX_RX_OCTETS,
+    .supportedMaxTxTime = 2120,
+
+    .supportedMaxRxOctets = BLE_HW_MAX_TX_OCTETS,
+    .supportedMaxRxTime = 2120,
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_data_extension.c" line="1748" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_data_extension.c" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="ll__data__extension_8c_1a1e7b807c8291268f1936bfbef60ce535" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structll__data__pdu__length" kindref="compound">ll_data_pdu_length</ref> *</type>
+        <definition>struct ll_data_pdu_length* ll_read_maximum_data_length</definition>
+        <argsstring>(void)</argsstring>
+        <name>ll_read_maximum_data_length</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_data_extension.c" line="44" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_data_extension.c" bodystart="44" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__data__extension_8c_1aecce5f21cf00cebb679690a1d1a35866" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structll__data__pdu__length" kindref="compound">ll_data_pdu_length</ref> *</type>
+        <definition>struct ll_data_pdu_length* ll_read_suggested_default_data_length</definition>
+        <argsstring>(void)</argsstring>
+        <name>ll_read_suggested_default_data_length</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_data_extension.c" line="49" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_data_extension.c" bodystart="49" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__data__extension_8c_1a49e12ff02d495c12c62e9b38dc327d28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ll_write_suggested_default_data_length</definition>
+        <argsstring>(const u8 *data)</argsstring>
+        <name>ll_write_suggested_default_data_length</name>
+        <param>
+          <type>const u8 *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_data_extension.c" line="56" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_data_extension.c" bodystart="56" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__data__extension_8c_1a3dafff497d1ab65df8017609d1be643b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="link__layer_8h_1aeb3cf46e5bcf4641fdd900483a391889" kindref="member">AT_BLE_LL_CODE</ref> void</type>
+        <definition>AT_BLE_LL_CODE void ll_set_effective_data_args</definition>
+        <argsstring>(struct le_link *link)</argsstring>
+        <name>ll_set_effective_data_args</name>
+        <param>
+          <type>struct <ref refid="structle__link" kindref="compound">le_link</ref> *</type>
+          <declname>link</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_data_extension.c" line="69" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_data_extension.c" bodystart="69" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__data__extension_8c_1a752f4f01fb39bbed01db4d4680b3b717" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ll_data_extension_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>ll_data_extension_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_data_extension.c" line="87" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_data_extension.c" bodystart="87" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__data__extension_8c_1a9a0f0b43c13271a2d886b3182f27cf2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void link_data_extension_init</definition>
+        <argsstring>(struct le_link *link)</argsstring>
+        <name>link_data_extension_init</name>
+        <param>
+          <type>struct <ref refid="structle__link" kindref="compound">le_link</ref> *</type>
+          <declname>link</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_data_extension.c" line="114" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_data_extension.c" bodystart="114" bodyend="134"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="link__layer_8h" kindref="compound">ble/link_layer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;stdarg.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="h4__transport_8h" kindref="compound">h4_transport.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;RF_ble.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;btcontroller_util.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;btcontroller_heap.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;tomcrypt.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;hci_controller.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_TAG_CONST<sp/><sp/><sp/><sp/><sp/>LL_DX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_TAG<sp/><sp/><sp/><sp/><sp/>&quot;[LL_DX]&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_ERROR_ENABLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_INFO_ENABLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_DUMP_ENABLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;common/debug.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>SUPPORT_MS_EXTENSIONS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>bss_seg(&quot;.ble_ll_bss&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>data_seg(&quot;.ble_ll_data&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>const_seg(&quot;.ble_ll_const&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>code_seg(&quot;.ble_ll_code&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AT_BLE_LL_CODE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structll__data__pdu__length" kindref="compound">ll_data_pdu_length</ref><sp/><ref refid="ll__data__extension_8c_1ae0897f5e7eafd91c3a4dfb16d5826a6a" kindref="member">le_data_length</ref><sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>.<ref refid="structll__data__pdu__length_1a84273369d3b40891ecbd52ba584b7e32" kindref="member">supportedMaxTxOctets</ref><sp/>=<sp/>BLE_HW_MAX_RX_OCTETS,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>.supportedMaxTxTime<sp/>=<sp/>2120,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>.supportedMaxRxOctets<sp/>=<sp/>BLE_HW_MAX_TX_OCTETS,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>.supportedMaxRxTime<sp/>=<sp/>2120,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_TXMAXOCTETS_IS_EXCEED(x)<sp/><sp/><sp/><sp/><sp/>(x<sp/>&gt;<sp/>le_data_length.supportedMaxTxOctets)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_RXMAXOCTETS_IS_EXCEED(x)<sp/><sp/><sp/><sp/><sp/>(x<sp/>&gt;<sp/>le_data_length.supportedMaxRxOctets)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_TXMAXTIME_IS_EXCEED(x)<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(x<sp/>&gt;<sp/>le_data_length.supportedMaxTxTime)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LL_RXMAXTIME_IS_EXCEED(x)<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(x<sp/>&gt;<sp/>le_data_length.supportedMaxRxTime)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">/********************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Data<sp/>Length</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structll__data__pdu__length" kindref="compound">ll_data_pdu_length</ref><sp/>*<ref refid="ll__data__extension_8c_1a1e7b807c8291268f1936bfbef60ce535" kindref="member">ll_read_maximum_data_length</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;<ref refid="ll__data__extension_8c_1ae0897f5e7eafd91c3a4dfb16d5826a6a" kindref="member">le_data_length</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structll__data__pdu__length" kindref="compound">ll_data_pdu_length</ref><sp/>*<ref refid="ll__data__extension_8c_1aecce5f21cf00cebb679690a1d1a35866" kindref="member">ll_read_suggested_default_data_length</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>log_info(&quot;ll_read_suggested_default_data_length<sp/>connInitial<sp/>:<sp/>%d<sp/>/<sp/>%d&quot;,<sp/>le_data_length.connInitialMaxTxOctets,<sp/>le_data_length.connInitialMaxTxTime);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>log_info(&quot;ll_read_suggested_default_data_length<sp/>suggested<sp/>:<sp/>%d<sp/>/<sp/>%d&quot;,<sp/>le_data_length.suggestedMaxTxOctets,<sp/>le_data_length.suggestedMaxTxTime);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;<ref refid="ll__data__extension_8c_1ae0897f5e7eafd91c3a4dfb16d5826a6a" kindref="member">le_data_length</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__data__extension_8c_1a49e12ff02d495c12c62e9b38dc327d28" kindref="member">ll_write_suggested_default_data_length</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>*data)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Range<sp/>0x001B<sp/>-<sp/>0x00FB</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>le_data_length.<ref refid="structll__data__pdu__length_1acbc7e890e1da1aa8c269d5c14b17e1d6" kindref="member">suggestedMaxTxOctets</ref><sp/>=<sp/>btctler_little_endian_read_16(data,<sp/>0);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>log_info(&quot;suggestedMaxTxOctets<sp/>:<sp/>%x&quot;,<sp/>le_data_length.suggestedMaxTxOctets);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Range<sp/>0x0148<sp/>-<sp/>0x0848</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>le_data_length.<ref refid="structll__data__pdu__length_1a869c2fe4781b2d62e9571fee9acd3792" kindref="member">suggestedMaxTxTime</ref><sp/>=<sp/>btctler_little_endian_read_16(data,<sp/>2);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>log_info(&quot;suggestedMaxTxOctets<sp/>:<sp/>%x&quot;,<sp/>le_data_length.suggestedMaxTxTime);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><ref refid="ll__data__extension_8c_1aeb3cf46e5bcf4641fdd900483a391889" kindref="member">AT_BLE_LL_CODE</ref></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__data__extension_8c_1a3dafff497d1ab65df8017609d1be643b" kindref="member">ll_set_effective_data_args</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structle__link" kindref="compound">le_link</ref><sp/>*link)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//the<sp/>lesser<sp/>of<sp/>connMax<sp/>and<sp/>connRemoteMax</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>link-&gt;<ref refid="structle__link_1aaae575da78dd226d0a35d6765af60788" kindref="member">pdu_len</ref>.<ref refid="structdata__length_1ad924d638718839a2ca759107de1758fc" kindref="member">connEffectiveMaxTxOctets</ref><sp/>=<sp/>MIN(link-&gt;<ref refid="structle__link_1aaae575da78dd226d0a35d6765af60788" kindref="member">pdu_len</ref>.<ref refid="structdata__length_1ae1e6159e577c5a4284ae0efb19e58f2d" kindref="member">connMaxTxOctets</ref>,<sp/>link-&gt;<ref refid="structle__link_1aaae575da78dd226d0a35d6765af60788" kindref="member">pdu_len</ref>.<ref refid="structdata__length_1a39ebc4f1ef5fb0cc014417fa139c9d0d" kindref="member">connRemoteMaxRxOctets</ref>);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>__ble_ops-&gt;ioctrl(link-&gt;<ref refid="structle__link_1aa5f51601aa9fec985c79140bbc6cc139" kindref="member">hw</ref>,<sp/>BLE_SET_TX_LENGTH,<sp/>link-&gt;<ref refid="structle__link_1aaae575da78dd226d0a35d6765af60788" kindref="member">pdu_len</ref>.<ref refid="structdata__length_1ad924d638718839a2ca759107de1758fc" kindref="member">connEffectiveMaxTxOctets</ref>);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>link-&gt;<ref refid="structle__link_1aaae575da78dd226d0a35d6765af60788" kindref="member">pdu_len</ref>.<ref refid="structdata__length_1af630bfadfa0768fb17f4bff5f3998a81" kindref="member">connEffectiveMaxRxOctets</ref><sp/>=<sp/>MIN(link-&gt;<ref refid="structle__link_1aaae575da78dd226d0a35d6765af60788" kindref="member">pdu_len</ref>.<ref refid="structdata__length_1a395ee13e4ab5c53e94eb2bb28b8e509e" kindref="member">connMaxRxOctets</ref>,<sp/>link-&gt;<ref refid="structle__link_1aaae575da78dd226d0a35d6765af60788" kindref="member">pdu_len</ref>.<ref refid="structdata__length_1a285243feaf1b3c79126f8c4893d8b2a3" kindref="member">connRemoteMaxTxOctets</ref>);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>__ble_ops-&gt;ioctrl(link-&gt;<ref refid="structle__link_1aa5f51601aa9fec985c79140bbc6cc139" kindref="member">hw</ref>,<sp/>BLE_SET_RX_LENGTH,<sp/>link-&gt;<ref refid="structle__link_1aaae575da78dd226d0a35d6765af60788" kindref="member">pdu_len</ref>.<ref refid="structdata__length_1af630bfadfa0768fb17f4bff5f3998a81" kindref="member">connEffectiveMaxRxOctets</ref>);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>link-&gt;<ref refid="structle__link_1aaae575da78dd226d0a35d6765af60788" kindref="member">pdu_len</ref>.<ref refid="structdata__length_1a1252ab31a3ceb8fb74bde2e6185e0ba9" kindref="member">connEffectiveMaxTxTime</ref><sp/>=<sp/>MIN(link-&gt;<ref refid="structle__link_1aaae575da78dd226d0a35d6765af60788" kindref="member">pdu_len</ref>.<ref refid="structdata__length_1af407e8fff10623b5a5a3adeb12f16fdd" kindref="member">connMaxTxTime</ref>,<sp/>link-&gt;<ref refid="structle__link_1aaae575da78dd226d0a35d6765af60788" kindref="member">pdu_len</ref>.<ref refid="structdata__length_1a837a73fb4f535d05ec15af39686fc2e4" kindref="member">connRemoteMaxRxTime</ref>);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>link-&gt;<ref refid="structle__link_1aaae575da78dd226d0a35d6765af60788" kindref="member">pdu_len</ref>.<ref refid="structdata__length_1a52a5516dbbfd6c524fd253c7227522ac" kindref="member">connEffectiveMaxRxTime</ref><sp/>=<sp/>MIN(link-&gt;<ref refid="structle__link_1aaae575da78dd226d0a35d6765af60788" kindref="member">pdu_len</ref>.<ref refid="structdata__length_1a82da312d21fce630c01b0c02d6dacff8" kindref="member">connMaxRxTime</ref>,<sp/>link-&gt;<ref refid="structle__link_1aaae575da78dd226d0a35d6765af60788" kindref="member">pdu_len</ref>.<ref refid="structdata__length_1acd3492b0af1425215d1ef722b4c4fd03" kindref="member">connRemoteMaxTxTime</ref>);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>log_info(&quot;connEffectiveMaxTxOctets<sp/>:<sp/>%d<sp/>/<sp/>connEffectiveMaxRxOctets<sp/>:<sp/>%d<sp/>&quot;,<sp/>link-&gt;pdu_len.connEffectiveMaxTxOctets,<sp/>link-&gt;pdu_len.connEffectiveMaxRxOctets);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="comment">//Vol<sp/>6<sp/>Part<sp/>B<sp/>4.5.10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__data__extension_8c_1a752f4f01fb39bbed01db4d4680b3b717" kindref="member">ll_data_extension_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Vol<sp/>6<sp/>Part<sp/>B<sp/>4.5.10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>le_data_length.<ref refid="structll__data__pdu__length_1a261c9e1a460bfa25044f91c694477363" kindref="member">connInitialMaxTxOctets</ref><sp/>=</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(le_data_length.<ref refid="structll__data__pdu__length_1acbc7e890e1da1aa8c269d5c14b17e1d6" kindref="member">suggestedMaxTxOctets</ref>)<sp/>?</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>le_data_length.suggestedMaxTxOctets<sp/>:<sp/>27;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>le_data_length.<ref refid="structll__data__pdu__length_1acbc7e890e1da1aa8c269d5c14b17e1d6" kindref="member">suggestedMaxTxOctets</ref><sp/>:<sp/>le_data_length.<ref refid="structll__data__pdu__length_1a84273369d3b40891ecbd52ba584b7e32" kindref="member">supportedMaxTxOctets</ref>;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>if<sp/>(<ref refid="ll__data__extension_8c_1a4e9230faf14e858ac362f0451d4164a5" kindref="member">LL_TXMAXOCTETS_IS_EXCEED</ref>(le_data_length.<ref refid="structll__data__pdu__length_1a261c9e1a460bfa25044f91c694477363" kindref="member">connInitialMaxTxOctets</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>le_data_length.<ref refid="structll__data__pdu__length_1a261c9e1a460bfa25044f91c694477363" kindref="member">connInitialMaxTxOctets</ref><sp/>=<sp/>le_data_length.<ref refid="structll__data__pdu__length_1a84273369d3b40891ecbd52ba584b7e32" kindref="member">supportedMaxTxOctets</ref>;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>log_info(&quot;connInitialMaxTxOctets<sp/>:<sp/>%x&quot;,<sp/>le_data_length.connInitialMaxTxOctets);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>le_data_length.<ref refid="structll__data__pdu__length_1aee66eff5934f2d2516f77359e0f48ca2" kindref="member">connInitialMaxTxTime</ref><sp/>=</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(le_data_length.<ref refid="structll__data__pdu__length_1a869c2fe4781b2d62e9571fee9acd3792" kindref="member">suggestedMaxTxTime</ref>)<sp/>?</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>le_data_length.suggestedMaxTxTime<sp/>:<sp/>328;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>le_data_length.<ref refid="structll__data__pdu__length_1a869c2fe4781b2d62e9571fee9acd3792" kindref="member">suggestedMaxTxTime</ref><sp/>:<sp/>le_data_length.<ref refid="structll__data__pdu__length_1a49550e7c3952f13ccc68766acb745bd7" kindref="member">supportedMaxTxTime</ref>;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>if<sp/>(<ref refid="ll__data__extension_8c_1a8f9e11093c712fb5ce2ad21eff478912" kindref="member">LL_TXMAXTIME_IS_EXCEED</ref>(le_data_length.<ref refid="structll__data__pdu__length_1aee66eff5934f2d2516f77359e0f48ca2" kindref="member">connInitialMaxTxTime</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>le_data_length.<ref refid="structll__data__pdu__length_1aee66eff5934f2d2516f77359e0f48ca2" kindref="member">connInitialMaxTxTime</ref><sp/>=<sp/>le_data_length.<ref refid="structll__data__pdu__length_1a49550e7c3952f13ccc68766acb745bd7" kindref="member">supportedMaxTxTime</ref>;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(LE_FEATURES_IS_SUPPORT(LE_DATA_PACKET_LENGTH_EXTENSION))<sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSERT(HW_DATA_PDU_TX_SIZE<sp/>&gt;<sp/>27,<sp/></highlight><highlight class="stringliteral">&quot;Core<sp/>version<sp/>&amp;<sp/>Data<sp/>length<sp/>feature<sp/>No<sp/>Match&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__data__extension_8c_1a9a0f0b43c13271a2d886b3182f27cf2d" kindref="member">link_data_extension_init</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structle__link" kindref="compound">le_link</ref><sp/>*link)</highlight></codeline>
+<codeline lineno="115"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//local</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>link-&gt;<ref refid="structle__link_1aaae575da78dd226d0a35d6765af60788" kindref="member">pdu_len</ref>.<ref refid="structdata__length_1ae1e6159e577c5a4284ae0efb19e58f2d" kindref="member">connMaxTxOctets</ref><sp/>=<sp/>le_data_length.<ref refid="structll__data__pdu__length_1a261c9e1a460bfa25044f91c694477363" kindref="member">connInitialMaxTxOctets</ref>;<sp/></highlight><highlight class="comment">//should<sp/>be<sp/>27</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>link-&gt;pdu_len.connMaxRxOctets<sp/>=<sp/>27;<sp/>//chosen<sp/>by<sp/>the<sp/>Controller<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>link-&gt;<ref refid="structle__link_1aaae575da78dd226d0a35d6765af60788" kindref="member">pdu_len</ref>.<ref refid="structdata__length_1a395ee13e4ab5c53e94eb2bb28b8e509e" kindref="member">connMaxRxOctets</ref><sp/>=<sp/>le_data_length.<ref refid="structll__data__pdu__length_1a9e1285ea1a9ce7b2123a2c3cdd1766f5" kindref="member">supportedMaxRxOctets</ref>;<sp/></highlight><highlight class="comment">//chosen<sp/>by<sp/>the<sp/>Controller</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>link-&gt;<ref refid="structle__link_1aaae575da78dd226d0a35d6765af60788" kindref="member">pdu_len</ref>.<ref refid="structdata__length_1af407e8fff10623b5a5a3adeb12f16fdd" kindref="member">connMaxTxTime</ref><sp/>=<sp/>le_data_length.<ref refid="structll__data__pdu__length_1aee66eff5934f2d2516f77359e0f48ca2" kindref="member">connInitialMaxTxTime</ref>;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>link-&gt;pdu_len.connMaxRxTime<sp/>=<sp/>328;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>link-&gt;<ref refid="structle__link_1aaae575da78dd226d0a35d6765af60788" kindref="member">pdu_len</ref>.<ref refid="structdata__length_1a82da312d21fce630c01b0c02d6dacff8" kindref="member">connMaxRxTime</ref><sp/>=<sp/>le_data_length.<ref refid="structll__data__pdu__length_1aebff7b6d016c0cdb6fc9c47178238837" kindref="member">supportedMaxRxTime</ref>;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//connRemoteMaxTxOctets<sp/>&amp;<sp/>connRemoteMaxRxOctets<sp/>shall<sp/>be<sp/>27</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>link-&gt;<ref refid="structle__link_1aaae575da78dd226d0a35d6765af60788" kindref="member">pdu_len</ref>.<ref refid="structdata__length_1a285243feaf1b3c79126f8c4893d8b2a3" kindref="member">connRemoteMaxTxOctets</ref><sp/>=<sp/>BLE_HW_MIN_TX_OCTETS;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>link-&gt;<ref refid="structle__link_1aaae575da78dd226d0a35d6765af60788" kindref="member">pdu_len</ref>.<ref refid="structdata__length_1a39ebc4f1ef5fb0cc014417fa139c9d0d" kindref="member">connRemoteMaxRxOctets</ref><sp/>=<sp/>BLE_HW_MIN_RX_OCTETS;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//connRemoteMaxTxTime<sp/>&amp;<sp/>connRemoteMaxRxTime<sp/>shall<sp/>be<sp/>328</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>link-&gt;<ref refid="structle__link_1aaae575da78dd226d0a35d6765af60788" kindref="member">pdu_len</ref>.<ref refid="structdata__length_1acd3492b0af1425215d1ef722b4c4fd03" kindref="member">connRemoteMaxTxTime</ref><sp/>=<sp/><ref refid="ll__defines_8h_1ac4af7b7399fd59dc3ba792352aa48cb6" kindref="member">LL_MAX_DATA_TIME_MIN</ref>;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>link-&gt;<ref refid="structle__link_1aaae575da78dd226d0a35d6765af60788" kindref="member">pdu_len</ref>.<ref refid="structdata__length_1a837a73fb4f535d05ec15af39686fc2e4" kindref="member">connRemoteMaxRxTime</ref><sp/>=<sp/><ref refid="ll__defines_8h_1ac4af7b7399fd59dc3ba792352aa48cb6" kindref="member">LL_MAX_DATA_TIME_MIN</ref>;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__data__extension_8c_1a3dafff497d1ab65df8017609d1be643b" kindref="member">ll_set_effective_data_args</ref>(link);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_data_extension.c"/>
+  </compounddef>
+</doxygen>

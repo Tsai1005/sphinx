@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structlink__task__ops" kind="struct" language="C++" prot="public">
+    <compoundname>link_task_ops</compoundname>
+    <includes refid="link__task_8h" local="no">link_task.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlink__task__ops_1ab11baafadfa5a047c4029137f84bcf47" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* link_task_ops::resume) (struct link_task *)</definition>
+        <argsstring>)(struct link_task *)</argsstring>
+        <name>resume</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_task.h" line="39" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_task.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__task__ops_1a07a83ce83dc63a220f630ec5da4425c6" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* link_task_ops::suspend) (struct link_task *)</definition>
+        <argsstring>)(struct link_task *)</argsstring>
+        <name>suspend</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_task.h" line="40" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_task.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_task.h" line="38" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/link_task.h" bodystart="38" bodyend="41"/>
+    <listofallmembers>
+      <member refid="structlink__task__ops_1ab11baafadfa5a047c4029137f84bcf47" prot="public" virt="non-virtual"><scope>link_task_ops</scope><name>resume</name></member>
+      <member refid="structlink__task__ops_1a07a83ce83dc63a220f630ec5da4425c6" prot="public" virt="non-virtual"><scope>link_task_ops</scope><name>suspend</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

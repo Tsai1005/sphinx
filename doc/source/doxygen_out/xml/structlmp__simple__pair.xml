@@ -1,0 +1,366 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structlmp__simple__pair" kind="struct" language="C++" prot="public">
+    <compoundname>lmp_simple_pair</compoundname>
+    <includes refid="lmp_8h" local="no">lmp.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlmp__simple__pair_1a984bc408f6279f0b5fe11adf09add7c9" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_simple_pair::local_IO_Capability</definition>
+        <argsstring></argsstring>
+        <name>local_IO_Capability</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="474" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="474" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__simple__pair_1a246422ba2c4b28e38d3fa7c9814993c7" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_simple_pair::local_OOB_Data_Present</definition>
+        <argsstring></argsstring>
+        <name>local_OOB_Data_Present</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="475" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="475" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__simple__pair_1a0693d358e4204c8538f37a212cb62d7d" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_simple_pair::local_Authentication_Req</definition>
+        <argsstring></argsstring>
+        <name>local_Authentication_Req</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="476" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="476" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__simple__pair_1ab3232467dabbc26eb289265f054ec092" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_simple_pair::local_public_key_len</definition>
+        <argsstring></argsstring>
+        <name>local_public_key_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="477" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="477" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__simple__pair_1a733a368f0e1a22ddb544271285d9253d" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_simple_pair::local_public_key[PUBLIC_KEY_SIZE]</definition>
+        <argsstring>[PUBLIC_KEY_SIZE]</argsstring>
+        <name>local_public_key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="478" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="478" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__simple__pair_1a1a45625e23b59bfbfcf477d40b94aec7" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_simple_pair::local_random_num[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>local_random_num</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="479" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="479" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__simple__pair_1a427cc5cc39935f484dc13f714a061952" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_simple_pair::local_commitment_num[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>local_commitment_num</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="480" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="480" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__simple__pair_1acba50272f6650c91bc57df5bbd52cb4e" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_simple_pair::local_ecdh_key[DH_KEY_SIZE]</definition>
+        <argsstring>[DH_KEY_SIZE]</argsstring>
+        <name>local_ecdh_key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="481" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="481" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__simple__pair_1a329ebda920c367de15a70b0bf718fd74" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_simple_pair::remote_IO_Capability</definition>
+        <argsstring></argsstring>
+        <name>remote_IO_Capability</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="483" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="483" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__simple__pair_1ae8ba9873c47a7f8b22323a377e07ddfa" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_simple_pair::remote_OOB_Data_Present</definition>
+        <argsstring></argsstring>
+        <name>remote_OOB_Data_Present</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="484" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="484" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__simple__pair_1a5d4ac73845b2c65c9f6997f633fc952a" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_simple_pair::remote_Authentication_Req</definition>
+        <argsstring></argsstring>
+        <name>remote_Authentication_Req</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="485" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="485" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__simple__pair_1a4a069b46cc44c1b9cc7796c0bdbff474" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_simple_pair::remote_public_key_len</definition>
+        <argsstring></argsstring>
+        <name>remote_public_key_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="486" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="486" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__simple__pair_1aaa9566d27d118ae177516e76666bfbc5" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_simple_pair::remote_public_key[PUBLIC_KEY_SIZE]</definition>
+        <argsstring>[PUBLIC_KEY_SIZE]</argsstring>
+        <name>remote_public_key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="487" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="487" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__simple__pair_1a8409620ef124489a06bd8d4b539ff23b" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_simple_pair::remote_random_num[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>remote_random_num</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="488" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="488" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__simple__pair_1af66e6874c198ee89c2f734949e383bea" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_simple_pair::remote_commitment_num[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>remote_commitment_num</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="489" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="489" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__simple__pair_1aa1b3dd1c2712ab1923eae7099b3f3874" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_simple_pair::encapsulated_major_type</definition>
+        <argsstring></argsstring>
+        <name>encapsulated_major_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="492" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="492" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__simple__pair_1a2e504ee61103608d813af2065b7a2c98" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_simple_pair::encapsulated_minor_type</definition>
+        <argsstring></argsstring>
+        <name>encapsulated_minor_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="493" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="493" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__simple__pair_1a7aba9af58719a8738e7d7f50c9de130c" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_simple_pair::encapsulated_playload_length</definition>
+        <argsstring></argsstring>
+        <name>encapsulated_playload_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="494" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="494" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__simple__pair_1ad19ef0a70eda514cd66c4aa32ebd695e" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_simple_pair::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="496" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="496" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__simple__pair_1aab96fcad1673018bf2b2a5080aac533e" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_simple_pair::simple_protocols</definition>
+        <argsstring></argsstring>
+        <name>simple_protocols</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="497" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="497" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__simple__pair_1a412e331a4671cefc590bf302215f0e23" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_simple_pair::passkey_cnt</definition>
+        <argsstring></argsstring>
+        <name>passkey_cnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="498" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="498" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__simple__pair_1ad9b003918d4a9ccaa3e9d15f100a325b" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_simple_pair::local_confirm</definition>
+        <argsstring></argsstring>
+        <name>local_confirm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="499" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="499" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__simple__pair_1acaa467c6dc2fcfd785116237d4e74caa" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 lmp_simple_pair::remote_confirm</definition>
+        <argsstring></argsstring>
+        <name>remote_confirm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="500" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="500" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__simple__pair_1af75d99637e9d49d232b54c423e47da63" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 lmp_simple_pair::passkey</definition>
+        <argsstring></argsstring>
+        <name>passkey</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="501" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="501" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlmp__simple__pair_1a41dabe327dd0af32103f32f2430a37b3" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* lmp_simple_pair::ecdh</definition>
+        <argsstring></argsstring>
+        <name>ecdh</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="502" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="502" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" line="473" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp.h" bodystart="473" bodyend="503"/>
+    <listofallmembers>
+      <member refid="structlmp__simple__pair_1a41dabe327dd0af32103f32f2430a37b3" prot="public" virt="non-virtual"><scope>lmp_simple_pair</scope><name>ecdh</name></member>
+      <member refid="structlmp__simple__pair_1aa1b3dd1c2712ab1923eae7099b3f3874" prot="public" virt="non-virtual"><scope>lmp_simple_pair</scope><name>encapsulated_major_type</name></member>
+      <member refid="structlmp__simple__pair_1a2e504ee61103608d813af2065b7a2c98" prot="public" virt="non-virtual"><scope>lmp_simple_pair</scope><name>encapsulated_minor_type</name></member>
+      <member refid="structlmp__simple__pair_1a7aba9af58719a8738e7d7f50c9de130c" prot="public" virt="non-virtual"><scope>lmp_simple_pair</scope><name>encapsulated_playload_length</name></member>
+      <member refid="structlmp__simple__pair_1a0693d358e4204c8538f37a212cb62d7d" prot="public" virt="non-virtual"><scope>lmp_simple_pair</scope><name>local_Authentication_Req</name></member>
+      <member refid="structlmp__simple__pair_1a427cc5cc39935f484dc13f714a061952" prot="public" virt="non-virtual"><scope>lmp_simple_pair</scope><name>local_commitment_num</name></member>
+      <member refid="structlmp__simple__pair_1ad9b003918d4a9ccaa3e9d15f100a325b" prot="public" virt="non-virtual"><scope>lmp_simple_pair</scope><name>local_confirm</name></member>
+      <member refid="structlmp__simple__pair_1acba50272f6650c91bc57df5bbd52cb4e" prot="public" virt="non-virtual"><scope>lmp_simple_pair</scope><name>local_ecdh_key</name></member>
+      <member refid="structlmp__simple__pair_1a984bc408f6279f0b5fe11adf09add7c9" prot="public" virt="non-virtual"><scope>lmp_simple_pair</scope><name>local_IO_Capability</name></member>
+      <member refid="structlmp__simple__pair_1a246422ba2c4b28e38d3fa7c9814993c7" prot="public" virt="non-virtual"><scope>lmp_simple_pair</scope><name>local_OOB_Data_Present</name></member>
+      <member refid="structlmp__simple__pair_1a733a368f0e1a22ddb544271285d9253d" prot="public" virt="non-virtual"><scope>lmp_simple_pair</scope><name>local_public_key</name></member>
+      <member refid="structlmp__simple__pair_1ab3232467dabbc26eb289265f054ec092" prot="public" virt="non-virtual"><scope>lmp_simple_pair</scope><name>local_public_key_len</name></member>
+      <member refid="structlmp__simple__pair_1a1a45625e23b59bfbfcf477d40b94aec7" prot="public" virt="non-virtual"><scope>lmp_simple_pair</scope><name>local_random_num</name></member>
+      <member refid="structlmp__simple__pair_1af75d99637e9d49d232b54c423e47da63" prot="public" virt="non-virtual"><scope>lmp_simple_pair</scope><name>passkey</name></member>
+      <member refid="structlmp__simple__pair_1a412e331a4671cefc590bf302215f0e23" prot="public" virt="non-virtual"><scope>lmp_simple_pair</scope><name>passkey_cnt</name></member>
+      <member refid="structlmp__simple__pair_1a5d4ac73845b2c65c9f6997f633fc952a" prot="public" virt="non-virtual"><scope>lmp_simple_pair</scope><name>remote_Authentication_Req</name></member>
+      <member refid="structlmp__simple__pair_1af66e6874c198ee89c2f734949e383bea" prot="public" virt="non-virtual"><scope>lmp_simple_pair</scope><name>remote_commitment_num</name></member>
+      <member refid="structlmp__simple__pair_1acaa467c6dc2fcfd785116237d4e74caa" prot="public" virt="non-virtual"><scope>lmp_simple_pair</scope><name>remote_confirm</name></member>
+      <member refid="structlmp__simple__pair_1a329ebda920c367de15a70b0bf718fd74" prot="public" virt="non-virtual"><scope>lmp_simple_pair</scope><name>remote_IO_Capability</name></member>
+      <member refid="structlmp__simple__pair_1ae8ba9873c47a7f8b22323a377e07ddfa" prot="public" virt="non-virtual"><scope>lmp_simple_pair</scope><name>remote_OOB_Data_Present</name></member>
+      <member refid="structlmp__simple__pair_1aaa9566d27d118ae177516e76666bfbc5" prot="public" virt="non-virtual"><scope>lmp_simple_pair</scope><name>remote_public_key</name></member>
+      <member refid="structlmp__simple__pair_1a4a069b46cc44c1b9cc7796c0bdbff474" prot="public" virt="non-virtual"><scope>lmp_simple_pair</scope><name>remote_public_key_len</name></member>
+      <member refid="structlmp__simple__pair_1a8409620ef124489a06bd8d4b539ff23b" prot="public" virt="non-virtual"><scope>lmp_simple_pair</scope><name>remote_random_num</name></member>
+      <member refid="structlmp__simple__pair_1aab96fcad1673018bf2b2a5080aac533e" prot="public" virt="non-virtual"><scope>lmp_simple_pair</scope><name>simple_protocols</name></member>
+      <member refid="structlmp__simple__pair_1ad19ef0a70eda514cd66c4aa32ebd695e" prot="public" virt="non-virtual"><scope>lmp_simple_pair</scope><name>state</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

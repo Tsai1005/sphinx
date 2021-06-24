@@ -1,0 +1,1803 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>JL Adapter SDK: /data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_pc.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">JL Adapter SDK
+   &#160;<span id="projectnumber">v0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_5aa4d6ccf34d88a270949875c15714e5.html">btctrler</a></li><li class="navelem"><a class="el" href="dir_16b18ce1fc07a124435f964aa38ae307.html">BLE_v2</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle">
+<div class="title">llcp_sm_pc.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;RF.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="link__layer_8h_source.html">ble/link_layer.h</a>&quot;</code><br />
+<code>#include &quot;hci_controller.h&quot;</code><br />
+<code>#include &quot;timer.h&quot;</code><br />
+<code>#include &quot;common/debug.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+llcp_sm_pc.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="llcp__sm__pc_8c__incl.png" border="0" usemap="#_2data_2bingquan_2repo_2repo__adapter_2adapter__sdk_2lib_2btctrler_2BLE__v2_2llcp__sm__pc_8c" alt=""/></div>
+<map name="_2data_2bingquan_2repo_2repo__adapter_2adapter__sdk_2lib_2btctrler_2BLE__v2_2llcp__sm__pc_8c" id="_2data_2bingquan_2repo_2repo__adapter_2adapter__sdk_2lib_2btctrler_2BLE__v2_2llcp__sm__pc_8c">
+<area shape="rect" id="node3" href="link__layer_8h.html" title="ble/link_layer.h" alt="" coords="705,124,815,151"/>
+<area shape="rect" id="node9" href="ll__defines_8h.html" title="ll_defines.h" alt="" coords="301,348,389,375"/>
+<area shape="rect" id="node10" href="white__list_8h.html" title="white_list.h" alt="" coords="5,348,93,375"/>
+<area shape="rect" id="node13" href="llcp_8h.html" title="ble/llcp.h" alt="" coords="623,273,697,300"/>
+<area shape="rect" id="node14" href="ll__adv_8h.html" title="ble/ll_adv.h" alt="" coords="1052,199,1140,225"/>
+<area shape="rect" id="node15" href="ll__scan_8h.html" title="ble/ll_scan.h" alt="" coords="1165,199,1259,225"/>
+<area shape="rect" id="node16" href="ll__init_8h.html" title="ble/ll_init.h" alt="" coords="1283,199,1367,225"/>
+<area shape="rect" id="node17" href="resolve__list_8h.html" title="resolve_list.h" alt="" coords="159,348,257,375"/>
+<area shape="rect" id="node18" href="data__extension_8h.html" title="data_extension.h" alt="" coords="745,348,866,375"/>
+<area shape="rect" id="node19" href="multiple__phys_8h.html" title="multiple_phys.h" alt="" coords="823,273,937,300"/>
+<area shape="rect" id="node20" href="ll__cte_8h.html" title="ble/ll_cte.h" alt="" coords="223,273,308,300"/>
+<area shape="rect" id="node21" href="ll__iso_8h.html" title="ble/ll_iso.h" alt="" coords="514,273,598,300"/>
+<area shape="rect" id="node23" href="ll__bis_8h.html" title="ble/ll_bis.h" alt="" coords="403,199,487,225"/>
+<area shape="rect" id="node25" href="ll__cis_8h.html" title="ble/ll_cis.h" alt="" coords="511,199,595,225"/>
+<area shape="rect" id="node26" href="ll__pc_8h.html" title="ble/ll_pc.h" alt="" coords="117,273,198,300"/>
+<area shape="rect" id="node24" href="audio__codec_8h.html" title="audio_codec.h" alt="" coords="383,273,489,300"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a6c6991cba0e2995d7d9aec73e0324317"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="llcp__sm__pc_8c.html#a6c6991cba0e2995d7d9aec73e0324317">LOG_TAG_CONST</a>&#160;&#160;&#160;LL</td></tr>
+<tr class="separator:a6c6991cba0e2995d7d9aec73e0324317"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ce0df38eb467e59f209470c8f5ac4e6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="llcp__sm__pc_8c.html#a7ce0df38eb467e59f209470c8f5ac4e6">LOG_TAG</a>&#160;&#160;&#160;&quot;[LL]&quot;</td></tr>
+<tr class="separator:a7ce0df38eb467e59f209470c8f5ac4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eeb6e067100d0dec6e53bce19a403e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="llcp__sm__pc_8c.html#a9eeb6e067100d0dec6e53bce19a403e0">LOG_ERROR_ENABLE</a></td></tr>
+<tr class="separator:a9eeb6e067100d0dec6e53bce19a403e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69321c8a2a0b07a07fb5088e82e25eb0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="llcp__sm__pc_8c.html#a69321c8a2a0b07a07fb5088e82e25eb0">LOG_INFO_ENABLE</a></td></tr>
+<tr class="separator:a69321c8a2a0b07a07fb5088e82e25eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad223350d80db21fa8b721107cd1f6442"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="llcp__sm__pc_8c.html#ad223350d80db21fa8b721107cd1f6442">__this</a>&#160;&#160;&#160;(&amp;<a class="el" href="link__layer_8h.html#a11d5b1c8b0def0c238d4700650780724">ll_hdl</a>)</td></tr>
+<tr class="separator:ad223350d80db21fa8b721107cd1f6442"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a6762ea903944e781d742e1cd58f942bd"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="llcp__sm__pc_8c.html#a6762ea903944e781d742e1cd58f942bd">ll_power_change_ind_callback_t</a>) (struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *link, uint8_t phy_idx, int8_t delta, int8_t tx_power, <a class="el" href="ll__defines_8h.html#a3e11e866bc6d82a804a0ee4740a3a470">bool_t</a> phy_update)</td></tr>
+<tr class="memdesc:a6762ea903944e781d742e1cd58f942bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Power Change ind callback.  <a href="#a6762ea903944e781d742e1cd58f942bd">更多...</a><br /></td></tr>
+<tr class="separator:a6762ea903944e781d742e1cd58f942bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:aa63e7a6b1874a62cf685a316f9ffe6ee"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="llcp__sm__pc_8c.html#aa63e7a6b1874a62cf685a316f9ffe6ee">llcp_sm_event_t</a> { <br />
+&#160;&#160;<a class="el" href="llcp__sm__bis_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea718744bd4ac0cec8e71ee3df2e4f1609">LLCP_SM_EVENT_HOST_START</a> = 0, 
+<a class="el" href="llcp__sm__bis_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeaa57583355b36370859c0f1107ef2b515">LLCP_SM_EVENT_AUTO_START</a>, 
+<a class="el" href="llcp__sm__bis_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeae12e3d0a407b7fc7f3b6f9f2be7cfc88">LLCP_SM_EVENT_SEND_REQ</a>, 
+<a class="el" href="llcp__sm__bis_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea5d578d2cf3bc31268cec4b45b7645a8a">LLCP_SM_EVENT_SEND_RSP</a>, 
+<br />
+&#160;&#160;<a class="el" href="llcp__sm__bis_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeab66579e50d781dffd52ec1fdd6a2ee75">LLCP_SM_EVENT_RECV_REQ</a>, 
+<a class="el" href="llcp__sm__bis_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea1dd1bbc7e386e1517cd1e77bf72dbafd">LLCP_SM_EVENT_RECV_RSP</a>, 
+<a class="el" href="llcp__sm__bis_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea7a50b69b1bfbc78456e86fb414f08b5a">LLCP_SM_EVENT_TIMEOUT</a>, 
+<a class="el" href="llcp__sm__bis_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea6ce62da3847c66460716cf7d33166018">LLCP_SM_EVENT_FAILED</a>, 
+<br />
+&#160;&#160;<a class="el" href="llcp__sm__bis_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeaf684402339c4ab620e948a0f38fc35e0">LLCP_SM_EVENT_SUCCESS</a>, 
+<a class="el" href="llcp__sm__bis_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeaba5f8be5cca9b09c3254db7110bfbc0f">LLCP_SM_EVENT_INVALID</a> = 0xff, 
+<a class="el" href="llcp__sm__cis_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea718744bd4ac0cec8e71ee3df2e4f1609">LLCP_SM_EVENT_HOST_START</a> = 0, 
+<a class="el" href="llcp__sm__cis_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeaa57583355b36370859c0f1107ef2b515">LLCP_SM_EVENT_AUTO_START</a>, 
+<br />
+&#160;&#160;<a class="el" href="llcp__sm__cis_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeae12e3d0a407b7fc7f3b6f9f2be7cfc88">LLCP_SM_EVENT_SEND_REQ</a>, 
+<a class="el" href="llcp__sm__cis_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea5d578d2cf3bc31268cec4b45b7645a8a">LLCP_SM_EVENT_SEND_RSP</a>, 
+<a class="el" href="llcp__sm__cis_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeab66579e50d781dffd52ec1fdd6a2ee75">LLCP_SM_EVENT_RECV_REQ</a>, 
+<a class="el" href="llcp__sm__cis_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea1dd1bbc7e386e1517cd1e77bf72dbafd">LLCP_SM_EVENT_RECV_RSP</a>, 
+<br />
+&#160;&#160;<a class="el" href="llcp__sm__cis_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeae76d5df39de6113cd664e3f7499d5bde">LLCP_SM_EVENT_SEND_IND</a>, 
+<a class="el" href="llcp__sm__cis_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea97e48ba6da08ae0ae39ed88959722c9e">LLCP_SM_EVENT_RECV_IND</a>, 
+<a class="el" href="llcp__sm__cis_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea3ce76c05ec12cfe644773e8901ae71fc">LLCP_SM_EVENT_SEND_REJ</a>, 
+<a class="el" href="llcp__sm__cis_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea7a50b69b1bfbc78456e86fb414f08b5a">LLCP_SM_EVENT_TIMEOUT</a>, 
+<br />
+&#160;&#160;<a class="el" href="llcp__sm__cis_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea6ce62da3847c66460716cf7d33166018">LLCP_SM_EVENT_FAILED</a>, 
+<a class="el" href="llcp__sm__cis_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeaf684402339c4ab620e948a0f38fc35e0">LLCP_SM_EVENT_SUCCESS</a>, 
+<a class="el" href="llcp__sm__cis_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeaba5f8be5cca9b09c3254db7110bfbc0f">LLCP_SM_EVENT_INVALID</a> = 0xff, 
+<a class="el" href="llcp__sm__cis__terminate_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea718744bd4ac0cec8e71ee3df2e4f1609">LLCP_SM_EVENT_HOST_START</a> = 0, 
+<br />
+&#160;&#160;<a class="el" href="llcp__sm__cis__terminate_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeaa57583355b36370859c0f1107ef2b515">LLCP_SM_EVENT_AUTO_START</a>, 
+<a class="el" href="llcp__sm__cis__terminate_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeae76d5df39de6113cd664e3f7499d5bde">LLCP_SM_EVENT_SEND_IND</a>, 
+<a class="el" href="llcp__sm__cis__terminate_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea97e48ba6da08ae0ae39ed88959722c9e">LLCP_SM_EVENT_RECV_IND</a>, 
+<a class="el" href="llcp__sm__cis__terminate_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea7a50b69b1bfbc78456e86fb414f08b5a">LLCP_SM_EVENT_TIMEOUT</a>, 
+<br />
+&#160;&#160;<a class="el" href="llcp__sm__cis__terminate_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea6ce62da3847c66460716cf7d33166018">LLCP_SM_EVENT_FAILED</a>, 
+<a class="el" href="llcp__sm__cis__terminate_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeaf684402339c4ab620e948a0f38fc35e0">LLCP_SM_EVENT_SUCCESS</a>, 
+<a class="el" href="llcp__sm__cis__terminate_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeaba5f8be5cca9b09c3254db7110bfbc0f">LLCP_SM_EVENT_INVALID</a> = 0xff, 
+<a class="el" href="llcp__sm__common_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea718744bd4ac0cec8e71ee3df2e4f1609">LLCP_SM_EVENT_HOST_START</a> = 0, 
+<br />
+&#160;&#160;<a class="el" href="llcp__sm__common_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeaa57583355b36370859c0f1107ef2b515">LLCP_SM_EVENT_AUTO_START</a>, 
+<a class="el" href="llcp__sm__common_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeae12e3d0a407b7fc7f3b6f9f2be7cfc88">LLCP_SM_EVENT_SEND_REQ</a>, 
+<a class="el" href="llcp__sm__common_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeab66579e50d781dffd52ec1fdd6a2ee75">LLCP_SM_EVENT_RECV_REQ</a>, 
+<a class="el" href="llcp__sm__common_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea5d578d2cf3bc31268cec4b45b7645a8a">LLCP_SM_EVENT_SEND_RSP</a>, 
+<br />
+&#160;&#160;<a class="el" href="llcp__sm__common_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea1dd1bbc7e386e1517cd1e77bf72dbafd">LLCP_SM_EVENT_RECV_RSP</a>, 
+<a class="el" href="llcp__sm__common_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeae76d5df39de6113cd664e3f7499d5bde">LLCP_SM_EVENT_SEND_IND</a>, 
+<a class="el" href="llcp__sm__common_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea97e48ba6da08ae0ae39ed88959722c9e">LLCP_SM_EVENT_RECV_IND</a>, 
+<a class="el" href="llcp__sm__common_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea3ce76c05ec12cfe644773e8901ae71fc">LLCP_SM_EVENT_SEND_REJ</a>, 
+<br />
+&#160;&#160;<a class="el" href="llcp__sm__common_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeab3d9d3b778657b855d5c4cc861d0e16e">LLCP_SM_EVENT_RECV_REJ</a>, 
+<a class="el" href="llcp__sm__common_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea5eec7dcaa9f1ff66745758fe46626f20">LLCP_SM_EVENT_UPDATE</a>, 
+<a class="el" href="llcp__sm__common_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea7a50b69b1bfbc78456e86fb414f08b5a">LLCP_SM_EVENT_TIMEOUT</a>, 
+<a class="el" href="llcp__sm__common_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea6ce62da3847c66460716cf7d33166018">LLCP_SM_EVENT_FAILED</a>, 
+<br />
+&#160;&#160;<a class="el" href="llcp__sm__common_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeaf684402339c4ab620e948a0f38fc35e0">LLCP_SM_EVENT_SUCCESS</a>, 
+<a class="el" href="llcp__sm__common_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeaba5f8be5cca9b09c3254db7110bfbc0f">LLCP_SM_EVENT_INVALID</a> = 0xff, 
+<a class="el" href="llcp__sm__conn__update_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea718744bd4ac0cec8e71ee3df2e4f1609">LLCP_SM_EVENT_HOST_START</a> = 0, 
+<a class="el" href="llcp__sm__conn__update_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeaa57583355b36370859c0f1107ef2b515">LLCP_SM_EVENT_AUTO_START</a>, 
+<br />
+&#160;&#160;<a class="el" href="llcp__sm__conn__update_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeae12e3d0a407b7fc7f3b6f9f2be7cfc88">LLCP_SM_EVENT_SEND_REQ</a>, 
+<a class="el" href="llcp__sm__conn__update_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea5d578d2cf3bc31268cec4b45b7645a8a">LLCP_SM_EVENT_SEND_RSP</a>, 
+<a class="el" href="llcp__sm__conn__update_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeab66579e50d781dffd52ec1fdd6a2ee75">LLCP_SM_EVENT_RECV_REQ</a>, 
+<a class="el" href="llcp__sm__conn__update_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea1dd1bbc7e386e1517cd1e77bf72dbafd">LLCP_SM_EVENT_RECV_RSP</a>, 
+<br />
+&#160;&#160;<a class="el" href="llcp__sm__conn__update_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeae76d5df39de6113cd664e3f7499d5bde">LLCP_SM_EVENT_SEND_IND</a>, 
+<a class="el" href="llcp__sm__conn__update_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea97e48ba6da08ae0ae39ed88959722c9e">LLCP_SM_EVENT_RECV_IND</a>, 
+<a class="el" href="llcp__sm__conn__update_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea3ce76c05ec12cfe644773e8901ae71fc">LLCP_SM_EVENT_SEND_REJ</a>, 
+<a class="el" href="llcp__sm__conn__update_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeab3d9d3b778657b855d5c4cc861d0e16e">LLCP_SM_EVENT_RECV_REJ</a>, 
+<br />
+&#160;&#160;<a class="el" href="llcp__sm__conn__update_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea5eec7dcaa9f1ff66745758fe46626f20">LLCP_SM_EVENT_UPDATE</a>, 
+<a class="el" href="llcp__sm__conn__update_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea7a50b69b1bfbc78456e86fb414f08b5a">LLCP_SM_EVENT_TIMEOUT</a>, 
+<a class="el" href="llcp__sm__conn__update_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea6ce62da3847c66460716cf7d33166018">LLCP_SM_EVENT_FAILED</a>, 
+<a class="el" href="llcp__sm__conn__update_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeaf684402339c4ab620e948a0f38fc35e0">LLCP_SM_EVENT_SUCCESS</a>, 
+<br />
+&#160;&#160;<a class="el" href="llcp__sm__conn__update_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeaba5f8be5cca9b09c3254db7110bfbc0f">LLCP_SM_EVENT_INVALID</a> = 0xff, 
+<a class="el" href="llcp__sm__cte_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea718744bd4ac0cec8e71ee3df2e4f1609">LLCP_SM_EVENT_HOST_START</a> = 0, 
+<a class="el" href="llcp__sm__cte_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeaa57583355b36370859c0f1107ef2b515">LLCP_SM_EVENT_AUTO_START</a>, 
+<a class="el" href="llcp__sm__cte_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeae12e3d0a407b7fc7f3b6f9f2be7cfc88">LLCP_SM_EVENT_SEND_REQ</a>, 
+<br />
+&#160;&#160;<a class="el" href="llcp__sm__cte_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea5d578d2cf3bc31268cec4b45b7645a8a">LLCP_SM_EVENT_SEND_RSP</a>, 
+<a class="el" href="llcp__sm__cte_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeab66579e50d781dffd52ec1fdd6a2ee75">LLCP_SM_EVENT_RECV_REQ</a>, 
+<a class="el" href="llcp__sm__cte_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea1dd1bbc7e386e1517cd1e77bf72dbafd">LLCP_SM_EVENT_RECV_RSP</a>, 
+<a class="el" href="llcp__sm__cte_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea3ce76c05ec12cfe644773e8901ae71fc">LLCP_SM_EVENT_SEND_REJ</a>, 
+<br />
+&#160;&#160;<a class="el" href="llcp__sm__cte_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeab3d9d3b778657b855d5c4cc861d0e16e">LLCP_SM_EVENT_RECV_REJ</a>, 
+<a class="el" href="llcp__sm__cte_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea7a50b69b1bfbc78456e86fb414f08b5a">LLCP_SM_EVENT_TIMEOUT</a>, 
+<a class="el" href="llcp__sm__cte_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea6ce62da3847c66460716cf7d33166018">LLCP_SM_EVENT_FAILED</a>, 
+<a class="el" href="llcp__sm__cte_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeaf684402339c4ab620e948a0f38fc35e0">LLCP_SM_EVENT_SUCCESS</a>, 
+<br />
+&#160;&#160;<a class="el" href="llcp__sm__cte_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeaba5f8be5cca9b09c3254db7110bfbc0f">LLCP_SM_EVENT_INVALID</a> = 0xff, 
+<a class="el" href="llcp__sm__data__extension_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea718744bd4ac0cec8e71ee3df2e4f1609">LLCP_SM_EVENT_HOST_START</a> = 0, 
+<a class="el" href="llcp__sm__data__extension_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeaa57583355b36370859c0f1107ef2b515">LLCP_SM_EVENT_AUTO_START</a>, 
+<a class="el" href="llcp__sm__data__extension_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeae12e3d0a407b7fc7f3b6f9f2be7cfc88">LLCP_SM_EVENT_SEND_REQ</a>, 
+<br />
+&#160;&#160;<a class="el" href="llcp__sm__data__extension_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeab66579e50d781dffd52ec1fdd6a2ee75">LLCP_SM_EVENT_RECV_REQ</a>, 
+<a class="el" href="llcp__sm__data__extension_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea5d578d2cf3bc31268cec4b45b7645a8a">LLCP_SM_EVENT_SEND_RSP</a>, 
+<a class="el" href="llcp__sm__data__extension_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea1dd1bbc7e386e1517cd1e77bf72dbafd">LLCP_SM_EVENT_RECV_RSP</a>, 
+<a class="el" href="llcp__sm__data__extension_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea6ce62da3847c66460716cf7d33166018">LLCP_SM_EVENT_FAILED</a>, 
+<br />
+&#160;&#160;<a class="el" href="llcp__sm__data__extension_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea7a50b69b1bfbc78456e86fb414f08b5a">LLCP_SM_EVENT_TIMEOUT</a>, 
+<a class="el" href="llcp__sm__data__extension_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeaf684402339c4ab620e948a0f38fc35e0">LLCP_SM_EVENT_SUCCESS</a>, 
+<a class="el" href="llcp__sm__data__extension_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeaba5f8be5cca9b09c3254db7110bfbc0f">LLCP_SM_EVENT_INVALID</a> = 0xff, 
+<a class="el" href="llcp__sm__encrypt_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea718744bd4ac0cec8e71ee3df2e4f1609">LLCP_SM_EVENT_HOST_START</a>, 
+<br />
+&#160;&#160;<a class="el" href="llcp__sm__encrypt_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeaa57583355b36370859c0f1107ef2b515">LLCP_SM_EVENT_AUTO_START</a>, 
+<a class="el" href="llcp__sm__encrypt_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea49e54582e022509280eace66aee7e4e0">LLCP_SM_EVENT_SEND_REJECT</a>, 
+<a class="el" href="llcp__sm__encrypt_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeabb57644496baad66b3df57454f737591">LLCP_SM_EVENT_SEND_PAUSE_ENC_REQ</a>, 
+<a class="el" href="llcp__sm__encrypt_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea093e3bdc92ca3dbdbcdd72012a199ebe">LLCP_SM_EVENT_RECV_PAUSE_ENC_REQ</a>, 
+<br />
+&#160;&#160;<a class="el" href="llcp__sm__encrypt_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea06aca461e7f5bba09d52926a83bdd7ad">LLCP_SM_EVENT_SEND_PAUSE_ENC_RSP</a>, 
+<a class="el" href="llcp__sm__encrypt_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea4f746d0e7a25f4d66d8579eb6f105154">LLCP_SM_EVENT_RECV_PAUSE_ENC_RSP</a>, 
+<a class="el" href="llcp__sm__encrypt_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea5c9db095750548134f60e8b742e651bf">LLCP_SM_EVENT_SEND_ENC_REQ</a>, 
+<a class="el" href="llcp__sm__encrypt_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea1b1928e87121e1d02b9c942ccb2d2663">LLCP_SM_EVENT_RECV_ENC_REQ</a>, 
+<br />
+&#160;&#160;<a class="el" href="llcp__sm__encrypt_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea91a3beaf2e546bcd392b9f930b0ac7f6">LLCP_SM_EVENT_SEND_ENC_RSP</a>, 
+<a class="el" href="llcp__sm__encrypt_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea816b8e594a8715574175e8e881b3ea12">LLCP_SM_EVENT_RECV_ENC_RSP</a>, 
+<a class="el" href="llcp__sm__encrypt_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea1aefdc21e0bc02556da80d283e8d4883">LLCP_SM_EVENT_SEND_START_ENC_REQ</a>, 
+<a class="el" href="llcp__sm__encrypt_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea3154f4dcb63c58793aee167034eab15d">LLCP_SM_EVENT_RECV_START_ENC_REQ</a>, 
+<br />
+&#160;&#160;<a class="el" href="llcp__sm__encrypt_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea5a3108b5540a558889ede171e9e97508">LLCP_SM_EVENT_SEND_START_ENC_RSP</a>, 
+<a class="el" href="llcp__sm__encrypt_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea5336f46799737790882ebee303c0c7cb">LLCP_SM_EVENT_RECV_START_ENC_RSP</a>, 
+<a class="el" href="llcp__sm__encrypt_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea7a50b69b1bfbc78456e86fb414f08b5a">LLCP_SM_EVENT_TIMEOUT</a>, 
+<a class="el" href="llcp__sm__encrypt_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea6ce62da3847c66460716cf7d33166018">LLCP_SM_EVENT_FAILED</a>, 
+<br />
+&#160;&#160;<a class="el" href="llcp__sm__encrypt_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeaf684402339c4ab620e948a0f38fc35e0">LLCP_SM_EVENT_SUCCESS</a>, 
+<a class="el" href="llcp__sm__encrypt_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeaba5f8be5cca9b09c3254db7110bfbc0f">LLCP_SM_EVENT_INVALID</a> = 0xff, 
+<a class="el" href="llcp__sm__pc_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea718744bd4ac0cec8e71ee3df2e4f1609">LLCP_SM_EVENT_HOST_START</a> = 0, 
+<a class="el" href="llcp__sm__pc_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeaa57583355b36370859c0f1107ef2b515">LLCP_SM_EVENT_AUTO_START</a>, 
+<br />
+&#160;&#160;<a class="el" href="llcp__sm__pc_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeae12e3d0a407b7fc7f3b6f9f2be7cfc88">LLCP_SM_EVENT_SEND_REQ</a>, 
+<a class="el" href="llcp__sm__pc_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeab66579e50d781dffd52ec1fdd6a2ee75">LLCP_SM_EVENT_RECV_REQ</a>, 
+<a class="el" href="llcp__sm__pc_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea5d578d2cf3bc31268cec4b45b7645a8a">LLCP_SM_EVENT_SEND_RSP</a>, 
+<a class="el" href="llcp__sm__pc_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea1dd1bbc7e386e1517cd1e77bf72dbafd">LLCP_SM_EVENT_RECV_RSP</a>, 
+<br />
+&#160;&#160;<a class="el" href="llcp__sm__pc_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeae76d5df39de6113cd664e3f7499d5bde">LLCP_SM_EVENT_SEND_IND</a>, 
+<a class="el" href="llcp__sm__pc_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea97e48ba6da08ae0ae39ed88959722c9e">LLCP_SM_EVENT_RECV_IND</a>, 
+<a class="el" href="llcp__sm__pc_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea7a50b69b1bfbc78456e86fb414f08b5a">LLCP_SM_EVENT_TIMEOUT</a>, 
+<a class="el" href="llcp__sm__pc_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea6ce62da3847c66460716cf7d33166018">LLCP_SM_EVENT_FAILED</a>, 
+<br />
+&#160;&#160;<a class="el" href="llcp__sm__pc_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeaf684402339c4ab620e948a0f38fc35e0">LLCP_SM_EVENT_SUCCESS</a>, 
+<a class="el" href="llcp__sm__pc_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeaba5f8be5cca9b09c3254db7110bfbc0f">LLCP_SM_EVENT_INVALID</a> = 0xff, 
+<a class="el" href="llcp__sm__phy__update_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea718744bd4ac0cec8e71ee3df2e4f1609">LLCP_SM_EVENT_HOST_START</a> = 0, 
+<a class="el" href="llcp__sm__phy__update_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeaa57583355b36370859c0f1107ef2b515">LLCP_SM_EVENT_AUTO_START</a>, 
+<br />
+&#160;&#160;<a class="el" href="llcp__sm__phy__update_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeae12e3d0a407b7fc7f3b6f9f2be7cfc88">LLCP_SM_EVENT_SEND_REQ</a>, 
+<a class="el" href="llcp__sm__phy__update_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeab66579e50d781dffd52ec1fdd6a2ee75">LLCP_SM_EVENT_RECV_REQ</a>, 
+<a class="el" href="llcp__sm__phy__update_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea5d578d2cf3bc31268cec4b45b7645a8a">LLCP_SM_EVENT_SEND_RSP</a>, 
+<a class="el" href="llcp__sm__phy__update_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea1dd1bbc7e386e1517cd1e77bf72dbafd">LLCP_SM_EVENT_RECV_RSP</a>, 
+<br />
+&#160;&#160;<a class="el" href="llcp__sm__phy__update_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeae76d5df39de6113cd664e3f7499d5bde">LLCP_SM_EVENT_SEND_IND</a>, 
+<a class="el" href="llcp__sm__phy__update_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea97e48ba6da08ae0ae39ed88959722c9e">LLCP_SM_EVENT_RECV_IND</a>, 
+<a class="el" href="llcp__sm__phy__update_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea5eec7dcaa9f1ff66745758fe46626f20">LLCP_SM_EVENT_UPDATE</a>, 
+<a class="el" href="llcp__sm__phy__update_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea7a50b69b1bfbc78456e86fb414f08b5a">LLCP_SM_EVENT_TIMEOUT</a>, 
+<br />
+&#160;&#160;<a class="el" href="llcp__sm__phy__update_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea6ce62da3847c66460716cf7d33166018">LLCP_SM_EVENT_FAILED</a>, 
+<a class="el" href="llcp__sm__phy__update_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeaf684402339c4ab620e948a0f38fc35e0">LLCP_SM_EVENT_SUCCESS</a>, 
+<a class="el" href="llcp__sm__phy__update_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeacc9b14aa6ef4d02c8ec04f8af956f11e">LLCP_SM_EVENT_COMPLETE</a>, 
+<a class="el" href="llcp__sm__phy__update_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeaba5f8be5cca9b09c3254db7110bfbc0f">LLCP_SM_EVENT_INVALID</a> = 0xff, 
+<br />
+&#160;&#160;<a class="el" href="llcp__sm__ping_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea718744bd4ac0cec8e71ee3df2e4f1609">LLCP_SM_EVENT_HOST_START</a> = 0, 
+<a class="el" href="llcp__sm__ping_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeaa57583355b36370859c0f1107ef2b515">LLCP_SM_EVENT_AUTO_START</a>, 
+<a class="el" href="llcp__sm__ping_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeae12e3d0a407b7fc7f3b6f9f2be7cfc88">LLCP_SM_EVENT_SEND_REQ</a>, 
+<a class="el" href="llcp__sm__ping_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeab66579e50d781dffd52ec1fdd6a2ee75">LLCP_SM_EVENT_RECV_REQ</a>, 
+<br />
+&#160;&#160;<a class="el" href="llcp__sm__ping_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea5d578d2cf3bc31268cec4b45b7645a8a">LLCP_SM_EVENT_SEND_RSP</a>, 
+<a class="el" href="llcp__sm__ping_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea1dd1bbc7e386e1517cd1e77bf72dbafd">LLCP_SM_EVENT_RECV_RSP</a>, 
+<a class="el" href="llcp__sm__ping_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea7a50b69b1bfbc78456e86fb414f08b5a">LLCP_SM_EVENT_TIMEOUT</a>, 
+<a class="el" href="llcp__sm__ping_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea6ce62da3847c66460716cf7d33166018">LLCP_SM_EVENT_FAILED</a>, 
+<br />
+&#160;&#160;<a class="el" href="llcp__sm__ping_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeaf684402339c4ab620e948a0f38fc35e0">LLCP_SM_EVENT_SUCCESS</a>, 
+<a class="el" href="llcp__sm__ping_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeaba5f8be5cca9b09c3254db7110bfbc0f">LLCP_SM_EVENT_INVALID</a> = 0xff, 
+<a class="el" href="llcp__sm__sca_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea718744bd4ac0cec8e71ee3df2e4f1609">LLCP_SM_EVENT_HOST_START</a> = 0, 
+<a class="el" href="llcp__sm__sca_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeaa57583355b36370859c0f1107ef2b515">LLCP_SM_EVENT_AUTO_START</a>, 
+<br />
+&#160;&#160;<a class="el" href="llcp__sm__sca_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeae12e3d0a407b7fc7f3b6f9f2be7cfc88">LLCP_SM_EVENT_SEND_REQ</a>, 
+<a class="el" href="llcp__sm__sca_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeab66579e50d781dffd52ec1fdd6a2ee75">LLCP_SM_EVENT_RECV_REQ</a>, 
+<a class="el" href="llcp__sm__sca_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea5d578d2cf3bc31268cec4b45b7645a8a">LLCP_SM_EVENT_SEND_RSP</a>, 
+<a class="el" href="llcp__sm__sca_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea1dd1bbc7e386e1517cd1e77bf72dbafd">LLCP_SM_EVENT_RECV_RSP</a>, 
+<br />
+&#160;&#160;<a class="el" href="llcp__sm__sca_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea7a50b69b1bfbc78456e86fb414f08b5a">LLCP_SM_EVENT_TIMEOUT</a>, 
+<a class="el" href="llcp__sm__sca_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea6ce62da3847c66460716cf7d33166018">LLCP_SM_EVENT_FAILED</a>, 
+<a class="el" href="llcp__sm__sca_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeaf684402339c4ab620e948a0f38fc35e0">LLCP_SM_EVENT_SUCCESS</a>, 
+<a class="el" href="llcp__sm__sca_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeaba5f8be5cca9b09c3254db7110bfbc0f">LLCP_SM_EVENT_INVALID</a> = 0xff, 
+<br />
+&#160;&#160;<a class="el" href="llcp__sm__template_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea718744bd4ac0cec8e71ee3df2e4f1609">LLCP_SM_EVENT_HOST_START</a> = 0, 
+<a class="el" href="llcp__sm__template_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeaa57583355b36370859c0f1107ef2b515">LLCP_SM_EVENT_AUTO_START</a>, 
+<a class="el" href="llcp__sm__template_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeae12e3d0a407b7fc7f3b6f9f2be7cfc88">LLCP_SM_EVENT_SEND_REQ</a>, 
+<a class="el" href="llcp__sm__template_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea5d578d2cf3bc31268cec4b45b7645a8a">LLCP_SM_EVENT_SEND_RSP</a>, 
+<br />
+&#160;&#160;<a class="el" href="llcp__sm__template_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeab66579e50d781dffd52ec1fdd6a2ee75">LLCP_SM_EVENT_RECV_REQ</a>, 
+<a class="el" href="llcp__sm__template_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea1dd1bbc7e386e1517cd1e77bf72dbafd">LLCP_SM_EVENT_RECV_RSP</a>, 
+<a class="el" href="llcp__sm__template_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea7a50b69b1bfbc78456e86fb414f08b5a">LLCP_SM_EVENT_TIMEOUT</a>, 
+<a class="el" href="llcp__sm__template_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eea6ce62da3847c66460716cf7d33166018">LLCP_SM_EVENT_FAILED</a>, 
+<br />
+&#160;&#160;<a class="el" href="llcp__sm__template_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeaf684402339c4ab620e948a0f38fc35e0">LLCP_SM_EVENT_SUCCESS</a>, 
+<a class="el" href="llcp__sm__template_8c.html#aa63e7a6b1874a62cf685a316f9ffe6eeaba5f8be5cca9b09c3254db7110bfbc0f">LLCP_SM_EVENT_INVALID</a> = 0xff
+<br />
+ }<tr class="memdesc:aa63e7a6b1874a62cf685a316f9ffe6ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">State Machine Generic Event.  <a href="llcp__sm__pc_8c.html#aa63e7a6b1874a62cf685a316f9ffe6ee">更多...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:aa63e7a6b1874a62cf685a316f9ffe6ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ac8426a43f1936b253f4946ce40eb7c7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="llcp__sm__pc_8c.html#ac8426a43f1936b253f4946ce40eb7c7e">llcp_pc_test</a> (void)</td></tr>
+<tr class="separator:ac8426a43f1936b253f4946ce40eb7c7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba343cb316c6fb3fdc33bcace9296ec1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="llcp__sm__pc_8c.html#aba343cb316c6fb3fdc33bcace9296ec1">ll_get_current_tx_power</a> (struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *link)</td></tr>
+<tr class="separator:aba343cb316c6fb3fdc33bcace9296ec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6078ca603fcf0b80d05e91f06806edd"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="llcp__sm__pc_8c.html#ac6078ca603fcf0b80d05e91f06806edd">lctrGetPowerLimits</a> (int8_t txPower)</td></tr>
+<tr class="memdesc:ac6078ca603fcf0b80d05e91f06806edd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get power limit bit of specified txPower.  <a href="#ac6078ca603fcf0b80d05e91f06806edd">更多...</a><br /></td></tr>
+<tr class="separator:ac6078ca603fcf0b80d05e91f06806edd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6df565b08e0b885421665265896ef1f"><td class="memItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="llcp__sm__pc_8c.html#ab6df565b08e0b885421665265896ef1f">lctrAttemptTxPowerChange</a> (struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *link, uint8_t phy, int8_t delta)</td></tr>
+<tr class="memdesc:ab6df565b08e0b885421665265896ef1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempt a Tx power change.  <a href="#ab6df565b08e0b885421665265896ef1f">更多...</a><br /></td></tr>
+<tr class="separator:ab6df565b08e0b885421665265896ef1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08cc2cd4141e5b4c41c4c9f182421058"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="llcp__sm__pc_8c.html#a08cc2cd4141e5b4c41c4c9f182421058">ll_tx_power_reporting</a> (struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *link, uint8_t reason, uint8_t phy, int8_t tx_pwr_level, uint8_t limits, int8_t delta)</td></tr>
+<tr class="separator:a08cc2cd4141e5b4c41c4c9f182421058"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4531946421e6165bd00d6c7a893a3336"><td class="memItemLeft" align="right" valign="top">static uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="llcp__sm__pc_8c.html#a4531946421e6165bd00d6c7a893a3336">lctrPhyBitToPclPhyIndex</a> (uint8_t phyBit)</td></tr>
+<tr class="memdesc:a4531946421e6165bd00d6c7a893a3336"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the power control index of a phy bit.  <a href="#a4531946421e6165bd00d6c7a893a3336">更多...</a><br /></td></tr>
+<tr class="separator:a4531946421e6165bd00d6c7a893a3336"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affcaeed2337b3e6f0fe0eaeef76670c5"><td class="memItemLeft" align="right" valign="top">static uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="llcp__sm__pc_8c.html#affcaeed2337b3e6f0fe0eaeef76670c5">ll_peer_tx_power_valid</a> (struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *link)</td></tr>
+<tr class="separator:affcaeed2337b3e6f0fe0eaeef76670c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a218faef923684351e2a4801767b5921f"><td class="memItemLeft" align="right" valign="top">static uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="llcp__sm__pc_8c.html#a218faef923684351e2a4801767b5921f">lctrCalculateAprField</a> (struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *link)</td></tr>
+<tr class="memdesc:a218faef923684351e2a4801767b5921f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate Apr field for a power control response.  <a href="#a218faef923684351e2a4801767b5921f">更多...</a><br /></td></tr>
+<tr class="separator:a218faef923684351e2a4801767b5921f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad62450eb4d8dbd593811f08c7437afbb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="llcp__sm__pc_8c.html#ad62450eb4d8dbd593811f08c7437afbb">ll_pc_update_start</a> (struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *link)</td></tr>
+<tr class="separator:ad62450eb4d8dbd593811f08c7437afbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a885c916fcc8022a3531529dcb6587341"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="llcp__sm__pc_8c.html#a885c916fcc8022a3531529dcb6587341">ll_send_pc_request</a> (struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *link)</td></tr>
+<tr class="separator:a885c916fcc8022a3531529dcb6587341"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab09f0a2229265da741462bb7772d34b8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="llcp__sm__pc_8c.html#ab09f0a2229265da741462bb7772d34b8">ll_recv_pc_request</a> (struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *link)</td></tr>
+<tr class="separator:ab09f0a2229265da741462bb7772d34b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac681a78b812f719b9441c7a0c22bbd18"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="llcp__sm__pc_8c.html#ac681a78b812f719b9441c7a0c22bbd18">ll_send_pc_respond</a> (struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *link)</td></tr>
+<tr class="separator:ac681a78b812f719b9441c7a0c22bbd18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabdfcb95db30c3267d4a7c8bf84ff1b1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="llcp__sm__pc_8c.html#aabdfcb95db30c3267d4a7c8bf84ff1b1">ll_recv_pc_respond</a> (struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *link)</td></tr>
+<tr class="separator:aabdfcb95db30c3267d4a7c8bf84ff1b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4985abf244c8e1ab269324a5127dd804"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="llcp__sm__pc_8c.html#a4985abf244c8e1ab269324a5127dd804">ll_send_pc_ind</a> (struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *link, uint8_t phy_idx, int8_t delta, int8_t tx_power, <a class="el" href="ll__defines_8h.html#a3e11e866bc6d82a804a0ee4740a3a470">bool_t</a> phy_update)</td></tr>
+<tr class="separator:a4985abf244c8e1ab269324a5127dd804"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a762d3f7a29e096821ad91a6b30c2c294"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="llcp__sm__pc_8c.html#a762d3f7a29e096821ad91a6b30c2c294">ll_recv_pc_ind</a> (struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *link)</td></tr>
+<tr class="separator:a762d3f7a29e096821ad91a6b30c2c294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18f63397ec039dc9d326375210a12d08"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="llcp__sm__pc_8c.html#a18f63397ec039dc9d326375210a12d08">ll_pc_update_success</a> (struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *link)</td></tr>
+<tr class="separator:a18f63397ec039dc9d326375210a12d08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36ca2fe0692cb9a05339aeedb5a25c43"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="llcp__sm__pc_8c.html#a36ca2fe0692cb9a05339aeedb5a25c43">ll_pc_update_failed</a> (struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *link)</td></tr>
+<tr class="separator:a36ca2fe0692cb9a05339aeedb5a25c43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab8ecea46f6740162dbda98ac0b58ed1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="llcp__sm__bis_8c.html#aa63e7a6b1874a62cf685a316f9ffe6ee">llcp_sm_event_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="llcp__sm__pc_8c.html#aab8ecea46f6740162dbda98ac0b58ed1">llcp_pc_event_remap</a> (struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *link, uint8_t event, void *data)</td></tr>
+<tr class="separator:aab8ecea46f6740162dbda98ac0b58ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6a36188cac404e60ecaf141695658c0"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="llcp__sm__pc_8c.html#ad6a36188cac404e60ecaf141695658c0">llcp_pc_sm_run</a> (struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *link, uint8_t event, void *data)</td></tr>
+<tr class="separator:ad6a36188cac404e60ecaf141695658c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23b4cd8fdca24c8b5653840a2e4abbdc"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="llcp__sm__pc_8c.html#a23b4cd8fdca24c8b5653840a2e4abbdc">llcp_tx_power_control</a> (uint16_t handle, uint8_t phy, int8_t delta)</td></tr>
+<tr class="separator:a23b4cd8fdca24c8b5653840a2e4abbdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b888e4a90ff0bb0e96370fde6e265a5"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="llcp__sm__pc_8c.html#a3b888e4a90ff0bb0e96370fde6e265a5">ll_read_remote_tx_power_level</a> (uint16_t handle, uint8_t phy)</td></tr>
+<tr class="separator:a3b888e4a90ff0bb0e96370fde6e265a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2daf4878a1943810bd4961d6a39a051f"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="llcp__sm__pc_8c.html#a2daf4878a1943810bd4961d6a39a051f">ll_set_path_loss_reporting_params</a> (uint16_t handle, uint8_t high_threshold, uint8_t high_hysteresis, uint8_t low_threshold, uint8_t low_hysteresis, uint16_t min_time_spent)</td></tr>
+<tr class="separator:a2daf4878a1943810bd4961d6a39a051f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28554d963b864d8c5c86e85e87a5b3f1"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="llcp__sm__pc_8c.html#a28554d963b864d8c5c86e85e87a5b3f1">ll_set_path_loss_reporting_enable</a> (uint16_t handle, uint8_t enable)</td></tr>
+<tr class="separator:a28554d963b864d8c5c86e85e87a5b3f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf3c0ccc4034529cb2aca99defea9903"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="llcp__sm__pc_8c.html#adf3c0ccc4034529cb2aca99defea9903">ll_set_tx_power_reporting_enable</a> (uint16_t handle, uint8_t local_enable, uint8_t remote_enable)</td></tr>
+<tr class="separator:adf3c0ccc4034529cb2aca99defea9903"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86c45f3fcf0bee8f0619499f641018c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="llcp__sm__pc_8c.html#a86c45f3fcf0bee8f0619499f641018c0">llcp_mst_pc_init</a> (void)</td></tr>
+<tr class="separator:a86c45f3fcf0bee8f0619499f641018c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd1761e26cdf089e2fea8eaf7ba3e14b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="llcp__sm__pc_8c.html#acd1761e26cdf089e2fea8eaf7ba3e14b">llcp_slv_pc_init</a> (void)</td></tr>
+<tr class="separator:acd1761e26cdf089e2fea8eaf7ba3e14b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef35024e194ec14257c26a641c044277"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="llcp__sm__pc_8c.html#aef35024e194ec14257c26a641c044277">ll_power_change_ind</a> (struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *link, uint8_t phy_idx, int8_t delta, int8_t tx_power, <a class="el" href="ll__defines_8h.html#a3e11e866bc6d82a804a0ee4740a3a470">bool_t</a> phy_update)</td></tr>
+<tr class="separator:aef35024e194ec14257c26a641c044277"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f0cdb43f1c9024afabfab4d9ee48f5e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="llcp__sm__pc_8c.html#a2f0cdb43f1c9024afabfab4d9ee48f5e">timer</a> (void *p)</td></tr>
+<tr class="separator:a2f0cdb43f1c9024afabfab4d9ee48f5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:ac31f69aec0d8fcd2534630e553c518de"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="llcp__sm__pc_8c.html#a6762ea903944e781d742e1cd58f942bd">ll_power_change_ind_callback_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="llcp__sm__pc_8c.html#ac31f69aec0d8fcd2534630e553c518de">ll_power_change_ind_callback</a></td></tr>
+<tr class="separator:ac31f69aec0d8fcd2534630e553c518de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41e2cf8a06ba68117210c2db75f1f94d"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="llcp__sm__pc_8c.html#a41e2cf8a06ba68117210c2db75f1f94d">llcp_msg_string_table</a> []</td></tr>
+<tr class="memdesc:a41e2cf8a06ba68117210c2db75f1f94d"><td class="mdescLeft">&#160;</td><td class="mdescRight">State Machine Event String.  <a href="#a41e2cf8a06ba68117210c2db75f1f94d">更多...</a><br /></td></tr>
+<tr class="separator:a41e2cf8a06ba68117210c2db75f1f94d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">宏定义说明</h2>
+<a class="anchor" id="ad223350d80db21fa8b721107cd1f6442"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __this&#160;&#160;&#160;(&amp;<a class="el" href="link__layer_8h.html#a11d5b1c8b0def0c238d4700650780724">ll_hdl</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9eeb6e067100d0dec6e53bce19a403e0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_ERROR_ENABLE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a69321c8a2a0b07a07fb5088e82e25eb0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_INFO_ENABLE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7ce0df38eb467e59f209470c8f5ac4e6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_TAG&#160;&#160;&#160;&quot;[LL]&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6c6991cba0e2995d7d9aec73e0324317"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_TAG_CONST&#160;&#160;&#160;LL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">类型定义说明</h2>
+<a class="anchor" id="a6762ea903944e781d742e1cd58f942bd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* ll_power_change_ind_callback_t) (struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *link, uint8_t phy_idx, int8_t delta, int8_t tx_power, <a class="el" href="ll__defines_8h.html#a3e11e866bc6d82a804a0ee4740a3a470">bool_t</a> phy_update)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Power Change ind callback. </p>
+
+</div>
+</div>
+<h2 class="groupheader">枚举类型说明</h2>
+<a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6ee"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="llcp__sm__bis_8c.html#aa63e7a6b1874a62cf685a316f9ffe6ee">llcp_sm_event_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>State Machine Generic Event. </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea718744bd4ac0cec8e71ee3df2e4f1609"></a>LLCP_SM_EVENT_HOST_START&#160;</td><td class="fielddoc">
+<p>Host Start LLCP Procedure by HCI Command </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeaa57583355b36370859c0f1107ef2b515"></a>LLCP_SM_EVENT_AUTO_START&#160;</td><td class="fielddoc">
+<p>Controller Start LLCP Procedure Autonomously </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeae12e3d0a407b7fc7f3b6f9f2be7cfc88"></a>LLCP_SM_EVENT_SEND_REQ&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea5d578d2cf3bc31268cec4b45b7645a8a"></a>LLCP_SM_EVENT_SEND_RSP&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeab66579e50d781dffd52ec1fdd6a2ee75"></a>LLCP_SM_EVENT_RECV_REQ&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea1dd1bbc7e386e1517cd1e77bf72dbafd"></a>LLCP_SM_EVENT_RECV_RSP&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea7a50b69b1bfbc78456e86fb414f08b5a"></a>LLCP_SM_EVENT_TIMEOUT&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea6ce62da3847c66460716cf7d33166018"></a>LLCP_SM_EVENT_FAILED&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeaf684402339c4ab620e948a0f38fc35e0"></a>LLCP_SM_EVENT_SUCCESS&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeaba5f8be5cca9b09c3254db7110bfbc0f"></a>LLCP_SM_EVENT_INVALID&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea718744bd4ac0cec8e71ee3df2e4f1609"></a>LLCP_SM_EVENT_HOST_START&#160;</td><td class="fielddoc">
+<p>Host Start LLCP Procedure by HCI Command </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeaa57583355b36370859c0f1107ef2b515"></a>LLCP_SM_EVENT_AUTO_START&#160;</td><td class="fielddoc">
+<p>Controller Start LLCP Procedure Autonomously </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeae12e3d0a407b7fc7f3b6f9f2be7cfc88"></a>LLCP_SM_EVENT_SEND_REQ&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea5d578d2cf3bc31268cec4b45b7645a8a"></a>LLCP_SM_EVENT_SEND_RSP&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeab66579e50d781dffd52ec1fdd6a2ee75"></a>LLCP_SM_EVENT_RECV_REQ&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea1dd1bbc7e386e1517cd1e77bf72dbafd"></a>LLCP_SM_EVENT_RECV_RSP&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeae76d5df39de6113cd664e3f7499d5bde"></a>LLCP_SM_EVENT_SEND_IND&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea97e48ba6da08ae0ae39ed88959722c9e"></a>LLCP_SM_EVENT_RECV_IND&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea3ce76c05ec12cfe644773e8901ae71fc"></a>LLCP_SM_EVENT_SEND_REJ&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea7a50b69b1bfbc78456e86fb414f08b5a"></a>LLCP_SM_EVENT_TIMEOUT&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea6ce62da3847c66460716cf7d33166018"></a>LLCP_SM_EVENT_FAILED&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeaf684402339c4ab620e948a0f38fc35e0"></a>LLCP_SM_EVENT_SUCCESS&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeaba5f8be5cca9b09c3254db7110bfbc0f"></a>LLCP_SM_EVENT_INVALID&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea718744bd4ac0cec8e71ee3df2e4f1609"></a>LLCP_SM_EVENT_HOST_START&#160;</td><td class="fielddoc">
+<p>Host Start LLCP Procedure by HCI Command </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeaa57583355b36370859c0f1107ef2b515"></a>LLCP_SM_EVENT_AUTO_START&#160;</td><td class="fielddoc">
+<p>Controller Start LLCP Procedure Autonomously </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeae76d5df39de6113cd664e3f7499d5bde"></a>LLCP_SM_EVENT_SEND_IND&#160;</td><td class="fielddoc">
+<p>Two Hand-shake Protocol </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea97e48ba6da08ae0ae39ed88959722c9e"></a>LLCP_SM_EVENT_RECV_IND&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea7a50b69b1bfbc78456e86fb414f08b5a"></a>LLCP_SM_EVENT_TIMEOUT&#160;</td><td class="fielddoc">
+<p>Controller Response Timeout </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea6ce62da3847c66460716cf7d33166018"></a>LLCP_SM_EVENT_FAILED&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeaf684402339c4ab620e948a0f38fc35e0"></a>LLCP_SM_EVENT_SUCCESS&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeaba5f8be5cca9b09c3254db7110bfbc0f"></a>LLCP_SM_EVENT_INVALID&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea718744bd4ac0cec8e71ee3df2e4f1609"></a>LLCP_SM_EVENT_HOST_START&#160;</td><td class="fielddoc">
+<p>Host Start LLCP Procedure by HCI Command </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeaa57583355b36370859c0f1107ef2b515"></a>LLCP_SM_EVENT_AUTO_START&#160;</td><td class="fielddoc">
+<p>Controller Start LLCP Procedure Autonomously </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeae12e3d0a407b7fc7f3b6f9f2be7cfc88"></a>LLCP_SM_EVENT_SEND_REQ&#160;</td><td class="fielddoc">
+<p>Two Hand-shake Protocol </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeab66579e50d781dffd52ec1fdd6a2ee75"></a>LLCP_SM_EVENT_RECV_REQ&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea5d578d2cf3bc31268cec4b45b7645a8a"></a>LLCP_SM_EVENT_SEND_RSP&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea1dd1bbc7e386e1517cd1e77bf72dbafd"></a>LLCP_SM_EVENT_RECV_RSP&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeae76d5df39de6113cd664e3f7499d5bde"></a>LLCP_SM_EVENT_SEND_IND&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea97e48ba6da08ae0ae39ed88959722c9e"></a>LLCP_SM_EVENT_RECV_IND&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea3ce76c05ec12cfe644773e8901ae71fc"></a>LLCP_SM_EVENT_SEND_REJ&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeab3d9d3b778657b855d5c4cc861d0e16e"></a>LLCP_SM_EVENT_RECV_REJ&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea5eec7dcaa9f1ff66745758fe46626f20"></a>LLCP_SM_EVENT_UPDATE&#160;</td><td class="fielddoc">
+<p>Instant 完成更新 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea7a50b69b1bfbc78456e86fb414f08b5a"></a>LLCP_SM_EVENT_TIMEOUT&#160;</td><td class="fielddoc">
+<p>Controller Response Timeout </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea6ce62da3847c66460716cf7d33166018"></a>LLCP_SM_EVENT_FAILED&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeaf684402339c4ab620e948a0f38fc35e0"></a>LLCP_SM_EVENT_SUCCESS&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeaba5f8be5cca9b09c3254db7110bfbc0f"></a>LLCP_SM_EVENT_INVALID&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea718744bd4ac0cec8e71ee3df2e4f1609"></a>LLCP_SM_EVENT_HOST_START&#160;</td><td class="fielddoc">
+<p>Host Start LLCP Procedure by HCI Command </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeaa57583355b36370859c0f1107ef2b515"></a>LLCP_SM_EVENT_AUTO_START&#160;</td><td class="fielddoc">
+<p>Controller Start LLCP Procedure Autonomously </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeae12e3d0a407b7fc7f3b6f9f2be7cfc88"></a>LLCP_SM_EVENT_SEND_REQ&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea5d578d2cf3bc31268cec4b45b7645a8a"></a>LLCP_SM_EVENT_SEND_RSP&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeab66579e50d781dffd52ec1fdd6a2ee75"></a>LLCP_SM_EVENT_RECV_REQ&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea1dd1bbc7e386e1517cd1e77bf72dbafd"></a>LLCP_SM_EVENT_RECV_RSP&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeae76d5df39de6113cd664e3f7499d5bde"></a>LLCP_SM_EVENT_SEND_IND&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea97e48ba6da08ae0ae39ed88959722c9e"></a>LLCP_SM_EVENT_RECV_IND&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea3ce76c05ec12cfe644773e8901ae71fc"></a>LLCP_SM_EVENT_SEND_REJ&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeab3d9d3b778657b855d5c4cc861d0e16e"></a>LLCP_SM_EVENT_RECV_REJ&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea5eec7dcaa9f1ff66745758fe46626f20"></a>LLCP_SM_EVENT_UPDATE&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea7a50b69b1bfbc78456e86fb414f08b5a"></a>LLCP_SM_EVENT_TIMEOUT&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea6ce62da3847c66460716cf7d33166018"></a>LLCP_SM_EVENT_FAILED&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeaf684402339c4ab620e948a0f38fc35e0"></a>LLCP_SM_EVENT_SUCCESS&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeaba5f8be5cca9b09c3254db7110bfbc0f"></a>LLCP_SM_EVENT_INVALID&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea718744bd4ac0cec8e71ee3df2e4f1609"></a>LLCP_SM_EVENT_HOST_START&#160;</td><td class="fielddoc">
+<p>Host Start LLCP Procedure by HCI Command </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeaa57583355b36370859c0f1107ef2b515"></a>LLCP_SM_EVENT_AUTO_START&#160;</td><td class="fielddoc">
+<p>Controller Start LLCP Procedure Autonomously </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeae12e3d0a407b7fc7f3b6f9f2be7cfc88"></a>LLCP_SM_EVENT_SEND_REQ&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea5d578d2cf3bc31268cec4b45b7645a8a"></a>LLCP_SM_EVENT_SEND_RSP&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeab66579e50d781dffd52ec1fdd6a2ee75"></a>LLCP_SM_EVENT_RECV_REQ&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea1dd1bbc7e386e1517cd1e77bf72dbafd"></a>LLCP_SM_EVENT_RECV_RSP&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea3ce76c05ec12cfe644773e8901ae71fc"></a>LLCP_SM_EVENT_SEND_REJ&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeab3d9d3b778657b855d5c4cc861d0e16e"></a>LLCP_SM_EVENT_RECV_REJ&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea7a50b69b1bfbc78456e86fb414f08b5a"></a>LLCP_SM_EVENT_TIMEOUT&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea6ce62da3847c66460716cf7d33166018"></a>LLCP_SM_EVENT_FAILED&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeaf684402339c4ab620e948a0f38fc35e0"></a>LLCP_SM_EVENT_SUCCESS&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeaba5f8be5cca9b09c3254db7110bfbc0f"></a>LLCP_SM_EVENT_INVALID&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea718744bd4ac0cec8e71ee3df2e4f1609"></a>LLCP_SM_EVENT_HOST_START&#160;</td><td class="fielddoc">
+<p>Host Start LLCP Procedure by HCI Command </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeaa57583355b36370859c0f1107ef2b515"></a>LLCP_SM_EVENT_AUTO_START&#160;</td><td class="fielddoc">
+<p>Controller Start LLCP Procedure Autonomously </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeae12e3d0a407b7fc7f3b6f9f2be7cfc88"></a>LLCP_SM_EVENT_SEND_REQ&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeab66579e50d781dffd52ec1fdd6a2ee75"></a>LLCP_SM_EVENT_RECV_REQ&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea5d578d2cf3bc31268cec4b45b7645a8a"></a>LLCP_SM_EVENT_SEND_RSP&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea1dd1bbc7e386e1517cd1e77bf72dbafd"></a>LLCP_SM_EVENT_RECV_RSP&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea6ce62da3847c66460716cf7d33166018"></a>LLCP_SM_EVENT_FAILED&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea7a50b69b1bfbc78456e86fb414f08b5a"></a>LLCP_SM_EVENT_TIMEOUT&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeaf684402339c4ab620e948a0f38fc35e0"></a>LLCP_SM_EVENT_SUCCESS&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeaba5f8be5cca9b09c3254db7110bfbc0f"></a>LLCP_SM_EVENT_INVALID&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea718744bd4ac0cec8e71ee3df2e4f1609"></a>LLCP_SM_EVENT_HOST_START&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeaa57583355b36370859c0f1107ef2b515"></a>LLCP_SM_EVENT_AUTO_START&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea49e54582e022509280eace66aee7e4e0"></a>LLCP_SM_EVENT_SEND_REJECT&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeabb57644496baad66b3df57454f737591"></a>LLCP_SM_EVENT_SEND_PAUSE_ENC_REQ&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea093e3bdc92ca3dbdbcdd72012a199ebe"></a>LLCP_SM_EVENT_RECV_PAUSE_ENC_REQ&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea06aca461e7f5bba09d52926a83bdd7ad"></a>LLCP_SM_EVENT_SEND_PAUSE_ENC_RSP&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea4f746d0e7a25f4d66d8579eb6f105154"></a>LLCP_SM_EVENT_RECV_PAUSE_ENC_RSP&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea5c9db095750548134f60e8b742e651bf"></a>LLCP_SM_EVENT_SEND_ENC_REQ&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea1b1928e87121e1d02b9c942ccb2d2663"></a>LLCP_SM_EVENT_RECV_ENC_REQ&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea91a3beaf2e546bcd392b9f930b0ac7f6"></a>LLCP_SM_EVENT_SEND_ENC_RSP&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea816b8e594a8715574175e8e881b3ea12"></a>LLCP_SM_EVENT_RECV_ENC_RSP&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea1aefdc21e0bc02556da80d283e8d4883"></a>LLCP_SM_EVENT_SEND_START_ENC_REQ&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea3154f4dcb63c58793aee167034eab15d"></a>LLCP_SM_EVENT_RECV_START_ENC_REQ&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea5a3108b5540a558889ede171e9e97508"></a>LLCP_SM_EVENT_SEND_START_ENC_RSP&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea5336f46799737790882ebee303c0c7cb"></a>LLCP_SM_EVENT_RECV_START_ENC_RSP&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea7a50b69b1bfbc78456e86fb414f08b5a"></a>LLCP_SM_EVENT_TIMEOUT&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea6ce62da3847c66460716cf7d33166018"></a>LLCP_SM_EVENT_FAILED&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeaf684402339c4ab620e948a0f38fc35e0"></a>LLCP_SM_EVENT_SUCCESS&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeaba5f8be5cca9b09c3254db7110bfbc0f"></a>LLCP_SM_EVENT_INVALID&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea718744bd4ac0cec8e71ee3df2e4f1609"></a>LLCP_SM_EVENT_HOST_START&#160;</td><td class="fielddoc">
+<p>Host Start LLCP Procedure by HCI Command </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeaa57583355b36370859c0f1107ef2b515"></a>LLCP_SM_EVENT_AUTO_START&#160;</td><td class="fielddoc">
+<p>Controller Start LLCP Procedure Autonomously </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeae12e3d0a407b7fc7f3b6f9f2be7cfc88"></a>LLCP_SM_EVENT_SEND_REQ&#160;</td><td class="fielddoc">
+<p>Two Hand-shake Protocol </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeab66579e50d781dffd52ec1fdd6a2ee75"></a>LLCP_SM_EVENT_RECV_REQ&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea5d578d2cf3bc31268cec4b45b7645a8a"></a>LLCP_SM_EVENT_SEND_RSP&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea1dd1bbc7e386e1517cd1e77bf72dbafd"></a>LLCP_SM_EVENT_RECV_RSP&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeae76d5df39de6113cd664e3f7499d5bde"></a>LLCP_SM_EVENT_SEND_IND&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea97e48ba6da08ae0ae39ed88959722c9e"></a>LLCP_SM_EVENT_RECV_IND&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea7a50b69b1bfbc78456e86fb414f08b5a"></a>LLCP_SM_EVENT_TIMEOUT&#160;</td><td class="fielddoc">
+<p>Controller Response Timeout </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea6ce62da3847c66460716cf7d33166018"></a>LLCP_SM_EVENT_FAILED&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeaf684402339c4ab620e948a0f38fc35e0"></a>LLCP_SM_EVENT_SUCCESS&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeaba5f8be5cca9b09c3254db7110bfbc0f"></a>LLCP_SM_EVENT_INVALID&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea718744bd4ac0cec8e71ee3df2e4f1609"></a>LLCP_SM_EVENT_HOST_START&#160;</td><td class="fielddoc">
+<p>Host Start LLCP Procedure by HCI Command </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeaa57583355b36370859c0f1107ef2b515"></a>LLCP_SM_EVENT_AUTO_START&#160;</td><td class="fielddoc">
+<p>Controller Start LLCP Procedure Autonomously </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeae12e3d0a407b7fc7f3b6f9f2be7cfc88"></a>LLCP_SM_EVENT_SEND_REQ&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeab66579e50d781dffd52ec1fdd6a2ee75"></a>LLCP_SM_EVENT_RECV_REQ&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea5d578d2cf3bc31268cec4b45b7645a8a"></a>LLCP_SM_EVENT_SEND_RSP&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea1dd1bbc7e386e1517cd1e77bf72dbafd"></a>LLCP_SM_EVENT_RECV_RSP&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeae76d5df39de6113cd664e3f7499d5bde"></a>LLCP_SM_EVENT_SEND_IND&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea97e48ba6da08ae0ae39ed88959722c9e"></a>LLCP_SM_EVENT_RECV_IND&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea5eec7dcaa9f1ff66745758fe46626f20"></a>LLCP_SM_EVENT_UPDATE&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea7a50b69b1bfbc78456e86fb414f08b5a"></a>LLCP_SM_EVENT_TIMEOUT&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea6ce62da3847c66460716cf7d33166018"></a>LLCP_SM_EVENT_FAILED&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeaf684402339c4ab620e948a0f38fc35e0"></a>LLCP_SM_EVENT_SUCCESS&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeacc9b14aa6ef4d02c8ec04f8af956f11e"></a>LLCP_SM_EVENT_COMPLETE&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeaba5f8be5cca9b09c3254db7110bfbc0f"></a>LLCP_SM_EVENT_INVALID&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea718744bd4ac0cec8e71ee3df2e4f1609"></a>LLCP_SM_EVENT_HOST_START&#160;</td><td class="fielddoc">
+<p>Host Start LLCP Procedure by HCI Command </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeaa57583355b36370859c0f1107ef2b515"></a>LLCP_SM_EVENT_AUTO_START&#160;</td><td class="fielddoc">
+<p>Controller Start LLCP Procedure Autonomously </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeae12e3d0a407b7fc7f3b6f9f2be7cfc88"></a>LLCP_SM_EVENT_SEND_REQ&#160;</td><td class="fielddoc">
+<p>Two Hand-shake Protocol </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeab66579e50d781dffd52ec1fdd6a2ee75"></a>LLCP_SM_EVENT_RECV_REQ&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea5d578d2cf3bc31268cec4b45b7645a8a"></a>LLCP_SM_EVENT_SEND_RSP&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea1dd1bbc7e386e1517cd1e77bf72dbafd"></a>LLCP_SM_EVENT_RECV_RSP&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea7a50b69b1bfbc78456e86fb414f08b5a"></a>LLCP_SM_EVENT_TIMEOUT&#160;</td><td class="fielddoc">
+<p>Controller Response Timeout </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea6ce62da3847c66460716cf7d33166018"></a>LLCP_SM_EVENT_FAILED&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeaf684402339c4ab620e948a0f38fc35e0"></a>LLCP_SM_EVENT_SUCCESS&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeaba5f8be5cca9b09c3254db7110bfbc0f"></a>LLCP_SM_EVENT_INVALID&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea718744bd4ac0cec8e71ee3df2e4f1609"></a>LLCP_SM_EVENT_HOST_START&#160;</td><td class="fielddoc">
+<p>Host Start LLCP Procedure by HCI Command </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeaa57583355b36370859c0f1107ef2b515"></a>LLCP_SM_EVENT_AUTO_START&#160;</td><td class="fielddoc">
+<p>Controller Start LLCP Procedure Autonomously </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeae12e3d0a407b7fc7f3b6f9f2be7cfc88"></a>LLCP_SM_EVENT_SEND_REQ&#160;</td><td class="fielddoc">
+<p>Two Hand-shake Protocol </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeab66579e50d781dffd52ec1fdd6a2ee75"></a>LLCP_SM_EVENT_RECV_REQ&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea5d578d2cf3bc31268cec4b45b7645a8a"></a>LLCP_SM_EVENT_SEND_RSP&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea1dd1bbc7e386e1517cd1e77bf72dbafd"></a>LLCP_SM_EVENT_RECV_RSP&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea7a50b69b1bfbc78456e86fb414f08b5a"></a>LLCP_SM_EVENT_TIMEOUT&#160;</td><td class="fielddoc">
+<p>Controller Response Timeout </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea6ce62da3847c66460716cf7d33166018"></a>LLCP_SM_EVENT_FAILED&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeaf684402339c4ab620e948a0f38fc35e0"></a>LLCP_SM_EVENT_SUCCESS&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeaba5f8be5cca9b09c3254db7110bfbc0f"></a>LLCP_SM_EVENT_INVALID&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea718744bd4ac0cec8e71ee3df2e4f1609"></a>LLCP_SM_EVENT_HOST_START&#160;</td><td class="fielddoc">
+<p>Host Start LLCP Procedure by HCI Command </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeaa57583355b36370859c0f1107ef2b515"></a>LLCP_SM_EVENT_AUTO_START&#160;</td><td class="fielddoc">
+<p>Controller Start LLCP Procedure Autonomously </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeae12e3d0a407b7fc7f3b6f9f2be7cfc88"></a>LLCP_SM_EVENT_SEND_REQ&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea5d578d2cf3bc31268cec4b45b7645a8a"></a>LLCP_SM_EVENT_SEND_RSP&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeab66579e50d781dffd52ec1fdd6a2ee75"></a>LLCP_SM_EVENT_RECV_REQ&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea1dd1bbc7e386e1517cd1e77bf72dbafd"></a>LLCP_SM_EVENT_RECV_RSP&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea7a50b69b1bfbc78456e86fb414f08b5a"></a>LLCP_SM_EVENT_TIMEOUT&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eea6ce62da3847c66460716cf7d33166018"></a>LLCP_SM_EVENT_FAILED&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeaf684402339c4ab620e948a0f38fc35e0"></a>LLCP_SM_EVENT_SUCCESS&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aa63e7a6b1874a62cf685a316f9ffe6eeaba5f8be5cca9b09c3254db7110bfbc0f"></a>LLCP_SM_EVENT_INVALID&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="ab6df565b08e0b885421665265896ef1f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int8_t lctrAttemptTxPowerChange </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *&#160;</td>
+          <td class="paramname"><em>link</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>phy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int8_t&#160;</td>
+          <td class="paramname"><em>delta</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Attempt a Tx power change. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pCtx</td><td>Connection context. </td></tr>
+    <tr><td class="paramname">phy</td><td>PHY. </td></tr>
+    <tr><td class="paramname">delta</td><td>Delta to current PHY txPower.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Delta of the new txPower. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a218faef923684351e2a4801767b5921f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint8_t lctrCalculateAprField </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *&#160;</td>
+          <td class="paramname"><em>link</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculate Apr field for a power control response. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">link</td><td>Connection context.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>APR to be packed in response PDU. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac6078ca603fcf0b80d05e91f06806edd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t lctrGetPowerLimits </td>
+          <td>(</td>
+          <td class="paramtype">int8_t&#160;</td>
+          <td class="paramname"><em>txPower</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get power limit bit of specified txPower. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">txPower</td><td>Current transmit power.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Limit status of txPower </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4531946421e6165bd00d6c7a893a3336"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint8_t lctrPhyBitToPclPhyIndex </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>phyBit</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the power control index of a phy bit. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phyBit</td><td>Phy bit.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Power control phy index, or invalid if not valid. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aba343cb316c6fb3fdc33bcace9296ec1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_get_current_tx_power </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *&#160;</td>
+          <td class="paramname"><em>link</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a36ca2fe0692cb9a05339aeedb5a25c43"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ll_pc_update_failed </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *&#160;</td>
+          <td class="paramname"><em>link</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad62450eb4d8dbd593811f08c7437afbb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ll_pc_update_start </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *&#160;</td>
+          <td class="paramname"><em>link</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>: ll_pc_update_start</p>
+<p>: link </p>
+
+</div>
+</div>
+<a class="anchor" id="a18f63397ec039dc9d326375210a12d08"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ll_pc_update_success </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *&#160;</td>
+          <td class="paramname"><em>link</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>: ll_pc_update_success</p>
+<p>: link  : reason </p>
+
+</div>
+</div>
+<a class="anchor" id="affcaeed2337b3e6f0fe0eaeef76670c5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint8_t ll_peer_tx_power_valid </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *&#160;</td>
+          <td class="paramname"><em>link</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>: ll_peer_tx_power_valid</p>
+<p>: link Connection context.</p>
+<p>: </p>
+
+</div>
+</div>
+<a class="anchor" id="aef35024e194ec14257c26a641c044277"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_power_change_ind </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *&#160;</td>
+          <td class="paramname"><em>link</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>phy_idx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int8_t&#160;</td>
+          <td class="paramname"><em>delta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int8_t&#160;</td>
+          <td class="paramname"><em>tx_power</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ll__defines_8h.html#a3e11e866bc6d82a804a0ee4740a3a470">bool_t</a>&#160;</td>
+          <td class="paramname"><em>phy_update</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>: ll_power_change_ind</p>
+<p>: link </p>
+
+</div>
+</div>
+<a class="anchor" id="a3b888e4a90ff0bb0e96370fde6e265a5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t ll_read_remote_tx_power_level </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>phy</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>: ll_read_remote_tx_power_level</p>
+<p>: handle  : phy</p>
+<p>: </p>
+
+</div>
+</div>
+<a class="anchor" id="a762d3f7a29e096821ad91a6b30c2c294"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ll_recv_pc_ind </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *&#160;</td>
+          <td class="paramname"><em>link</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>: ll_recv_pc_ind</p>
+<p>: link </p>
+
+</div>
+</div>
+<a class="anchor" id="ab09f0a2229265da741462bb7772d34b8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ll_recv_pc_request </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *&#160;</td>
+          <td class="paramname"><em>link</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>: ll_sca_recv_req</p>
+<p>: link </p>
+
+</div>
+</div>
+<a class="anchor" id="aabdfcb95db30c3267d4a7c8bf84ff1b1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ll_recv_pc_respond </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *&#160;</td>
+          <td class="paramname"><em>link</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>: ll_recv_pc_respond</p>
+<p>: link </p>
+
+</div>
+</div>
+<a class="anchor" id="a4985abf244c8e1ab269324a5127dd804"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ll_send_pc_ind </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *&#160;</td>
+          <td class="paramname"><em>link</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>phy_idx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int8_t&#160;</td>
+          <td class="paramname"><em>delta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int8_t&#160;</td>
+          <td class="paramname"><em>tx_power</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ll__defines_8h.html#a3e11e866bc6d82a804a0ee4740a3a470">bool_t</a>&#160;</td>
+          <td class="paramname"><em>phy_update</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>: ll_send_pc_ind</p>
+<p>: link  : phy_idx  : delta  : tx_power  : phy_update </p>
+
+</div>
+</div>
+<a class="anchor" id="a885c916fcc8022a3531529dcb6587341"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ll_send_pc_request </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *&#160;</td>
+          <td class="paramname"><em>link</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>: ll_send_pc_request</p>
+<p>: link </p>
+
+</div>
+</div>
+<a class="anchor" id="ac681a78b812f719b9441c7a0c22bbd18"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ll_send_pc_respond </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *&#160;</td>
+          <td class="paramname"><em>link</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>: ll_send_pc_respond</p>
+<p>: link </p>
+
+</div>
+</div>
+<a class="anchor" id="a28554d963b864d8c5c86e85e87a5b3f1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t ll_set_path_loss_reporting_enable </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>enable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>: ll_set_path_loss_reporting_enable</p>
+<p>: handle  : enable</p>
+<p>: </p>
+
+</div>
+</div>
+<a class="anchor" id="a2daf4878a1943810bd4961d6a39a051f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t ll_set_path_loss_reporting_params </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>high_threshold</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>high_hysteresis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>low_threshold</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>low_hysteresis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>min_time_spent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>: ll_set_path_loss_reporting_params</p>
+<p>: handle  : high_threshold  : high_hysteresis  : low_threshold  : low_hysteresis  : min_time_spent</p>
+<p>: </p>
+
+</div>
+</div>
+<a class="anchor" id="adf3c0ccc4034529cb2aca99defea9903"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t ll_set_tx_power_reporting_enable </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>local_enable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>remote_enable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>: ll_set_tx_power_reporting_enable</p>
+<p>: handle  : local_enable  : remote_enable</p>
+<p>: </p>
+
+</div>
+</div>
+<a class="anchor" id="a08cc2cd4141e5b4c41c4c9f182421058"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ll_tx_power_reporting </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *&#160;</td>
+          <td class="paramname"><em>link</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>reason</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>phy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int8_t&#160;</td>
+          <td class="paramname"><em>tx_pwr_level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>limits</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int8_t&#160;</td>
+          <td class="paramname"><em>delta</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>: ll_tx_power_reporting</p>
+<p>: link  : reason  : phy  : tx_pwr_level  : delta </p>
+
+</div>
+</div>
+<a class="anchor" id="a86c45f3fcf0bee8f0619499f641018c0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void llcp_mst_pc_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>: llcp_mst_pc_init </p>
+
+</div>
+</div>
+<a class="anchor" id="aab8ecea46f6740162dbda98ac0b58ed1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="llcp__sm__bis_8c.html#aa63e7a6b1874a62cf685a316f9ffe6ee">llcp_sm_event_t</a> llcp_pc_event_remap </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *&#160;</td>
+          <td class="paramname"><em>link</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>: llcp_pc_event_remap</p>
+<p>: link  : event  : data</p>
+<p>: </p>
+
+</div>
+</div>
+<a class="anchor" id="ad6a36188cac404e60ecaf141695658c0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool llcp_pc_sm_run </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="link__layer_8h.html#structle__link">le_link</a> *&#160;</td>
+          <td class="paramname"><em>link</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>: llcp_pc_sm_run</p>
+<p>: link  : event  : data</p>
+<p>: </p>
+
+</div>
+</div>
+<a class="anchor" id="ac8426a43f1936b253f4946ce40eb7c7e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void llcp_pc_test </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>: llcp_pc_test </p>
+
+</div>
+</div>
+<a class="anchor" id="acd1761e26cdf089e2fea8eaf7ba3e14b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void llcp_slv_pc_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>: llcp_slv_pc_init </p>
+
+</div>
+</div>
+<a class="anchor" id="a23b4cd8fdca24c8b5653840a2e4abbdc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t llcp_tx_power_control </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>phy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int8_t&#160;</td>
+          <td class="paramname"><em>delta</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>: llcp_tx_power_control</p>
+<p>: handle  : phy  : delta</p>
+<p>: </p>
+
+</div>
+</div>
+<a class="anchor" id="a2f0cdb43f1c9024afabfab4d9ee48f5e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void timer </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a class="anchor" id="ac31f69aec0d8fcd2534630e553c518de"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="llcp__sm__pc_8c.html#a6762ea903944e781d742e1cd58f942bd">ll_power_change_ind_callback_t</a> ll_power_change_ind_callback</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a41e2cf8a06ba68117210c2db75f1f94d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* llcp_msg_string_table[]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>初始值:</b><div class="fragment"><div class="line">= {</div><div class="line">    <span class="stringliteral">&quot;LLCP_SM_EVENT_HOST_START&quot;</span>,</div><div class="line">    <span class="stringliteral">&quot;LLCP_SM_EVENT_AUTO_START&quot;</span>,</div><div class="line">    <span class="stringliteral">&quot;LLCP_SM_EVENT_SEND_REQ&quot;</span>,</div><div class="line">    <span class="stringliteral">&quot;LLCP_SM_EVENT_RECV_REQ&quot;</span>,</div><div class="line">    <span class="stringliteral">&quot;LLCP_SM_EVENT_SEND_RSP&quot;</span>,</div><div class="line">    <span class="stringliteral">&quot;LLCP_SM_EVENT_RECV_RSP&quot;</span>,</div><div class="line">    <span class="stringliteral">&quot;LLCP_SM_EVENT_SEND_IND&quot;</span>,</div><div class="line">    <span class="stringliteral">&quot;LLCP_SM_EVENT_RECV_IND&quot;</span>,</div><div class="line">    <span class="stringliteral">&quot;LLCP_SM_EVENT_TIMEOUT&quot;</span>,</div><div class="line">    <span class="stringliteral">&quot;LLCP_SM_EVENT_FAILED&quot;</span>,</div><div class="line">    <span class="stringliteral">&quot;LLCP_SM_EVENT_SUCCESS&quot;</span>,</div><div class="line">}</div></div><!-- fragment -->
+<p>State Machine Event String. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

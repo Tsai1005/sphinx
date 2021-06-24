@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structtws__ll__scan__hdl" kind="struct" language="C++" prot="public">
+    <compoundname>tws_ll_scan_hdl</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtws__ll__scan__hdl_1a187a7324725664084e66f46e6444b115" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structle__scan__link" kindref="compound">le_scan_link</ref> *</type>
+        <definition>struct le_scan_link* tws_ll_scan_hdl::scan_link</definition>
+        <argsstring></argsstring>
+        <name>scan_link</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_scan.c" line="29" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_scan.c" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__ll__scan__hdl_1a214aa8a0613af9f27fee0b0750365751" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structtws__scan__parameter" kindref="compound">tws_scan_parameter</ref></type>
+        <definition>struct tws_scan_parameter tws_ll_scan_hdl::scan_param</definition>
+        <argsstring></argsstring>
+        <name>scan_param</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_scan.c" line="29" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_scan.c" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1721">
+        <label>tws_scan_parameter</label>
+        <link refid="structtws__scan__parameter"/>
+      </node>
+      <node id="1720">
+        <label>tws_ll_scan_hdl</label>
+        <link refid="structtws__ll__scan__hdl"/>
+        <childnode refid="1721" relation="usage">
+          <edgelabel>scan_param</edgelabel>
+        </childnode>
+        <childnode refid="1722" relation="usage">
+          <edgelabel>scan_link</edgelabel>
+        </childnode>
+      </node>
+      <node id="1722">
+        <label>le_scan_link</label>
+        <link refid="structle__scan__link"/>
+      </node>
+    </collaborationgraph>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_scan.c" line="28" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_scan.c" bodystart="28" bodyend="31"/>
+    <listofallmembers>
+      <member refid="structtws__ll__scan__hdl_1a187a7324725664084e66f46e6444b115" prot="public" virt="non-virtual"><scope>tws_ll_scan_hdl</scope><name>scan_link</name></member>
+      <member refid="structtws__ll__scan__hdl_1a214aa8a0613af9f27fee0b0750365751" prot="public" virt="non-virtual"><scope>tws_ll_scan_hdl</scope><name>scan_param</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1046 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="ll__ext__adv_8h" kind="file" language="C++">
+    <compoundname>ll_ext_adv.h</compoundname>
+    <includes local="yes">typedef.h</includes>
+    <includedby refid="extended__advertising_8h" local="yes">/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/extended_advertising.h</includedby>
+    <incdepgraph>
+      <node id="4930">
+        <label>typedef.h</label>
+      </node>
+      <node id="4929">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h</label>
+        <link refid="ll_ext_adv.h"/>
+        <childnode refid="4930" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4932">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/extended_advertising.h</label>
+        <link refid="extended__advertising_8h"/>
+      </node>
+      <node id="4931">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h</label>
+        <link refid="ll_ext_adv.h"/>
+        <childnode refid="4932" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structll__ext__adv__param__t" prot="public">ll_ext_adv_param_t</innerclass>
+    <innerclass refid="structll__ext__adv__enable__t" prot="public">ll_ext_adv_enable_t</innerclass>
+    <innerclass refid="structll__per__adv__param__t" prot="public">ll_per_adv_param_t</innerclass>
+    <innerclass refid="structle__ext__primary__link" prot="public">le_ext_primary_link</innerclass>
+    <innerclass refid="structle__ext__secondary__link" prot="public">le_ext_secondary_link</innerclass>
+    <innerclass refid="struct____ext__adv__list" prot="public">__ext_adv_list</innerclass>
+    <innerclass refid="structext__advertising__param" prot="public">ext_advertising_param</innerclass>
+    <innerclass refid="structext__advertising__data" prot="public">ext_advertising_data</innerclass>
+    <innerclass refid="structext__advertising__enable" prot="public">ext_advertising_enable</innerclass>
+    <innerclass refid="struct__GNU__PACKED__" prot="public">_GNU_PACKED_</innerclass>
+    <innerclass refid="struct__GNU__PACKED__" prot="public">_GNU_PACKED_</innerclass>
+    <innerclass refid="structad__format__t" prot="public">ad_format_t</innerclass>
+    <innerclass refid="struct__GNU__PACKED__" prot="public">_GNU_PACKED_</innerclass>
+    <innerclass refid="struct__GNU__PACKED__" prot="public">_GNU_PACKED_</innerclass>
+    <innerclass refid="struct____ext__adv__group" prot="public">__ext_adv_group</innerclass>
+    <innerclass refid="struct____ext__adv__group_8acad" prot="public">__ext_adv_group.acad</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="ll__ext__adv_8h_1a7e9d2306f17210995daff425d88e684e" prot="public" static="no">
+        <name>CON_UNDIR_SCAN_UNDIR</name>
+        <initializer>(BIT(CONNECTABLE_ADVERTISING)|BIT(SCANNABLE_ADVERTISING))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="24" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__ext__adv_8h_1a2ffb2e9ecf37d93c639a8580f610b1ef" prot="public" static="no">
+        <name>LOW_CONNECT_DIRECTED</name>
+        <initializer>(BIT(CONNECTABLE_ADVERTISING)|BIT(DIRECTED_ADVERTISING))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="25" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__ext__adv_8h_1ab86fc8ef4fbc0bd79cd0cfe3f2a894e1" prot="public" static="no">
+        <name>HIGH_CONNECT_DIRECTED</name>
+        <initializer>(BIT(CONNECTABLE_ADVERTISING)|BIT(DIRECTED_ADVERTISING)|BIT(HIGH_DUTY_DIRECTED))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="26" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__ext__adv_8h_1a8ed4b8f7861601b2ea0935dedd67b7d7" prot="public" static="no">
+        <name>SCAN_UNDIRECTED</name>
+        <initializer>(BIT(SCANNABLE_ADVERTISING))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="27" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__ext__adv_8h_1af31075dfd976268764246852462ba9a3" prot="public" static="no">
+        <name>NON_CONNECT_NON_SCAN</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="28" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__ext__adv_8h_1ae94194d72f7f95e2f886e0b307e1963e" prot="public" static="no">
+        <name>NON_CONNECT_NON_SCAN_DIRECTED</name>
+        <initializer>(BIT(DIRECTED_ADVERTISING))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="31" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__ext__adv_8h_1ad8ba83cd75bc35638c5010ec068276ab" prot="public" static="no">
+        <name>CONNECTABLE_UNDIRECTED</name>
+        <initializer>(BIT(CONNECTABLE_ADVERTISING))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="32" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__ext__adv_8h_1ae15bfd75c1d543529cf91ba3479ffd08" prot="public" static="no">
+        <name>CONNECTABLE_DIRECTED</name>
+        <initializer>(BIT(CONNECTABLE_ADVERTISING)|BIT(DIRECTED_ADVERTISING))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="33" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__ext__adv_8h_1a3c59de53b29704efe57c531572816f68" prot="public" static="no">
+        <name>SCANNABLE_UNDIRECTED</name>
+        <initializer>(BIT(SCANNABLE_ADVERTISING))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="34" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__ext__adv_8h_1abd7b71a6c7841dc14d5e2505bb6fd6e7" prot="public" static="no">
+        <name>SCANNABLE_DIRECTED</name>
+        <initializer>(BIT(SCANNABLE_ADVERTISING)|BIT(DIRECTED_ADVERTISING))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="35" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__ext__adv_8h_1ad21716e54d8d663c5594423451498e98" prot="public" static="no">
+        <name>NUMBER_OF_SUPPORTED_ADV_SETS</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="38" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__ext__adv_8h_1a5d1f937319ad5630fedb32ecf6567b4e" prot="public" static="no">
+        <name>MAX_SUPPORTED_ADV_DATA_LENGTH</name>
+        <initializer>(128 * 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="39" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__ext__adv_8h_1a7b3f3778c78ee99b27f4b833678e5b91" prot="public" static="no">
+        <name>__ext_adv_head</name>
+        <initializer>(&amp;ext_le_param.ext_adv_list.head)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="41" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="ll__ext__adv_8h_1ae6dceca96ec2c7a1b4aa211264a87ef6" prot="public" static="no">
+        <name>@58</name>
+        <enumvalue id="ll__ext__adv_8h_1ae6dceca96ec2c7a1b4aa211264a87ef6aa13b083e730ee54af3e0848bd2fd8c01" prot="public">
+          <name>LL_ADV_CHAN_37_BIT</name>
+          <initializer>= (1 &lt;&lt; 0)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Advertising channel 37. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ll__ext__adv_8h_1ae6dceca96ec2c7a1b4aa211264a87ef6a8b54e44727b2231ba9e10cabd985139c" prot="public">
+          <name>LL_ADV_CHAN_38_BIT</name>
+          <initializer>= (1 &lt;&lt; 1)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Advertising channel 38. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ll__ext__adv_8h_1ae6dceca96ec2c7a1b4aa211264a87ef6a3fc8d664396762664480ac4658f078e0" prot="public">
+          <name>LL_ADV_CHAN_39_BIT</name>
+          <initializer>= (1 &lt;&lt; 2)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Advertising channel 39. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ll__ext__adv_8h_1ae6dceca96ec2c7a1b4aa211264a87ef6ada1f4211f761e5de8efe4bac83727f8a" prot="public">
+          <name>LL_ADV_CHAN_ALL</name>
+          <initializer>= 0x7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>All advertising channels. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Advertising channel bit. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="49" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" bodystart="48" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="enum" id="ll__ext__adv_8h_1a56a0f36da7f9eaaf54bd05cc2bf49173" prot="public" static="no">
+        <name>@59</name>
+        <enumvalue id="ll__ext__adv_8h_1a56a0f36da7f9eaaf54bd05cc2bf49173a039c7011c9844af323f3b31a001bdc01" prot="public">
+          <name>LL_ADV_FILTER_NONE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Scan from any device. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ll__ext__adv_8h_1a56a0f36da7f9eaaf54bd05cc2bf49173a07f69a95c83c4012d9580bc40ca49ad9" prot="public">
+          <name>LL_ADV_FILTER_SCAN_WL_BIT</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Scan from White List only. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ll__ext__adv_8h_1a56a0f36da7f9eaaf54bd05cc2bf49173ab0cf33c5fa209a1fe6277f25524ee1c5" prot="public">
+          <name>LL_ADV_FILTER_CONN_WL_BIT</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Connect from While List only. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ll__ext__adv_8h_1a56a0f36da7f9eaaf54bd05cc2bf49173a5dd2cdbe5c837362edbabb25b486133d" prot="public">
+          <name>LL_ADV_FILTER_WL_ONLY</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Scan and connect from While List only. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Advertising filter policy. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="58" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" bodystart="57" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="enum" id="ll__ext__adv_8h_1aa156d1cebb38c8a65846c4d9c006012a" prot="public" static="no">
+        <name>@60</name>
+        <enumvalue id="ll__ext__adv_8h_1aa156d1cebb38c8a65846c4d9c006012aa49946480e905eb7aad93ce23e10f5599" prot="public">
+          <name>LL_ADV_EVT_PROP_CONN_ADV_BIT</name>
+          <initializer>= (1 &lt;&lt; 0)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Connectable advertising. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ll__ext__adv_8h_1aa156d1cebb38c8a65846c4d9c006012aa7b75f7005205a1d74de9e9d8ec30218b" prot="public">
+          <name>LL_ADV_EVT_PROP_SCAN_ADV_BIT</name>
+          <initializer>= (1 &lt;&lt; 1)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Scannable advertising. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ll__ext__adv_8h_1aa156d1cebb38c8a65846c4d9c006012aae2ad26277e48a8ca32fa75bf75418e00" prot="public">
+          <name>LL_ADV_EVT_PROP_DIRECT_ADV_BIT</name>
+          <initializer>= (1 &lt;&lt; 2)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Directed advertising. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ll__ext__adv_8h_1aa156d1cebb38c8a65846c4d9c006012aa2ef59b268c18a2152d304cc2ea138677" prot="public">
+          <name>LL_ADV_EVT_PROP_HIGH_DUTY_ADV_BIT</name>
+          <initializer>= (1 &lt;&lt; 3)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>High Duty Cycle advertising. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ll__ext__adv_8h_1aa156d1cebb38c8a65846c4d9c006012aa749a09a3cbf92af1a9abfd290d0492c3" prot="public">
+          <name>LL_ADV_EVT_PROP_LEGACY_ADV_BIT</name>
+          <initializer>= (1 &lt;&lt; 4)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Use legacy advertising PDUs. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ll__ext__adv_8h_1aa156d1cebb38c8a65846c4d9c006012aa0b9b130d418a1d2914031d831412d8d0" prot="public">
+          <name>LL_ADV_EVT_PROP_OMIT_AA_BIT</name>
+          <initializer>= (1 &lt;&lt; 5)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Omit advertiser&apos;s address from all PDUs (anonymous advertising). </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ll__ext__adv_8h_1aa156d1cebb38c8a65846c4d9c006012aa4f440c4138364d8692f4bd489e8f62b2" prot="public">
+          <name>LL_ADV_EVT_PROP_TX_PWR_BIT</name>
+          <initializer>= (1 &lt;&lt; 6)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Include TxPower in the advertising PDU. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Advertising event properties. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="67" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" bodystart="66" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="enum" id="ll__ext__adv_8h_1af8654c714018c6241d9ebd01f3fb5a26" prot="public" static="no">
+        <name>@61</name>
+        <enumvalue id="ll__ext__adv_8h_1af8654c714018c6241d9ebd01f3fb5a26a9eff3658520ce208f743310418af63b5" prot="public">
+          <name>LL_ADV_DATA_OP_FRAG_INTER</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Intermediate fragment. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ll__ext__adv_8h_1af8654c714018c6241d9ebd01f3fb5a26a55686750f530a792e6c493e7cf53b31d" prot="public">
+          <name>LL_ADV_DATA_OP_FRAG_FIRST</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>First fragment. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ll__ext__adv_8h_1af8654c714018c6241d9ebd01f3fb5a26a1f65ec0476b7e95ffd569f15e7e28750" prot="public">
+          <name>LL_ADV_DATA_OP_FRAG_LAST</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Last fragment. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ll__ext__adv_8h_1af8654c714018c6241d9ebd01f3fb5a26aa3cf3479647b6f0eb84d0b039c722b52" prot="public">
+          <name>LL_ADV_DATA_OP_COMP</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Complete extended advertising data. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ll__ext__adv_8h_1af8654c714018c6241d9ebd01f3fb5a26a1fee7780e678b1b93ea13e9b743e695e" prot="public">
+          <name>LL_ADV_DATA_OP_UNCHANGED</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Unchanged data (just update the Advertising DID). </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Advertising data operation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="114" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" bodystart="113" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="enum" id="ll__ext__adv_8h_1a2f80701c36e79c0640d91c788feee0b3" prot="public" static="no">
+        <name>@62</name>
+        <enumvalue id="ll__ext__adv_8h_1a2f80701c36e79c0640d91c788feee0b3a208899c7b0a8372fe39336f8116e849d" prot="public">
+          <name>LL_ADV_DATA_FRAG_ALLOW</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Controller may fragment all Host advertising data. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ll__ext__adv_8h_1a2f80701c36e79c0640d91c788feee0b3a40cfe6a5b9c8fb589bd1be48565afd5c" prot="public">
+          <name>LL_ADV_DATA_FRAG_DISALLOW</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Controller should not fragment nor minimize fragmentation of Host advertising data. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Advertising data fragment preference. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="124" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" bodystart="123" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="enum" id="ll__ext__adv_8h_1a531c35e38ede3ea4e5ba5afb24b29493" prot="public" static="no">
+        <name>@63</name>
+        <enumvalue id="ll__ext__adv_8h_1a531c35e38ede3ea4e5ba5afb24b29493a8ce8d12b04e78d9715da4d363ccf5eda" prot="public">
+          <name>EXT_ADV_TO_NONE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ll__ext__adv_8h_1a531c35e38ede3ea4e5ba5afb24b29493a36011d7636e8d0cd3f63632b9a749290" prot="public">
+          <name>EXT_ADV_DURATION_SETUP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ll__ext__adv_8h_1a531c35e38ede3ea4e5ba5afb24b29493a6045aaac7d825a2d7a06cfc5e53a95f0" prot="public">
+          <name>EXT_ADV_MAX_EVENT_SETUP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ll__ext__adv_8h_1a531c35e38ede3ea4e5ba5afb24b29493a5dc941ce0954705b5c4a1d5af233db75" prot="public">
+          <name>EXT_ADV_TIMEOUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="129" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" bodystart="129" bodyend="134"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="ll__ext__adv_8h_1ac5d6dfed51bcf5abd1b061c39ff15c57" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structext__advertising__param" kindref="compound">ext_advertising_param</ref></type>
+        <definition>struct ext_advertising_enable  _GNU_PACKED_</definition>
+        <argsstring></argsstring>
+        <name>_GNU_PACKED_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="176" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="ll__ext__adv_8h_1a8b8f38306953183238c39ea623474881" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void le_ext_adv_destroy</definition>
+        <argsstring>(void)</argsstring>
+        <name>le_ext_adv_destroy</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="273" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__ext__adv_8h_1a8fa3e8859ddfd71a7cc4db4e472c3491" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ll_ext_adv_rx_post_process</definition>
+        <argsstring>(int *empty)</argsstring>
+        <name>ll_ext_adv_rx_post_process</name>
+        <param>
+          <type>int *</type>
+          <declname>empty</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="274" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__ext__adv_8h_1ab523110b389ba5ceeb9865ad65f4ffab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ll_exit_ext_legacy_adv_status</definition>
+        <argsstring>(u16 connection_handle)</argsstring>
+        <name>ll_exit_ext_legacy_adv_status</name>
+        <param>
+          <type>u16</type>
+          <declname>connection_handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="275" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__ext__adv_8h_1a7a397e1caa304654e1cd707417231dc6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="struct____ext__adv__group" kindref="compound">__ext_adv_group</ref> *</type>
+        <definition>struct __ext_adv_group* ll_alloc_adv_set</definition>
+        <argsstring>(void)</argsstring>
+        <name>ll_alloc_adv_set</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="281" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__ext__adv_8h_1a49b4d637437b035fd641217a9fc1d1e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ll_remove_assigned_adv_set</definition>
+        <argsstring>(struct __ext_adv_group *p)</argsstring>
+        <name>ll_remove_assigned_adv_set</name>
+        <param>
+          <type>struct <ref refid="struct____ext__adv__group" kindref="compound">__ext_adv_group</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="282" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__ext__adv_8h_1a7ea10d40428e2a78c4850399e3d7d0b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ll_remove_all_adv_set</definition>
+        <argsstring>(void)</argsstring>
+        <name>ll_remove_all_adv_set</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="283" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__ext__adv_8h_1aaa31176734fc1cea7a0b3bbb3b43fb4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="struct____ext__adv__group" kindref="compound">__ext_adv_group</ref> *</type>
+        <definition>struct __ext_adv_group* ll_find_adv_set_by_handle</definition>
+        <argsstring>(u8 adv_handle)</argsstring>
+        <name>ll_find_adv_set_by_handle</name>
+        <param>
+          <type>u8</type>
+          <declname>adv_handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="284" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__ext__adv_8h_1ae3514e7d08927be1f669aeca40c22e8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ll_ext_adv_set_update</definition>
+        <argsstring>(u8 adv_handle, struct __ext_adv_group *adv_set)</argsstring>
+        <name>ll_ext_adv_set_update</name>
+        <param>
+          <type>u8</type>
+          <declname>adv_handle</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="struct____ext__adv__group" kindref="compound">__ext_adv_group</ref> *</type>
+          <declname>adv_set</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="286" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__ext__adv_8h_1a097c4b31ff59e1fd2a021054400acb69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ll_ext_adv_alive_timer_reset</definition>
+        <argsstring>(u8 adv_handle, struct __ext_adv_group *p)</argsstring>
+        <name>ll_ext_adv_alive_timer_reset</name>
+        <param>
+          <type>u8</type>
+          <declname>adv_handle</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="struct____ext__adv__group" kindref="compound">__ext_adv_group</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="287" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__ext__adv_8h_1a4281da9bad5573deeab1a56298dbd6c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ll_ext_legacy_adv_open</definition>
+        <argsstring>(u8 adv_handle, struct __ext_adv_group *adv_set)</argsstring>
+        <name>ll_ext_legacy_adv_open</name>
+        <param>
+          <type>u8</type>
+          <declname>adv_handle</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="struct____ext__adv__group" kindref="compound">__ext_adv_group</ref> *</type>
+          <declname>adv_set</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="288" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__ext__adv_8h_1a9ee358f09d6be6ae8ee8bb503eb2856f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ll_ext_adv_close</definition>
+        <argsstring>(u8 adv_handle)</argsstring>
+        <name>ll_ext_adv_close</name>
+        <param>
+          <type>u8</type>
+          <declname>adv_handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="289" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__ext__adv_8h_1ad8a70d782071ed6885cd8dd41de1e488" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ll_ext_adv_open</definition>
+        <argsstring>(u8 adv_handle, struct __ext_adv_group *ext_adv)</argsstring>
+        <name>ll_ext_adv_open</name>
+        <param>
+          <type>u8</type>
+          <declname>adv_handle</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="struct____ext__adv__group" kindref="compound">__ext_adv_group</ref> *</type>
+          <declname>ext_adv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="290" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__ext__adv_8h_1ad63ad51f7d70cc4269a3933421a9f72b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref></type>
+        <definition>bool_t LctrIsPerAdvEnabled</definition>
+        <argsstring>(uint8_t handle)</argsstring>
+        <name>LctrIsPerAdvEnabled</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="292" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__ext__adv_8h_1a0090bd78c1b6f5777f6413ab8cc7b951" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ll_acad_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>ll_acad_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="294" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ll__ext__adv_8h_1aa1e66059d40f7ce9b75c728412c0572b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int le_cmd_set_ext_adv</definition>
+        <argsstring>(u16 opcode, const u8 *data, u32 size)</argsstring>
+        <name>le_cmd_set_ext_adv</name>
+        <param>
+          <type>u16</type>
+          <declname>opcode</declname>
+        </param>
+        <param>
+          <type>const u8 *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="296" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*********************************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/>Filename<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>ll_ext_adv.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/>Description<sp/><sp/><sp/><sp/><sp/>:<sp/></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"></highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/>Author<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>Bingquan</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"></highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/>Email<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>caibingquan@zh-jieli.com</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/>Last<sp/>modifiled<sp/><sp/>:<sp/>2021-03-25<sp/>20:09</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"></highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/>Copyright:(c)JIELI<sp/><sp/>2011-2020<sp/><sp/>@<sp/>,<sp/>All<sp/>Rights<sp/>Reserved.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">*********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__LL_EXT_ADV_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__LL_EXT_ADV_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;typedef.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">/**************************************************************************************************</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/>Macros</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>**************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//&lt;<sp/>for<sp/>legacy</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="ll__ext__adv_8h_1a7e9d2306f17210995daff425d88e684e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CON_UNDIR_SCAN_UNDIR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(BIT(CONNECTABLE_ADVERTISING)|BIT(SCANNABLE_ADVERTISING))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="ll__ext__adv_8h_1a2ffb2e9ecf37d93c639a8580f610b1ef" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOW_CONNECT_DIRECTED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(BIT(CONNECTABLE_ADVERTISING)|BIT(DIRECTED_ADVERTISING))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="ll__ext__adv_8h_1ab86fc8ef4fbc0bd79cd0cfe3f2a894e1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HIGH_CONNECT_DIRECTED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(BIT(CONNECTABLE_ADVERTISING)|BIT(DIRECTED_ADVERTISING)|BIT(HIGH_DUTY_DIRECTED))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="ll__ext__adv_8h_1a8ed4b8f7861601b2ea0935dedd67b7d7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SCAN_UNDIRECTED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(BIT(SCANNABLE_ADVERTISING))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="ll__ext__adv_8h_1af31075dfd976268764246852462ba9a3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NON_CONNECT_NON_SCAN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//&lt;<sp/>for<sp/>ext<sp/>adv</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="ll__ext__adv_8h_1ae94194d72f7f95e2f886e0b307e1963e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NON_CONNECT_NON_SCAN_DIRECTED<sp/><sp/><sp/>(BIT(DIRECTED_ADVERTISING))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="ll__ext__adv_8h_1ad8ba83cd75bc35638c5010ec068276ab" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONNECTABLE_UNDIRECTED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(BIT(CONNECTABLE_ADVERTISING))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="ll__ext__adv_8h_1ae15bfd75c1d543529cf91ba3479ffd08" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONNECTABLE_DIRECTED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(BIT(CONNECTABLE_ADVERTISING)|BIT(DIRECTED_ADVERTISING))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="ll__ext__adv_8h_1a3c59de53b29704efe57c531572816f68" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SCANNABLE_UNDIRECTED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(BIT(SCANNABLE_ADVERTISING))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="ll__ext__adv_8h_1abd7b71a6c7841dc14d5e2505bb6fd6e7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SCANNABLE_DIRECTED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(BIT(SCANNABLE_ADVERTISING)|BIT(DIRECTED_ADVERTISING))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="ll__ext__adv_8h_1ad21716e54d8d663c5594423451498e98" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NUMBER_OF_SUPPORTED_ADV_SETS<sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="ll__ext__adv_8h_1a5d1f937319ad5630fedb32ecf6567b4e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX_SUPPORTED_ADV_DATA_LENGTH<sp/><sp/><sp/>(128<sp/>*<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="ll__ext__adv_8h_1a7b3f3778c78ee99b27f4b833678e5b91" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__ext_adv_head<sp/><sp/><sp/><sp/><sp/><sp/>(&amp;ext_le_param.ext_adv_list.head)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">/**************************************************************************************************</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/><sp/>Constants</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/>**************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="50" refid="ll__ext__adv_8h_1ae6dceca96ec2c7a1b4aa211264a87ef6aa13b083e730ee54af3e0848bd2fd8c01" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="ll__ext__adv_8h_1ae6dceca96ec2c7a1b4aa211264a87ef6aa13b083e730ee54af3e0848bd2fd8c01" kindref="member">LL_ADV_CHAN_37_BIT</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(1<sp/>&lt;&lt;<sp/>0),<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="51" refid="ll__ext__adv_8h_1ae6dceca96ec2c7a1b4aa211264a87ef6a8b54e44727b2231ba9e10cabd985139c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="ll__ext__adv_8h_1ae6dceca96ec2c7a1b4aa211264a87ef6a8b54e44727b2231ba9e10cabd985139c" kindref="member">LL_ADV_CHAN_38_BIT</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(1<sp/>&lt;&lt;<sp/>1),<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="52" refid="ll__ext__adv_8h_1ae6dceca96ec2c7a1b4aa211264a87ef6a3fc8d664396762664480ac4658f078e0" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="ll__ext__adv_8h_1ae6dceca96ec2c7a1b4aa211264a87ef6a3fc8d664396762664480ac4658f078e0" kindref="member">LL_ADV_CHAN_39_BIT</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(1<sp/>&lt;&lt;<sp/>2),<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="53" refid="ll__ext__adv_8h_1ae6dceca96ec2c7a1b4aa211264a87ef6ada1f4211f761e5de8efe4bac83727f8a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="ll__ext__adv_8h_1ae6dceca96ec2c7a1b4aa211264a87ef6ada1f4211f761e5de8efe4bac83727f8a" kindref="member">LL_ADV_CHAN_ALL</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x7,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="54"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="59" refid="ll__ext__adv_8h_1a56a0f36da7f9eaaf54bd05cc2bf49173a039c7011c9844af323f3b31a001bdc01" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="ll__ext__adv_8h_1a56a0f36da7f9eaaf54bd05cc2bf49173a039c7011c9844af323f3b31a001bdc01" kindref="member">LL_ADV_FILTER_NONE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60" refid="ll__ext__adv_8h_1a56a0f36da7f9eaaf54bd05cc2bf49173a07f69a95c83c4012d9580bc40ca49ad9" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="ll__ext__adv_8h_1a56a0f36da7f9eaaf54bd05cc2bf49173a07f69a95c83c4012d9580bc40ca49ad9" kindref="member">LL_ADV_FILTER_SCAN_WL_BIT</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>1,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61" refid="ll__ext__adv_8h_1a56a0f36da7f9eaaf54bd05cc2bf49173ab0cf33c5fa209a1fe6277f25524ee1c5" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="ll__ext__adv_8h_1a56a0f36da7f9eaaf54bd05cc2bf49173ab0cf33c5fa209a1fe6277f25524ee1c5" kindref="member">LL_ADV_FILTER_CONN_WL_BIT</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>2,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="62" refid="ll__ext__adv_8h_1a56a0f36da7f9eaaf54bd05cc2bf49173a5dd2cdbe5c837362edbabb25b486133d" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="ll__ext__adv_8h_1a56a0f36da7f9eaaf54bd05cc2bf49173a5dd2cdbe5c837362edbabb25b486133d" kindref="member">LL_ADV_FILTER_WL_ONLY</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="68" refid="ll__ext__adv_8h_1aa156d1cebb38c8a65846c4d9c006012aa49946480e905eb7aad93ce23e10f5599" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__ext__adv_8h_1aa156d1cebb38c8a65846c4d9c006012aa49946480e905eb7aad93ce23e10f5599" kindref="member">LL_ADV_EVT_PROP_CONN_ADV_BIT</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(1<sp/>&lt;&lt;<sp/>0),<sp/></highlight></codeline>
+<codeline lineno="69" refid="ll__ext__adv_8h_1aa156d1cebb38c8a65846c4d9c006012aa7b75f7005205a1d74de9e9d8ec30218b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__ext__adv_8h_1aa156d1cebb38c8a65846c4d9c006012aa7b75f7005205a1d74de9e9d8ec30218b" kindref="member">LL_ADV_EVT_PROP_SCAN_ADV_BIT</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(1<sp/>&lt;&lt;<sp/>1),<sp/></highlight></codeline>
+<codeline lineno="70" refid="ll__ext__adv_8h_1aa156d1cebb38c8a65846c4d9c006012aae2ad26277e48a8ca32fa75bf75418e00" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__ext__adv_8h_1aa156d1cebb38c8a65846c4d9c006012aae2ad26277e48a8ca32fa75bf75418e00" kindref="member">LL_ADV_EVT_PROP_DIRECT_ADV_BIT</ref><sp/><sp/><sp/><sp/>=<sp/>(1<sp/>&lt;&lt;<sp/>2),<sp/></highlight></codeline>
+<codeline lineno="71" refid="ll__ext__adv_8h_1aa156d1cebb38c8a65846c4d9c006012aa2ef59b268c18a2152d304cc2ea138677" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__ext__adv_8h_1aa156d1cebb38c8a65846c4d9c006012aa2ef59b268c18a2152d304cc2ea138677" kindref="member">LL_ADV_EVT_PROP_HIGH_DUTY_ADV_BIT</ref><sp/>=<sp/>(1<sp/>&lt;&lt;<sp/>3),<sp/></highlight></codeline>
+<codeline lineno="72" refid="ll__ext__adv_8h_1aa156d1cebb38c8a65846c4d9c006012aa749a09a3cbf92af1a9abfd290d0492c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__ext__adv_8h_1aa156d1cebb38c8a65846c4d9c006012aa749a09a3cbf92af1a9abfd290d0492c3" kindref="member">LL_ADV_EVT_PROP_LEGACY_ADV_BIT</ref><sp/><sp/><sp/><sp/>=<sp/>(1<sp/>&lt;&lt;<sp/>4),<sp/></highlight></codeline>
+<codeline lineno="73" refid="ll__ext__adv_8h_1aa156d1cebb38c8a65846c4d9c006012aa0b9b130d418a1d2914031d831412d8d0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__ext__adv_8h_1aa156d1cebb38c8a65846c4d9c006012aa0b9b130d418a1d2914031d831412d8d0" kindref="member">LL_ADV_EVT_PROP_OMIT_AA_BIT</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(1<sp/>&lt;&lt;<sp/>5),<sp/></highlight></codeline>
+<codeline lineno="74" refid="ll__ext__adv_8h_1aa156d1cebb38c8a65846c4d9c006012aa4f440c4138364d8692f4bd489e8f62b2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__ext__adv_8h_1aa156d1cebb38c8a65846c4d9c006012aa4f440c4138364d8692f4bd489e8f62b2" kindref="member">LL_ADV_EVT_PROP_TX_PWR_BIT</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(1<sp/>&lt;&lt;<sp/>6)<sp/><sp/></highlight></codeline>
+<codeline lineno="75"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="structll__ext__adv__param__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="80" refid="structll__ext__adv__param__t_1a96358c81e17554f7c44b8584e1a7a089" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structll__ext__adv__param__t_1a96358c81e17554f7c44b8584e1a7a089" kindref="member">advEventProp</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="81" refid="structll__ext__adv__param__t_1ada191f058fec879e21013979e48c54ce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structll__ext__adv__param__t_1ada191f058fec879e21013979e48c54ce" kindref="member">priAdvInterMin</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="82" refid="structll__ext__adv__param__t_1a75a11b4ed441ddbca8e2a10e98f7524c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structll__ext__adv__param__t_1a75a11b4ed441ddbca8e2a10e98f7524c" kindref="member">priAdvInterMax</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="83" refid="structll__ext__adv__param__t_1a433362f7782d58883c7cd56be8af265b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structll__ext__adv__param__t_1a433362f7782d58883c7cd56be8af265b" kindref="member">priAdvChanMap</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="84" refid="structll__ext__adv__param__t_1a17d9d6f68b0bf2b4e129b3cd1a0d92f4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structll__ext__adv__param__t_1a17d9d6f68b0bf2b4e129b3cd1a0d92f4" kindref="member">ownAddrType</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="85" refid="structll__ext__adv__param__t_1a1096c7c206139386df6bc32038e438ce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structll__ext__adv__param__t_1a1096c7c206139386df6bc32038e438ce" kindref="member">peerAddrType</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="86" refid="structll__ext__adv__param__t_1aadc8bfb32840d4f1fdaad103a11bff19" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*<ref refid="structll__ext__adv__param__t_1aadc8bfb32840d4f1fdaad103a11bff19" kindref="member">pPeerAddr</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="87" refid="structll__ext__adv__param__t_1a2bf80c2374e7f5c0d9c079d83264d664" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structll__ext__adv__param__t_1a2bf80c2374e7f5c0d9c079d83264d664" kindref="member">advFiltPolicy</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="88" refid="structll__ext__adv__param__t_1ac2b9c6634de98f3627cededa1732ca80" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structll__ext__adv__param__t_1ac2b9c6634de98f3627cededa1732ca80" kindref="member">advTxPwr</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="89" refid="structll__ext__adv__param__t_1a59ab9934ae37c03f4f1590e88c9a2091" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structll__ext__adv__param__t_1a59ab9934ae37c03f4f1590e88c9a2091" kindref="member">priAdvPhy</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="90" refid="structll__ext__adv__param__t_1af7fe91ecaef91f6bdea4201880b10380" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structll__ext__adv__param__t_1af7fe91ecaef91f6bdea4201880b10380" kindref="member">secAdvMaxSkip</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="91" refid="structll__ext__adv__param__t_1aa01a08a162446e60872226a2fa132c98" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structll__ext__adv__param__t_1aa01a08a162446e60872226a2fa132c98" kindref="member">secAdvPhy</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="92" refid="structll__ext__adv__param__t_1a1f4ecf5ac95dd41a9c12bd8870d8f911" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structll__ext__adv__param__t_1a1f4ecf5ac95dd41a9c12bd8870d8f911" kindref="member">advSID</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="93" refid="structll__ext__adv__param__t_1aa0129ef7491a7b1af2ee4d07656e331c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structll__ext__adv__param__t_1aa0129ef7491a7b1af2ee4d07656e331c" kindref="member">scanReqNotifEna</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="94"><highlight class="normal">}<sp/><ref refid="structll__ext__adv__param__t" kindref="compound">ll_ext_adv_param_t</ref>;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="structll__ext__adv__enable__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="99" refid="structll__ext__adv__enable__t_1a52fcd04d764c054a1a3c9fa7fda063d6" refkind="member"><highlight class="normal"><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structll__ext__adv__enable__t_1a52fcd04d764c054a1a3c9fa7fda063d6" kindref="member">handle</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="100" refid="structll__ext__adv__enable__t_1a295e21d7de63d21da891d99f3bc1a961" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structll__ext__adv__enable__t_1a295e21d7de63d21da891d99f3bc1a961" kindref="member">duration</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="101" refid="structll__ext__adv__enable__t_1af0baf906d16fa1c5640ff9fe542137b9" refkind="member"><highlight class="normal"><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structll__ext__adv__enable__t_1af0baf906d16fa1c5640ff9fe542137b9" kindref="member">numEvents</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="102"><highlight class="normal">}<sp/><ref refid="structll__ext__adv__enable__t" kindref="compound">ll_ext_adv_enable_t</ref>;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="structll__per__adv__param__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="107" refid="structll__per__adv__param__t_1aff229ae7780a8358e2d38162f0380a46" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structll__per__adv__param__t_1aff229ae7780a8358e2d38162f0380a46" kindref="member">perAdvInterMin</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="108" refid="structll__per__adv__param__t_1aaa73e291fc49e75e1a49b983cf202c0d" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structll__per__adv__param__t_1aaa73e291fc49e75e1a49b983cf202c0d" kindref="member">perAdvInterMax</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="109" refid="structll__per__adv__param__t_1a5d7b4d41cdb33d54d417ac4b05531f01" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structll__per__adv__param__t_1a5d7b4d41cdb33d54d417ac4b05531f01" kindref="member">perAdvProp</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="110"><highlight class="normal">}<sp/><ref refid="structll__per__adv__param__t" kindref="compound">ll_per_adv_param_t</ref>;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="115" refid="ll__ext__adv_8h_1af8654c714018c6241d9ebd01f3fb5a26a9eff3658520ce208f743310418af63b5" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="ll__ext__adv_8h_1af8654c714018c6241d9ebd01f3fb5a26a9eff3658520ce208f743310418af63b5" kindref="member">LL_ADV_DATA_OP_FRAG_INTER</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="116" refid="ll__ext__adv_8h_1af8654c714018c6241d9ebd01f3fb5a26a55686750f530a792e6c493e7cf53b31d" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="ll__ext__adv_8h_1af8654c714018c6241d9ebd01f3fb5a26a55686750f530a792e6c493e7cf53b31d" kindref="member">LL_ADV_DATA_OP_FRAG_FIRST</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>1,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="117" refid="ll__ext__adv_8h_1af8654c714018c6241d9ebd01f3fb5a26a1f65ec0476b7e95ffd569f15e7e28750" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="ll__ext__adv_8h_1af8654c714018c6241d9ebd01f3fb5a26a1f65ec0476b7e95ffd569f15e7e28750" kindref="member">LL_ADV_DATA_OP_FRAG_LAST</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="118" refid="ll__ext__adv_8h_1af8654c714018c6241d9ebd01f3fb5a26aa3cf3479647b6f0eb84d0b039c722b52" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="ll__ext__adv_8h_1af8654c714018c6241d9ebd01f3fb5a26aa3cf3479647b6f0eb84d0b039c722b52" kindref="member">LL_ADV_DATA_OP_COMP</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>3,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="119" refid="ll__ext__adv_8h_1af8654c714018c6241d9ebd01f3fb5a26a1fee7780e678b1b93ea13e9b743e695e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="ll__ext__adv_8h_1af8654c714018c6241d9ebd01f3fb5a26a1fee7780e678b1b93ea13e9b743e695e" kindref="member">LL_ADV_DATA_OP_UNCHANGED</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="120"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="125" refid="ll__ext__adv_8h_1a2f80701c36e79c0640d91c788feee0b3a208899c7b0a8372fe39336f8116e849d" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="ll__ext__adv_8h_1a2f80701c36e79c0640d91c788feee0b3a208899c7b0a8372fe39336f8116e849d" kindref="member">LL_ADV_DATA_FRAG_ALLOW</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="126" refid="ll__ext__adv_8h_1a2f80701c36e79c0640d91c788feee0b3a40cfe6a5b9c8fb589bd1be48565afd5c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="ll__ext__adv_8h_1a2f80701c36e79c0640d91c788feee0b3a40cfe6a5b9c8fb589bd1be48565afd5c" kindref="member">LL_ADV_DATA_FRAG_DISALLOW</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="127"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="130" refid="ll__ext__adv_8h_1a531c35e38ede3ea4e5ba5afb24b29493a8ce8d12b04e78d9715da4d363ccf5eda" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__ext__adv_8h_1a531c35e38ede3ea4e5ba5afb24b29493a8ce8d12b04e78d9715da4d363ccf5eda" kindref="member">EXT_ADV_TO_NONE</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="131" refid="ll__ext__adv_8h_1a531c35e38ede3ea4e5ba5afb24b29493a36011d7636e8d0cd3f63632b9a749290" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__ext__adv_8h_1a531c35e38ede3ea4e5ba5afb24b29493a36011d7636e8d0cd3f63632b9a749290" kindref="member">EXT_ADV_DURATION_SETUP</ref>,</highlight></codeline>
+<codeline lineno="132" refid="ll__ext__adv_8h_1a531c35e38ede3ea4e5ba5afb24b29493a6045aaac7d825a2d7a06cfc5e53a95f0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__ext__adv_8h_1a531c35e38ede3ea4e5ba5afb24b29493a6045aaac7d825a2d7a06cfc5e53a95f0" kindref="member">EXT_ADV_MAX_EVENT_SETUP</ref>,</highlight></codeline>
+<codeline lineno="133" refid="ll__ext__adv_8h_1a531c35e38ede3ea4e5ba5afb24b29493a5dc941ce0954705b5c4a1d5af233db75" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__ext__adv_8h_1a531c35e38ede3ea4e5ba5afb24b29493a5dc941ce0954705b5c4a1d5af233db75" kindref="member">EXT_ADV_TIMEOUT</ref>,</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136" refid="structle__ext__primary__link" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structle__ext__primary__link" kindref="compound">le_ext_primary_link</ref><sp/>{</highlight></codeline>
+<codeline lineno="137" refid="structle__ext__primary__link_1ab7aa62c18eae4e318451255e091a4755" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">list_head<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structle__ext__primary__link_1ab7aa62c18eae4e318451255e091a4755" kindref="member">entry</ref>;</highlight></codeline>
+<codeline lineno="138" refid="structle__ext__primary__link_1a1bad5118b1aea4ba83a5d571567c4229" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structle__ext__primary__link_1a1bad5118b1aea4ba83a5d571567c4229" kindref="member">hw</ref>;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>struct<sp/>__ext_adv_group<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*ext_adv;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140" refid="structle__ext__primary__link_1a8b5713226c239bf996680029cffdfd19" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structle__adv__link" kindref="compound">le_adv_link</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structle__ext__primary__link_1a8b5713226c239bf996680029cffdfd19" kindref="member">legacy_adv_link</ref>;</highlight></codeline>
+<codeline lineno="141" refid="structle__ext__primary__link_1a4828d1bddcba03d48a7388262582a281" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structle__ext__secondary__link" kindref="compound">le_ext_secondary_link</ref><sp/><sp/><sp/><sp/>*<ref refid="structle__ext__primary__link_1a4828d1bddcba03d48a7388262582a281" kindref="member">secondary_link</ref>;</highlight></codeline>
+<codeline lineno="142" refid="structle__ext__primary__link_1ad099e53c7b9122ab5399ffdf3a69f98f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>sys_timer<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structle__ext__primary__link_1ad099e53c7b9122ab5399ffdf3a69f98f" kindref="member">adv_timeout</ref>;</highlight></codeline>
+<codeline lineno="143" refid="structle__ext__primary__link_1a161ea7476068d28ac8c8a5765c166601" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structle__ext__primary__link_1a161ea7476068d28ac8c8a5765c166601" kindref="member">adv_timeout_type</ref>;</highlight></codeline>
+<codeline lineno="144" refid="structle__ext__primary__link_1a07684ff7de79d0b651f94f12ae604dc7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structle__ext__primary__link_1a07684ff7de79d0b651f94f12ae604dc7" kindref="member">adv_handle</ref>;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147" refid="structle__ext__secondary__link" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structle__ext__secondary__link" kindref="compound">le_ext_secondary_link</ref><sp/>{</highlight></codeline>
+<codeline lineno="148" refid="structle__ext__secondary__link_1a9e2b38d6d50fd117a6527f4733ae607a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structle__ext__secondary__link_1a9e2b38d6d50fd117a6527f4733ae607a" kindref="member">hw</ref>;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>struct<sp/>__ext_adv_group<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*ext_adv;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="structle__ext__secondary__link_1ab3eb46ea0554850d4b965808e62d52a3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structle__link" kindref="compound">le_link</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structle__ext__secondary__link_1ab3eb46ea0554850d4b965808e62d52a3" kindref="member">connect_link</ref>;</highlight></codeline>
+<codeline lineno="151" refid="structle__ext__secondary__link_1a9ce8fd20c005a059b6dc70eade998cd6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structle__ext__periodic__link" kindref="compound">le_ext_periodic_link</ref><sp/><sp/><sp/><sp/><sp/>*<ref refid="structle__ext__secondary__link_1a9ce8fd20c005a059b6dc70eade998cd6" kindref="member">periodic_link</ref>;</highlight></codeline>
+<codeline lineno="152" refid="structle__ext__secondary__link_1add659cf48577fd1fd89ac5a691809982" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structle__ext__secondary__link_1add659cf48577fd1fd89ac5a691809982" kindref="member">adv_handle</ref>;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155" refid="struct____ext__adv__list" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct____ext__adv__list" kindref="compound">__ext_adv_list</ref><sp/>{</highlight></codeline>
+<codeline lineno="156" refid="struct____ext__adv__list_1a37764e024aacc1ef07af597cdd0a9e1c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">list_head<sp/><sp/><sp/><sp/>head;</highlight></codeline>
+<codeline lineno="157" refid="struct____ext__adv__list_1a608fb003697a5635b363fd3f7531e20c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct____ext__adv__list_1a608fb003697a5635b363fd3f7531e20c" kindref="member">nums_set</ref>;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160" refid="structext__advertising__param" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structext__advertising__param" kindref="compound">ext_advertising_param</ref><sp/>{</highlight></codeline>
+<codeline lineno="161" refid="structext__advertising__param_1afc7af5667bd11123266bb8ab47668db6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structext__advertising__param_1afc7af5667bd11123266bb8ab47668db6" kindref="member">Advertising_Handle</ref>;</highlight></codeline>
+<codeline lineno="162" refid="structext__advertising__param_1a453d0aa8176dbb406ce9cad43bc747e7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structext__advertising__param_1a453d0aa8176dbb406ce9cad43bc747e7" kindref="member">Advertising_Event_Properties</ref>;</highlight></codeline>
+<codeline lineno="163" refid="structext__advertising__param_1aceae76fc3efee1b1b29865a9c1eb9a77" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>Primary_Advertising_Interval_Min[3];</highlight></codeline>
+<codeline lineno="164" refid="structext__advertising__param_1a635d9185b9e6867dec7d5609563c8fa1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>Primary_Advertising_Interval_Max[3];</highlight></codeline>
+<codeline lineno="165" refid="structext__advertising__param_1a3c4f0105060bc4ea4682ddc3f702d5f7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structext__advertising__param_1a3c4f0105060bc4ea4682ddc3f702d5f7" kindref="member">Primary_Advertising_Channel_Map</ref>;</highlight></codeline>
+<codeline lineno="166" refid="structext__advertising__param_1a1faa6a05c0158a50a5ee7177ba74e530" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structext__advertising__param_1a1faa6a05c0158a50a5ee7177ba74e530" kindref="member">Own_Address_Type</ref>;</highlight></codeline>
+<codeline lineno="167" refid="structext__advertising__param_1a9ba10c3b7efa9d1633a4a8f989f38131" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structext__advertising__param_1a9ba10c3b7efa9d1633a4a8f989f38131" kindref="member">Peer_Address_Type</ref>;</highlight></codeline>
+<codeline lineno="168" refid="structext__advertising__param_1a659ebb36682d15b715fcd6112d402b28" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>Peer_Address[6];</highlight></codeline>
+<codeline lineno="169" refid="structext__advertising__param_1a83812eaa7195b01b403828c371c8a1e2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structext__advertising__param_1a83812eaa7195b01b403828c371c8a1e2" kindref="member">Advertising_Filter_Policy</ref>;</highlight></codeline>
+<codeline lineno="170" refid="structext__advertising__param_1aee1ff0b457f1c55b65bd23a9de5aa257" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structext__advertising__param_1aee1ff0b457f1c55b65bd23a9de5aa257" kindref="member">Advertising_Tx_Power</ref>;</highlight></codeline>
+<codeline lineno="171" refid="structext__advertising__param_1aa73112e5ef561f1bc4a95bd1d0a700d8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structext__advertising__param_1aa73112e5ef561f1bc4a95bd1d0a700d8" kindref="member">Primary_Advertising_PHY</ref>;</highlight></codeline>
+<codeline lineno="172" refid="structext__advertising__param_1af38e2304f44e4233f0ecee7ef463ee29" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structext__advertising__param_1af38e2304f44e4233f0ecee7ef463ee29" kindref="member">Secondary_Advertising_Max_Skip</ref>;</highlight></codeline>
+<codeline lineno="173" refid="structext__advertising__param_1ad56fae87b8abd815b590ff2ad8bb0243" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structext__advertising__param_1ad56fae87b8abd815b590ff2ad8bb0243" kindref="member">Secondary_Advertising_PHY</ref>;</highlight></codeline>
+<codeline lineno="174" refid="structext__advertising__param_1a576a72e1f6b2d9d59426f816d2171eff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structext__advertising__param_1a576a72e1f6b2d9d59426f816d2171eff" kindref="member">Advertising_SID</ref>;</highlight></codeline>
+<codeline lineno="175" refid="structext__advertising__param_1a07830ab4ff6e10a2dd8f6e2ee66cb7c5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structext__advertising__param_1a07830ab4ff6e10a2dd8f6e2ee66cb7c5" kindref="member">Scan_Request_Notification_Enable</ref>;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal">}<sp/><ref refid="ll__ext__adv_8h_1ac5d6dfed51bcf5abd1b061c39ff15c57" kindref="member">_GNU_PACKED_</ref>;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179" refid="structext__advertising__data" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structext__advertising__data" kindref="compound">ext_advertising_data</ref><sp/><sp/>{</highlight></codeline>
+<codeline lineno="180" refid="structext__advertising__data_1a5842177dce9fecae1d88f5f0b8c3c197" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structext__advertising__data_1a5842177dce9fecae1d88f5f0b8c3c197" kindref="member">Operation</ref>;</highlight></codeline>
+<codeline lineno="181" refid="structext__advertising__data_1a4e8f5a1ec9f04480e945dc942e518636" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structext__advertising__data_1a4e8f5a1ec9f04480e945dc942e518636" kindref="member">Fragment_Preference</ref>;</highlight></codeline>
+<codeline lineno="182" refid="structext__advertising__data_1ad00ea6cf416710083158a94d14602f9c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structext__advertising__data_1ad00ea6cf416710083158a94d14602f9c" kindref="member">cur_len</ref>;</highlight></codeline>
+<codeline lineno="183" refid="structext__advertising__data_1af474ad2dc8a6933feff948c6b85f8828" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>data[<ref refid="ll__ext__adv_8h_1a5d1f937319ad5630fedb32ecf6567b4e" kindref="member">MAX_SUPPORTED_ADV_DATA_LENGTH</ref>];</highlight></codeline>
+<codeline lineno="184"><highlight class="normal">}<sp/><ref refid="ll__ext__adv_8h_1ac5d6dfed51bcf5abd1b061c39ff15c57" kindref="member">_GNU_PACKED_</ref>;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186" refid="structext__advertising__enable" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structext__advertising__enable" kindref="compound">ext_advertising_enable</ref><sp/>{</highlight></codeline>
+<codeline lineno="187" refid="structext__advertising__enable_1ad491d16b471c96c4e8e2a54d3598fc79" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/><ref refid="structext__advertising__enable_1ad491d16b471c96c4e8e2a54d3598fc79" kindref="member">enable</ref>;</highlight></codeline>
+<codeline lineno="188" refid="structext__advertising__enable_1ac2a008e32200e6d8b1b1c221050bd7ef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/><ref refid="structext__advertising__enable_1ac2a008e32200e6d8b1b1c221050bd7ef" kindref="member">max_ext_adv_events</ref>;</highlight></codeline>
+<codeline lineno="189" refid="structext__advertising__enable_1a4564c66e734ad5c07ce1884733134924" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="structext__advertising__enable_1a4564c66e734ad5c07ce1884733134924" kindref="member">duration</ref>;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal">}<sp/><ref refid="ll__ext__adv_8h_1ac5d6dfed51bcf5abd1b061c39ff15c57" kindref="member">_GNU_PACKED_</ref>;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="194" refid="struct__GNU__PACKED___1a75d71a50567e68450cfa0a49faccd8ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="struct__GNU__PACKED___1a75d71a50567e68450cfa0a49faccd8ae" kindref="member">Operation</ref>;</highlight></codeline>
+<codeline lineno="195" refid="struct__GNU__PACKED___1ab4daebdd26a8cc8d7bc4c68fe228179c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="struct__GNU__PACKED___1ab4daebdd26a8cc8d7bc4c68fe228179c" kindref="member">adv_data_len</ref>;</highlight></codeline>
+<codeline lineno="196" refid="struct__GNU__PACKED___1a4b30e5d31586ab5d3f01d206edba492c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/>data[<ref refid="ll__ext__adv_8h_1a5d1f937319ad5630fedb32ecf6567b4e" kindref="member">MAX_SUPPORTED_ADV_DATA_LENGTH</ref>];</highlight></codeline>
+<codeline lineno="197"><highlight class="normal">}<sp/><ref refid="struct__GNU__PACKED__" kindref="compound">_GNU_PACKED_</ref><sp/>periodic_adv_data_t;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="202" refid="struct__GNU__PACKED___1a248ba56fcc0a6fb113e8dae564a92c7f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="struct__GNU__PACKED___1a248ba56fcc0a6fb113e8dae564a92c7f" kindref="member">Periodic_Advertising_Interval_Min</ref>;</highlight></codeline>
+<codeline lineno="203" refid="struct__GNU__PACKED___1a2c2d643f1ab4e338a20dd30594b06df6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/><ref refid="struct__GNU__PACKED___1a2c2d643f1ab4e338a20dd30594b06df6" kindref="member">Periodic_Advertising_Interval_Max</ref>;</highlight></codeline>
+<codeline lineno="204" refid="struct__GNU__PACKED___1ad575631cf4f0482047a5232b4167e659" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/><ref refid="struct__GNU__PACKED___1ad575631cf4f0482047a5232b4167e659" kindref="member">Periodic_Advertising_Properties</ref>;</highlight></codeline>
+<codeline lineno="205" refid="struct__GNU__PACKED___1a48082511a90782179661964eaed04628" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><sp/><ref refid="struct__GNU__PACKED___1a48082511a90782179661964eaed04628" kindref="member">enable</ref>;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal">}<sp/><ref refid="struct__GNU__PACKED__" kindref="compound">_GNU_PACKED_</ref><sp/>periodic_param_t;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208" refid="structad__format__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="209" refid="structad__format__t_1a1e770e4bc315517fa51602a65f47aedf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structad__format__t_1a1e770e4bc315517fa51602a65f47aedf" kindref="member">length</ref>;</highlight></codeline>
+<codeline lineno="210" refid="structad__format__t_1afae1e62d51afb644e427024e472f3806" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structad__format__t_1afae1e62d51afb644e427024e472f3806" kindref="member">ad_type</ref>;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal">}<sp/><ref refid="structad__format__t" kindref="compound">ad_format_t</ref>;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="214" refid="struct__GNU__PACKED___1ac45af77012a117b56dd88bddaf856009" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structad__format__t" kindref="compound">ad_format_t</ref><sp/><ref refid="struct__GNU__PACKED___1ac45af77012a117b56dd88bddaf856009" kindref="member">hdr</ref>;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216" refid="struct__GNU__PACKED___1aad01b1cf8e9ef666ba134f166931c835" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__GNU__PACKED___1aad01b1cf8e9ef666ba134f166931c835" kindref="member">bigOffs</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="217" refid="struct__GNU__PACKED___1a95a81476fcf7e9234b56dce8934f3a42" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__GNU__PACKED___1a95a81476fcf7e9234b56dce8934f3a42" kindref="member">bigOffsUnits</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="218" refid="struct__GNU__PACKED___1a19b15850f4c5e188d5b0621d67ad3449" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__GNU__PACKED___1a19b15850f4c5e188d5b0621d67ad3449" kindref="member">isoInter</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="219" refid="struct__GNU__PACKED___1ad30d3818862bacbe9eaceaf2d644e073" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__GNU__PACKED___1ad30d3818862bacbe9eaceaf2d644e073" kindref="member">numBis</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/>nse;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="221" refid="struct__GNU__PACKED___1a531e3832675bb0f2b330b3db15802f76" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__GNU__PACKED___1a531e3832675bb0f2b330b3db15802f76" kindref="member">bn</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="222" refid="struct__GNU__PACKED___1a5472e3c539d16563d063d7ac634d7497" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__GNU__PACKED___1a5472e3c539d16563d063d7ac634d7497" kindref="member">subEvtInterUsec</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="223" refid="struct__GNU__PACKED___1a30bac3d683edb5bb6716b52d815ad5bb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__GNU__PACKED___1a30bac3d683edb5bb6716b52d815ad5bb" kindref="member">pto</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="224" refid="struct__GNU__PACKED___1ab3d47dd716e378d73148958c533e8c71" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__GNU__PACKED___1ab3d47dd716e378d73148958c533e8c71" kindref="member">bisSpaceUsec</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="225" refid="struct__GNU__PACKED___1aa7efcf8bbb682fdf64c5d7746c24f84d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__GNU__PACKED___1aa7efcf8bbb682fdf64c5d7746c24f84d" kindref="member">irc</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="226" refid="struct__GNU__PACKED___1a014a6f1d826de787fd33c70b06d26db3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__GNU__PACKED___1a014a6f1d826de787fd33c70b06d26db3" kindref="member">maxPdu</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="227" refid="struct__GNU__PACKED___1a3c0d0a61a5998bde53258e82cfac861e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__GNU__PACKED___1a3c0d0a61a5998bde53258e82cfac861e" kindref="member">seedAccAddr</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="228" refid="struct__GNU__PACKED___1a6d35dc022cb2682247b7323a234d58cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__GNU__PACKED___1a6d35dc022cb2682247b7323a234d58cd" kindref="member">sduInterUsec</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="229" refid="struct__GNU__PACKED___1a14c5b221a9b25de8946654d86ef4dad8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__GNU__PACKED___1a14c5b221a9b25de8946654d86ef4dad8" kindref="member">maxSdu</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="230" refid="struct__GNU__PACKED___1ad1331ac638e23f6387a0fc2fa4ce40bd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__GNU__PACKED___1ad1331ac638e23f6387a0fc2fa4ce40bd" kindref="member">baseCrcInit</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="231" refid="struct__GNU__PACKED___1a90808f5a715da56c521d476bdbfcf719" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__GNU__PACKED___1a90808f5a715da56c521d476bdbfcf719" kindref="member">chanMap</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="232" refid="struct__GNU__PACKED___1a7d51f901f54189edeb396b7de113b686" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__GNU__PACKED___1a7d51f901f54189edeb396b7de113b686" kindref="member">phy</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="233" refid="struct__GNU__PACKED___1a39619f2d621f0ae38026cd0f40b4a87f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__GNU__PACKED___1a39619f2d621f0ae38026cd0f40b4a87f" kindref="member">bisPldCtr</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="234" refid="struct__GNU__PACKED___1a95b8b915a8ba695a8860ec391f066990" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__GNU__PACKED___1a95b8b915a8ba695a8860ec391f066990" kindref="member">framing</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="235" refid="struct__GNU__PACKED___1a27c594c8a0c85639d8d4040eefbca987" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__GNU__PACKED___1a27c594c8a0c85639d8d4040eefbca987" kindref="member">encrypt</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="236" refid="struct__GNU__PACKED___1a312766e3e57a3f2ac5ba1b9152d3d59b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/>giv[<ref refid="ll__defines_8h_1aebab5ed83127e6e4865e34adee30ab75" kindref="member">LL_GIV_LEN</ref>];<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="237" refid="struct__GNU__PACKED___1abc5b05c2d82619d1fe20219fb0bdaf27" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/>gskd[<ref refid="ll__defines_8h_1a3fd9cd0476cf27fe7dccd733637e03c8" kindref="member">LL_GSKD_LEN</ref>];<sp/><sp/></highlight></codeline>
+<codeline lineno="238"><highlight class="normal">}<ref refid="struct__GNU__PACKED__" kindref="compound">_GNU_PACKED_</ref><sp/>acad_big_info_t;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structad__format__t" kindref="compound">ad_format_t</ref><sp/>hdr;</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243" refid="struct__GNU__PACKED___1a9e88b1f20dac5a61f4da13af707264ee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/><ref refid="struct__GNU__PACKED___1a9e88b1f20dac5a61f4da13af707264ee" kindref="member">channel_mask</ref>;</highlight></codeline>
+<codeline lineno="244" refid="struct__GNU__PACKED___1a73cefb8af1670295d4ba768041552257" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="struct__GNU__PACKED___1a73cefb8af1670295d4ba768041552257" kindref="member">instant</ref>;</highlight></codeline>
+<codeline lineno="245"><highlight class="normal">}<ref refid="struct__GNU__PACKED__" kindref="compound">_GNU_PACKED_</ref><sp/>acad_channel_map_update_t;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247" refid="struct____ext__adv__group" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct____ext__adv__group" kindref="compound">__ext_adv_group</ref><sp/>{</highlight></codeline>
+<codeline lineno="248" refid="struct____ext__adv__group_1ab4a8a4363b511874014f8bd6a7f2afba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">list_head<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structle__ext__primary__link_1ab7aa62c18eae4e318451255e091a4755" kindref="member">entry</ref>;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>Ext<sp/>Adv*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="251" refid="struct____ext__adv__group_1a42b5a9bdb908679121a60738e75875e2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structext__advertising__param" kindref="compound">ext_advertising_param</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ext_adv_param;</highlight></codeline>
+<codeline lineno="252" refid="struct____ext__adv__group_1a1c912d0cbbe2b44691f921e74ee1e8a9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structext__advertising__data" kindref="compound">ext_advertising_data</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ext_adv_data;</highlight></codeline>
+<codeline lineno="253" refid="struct____ext__adv__group_1a3d7ed15d4d7a4e8ce2c14efe55364e4d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structext__advertising__enable" kindref="compound">ext_advertising_enable</ref><sp/><sp/><sp/>ext_adv_en;</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>Periodic<sp/>Adv*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="256" refid="struct____ext__adv__group_1addce7dcf415b77c54fd1fa6a6ee83bab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>periodic_adv_data_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="struct____ext__adv__group_1addce7dcf415b77c54fd1fa6a6ee83bab" kindref="member">periodic_adv_data</ref>;</highlight></codeline>
+<codeline lineno="257" refid="struct____ext__adv__group_1a81a1cf38bdcd8a03b0124202704870b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>periodic_param_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="struct____ext__adv__group_1a81a1cf38bdcd8a03b0124202704870b7" kindref="member">periodic_param</ref>;</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259" refid="struct____ext__adv__group_1a138f5cf2ec56e72c2e9f44792901c69f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structconnless__cte__info" kindref="compound">connless_cte_info</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="struct____ext__adv__group_1a138f5cf2ec56e72c2e9f44792901c69f" kindref="member">cte_info</ref>;</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>ACAD<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="262" refid="struct____ext__adv__group_8acad" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>acad_channel_map_update_t<sp/><sp/><sp/><sp/>*channel_map_update;</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>acad_big_info_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*big_info;</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>acad;</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight><highlight class="comment">/*-----------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="271"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>LL<sp/>Internal<sp/>API</highlight></codeline>
+<codeline lineno="272"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__ext__adv_8h_1a8b8f38306953183238c39ea623474881" kindref="member">le_ext_adv_destroy</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__ext__adv_8h_1a8fa3e8859ddfd71a7cc4db4e472c3491" kindref="member">ll_ext_adv_rx_post_process</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*empty);</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__ext__adv_8h_1ab523110b389ba5ceeb9865ad65f4ffab" kindref="member">ll_exit_ext_legacy_adv_status</ref>(u16<sp/>connection_handle);</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight><highlight class="comment">/*-----------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="279"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Link<sp/>Layer<sp/>API</highlight></codeline>
+<codeline lineno="280"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct____ext__adv__group" kindref="compound">__ext_adv_group</ref><sp/>*<ref refid="ll__ext__adv_8h_1a7a397e1caa304654e1cd707417231dc6" kindref="member">ll_alloc_adv_set</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__ext__adv_8h_1a49b4d637437b035fd641217a9fc1d1e9" kindref="member">ll_remove_assigned_adv_set</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct____ext__adv__group" kindref="compound">__ext_adv_group</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__ext__adv_8h_1a7ea10d40428e2a78c4850399e3d7d0b9" kindref="member">ll_remove_all_adv_set</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct____ext__adv__group" kindref="compound">__ext_adv_group</ref><sp/>*<ref refid="ll__ext__adv_8h_1aaa31176734fc1cea7a0b3bbb3b43fb4b" kindref="member">ll_find_adv_set_by_handle</ref>(u8<sp/><ref refid="structle__ext__primary__link_1a07684ff7de79d0b651f94f12ae604dc7" kindref="member">adv_handle</ref>);</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ll__ext__adv_8h_1ae3514e7d08927be1f669aeca40c22e8d" kindref="member">ll_ext_adv_set_update</ref>(u8<sp/>adv_handle,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct____ext__adv__group" kindref="compound">__ext_adv_group</ref><sp/>*adv_set);</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ll__ext__adv_8h_1a097c4b31ff59e1fd2a021054400acb69" kindref="member">ll_ext_adv_alive_timer_reset</ref>(u8<sp/>adv_handle,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct____ext__adv__group" kindref="compound">__ext_adv_group</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ll__ext__adv_8h_1a4281da9bad5573deeab1a56298dbd6c0" kindref="member">ll_ext_legacy_adv_open</ref>(u8<sp/>adv_handle,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct____ext__adv__group" kindref="compound">__ext_adv_group</ref><sp/>*adv_set);</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ll__ext__adv_8h_1a9ee358f09d6be6ae8ee8bb503eb2856f" kindref="member">ll_ext_adv_close</ref>(u8<sp/>adv_handle);</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ll__ext__adv_8h_1ad8a70d782071ed6885cd8dd41de1e488" kindref="member">ll_ext_adv_open</ref>(u8<sp/>adv_handle,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct____ext__adv__group" kindref="compound">__ext_adv_group</ref><sp/>*ext_adv);</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref><sp/><ref refid="ll__ext__adv_8h_1ad63ad51f7d70cc4269a3933421a9f72b" kindref="member">LctrIsPerAdvEnabled</ref>(uint8_t<sp/>handle);</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ll__ext__adv_8h_1a0090bd78c1b6f5777f6413ab8cc7b951" kindref="member">ll_acad_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ll__ext__adv_8h_1aa1e66059d40f7ce9b75c728412c0572b" kindref="member">le_cmd_set_ext_adv</ref>(u16<sp/>opcode,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>*data,<sp/>u32<sp/>size);</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__LL_EXT_ADV_H__<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h"/>
+  </compounddef>
+</doxygen>

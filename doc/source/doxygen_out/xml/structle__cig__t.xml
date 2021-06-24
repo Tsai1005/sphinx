@@ -1,0 +1,268 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structle__cig__t" kind="struct" language="C++" prot="public">
+    <compoundname>le_cig_t</compoundname>
+    <includes refid="ll__cis_8h" local="no">ll_cis.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structle__cig__t_1a298c5ed48aeec824858d22b17bc5b813" prot="public" static="no" mutable="no">
+        <type>struct list_head</type>
+        <definition>struct list_head le_cig_t::entry</definition>
+        <argsstring></argsstring>
+        <name>entry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>List entry </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="169" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cig__t_1a23538900e567e2b13fd06ce200bdd367" prot="public" static="no" mutable="no">
+        <type>struct list_head</type>
+        <definition>struct list_head le_cig_t::cis_head</definition>
+        <argsstring></argsstring>
+        <name>cis_head</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CIS List Head </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="169" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cig__t_1ab418e03faf09d6668320a9af244f0e76" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_cig_t::cis_number</definition>
+        <argsstring></argsstring>
+        <name>cis_number</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of CISes in Group </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="179" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cig__t_1a8b0d404997a255e1b54f023fae52f12a" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_cig_t::packing</definition>
+        <argsstring></argsstring>
+        <name>packing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Packing scheme. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="181" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cig__t_1ae6eb0c816e9150bfae350eae4c55b8c2" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref></type>
+        <definition>bool_t le_cig_t::isBodBuilt</definition>
+        <argsstring></argsstring>
+        <name>isBodBuilt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TRUE if BOD is built. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="182" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cig__t_1af670923fc2125df337d786b9b83cd880" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref></type>
+        <definition>bool_t le_cig_t::isBodStarted</definition>
+        <argsstring></argsstring>
+        <name>isBodStarted</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TRUE if BOD is started. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="183" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cig__t_1abb02c8e59f910a4b783b48dd3be6a775" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref></type>
+        <definition>bool_t le_cig_t::isRmAdded</definition>
+        <argsstring></argsstring>
+        <name>isRmAdded</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TRUE if reservation is added. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="184" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cig__t_1a5001a54e4ddf6020923d383440223044" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_cig_t::cigId</definition>
+        <argsstring></argsstring>
+        <name>cigId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Used to identify the connected isochronous group. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="185" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cig__t_1aa5162d1c90a273037239adfbfbd60dc3" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t le_cig_t::cigHandle</definition>
+        <argsstring></argsstring>
+        <name>cigHandle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CIG handle. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="186" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cig__t_1a316e53277cf1e654c7f752f86d3b5e71" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t le_cig_t::cigSyncDelayUsec</definition>
+        <argsstring></argsstring>
+        <name>cigSyncDelayUsec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CIG synchronous delay in microsecond. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="187" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cig__t_1abdf65c275b874b0906f34421ab0cca3d" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t le_cig_t::isoInterval</definition>
+        <argsstring></argsstring>
+        <name>isoInterval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Isochronous PDU interval in 1.25ms unit. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="188" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cig__t_1a0a0b1d8f6ee858fd51e3eacf2d7dddc3" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref></type>
+        <definition>bool_t le_cig_t::isValid</definition>
+        <argsstring></argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TRUE if CIS parameters are valid and is able to be scheduled. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="189" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cig__t_1a8043c0b21ff6e595be0bd7fd953cad89" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_cig_t::numCisEsted</definition>
+        <argsstring></argsstring>
+        <name>numCisEsted</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of CISs that are established. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="190" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cig__t_1a2f504e026d0dcc61548963d9ab8c4ab8" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref></type>
+        <definition>bool_t le_cig_t::isLoopBack</definition>
+        <argsstring></argsstring>
+        <name>isLoopBack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TRUE if all the CIS streams have been traversed once. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="191" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cig__t_1ad99b64922e2cd576251f6ea496958afe" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref></type>
+        <definition>bool_t le_cig_t::headCisRmved</definition>
+        <argsstring></argsstring>
+        <name>headCisRmved</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TRUE if the head CIS in the CIG is removed. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="192" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cig__t_1a19eaf48db6c263d10a9ec6da7d736f82" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t le_cig_t::offsetUsec</definition>
+        <argsstring></argsstring>
+        <name>offsetUsec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Only valid when headCisRmved is TRUE, duration between the old anchor point and new anchor point. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="193" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cig__t_1aaf03c08eb39362014024caff2bac0436" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t le_cig_t::firstRxStartTsUsec</definition>
+        <argsstring></argsstring>
+        <name>firstRxStartTsUsec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Only valid when headCisRmved is TRUE, timestamp of the first received frame regardless of CRC error. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="194" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__cig__t_1a3797f966f8d970f43cd208891efc2458" prot="public" static="no" mutable="no">
+        <type>union le_cig_t::@32</type>
+        <definition>union le_cig_t::@32  le_cig_t::roleData</definition>
+        <argsstring></argsstring>
+        <name>roleData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Role-specific BOD Data. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="209" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Connected isochronous group context. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" line="174" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cis.h" bodystart="174" bodyend="210"/>
+    <listofallmembers>
+      <member refid="structle__cig__t_1aa5162d1c90a273037239adfbfbd60dc3" prot="public" virt="non-virtual"><scope>le_cig_t</scope><name>cigHandle</name></member>
+      <member refid="structle__cig__t_1a5001a54e4ddf6020923d383440223044" prot="public" virt="non-virtual"><scope>le_cig_t</scope><name>cigId</name></member>
+      <member refid="structle__cig__t_1a316e53277cf1e654c7f752f86d3b5e71" prot="public" virt="non-virtual"><scope>le_cig_t</scope><name>cigSyncDelayUsec</name></member>
+      <member refid="structle__cig__t_1a23538900e567e2b13fd06ce200bdd367" prot="public" virt="non-virtual"><scope>le_cig_t</scope><name>cis_head</name></member>
+      <member refid="structle__cig__t_1ab418e03faf09d6668320a9af244f0e76" prot="public" virt="non-virtual"><scope>le_cig_t</scope><name>cis_number</name></member>
+      <member refid="structle__cig__t_1a298c5ed48aeec824858d22b17bc5b813" prot="public" virt="non-virtual"><scope>le_cig_t</scope><name>entry</name></member>
+      <member refid="structle__cig__t_1aaf03c08eb39362014024caff2bac0436" prot="public" virt="non-virtual"><scope>le_cig_t</scope><name>firstRxStartTsUsec</name></member>
+      <member refid="structle__cig__t_1ad99b64922e2cd576251f6ea496958afe" prot="public" virt="non-virtual"><scope>le_cig_t</scope><name>headCisRmved</name></member>
+      <member refid="structle__cig__t_1ae6eb0c816e9150bfae350eae4c55b8c2" prot="public" virt="non-virtual"><scope>le_cig_t</scope><name>isBodBuilt</name></member>
+      <member refid="structle__cig__t_1af670923fc2125df337d786b9b83cd880" prot="public" virt="non-virtual"><scope>le_cig_t</scope><name>isBodStarted</name></member>
+      <member refid="structle__cig__t_1a2f504e026d0dcc61548963d9ab8c4ab8" prot="public" virt="non-virtual"><scope>le_cig_t</scope><name>isLoopBack</name></member>
+      <member refid="structle__cig__t_1abdf65c275b874b0906f34421ab0cca3d" prot="public" virt="non-virtual"><scope>le_cig_t</scope><name>isoInterval</name></member>
+      <member refid="structle__cig__t_1abb02c8e59f910a4b783b48dd3be6a775" prot="public" virt="non-virtual"><scope>le_cig_t</scope><name>isRmAdded</name></member>
+      <member refid="structle__cig__t_1a0a0b1d8f6ee858fd51e3eacf2d7dddc3" prot="public" virt="non-virtual"><scope>le_cig_t</scope><name>isValid</name></member>
+      <member refid="structle__cig__t_1a8043c0b21ff6e595be0bd7fd953cad89" prot="public" virt="non-virtual"><scope>le_cig_t</scope><name>numCisEsted</name></member>
+      <member refid="structle__cig__t_1a19eaf48db6c263d10a9ec6da7d736f82" prot="public" virt="non-virtual"><scope>le_cig_t</scope><name>offsetUsec</name></member>
+      <member refid="structle__cig__t_1a8b0d404997a255e1b54f023fae52f12a" prot="public" virt="non-virtual"><scope>le_cig_t</scope><name>packing</name></member>
+      <member refid="structle__cig__t_1a3797f966f8d970f43cd208891efc2458" prot="public" virt="non-virtual"><scope>le_cig_t</scope><name>roleData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>JL Adapter SDK: /data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_resolve_list.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">JL Adapter SDK
+   &#160;<span id="projectnumber">v0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_5aa4d6ccf34d88a270949875c15714e5.html">btctrler</a></li><li class="navelem"><a class="el" href="dir_16b18ce1fc07a124435f964aa38ae307.html">BLE_v2</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle">
+<div class="title">ll_resolve_list.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;sfr.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="link__layer_8h_source.html">ble/link_layer.h</a>&quot;</code><br />
+<code>#include &quot;stdarg.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="h4__transport_8h_source.html">h4_transport.h</a>&quot;</code><br />
+<code>#include &quot;RF_ble.h&quot;</code><br />
+<code>#include &quot;btcontroller_util.h&quot;</code><br />
+<code>#include &quot;btcontroller_heap.h&quot;</code><br />
+<code>#include &quot;tomcrypt.h&quot;</code><br />
+<code>#include &quot;hci_controller.h&quot;</code><br />
+<code>#include &quot;common/debug.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+ll_resolve_list.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="ll__resolve__list_8c__incl.png" border="0" usemap="#_2data_2bingquan_2repo_2repo__adapter_2adapter__sdk_2lib_2btctrler_2BLE__v2_2ll__resolve__list_8c" alt=""/></div>
+<map name="_2data_2bingquan_2repo_2repo__adapter_2adapter__sdk_2lib_2btctrler_2BLE__v2_2ll__resolve__list_8c" id="_2data_2bingquan_2repo_2repo__adapter_2adapter__sdk_2lib_2btctrler_2BLE__v2_2ll__resolve__list_8c">
+<area shape="rect" id="node3" href="link__layer_8h.html" title="ble/link_layer.h" alt="" coords="1016,124,1125,151"/>
+<area shape="rect" id="node28" href="h4__transport_8h.html" title="h4_transport.h" alt="" coords="1729,348,1834,375"/>
+<area shape="rect" id="node9" href="ll__defines_8h.html" title="ll_defines.h" alt="" coords="1305,348,1393,375"/>
+<area shape="rect" id="node10" href="white__list_8h.html" title="white_list.h" alt="" coords="1609,348,1697,375"/>
+<area shape="rect" id="node13" href="llcp_8h.html" title="ble/llcp.h" alt="" coords="1547,273,1621,300"/>
+<area shape="rect" id="node14" href="ll__adv_8h.html" title="ble/ll_adv.h" alt="" coords="735,199,823,225"/>
+<area shape="rect" id="node15" href="ll__scan_8h.html" title="ble/ll_scan.h" alt="" coords="847,199,942,225"/>
+<area shape="rect" id="node16" href="ll__init_8h.html" title="ble/ll_init.h" alt="" coords="454,199,538,225"/>
+<area shape="rect" id="node17" href="resolve__list_8h.html" title="resolve_list.h" alt="" coords="24,348,123,375"/>
+<area shape="rect" id="node18" href="data__extension_8h.html" title="data_extension.h" alt="" coords="459,348,581,375"/>
+<area shape="rect" id="node19" href="multiple__phys_8h.html" title="multiple_phys.h" alt="" coords="474,273,587,300"/>
+<area shape="rect" id="node20" href="ll__cte_8h.html" title="ble/ll_cte.h" alt="" coords="1387,273,1472,300"/>
+<area shape="rect" id="node21" href="ll__iso_8h.html" title="ble/ll_iso.h" alt="" coords="990,273,1074,300"/>
+<area shape="rect" id="node23" href="ll__bis_8h.html" title="ble/ll_bis.h" alt="" coords="1177,199,1261,225"/>
+<area shape="rect" id="node25" href="ll__cis_8h.html" title="ble/ll_cis.h" alt="" coords="1069,199,1153,225"/>
+<area shape="rect" id="node26" href="ll__pc_8h.html" title="ble/ll_pc.h" alt="" coords="1230,273,1311,300"/>
+<area shape="rect" id="node24" href="audio__codec_8h.html" title="audio_codec.h" alt="" coords="1099,273,1205,300"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+结构体</h2></td></tr>
+<tr class="memitem:structrpa"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__resolve__list_8c.html#structrpa">rpa</a></td></tr>
+<tr class="separator:structrpa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a6c6991cba0e2995d7d9aec73e0324317"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__resolve__list_8c.html#a6c6991cba0e2995d7d9aec73e0324317">LOG_TAG_CONST</a>&#160;&#160;&#160;LL_RL</td></tr>
+<tr class="separator:a6c6991cba0e2995d7d9aec73e0324317"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ce0df38eb467e59f209470c8f5ac4e6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__resolve__list_8c.html#a7ce0df38eb467e59f209470c8f5ac4e6">LOG_TAG</a>&#160;&#160;&#160;&quot;[LL-RL]&quot;</td></tr>
+<tr class="separator:a7ce0df38eb467e59f209470c8f5ac4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eeb6e067100d0dec6e53bce19a403e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__resolve__list_8c.html#a9eeb6e067100d0dec6e53bce19a403e0">LOG_ERROR_ENABLE</a></td></tr>
+<tr class="separator:a9eeb6e067100d0dec6e53bce19a403e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69321c8a2a0b07a07fb5088e82e25eb0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__resolve__list_8c.html#a69321c8a2a0b07a07fb5088e82e25eb0">LOG_INFO_ENABLE</a></td></tr>
+<tr class="separator:a69321c8a2a0b07a07fb5088e82e25eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04135f631fe91199f05b1d816dda8756"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__resolve__list_8c.html#a04135f631fe91199f05b1d816dda8756">LOG_DUMP_ENABLE</a></td></tr>
+<tr class="separator:a04135f631fe91199f05b1d816dda8756"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb3cf46e5bcf4641fdd900483a391889"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__resolve__list_8c.html#aeb3cf46e5bcf4641fdd900483a391889">AT_BLE_LL_CODE</a></td></tr>
+<tr class="separator:aeb3cf46e5bcf4641fdd900483a391889"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a9b431a1cec03acf0a8d2a9a294f59013"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__resolve__list_8c.html#a9b431a1cec03acf0a8d2a9a294f59013">device_addr_verify</a> (const u8 *addr, u8 start, u8 len)</td></tr>
+<tr class="separator:a9b431a1cec03acf0a8d2a9a294f59013"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cf3ef3a61def57734992da92bcfed3a"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__resolve__list_8c.html#a3cf3ef3a61def57734992da92bcfed3a">__malloc</a> (int size)</td></tr>
+<tr class="separator:a3cf3ef3a61def57734992da92bcfed3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a549f000748ba6d518db83deaeb9b235c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__resolve__list_8c.html#a549f000748ba6d518db83deaeb9b235c">__free</a> (void *p)</td></tr>
+<tr class="separator:a549f000748ba6d518db83deaeb9b235c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5579993f39287e4cfc126a3104f9baa"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__resolve__list_8c.html#ad5579993f39287e4cfc126a3104f9baa">__random48_update</a> (void)</td></tr>
+<tr class="separator:ad5579993f39287e4cfc126a3104f9baa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4cc2bbb7dc456497b2a87553024bef2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__resolve__list_8c.html#aa4cc2bbb7dc456497b2a87553024bef2">irk_enc</a> (const u8 *irk, const u8 *prand, u8 *hash)</td></tr>
+<tr class="separator:aa4cc2bbb7dc456497b2a87553024bef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10bd407ca223e2ada6cfac7e33721d19"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__resolve__list_8c.html#a10bd407ca223e2ada6cfac7e33721d19">device_addr_generate</a> (u8 *addr, u8 *irk, u8 type)</td></tr>
+<tr class="separator:a10bd407ca223e2ada6cfac7e33721d19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9baba5308b4b68ef8657ac92a9fe7112"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__resolve__list_8c.html#a9baba5308b4b68ef8657ac92a9fe7112">device_addr_resolve</a> (u8 *irk, u8 *addr)</td></tr>
+<tr class="separator:a9baba5308b4b68ef8657ac92a9fe7112"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a297db023b3f17c67c550d50c4b041a9a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__resolve__list_8c.html#a297db023b3f17c67c550d50c4b041a9a">ll_resolve_list_IRK_verify</a> (const u8 *irk)</td></tr>
+<tr class="separator:a297db023b3f17c67c550d50c4b041a9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afde9eb98c2aca78fa7c2ad77c84702c4"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="resolve__list_8h.html#structresolving__list">resolving_list</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__resolve__list_8c.html#afde9eb98c2aca78fa7c2ad77c84702c4">ll_resolving_list_match</a> (const u8 addr_type, const u8 *addr)</td></tr>
+<tr class="separator:afde9eb98c2aca78fa7c2ad77c84702c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aace5ae90ef5953456bc4fcef842fb7f7"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__resolve__list_8c.html#aace5ae90ef5953456bc4fcef842fb7f7">__ll_non_resolvable_private_addr_verify</a> (const u8 *addr)</td></tr>
+<tr class="separator:aace5ae90ef5953456bc4fcef842fb7f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd62970c653a5dcdd75ff4829ddacd03"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__resolve__list_8c.html#acd62970c653a5dcdd75ff4829ddacd03">__set_ll_local_non_resolvable_private_addr</a> (u8 *addr, struct <a class="el" href="resolve__list_8h.html#structresolving__list">resolving_list</a> *resolving_list_t)</td></tr>
+<tr class="separator:acd62970c653a5dcdd75ff4829ddacd03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36aa017dc32cc5cae62bfbce9c9cbfc5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__resolve__list_8c.html#a36aa017dc32cc5cae62bfbce9c9cbfc5">__set_ll_peer_non_resolvable_private_addr</a> (u8 *addr, struct <a class="el" href="resolve__list_8h.html#structresolving__list">resolving_list</a> *resolving_list_t)</td></tr>
+<tr class="separator:a36aa017dc32cc5cae62bfbce9c9cbfc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b6f5d27d5c4368a895e4b2fd1a8a889"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__resolve__list_8c.html#a3b6f5d27d5c4368a895e4b2fd1a8a889">ll_resolve_list_set_local_RPA</a> (u8 *addr, struct <a class="el" href="resolve__list_8h.html#structresolving__list">resolving_list</a> *resolving_list_t)</td></tr>
+<tr class="separator:a3b6f5d27d5c4368a895e4b2fd1a8a889"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0246ce47acd493dd58761f16ca1aa5b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__resolve__list_8c.html#a0246ce47acd493dd58761f16ca1aa5b3">ll_resolve_list_set_peer_RPA</a> (u8 *addr, struct <a class="el" href="resolve__list_8h.html#structresolving__list">resolving_list</a> *resolving_list_t)</td></tr>
+<tr class="separator:a0246ce47acd493dd58761f16ca1aa5b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b607a52c88f6fa64a6633ce7facfaed"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="resolve__list_8h.html#structresolving__list">resolving_list</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__resolve__list_8c.html#a6b607a52c88f6fa64a6633ce7facfaed">ll_resolve_peer_addr</a> (const u8 *addr)</td></tr>
+<tr class="separator:a6b607a52c88f6fa64a6633ce7facfaed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfec6138d2ca732b3d23cc8203c4c106"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="resolve__list_8h.html#structresolving__list">resolving_list</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__resolve__list_8c.html#acfec6138d2ca732b3d23cc8203c4c106">ll_resolve_local_addr</a> (const u8 *addr)</td></tr>
+<tr class="separator:acfec6138d2ca732b3d23cc8203c4c106"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7965dc9baa665f198857d3018da55063"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__resolve__list_8c.html#a7965dc9baa665f198857d3018da55063">ll_RPA_timeout_handler</a> (sys_timer *<a class="el" href="llcp__sm__pc_8c.html#a2f0cdb43f1c9024afabfab4d9ee48f5e">timer</a>)</td></tr>
+<tr class="separator:a7965dc9baa665f198857d3018da55063"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2ccaaf8c818babb07b91a12462edd29"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__resolve__list_8c.html#aa2ccaaf8c818babb07b91a12462edd29">ll_RPA_timeout_start</a> (u32 timeout)</td></tr>
+<tr class="separator:aa2ccaaf8c818babb07b91a12462edd29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaf739616417f3417b60238516526b1b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__resolve__list_8c.html#acaf739616417f3417b60238516526b1b">ll_RPA_timeout_stop</a> (void)</td></tr>
+<tr class="separator:acaf739616417f3417b60238516526b1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbf778419447e0c5af9fb216e9c8e6b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__resolve__list_8c.html#acbf778419447e0c5af9fb216e9c8e6b6">ll_resolving_list_init</a> (void)</td></tr>
+<tr class="separator:acbf778419447e0c5af9fb216e9c8e6b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3206fa834723b7ebd7c26e8c5237f6f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__resolve__list_8c.html#ad3206fa834723b7ebd7c26e8c5237f6f">ll_resolving_list_add</a> (const u8 *data)</td></tr>
+<tr class="separator:ad3206fa834723b7ebd7c26e8c5237f6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2139825e64cc23306a5d58ce08ed0ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__resolve__list_8c.html#aa2139825e64cc23306a5d58ce08ed0ac">ll_resolving_list_remove</a> (const u8 *data)</td></tr>
+<tr class="separator:aa2139825e64cc23306a5d58ce08ed0ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acec5917f59a9e58296e3d947a4b5bd87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__resolve__list_8c.html#acec5917f59a9e58296e3d947a4b5bd87">ll_read_peer_resolvable_address</a> (const u8 addr_type, const u8 *addr, u8 *peer_PRA)</td></tr>
+<tr class="separator:acec5917f59a9e58296e3d947a4b5bd87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1f97b55016f2d0dc51496c7fae54d63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__resolve__list_8c.html#aa1f97b55016f2d0dc51496c7fae54d63">ll_read_local_resolvable_address</a> (const u8 addr_type, const u8 *addr, u8 *local_PRA)</td></tr>
+<tr class="separator:aa1f97b55016f2d0dc51496c7fae54d63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa54c2f9f169c3e9249622cf95db49ecf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__resolve__list_8c.html#aa54c2f9f169c3e9249622cf95db49ecf">ll_set_resolvable_private_address_timeout</a> (const u8 *data)</td></tr>
+<tr class="separator:aa54c2f9f169c3e9249622cf95db49ecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa54a6a5427731f52ee9313b36fd4ed59"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__resolve__list_8c.html#aa54a6a5427731f52ee9313b36fd4ed59">ll_resolution_enable</a> (void)</td></tr>
+<tr class="separator:aa54a6a5427731f52ee9313b36fd4ed59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8f2dde34376952c7cee67706e303537"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__resolve__list_8c.html#ae8f2dde34376952c7cee67706e303537">ll_resolvable_private_addr_verify</a> (const u8 *addr)</td></tr>
+<tr class="separator:ae8f2dde34376952c7cee67706e303537"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc3e4d56810bad81718c75f07fc2262d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__resolve__list_8c.html#abc3e4d56810bad81718c75f07fc2262d">ll_resolution_disable</a> (void)</td></tr>
+<tr class="separator:abc3e4d56810bad81718c75f07fc2262d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaf6f0dd097fe395e6f54b3a860e6e63"><td class="memItemLeft" align="right" valign="top"><a class="el" href="link__layer_8h.html#aeb3cf46e5bcf4641fdd900483a391889">AT_BLE_LL_CODE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__resolve__list_8c.html#aaaf6f0dd097fe395e6f54b3a860e6e63">debug_ll_privacy</a> (void)</td></tr>
+<tr class="separator:aaaf6f0dd097fe395e6f54b3a860e6e63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab0e7b5191af9f0feddc4722e643d558"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__resolve__list_8c.html#aab0e7b5191af9f0feddc4722e643d558">ll_vendor_device_address_generate</a> (u8 *addr, u8 *irk, u8 type)</td></tr>
+<tr class="separator:aab0e7b5191af9f0feddc4722e643d558"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:a672d9679dbf70a156b69cf50089779ea"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="resolve__list_8h.html#structll__privacy">ll_privacy</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__resolve__list_8c.html#a672d9679dbf70a156b69cf50089779ea">le_privacy</a></td></tr>
+<tr class="separator:a672d9679dbf70a156b69cf50089779ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fedcdf8e4e4c67cf6d2808b4090c38a"><td class="memItemLeft" align="right" valign="top">static u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__resolve__list_8c.html#a2fedcdf8e4e4c67cf6d2808b4090c38a">ll_resolving_list_used</a></td></tr>
+<tr class="separator:a2fedcdf8e4e4c67cf6d2808b4090c38a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb35b0b00ad69fcaacd17fe4d17ae54a"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="ll__resolve__list_8c.html#structrpa">rpa</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ll__resolve__list_8c.html#adb35b0b00ad69fcaacd17fe4d17ae54a">rpa_set</a> []</td></tr>
+<tr class="separator:adb35b0b00ad69fcaacd17fe4d17ae54a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/><h2 class="groupheader">结构体说明</h2>
+<a name="structrpa" id="structrpa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct rpa</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a0599835e6a665f3a726c6d2f870d4361"></a>u8</td>
+<td class="fieldname">
+addr[6]</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a8216ae6387c768a89a928ae84c85d7d9"></a>u8</td>
+<td class="fieldname">
+local_irk[16]</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ac19cde4255bfa356f2a7ae8339798e2a"></a>u8</td>
+<td class="fieldname">
+peer_irk[16]</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">宏定义说明</h2>
+<a class="anchor" id="aeb3cf46e5bcf4641fdd900483a391889"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AT_BLE_LL_CODE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a04135f631fe91199f05b1d816dda8756"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_DUMP_ENABLE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9eeb6e067100d0dec6e53bce19a403e0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_ERROR_ENABLE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a69321c8a2a0b07a07fb5088e82e25eb0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_INFO_ENABLE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7ce0df38eb467e59f209470c8f5ac4e6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_TAG&#160;&#160;&#160;&quot;[LL-RL]&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6c6991cba0e2995d7d9aec73e0324317"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_TAG_CONST&#160;&#160;&#160;LL_RL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a549f000748ba6d518db83deaeb9b235c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void __free </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aace5ae90ef5953456bc4fcef842fb7f7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool __ll_non_resolvable_private_addr_verify </td>
+          <td>(</td>
+          <td class="paramtype">const u8 *&#160;</td>
+          <td class="paramname"><em>addr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3cf3ef3a61def57734992da92bcfed3a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void* __malloc </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad5579993f39287e4cfc126a3104f9baa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void __random48_update </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acd62970c653a5dcdd75ff4829ddacd03"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void __set_ll_local_non_resolvable_private_addr </td>
+          <td>(</td>
+          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="resolve__list_8h.html#structresolving__list">resolving_list</a> *&#160;</td>
+          <td class="paramname"><em>resolving_list_t</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a36aa017dc32cc5cae62bfbce9c9cbfc5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void __set_ll_peer_non_resolvable_private_addr </td>
+          <td>(</td>
+          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="resolve__list_8h.html#structresolving__list">resolving_list</a> *&#160;</td>
+          <td class="paramname"><em>resolving_list_t</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aaaf6f0dd097fe395e6f54b3a860e6e63"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="link__layer_8h.html#aeb3cf46e5bcf4641fdd900483a391889">AT_BLE_LL_CODE</a> void debug_ll_privacy </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a10bd407ca223e2ada6cfac7e33721d19"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void device_addr_generate </td>
+          <td>(</td>
+          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramname"><em>irk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9baba5308b4b68ef8657ac92a9fe7112"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void device_addr_resolve </td>
+          <td>(</td>
+          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramname"><em>irk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramname"><em>addr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9b431a1cec03acf0a8d2a9a294f59013"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool device_addr_verify </td>
+          <td>(</td>
+          <td class="paramtype">const u8 *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa4cc2bbb7dc456497b2a87553024bef2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void irk_enc </td>
+          <td>(</td>
+          <td class="paramtype">const u8 *&#160;</td>
+          <td class="paramname"><em>irk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const u8 *&#160;</td>
+          <td class="paramname"><em>prand</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramname"><em>hash</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa1f97b55016f2d0dc51496c7fae54d63"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_read_local_resolvable_address </td>
+          <td>(</td>
+          <td class="paramtype">const u8&#160;</td>
+          <td class="paramname"><em>addr_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const u8 *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramname"><em>local_PRA</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acec5917f59a9e58296e3d947a4b5bd87"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_read_peer_resolvable_address </td>
+          <td>(</td>
+          <td class="paramtype">const u8&#160;</td>
+          <td class="paramname"><em>addr_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const u8 *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramname"><em>peer_PRA</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abc3e4d56810bad81718c75f07fc2262d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_resolution_disable </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa54a6a5427731f52ee9313b36fd4ed59"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_resolution_enable </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae8f2dde34376952c7cee67706e303537"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ll_resolvable_private_addr_verify </td>
+          <td>(</td>
+          <td class="paramtype">const u8 *&#160;</td>
+          <td class="paramname"><em>addr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a297db023b3f17c67c550d50c4b041a9a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ll_resolve_list_IRK_verify </td>
+          <td>(</td>
+          <td class="paramtype">const u8 *&#160;</td>
+          <td class="paramname"><em>irk</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3b6f5d27d5c4368a895e4b2fd1a8a889"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_resolve_list_set_local_RPA </td>
+          <td>(</td>
+          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="resolve__list_8h.html#structresolving__list">resolving_list</a> *&#160;</td>
+          <td class="paramname"><em>resolving_list_t</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0246ce47acd493dd58761f16ca1aa5b3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_resolve_list_set_peer_RPA </td>
+          <td>(</td>
+          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="resolve__list_8h.html#structresolving__list">resolving_list</a> *&#160;</td>
+          <td class="paramname"><em>resolving_list_t</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acfec6138d2ca732b3d23cc8203c4c106"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="resolve__list_8h.html#structresolving__list">resolving_list</a>* ll_resolve_local_addr </td>
+          <td>(</td>
+          <td class="paramtype">const u8 *&#160;</td>
+          <td class="paramname"><em>addr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6b607a52c88f6fa64a6633ce7facfaed"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="resolve__list_8h.html#structresolving__list">resolving_list</a>* ll_resolve_peer_addr </td>
+          <td>(</td>
+          <td class="paramtype">const u8 *&#160;</td>
+          <td class="paramname"><em>addr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad3206fa834723b7ebd7c26e8c5237f6f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_resolving_list_add </td>
+          <td>(</td>
+          <td class="paramtype">const u8 *&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acbf778419447e0c5af9fb216e9c8e6b6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_resolving_list_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afde9eb98c2aca78fa7c2ad77c84702c4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="resolve__list_8h.html#structresolving__list">resolving_list</a>* ll_resolving_list_match </td>
+          <td>(</td>
+          <td class="paramtype">const u8&#160;</td>
+          <td class="paramname"><em>addr_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const u8 *&#160;</td>
+          <td class="paramname"><em>addr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa2139825e64cc23306a5d58ce08ed0ac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_resolving_list_remove </td>
+          <td>(</td>
+          <td class="paramtype">const u8 *&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7965dc9baa665f198857d3018da55063"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ll_RPA_timeout_handler </td>
+          <td>(</td>
+          <td class="paramtype">sys_timer *&#160;</td>
+          <td class="paramname"><em>timer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa2ccaaf8c818babb07b91a12462edd29"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ll_RPA_timeout_start </td>
+          <td>(</td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>timeout</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acaf739616417f3417b60238516526b1b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ll_RPA_timeout_stop </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa54c2f9f169c3e9249622cf95db49ecf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_set_resolvable_private_address_timeout </td>
+          <td>(</td>
+          <td class="paramtype">const u8 *&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aab0e7b5191af9f0feddc4722e643d558"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ll_vendor_device_address_generate </td>
+          <td>(</td>
+          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramname"><em>irk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a class="anchor" id="a672d9679dbf70a156b69cf50089779ea"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="resolve__list_8h.html#structll__privacy">ll_privacy</a> le_privacy</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2fedcdf8e4e4c67cf6d2808b4090c38a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 ll_resolving_list_used</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adb35b0b00ad69fcaacd17fe4d17ae54a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="ll__resolve__list_8c.html#structrpa">rpa</a> rpa_set[]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>初始值:</b><div class="fragment"><div class="line">= {</div><div class="line">    </div><div class="line">    [0] = {</div><div class="line">        .addr = {0x76, 0x41, 0x46, 0x31, 0x3a, 0x4d}, </div><div class="line">        .peer_irk = {0x74, 0x01, 0x90, 0x4A, 0xF7, 0x35, 0xA4, 0x38, 0xD3, 0x20, 0x9A, 0xCD, 0x48, 0xC0, 0x54, 0x40},</div><div class="line">        .local_irk = {0xE6, 0xEA, 0xEE, 0x60, 0x31, 0x7B, 0xFC, 0xA2, 0x3F, 0xA5, 0x79, 0x59, 0xE7, 0x41, 0xCF, 0xC7},</div><div class="line">    },</div><div class="line">    [1] = {</div><div class="line">        .addr = {0xA9, 0x3E, 0xD4, 0x37, 0xB5, 0x75}, </div><div class="line">        .peer_irk = {0x74, 0x01, 0x90, 0x4A, 0xF7, 0x35, 0xA4, 0x38, 0xD3, 0x20, 0x9A, 0xCD, 0x48, 0xC0, 0x54, 0x40},</div><div class="line">    },</div><div class="line">}</div></div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

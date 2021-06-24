@@ -1,0 +1,1879 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="llcp__sm__template_8c" kind="file" language="C++">
+    <compoundname>llcp_sm_template.c</compoundname>
+    <includes refid="link__layer_8h" local="yes">ble/link_layer.h</includes>
+    <includes local="yes">hci_controller.h</includes>
+    <includes local="yes">common/debug.h</includes>
+    <incdepgraph>
+      <node id="4278">
+        <label>os/os_type.h</label>
+      </node>
+      <node id="4274">
+        <label>common/atomic.h</label>
+      </node>
+      <node id="4288">
+        <label>common/lbuf.h</label>
+      </node>
+      <node id="4271">
+        <label>common/list.h</label>
+      </node>
+      <node id="4277">
+        <label>common/thread.h</label>
+      </node>
+      <node id="4280">
+        <label>ble/ll_adv.h</label>
+        <link refid="ll__adv_8h"/>
+        <childnode refid="4272" relation="include">
+        </childnode>
+      </node>
+      <node id="4294">
+        <label>common/debug.h</label>
+      </node>
+      <node id="4282">
+        <label>ble/ll_init.h</label>
+        <link refid="ll__init_8h"/>
+        <childnode refid="4272" relation="include">
+        </childnode>
+      </node>
+      <node id="4284">
+        <label>data_extension.h</label>
+        <link refid="data__extension_8h"/>
+        <childnode refid="4270" relation="include">
+        </childnode>
+      </node>
+      <node id="4287">
+        <label>ble/ll_iso.h</label>
+        <link refid="ll__iso_8h"/>
+        <childnode refid="4275" relation="include">
+        </childnode>
+        <childnode refid="4288" relation="include">
+        </childnode>
+        <childnode refid="4277" relation="include">
+        </childnode>
+      </node>
+      <node id="4270">
+        <label>typedef.h</label>
+      </node>
+      <node id="4276">
+        <label>white_list.h</label>
+        <link refid="white__list_8h"/>
+        <childnode refid="4270" relation="include">
+        </childnode>
+      </node>
+      <node id="4290">
+        <label>audio_codec.h</label>
+        <link refid="audio__codec_8h"/>
+        <childnode refid="4275" relation="include">
+        </childnode>
+      </node>
+      <node id="4268">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_template.c</label>
+        <link refid="llcp_sm_template.c"/>
+        <childnode refid="4269" relation="include">
+        </childnode>
+        <childnode refid="4293" relation="include">
+        </childnode>
+        <childnode refid="4294" relation="include">
+        </childnode>
+      </node>
+      <node id="4281">
+        <label>ble/ll_scan.h</label>
+        <link refid="ll__scan_8h"/>
+        <childnode refid="4272" relation="include">
+        </childnode>
+      </node>
+      <node id="4279">
+        <label>ble/llcp.h</label>
+        <link refid="llcp_8h"/>
+        <childnode refid="4270" relation="include">
+        </childnode>
+        <childnode refid="4275" relation="include">
+        </childnode>
+      </node>
+      <node id="4285">
+        <label>multiple_phys.h</label>
+        <link refid="multiple__phys_8h"/>
+        <childnode refid="4270" relation="include">
+        </childnode>
+      </node>
+      <node id="4283">
+        <label>resolve_list.h</label>
+        <link refid="resolve__list_8h"/>
+        <childnode refid="4270" relation="include">
+        </childnode>
+      </node>
+      <node id="4272">
+        <label>ble_interface.h</label>
+      </node>
+      <node id="4286">
+        <label>ble/ll_cte.h</label>
+        <link refid="ll__cte_8h"/>
+        <childnode refid="4275" relation="include">
+        </childnode>
+      </node>
+      <node id="4293">
+        <label>hci_controller.h</label>
+      </node>
+      <node id="4273">
+        <label>common/sys_timer.h</label>
+      </node>
+      <node id="4269">
+        <label>ble/link_layer.h</label>
+        <link refid="link__layer_8h"/>
+        <childnode refid="4270" relation="include">
+        </childnode>
+        <childnode refid="4271" relation="include">
+        </childnode>
+        <childnode refid="4272" relation="include">
+        </childnode>
+        <childnode refid="4273" relation="include">
+        </childnode>
+        <childnode refid="4274" relation="include">
+        </childnode>
+        <childnode refid="4275" relation="include">
+        </childnode>
+        <childnode refid="4276" relation="include">
+        </childnode>
+        <childnode refid="4277" relation="include">
+        </childnode>
+        <childnode refid="4278" relation="include">
+        </childnode>
+        <childnode refid="4279" relation="include">
+        </childnode>
+        <childnode refid="4280" relation="include">
+        </childnode>
+        <childnode refid="4281" relation="include">
+        </childnode>
+        <childnode refid="4282" relation="include">
+        </childnode>
+        <childnode refid="4283" relation="include">
+        </childnode>
+        <childnode refid="4284" relation="include">
+        </childnode>
+        <childnode refid="4285" relation="include">
+        </childnode>
+        <childnode refid="4286" relation="include">
+        </childnode>
+        <childnode refid="4287" relation="include">
+        </childnode>
+        <childnode refid="4289" relation="include">
+        </childnode>
+        <childnode refid="4291" relation="include">
+        </childnode>
+        <childnode refid="4292" relation="include">
+        </childnode>
+      </node>
+      <node id="4275">
+        <label>ll_defines.h</label>
+        <link refid="ll__defines_8h"/>
+        <childnode refid="4270" relation="include">
+        </childnode>
+      </node>
+      <node id="4291">
+        <label>ble/ll_cis.h</label>
+        <link refid="ll__cis_8h"/>
+        <childnode refid="4287" relation="include">
+        </childnode>
+        <childnode refid="4269" relation="include">
+        </childnode>
+      </node>
+      <node id="4289">
+        <label>ble/ll_bis.h</label>
+        <link refid="ll__bis_8h"/>
+        <childnode refid="4287" relation="include">
+        </childnode>
+        <childnode refid="4290" relation="include">
+        </childnode>
+      </node>
+      <node id="4292">
+        <label>ble/ll_pc.h</label>
+        <link refid="ll__pc_8h"/>
+        <childnode refid="4275" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="llcp__sm__template_8c_1a6c6991cba0e2995d7d9aec73e0324317" prot="public" static="no">
+        <name>LOG_TAG_CONST</name>
+        <initializer>LL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_template.c" line="17" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_template.c" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="llcp__sm__template_8c_1a7ce0df38eb467e59f209470c8f5ac4e6" prot="public" static="no">
+        <name>LOG_TAG</name>
+        <initializer>&quot;[LL]&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_template.c" line="18" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_template.c" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="llcp__sm__template_8c_1a9eeb6e067100d0dec6e53bce19a403e0" prot="public" static="no">
+        <name>LOG_ERROR_ENABLE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_template.c" line="19" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_template.c" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="llcp__sm__template_8c_1a69321c8a2a0b07a07fb5088e82e25eb0" prot="public" static="no">
+        <name>LOG_INFO_ENABLE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_template.c" line="20" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_template.c" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="llcp__sm__template_8c_1ad223350d80db21fa8b721107cd1f6442" prot="public" static="no">
+        <name>__this</name>
+        <initializer>(&amp;<ref refid="link__layer_8h_1a11d5b1c8b0def0c238d4700650780724" kindref="member">ll_hdl</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_template.c" line="37" column="10" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_template.c" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="llcp__sm__template_8c_1a0d54ce3b5d6b0a1fea9d9bb138cef58e" prot="public" static="no">
+        <name>LL_CONN_MSG_HOST</name>
+        <initializer>0xfe</initializer>
+        <briefdescription>
+<para>Replace the &lt;procedure&gt; to any specific name. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_template.c" line="42" column="10" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_template.c" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="llcp__sm__template_8c_1ae49b8c21f4a1bb7eae1aca49fd1ed6b1" prot="public" static="no">
+        <name>LLCP_MSG</name>
+        <initializer>0xff</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_template.c" line="43" column="10" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_template.c" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="llcp__sm__template_8c_1a24316411a8b77f32782171cf2c9fe4b8" prot="public" static="no">
+        <name>LLCP_ID_PROCEDURE</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_template.c" line="44" column="10" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_template.c" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="llcp__sm__template_8c_1aa63e7a6b1874a62cf685a316f9ffe6ee" prot="public" static="no">
+        <name>llcp_sm_event_t</name>
+        <enumvalue id="llcp__sm__bis_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea718744bd4ac0cec8e71ee3df2e4f1609" prot="public">
+          <name>LLCP_SM_EVENT_HOST_START</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Host Start LLCP Procedure by HCI Command </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__bis_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeaa57583355b36370859c0f1107ef2b515" prot="public">
+          <name>LLCP_SM_EVENT_AUTO_START</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Controller Start LLCP Procedure Autonomously </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__bis_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeae12e3d0a407b7fc7f3b6f9f2be7cfc88" prot="public">
+          <name>LLCP_SM_EVENT_SEND_REQ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__bis_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea5d578d2cf3bc31268cec4b45b7645a8a" prot="public">
+          <name>LLCP_SM_EVENT_SEND_RSP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__bis_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeab66579e50d781dffd52ec1fdd6a2ee75" prot="public">
+          <name>LLCP_SM_EVENT_RECV_REQ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__bis_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea1dd1bbc7e386e1517cd1e77bf72dbafd" prot="public">
+          <name>LLCP_SM_EVENT_RECV_RSP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__bis_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea7a50b69b1bfbc78456e86fb414f08b5a" prot="public">
+          <name>LLCP_SM_EVENT_TIMEOUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__bis_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea6ce62da3847c66460716cf7d33166018" prot="public">
+          <name>LLCP_SM_EVENT_FAILED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__bis_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeaf684402339c4ab620e948a0f38fc35e0" prot="public">
+          <name>LLCP_SM_EVENT_SUCCESS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__bis_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeaba5f8be5cca9b09c3254db7110bfbc0f" prot="public">
+          <name>LLCP_SM_EVENT_INVALID</name>
+          <initializer>= 0xff</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__cis_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea718744bd4ac0cec8e71ee3df2e4f1609" prot="public">
+          <name>LLCP_SM_EVENT_HOST_START</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Host Start LLCP Procedure by HCI Command </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__cis_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeaa57583355b36370859c0f1107ef2b515" prot="public">
+          <name>LLCP_SM_EVENT_AUTO_START</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Controller Start LLCP Procedure Autonomously </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__cis_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeae12e3d0a407b7fc7f3b6f9f2be7cfc88" prot="public">
+          <name>LLCP_SM_EVENT_SEND_REQ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__cis_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea5d578d2cf3bc31268cec4b45b7645a8a" prot="public">
+          <name>LLCP_SM_EVENT_SEND_RSP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__cis_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeab66579e50d781dffd52ec1fdd6a2ee75" prot="public">
+          <name>LLCP_SM_EVENT_RECV_REQ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__cis_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea1dd1bbc7e386e1517cd1e77bf72dbafd" prot="public">
+          <name>LLCP_SM_EVENT_RECV_RSP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__cis_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeae76d5df39de6113cd664e3f7499d5bde" prot="public">
+          <name>LLCP_SM_EVENT_SEND_IND</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__cis_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea97e48ba6da08ae0ae39ed88959722c9e" prot="public">
+          <name>LLCP_SM_EVENT_RECV_IND</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__cis_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea3ce76c05ec12cfe644773e8901ae71fc" prot="public">
+          <name>LLCP_SM_EVENT_SEND_REJ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__cis_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea7a50b69b1bfbc78456e86fb414f08b5a" prot="public">
+          <name>LLCP_SM_EVENT_TIMEOUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__cis_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea6ce62da3847c66460716cf7d33166018" prot="public">
+          <name>LLCP_SM_EVENT_FAILED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__cis_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeaf684402339c4ab620e948a0f38fc35e0" prot="public">
+          <name>LLCP_SM_EVENT_SUCCESS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__cis_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeaba5f8be5cca9b09c3254db7110bfbc0f" prot="public">
+          <name>LLCP_SM_EVENT_INVALID</name>
+          <initializer>= 0xff</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__cis__terminate_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea718744bd4ac0cec8e71ee3df2e4f1609" prot="public">
+          <name>LLCP_SM_EVENT_HOST_START</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Host Start LLCP Procedure by HCI Command </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__cis__terminate_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeaa57583355b36370859c0f1107ef2b515" prot="public">
+          <name>LLCP_SM_EVENT_AUTO_START</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Controller Start LLCP Procedure Autonomously </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__cis__terminate_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeae76d5df39de6113cd664e3f7499d5bde" prot="public">
+          <name>LLCP_SM_EVENT_SEND_IND</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Two Hand-shake Protocol </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__cis__terminate_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea97e48ba6da08ae0ae39ed88959722c9e" prot="public">
+          <name>LLCP_SM_EVENT_RECV_IND</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__cis__terminate_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea7a50b69b1bfbc78456e86fb414f08b5a" prot="public">
+          <name>LLCP_SM_EVENT_TIMEOUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Controller Response Timeout </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__cis__terminate_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea6ce62da3847c66460716cf7d33166018" prot="public">
+          <name>LLCP_SM_EVENT_FAILED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__cis__terminate_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeaf684402339c4ab620e948a0f38fc35e0" prot="public">
+          <name>LLCP_SM_EVENT_SUCCESS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__cis__terminate_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeaba5f8be5cca9b09c3254db7110bfbc0f" prot="public">
+          <name>LLCP_SM_EVENT_INVALID</name>
+          <initializer>= 0xff</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__common_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea718744bd4ac0cec8e71ee3df2e4f1609" prot="public">
+          <name>LLCP_SM_EVENT_HOST_START</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Host Start LLCP Procedure by HCI Command </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__common_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeaa57583355b36370859c0f1107ef2b515" prot="public">
+          <name>LLCP_SM_EVENT_AUTO_START</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Controller Start LLCP Procedure Autonomously </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__common_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeae12e3d0a407b7fc7f3b6f9f2be7cfc88" prot="public">
+          <name>LLCP_SM_EVENT_SEND_REQ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Two Hand-shake Protocol </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__common_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeab66579e50d781dffd52ec1fdd6a2ee75" prot="public">
+          <name>LLCP_SM_EVENT_RECV_REQ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__common_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea5d578d2cf3bc31268cec4b45b7645a8a" prot="public">
+          <name>LLCP_SM_EVENT_SEND_RSP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__common_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea1dd1bbc7e386e1517cd1e77bf72dbafd" prot="public">
+          <name>LLCP_SM_EVENT_RECV_RSP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__common_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeae76d5df39de6113cd664e3f7499d5bde" prot="public">
+          <name>LLCP_SM_EVENT_SEND_IND</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__common_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea97e48ba6da08ae0ae39ed88959722c9e" prot="public">
+          <name>LLCP_SM_EVENT_RECV_IND</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__common_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea3ce76c05ec12cfe644773e8901ae71fc" prot="public">
+          <name>LLCP_SM_EVENT_SEND_REJ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__common_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeab3d9d3b778657b855d5c4cc861d0e16e" prot="public">
+          <name>LLCP_SM_EVENT_RECV_REJ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__common_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea5eec7dcaa9f1ff66745758fe46626f20" prot="public">
+          <name>LLCP_SM_EVENT_UPDATE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Instant 完成更新 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__common_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea7a50b69b1bfbc78456e86fb414f08b5a" prot="public">
+          <name>LLCP_SM_EVENT_TIMEOUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Controller Response Timeout </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__common_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea6ce62da3847c66460716cf7d33166018" prot="public">
+          <name>LLCP_SM_EVENT_FAILED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__common_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeaf684402339c4ab620e948a0f38fc35e0" prot="public">
+          <name>LLCP_SM_EVENT_SUCCESS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__common_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeaba5f8be5cca9b09c3254db7110bfbc0f" prot="public">
+          <name>LLCP_SM_EVENT_INVALID</name>
+          <initializer>= 0xff</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__conn__update_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea718744bd4ac0cec8e71ee3df2e4f1609" prot="public">
+          <name>LLCP_SM_EVENT_HOST_START</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Host Start LLCP Procedure by HCI Command </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__conn__update_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeaa57583355b36370859c0f1107ef2b515" prot="public">
+          <name>LLCP_SM_EVENT_AUTO_START</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Controller Start LLCP Procedure Autonomously </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__conn__update_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeae12e3d0a407b7fc7f3b6f9f2be7cfc88" prot="public">
+          <name>LLCP_SM_EVENT_SEND_REQ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__conn__update_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea5d578d2cf3bc31268cec4b45b7645a8a" prot="public">
+          <name>LLCP_SM_EVENT_SEND_RSP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__conn__update_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeab66579e50d781dffd52ec1fdd6a2ee75" prot="public">
+          <name>LLCP_SM_EVENT_RECV_REQ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__conn__update_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea1dd1bbc7e386e1517cd1e77bf72dbafd" prot="public">
+          <name>LLCP_SM_EVENT_RECV_RSP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__conn__update_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeae76d5df39de6113cd664e3f7499d5bde" prot="public">
+          <name>LLCP_SM_EVENT_SEND_IND</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__conn__update_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea97e48ba6da08ae0ae39ed88959722c9e" prot="public">
+          <name>LLCP_SM_EVENT_RECV_IND</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__conn__update_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea3ce76c05ec12cfe644773e8901ae71fc" prot="public">
+          <name>LLCP_SM_EVENT_SEND_REJ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__conn__update_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeab3d9d3b778657b855d5c4cc861d0e16e" prot="public">
+          <name>LLCP_SM_EVENT_RECV_REJ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__conn__update_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea5eec7dcaa9f1ff66745758fe46626f20" prot="public">
+          <name>LLCP_SM_EVENT_UPDATE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__conn__update_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea7a50b69b1bfbc78456e86fb414f08b5a" prot="public">
+          <name>LLCP_SM_EVENT_TIMEOUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__conn__update_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea6ce62da3847c66460716cf7d33166018" prot="public">
+          <name>LLCP_SM_EVENT_FAILED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__conn__update_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeaf684402339c4ab620e948a0f38fc35e0" prot="public">
+          <name>LLCP_SM_EVENT_SUCCESS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__conn__update_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeaba5f8be5cca9b09c3254db7110bfbc0f" prot="public">
+          <name>LLCP_SM_EVENT_INVALID</name>
+          <initializer>= 0xff</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__cte_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea718744bd4ac0cec8e71ee3df2e4f1609" prot="public">
+          <name>LLCP_SM_EVENT_HOST_START</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Host Start LLCP Procedure by HCI Command </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__cte_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeaa57583355b36370859c0f1107ef2b515" prot="public">
+          <name>LLCP_SM_EVENT_AUTO_START</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Controller Start LLCP Procedure Autonomously </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__cte_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeae12e3d0a407b7fc7f3b6f9f2be7cfc88" prot="public">
+          <name>LLCP_SM_EVENT_SEND_REQ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__cte_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea5d578d2cf3bc31268cec4b45b7645a8a" prot="public">
+          <name>LLCP_SM_EVENT_SEND_RSP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__cte_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeab66579e50d781dffd52ec1fdd6a2ee75" prot="public">
+          <name>LLCP_SM_EVENT_RECV_REQ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__cte_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea1dd1bbc7e386e1517cd1e77bf72dbafd" prot="public">
+          <name>LLCP_SM_EVENT_RECV_RSP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__cte_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea3ce76c05ec12cfe644773e8901ae71fc" prot="public">
+          <name>LLCP_SM_EVENT_SEND_REJ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__cte_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeab3d9d3b778657b855d5c4cc861d0e16e" prot="public">
+          <name>LLCP_SM_EVENT_RECV_REJ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__cte_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea7a50b69b1bfbc78456e86fb414f08b5a" prot="public">
+          <name>LLCP_SM_EVENT_TIMEOUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__cte_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea6ce62da3847c66460716cf7d33166018" prot="public">
+          <name>LLCP_SM_EVENT_FAILED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__cte_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeaf684402339c4ab620e948a0f38fc35e0" prot="public">
+          <name>LLCP_SM_EVENT_SUCCESS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__cte_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeaba5f8be5cca9b09c3254db7110bfbc0f" prot="public">
+          <name>LLCP_SM_EVENT_INVALID</name>
+          <initializer>= 0xff</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__data__extension_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea718744bd4ac0cec8e71ee3df2e4f1609" prot="public">
+          <name>LLCP_SM_EVENT_HOST_START</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Host Start LLCP Procedure by HCI Command </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__data__extension_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeaa57583355b36370859c0f1107ef2b515" prot="public">
+          <name>LLCP_SM_EVENT_AUTO_START</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Controller Start LLCP Procedure Autonomously </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__data__extension_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeae12e3d0a407b7fc7f3b6f9f2be7cfc88" prot="public">
+          <name>LLCP_SM_EVENT_SEND_REQ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__data__extension_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeab66579e50d781dffd52ec1fdd6a2ee75" prot="public">
+          <name>LLCP_SM_EVENT_RECV_REQ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__data__extension_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea5d578d2cf3bc31268cec4b45b7645a8a" prot="public">
+          <name>LLCP_SM_EVENT_SEND_RSP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__data__extension_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea1dd1bbc7e386e1517cd1e77bf72dbafd" prot="public">
+          <name>LLCP_SM_EVENT_RECV_RSP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__data__extension_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea6ce62da3847c66460716cf7d33166018" prot="public">
+          <name>LLCP_SM_EVENT_FAILED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__data__extension_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea7a50b69b1bfbc78456e86fb414f08b5a" prot="public">
+          <name>LLCP_SM_EVENT_TIMEOUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__data__extension_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeaf684402339c4ab620e948a0f38fc35e0" prot="public">
+          <name>LLCP_SM_EVENT_SUCCESS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__data__extension_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeaba5f8be5cca9b09c3254db7110bfbc0f" prot="public">
+          <name>LLCP_SM_EVENT_INVALID</name>
+          <initializer>= 0xff</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__encrypt_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea718744bd4ac0cec8e71ee3df2e4f1609" prot="public">
+          <name>LLCP_SM_EVENT_HOST_START</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__encrypt_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeaa57583355b36370859c0f1107ef2b515" prot="public">
+          <name>LLCP_SM_EVENT_AUTO_START</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__encrypt_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea49e54582e022509280eace66aee7e4e0" prot="public">
+          <name>LLCP_SM_EVENT_SEND_REJECT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__encrypt_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeabb57644496baad66b3df57454f737591" prot="public">
+          <name>LLCP_SM_EVENT_SEND_PAUSE_ENC_REQ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__encrypt_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea093e3bdc92ca3dbdbcdd72012a199ebe" prot="public">
+          <name>LLCP_SM_EVENT_RECV_PAUSE_ENC_REQ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__encrypt_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea06aca461e7f5bba09d52926a83bdd7ad" prot="public">
+          <name>LLCP_SM_EVENT_SEND_PAUSE_ENC_RSP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__encrypt_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea4f746d0e7a25f4d66d8579eb6f105154" prot="public">
+          <name>LLCP_SM_EVENT_RECV_PAUSE_ENC_RSP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__encrypt_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea5c9db095750548134f60e8b742e651bf" prot="public">
+          <name>LLCP_SM_EVENT_SEND_ENC_REQ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__encrypt_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea1b1928e87121e1d02b9c942ccb2d2663" prot="public">
+          <name>LLCP_SM_EVENT_RECV_ENC_REQ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__encrypt_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea91a3beaf2e546bcd392b9f930b0ac7f6" prot="public">
+          <name>LLCP_SM_EVENT_SEND_ENC_RSP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__encrypt_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea816b8e594a8715574175e8e881b3ea12" prot="public">
+          <name>LLCP_SM_EVENT_RECV_ENC_RSP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__encrypt_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea1aefdc21e0bc02556da80d283e8d4883" prot="public">
+          <name>LLCP_SM_EVENT_SEND_START_ENC_REQ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__encrypt_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea3154f4dcb63c58793aee167034eab15d" prot="public">
+          <name>LLCP_SM_EVENT_RECV_START_ENC_REQ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__encrypt_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea5a3108b5540a558889ede171e9e97508" prot="public">
+          <name>LLCP_SM_EVENT_SEND_START_ENC_RSP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__encrypt_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea5336f46799737790882ebee303c0c7cb" prot="public">
+          <name>LLCP_SM_EVENT_RECV_START_ENC_RSP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__encrypt_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea7a50b69b1bfbc78456e86fb414f08b5a" prot="public">
+          <name>LLCP_SM_EVENT_TIMEOUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__encrypt_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea6ce62da3847c66460716cf7d33166018" prot="public">
+          <name>LLCP_SM_EVENT_FAILED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__encrypt_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeaf684402339c4ab620e948a0f38fc35e0" prot="public">
+          <name>LLCP_SM_EVENT_SUCCESS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__encrypt_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeaba5f8be5cca9b09c3254db7110bfbc0f" prot="public">
+          <name>LLCP_SM_EVENT_INVALID</name>
+          <initializer>= 0xff</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__pc_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea718744bd4ac0cec8e71ee3df2e4f1609" prot="public">
+          <name>LLCP_SM_EVENT_HOST_START</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Host Start LLCP Procedure by HCI Command </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__pc_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeaa57583355b36370859c0f1107ef2b515" prot="public">
+          <name>LLCP_SM_EVENT_AUTO_START</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Controller Start LLCP Procedure Autonomously </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__pc_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeae12e3d0a407b7fc7f3b6f9f2be7cfc88" prot="public">
+          <name>LLCP_SM_EVENT_SEND_REQ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Two Hand-shake Protocol </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__pc_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeab66579e50d781dffd52ec1fdd6a2ee75" prot="public">
+          <name>LLCP_SM_EVENT_RECV_REQ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__pc_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea5d578d2cf3bc31268cec4b45b7645a8a" prot="public">
+          <name>LLCP_SM_EVENT_SEND_RSP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__pc_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea1dd1bbc7e386e1517cd1e77bf72dbafd" prot="public">
+          <name>LLCP_SM_EVENT_RECV_RSP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__pc_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeae76d5df39de6113cd664e3f7499d5bde" prot="public">
+          <name>LLCP_SM_EVENT_SEND_IND</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__pc_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea97e48ba6da08ae0ae39ed88959722c9e" prot="public">
+          <name>LLCP_SM_EVENT_RECV_IND</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__pc_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea7a50b69b1bfbc78456e86fb414f08b5a" prot="public">
+          <name>LLCP_SM_EVENT_TIMEOUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Controller Response Timeout </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__pc_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea6ce62da3847c66460716cf7d33166018" prot="public">
+          <name>LLCP_SM_EVENT_FAILED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__pc_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeaf684402339c4ab620e948a0f38fc35e0" prot="public">
+          <name>LLCP_SM_EVENT_SUCCESS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__pc_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeaba5f8be5cca9b09c3254db7110bfbc0f" prot="public">
+          <name>LLCP_SM_EVENT_INVALID</name>
+          <initializer>= 0xff</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__phy__update_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea718744bd4ac0cec8e71ee3df2e4f1609" prot="public">
+          <name>LLCP_SM_EVENT_HOST_START</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Host Start LLCP Procedure by HCI Command </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__phy__update_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeaa57583355b36370859c0f1107ef2b515" prot="public">
+          <name>LLCP_SM_EVENT_AUTO_START</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Controller Start LLCP Procedure Autonomously </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__phy__update_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeae12e3d0a407b7fc7f3b6f9f2be7cfc88" prot="public">
+          <name>LLCP_SM_EVENT_SEND_REQ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__phy__update_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeab66579e50d781dffd52ec1fdd6a2ee75" prot="public">
+          <name>LLCP_SM_EVENT_RECV_REQ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__phy__update_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea5d578d2cf3bc31268cec4b45b7645a8a" prot="public">
+          <name>LLCP_SM_EVENT_SEND_RSP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__phy__update_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea1dd1bbc7e386e1517cd1e77bf72dbafd" prot="public">
+          <name>LLCP_SM_EVENT_RECV_RSP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__phy__update_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeae76d5df39de6113cd664e3f7499d5bde" prot="public">
+          <name>LLCP_SM_EVENT_SEND_IND</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__phy__update_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea97e48ba6da08ae0ae39ed88959722c9e" prot="public">
+          <name>LLCP_SM_EVENT_RECV_IND</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__phy__update_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea5eec7dcaa9f1ff66745758fe46626f20" prot="public">
+          <name>LLCP_SM_EVENT_UPDATE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__phy__update_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea7a50b69b1bfbc78456e86fb414f08b5a" prot="public">
+          <name>LLCP_SM_EVENT_TIMEOUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__phy__update_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea6ce62da3847c66460716cf7d33166018" prot="public">
+          <name>LLCP_SM_EVENT_FAILED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__phy__update_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeaf684402339c4ab620e948a0f38fc35e0" prot="public">
+          <name>LLCP_SM_EVENT_SUCCESS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__phy__update_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeacc9b14aa6ef4d02c8ec04f8af956f11e" prot="public">
+          <name>LLCP_SM_EVENT_COMPLETE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__phy__update_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeaba5f8be5cca9b09c3254db7110bfbc0f" prot="public">
+          <name>LLCP_SM_EVENT_INVALID</name>
+          <initializer>= 0xff</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__ping_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea718744bd4ac0cec8e71ee3df2e4f1609" prot="public">
+          <name>LLCP_SM_EVENT_HOST_START</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Host Start LLCP Procedure by HCI Command </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__ping_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeaa57583355b36370859c0f1107ef2b515" prot="public">
+          <name>LLCP_SM_EVENT_AUTO_START</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Controller Start LLCP Procedure Autonomously </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__ping_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeae12e3d0a407b7fc7f3b6f9f2be7cfc88" prot="public">
+          <name>LLCP_SM_EVENT_SEND_REQ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Two Hand-shake Protocol </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__ping_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeab66579e50d781dffd52ec1fdd6a2ee75" prot="public">
+          <name>LLCP_SM_EVENT_RECV_REQ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__ping_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea5d578d2cf3bc31268cec4b45b7645a8a" prot="public">
+          <name>LLCP_SM_EVENT_SEND_RSP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__ping_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea1dd1bbc7e386e1517cd1e77bf72dbafd" prot="public">
+          <name>LLCP_SM_EVENT_RECV_RSP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__ping_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea7a50b69b1bfbc78456e86fb414f08b5a" prot="public">
+          <name>LLCP_SM_EVENT_TIMEOUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Controller Response Timeout </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__ping_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea6ce62da3847c66460716cf7d33166018" prot="public">
+          <name>LLCP_SM_EVENT_FAILED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__ping_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeaf684402339c4ab620e948a0f38fc35e0" prot="public">
+          <name>LLCP_SM_EVENT_SUCCESS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__ping_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeaba5f8be5cca9b09c3254db7110bfbc0f" prot="public">
+          <name>LLCP_SM_EVENT_INVALID</name>
+          <initializer>= 0xff</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__sca_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea718744bd4ac0cec8e71ee3df2e4f1609" prot="public">
+          <name>LLCP_SM_EVENT_HOST_START</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Host Start LLCP Procedure by HCI Command </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__sca_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeaa57583355b36370859c0f1107ef2b515" prot="public">
+          <name>LLCP_SM_EVENT_AUTO_START</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Controller Start LLCP Procedure Autonomously </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__sca_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeae12e3d0a407b7fc7f3b6f9f2be7cfc88" prot="public">
+          <name>LLCP_SM_EVENT_SEND_REQ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Two Hand-shake Protocol </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__sca_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeab66579e50d781dffd52ec1fdd6a2ee75" prot="public">
+          <name>LLCP_SM_EVENT_RECV_REQ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__sca_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea5d578d2cf3bc31268cec4b45b7645a8a" prot="public">
+          <name>LLCP_SM_EVENT_SEND_RSP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__sca_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea1dd1bbc7e386e1517cd1e77bf72dbafd" prot="public">
+          <name>LLCP_SM_EVENT_RECV_RSP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__sca_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea7a50b69b1bfbc78456e86fb414f08b5a" prot="public">
+          <name>LLCP_SM_EVENT_TIMEOUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Controller Response Timeout </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__sca_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea6ce62da3847c66460716cf7d33166018" prot="public">
+          <name>LLCP_SM_EVENT_FAILED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__sca_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeaf684402339c4ab620e948a0f38fc35e0" prot="public">
+          <name>LLCP_SM_EVENT_SUCCESS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__sca_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeaba5f8be5cca9b09c3254db7110bfbc0f" prot="public">
+          <name>LLCP_SM_EVENT_INVALID</name>
+          <initializer>= 0xff</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__template_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea718744bd4ac0cec8e71ee3df2e4f1609" prot="public">
+          <name>LLCP_SM_EVENT_HOST_START</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Host Start LLCP Procedure by HCI Command </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__template_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeaa57583355b36370859c0f1107ef2b515" prot="public">
+          <name>LLCP_SM_EVENT_AUTO_START</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Controller Start LLCP Procedure Autonomously </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__template_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeae12e3d0a407b7fc7f3b6f9f2be7cfc88" prot="public">
+          <name>LLCP_SM_EVENT_SEND_REQ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__template_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea5d578d2cf3bc31268cec4b45b7645a8a" prot="public">
+          <name>LLCP_SM_EVENT_SEND_RSP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__template_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeab66579e50d781dffd52ec1fdd6a2ee75" prot="public">
+          <name>LLCP_SM_EVENT_RECV_REQ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__template_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea1dd1bbc7e386e1517cd1e77bf72dbafd" prot="public">
+          <name>LLCP_SM_EVENT_RECV_RSP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__template_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea7a50b69b1bfbc78456e86fb414f08b5a" prot="public">
+          <name>LLCP_SM_EVENT_TIMEOUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__template_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea6ce62da3847c66460716cf7d33166018" prot="public">
+          <name>LLCP_SM_EVENT_FAILED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__template_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeaf684402339c4ab620e948a0f38fc35e0" prot="public">
+          <name>LLCP_SM_EVENT_SUCCESS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="llcp__sm__template_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeaba5f8be5cca9b09c3254db7110bfbc0f" prot="public">
+          <name>LLCP_SM_EVENT_INVALID</name>
+          <initializer>= 0xff</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>State Machine Generic Event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_template.c" line="51" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_template.c" bodystart="51" bodyend="63"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="llcp__sm__template_8c_1a3dcc08f685fde8bf3709fed8b60ccdc8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ll_procedure_start</definition>
+        <argsstring>(struct le_link *link)</argsstring>
+        <name>ll_procedure_start</name>
+        <param>
+          <type>struct <ref refid="structle__link" kindref="compound">le_link</ref> *</type>
+          <declname>link</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_template.c" line="69" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_template.c" bodystart="69" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="llcp__sm__template_8c_1aa98f138cfd6dcb66baa0c4f6bcc2ceec" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ll_procedure_send_request</definition>
+        <argsstring>(struct le_link *link)</argsstring>
+        <name>ll_procedure_send_request</name>
+        <param>
+          <type>struct <ref refid="structle__link" kindref="compound">le_link</ref> *</type>
+          <declname>link</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_template.c" line="75" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_template.c" bodystart="75" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="llcp__sm__template_8c_1a65727a988e66152b897aa06809e17fb1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ll_procedure_recv_request</definition>
+        <argsstring>(struct le_link *link)</argsstring>
+        <name>ll_procedure_recv_request</name>
+        <param>
+          <type>struct <ref refid="structle__link" kindref="compound">le_link</ref> *</type>
+          <declname>link</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_template.c" line="80" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_template.c" bodystart="80" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="llcp__sm__template_8c_1acd92faa6db9440556053c759b6c5a7ee" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ll_procedure_send_respond</definition>
+        <argsstring>(struct le_link *link)</argsstring>
+        <name>ll_procedure_send_respond</name>
+        <param>
+          <type>struct <ref refid="structle__link" kindref="compound">le_link</ref> *</type>
+          <declname>link</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_template.c" line="85" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_template.c" bodystart="85" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="llcp__sm__template_8c_1aeaaf2eb7bed462cbe5d578b42336c33f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ll_procedure_recv_respond</definition>
+        <argsstring>(struct le_link *link)</argsstring>
+        <name>ll_procedure_recv_respond</name>
+        <param>
+          <type>struct <ref refid="structle__link" kindref="compound">le_link</ref> *</type>
+          <declname>link</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_template.c" line="90" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_template.c" bodystart="90" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="llcp__sm__template_8c_1a6b080d729b4a714a8785a208cc34b986" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ll_procedure_success</definition>
+        <argsstring>(struct le_link *link)</argsstring>
+        <name>ll_procedure_success</name>
+        <param>
+          <type>struct <ref refid="structle__link" kindref="compound">le_link</ref> *</type>
+          <declname>link</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_template.c" line="95" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_template.c" bodystart="95" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="llcp__sm__template_8c_1ab5466b97758ca7bfe5c71d2ab5b0bcab" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ll_procedure_timeout</definition>
+        <argsstring>(struct le_link *link)</argsstring>
+        <name>ll_procedure_timeout</name>
+        <param>
+          <type>struct <ref refid="structle__link" kindref="compound">le_link</ref> *</type>
+          <declname>link</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_template.c" line="100" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_template.c" bodystart="100" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="llcp__sm__template_8c_1a518667e5b3c9cb5c0a52535e2561a5a3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ll_procedure_failed</definition>
+        <argsstring>(struct le_link *link)</argsstring>
+        <name>ll_procedure_failed</name>
+        <param>
+          <type>struct <ref refid="structle__link" kindref="compound">le_link</ref> *</type>
+          <declname>link</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_template.c" line="105" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_template.c" bodystart="105" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="llcp__sm__template_8c_1a58ae689fb1dca9b6eacd12b3d5a194d4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="llcp__sm__bis_8c_1aa63e7a6b1874a62cf685a316f9ffe6ee" kindref="member">llcp_sm_event_t</ref></type>
+        <definition>static llcp_sm_event_t llcp_event_remap</definition>
+        <argsstring>(struct le_link *link, uint8_t event, void *data)</argsstring>
+        <name>llcp_event_remap</name>
+        <param>
+          <type>struct <ref refid="structle__link" kindref="compound">le_link</ref> *</type>
+          <declname>link</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>event</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>&lt; LLCP request by Host</para><para>&lt; LLCP request by Controller </para>        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_template.c" line="110" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_template.c" bodystart="110" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="llcp__sm__template_8c_1a1b66ebcf8caa800abc0a6471eb335670" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ll_procedure_sm_run</definition>
+        <argsstring>(struct le_link *link, uint8_t event, void *data)</argsstring>
+        <name>ll_procedure_sm_run</name>
+        <param>
+          <type>struct <ref refid="structle__link" kindref="compound">le_link</ref> *</type>
+          <declname>link</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>event</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_template.c" line="161" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_template.c" bodystart="161" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="llcp__sm__template_8c_1a8992a6e2c4f2dc59271864bf6f895618" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_procedure_host</definition>
+        <argsstring>(const void *param)</argsstring>
+        <name>ll_procedure_host</name>
+        <param>
+          <type>const void *</type>
+          <declname>param</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_template.c" line="214" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_template.c" bodystart="214" bodyend="242"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*********************************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/>Filename<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>llcp_sm_template.c</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/>Description<sp/><sp/><sp/><sp/><sp/>:</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"></highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/>Author<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>Bingquan</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"></highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/>Email<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>caibingquan@zh-jieli.com</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/>Last<sp/>modifiled<sp/><sp/>:<sp/>2020-11-25<sp/>11:29</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"></highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/>Copyright:(c)JIELI<sp/><sp/>2011-2020<sp/><sp/>@<sp/>,<sp/>All<sp/>Rights<sp/>Reserved.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">*********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="link__layer_8h" kindref="compound">ble/link_layer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;hci_controller.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_TAG_CONST<sp/><sp/><sp/><sp/><sp/>LL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_TAG<sp/><sp/><sp/><sp/><sp/>&quot;[LL]&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_ERROR_ENABLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_INFO_ENABLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>#define<sp/>LOG_DUMP_ENABLE<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;common/debug.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">/*-----------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>SUPPORT_MS_EXTENSIONS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>bss_seg(&quot;.ble_ll_bss&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>data_seg(&quot;.ble_ll_data&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>const_seg(&quot;.ble_ll_const&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>code_seg(&quot;.ble_ll_code&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>HAVE_MALLOC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__this<sp/><sp/><sp/><sp/><sp/><sp/>(ll_hdl)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__this<sp/><sp/><sp/><sp/><sp/><sp/>(&amp;ll_hdl)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor">#define<sp/><sp/>LL_CONN_MSG_HOST<sp/><sp/><sp/>0xfe</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>LLCP_MSG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xff</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>LLCP_ID_PROCEDURE<sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">/**************************************************************************************************</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/><sp/>Data<sp/>Types</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/>**************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp__sm__template_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea718744bd4ac0cec8e71ee3df2e4f1609" kindref="member">LLCP_SM_EVENT_HOST_START</ref><sp/>=<sp/>0,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp__sm__template_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeaa57583355b36370859c0f1107ef2b515" kindref="member">LLCP_SM_EVENT_AUTO_START</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp__sm__template_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeae12e3d0a407b7fc7f3b6f9f2be7cfc88" kindref="member">LLCP_SM_EVENT_SEND_REQ</ref>,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp__sm__template_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea5d578d2cf3bc31268cec4b45b7645a8a" kindref="member">LLCP_SM_EVENT_SEND_RSP</ref>,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp__sm__template_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeab66579e50d781dffd52ec1fdd6a2ee75" kindref="member">LLCP_SM_EVENT_RECV_REQ</ref>,</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp__sm__template_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea1dd1bbc7e386e1517cd1e77bf72dbafd" kindref="member">LLCP_SM_EVENT_RECV_RSP</ref>,</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp__sm__template_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea7a50b69b1bfbc78456e86fb414f08b5a" kindref="member">LLCP_SM_EVENT_TIMEOUT</ref>,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp__sm__template_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea6ce62da3847c66460716cf7d33166018" kindref="member">LLCP_SM_EVENT_FAILED</ref>,</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp__sm__template_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeaf684402339c4ab620e948a0f38fc35e0" kindref="member">LLCP_SM_EVENT_SUCCESS</ref>,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp__sm__template_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeaba5f8be5cca9b09c3254db7110bfbc0f" kindref="member">LLCP_SM_EVENT_INVALID</ref><sp/>=<sp/>0xff,</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">}<sp/><ref refid="llcp__sm__template_8c_1aa63e7a6b1874a62cf685a316f9ffe6ee" kindref="member">llcp_sm_event_t</ref>;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">/**************************************************************************************************</highlight></codeline>
+<codeline lineno="67"><highlight class="comment"><sp/><sp/>Local<sp/>Functions</highlight></codeline>
+<codeline lineno="68"><highlight class="comment">**************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="llcp__sm__template_8c_1a3dcc08f685fde8bf3709fed8b60ccdc8" kindref="member">ll_procedure_start</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structle__link" kindref="compound">le_link</ref><sp/>*link)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>log_info(</highlight><highlight class="stringliteral">&quot;Procedure<sp/>Start&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="llcp__sm__template_8c_1aa98f138cfd6dcb66baa0c4f6bcc2ceec" kindref="member">ll_procedure_send_request</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structle__link" kindref="compound">le_link</ref><sp/>*link)</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>log_info(</highlight><highlight class="stringliteral">&quot;&lt;-<sp/>LL_REQ&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="llcp__sm__template_8c_1a65727a988e66152b897aa06809e17fb1" kindref="member">ll_procedure_recv_request</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structle__link" kindref="compound">le_link</ref><sp/>*link)</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>log_info(</highlight><highlight class="stringliteral">&quot;-&gt;<sp/>LL_REQ&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="llcp__sm__template_8c_1acd92faa6db9440556053c759b6c5a7ee" kindref="member">ll_procedure_send_respond</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structle__link" kindref="compound">le_link</ref><sp/>*link)</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>log_info(</highlight><highlight class="stringliteral">&quot;&lt;-<sp/>LL_RSP&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="llcp__sm__template_8c_1aeaaf2eb7bed462cbe5d578b42336c33f" kindref="member">ll_procedure_recv_respond</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structle__link" kindref="compound">le_link</ref><sp/>*link)</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>log_info(</highlight><highlight class="stringliteral">&quot;-&gt;<sp/>LL_RSP&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="llcp__sm__template_8c_1a6b080d729b4a714a8785a208cc34b986" kindref="member">ll_procedure_success</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structle__link" kindref="compound">le_link</ref><sp/>*link)</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="llcp__sm__template_8c_1ab5466b97758ca7bfe5c71d2ab5b0bcab" kindref="member">ll_procedure_timeout</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structle__link" kindref="compound">le_link</ref><sp/>*link)</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="llcp__sm__template_8c_1a518667e5b3c9cb5c0a52535e2561a5a3" kindref="member">ll_procedure_failed</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structle__link" kindref="compound">le_link</ref><sp/>*link)</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="llcp__sm__bis_8c_1aa63e7a6b1874a62cf685a316f9ffe6ee" kindref="member">llcp_sm_event_t</ref><sp/><ref refid="llcp__sm__template_8c_1a58ae689fb1dca9b6eacd12b3d5a194d4" kindref="member">llcp_event_remap</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structle__link" kindref="compound">le_link</ref><sp/>*link,<sp/>uint8_t<sp/>event,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data)</highlight></codeline>
+<codeline lineno="111"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(event)<sp/>{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="llcp__sm__template_8c_1a0d54ce3b5d6b0a1fea9d9bb138cef58e" kindref="member">LL_CONN_MSG_HOST</ref>:<sp/><sp/></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="llcp__sm__template_8c_1ae49b8c21f4a1bb7eae1aca49fd1ed6b1" kindref="member">LLCP_MSG</ref>:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="link__layer_8h_1a0411cd49bb5b71852cecd93bcbf0ca2dadbccec5f7f5480de190e2262bdd04783" kindref="member">LLCP_MSG_RECV_DATA</ref>:<sp/>{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">ble_rx<sp/>*rx<sp/>=<sp/>(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">ble_rx<sp/>*)data;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>Store<sp/>the<sp/>Control<sp/>PDU*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>link-&gt;<ref refid="structle__link_1a60d57a3fb584828cdbe02b61dff358fd" kindref="member">llcp</ref>.<ref refid="structllcp__ctx__t_1af1dcfd48498279bfa2eb2c17b6623d5e" kindref="member">data</ref><sp/>=<sp/>data;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(rx-&gt;data[0])<sp/>{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ll__defines_8h_1a394b3903fbf00ba2b6243f60689a5a5fa88aba826f1c84703e2ce25ce9b8a4df1" kindref="member">LL_UNKNOWN_RSP</ref>:</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ll__defines_8h_1a394b3903fbf00ba2b6243f60689a5a5face0944763e8738ee1032dee5d23fec98" kindref="member">LL_REJECT_IND</ref>:</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="ll__defines_8h_1a394b3903fbf00ba2b6243f60689a5a5fa9c969339f00a061d5375437fcad20ec6" kindref="member">LL_REJECT_IND_EXT</ref>:</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(link-&gt;<ref refid="structle__link_1a60d57a3fb584828cdbe02b61dff358fd" kindref="member">llcp</ref>.<ref refid="structllcp__ctx__t_1a46970a3b7c08b139ca29bd8ebceec3d8" kindref="member">active_id</ref><sp/>==<sp/><ref refid="llcp__sm__template_8c_1a24316411a8b77f32782171cf2c9fe4b8" kindref="member">LLCP_ID_PROCEDURE</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal"><sp/>=<sp/><ref refid="llcp__sm__template_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea6ce62da3847c66460716cf7d33166018" kindref="member">LLCP_SM_EVENT_FAILED</ref>;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="llcp__sm__template_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeaba5f8be5cca9b09c3254db7110bfbc0f" kindref="member">LLCP_SM_EVENT_INVALID</ref>;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="link__layer_8h_1a0411cd49bb5b71852cecd93bcbf0ca2dad1bfc04fcf0a2dd1008b9da0967272fc" kindref="member">LLCP_MSG_SEND_DATA</ref>:</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="llcp__sm__common_8c_1a231d6b56f27693e2ad3a74bff1380763" kindref="member">llcp_wait_ack_valid</ref>(link,<sp/><ref refid="ll__defines_8h_1a394b3903fbf00ba2b6243f60689a5a5fa9c969339f00a061d5375437fcad20ec6" kindref="member">LL_REJECT_IND_EXT</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal"><sp/><sp/><sp/>=<sp/><ref refid="llcp__sm__template_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea6ce62da3847c66460716cf7d33166018" kindref="member">LLCP_SM_EVENT_FAILED</ref>;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="llcp__sm__template_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeaba5f8be5cca9b09c3254db7110bfbc0f" kindref="member">LLCP_SM_EVENT_INVALID</ref>;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="link__layer_8h_1a0411cd49bb5b71852cecd93bcbf0ca2da2484676efda6bc55f74419f9170fe632" kindref="member">LLCP_MSG_START_PENDING</ref>:</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(link-&gt;<ref refid="structle__link_1a60d57a3fb584828cdbe02b61dff358fd" kindref="member">llcp</ref>.<ref refid="structllcp__ctx__t_1aefb8dd1405d7372a1d9fafa6476f1156" kindref="member">pend_id</ref><sp/>&amp;<sp/>BIT(<ref refid="llcp__sm__template_8c_1a24316411a8b77f32782171cf2c9fe4b8" kindref="member">LLCP_ID_PROCEDURE</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_info(</highlight><highlight class="stringliteral">&quot;LLCP_MSG_START_PENDING&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>link-&gt;<ref refid="structle__link_1a60d57a3fb584828cdbe02b61dff358fd" kindref="member">llcp</ref>.<ref refid="structllcp__ctx__t_1aefb8dd1405d7372a1d9fafa6476f1156" kindref="member">pend_id</ref><sp/>&amp;=<sp/>~BIT(<ref refid="llcp__sm__template_8c_1a24316411a8b77f32782171cf2c9fe4b8" kindref="member">LLCP_ID_PROCEDURE</ref>);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal"><sp/>=<sp/><ref refid="llcp__sm__template_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea718744bd4ac0cec8e71ee3df2e4f1609" kindref="member">LLCP_SM_EVENT_HOST_START</ref>;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="llcp__sm__template_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeaba5f8be5cca9b09c3254db7110bfbc0f" kindref="member">LLCP_SM_EVENT_INVALID</ref>;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="link__layer_8h_1a0411cd49bb5b71852cecd93bcbf0ca2da2dd2188ac751ab6b3f15c0394785cf0e" kindref="member">LLCP_MSG_RESPOND_TIMEOUT</ref>:</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(link-&gt;<ref refid="structle__link_1a60d57a3fb584828cdbe02b61dff358fd" kindref="member">llcp</ref>.<ref refid="structllcp__ctx__t_1a46970a3b7c08b139ca29bd8ebceec3d8" kindref="member">active_id</ref><sp/>==<sp/><ref refid="llcp__sm__template_8c_1a24316411a8b77f32782171cf2c9fe4b8" kindref="member">LLCP_ID_PROCEDURE</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal"><sp/><sp/><sp/>=<sp/><ref refid="llcp__sm__template_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea7a50b69b1bfbc78456e86fb414f08b5a" kindref="member">LLCP_SM_EVENT_TIMEOUT</ref>;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="llcp__sm__template_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeaba5f8be5cca9b09c3254db7110bfbc0f" kindref="member">LLCP_SM_EVENT_INVALID</ref>;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>event;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="llcp__sm__template_8c_1a1b66ebcf8caa800abc0a6471eb335670" kindref="member">ll_procedure_sm_run</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structle__link" kindref="compound">le_link</ref><sp/>*link,<sp/>uint8_t<sp/>event,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data)</highlight></codeline>
+<codeline lineno="162"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal"><sp/>=<sp/><ref refid="llcp__sm__template_8c_1a58ae689fb1dca9b6eacd12b3d5a194d4" kindref="member">llcp_event_remap</ref>(link,<sp/>event,<sp/>data);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(event<sp/>==<sp/><ref refid="llcp__sm__template_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeaba5f8be5cca9b09c3254db7110bfbc0f" kindref="member">LLCP_SM_EVENT_INVALID</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>FALSE;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(link-&gt;<ref refid="structle__link_1a60d57a3fb584828cdbe02b61dff358fd" kindref="member">llcp</ref>.<ref refid="structllcp__ctx__t_1a4c709725aee10fa97073f1693e7fb777" kindref="member">state</ref><sp/>==<sp/><ref refid="llcp_8h_1a7859c0a3efa8b1c360f5c2376baf051ea54bad06d1d2f12ae53d5529ae78f90df" kindref="member">LLCP_STATE_IDLE</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_info(</highlight><highlight class="stringliteral">&quot;LLCP<sp/>SM<sp/>DX<sp/>:<sp/>Idle<sp/>-&gt;<sp/>0x%x&quot;</highlight><highlight class="normal">,<sp/>event);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(event)<sp/>{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="llcp__sm__template_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea718744bd4ac0cec8e71ee3df2e4f1609" kindref="member">LLCP_SM_EVENT_HOST_START</ref>:</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="llcp__sm__template_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeaa57583355b36370859c0f1107ef2b515" kindref="member">LLCP_SM_EVENT_AUTO_START</ref>:</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="llcp__sm__template_8c_1a3dcc08f685fde8bf3709fed8b60ccdc8" kindref="member">ll_procedure_start</ref>(link);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Fallthrough</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="llcp__sm__template_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeae12e3d0a407b7fc7f3b6f9f2be7cfc88" kindref="member">LLCP_SM_EVENT_SEND_REQ</ref>:</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="llcp__sm__common_8c_1afc6035f8bdf81c690725ef127fe207c0" kindref="member">llcp_sm_start</ref>(link,<sp/><ref refid="llcp__sm__template_8c_1a24316411a8b77f32782171cf2c9fe4b8" kindref="member">LLCP_ID_PROCEDURE</ref>);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="llcp__sm__template_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeab66579e50d781dffd52ec1fdd6a2ee75" kindref="member">LLCP_SM_EVENT_RECV_REQ</ref>:</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="llcp__sm__template_8c_1a65727a988e66152b897aa06809e17fb1" kindref="member">ll_procedure_recv_request</ref>(link);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Fallthrough</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="llcp__sm__template_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea5d578d2cf3bc31268cec4b45b7645a8a" kindref="member">LLCP_SM_EVENT_SEND_RSP</ref>:</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="llcp__sm__template_8c_1acd92faa6db9440556053c759b6c5a7ee" kindref="member">ll_procedure_send_respond</ref>(link);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Fallthrough</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="llcp__sm__template_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeaf684402339c4ab620e948a0f38fc35e0" kindref="member">LLCP_SM_EVENT_SUCCESS</ref>:</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="llcp__sm__template_8c_1a6b080d729b4a714a8785a208cc34b986" kindref="member">ll_procedure_success</ref>(link);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="llcp__sm__common_8c_1a6df0a72ad8b1d828af1903e6c741c87e" kindref="member">llcp_sm_end</ref>(link);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_info(</highlight><highlight class="stringliteral">&quot;LLCP<sp/>SM<sp/>DX<sp/>:<sp/>Busy<sp/>-&gt;<sp/>0x%x&quot;</highlight><highlight class="normal">,<sp/>event);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(event)<sp/>{</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="llcp__sm__template_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea1dd1bbc7e386e1517cd1e77bf72dbafd" kindref="member">LLCP_SM_EVENT_RECV_RSP</ref>:</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="llcp__sm__template_8c_1aeaaf2eb7bed462cbe5d578b42336c33f" kindref="member">ll_procedure_recv_respond</ref>(link);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="llcp__sm__template_8c_1aa63e7a6b1874a62cf685a316f9ffe6eeaf684402339c4ab620e948a0f38fc35e0" kindref="member">LLCP_SM_EVENT_SUCCESS</ref>:</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="llcp__sm__template_8c_1a6b080d729b4a714a8785a208cc34b986" kindref="member">ll_procedure_success</ref>(link);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="llcp__sm__common_8c_1a6df0a72ad8b1d828af1903e6c741c87e" kindref="member">llcp_sm_end</ref>(link);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="llcp__sm__template_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea7a50b69b1bfbc78456e86fb414f08b5a" kindref="member">LLCP_SM_EVENT_TIMEOUT</ref>:</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="llcp__sm__template_8c_1ab5466b97758ca7bfe5c71d2ab5b0bcab" kindref="member">ll_procedure_timeout</ref>(link);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="llcp__sm__common_8c_1a6df0a72ad8b1d828af1903e6c741c87e" kindref="member">llcp_sm_end</ref>(link);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="llcp__sm__template_8c_1aa63e7a6b1874a62cf685a316f9ffe6eea6ce62da3847c66460716cf7d33166018" kindref="member">LLCP_SM_EVENT_FAILED</ref>:</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="llcp__sm__template_8c_1a518667e5b3c9cb5c0a52535e2561a5a3" kindref="member">ll_procedure_failed</ref>(link);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="llcp__sm__common_8c_1a6df0a72ad8b1d828af1903e6c741c87e" kindref="member">llcp_sm_end</ref>(link);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>TRUE;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal">uint8_t<sp/><ref refid="llcp__sm__template_8c_1a8992a6e2c4f2dc59271864bf6f895618" kindref="member">ll_procedure_host</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*param)</highlight></codeline>
+<codeline lineno="215"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structle__link" kindref="compound">le_link</ref><sp/>*link<sp/>=<sp/>NULL;</highlight><highlight class="comment">//ll_link_for_handle(param-&gt;connection_handle);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(link<sp/>==<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>UNKNOWN_CONNECTION_IDENTIFIER;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="llcp__sm__common_8c_1affa0aa2d242d25674e754774642079dc" kindref="member">llcp_is_collison</ref>(link,<sp/><ref refid="llcp__sm__template_8c_1a24316411a8b77f32782171cf2c9fe4b8" kindref="member">LLCP_ID_PROCEDURE</ref>)<sp/>==<sp/>TRUE)<sp/>{</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>COMMAND_DISALLOWED;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>LL<sp/>message<sp/>-<sp/>command<sp/>to<sp/>object*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structll__msg__hdr__t" kindref="compound">ll_msg_hdr_t</ref><sp/>*msg<sp/>=<sp/><ref refid="ll__msg_8c_1ac3416bc22296909dee33d5e51d78ff38" kindref="member">ll_msg_alloc</ref>(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structll__msg__hdr__t" kindref="compound">ll_msg_hdr_t</ref>));</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(msg<sp/>==<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>COMMAND_DISALLOWED;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/>msg-&gt;<ref refid="structll__msg__hdr__t_1a21dce77399d2ecf1420d7f2cb36a3a6a" kindref="member">state_id</ref><sp/><sp/><sp/>=<sp/>(<ref refid="link__layer_8h_1ae10f97c34c30ab4d52daa0108608dd2b" kindref="member">ROLE_IS_SLAVE</ref>(link))<sp/>?<sp/><ref refid="link__layer_8h_1a726ca809ffd3d67ab4b8476646f26635a53e6ba59eedda5a3e77671e3e36775b1" kindref="member">LL_STATE_SLAVE</ref><sp/>:<sp/><ref refid="link__layer_8h_1a726ca809ffd3d67ab4b8476646f26635adb63cfaa626ace4d26613ea66f1766ad" kindref="member">LL_STATE_MASTER</ref>;</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/>msg-&gt;<ref refid="structll__msg__hdr__t_1aeee7ccb76694abbd7ede6e89338e2f1d" kindref="member">msg_id</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="llcp__sm__template_8c_1a0d54ce3b5d6b0a1fea9d9bb138cef58e" kindref="member">LL_CONN_MSG_HOST</ref>;</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/>msg-&gt;<ref refid="structll__msg__hdr__t_1a3994318b478f52ef63f0f9a71a609b4d" kindref="member">handle</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>link-&gt;<ref refid="structle__link_1a6843fe2a32b8f30d12019f50f0363a91" kindref="member">handle</ref>;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ll__msg_8c_1a3481ad7ca85dea58d6114dac61f55f69" kindref="member">ll_msg_send</ref>(msg);</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>SUCCESS;</highlight></codeline>
+<codeline lineno="242"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/llcp_sm_template.c"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,2759 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>JL Adapter SDK: /data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">JL Adapter SDK
+   &#160;<span id="projectnumber">v0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_5aa4d6ccf34d88a270949875c15714e5.html">btctrler</a></li><li class="navelem"><a class="el" href="dir_119de8fbed06b648fc4b1712ddece599.html">include_v2</a></li><li class="navelem"><a class="el" href="dir_76e74953703e3f33853ddacc6ea00c88.html">classic</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle">
+<div class="title">tws_conn.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="tws__link_8h_source.html">classic/tws_link.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="lmp_8h_source.html">classic/lmp.h</a>&quot;</code><br />
+<code>#include &quot;system/task.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+tws_conn.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="tws__conn_8h__incl.png" border="0" usemap="#_2data_2bingquan_2repo_2repo__adapter_2adapter__sdk_2lib_2btctrler_2include__v2_2classic_2tws__conn_8h" alt=""/></div>
+<map name="_2data_2bingquan_2repo_2repo__adapter_2adapter__sdk_2lib_2btctrler_2include__v2_2classic_2tws__conn_8h" id="_2data_2bingquan_2repo_2repo__adapter_2adapter__sdk_2lib_2btctrler_2include__v2_2classic_2tws__conn_8h">
+<area shape="rect" id="node2" href="tws__link_8h.html" title="classic/tws_link.h" alt="" coords="938,124,1065,151"/>
+<area shape="rect" id="node15" href="lmp_8h.html" title="classic/lmp.h" alt="" coords="316,199,415,225"/>
+<area shape="rect" id="node3" href="bredr__link_8h.html" title="classic/bredr_link.h" alt="" coords="794,199,929,225"/>
+<area shape="rect" id="node8" href="bredr__types_8h.html" title="classic/bredr_types.h" alt="" coords="1139,348,1286,375"/>
+<area shape="rect" id="node5" href="link__bulk_8h.html" title="classic/link_bulk.h" alt="" coords="797,273,926,300"/>
+<area shape="rect" id="node9" href="lmp__pdu_8h.html" title="classic/lmp_pdu.h" alt="" coords="302,273,429,300"/>
+<area shape="rect" id="node10" href="bredr__device_8h.html" title="classic/bredr_device.h" alt="" coords="951,273,1103,300"/>
+<area shape="rect" id="node11" href="link__task_8h.html" title="common/link_task.h" alt="" coords="634,273,772,300"/>
+<area shape="rect" id="node13" href="wifi__detect_8h.html" title="wifi_detect.h" alt="" coords="1127,273,1223,300"/>
+<area shape="rect" id="node17" href="esco__codec_8h.html" title="esco_codec.h" alt="" coords="176,273,278,300"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="tws__conn_8h__dep__incl.png" border="0" usemap="#_2data_2bingquan_2repo_2repo__adapter_2adapter__sdk_2lib_2btctrler_2include__v2_2classic_2tws__conn_8hdep" alt=""/></div>
+<map name="_2data_2bingquan_2repo_2repo__adapter_2adapter__sdk_2lib_2btctrler_2include__v2_2classic_2tws__conn_8hdep" id="_2data_2bingquan_2repo_2repo__adapter_2adapter__sdk_2lib_2btctrler_2include__v2_2classic_2tws__conn_8hdep">
+<area shape="rect" id="node2" href="tws__sniff_8h.html" title="/data/bingquan/repo\l/repo_adapter/adapter\l_sdk/lib/btctrler/include\l_v2/classic/tws_sniff.h" alt="" coords="7,124,163,195"/>
+</map>
+</div>
+</div>
+<p><a href="tws__conn_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+结构体</h2></td></tr>
+<tr class="memitem:structtws__channel__head"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#structtws__channel__head">tws_channel_head</a></td></tr>
+<tr class="separator:structtws__channel__head"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structtws__user__data__head"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#structtws__user__data__head">tws_user_data_head</a></td></tr>
+<tr class="separator:structtws__user__data__head"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structtws__connection"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#structtws__connection">tws_connection</a></td></tr>
+<tr class="separator:structtws__connection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structtws__conn__core__data"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#structtws__conn__core__data">tws_conn_core_data</a></td></tr>
+<tr class="separator:structtws__conn__core__data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structtws__forward__head"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#structtws__forward__head">tws_forward_head</a></td></tr>
+<tr class="separator:structtws__forward__head"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtws__sync__channel.html">tws_sync_channel</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a0d54fa20a24834be4d69d4298cbd1025"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#a0d54fa20a24834be4d69d4298cbd1025">MONITOR_LMP_RX</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a0d54fa20a24834be4d69d4298cbd1025"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7161501f91235086bc9ad936201adb1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#aa7161501f91235086bc9ad936201adb1">RS_REC_NUM</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:aa7161501f91235086bc9ad936201adb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8692f886b65021b9a06c50379187a8a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#a8692f886b65021b9a06c50379187a8a9">TWS_SYNC_ATTR_REQ_ON_MONITOR</a>&#160;&#160;&#160;BIT(1)</td></tr>
+<tr class="separator:a8692f886b65021b9a06c50379187a8a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e39b7e1d783eb5b0f25fdc27eccc1bc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#a1e39b7e1d783eb5b0f25fdc27eccc1bc">TWS_SYNC_ATTR_REQ_FROM_SLAVE</a>&#160;&#160;&#160;BIT(0)</td></tr>
+<tr class="separator:a1e39b7e1d783eb5b0f25fdc27eccc1bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c40bf8e8b0592364b8af12d69d67881"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#a2c40bf8e8b0592364b8af12d69d67881">TWS_SYNC_ATTR_REQ_ON_UNCON</a>&#160;&#160;&#160;BIT(1)</td></tr>
+<tr class="separator:a2c40bf8e8b0592364b8af12d69d67881"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00dfa1ca521d03272dc3f2629ffbda80"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#a00dfa1ca521d03272dc3f2629ffbda80">TWS_SYNC_ATTR_REQ_ON_ESCO</a>&#160;&#160;&#160;BIT(2)</td></tr>
+<tr class="separator:a00dfa1ca521d03272dc3f2629ffbda80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c60c1c787d787672a3d34421ad04930"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#a2c60c1c787d787672a3d34421ad04930">TWS_SYNC_ATTR_REQ_ON_SNIFF</a>&#160;&#160;&#160;BIT(3)</td></tr>
+<tr class="separator:a2c60c1c787d787672a3d34421ad04930"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a848ff001a88819c595ee0ff46302b2ec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#a848ff001a88819c595ee0ff46302b2ec">TWS_SYNC_ATTR_REQ_ALWAYS</a>&#160;&#160;&#160;(BIT(1) | BIT(2) | BIT(3))</td></tr>
+<tr class="separator:a848ff001a88819c595ee0ff46302b2ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44154451c14a0731d48eecd0e9b6b148"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#a44154451c14a0731d48eecd0e9b6b148">__TWS_IRQ_CODE</a>&#160;&#160;&#160;<a class="el" href="tws__le__link_8c.html#af9aace1b44b73111e15aa39f06f43456">__attribute__</a>((section(&quot;.tws_irq_code&quot;)))</td></tr>
+<tr class="separator:a44154451c14a0731d48eecd0e9b6b148"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5e61ddfb41ac23445cb21549bf420c0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#ab5e61ddfb41ac23445cb21549bf420c0">_TWS_SYNC_CHANNEL_REGISTER</a>(channel,  id)&#160;&#160;&#160;const struct <a class="el" href="structtws__sync__channel.html">tws_sync_channel</a> channel SEC(.tws_sync_channel.##id)</td></tr>
+<tr class="separator:ab5e61ddfb41ac23445cb21549bf420c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94466fc54cbf26dbc5ecdc3f31dc24a1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#a94466fc54cbf26dbc5ecdc3f31dc24a1">TWS_SYNC_CHANNEL_REGISTER</a>(channel,  id)&#160;&#160;&#160;<a class="el" href="tws__conn_8h.html#ab5e61ddfb41ac23445cb21549bf420c0">_TWS_SYNC_CHANNEL_REGISTER</a>(channel, id)</td></tr>
+<tr class="separator:a94466fc54cbf26dbc5ecdc3f31dc24a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4d1e3892f765996afa48d6066a1c577"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#af4d1e3892f765996afa48d6066a1c577">list_for_each_sync_channel</a>(p)&#160;&#160;&#160;for (p = <a class="el" href="tws__conn_8h.html#a2ae6f6c17cb9ff1a2feb4bd2d173f9f5">tws_sync_channel_begin</a>; p &lt; <a class="el" href="tws__conn_8h.html#a0055d6862d89514e07aea9e1eef00087">tws_sync_channel_end</a>; p++)</td></tr>
+<tr class="separator:af4d1e3892f765996afa48d6066a1c577"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a4f126a0a9b1d8c6a8f46a051ef8830bb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="tws__conn_8h.html#a4f126a0a9b1d8c6a8f46a051ef8830bbaa8b5be5b5346f1c4da2dc02a34595496">TWS_EVENT_RESUME</a> = 20, 
+<a class="el" href="tws__conn_8h.html#a4f126a0a9b1d8c6a8f46a051ef8830bbafd5fa2e0b44be1d3fe72ddceec13c23f">TWS_EVENT_SUSPEND</a>, 
+<a class="el" href="tws__conn_8h.html#a4f126a0a9b1d8c6a8f46a051ef8830bba77f88993fe023061bdd102c5d38a8d73">TWS_EVENT_CONNECTION_START</a>, 
+<a class="el" href="tws__conn_8h.html#a4f126a0a9b1d8c6a8f46a051ef8830bba4991f7f7f54278f30b658c214632ca8d">TWS_EVENT_CONNECTION_POST</a>, 
+<br />
+&#160;&#160;<a class="el" href="tws__conn_8h.html#a4f126a0a9b1d8c6a8f46a051ef8830bba21fe5c9cb464ae67c79b535ea739322c">TWS_EVENT_RX</a>, 
+<a class="el" href="tws__conn_8h.html#a4f126a0a9b1d8c6a8f46a051ef8830bbaa0e0c859a0942d62eead637c617ab02b">TWS_EVENT_RX_PROBE</a>, 
+<a class="el" href="tws__conn_8h.html#a4f126a0a9b1d8c6a8f46a051ef8830bba7ffd240c5a336851b76074d1f1dcff7e">TWS_EVENT_RX_POST</a>, 
+<a class="el" href="tws__conn_8h.html#a4f126a0a9b1d8c6a8f46a051ef8830bba5a6c6570abdbb04ae2712fb2c27195a8">TWS_EVENT_GET_BUF_LEN</a>, 
+<br />
+&#160;&#160;<a class="el" href="tws__conn_8h.html#a4f126a0a9b1d8c6a8f46a051ef8830bba948241ac1fb0faa3ff8713ae9afc3215">TWS_EVENT_START_MONITOR_POST</a>, 
+<a class="el" href="tws__conn_8h.html#a4f126a0a9b1d8c6a8f46a051ef8830bbae175620da19e02274633cbe932aebfdb">TWS_EVENT_PHONE_LINK_RX</a>, 
+<a class="el" href="tws__conn_8h.html#a4f126a0a9b1d8c6a8f46a051ef8830bbac6b46df594d404ac4ebc2dbf36280af4">TWS_EVENT_PHONE_LINK_CONNECTED</a>, 
+<a class="el" href="tws__conn_8h.html#a4f126a0a9b1d8c6a8f46a051ef8830bba5a5dbdb491c9a70aa2aab6a798126467">TWS_EVENT_DATA_ABANDON_SUSS</a>, 
+<br />
+&#160;&#160;<a class="el" href="tws__conn_8h.html#a4f126a0a9b1d8c6a8f46a051ef8830bba6441b4545aeafdbe4593789f494d1ee3">TWS_EVENT_DATA_SYNC_SUSS</a>, 
+<a class="el" href="tws__conn_8h.html#a4f126a0a9b1d8c6a8f46a051ef8830bba6774b5224f2421a4ed049429b340c768">TWS_EVENT_DATA_SYNC_END_PROBE</a>, 
+<a class="el" href="tws__conn_8h.html#a4f126a0a9b1d8c6a8f46a051ef8830bba07c5c5429d9f70c750ebf58163189f5d">TWS_EVENT_DATA_SYNC_END_POST</a>, 
+<a class="el" href="tws__conn_8h.html#a4f126a0a9b1d8c6a8f46a051ef8830bba5ca9749ffafc26489644d4f309f9a2f8">TWS_EVENT_SWITCH_REQ_SUSS</a>, 
+<br />
+&#160;&#160;<a class="el" href="tws__conn_8h.html#a4f126a0a9b1d8c6a8f46a051ef8830bbacd506a666b2a73f0ad8ab3a751888301">TWS_EVENT_SWITCH_RES_SUSS</a>, 
+<a class="el" href="tws__conn_8h.html#a4f126a0a9b1d8c6a8f46a051ef8830bba549b82677d4497a71cf4345d4157042c">TWS_EVENT_SWITCH_SUSS</a>, 
+<a class="el" href="tws__conn_8h.html#a4f126a0a9b1d8c6a8f46a051ef8830bbaf1c8df7eba3064bf33d90168a89ea5cc">TWS_EVENT_TICK_REQ_SUSS</a>, 
+<a class="el" href="tws__conn_8h.html#a4f126a0a9b1d8c6a8f46a051ef8830bbac017397444d18d3cc8a8b43f5c1f1318">TWS_EVENT_TICK_RES_SUSS</a>, 
+<br />
+&#160;&#160;<a class="el" href="tws__conn_8h.html#a4f126a0a9b1d8c6a8f46a051ef8830bbae6bce9f1395a8aabd83ceeefd72b032a">TWS_EVENT_SUPER_TIMEOUT</a>, 
+<a class="el" href="tws__conn_8h.html#a4f126a0a9b1d8c6a8f46a051ef8830bba2cc1c601d7fbeec417fe9d8b75091599">TWS_EVENT_DETACH_SUSS</a>, 
+<a class="el" href="tws__conn_8h.html#a4f126a0a9b1d8c6a8f46a051ef8830bbaec207b6980b515b1b5c644d3082a86e6">TWS_EVENT_DETACH_SUSS_POST</a>, 
+<a class="el" href="tws__conn_8h.html#a4f126a0a9b1d8c6a8f46a051ef8830bbab01dbeba72c266d4d32bc7664ecc6fd6">TWS_EVENT_REMOVE_PAIRS_POST</a>, 
+<br />
+&#160;&#160;<a class="el" href="tws__conn_8h.html#a4f126a0a9b1d8c6a8f46a051ef8830bba52f9158458ca4645ce8693a4e5c74818">TWS_EVENT_ESCO_SETUP1</a>, 
+<a class="el" href="tws__conn_8h.html#a4f126a0a9b1d8c6a8f46a051ef8830bbac9f245df44214a1c1b9b3a2425f7ee63">TWS_EVENT_ESCO_SETUP2</a>, 
+<a class="el" href="tws__conn_8h.html#a4f126a0a9b1d8c6a8f46a051ef8830bba94b65162e0bbaaf37fee309477cb7ca8">TWS_EVENT_ESCO_REMOVE1</a>, 
+<a class="el" href="tws__conn_8h.html#a4f126a0a9b1d8c6a8f46a051ef8830bba82654ec4d521326d02f6afe88c0d8703">TWS_EVENT_ESCO_REMOVE2</a>, 
+<br />
+&#160;&#160;<a class="el" href="tws__conn_8h.html#a4f126a0a9b1d8c6a8f46a051ef8830bba03758e5637c895cfae33e9346f088caf">TWS_EVENT_ESCO_ROLE_SWITCH</a>, 
+<a class="el" href="tws__conn_8h.html#a4f126a0a9b1d8c6a8f46a051ef8830bba4cc6b561fb25e0b5217568b41be56879">TWS_EVENT_RETRY_RX</a>, 
+<a class="el" href="tws__conn_8h.html#a4f126a0a9b1d8c6a8f46a051ef8830bbac544caec0a7ffb064533c27ca4cd8eda">TWS_EVENT_DATA_ESCO_ROLE_SWITCH_END_POST</a>, 
+<a class="el" href="tws__conn_8h.html#a4f126a0a9b1d8c6a8f46a051ef8830bba4de837c42834a7e28a226f3d49cb50cb">TWS_EVENT_DEL_TIMEOUT</a>, 
+<br />
+&#160;&#160;<a class="el" href="tws__conn_8h.html#a4f126a0a9b1d8c6a8f46a051ef8830bba3bf2c68cee7b18564472ee1520f64ed2">TWS_EVENT_SET_AFH</a>, 
+<a class="el" href="tws__conn_8h.html#a4f126a0a9b1d8c6a8f46a051ef8830bbaf45717e605f260a0cdfbfa494f8008b2">TWS_EVENT_SEND_SET_AFH_SUSS</a>, 
+<a class="el" href="tws__conn_8h.html#a4f126a0a9b1d8c6a8f46a051ef8830bba34a5d3e8a4eb200258960132fd5c1bf2">TWS_HOST_EVENT_DEL_TIMEOUT</a>, 
+<a class="el" href="tws__conn_8h.html#a4f126a0a9b1d8c6a8f46a051ef8830bba435449360cab62f6cb7692bb2a113f65">TWS_EVENT_LOCAL_MEDIA_SYNC_SUSS</a>, 
+<br />
+&#160;&#160;<a class="el" href="tws__conn_8h.html#a4f126a0a9b1d8c6a8f46a051ef8830bba6815ce059949e432a2a039e1fa625396">TWS_EVENT_LOCAL_MEDIA_SYNC_END</a>, 
+<a class="el" href="tws__conn_8h.html#a4f126a0a9b1d8c6a8f46a051ef8830bba9c96de769a6e08a4a87653b07b34acbe">TWS_EVENT_LOCAL_MEDIA_SYNC_TX</a>, 
+<a class="el" href="tws__conn_8h.html#a4f126a0a9b1d8c6a8f46a051ef8830bba266410af1acfe0886158faeb7cf39770">TWS_EVENT_SEND_DATA_TO_SIBLING_SUSS</a>, 
+<a class="el" href="tws__conn_8h.html#a4f126a0a9b1d8c6a8f46a051ef8830bbac38212638264fc558dce467d0ab7fb5f">TWS_EVENT_START_ESCO_MONITOR_POST</a>, 
+<br />
+&#160;&#160;<a class="el" href="tws__conn_8h.html#a4f126a0a9b1d8c6a8f46a051ef8830bbab26562fff201ed346c8e8e1c4379aae4">TWS_EVENT_ENTER_PURE_MONITOR_SUSS</a>, 
+<a class="el" href="tws__conn_8h.html#a4f126a0a9b1d8c6a8f46a051ef8830bbadbb053412a1c2963af336bba088fdb28">TWS_EVENT_UNSNIFF_SUSS</a>, 
+<a class="el" href="tws__conn_8h.html#a4f126a0a9b1d8c6a8f46a051ef8830bba595cae59f3249a06e856bbdf185987ab">TWS_EVENT_DATA_TRANS_SYNC_SUSS</a>
+<br />
+ }</td></tr>
+<tr class="separator:a4f126a0a9b1d8c6a8f46a051ef8830bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbaf9202177df73e6880eab6e6aab329"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="tws__conn_8h.html#adbaf9202177df73e6880eab6e6aab329a568fb726dd83f7a2b6f71c35d20a9b0b">TWS_SWITCH_REQ</a> = 1, 
+<a class="el" href="tws__conn_8h.html#adbaf9202177df73e6880eab6e6aab329ad4670c855389f6e06869d8881a992168">TWS_ACCEPTED</a>, 
+<a class="el" href="tws__conn_8h.html#adbaf9202177df73e6880eab6e6aab329a875ed7c933deaf58a3e1f49b6cbe8d9b">TWS_NOT_ACCEPTED</a>, 
+<a class="el" href="tws__conn_8h.html#adbaf9202177df73e6880eab6e6aab329ab51639b6c49ec7bd7b972f7300e18b03">TWS_SETUP_COMPLETE</a>, 
+<br />
+&#160;&#160;<a class="el" href="tws__conn_8h.html#adbaf9202177df73e6880eab6e6aab329a26dd4cd40c099f2d5b7d5b14ff6fc314">TWS_SETUP_MONITOR_LINK_REQ</a>, 
+<a class="el" href="tws__conn_8h.html#adbaf9202177df73e6880eab6e6aab329ad7c569d5434afd2d3dbe0a286e1179ac">TWS_START_MONITOR_REQ</a>, 
+<a class="el" href="tws__conn_8h.html#adbaf9202177df73e6880eab6e6aab329a4a698cec243bfdde91a29900cd56fe2d">TWS_CONN_REMOVE_PAIRS</a>, 
+<a class="el" href="tws__conn_8h.html#adbaf9202177df73e6880eab6e6aab329a406dfe09f8bcf7b4d37cda70c9fffa4f">TWS_PHONE_LINK_DETACH</a>, 
+<br />
+&#160;&#160;<a class="el" href="tws__conn_8h.html#adbaf9202177df73e6880eab6e6aab329acc2e6c45c5c62370f1153857d65d0467">TWS_CMD_SYNC_CALL</a>, 
+<a class="el" href="tws__conn_8h.html#adbaf9202177df73e6880eab6e6aab329aa0b2d2609bd30e9783723630ebaae226">TWS_SETUP_ESCO_LINK</a>, 
+<a class="el" href="tws__conn_8h.html#adbaf9202177df73e6880eab6e6aab329a633cd34a623416830d2e04751d6b02a3">TWS_REMOVE_ESCO_LINK</a>, 
+<a class="el" href="tws__conn_8h.html#adbaf9202177df73e6880eab6e6aab329a6590cd4970c5d09d726c66bdb471ca58">TWS_NOTICE_SLAVE_STEP_FUN</a>, 
+<br />
+&#160;&#160;<a class="el" href="tws__conn_8h.html#adbaf9202177df73e6880eab6e6aab329aa15f3a12d0814301c0de81a23fe26a05">TWS_DETACH</a>, 
+<a class="el" href="tws__conn_8h.html#adbaf9202177df73e6880eab6e6aab329a7a06dff49ee64bb15ae2c58ea2b53e43">TWS_SNIFF_REQ</a>, 
+<a class="el" href="tws__conn_8h.html#adbaf9202177df73e6880eab6e6aab329a291ae19a8d8c26dc10bc3c22d3518a7c">TWS_SNIFF_INFO</a>, 
+<a class="el" href="tws__conn_8h.html#adbaf9202177df73e6880eab6e6aab329a95388ac2a80d0933a31f66bb219ffe42">TWS_UNSNIFF_REQ</a>, 
+<br />
+&#160;&#160;<a class="el" href="tws__conn_8h.html#adbaf9202177df73e6880eab6e6aab329ab2ae1c58cbd14d11cc4b94f59d82b0aa">TWS_CONN_USER_DATA</a>, 
+<a class="el" href="tws__conn_8h.html#adbaf9202177df73e6880eab6e6aab329acc26a080fb939ee5f09b8a1bf87aeb6f">TWS_SET_AFH</a>, 
+<a class="el" href="tws__conn_8h.html#adbaf9202177df73e6880eab6e6aab329a401b60571ae242f5e7831c80556d5cc1">TWS_SETUP_ESCO_MONITOR_LINK_REQ</a>, 
+<a class="el" href="tws__conn_8h.html#adbaf9202177df73e6880eab6e6aab329a024335f2448e2f5c070c96af1e6922d3">TWS_SETUP_ESCO_OPEN_TWS_LINK_START</a>, 
+<br />
+&#160;&#160;<a class="el" href="tws__conn_8h.html#adbaf9202177df73e6880eab6e6aab329a3ccd82a40bd233dc4a9c160d0165ce73">TWS_ENTER_PURE_MONITOR_MODE_REQ</a>, 
+<a class="el" href="tws__conn_8h.html#adbaf9202177df73e6880eab6e6aab329ace9bf468c59766f14dc78e7910a2c7ca">TWS_EXIT_PURE_MONITOR_MODE_REQ</a>, 
+<a class="el" href="tws__conn_8h.html#adbaf9202177df73e6880eab6e6aab329ad73e1b578ae8eb9f7504407fd834c0cb">TWS_JIFFIES_SYNC</a>, 
+<a class="el" href="tws__conn_8h.html#adbaf9202177df73e6880eab6e6aab329abee13c3c55362dbe9cb662be4b979105">TWS_CONN_TICK_REQ</a> = 0x80, 
+<br />
+&#160;&#160;<a class="el" href="tws__conn_8h.html#adbaf9202177df73e6880eab6e6aab329acc6a93777522a7b80bf25510d848a741">TWS_CONN_TICK_RES</a>, 
+<a class="el" href="tws__conn_8h.html#adbaf9202177df73e6880eab6e6aab329aada904876bf6cb63adec963f1c521fa0">TWS_CONN_ROLE_SWITCH</a>, 
+<a class="el" href="tws__conn_8h.html#adbaf9202177df73e6880eab6e6aab329ad05239f20f2700b7e2edc290dbf23037">TWS_CONN_ROLE_SWITCH_RES</a>, 
+<a class="el" href="tws__conn_8h.html#adbaf9202177df73e6880eab6e6aab329ad971feb2f0c56c734e68827743d59060">TWS_CONN_ROLE_SWITCH_SUSS</a>
+<br />
+ }</td></tr>
+<tr class="separator:adbaf9202177df73e6880eab6e6aab329"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7495a48740c9d555f7fbcb48246dbd93"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="tws__conn_8h.html#a7495a48740c9d555f7fbcb48246dbd93aad184bb0210a9429a29ccb30023d3e1c">TWS_OPEN_ESCO_LINK_STEP_FUN</a> = 1, 
+<a class="el" href="tws__conn_8h.html#a7495a48740c9d555f7fbcb48246dbd93a5e797f44f46e175b5ca76afa7b30d1d4">TWS_REMOVE_ESCO_LINK_STEP_FUN</a>, 
+<a class="el" href="tws__conn_8h.html#a7495a48740c9d555f7fbcb48246dbd93a16ee2dcb1ee34947f677aafbc83e6d20">TWS_ESCO_ROLE_SWITCH_FUN</a>
+ }</td></tr>
+<tr class="separator:a7495a48740c9d555f7fbcb48246dbd93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a3be2d66956bd67c0b66c32d8b30f17"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="tws__conn_8h.html#a9a3be2d66956bd67c0b66c32d8b30f17a6f1f4cd9734e78415be6aa7d5563bf76">ROLE_SWITCH_START</a> = 1, 
+<a class="el" href="tws__conn_8h.html#a9a3be2d66956bd67c0b66c32d8b30f17accd3e5decaaa255f5b01d3ceaae3abeb">ROLE_SWITCH_MASTER_WAIT_TX_REQ</a>, 
+<a class="el" href="tws__conn_8h.html#a9a3be2d66956bd67c0b66c32d8b30f17a91d0e0302be6b2800c6a9ee20906869e">ROLE_SWITCH_MASTER_TX_REQ</a>, 
+<a class="el" href="tws__conn_8h.html#a9a3be2d66956bd67c0b66c32d8b30f17a70a24133338e7dcefa4895352c928173">ROLE_SWITCH_MASTER_RX_RES</a>, 
+<br />
+&#160;&#160;<a class="el" href="tws__conn_8h.html#a9a3be2d66956bd67c0b66c32d8b30f17a6f797739622f8df0b4994093f60662fd">ROLE_SWITCH_SLAVE_RX_REQ</a>, 
+<a class="el" href="tws__conn_8h.html#a9a3be2d66956bd67c0b66c32d8b30f17a2652e5a3bcd1bce3c2d88a2eba03e78b">ROLE_SWITCH_SLAVE_TX_RES</a>, 
+<a class="el" href="tws__conn_8h.html#a9a3be2d66956bd67c0b66c32d8b30f17a4e367658349f1b0e1a6dc2a7373526a0">ROLE_SWITCH_WAIT_SWITCH</a>, 
+<a class="el" href="tws__conn_8h.html#a9a3be2d66956bd67c0b66c32d8b30f17ae3f4f2307ce068c61ddca29af076b673">ROLE_SWITCH_SWITCH_DONE</a>
+<br />
+ }</td></tr>
+<tr class="separator:a9a3be2d66956bd67c0b66c32d8b30f17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dbb833ef0dcc466dd02ee76badaf709"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="tws__conn_8h.html#a2dbb833ef0dcc466dd02ee76badaf709aafae13ab15cc9209d55cec5bf99080d5">LE_TWS_TIME0</a> = 0, 
+<a class="el" href="tws__conn_8h.html#a2dbb833ef0dcc466dd02ee76badaf709a78c24ac9b24c06a84657ce81037c9593">LE_TWS_TIME1</a>, 
+<a class="el" href="tws__conn_8h.html#a2dbb833ef0dcc466dd02ee76badaf709a2b4d4eb2eb2bd5172df45beb93e59a65">LE_TWS_TIME2</a>, 
+<a class="el" href="tws__conn_8h.html#a2dbb833ef0dcc466dd02ee76badaf709a6890fdc898ad8ecdd412703025a886e5">LE_TWS_TIME3</a>
+ }</td></tr>
+<tr class="separator:a2dbb833ef0dcc466dd02ee76badaf709"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ae1a1383d1bed0ad4d5ee5d74dff30949"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#ae1a1383d1bed0ad4d5ee5d74dff30949">tws_phone_link_state_change</a> (struct <a class="el" href="structlmp__connection.html">lmp_connection</a> *, struct <a class="el" href="link__bulk_8h.html#structbredr__rx__bulk">bredr_rx_bulk</a> *, int *)</td></tr>
+<tr class="separator:ae1a1383d1bed0ad4d5ee5d74dff30949"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fcc145e0b8ca3a7feaeebedac6aea28"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#a7fcc145e0b8ca3a7feaeebedac6aea28">tws_phone_link_rx_pend_empty</a> ()</td></tr>
+<tr class="separator:a7fcc145e0b8ca3a7feaeebedac6aea28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acadd3a4b56636b223b0345b7827e0d0c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#acadd3a4b56636b223b0345b7827e0d0c">tws_phone_link_sbc_data_len</a> (int channel)</td></tr>
+<tr class="separator:acadd3a4b56636b223b0345b7827e0d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a603583bc28755b39dcd98eba820613c5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#a603583bc28755b39dcd98eba820613c5">tws_phone_link_abandon_sbc_data</a> (struct <a class="el" href="structlmp__connection.html">lmp_connection</a> *conn, u16 seqn_number)</td></tr>
+<tr class="separator:a603583bc28755b39dcd98eba820613c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05bc6b4580b1602109e735b1b88499a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#a05bc6b4580b1602109e735b1b88499a9">tws_phone_link_del</a> (u8 err_code)</td></tr>
+<tr class="separator:a05bc6b4580b1602109e735b1b88499a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dc50332a9e48c62b1860cff09ed0a97"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#a5dc50332a9e48c62b1860cff09ed0a97">tws_phone_link_detach</a> (struct <a class="el" href="structlmp__connection.html">lmp_connection</a> *conn, u8)</td></tr>
+<tr class="separator:a5dc50332a9e48c62b1860cff09ed0a97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bb2f7055743884629d3c5c4cd25257e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#a5bb2f7055743884629d3c5c4cd25257e">tws_phone_link_connection</a> (struct <a class="el" href="structlmp__connection.html">lmp_connection</a> *conn)</td></tr>
+<tr class="separator:a5bb2f7055743884629d3c5c4cd25257e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e0cc3cf6e0360238aa50bb535a5e4ad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#a9e0cc3cf6e0360238aa50bb535a5e4ad">tws_check_can_setup_esco</a> ()</td></tr>
+<tr class="separator:a9e0cc3cf6e0360238aa50bb535a5e4ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dc048cf59942e8c4a7ee48e43e28e30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#a6dc048cf59942e8c4a7ee48e43e28e30">tws_slave_start_monitor</a> (void *p)</td></tr>
+<tr class="separator:a6dc048cf59942e8c4a7ee48e43e28e30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9822862ea692a52f7bd55f5284ce76c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#af9822862ea692a52f7bd55f5284ce76c">tws_conn_event_handler</a> (int *msg)</td></tr>
+<tr class="separator:af9822862ea692a52f7bd55f5284ce76c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6363d4f317450102cd08bc61b6fb8f93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#a6363d4f317450102cd08bc61b6fb8f93">tws_conn_rx_handler</a> (struct <a class="el" href="link__bulk_8h.html#structbredr__rx__bulk">bredr_rx_bulk</a> *rx)</td></tr>
+<tr class="separator:a6363d4f317450102cd08bc61b6fb8f93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48b13459100ce85ba5e89dc98e813a07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#a48b13459100ce85ba5e89dc98e813a07">tws_conn_channel_open</a> (u8 channel)</td></tr>
+<tr class="separator:a48b13459100ce85ba5e89dc98e813a07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89a260347a6cb8fb593045bb68ffd92a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#a89a260347a6cb8fb593045bb68ffd92a">tws_conn_channel_close</a> (u8 channel)</td></tr>
+<tr class="separator:a89a260347a6cb8fb593045bb68ffd92a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef2bc3d148475332537287602a7436d0"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#aef2bc3d148475332537287602a7436d0">tws_conn_get_tx_buffer</a> (u8 channel, u8 opcode, int size)</td></tr>
+<tr class="separator:aef2bc3d148475332537287602a7436d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e20fb2ce72afaf5e2461d5d3a6925cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#a3e20fb2ce72afaf5e2461d5d3a6925cc">tws_conn_put_tx_buffer</a> (void *buffer, int size)</td></tr>
+<tr class="separator:a3e20fb2ce72afaf5e2461d5d3a6925cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a329656dfb6094b61ec5347883ea734f0"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="link__bulk_8h.html#structbredr__rx__bulk">bredr_rx_bulk</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#a329656dfb6094b61ec5347883ea734f0">tws_rx_bulk_alloc_in_irq</a> (int size, u8 *data, int *err)</td></tr>
+<tr class="separator:a329656dfb6094b61ec5347883ea734f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ae7f94232dfdd0eb2f6c5ec03afdeb0"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="link__bulk_8h.html#structbredr__rx__bulk">bredr_rx_bulk</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#a6ae7f94232dfdd0eb2f6c5ec03afdeb0">tws_bredr_rx_bulk_alloc_in_irq</a> (int size)</td></tr>
+<tr class="separator:a6ae7f94232dfdd0eb2f6c5ec03afdeb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e92fb76e332f010fc1a3b8601cc54e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#a2e92fb76e332f010fc1a3b8601cc54e6">tws_conn_switch_role</a> ()</td></tr>
+<tr class="separator:a2e92fb76e332f010fc1a3b8601cc54e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0e44c939eeb595ac21096a509d44b3f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#aa0e44c939eeb595ac21096a509d44b3f">tws_conn_switch_role_lock</a> ()</td></tr>
+<tr class="separator:aa0e44c939eeb595ac21096a509d44b3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a434bdabd0cd6d8e32c2906a96710c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#a8a434bdabd0cd6d8e32c2906a96710c9">tws_conn_switch_role_unlock</a> ()</td></tr>
+<tr class="separator:a8a434bdabd0cd6d8e32c2906a96710c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4876b81e1453ea2567038c0152e93273"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#a4876b81e1453ea2567038c0152e93273">tws_conn_role_switch_lock_ms</a> (int timeout)</td></tr>
+<tr class="separator:a4876b81e1453ea2567038c0152e93273"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8ac630e246165881427e91799c675a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#ab8ac630e246165881427e91799c675a1">tws_conn_create_connection</a> (int timeout)</td></tr>
+<tr class="separator:ab8ac630e246165881427e91799c675a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab83dc81334339c8a04edc6d106774c4b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#ab83dc81334339c8a04edc6d106774c4b">tws_conn_tx_event_handler</a> (int event, struct <a class="el" href="link__bulk_8h.html#structbredr__tx__bulk">bredr_tx_bulk</a> *tx)</td></tr>
+<tr class="separator:ab83dc81334339c8a04edc6d106774c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb4318c02614da04356a2da016a9d0e5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#aeb4318c02614da04356a2da016a9d0e5">tws_create_connection_internal</a> (int timeout)</td></tr>
+<tr class="separator:aeb4318c02614da04356a2da016a9d0e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac633b32da5f9bc1b7a9c3f5f5cfd2304"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#ac633b32da5f9bc1b7a9c3f5f5cfd2304">tws_cancle_create_connection_internal</a> ()</td></tr>
+<tr class="separator:ac633b32da5f9bc1b7a9c3f5f5cfd2304"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0c7934b8dc90da17ae69357c2deb23c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#ab0c7934b8dc90da17ae69357c2deb23c">tws_wait_connection_internal</a> ()</td></tr>
+<tr class="separator:ab0c7934b8dc90da17ae69357c2deb23c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a797a07b074f2e9748fdbb0b0032298a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#a797a07b074f2e9748fdbb0b0032298a0">tws_conn_detach_internal</a> (int reason)</td></tr>
+<tr class="separator:a797a07b074f2e9748fdbb0b0032298a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89ea09d3c14e7977c74cb63809a96ac0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#a89ea09d3c14e7977c74cb63809a96ac0">tws_api_get_role_internal</a> ()</td></tr>
+<tr class="separator:a89ea09d3c14e7977c74cb63809a96ac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64da65de29a6a43a227b9111300d675b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#a64da65de29a6a43a227b9111300d675b">tws_api_search_sibling_by_code_internal</a> (int code, int timeout_ms)</td></tr>
+<tr class="separator:a64da65de29a6a43a227b9111300d675b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a48522443ed994d153941341c02ca0a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#a6a48522443ed994d153941341c02ca0a">tws_api_wait_pair_by_ble_internal</a> (int code, const char *name)</td></tr>
+<tr class="separator:a6a48522443ed994d153941341c02ca0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04ec205af2365dace545e7cbf63c7fcf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#a04ec205af2365dace545e7cbf63c7fcf">tws_api_open_tws_wait_pair</a> (int code, const char *name)</td></tr>
+<tr class="separator:a04ec205af2365dace545e7cbf63c7fcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e532f45f4383d96e390d963e0e3eb48"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#a7e532f45f4383d96e390d963e0e3eb48">tws_api_open_phone_wait_pair</a> (int code, const char *name)</td></tr>
+<tr class="separator:a7e532f45f4383d96e390d963e0e3eb48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9b8d32d672057b73b98259d1c15422d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#ab9b8d32d672057b73b98259d1c15422d">tws_api_open_tws_wait_conn</a> (int timeout)</td></tr>
+<tr class="separator:ab9b8d32d672057b73b98259d1c15422d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11754e50642ea695241614cce58674a1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#a11754e50642ea695241614cce58674a1">tws_api_open_tws_conn</a> (int timeout)</td></tr>
+<tr class="separator:a11754e50642ea695241614cce58674a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fe2e375ba58f8abbc24492d43462c48"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#a7fe2e375ba58f8abbc24492d43462c48">tws_api_fast_conn_with_pair</a> (int role_type)</td></tr>
+<tr class="separator:a7fe2e375ba58f8abbc24492d43462c48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4e0f83613559fb670febce1eb2bcea7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#ae4e0f83613559fb670febce1eb2bcea7">tws_api_close_tws_pair</a> ()</td></tr>
+<tr class="separator:ae4e0f83613559fb670febce1eb2bcea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32bdb89558c2b05f51bf64f1f9776870"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#a32bdb89558c2b05f51bf64f1f9776870">tws_api_close_phone_wait_pair</a> ()</td></tr>
+<tr class="separator:a32bdb89558c2b05f51bf64f1f9776870"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e950cdbeb9429d196d4099de5fbdd3f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#a4e950cdbeb9429d196d4099de5fbdd3f">tws_api_remove_tws_pairs</a> ()</td></tr>
+<tr class="separator:a4e950cdbeb9429d196d4099de5fbdd3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd437a6af2a5b17cd84ebf08b5d27e91"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#afd437a6af2a5b17cd84ebf08b5d27e91">tws_api_disconnect</a> ()</td></tr>
+<tr class="separator:afd437a6af2a5b17cd84ebf08b5d27e91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3aea14cd3e66b95abb542181a9c3efb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#af3aea14cd3e66b95abb542181a9c3efb">le_tws_connect_set_timer</a> (int type, int timeout)</td></tr>
+<tr class="separator:af3aea14cd3e66b95abb542181a9c3efb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc6cda6cb1623391b6e1ddab15bf800a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#adc6cda6cb1623391b6e1ddab15bf800a">tws_api_wait_pair_by_code_internal</a> (int code, const char *name)</td></tr>
+<tr class="separator:adc6cda6cb1623391b6e1ddab15bf800a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40e419fcad84ce02cac7597a508f2b60"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#a40e419fcad84ce02cac7597a508f2b60">tws_api_cancle_wait_pair_internal</a> ()</td></tr>
+<tr class="separator:a40e419fcad84ce02cac7597a508f2b60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63af1d892e26f673bff1cccc8611664a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#a63af1d892e26f673bff1cccc8611664a">tws_api_remove_pairs_internal</a> ()</td></tr>
+<tr class="separator:a63af1d892e26f673bff1cccc8611664a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6165b227fb4269dc144209bcbc260b0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#aa6165b227fb4269dc144209bcbc260b0">tws_api_sync_call_func_internal</a> (int uuid, int argc, int *argv)</td></tr>
+<tr class="separator:aa6165b227fb4269dc144209bcbc260b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3a47680ac81864ae6a55e94c1ef9819"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#ae3a47680ac81864ae6a55e94c1ef9819">tws_api_send_data_to_sibling_internal</a> (u8 *data, u16 len)</td></tr>
+<tr class="separator:ae3a47680ac81864ae6a55e94c1ef9819"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f205da09907981894bb6ed34dbc76e6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#a3f205da09907981894bb6ed34dbc76e6">is_tws_esco_working</a> ()</td></tr>
+<tr class="separator:a3f205da09907981894bb6ed34dbc76e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83c63e5660df0639b47af39d54ccd663"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#a83c63e5660df0639b47af39d54ccd663">tws_conn_history_hash_add</a> (int hash)</td></tr>
+<tr class="separator:a83c63e5660df0639b47af39d54ccd663"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5522baeb7e161f59c38064c20ac6dcb0"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#a5522baeb7e161f59c38064c20ac6dcb0">tws_master_notice_slave_step_fun</a> (u8 event, u8 reason, u8 post_step)</td></tr>
+<tr class="separator:a5522baeb7e161f59c38064c20ac6dcb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab33cd317d9c87dee6f2c00c9318bb4c8"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#ab33cd317d9c87dee6f2c00c9318bb4c8">tws_slave_rx_notice_step_fun</a> (u8 *rx)</td></tr>
+<tr class="separator:ab33cd317d9c87dee6f2c00c9318bb4c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8e61fdb25ad558481c41d47fcd30c22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#ab8e61fdb25ad558481c41d47fcd30c22">tws_esco_remove_clear_state</a> ()</td></tr>
+<tr class="separator:ab8e61fdb25ad558481c41d47fcd30c22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace7cb37da9173f41510af15858567375"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#ace7cb37da9173f41510af15858567375">tws_esco_role_switch_post</a> (void *p)</td></tr>
+<tr class="separator:ace7cb37da9173f41510af15858567375"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29e2f8d46aa82c9b7d7c7d0954dc92db"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#a29e2f8d46aa82c9b7d7c7d0954dc92db">tws_le_cancle_connect_in_esco_internal</a> ()</td></tr>
+<tr class="separator:a29e2f8d46aa82c9b7d7c7d0954dc92db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15194a9de6f4870426b78849c4e0c08b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#a15194a9de6f4870426b78849c4e0c08b">tws_le_connect_in_esco_internal</a> ()</td></tr>
+<tr class="separator:a15194a9de6f4870426b78849c4e0c08b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad08e7fd7ff67035c6068e8ddeed525a4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#ad08e7fd7ff67035c6068e8ddeed525a4">tws_post_remove_esco_link_super_timeout</a> (void *p)</td></tr>
+<tr class="separator:ad08e7fd7ff67035c6068e8ddeed525a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b820ddff22764917981c9d8d58b47dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#a0b820ddff22764917981c9d8d58b47dc">tws_conn_send_event</a> (int code, const char *format,...)</td></tr>
+<tr class="separator:a0b820ddff22764917981c9d8d58b47dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9f13747c8ad708d6da2e2b8f261a620"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#ac9f13747c8ad708d6da2e2b8f261a620">tws_conn_send_cmd</a> (u8 opcode, const char *format,...)</td></tr>
+<tr class="separator:ac9f13747c8ad708d6da2e2b8f261a620"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1b5535f87d0fadbf6e698fb37154a21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#ad1b5535f87d0fadbf6e698fb37154a21">tws_core_tws_link_resume</a> ()</td></tr>
+<tr class="separator:ad1b5535f87d0fadbf6e698fb37154a21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8241f37b55816f2ce4784337d43397e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#a8241f37b55816f2ce4784337d43397e8">tws_core_tws_link_suspend</a> ()</td></tr>
+<tr class="separator:a8241f37b55816f2ce4784337d43397e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae26f1f40bd1a00695da3d924504ec70c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#ae26f1f40bd1a00695da3d924504ec70c">tws_core_rx_irq_handler_probe</a> (u8 *data, int size)</td></tr>
+<tr class="separator:ae26f1f40bd1a00695da3d924504ec70c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5304df94b9e68ead9a908f432a0bb4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#af5304df94b9e68ead9a908f432a0bb4f">tws_core_rx_irq_handler_post</a> (struct <a class="el" href="bredr__link_8h.html#structlink__connection">link_connection</a> *lc, struct <a class="el" href="link__bulk_8h.html#structbredr__rx__bulk">bredr_rx_bulk</a> *rx)</td></tr>
+<tr class="separator:af5304df94b9e68ead9a908f432a0bb4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbe70ff3e2d180081d476f2992bef0e6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#abbe70ff3e2d180081d476f2992bef0e6">tws_core_plink_rx_irq_handler</a> (struct <a class="el" href="bredr__link_8h.html#structlink__connection">link_connection</a> *lc, struct <a class="el" href="link__bulk_8h.html#structbredr__rx__bulk">bredr_rx_bulk</a> *rx)</td></tr>
+<tr class="separator:abbe70ff3e2d180081d476f2992bef0e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0df506a9364718c7f00f159c454fd2cd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#a0df506a9364718c7f00f159c454fd2cd">tws_core_get_buf_len_for_packet</a> (u8 *data)</td></tr>
+<tr class="separator:a0df506a9364718c7f00f159c454fd2cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae39c754d9ed9305ce7a68e524d0b48df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#ae39c754d9ed9305ce7a68e524d0b48df">tws_core_rx_bulk_full_handler</a> (int buf_len)</td></tr>
+<tr class="separator:ae39c754d9ed9305ce7a68e524d0b48df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51f7498d8fa0cc7152301b8efc929585"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#a51f7498d8fa0cc7152301b8efc929585">tws_core_enter_low_latency_mode</a> ()</td></tr>
+<tr class="separator:a51f7498d8fa0cc7152301b8efc929585"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a229401849546f743bdb04967638dee92"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#a229401849546f743bdb04967638dee92">tws_core_exit_low_latency_mode</a> ()</td></tr>
+<tr class="separator:a229401849546f743bdb04967638dee92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4009b78673211037ec7c15c307e6911f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#a4009b78673211037ec7c15c307e6911f">tws_core_low_latency_enable</a> ()</td></tr>
+<tr class="separator:a4009b78673211037ec7c15c307e6911f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10029c81facc0202cb4bfe7fb08b0dc8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#a10029c81facc0202cb4bfe7fb08b0dc8">tws_core_tws_wait_tx</a> ()</td></tr>
+<tr class="separator:a10029c81facc0202cb4bfe7fb08b0dc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a65e63fcb3928adf8d9148e53672a24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#a0a65e63fcb3928adf8d9148e53672a24">tws_core_a2dp_packet_go</a> (int go)</td></tr>
+<tr class="separator:a0a65e63fcb3928adf8d9148e53672a24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:a8da87c407f65ecb4bd17d0cfd4c31eff"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="tws__conn_8h.html#structtws__connection">tws_connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#a8da87c407f65ecb4bd17d0cfd4c31eff">tws_conn</a></td></tr>
+<tr class="separator:a8da87c407f65ecb4bd17d0cfd4c31eff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ae6f6c17cb9ff1a2feb4bd2d173f9f5"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structtws__sync__channel.html">tws_sync_channel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#a2ae6f6c17cb9ff1a2feb4bd2d173f9f5">tws_sync_channel_begin</a> []</td></tr>
+<tr class="separator:a2ae6f6c17cb9ff1a2feb4bd2d173f9f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0055d6862d89514e07aea9e1eef00087"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structtws__sync__channel.html">tws_sync_channel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tws__conn_8h.html#a0055d6862d89514e07aea9e1eef00087">tws_sync_channel_end</a> []</td></tr>
+<tr class="separator:a0055d6862d89514e07aea9e1eef00087"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/><h2 class="groupheader">结构体说明</h2>
+<a name="structtws__channel__head" id="structtws__channel__head"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct tws_channel_head</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a78c07ab6070a73f6129a866aeecf0bc2"></a>u8</td>
+<td class="fieldname">
+channel</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ac58e7b5752673769c8b211377a0f6025"></a>u16</td>
+<td class="fieldname">
+len</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="aef83d9e94b1863c9c38b5d3fc078a9ce"></a>u8</td>
+<td class="fieldname">
+opcode</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structtws__user__data__head" id="structtws__user__data__head"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct tws_user_data_head</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><div class="dynheader">
+tws_user_data_head 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="structtws__user__data__head__coll__graph.png" border="0" usemap="#tws__user__data__head_coll__map" alt="Collaboration graph"/></div>
+<map name="tws__user__data__head_coll__map" id="tws__user__data__head_coll__map">
+<area shape="rect" id="node2" href="tws__conn_8h.html#structtws__channel__head" title="tws_channel_head" alt="" coords="11,5,142,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a491a04d64303b3d068391447dd7191d2"></a>u8</td>
+<td class="fieldname">
+data[0]</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a6539a5aea996b40f744d436f4a7ba1c1"></a>u32</td>
+<td class="fieldname">
+func_id</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a56a949e0f55500b6ff21d5aa902abc6a"></a>struct <a class="el" href="tws__conn_8h.html#structtws__channel__head">tws_channel_head</a></td>
+<td class="fieldname">
+head</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structtws__connection" id="structtws__connection"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct tws_connection</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><div class="dynheader">
+tws_connection 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="structtws__connection__coll__graph.png" border="0" usemap="#tws__connection_coll__map" alt="Collaboration graph"/></div>
+<map name="tws__connection_coll__map" id="tws__connection_coll__map">
+<area shape="rect" id="node2" href="structlmp__connection.html" title="lmp_connection" alt="" coords="1210,281,1323,308"/>
+<area shape="rect" id="node23" href="lmp_8h.html#structlmp__esco" title="lmp_esco" alt="" coords="1460,191,1539,217"/>
+<area shape="rect" id="node3" href="lmp_8h.html#structlmp__sniff" title="lmp_sniff" alt="" coords="979,383,1053,409"/>
+<area shape="rect" id="node4" href="link__bulk_8h.html#structbredr__rx__bulk" title="bredr_rx_bulk" alt="" coords="425,145,525,172"/>
+<area shape="rect" id="node6" href="bredr__link_8h.html#structlink__connection" title="link_connection" alt="" coords="960,332,1072,359"/>
+<area shape="rect" id="node7" href="bredr__link_8h.html#structbredr__esco__link" title="bredr_esco_link" alt="" coords="709,249,823,276"/>
+<area shape="rect" id="node5" href="lmp_8h.html#structlmp__role__switch" title="lmp_role_switch" alt="" coords="958,433,1074,460"/>
+<area shape="rect" id="node8" href="link__bulk_8h.html#structbredr__tx__bulk" title="bredr_tx_bulk" alt="" coords="425,295,525,321"/>
+<area shape="rect" id="node9" href="tws__link_8h.html#struct____tws__esco__tx__info__t" title="__tws_esco_tx_info_t" alt="" coords="400,225,549,252"/>
+<area shape="rect" id="node10" href="lmp__pdu_8h.html#structlmp__esco__pdu" title="lmp_esco_pdu" alt="" coords="421,24,528,51"/>
+<area shape="rect" id="node11" href="bredr__link_8h.html#structlink__afh" title="link_afh" alt="" coords="733,515,799,541"/>
+<area shape="rect" id="node12" href="bredr__link_8h.html#structlink__afh__report" title="link_afh_report" alt="" coords="713,413,819,440"/>
+<area shape="rect" id="node13" href="bredr__link_8h.html#structbredr__role__switch" title="bredr_role_switch" alt="" coords="704,464,828,491"/>
+<area shape="rect" id="node14" href="structlink__page.html" title="link_page" alt="" coords="436,528,513,555"/>
+<area shape="rect" id="node15" href="bredr__link_8h.html#structtws__pair__info" title="tws_pair_info" alt="" coords="181,593,280,620"/>
+<area shape="rect" id="node16" href="bredr__link_8h.html#structlink__remote" title="link_remote" alt="" coords="186,511,275,537"/>
+<area shape="rect" id="node19" href="bredr__link_8h.html#structlink__page__scan" title="link_page_scan" alt="" coords="419,464,531,491"/>
+<area shape="rect" id="node17" href="link__task_8h.html#structlink__task" title="link_task" alt="" coords="193,397,268,424"/>
+<area shape="rect" id="node18" href="structlink__task__ops.html" title="link_task_ops" alt="" coords="5,397,108,424"/>
+<area shape="rect" id="node20" href="bredr__link_8h.html#structbredr__dut" title="bredr_dut" alt="" coords="728,565,804,592"/>
+<area shape="rect" id="node21" href="bredr__link_8h.html#structlink__core__data" title="link_core_data" alt="" coords="713,616,819,643"/>
+<area shape="rect" id="node22" href="lmp_8h.html#structlmp__simple__pair" title="lmp_simple_pair" alt="" coords="958,484,1074,511"/>
+<area shape="rect" id="node24" href="structesco__codec__ops.html" title="esco_codec_ops" alt="" coords="1207,168,1327,195"/>
+<area shape="rect" id="node25" href="lmp_8h.html#structlmp__core__data" title="lmp_core_data" alt="" coords="963,281,1069,308"/>
+<area shape="rect" id="node26" href="lmp_8h.html#structlmp__encrypt" title="lmp_encrypt" alt="" coords="969,231,1063,257"/>
+<area shape="rect" id="node27" href="lmp_8h.html#structlmp__core__data__static" title="lmp_core_data_static" alt="" coords="943,157,1089,184"/>
+<area shape="rect" id="node28" href="lmp_8h.html#structlmp__device" title="lmp_device" alt="" coords="722,136,810,163"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="af76d935603d88f576eca3243c44efe8c"></a>u16</td>
+<td class="fieldname">
+add_a2dp_delay_time</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a40afcfa2a9b8948de502d1b3d87c61bf"></a>u8</td>
+<td class="fieldname">
+adjust_slave_clkoffset_cnt</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ab7ea9b17e05972e6fa5de3cff07b3bba"></a>u32</td>
+<td class="fieldname">
+afh_end</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="aa3f647786544c240cc37309ae1e03b9e"></a>u32 *</td>
+<td class="fieldname">
+bulk_pool</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a43e51c5dc10ffa00a211a1b4ce6e4bfa"></a>u8</td>
+<td class="fieldname">
+channels</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="afd1bc5f1adc4ce8f9043d879950165f9"></a>u16</td>
+<td class="fieldname">
+code</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="aadc051efca5e826d5049c9fe0697b303"></a>u8</td>
+<td class="fieldname">
+connect_suss</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a2e1e70cd89b51f9a52e7b95bf1d34923"></a>u8</td>
+<td class="fieldname">
+detach</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a8a77ae8b2889d6018fe7301cbbb4b5ca"></a>u8</td>
+<td class="fieldname">
+detach_code</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a26efee6d0be997d189e7f10dc5abf352"></a>u8</td>
+<td class="fieldname">
+esco_setup_flag</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a02278e1419943ad99ee380d1695d1802"></a>u8</td>
+<td class="fieldname">
+esco_status</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a88e628be40a71b8d39aa8e90e093c3c1"></a>u8</td>
+<td class="fieldname">
+esco_super_timeout</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="af0eab0c682a2846b31f9b8b2bcc1423b"></a>u16</td>
+<td class="fieldname">
+esco_wait_monitor_start</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a63103cc474676bb2177f325a8017cbcf"></a>u8</td>
+<td class="fieldname">
+ex_tws_adjust</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="aa93930690562abfc5e33cc06989d4187"></a>u8</td>
+<td class="fieldname">
+exit_pure_monitor</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a9c819c1a9df5a249f8be7af72128eacd"></a>int</td>
+<td class="fieldname">
+history_hash[16]</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="aa5a55e7cf3bdab31a83e2699d87f9fc7"></a>u8</td>
+<td class="fieldname">
+history_hash_index</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="aec8bcc37841cf4fbb9a8dc6e2eac53fe"></a>u32</td>
+<td class="fieldname">
+instant</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a847646aaa2702f1539da5aa98344fd71"></a>u8</td>
+<td class="fieldname">
+link_reset</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a5cf1c06f1983f0ae8c8b180ed740a298"></a>struct <a class="el" href="structlmp__connection.html">lmp_connection</a> *</td>
+<td class="fieldname">
+lmp_conn</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a88e553ce0c03303efdf743e0739ea22d"></a>u8</td>
+<td class="fieldname">
+lmp_core_data_sync</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="afe352d450dc4217427b2d6f9657250c9"></a>u8</td>
+<td class="fieldname">
+monitor_start</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a352939f0cab10277d9eaa94f541fed84"></a>u8</td>
+<td class="fieldname">
+phone_link_detach</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="aa73c66d11c270bad17ac9f011fc3925f"></a>u32</td>
+<td class="fieldname">
+phone_link_detach_instant</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a61cd0982aa93dbcc34decd1c58ec0e85"></a>u8</td>
+<td class="fieldname">
+phone_run_slot</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a7fd787b65f6b08cfb352e7ce07713a89"></a>u8</td>
+<td class="fieldname">
+prev_req_err</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a8150149526d0afa4a85164559d6cbcb3"></a>u8</td>
+<td class="fieldname">
+prev_s_go</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a9c2e9474379dce1ede80a7d32084b6c5"></a>u8</td>
+<td class="fieldname">
+pure_monitor</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="acfd5ce3a6f2dfaa64cb0c4bdcff22666"></a>u16</td>
+<td class="fieldname">
+pure_monitor_mod</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a4b344d2f36f8380960c01e75254839f2"></a>u8</td>
+<td class="fieldname">
+role</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ab9ab8622ff7d207c9d15927acf47251b"></a>u8</td>
+<td class="fieldname">
+role_switch</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="af620c645a7d83e4dbb081ac036d3073c"></a>u8</td>
+<td class="fieldname">
+role_switch_by_power</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="aad4b805169c3b6e1e13797d9bf0445d0"></a>u8</td>
+<td class="fieldname">
+role_switch_lock</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="aa5bca16469b357094d948870eb33d3a1"></a>u32</td>
+<td class="fieldname">
+rs_instant</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ac5e537e1ee3c69bb1b3c055662c8fcef"></a>u8</td>
+<td class="fieldname">
+run_slot</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a054e6bf4ec0d5f8e53b13c16a05c1d99"></a>int</td>
+<td class="fieldname">
+rx_clkn</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a8657424d09a19e92cbebbb14403193e0"></a>struct list_head</td>
+<td class="fieldname">
+rx_pending</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a5576968e6b23684cee47692edc69d46e"></a>u8</td>
+<td class="fieldname">
+rx_seqnum</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a18f8cd8d6472febf245c5b622c5a170c"></a>u16</td>
+<td class="fieldname">
+sbc_remain_msec</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a91de67d63037d9eab0e54b2053a925fc"></a>OS_SEM *</td>
+<td class="fieldname">
+sem_phone_detach</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a8899cd0d0bc5ea43e456273ec4a13809"></a>OS_SEM *</td>
+<td class="fieldname">
+sem_role_req</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="aebc07b8e61f7015d71ff53ee10dae25a"></a>OS_SEM *</td>
+<td class="fieldname">
+sem_tws_detach</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a611c6ef93be68d251b309cbc3a7ce988"></a>u8</td>
+<td class="fieldname">
+send_event</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a704d64bb735779e319b9b1cb8d067c52"></a>u8</td>
+<td class="fieldname">
+slot_timer</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a52122df13740810371550ced755548be"></a>u8</td>
+<td class="fieldname">
+try_switch</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ae11cfbdaec8628a628d7647912ab05d1"></a>u8</td>
+<td class="fieldname">
+try_switch_2</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a68ef324653427309faada81e9759967e"></a>u8</td>
+<td class="fieldname">
+try_switch_mode</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a76884f36791293a8c9e23bfe73b1e10c"></a>u16</td>
+<td class="fieldname">
+try_switch_work_cnt</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a44e37582800a57dbe7636fcda3823335"></a>u16</td>
+<td class="fieldname">
+try_switch_work_cnt1</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a38d0124526f7fbe68bb8daaff639a7a8"></a>u8</td>
+<td class="fieldname">
+tws_box_mode</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ad79dc6173ee8c26a63f4ebc50d69b52a"></a>u8</td>
+<td class="fieldname">
+tws_run_slot</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="acb7a844461b999c7b73c48d52f82ced6"></a>u8</td>
+<td class="fieldname">
+tws_wait_tx</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a2626f4534e013d6c668a451fcf32986f"></a>struct list_head</td>
+<td class="fieldname">
+tx_pending</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a91c20b4e9fd7229736392995e6b22f30"></a>u8</td>
+<td class="fieldname">
+tx_tick_res</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ae3d157565256cab406da956da33516e8"></a>u8</td>
+<td class="fieldname">
+update_afh</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structtws__conn__core__data" id="structtws__conn__core__data"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct tws_conn_core_data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><div class="dynheader">
+tws_conn_core_data 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="structtws__conn__core__data__coll__graph.png" border="0" usemap="#tws__conn__core__data_coll__map" alt="Collaboration graph"/></div>
+<map name="tws__conn__core__data_coll__map" id="tws__conn__core__data_coll__map">
+<area shape="rect" id="node2" href="lmp_8h.html#structlmp__core__data" title="lmp_core_data" alt="" coords="23,5,130,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ab7b17981e50e43612adbc081fd737d77"></a>struct <a class="el" href="lmp_8h.html#structlmp__core__data">lmp_core_data</a></td>
+<td class="fieldname">
+lmp_core</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structtws__forward__head" id="structtws__forward__head"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct tws_forward_head</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><div class="dynheader">
+tws_forward_head 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="structtws__forward__head__coll__graph.png" border="0" usemap="#tws__forward__head_coll__map" alt="Collaboration graph"/></div>
+<map name="tws__forward__head_coll__map" id="tws__forward__head_coll__map">
+<area shape="rect" id="node2" href="tws__conn_8h.html#structtws__channel__head" title="tws_channel_head" alt="" coords="5,5,136,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">图例</a>]</span></center></div>
+<table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="afff799d6f864d58bc96ec522cbdd14d0"></a>u8</td>
+<td class="fieldname">
+data[0]</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ae81d62de3fd1567446223fc6f3c4a9a8"></a>u8</td>
+<td class="fieldname">
+end_flag</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="acc2040125ded270ab40165dff8732ec0"></a>u8</td>
+<td class="fieldname">
+end_seqnum</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a7d0ca2b21609d2c359df6194f544331a"></a>struct <a class="el" href="tws__conn_8h.html#structtws__channel__head">tws_channel_head</a></td>
+<td class="fieldname">
+head</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a5a45a83b14a671c8e3f9fbb72f9ee663"></a>u16</td>
+<td class="fieldname">
+prev_hash</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">宏定义说明</h2>
+<a class="anchor" id="a44154451c14a0731d48eecd0e9b6b148"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __TWS_IRQ_CODE&#160;&#160;&#160;<a class="el" href="tws__le__link_8c.html#af9aace1b44b73111e15aa39f06f43456">__attribute__</a>((section(&quot;.tws_irq_code&quot;)))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab5e61ddfb41ac23445cb21549bf420c0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _TWS_SYNC_CHANNEL_REGISTER</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">channel, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">id&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;const struct <a class="el" href="structtws__sync__channel.html">tws_sync_channel</a> channel SEC(.tws_sync_channel.##id)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af4d1e3892f765996afa48d6066a1c577"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define list_for_each_sync_channel</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">p</td><td>)</td>
+          <td>&#160;&#160;&#160;for (p = <a class="el" href="tws__conn_8h.html#a2ae6f6c17cb9ff1a2feb4bd2d173f9f5">tws_sync_channel_begin</a>; p &lt; <a class="el" href="tws__conn_8h.html#a0055d6862d89514e07aea9e1eef00087">tws_sync_channel_end</a>; p++)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0d54fa20a24834be4d69d4298cbd1025"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MONITOR_LMP_RX&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa7161501f91235086bc9ad936201adb1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RS_REC_NUM&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a848ff001a88819c595ee0ff46302b2ec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TWS_SYNC_ATTR_REQ_ALWAYS&#160;&#160;&#160;(BIT(1) | BIT(2) | BIT(3))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1e39b7e1d783eb5b0f25fdc27eccc1bc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TWS_SYNC_ATTR_REQ_FROM_SLAVE&#160;&#160;&#160;BIT(0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a00dfa1ca521d03272dc3f2629ffbda80"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TWS_SYNC_ATTR_REQ_ON_ESCO&#160;&#160;&#160;BIT(2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8692f886b65021b9a06c50379187a8a9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TWS_SYNC_ATTR_REQ_ON_MONITOR&#160;&#160;&#160;BIT(1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2c60c1c787d787672a3d34421ad04930"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TWS_SYNC_ATTR_REQ_ON_SNIFF&#160;&#160;&#160;BIT(3)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2c40bf8e8b0592364b8af12d69d67881"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TWS_SYNC_ATTR_REQ_ON_UNCON&#160;&#160;&#160;BIT(1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a94466fc54cbf26dbc5ecdc3f31dc24a1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TWS_SYNC_CHANNEL_REGISTER</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">channel, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">id&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="tws__conn_8h.html#ab5e61ddfb41ac23445cb21549bf420c0">_TWS_SYNC_CHANNEL_REGISTER</a>(channel, id)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">枚举类型说明</h2>
+<a class="anchor" id="a4f126a0a9b1d8c6a8f46a051ef8830bb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="a4f126a0a9b1d8c6a8f46a051ef8830bbaa8b5be5b5346f1c4da2dc02a34595496"></a>TWS_EVENT_RESUME&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a4f126a0a9b1d8c6a8f46a051ef8830bbafd5fa2e0b44be1d3fe72ddceec13c23f"></a>TWS_EVENT_SUSPEND&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a4f126a0a9b1d8c6a8f46a051ef8830bba77f88993fe023061bdd102c5d38a8d73"></a>TWS_EVENT_CONNECTION_START&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a4f126a0a9b1d8c6a8f46a051ef8830bba4991f7f7f54278f30b658c214632ca8d"></a>TWS_EVENT_CONNECTION_POST&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a4f126a0a9b1d8c6a8f46a051ef8830bba21fe5c9cb464ae67c79b535ea739322c"></a>TWS_EVENT_RX&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a4f126a0a9b1d8c6a8f46a051ef8830bbaa0e0c859a0942d62eead637c617ab02b"></a>TWS_EVENT_RX_PROBE&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a4f126a0a9b1d8c6a8f46a051ef8830bba7ffd240c5a336851b76074d1f1dcff7e"></a>TWS_EVENT_RX_POST&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a4f126a0a9b1d8c6a8f46a051ef8830bba5a6c6570abdbb04ae2712fb2c27195a8"></a>TWS_EVENT_GET_BUF_LEN&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a4f126a0a9b1d8c6a8f46a051ef8830bba948241ac1fb0faa3ff8713ae9afc3215"></a>TWS_EVENT_START_MONITOR_POST&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a4f126a0a9b1d8c6a8f46a051ef8830bbae175620da19e02274633cbe932aebfdb"></a>TWS_EVENT_PHONE_LINK_RX&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a4f126a0a9b1d8c6a8f46a051ef8830bbac6b46df594d404ac4ebc2dbf36280af4"></a>TWS_EVENT_PHONE_LINK_CONNECTED&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a4f126a0a9b1d8c6a8f46a051ef8830bba5a5dbdb491c9a70aa2aab6a798126467"></a>TWS_EVENT_DATA_ABANDON_SUSS&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a4f126a0a9b1d8c6a8f46a051ef8830bba6441b4545aeafdbe4593789f494d1ee3"></a>TWS_EVENT_DATA_SYNC_SUSS&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a4f126a0a9b1d8c6a8f46a051ef8830bba6774b5224f2421a4ed049429b340c768"></a>TWS_EVENT_DATA_SYNC_END_PROBE&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a4f126a0a9b1d8c6a8f46a051ef8830bba07c5c5429d9f70c750ebf58163189f5d"></a>TWS_EVENT_DATA_SYNC_END_POST&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a4f126a0a9b1d8c6a8f46a051ef8830bba5ca9749ffafc26489644d4f309f9a2f8"></a>TWS_EVENT_SWITCH_REQ_SUSS&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a4f126a0a9b1d8c6a8f46a051ef8830bbacd506a666b2a73f0ad8ab3a751888301"></a>TWS_EVENT_SWITCH_RES_SUSS&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a4f126a0a9b1d8c6a8f46a051ef8830bba549b82677d4497a71cf4345d4157042c"></a>TWS_EVENT_SWITCH_SUSS&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a4f126a0a9b1d8c6a8f46a051ef8830bbaf1c8df7eba3064bf33d90168a89ea5cc"></a>TWS_EVENT_TICK_REQ_SUSS&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a4f126a0a9b1d8c6a8f46a051ef8830bbac017397444d18d3cc8a8b43f5c1f1318"></a>TWS_EVENT_TICK_RES_SUSS&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a4f126a0a9b1d8c6a8f46a051ef8830bbae6bce9f1395a8aabd83ceeefd72b032a"></a>TWS_EVENT_SUPER_TIMEOUT&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a4f126a0a9b1d8c6a8f46a051ef8830bba2cc1c601d7fbeec417fe9d8b75091599"></a>TWS_EVENT_DETACH_SUSS&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a4f126a0a9b1d8c6a8f46a051ef8830bbaec207b6980b515b1b5c644d3082a86e6"></a>TWS_EVENT_DETACH_SUSS_POST&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a4f126a0a9b1d8c6a8f46a051ef8830bbab01dbeba72c266d4d32bc7664ecc6fd6"></a>TWS_EVENT_REMOVE_PAIRS_POST&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a4f126a0a9b1d8c6a8f46a051ef8830bba52f9158458ca4645ce8693a4e5c74818"></a>TWS_EVENT_ESCO_SETUP1&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a4f126a0a9b1d8c6a8f46a051ef8830bbac9f245df44214a1c1b9b3a2425f7ee63"></a>TWS_EVENT_ESCO_SETUP2&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a4f126a0a9b1d8c6a8f46a051ef8830bba94b65162e0bbaaf37fee309477cb7ca8"></a>TWS_EVENT_ESCO_REMOVE1&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a4f126a0a9b1d8c6a8f46a051ef8830bba82654ec4d521326d02f6afe88c0d8703"></a>TWS_EVENT_ESCO_REMOVE2&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a4f126a0a9b1d8c6a8f46a051ef8830bba03758e5637c895cfae33e9346f088caf"></a>TWS_EVENT_ESCO_ROLE_SWITCH&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a4f126a0a9b1d8c6a8f46a051ef8830bba4cc6b561fb25e0b5217568b41be56879"></a>TWS_EVENT_RETRY_RX&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a4f126a0a9b1d8c6a8f46a051ef8830bbac544caec0a7ffb064533c27ca4cd8eda"></a>TWS_EVENT_DATA_ESCO_ROLE_SWITCH_END_POST&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a4f126a0a9b1d8c6a8f46a051ef8830bba4de837c42834a7e28a226f3d49cb50cb"></a>TWS_EVENT_DEL_TIMEOUT&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a4f126a0a9b1d8c6a8f46a051ef8830bba3bf2c68cee7b18564472ee1520f64ed2"></a>TWS_EVENT_SET_AFH&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a4f126a0a9b1d8c6a8f46a051ef8830bbaf45717e605f260a0cdfbfa494f8008b2"></a>TWS_EVENT_SEND_SET_AFH_SUSS&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a4f126a0a9b1d8c6a8f46a051ef8830bba34a5d3e8a4eb200258960132fd5c1bf2"></a>TWS_HOST_EVENT_DEL_TIMEOUT&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a4f126a0a9b1d8c6a8f46a051ef8830bba435449360cab62f6cb7692bb2a113f65"></a>TWS_EVENT_LOCAL_MEDIA_SYNC_SUSS&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a4f126a0a9b1d8c6a8f46a051ef8830bba6815ce059949e432a2a039e1fa625396"></a>TWS_EVENT_LOCAL_MEDIA_SYNC_END&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a4f126a0a9b1d8c6a8f46a051ef8830bba9c96de769a6e08a4a87653b07b34acbe"></a>TWS_EVENT_LOCAL_MEDIA_SYNC_TX&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a4f126a0a9b1d8c6a8f46a051ef8830bba266410af1acfe0886158faeb7cf39770"></a>TWS_EVENT_SEND_DATA_TO_SIBLING_SUSS&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a4f126a0a9b1d8c6a8f46a051ef8830bbac38212638264fc558dce467d0ab7fb5f"></a>TWS_EVENT_START_ESCO_MONITOR_POST&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a4f126a0a9b1d8c6a8f46a051ef8830bbab26562fff201ed346c8e8e1c4379aae4"></a>TWS_EVENT_ENTER_PURE_MONITOR_SUSS&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a4f126a0a9b1d8c6a8f46a051ef8830bbadbb053412a1c2963af336bba088fdb28"></a>TWS_EVENT_UNSNIFF_SUSS&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a4f126a0a9b1d8c6a8f46a051ef8830bba595cae59f3249a06e856bbdf185987ab"></a>TWS_EVENT_DATA_TRANS_SYNC_SUSS&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="adbaf9202177df73e6880eab6e6aab329"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="adbaf9202177df73e6880eab6e6aab329a568fb726dd83f7a2b6f71c35d20a9b0b"></a>TWS_SWITCH_REQ&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="adbaf9202177df73e6880eab6e6aab329ad4670c855389f6e06869d8881a992168"></a>TWS_ACCEPTED&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="adbaf9202177df73e6880eab6e6aab329a875ed7c933deaf58a3e1f49b6cbe8d9b"></a>TWS_NOT_ACCEPTED&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="adbaf9202177df73e6880eab6e6aab329ab51639b6c49ec7bd7b972f7300e18b03"></a>TWS_SETUP_COMPLETE&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="adbaf9202177df73e6880eab6e6aab329a26dd4cd40c099f2d5b7d5b14ff6fc314"></a>TWS_SETUP_MONITOR_LINK_REQ&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="adbaf9202177df73e6880eab6e6aab329ad7c569d5434afd2d3dbe0a286e1179ac"></a>TWS_START_MONITOR_REQ&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="adbaf9202177df73e6880eab6e6aab329a4a698cec243bfdde91a29900cd56fe2d"></a>TWS_CONN_REMOVE_PAIRS&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="adbaf9202177df73e6880eab6e6aab329a406dfe09f8bcf7b4d37cda70c9fffa4f"></a>TWS_PHONE_LINK_DETACH&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="adbaf9202177df73e6880eab6e6aab329acc2e6c45c5c62370f1153857d65d0467"></a>TWS_CMD_SYNC_CALL&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="adbaf9202177df73e6880eab6e6aab329aa0b2d2609bd30e9783723630ebaae226"></a>TWS_SETUP_ESCO_LINK&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="adbaf9202177df73e6880eab6e6aab329a633cd34a623416830d2e04751d6b02a3"></a>TWS_REMOVE_ESCO_LINK&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="adbaf9202177df73e6880eab6e6aab329a6590cd4970c5d09d726c66bdb471ca58"></a>TWS_NOTICE_SLAVE_STEP_FUN&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="adbaf9202177df73e6880eab6e6aab329aa15f3a12d0814301c0de81a23fe26a05"></a>TWS_DETACH&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="adbaf9202177df73e6880eab6e6aab329a7a06dff49ee64bb15ae2c58ea2b53e43"></a>TWS_SNIFF_REQ&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="adbaf9202177df73e6880eab6e6aab329a291ae19a8d8c26dc10bc3c22d3518a7c"></a>TWS_SNIFF_INFO&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="adbaf9202177df73e6880eab6e6aab329a95388ac2a80d0933a31f66bb219ffe42"></a>TWS_UNSNIFF_REQ&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="adbaf9202177df73e6880eab6e6aab329ab2ae1c58cbd14d11cc4b94f59d82b0aa"></a>TWS_CONN_USER_DATA&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="adbaf9202177df73e6880eab6e6aab329acc26a080fb939ee5f09b8a1bf87aeb6f"></a>TWS_SET_AFH&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="adbaf9202177df73e6880eab6e6aab329a401b60571ae242f5e7831c80556d5cc1"></a>TWS_SETUP_ESCO_MONITOR_LINK_REQ&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="adbaf9202177df73e6880eab6e6aab329a024335f2448e2f5c070c96af1e6922d3"></a>TWS_SETUP_ESCO_OPEN_TWS_LINK_START&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="adbaf9202177df73e6880eab6e6aab329a3ccd82a40bd233dc4a9c160d0165ce73"></a>TWS_ENTER_PURE_MONITOR_MODE_REQ&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="adbaf9202177df73e6880eab6e6aab329ace9bf468c59766f14dc78e7910a2c7ca"></a>TWS_EXIT_PURE_MONITOR_MODE_REQ&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="adbaf9202177df73e6880eab6e6aab329ad73e1b578ae8eb9f7504407fd834c0cb"></a>TWS_JIFFIES_SYNC&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="adbaf9202177df73e6880eab6e6aab329abee13c3c55362dbe9cb662be4b979105"></a>TWS_CONN_TICK_REQ&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="adbaf9202177df73e6880eab6e6aab329acc6a93777522a7b80bf25510d848a741"></a>TWS_CONN_TICK_RES&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="adbaf9202177df73e6880eab6e6aab329aada904876bf6cb63adec963f1c521fa0"></a>TWS_CONN_ROLE_SWITCH&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="adbaf9202177df73e6880eab6e6aab329ad05239f20f2700b7e2edc290dbf23037"></a>TWS_CONN_ROLE_SWITCH_RES&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="adbaf9202177df73e6880eab6e6aab329ad971feb2f0c56c734e68827743d59060"></a>TWS_CONN_ROLE_SWITCH_SUSS&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="a7495a48740c9d555f7fbcb48246dbd93"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="a7495a48740c9d555f7fbcb48246dbd93aad184bb0210a9429a29ccb30023d3e1c"></a>TWS_OPEN_ESCO_LINK_STEP_FUN&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7495a48740c9d555f7fbcb48246dbd93a5e797f44f46e175b5ca76afa7b30d1d4"></a>TWS_REMOVE_ESCO_LINK_STEP_FUN&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7495a48740c9d555f7fbcb48246dbd93a16ee2dcb1ee34947f677aafbc83e6d20"></a>TWS_ESCO_ROLE_SWITCH_FUN&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="a9a3be2d66956bd67c0b66c32d8b30f17"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="a9a3be2d66956bd67c0b66c32d8b30f17a6f1f4cd9734e78415be6aa7d5563bf76"></a>ROLE_SWITCH_START&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a9a3be2d66956bd67c0b66c32d8b30f17accd3e5decaaa255f5b01d3ceaae3abeb"></a>ROLE_SWITCH_MASTER_WAIT_TX_REQ&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a9a3be2d66956bd67c0b66c32d8b30f17a91d0e0302be6b2800c6a9ee20906869e"></a>ROLE_SWITCH_MASTER_TX_REQ&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a9a3be2d66956bd67c0b66c32d8b30f17a70a24133338e7dcefa4895352c928173"></a>ROLE_SWITCH_MASTER_RX_RES&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a9a3be2d66956bd67c0b66c32d8b30f17a6f797739622f8df0b4994093f60662fd"></a>ROLE_SWITCH_SLAVE_RX_REQ&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a9a3be2d66956bd67c0b66c32d8b30f17a2652e5a3bcd1bce3c2d88a2eba03e78b"></a>ROLE_SWITCH_SLAVE_TX_RES&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a9a3be2d66956bd67c0b66c32d8b30f17a4e367658349f1b0e1a6dc2a7373526a0"></a>ROLE_SWITCH_WAIT_SWITCH&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a9a3be2d66956bd67c0b66c32d8b30f17ae3f4f2307ce068c61ddca29af076b673"></a>ROLE_SWITCH_SWITCH_DONE&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="a2dbb833ef0dcc466dd02ee76badaf709"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="a2dbb833ef0dcc466dd02ee76badaf709aafae13ab15cc9209d55cec5bf99080d5"></a>LE_TWS_TIME0&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2dbb833ef0dcc466dd02ee76badaf709a78c24ac9b24c06a84657ce81037c9593"></a>LE_TWS_TIME1&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2dbb833ef0dcc466dd02ee76badaf709a2b4d4eb2eb2bd5172df45beb93e59a65"></a>LE_TWS_TIME2&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2dbb833ef0dcc466dd02ee76badaf709a6890fdc898ad8ecdd412703025a886e5"></a>LE_TWS_TIME3&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a3f205da09907981894bb6ed34dbc76e6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int is_tws_esco_working </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af3aea14cd3e66b95abb542181a9c3efb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int le_tws_connect_set_timer </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a40e419fcad84ce02cac7597a508f2b60"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tws_api_cancle_wait_pair_internal </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a32bdb89558c2b05f51bf64f1f9776870"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_api_close_phone_wait_pair </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae4e0f83613559fb670febce1eb2bcea7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_api_close_tws_pair </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afd437a6af2a5b17cd84ebf08b5d27e91"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tws_api_disconnect </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7fe2e375ba58f8abbc24492d43462c48"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tws_api_fast_conn_with_pair </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>role_type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a89ea09d3c14e7977c74cb63809a96ac0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tws_api_get_role_internal </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7e532f45f4383d96e390d963e0e3eb48"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tws_api_open_phone_wait_pair </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>code</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a11754e50642ea695241614cce58674a1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tws_api_open_tws_conn </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeout</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab9b8d32d672057b73b98259d1c15422d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tws_api_open_tws_wait_conn </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeout</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a04ec205af2365dace545e7cbf63c7fcf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tws_api_open_tws_wait_pair </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>code</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a63af1d892e26f673bff1cccc8611664a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tws_api_remove_pairs_internal </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4e950cdbeb9429d196d4099de5fbdd3f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tws_api_remove_tws_pairs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a64da65de29a6a43a227b9111300d675b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tws_api_search_sibling_by_code_internal </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>code</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeout_ms</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae3a47680ac81864ae6a55e94c1ef9819"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tws_api_send_data_to_sibling_internal </td>
+          <td>(</td>
+          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa6165b227fb4269dc144209bcbc260b0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tws_api_sync_call_func_internal </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>uuid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>argv</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6a48522443ed994d153941341c02ca0a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tws_api_wait_pair_by_ble_internal </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>code</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adc6cda6cb1623391b6e1ddab15bf800a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tws_api_wait_pair_by_code_internal </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>code</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6ae7f94232dfdd0eb2f6c5ec03afdeb0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="link__bulk_8h.html#structbredr__rx__bulk">bredr_rx_bulk</a>* tws_bredr_rx_bulk_alloc_in_irq </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac633b32da5f9bc1b7a9c3f5f5cfd2304"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tws_cancle_create_connection_internal </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9e0cc3cf6e0360238aa50bb535a5e4ad"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tws_check_can_setup_esco </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a89a260347a6cb8fb593045bb68ffd92a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_conn_channel_close </td>
+          <td>(</td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>channel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a48b13459100ce85ba5e89dc98e813a07"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_conn_channel_open </td>
+          <td>(</td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>channel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab8ac630e246165881427e91799c675a1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_conn_create_connection </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeout</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a797a07b074f2e9748fdbb0b0032298a0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_conn_detach_internal </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>reason</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af9822862ea692a52f7bd55f5284ce76c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_conn_event_handler </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>msg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aef2bc3d148475332537287602a7436d0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* tws_conn_get_tx_buffer </td>
+          <td>(</td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>channel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>opcode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a83c63e5660df0639b47af39d54ccd663"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_conn_history_hash_add </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>hash</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3e20fb2ce72afaf5e2461d5d3a6925cc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_conn_put_tx_buffer </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4876b81e1453ea2567038c0152e93273"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_conn_role_switch_lock_ms </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeout</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6363d4f317450102cd08bc61b6fb8f93"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_conn_rx_handler </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="link__bulk_8h.html#structbredr__rx__bulk">bredr_rx_bulk</a> *&#160;</td>
+          <td class="paramname"><em>rx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac9f13747c8ad708d6da2e2b8f261a620"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tws_conn_send_cmd </td>
+          <td>(</td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>opcode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0b820ddff22764917981c9d8d58b47dc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_conn_send_event </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>code</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2e92fb76e332f010fc1a3b8601cc54e6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_conn_switch_role </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa0e44c939eeb595ac21096a509d44b3f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tws_conn_switch_role_lock </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8a434bdabd0cd6d8e32c2906a96710c9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_conn_switch_role_unlock </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab83dc81334339c8a04edc6d106774c4b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tws_conn_tx_event_handler </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="link__bulk_8h.html#structbredr__tx__bulk">bredr_tx_bulk</a> *&#160;</td>
+          <td class="paramname"><em>tx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0a65e63fcb3928adf8d9148e53672a24"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_core_a2dp_packet_go </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>go</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a51f7498d8fa0cc7152301b8efc929585"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tws_core_enter_low_latency_mode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a229401849546f743bdb04967638dee92"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tws_core_exit_low_latency_mode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0df506a9364718c7f00f159c454fd2cd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tws_core_get_buf_len_for_packet </td>
+          <td>(</td>
+          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4009b78673211037ec7c15c307e6911f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tws_core_low_latency_enable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abbe70ff3e2d180081d476f2992bef0e6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tws_core_plink_rx_irq_handler </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="bredr__link_8h.html#structlink__connection">link_connection</a> *&#160;</td>
+          <td class="paramname"><em>lc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="link__bulk_8h.html#structbredr__rx__bulk">bredr_rx_bulk</a> *&#160;</td>
+          <td class="paramname"><em>rx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae39c754d9ed9305ce7a68e524d0b48df"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_core_rx_bulk_full_handler </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>buf_len</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af5304df94b9e68ead9a908f432a0bb4f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_core_rx_irq_handler_post </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="bredr__link_8h.html#structlink__connection">link_connection</a> *&#160;</td>
+          <td class="paramname"><em>lc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="link__bulk_8h.html#structbredr__rx__bulk">bredr_rx_bulk</a> *&#160;</td>
+          <td class="paramname"><em>rx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae26f1f40bd1a00695da3d924504ec70c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tws_core_rx_irq_handler_probe </td>
+          <td>(</td>
+          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad1b5535f87d0fadbf6e698fb37154a21"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_core_tws_link_resume </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8241f37b55816f2ce4784337d43397e8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_core_tws_link_suspend </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a10029c81facc0202cb4bfe7fb08b0dc8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_core_tws_wait_tx </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aeb4318c02614da04356a2da016a9d0e5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tws_create_connection_internal </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeout</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab8e61fdb25ad558481c41d47fcd30c22"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_esco_remove_clear_state </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ace7cb37da9173f41510af15858567375"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_esco_role_switch_post </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a29e2f8d46aa82c9b7d7c7d0954dc92db"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tws_le_cancle_connect_in_esco_internal </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a15194a9de6f4870426b78849c4e0c08b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tws_le_connect_in_esco_internal </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5522baeb7e161f59c38064c20ac6dcb0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 tws_master_notice_slave_step_fun </td>
+          <td>(</td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>reason</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>post_step</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a603583bc28755b39dcd98eba820613c5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tws_phone_link_abandon_sbc_data </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structlmp__connection.html">lmp_connection</a> *&#160;</td>
+          <td class="paramname"><em>conn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>seqn_number</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5bb2f7055743884629d3c5c4cd25257e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_phone_link_connection </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structlmp__connection.html">lmp_connection</a> *&#160;</td>
+          <td class="paramname"><em>conn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a05bc6b4580b1602109e735b1b88499a9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_phone_link_del </td>
+          <td>(</td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>err_code</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5dc50332a9e48c62b1860cff09ed0a97"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_phone_link_detach </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structlmp__connection.html">lmp_connection</a> *&#160;</td>
+          <td class="paramname"><em>conn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7fcc145e0b8ca3a7feaeebedac6aea28"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tws_phone_link_rx_pend_empty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acadd3a4b56636b223b0345b7827e0d0c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tws_phone_link_sbc_data_len </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>channel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae1a1383d1bed0ad4d5ee5d74dff30949"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_phone_link_state_change </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structlmp__connection.html">lmp_connection</a> *&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="link__bulk_8h.html#structbredr__rx__bulk">bredr_rx_bulk</a> *&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad08e7fd7ff67035c6068e8ddeed525a4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tws_post_remove_esco_link_super_timeout </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a329656dfb6094b61ec5347883ea734f0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="link__bulk_8h.html#structbredr__rx__bulk">bredr_rx_bulk</a>* tws_rx_bulk_alloc_in_irq </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>err</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab33cd317d9c87dee6f2c00c9318bb4c8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 tws_slave_rx_notice_step_fun </td>
+          <td>(</td>
+          <td class="paramtype">u8 *&#160;</td>
+          <td class="paramname"><em>rx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6dc048cf59942e8c4a7ee48e43e28e30"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tws_slave_start_monitor </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab0c7934b8dc90da17ae69357c2deb23c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tws_wait_connection_internal </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a class="anchor" id="a8da87c407f65ecb4bd17d0cfd4c31eff"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="tws__conn_8h.html#structtws__connection">tws_connection</a> tws_conn</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2ae6f6c17cb9ff1a2feb4bd2d173f9f5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structtws__sync__channel.html">tws_sync_channel</a> tws_sync_channel_begin[]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0055d6862d89514e07aea9e1eef00087"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structtws__sync__channel.html">tws_sync_channel</a> tws_sync_channel_end[]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

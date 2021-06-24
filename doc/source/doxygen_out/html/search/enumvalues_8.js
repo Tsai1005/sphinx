@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['report_5fconnectable_5fadv',['REPORT_CONNECTABLE_ADV',['../ll__ext__scan_8h.html#a8f5e0748087b87d63826c26de3e9ab94a0942121ad971374a0a42662db4e9ccdd',1,'ll_ext_scan.h']]],
+  ['report_5fdirected_5fadv',['REPORT_DIRECTED_ADV',['../ll__ext__scan_8h.html#a8f5e0748087b87d63826c26de3e9ab94aeebedd486df2e1f5a4a2202dbd14a816',1,'ll_ext_scan.h']]],
+  ['report_5flegacy_5fadv',['REPORT_LEGACY_ADV',['../ll__ext__scan_8h.html#a8f5e0748087b87d63826c26de3e9ab94a491a3dd7c0cdad7d591db104e73508ff',1,'ll_ext_scan.h']]],
+  ['report_5fscan_5frsp',['REPORT_SCAN_RSP',['../ll__ext__scan_8h.html#a8f5e0748087b87d63826c26de3e9ab94ac2b98df6f424919de4036e3e0814020f',1,'ll_ext_scan.h']]],
+  ['report_5fscannable_5fadv',['REPORT_SCANNABLE_ADV',['../ll__ext__scan_8h.html#a8f5e0748087b87d63826c26de3e9ab94a22e2f447fdae8ae5ed8084bec1c5f557',1,'ll_ext_scan.h']]],
+  ['resolvable_5fprivate_5faddr',['RESOLVABLE_PRIVATE_ADDR',['../link__layer_8h.html#a05589fbab0657f08285ebdfe93f5ec9ea69f78ff96db4e0030c159a26c854d522',1,'link_layer.h']]],
+  ['resolve_5faddr_5ffail',['RESOLVE_ADDR_FAIL',['../link__layer_8h.html#a16af7b253440dadd46a80a4b9fddba4dabe2f09cd0f5d1e8631e3327554028cae',1,'link_layer.h']]],
+  ['resolve_5flist_5fnot_5fsame_5fentry',['RESOLVE_LIST_NOT_SAME_ENTRY',['../link__layer_8h.html#a16af7b253440dadd46a80a4b9fddba4da27f05aaa569c73fff71a8f69de06281e',1,'link_layer.h']]],
+  ['role_5fswitch_5ffaild',['ROLE_SWITCH_FAILD',['../lmp_8h.html#a950bf8e3371138ceb9649d45e9a96340a53546e8e3c114aa42e2b7b97588244ed',1,'lmp.h']]],
+  ['role_5fswitch_5fgiveup',['ROLE_SWITCH_GIVEUP',['../lmp_8h.html#a950bf8e3371138ceb9649d45e9a96340af3d4a2341b3b251c5f194be6287cfc28',1,'lmp.h']]],
+  ['role_5fswitch_5fmaster_5frx_5fres',['ROLE_SWITCH_MASTER_RX_RES',['../tws__conn_8h.html#a9a3be2d66956bd67c0b66c32d8b30f17a70a24133338e7dcefa4895352c928173',1,'tws_conn.h']]],
+  ['role_5fswitch_5fmaster_5ftx_5freq',['ROLE_SWITCH_MASTER_TX_REQ',['../tws__conn_8h.html#a9a3be2d66956bd67c0b66c32d8b30f17a91d0e0302be6b2800c6a9ee20906869e',1,'tws_conn.h']]],
+  ['role_5fswitch_5fmaster_5fwait_5ftx_5freq',['ROLE_SWITCH_MASTER_WAIT_TX_REQ',['../tws__conn_8h.html#a9a3be2d66956bd67c0b66c32d8b30f17accd3e5decaaa255f5b01d3ceaae3abeb',1,'tws_conn.h']]],
+  ['role_5fswitch_5fslave_5frx_5freq',['ROLE_SWITCH_SLAVE_RX_REQ',['../tws__conn_8h.html#a9a3be2d66956bd67c0b66c32d8b30f17a6f797739622f8df0b4994093f60662fd',1,'tws_conn.h']]],
+  ['role_5fswitch_5fslave_5ftx_5fres',['ROLE_SWITCH_SLAVE_TX_RES',['../tws__conn_8h.html#a9a3be2d66956bd67c0b66c32d8b30f17a2652e5a3bcd1bce3c2d88a2eba03e78b',1,'tws_conn.h']]],
+  ['role_5fswitch_5fstart',['ROLE_SWITCH_START',['../tws__conn_8h.html#a9a3be2d66956bd67c0b66c32d8b30f17a6f1f4cd9734e78415be6aa7d5563bf76',1,'tws_conn.h']]],
+  ['role_5fswitch_5fsuss',['ROLE_SWITCH_SUSS',['../lmp_8h.html#a950bf8e3371138ceb9649d45e9a96340a2d70e9e6ce945cf25ebc154ac9327bd1',1,'lmp.h']]],
+  ['role_5fswitch_5fswitch_5fdone',['ROLE_SWITCH_SWITCH_DONE',['../tws__conn_8h.html#a9a3be2d66956bd67c0b66c32d8b30f17ae3f4f2307ce068c61ddca29af076b673',1,'tws_conn.h']]],
+  ['role_5fswitch_5fwait_5fcompleted',['ROLE_SWITCH_WAIT_COMPLETED',['../lmp_8h.html#a950bf8e3371138ceb9649d45e9a96340a105eb47681c5259b365e3769a95c1336',1,'lmp.h']]],
+  ['role_5fswitch_5fwait_5fswitch',['ROLE_SWITCH_WAIT_SWITCH',['../tws__conn_8h.html#a9a3be2d66956bd67c0b66c32d8b30f17a4e367658349f1b0e1a6dc2a7373526a0',1,'tws_conn.h']]],
+  ['role_5fswitch_5fwill_5fstart',['ROLE_SWITCH_WILL_START',['../lmp_8h.html#a950bf8e3371138ceb9649d45e9a96340a7f8086ff16fba2412abba38d1a0d64b9',1,'lmp.h']]]
+];

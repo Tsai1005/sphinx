@@ -1,0 +1,215 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="lmp__hci_8h" kind="file" language="C++">
+    <compoundname>lmp_hci.h</compoundname>
+    <includes local="yes">typedef.h</includes>
+    <includes refid="link__bulk_8h" local="yes">link_bulk.h</includes>
+    <includes local="yes">btctrler/classic/hci_lmp.h</includes>
+    <incdepgraph>
+      <node id="5494">
+        <label>btctrler/classic/hci_lmp.h</label>
+      </node>
+      <node id="5492">
+        <label>generic/list.h</label>
+      </node>
+      <node id="5493">
+        <label>classic/bredr_types.h</label>
+        <link refid="bredr__types_8h"/>
+      </node>
+      <node id="5489">
+        <label>typedef.h</label>
+      </node>
+      <node id="5488">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_hci.h</label>
+        <link refid="lmp_hci.h"/>
+        <childnode refid="5489" relation="include">
+        </childnode>
+        <childnode refid="5490" relation="include">
+        </childnode>
+        <childnode refid="5494" relation="include">
+        </childnode>
+      </node>
+      <node id="5491">
+        <label>generic/typedef.h</label>
+      </node>
+      <node id="5490">
+        <label>link_bulk.h</label>
+        <link refid="link__bulk_8h"/>
+        <childnode refid="5491" relation="include">
+        </childnode>
+        <childnode refid="5492" relation="include">
+        </childnode>
+        <childnode refid="5493" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="lmp__hci_8h_1a3208cca5f232b726c0affe27f6de805d" prot="public" static="no">
+        <name>LINK_TYPE_SCO</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_hci.h" line="7" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_hci.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lmp__hci_8h_1a4ddf1a92598b85f93b1411c8e08a05d8" prot="public" static="no">
+        <name>LINK_TYPE_ACL</name>
+        <initializer>0x01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_hci.h" line="8" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_hci.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lmp__hci_8h_1a4ee64b42282fb57e68882a080a9c3fec" prot="public" static="no">
+        <name>LINK_TYPE_ESCO</name>
+        <initializer>0x02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_hci.h" line="9" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_hci.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lmp__hci_8h_1acba29bbe1efec624f96853d9042a1e74" prot="public" static="no">
+        <name>lmp_hci_send_event</name>
+        <param><defname>a</defname></param>
+        <param><defname>format</defname></param>
+        <param><defname>...</defname></param>
+        <initializer><ref refid="lmp__hci_8h_1ad45b2e09932260c5866da773ba0e06f0" kindref="member">hci_send_event</ref>(a, format, ## __VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_hci.h" line="15" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_hci.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lmp__hci_8h_1afa42ba4012b4555e74b6ee7d606dd17c" prot="public" static="no">
+        <name>lmp_hci_send_acl_data</name>
+        <param><defname>a</defname></param>
+        <param><defname>b</defname></param>
+        <initializer><ref refid="lmp__hci_8h_1acc092bc04d809239a828cdfea2ea32db" kindref="member">hci_send_acl_data</ref>(a, b)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_hci.h" line="16" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_hci.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lmp__hci_8h_1a93f3c44f857b2e42b81cb68d63487225" prot="public" static="no">
+        <name>lmp_hci_send_sco_data</name>
+        <param><defname>a</defname></param>
+        <param><defname>b</defname></param>
+        <initializer><ref refid="lmp__hci_8h_1a600eb217e12565cc998a9e76aca2ad1a" kindref="member">hci_send_sco_data</ref>(a, b)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_hci.h" line="17" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_hci.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lmp__hci_8h_1ad45b2e09932260c5866da773ba0e06f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int hci_send_event</definition>
+        <argsstring>(int opcode, const char *format,...)</argsstring>
+        <name>hci_send_event</name>
+        <param>
+          <type>int</type>
+          <declname>opcode</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_hci.h" line="11" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="lmp__hci_8h_1acc092bc04d809239a828cdfea2ea32db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int hci_send_acl_data</definition>
+        <argsstring>(u8 *packet, u16 size)</argsstring>
+        <name>hci_send_acl_data</name>
+        <param>
+          <type>u8 *</type>
+          <declname>packet</declname>
+        </param>
+        <param>
+          <type>u16</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_hci.h" line="12" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="lmp__hci_8h_1a600eb217e12565cc998a9e76aca2ad1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int hci_send_sco_data</definition>
+        <argsstring>(u8 *packet, u16 size)</argsstring>
+        <name>hci_send_sco_data</name>
+        <param>
+          <type>u8 *</type>
+          <declname>packet</declname>
+        </param>
+        <param>
+          <type>u16</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_hci.h" line="13" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;typedef.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="link__bulk_8h" kindref="compound">link_bulk.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;btctrler/classic/hci_lmp.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="lmp__hci_8h_1a3208cca5f232b726c0affe27f6de805d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LINK_TYPE_SCO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="lmp__hci_8h_1a4ddf1a92598b85f93b1411c8e08a05d8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LINK_TYPE_ACL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x01</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="lmp__hci_8h_1a4ee64b42282fb57e68882a080a9c3fec" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LINK_TYPE_ESCO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x02</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="lmp__hci_8h_1ad45b2e09932260c5866da773ba0e06f0" kindref="member">hci_send_event</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>opcode,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*format,<sp/>...);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="lmp__hci_8h_1acc092bc04d809239a828cdfea2ea32db" kindref="member">hci_send_acl_data</ref>(u8<sp/>*packet,<sp/>u16<sp/>size);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="lmp__hci_8h_1a600eb217e12565cc998a9e76aca2ad1a" kindref="member">hci_send_sco_data</ref>(u8<sp/>*packet,<sp/>u16<sp/>size);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="lmp__hci_8h_1acba29bbe1efec624f96853d9042a1e74" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>lmp_hci_send_event(a,<sp/>format,<sp/>...)<sp/>hci_send_event(a,<sp/>format,<sp/>##<sp/>__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="lmp__hci_8h_1afa42ba4012b4555e74b6ee7d606dd17c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>lmp_hci_send_acl_data(a,<sp/>b)<sp/>hci_send_acl_data(a,<sp/>b)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="lmp__hci_8h_1a93f3c44f857b2e42b81cb68d63487225" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>lmp_hci_send_sco_data(a,<sp/>b)<sp/>hci_send_sco_data(a,<sp/>b)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/lmp_hci.h"/>
+  </compounddef>
+</doxygen>

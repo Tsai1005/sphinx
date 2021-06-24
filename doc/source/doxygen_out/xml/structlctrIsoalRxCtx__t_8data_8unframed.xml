@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structlctrIsoalRxCtx__t_8data_8unframed" kind="struct" language="C++" prot="public">
+    <compoundname>lctrIsoalRxCtx_t.data.unframed</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlctrIsoalRxCtx__t_8data_8unframed_1a83526866867de15327f7adf06bd05ff4" prot="public" static="no" mutable="no">
+        <type>struct list_head</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>pendSduQ</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pending PDU fragments </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="198" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrIsoalRxCtx__t_8data_8unframed_1ac487a82179fe36d79f951d4bc35bef2e" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>curLen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Current length of SDU being received. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="203" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrIsoalRxCtx__t_8data_8unframed_1a8812c36aa5ae336c2a77bf63211d899a" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>ps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Packet status. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="204" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="201" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="201" bodyend="205"/>
+    <listofallmembers>
+      <member refid="structlctrIsoalRxCtx__t_8data_8unframed_1ac487a82179fe36d79f951d4bc35bef2e" prot="public" virt="non-virtual"><scope>lctrIsoalRxCtx_t.data.unframed</scope><name>curLen</name></member>
+      <member refid="structlctrIsoalRxCtx__t_8data_8unframed_1a83526866867de15327f7adf06bd05ff4" prot="public" virt="non-virtual"><scope>lctrIsoalRxCtx_t.data.unframed</scope><name>pendSduQ</name></member>
+      <member refid="structlctrIsoalRxCtx__t_8data_8unframed_1a8812c36aa5ae336c2a77bf63211d899a" prot="public" virt="non-virtual"><scope>lctrIsoalRxCtx_t.data.unframed</scope><name>ps</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

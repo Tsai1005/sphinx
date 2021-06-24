@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structadv__report" kind="struct" language="C++" prot="public">
+    <compoundname>adv_report</compoundname>
+    <includes refid="link__layer_8h" local="no">link_layer.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structadv__report_1a9db6722c2343a1935e291967d1e40217" prot="public" static="no" mutable="no">
+        <type>struct list_head</type>
+        <definition>struct list_head adv_report::entry</definition>
+        <argsstring></argsstring>
+        <name>entry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="316" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="320" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structadv__report_1a88f8a16cf61e4f0f4ef72397697f2dc0" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 adv_report::crc16</definition>
+        <argsstring></argsstring>
+        <name>crc16</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="321" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="321" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structadv__report_1a5f67906bc37748dde16bb017421e73fa" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 adv_report::repeat_count</definition>
+        <argsstring></argsstring>
+        <name>repeat_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="322" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="322" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structadv__report_1a095579474570930bddfb029e68d046fd" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 adv_report::resever</definition>
+        <argsstring></argsstring>
+        <name>resever</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="323" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="323" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" line="319" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/link_layer.h" bodystart="319" bodyend="324"/>
+    <listofallmembers>
+      <member refid="structadv__report_1a88f8a16cf61e4f0f4ef72397697f2dc0" prot="public" virt="non-virtual"><scope>adv_report</scope><name>crc16</name></member>
+      <member refid="structadv__report_1a9db6722c2343a1935e291967d1e40217" prot="public" virt="non-virtual"><scope>adv_report</scope><name>entry</name></member>
+      <member refid="structadv__report_1a5f67906bc37748dde16bb017421e73fa" prot="public" virt="non-virtual"><scope>adv_report</scope><name>repeat_count</name></member>
+      <member refid="structadv__report_1a095579474570930bddfb029e68d046fd" prot="public" virt="non-virtual"><scope>adv_report</scope><name>resever</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

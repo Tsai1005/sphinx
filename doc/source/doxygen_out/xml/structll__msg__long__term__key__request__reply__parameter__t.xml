@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structll__msg__long__term__key__request__reply__parameter__t" kind="struct" language="C++" prot="public">
+    <compoundname>ll_msg_long_term_key_request_reply_parameter_t</compoundname>
+    <includes refid="llcp_8h" local="no">llcp.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structll__msg__long__term__key__request__reply__parameter__t_1a688f17c144a5d9251d010b87b65f462a" prot="public" static="no" mutable="no">
+        <type><ref refid="structll__msg__hdr__t" kindref="compound">ll_msg_hdr_t</ref></type>
+        <definition>ll_msg_hdr_t ll_msg_long_term_key_request_reply_parameter_t::hdr</definition>
+        <argsstring></argsstring>
+        <name>hdr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="142" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__msg__long__term__key__request__reply__parameter__t_1a245ea7d4497ce8312b8bc8b0f6d2d531" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 ll_msg_long_term_key_request_reply_parameter_t::long_term_key[LL_KEY_LEN]</definition>
+        <argsstring>[LL_KEY_LEN]</argsstring>
+        <name>long_term_key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="144" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1497">
+        <label>ll_msg_long_term_key_request_reply_parameter_t</label>
+        <link refid="structll__msg__long__term__key__request__reply__parameter__t"/>
+        <childnode refid="1498" relation="usage">
+          <edgelabel>hdr</edgelabel>
+        </childnode>
+      </node>
+      <node id="1498">
+        <label>ll_msg_hdr_t</label>
+        <link refid="structll__msg__hdr__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="141" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="141" bodyend="145"/>
+    <listofallmembers>
+      <member refid="structll__msg__long__term__key__request__reply__parameter__t_1a688f17c144a5d9251d010b87b65f462a" prot="public" virt="non-virtual"><scope>ll_msg_long_term_key_request_reply_parameter_t</scope><name>hdr</name></member>
+      <member refid="structll__msg__long__term__key__request__reply__parameter__t_1a245ea7d4497ce8312b8bc8b0f6d2d531" prot="public" virt="non-virtual"><scope>ll_msg_long_term_key_request_reply_parameter_t</scope><name>long_term_key</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

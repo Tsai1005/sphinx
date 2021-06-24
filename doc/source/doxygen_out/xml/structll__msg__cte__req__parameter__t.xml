@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structll__msg__cte__req__parameter__t" kind="struct" language="C++" prot="public">
+    <compoundname>ll_msg_cte_req_parameter_t</compoundname>
+    <includes refid="llcp_8h" local="no">llcp.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structll__msg__cte__req__parameter__t_1a364f1b6e3c1376c3b38d005cbd9c500a" prot="public" static="no" mutable="no">
+        <type><ref refid="structll__msg__hdr__t" kindref="compound">ll_msg_hdr_t</ref></type>
+        <definition>ll_msg_hdr_t ll_msg_cte_req_parameter_t::hdr</definition>
+        <argsstring></argsstring>
+        <name>hdr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="162" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__msg__cte__req__parameter__t_1a1a60440ec826c4f11707bc6e8b3ea376" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 ll_msg_cte_req_parameter_t::enable</definition>
+        <argsstring></argsstring>
+        <name>enable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="164" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__msg__cte__req__parameter__t_1a8312dc6f08171d63829c38835536f2af" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 ll_msg_cte_req_parameter_t::cte_request_interval</definition>
+        <argsstring></argsstring>
+        <name>cte_request_interval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="165" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__msg__cte__req__parameter__t_1a2b8f13a8a0de013653698d5433f55184" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 ll_msg_cte_req_parameter_t::requested_cte_length</definition>
+        <argsstring></argsstring>
+        <name>requested_cte_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="166" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__msg__cte__req__parameter__t_1ab12ebd9093309658dca29194288cddef" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 ll_msg_cte_req_parameter_t::requested_cte_type</definition>
+        <argsstring></argsstring>
+        <name>requested_cte_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="167" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1473">
+        <label>ll_msg_hdr_t</label>
+        <link refid="structll__msg__hdr__t"/>
+      </node>
+      <node id="1472">
+        <label>ll_msg_cte_req_parameter_t</label>
+        <link refid="structll__msg__cte__req__parameter__t"/>
+        <childnode refid="1473" relation="usage">
+          <edgelabel>hdr</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="161" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="161" bodyend="168"/>
+    <listofallmembers>
+      <member refid="structll__msg__cte__req__parameter__t_1a8312dc6f08171d63829c38835536f2af" prot="public" virt="non-virtual"><scope>ll_msg_cte_req_parameter_t</scope><name>cte_request_interval</name></member>
+      <member refid="structll__msg__cte__req__parameter__t_1a1a60440ec826c4f11707bc6e8b3ea376" prot="public" virt="non-virtual"><scope>ll_msg_cte_req_parameter_t</scope><name>enable</name></member>
+      <member refid="structll__msg__cte__req__parameter__t_1a364f1b6e3c1376c3b38d005cbd9c500a" prot="public" virt="non-virtual"><scope>ll_msg_cte_req_parameter_t</scope><name>hdr</name></member>
+      <member refid="structll__msg__cte__req__parameter__t_1a2b8f13a8a0de013653698d5433f55184" prot="public" virt="non-virtual"><scope>ll_msg_cte_req_parameter_t</scope><name>requested_cte_length</name></member>
+      <member refid="structll__msg__cte__req__parameter__t_1ab12ebd9093309658dca29194288cddef" prot="public" virt="non-virtual"><scope>ll_msg_cte_req_parameter_t</scope><name>requested_cte_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structlink__core__data" kind="struct" language="C++" prot="public">
+    <compoundname>link_core_data</compoundname>
+    <includes refid="bredr__link_8h" local="no">bredr_link.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlink__core__data_1aa5ddd055d5bd64f05914d5e3fb01dcd4" prot="public" static="no" mutable="no">
+        <type>s8</type>
+        <definition>s8 link_core_data::pwr_set</definition>
+        <argsstring></argsstring>
+        <name>pwr_set</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="418" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="418" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__core__data_1a173ae47d51b39abed4b088af775d93e0" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 link_core_data::max_slot</definition>
+        <argsstring></argsstring>
+        <name>max_slot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="419" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="419" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__core__data_1a8fb6cff1e6a72df867d16c21cff4a230" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 link_core_data::remote_sr</definition>
+        <argsstring></argsstring>
+        <name>remote_sr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="420" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="420" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__core__data_1a2d672ecafb97239a1c5887b2ffe6d226" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 link_core_data::remote_addr[6]</definition>
+        <argsstring>[6]</argsstring>
+        <name>remote_addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="421" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="421" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__core__data_1af5f89d4394410d1e01836fae9161abab" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 link_core_data::remote_class_dev</definition>
+        <argsstring></argsstring>
+        <name>remote_class_dev</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="422" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="422" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="417" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="417" bodyend="423"/>
+    <listofallmembers>
+      <member refid="structlink__core__data_1a173ae47d51b39abed4b088af775d93e0" prot="public" virt="non-virtual"><scope>link_core_data</scope><name>max_slot</name></member>
+      <member refid="structlink__core__data_1aa5ddd055d5bd64f05914d5e3fb01dcd4" prot="public" virt="non-virtual"><scope>link_core_data</scope><name>pwr_set</name></member>
+      <member refid="structlink__core__data_1a2d672ecafb97239a1c5887b2ffe6d226" prot="public" virt="non-virtual"><scope>link_core_data</scope><name>remote_addr</name></member>
+      <member refid="structlink__core__data_1af5f89d4394410d1e01836fae9161abab" prot="public" virt="non-virtual"><scope>link_core_data</scope><name>remote_class_dev</name></member>
+      <member refid="structlink__core__data_1a8fb6cff1e6a72df867d16c21cff4a230" prot="public" virt="non-virtual"><scope>link_core_data</scope><name>remote_sr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

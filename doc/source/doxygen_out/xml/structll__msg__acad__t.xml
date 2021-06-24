@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structll__msg__acad__t" kind="struct" language="C++" prot="public">
+    <compoundname>ll_msg_acad_t</compoundname>
+    <includes refid="ll__bis_8h" local="no">ll_bis.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structll__msg__acad__t_1a43d27df39471141ca62294d433fbff82" prot="public" static="no" mutable="no">
+        <type><ref refid="structll__msg__hdr__t" kindref="compound">ll_msg_hdr_t</ref></type>
+        <definition>ll_msg_hdr_t ll_msg_acad_t::hdr</definition>
+        <argsstring></argsstring>
+        <name>hdr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="25" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__msg__acad__t_1a2795d73083873ed896c0bb55ff9b7a31" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t ll_msg_acad_t::bisHandle</definition>
+        <argsstring></argsstring>
+        <name>bisHandle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>BIS handle. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="27" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>ACAD Message -&gt; ext adv Accept action. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1449">
+        <label>ll_msg_acad_t</label>
+        <link refid="structll__msg__acad__t"/>
+        <childnode refid="1450" relation="usage">
+          <edgelabel>hdr</edgelabel>
+        </childnode>
+      </node>
+      <node id="1450">
+        <label>ll_msg_hdr_t</label>
+        <link refid="structll__msg__hdr__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="24" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="24" bodyend="28"/>
+    <listofallmembers>
+      <member refid="structll__msg__acad__t_1a2795d73083873ed896c0bb55ff9b7a31" prot="public" virt="non-virtual"><scope>ll_msg_acad_t</scope><name>bisHandle</name></member>
+      <member refid="structll__msg__acad__t_1a43d27df39471141ca62294d433fbff82" prot="public" virt="non-virtual"><scope>ll_msg_acad_t</scope><name>hdr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structlctrPwrCtrlRsp__t" kind="struct" language="C++" prot="public">
+    <compoundname>lctrPwrCtrlRsp_t</compoundname>
+    <includes refid="ll__defines_8h" local="no">ll_defines.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlctrPwrCtrlRsp__t_1a82d26e83816cff69bb0f307b59eab266" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lctrPwrCtrlRsp_t::limits</definition>
+        <argsstring></argsstring>
+        <name>limits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Limits field. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="999" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="999" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrPwrCtrlRsp__t_1a542673a9ebda800fc43e1a703e5c4f47" prot="public" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t lctrPwrCtrlRsp_t::delta</definition>
+        <argsstring></argsstring>
+        <name>delta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Change in power. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1000" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1000" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrPwrCtrlRsp__t_1a6c14315dfe3858e25c64472c6a855bca" prot="public" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t lctrPwrCtrlRsp_t::txPower</definition>
+        <argsstring></argsstring>
+        <name>txPower</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Local txPower. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1001" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1001" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrPwrCtrlRsp__t_1a84bab608e66a67491ab5fd17f2914588" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lctrPwrCtrlRsp_t::apr</definition>
+        <argsstring></argsstring>
+        <name>apr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Acceptable power reduction. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="1002" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="1002" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Power control RSP PDU. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="998" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="998" bodyend="1003"/>
+    <listofallmembers>
+      <member refid="structlctrPwrCtrlRsp__t_1a84bab608e66a67491ab5fd17f2914588" prot="public" virt="non-virtual"><scope>lctrPwrCtrlRsp_t</scope><name>apr</name></member>
+      <member refid="structlctrPwrCtrlRsp__t_1a542673a9ebda800fc43e1a703e5c4f47" prot="public" virt="non-virtual"><scope>lctrPwrCtrlRsp_t</scope><name>delta</name></member>
+      <member refid="structlctrPwrCtrlRsp__t_1a82d26e83816cff69bb0f307b59eab266" prot="public" virt="non-virtual"><scope>lctrPwrCtrlRsp_t</scope><name>limits</name></member>
+      <member refid="structlctrPwrCtrlRsp__t_1a6c14315dfe3858e25c64472c6a855bca" prot="public" virt="non-virtual"><scope>lctrPwrCtrlRsp_t</scope><name>txPower</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

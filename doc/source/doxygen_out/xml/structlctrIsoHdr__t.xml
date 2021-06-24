@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structlctrIsoHdr__t" kind="struct" language="C++" prot="public">
+    <compoundname>lctrIsoHdr_t</compoundname>
+    <includes refid="ll__iso_8h" local="no">ll_iso.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlctrIsoHdr__t_1a88d9f8d79504c4d5b06e2be0b4502fd1" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lctrIsoHdr_t::handle</definition>
+        <argsstring></argsstring>
+        <name>handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CIS or BIS handle. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="110" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrIsoHdr__t_1a7f2989a6dbebb36a58ed8efba8f14425" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__iso_8h_1a2d4d28b1b8f95adc53d75af60dab9d31" kindref="member">lctrPktBoundary_t</ref></type>
+        <definition>lctrPktBoundary_t lctrIsoHdr_t::pb</definition>
+        <argsstring></argsstring>
+        <name>pb</name>
+        <bitfield> 8</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Packet boundary flag. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="111" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrIsoHdr__t_1a3e57c881bd9dd53e278aa09290d72bb4" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref></type>
+        <definition>bool_t lctrIsoHdr_t::tsFlag</definition>
+        <argsstring></argsstring>
+        <name>tsFlag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Timestamp flag. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="112" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrIsoHdr__t_1a1dfb3856aea0c4f562c18eb9e430b5b3" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lctrIsoHdr_t::len</definition>
+        <argsstring></argsstring>
+        <name>len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data length. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="113" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrIsoHdr__t_1aca224c340a81849df424bb4fed4d7b0c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t lctrIsoHdr_t::ts</definition>
+        <argsstring></argsstring>
+        <name>ts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Timestamp. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="116" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrIsoHdr__t_1ab1e18b3928ffa086e909a59f3b6aad40" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lctrIsoHdr_t::pktSn</definition>
+        <argsstring></argsstring>
+        <name>pktSn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Packet sequence number. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="117" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrIsoHdr__t_1a63da319c2133e19e448a3df22fa70927" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lctrIsoHdr_t::sduLen</definition>
+        <argsstring></argsstring>
+        <name>sduLen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SDU length. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="118" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrIsoHdr__t_1ab715d686c81e188a690be3e638c09999" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__iso_8h_1a716508f72fa43fe601994cc2835e5a0a" kindref="member">lctrPktStatus_t</ref></type>
+        <definition>lctrPktStatus_t lctrIsoHdr_t::ps</definition>
+        <argsstring></argsstring>
+        <name>ps</name>
+        <bitfield> 8</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Packet status. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="119" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrIsoHdr__t_1a8999c74bb2b1ab66d0390d88bd193155" prot="public" static="no" mutable="no">
+        <type>const uint8_t *</type>
+        <definition>const uint8_t* lctrIsoHdr_t::pSdu</definition>
+        <argsstring></argsstring>
+        <name>pSdu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>First byte of ISO SDU. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="120" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>ISO header. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="108" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="108" bodyend="121"/>
+    <listofallmembers>
+      <member refid="structlctrIsoHdr__t_1a88d9f8d79504c4d5b06e2be0b4502fd1" prot="public" virt="non-virtual"><scope>lctrIsoHdr_t</scope><name>handle</name></member>
+      <member refid="structlctrIsoHdr__t_1a1dfb3856aea0c4f562c18eb9e430b5b3" prot="public" virt="non-virtual"><scope>lctrIsoHdr_t</scope><name>len</name></member>
+      <member refid="structlctrIsoHdr__t_1a7f2989a6dbebb36a58ed8efba8f14425" prot="public" virt="non-virtual"><scope>lctrIsoHdr_t</scope><name>pb</name></member>
+      <member refid="structlctrIsoHdr__t_1ab1e18b3928ffa086e909a59f3b6aad40" prot="public" virt="non-virtual"><scope>lctrIsoHdr_t</scope><name>pktSn</name></member>
+      <member refid="structlctrIsoHdr__t_1ab715d686c81e188a690be3e638c09999" prot="public" virt="non-virtual"><scope>lctrIsoHdr_t</scope><name>ps</name></member>
+      <member refid="structlctrIsoHdr__t_1a8999c74bb2b1ab66d0390d88bd193155" prot="public" virt="non-virtual"><scope>lctrIsoHdr_t</scope><name>pSdu</name></member>
+      <member refid="structlctrIsoHdr__t_1a63da319c2133e19e448a3df22fa70927" prot="public" virt="non-virtual"><scope>lctrIsoHdr_t</scope><name>sduLen</name></member>
+      <member refid="structlctrIsoHdr__t_1aca224c340a81849df424bb4fed4d7b0c" prot="public" virt="non-virtual"><scope>lctrIsoHdr_t</scope><name>ts</name></member>
+      <member refid="structlctrIsoHdr__t_1a3e57c881bd9dd53e278aa09290d72bb4" prot="public" virt="non-virtual"><scope>lctrIsoHdr_t</scope><name>tsFlag</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

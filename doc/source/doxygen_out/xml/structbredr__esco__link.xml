@@ -1,0 +1,414 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structbredr__esco__link" kind="struct" language="C++" prot="public">
+    <compoundname>bredr_esco_link</compoundname>
+    <includes refid="bredr__link_8h" local="no">bredr_link.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structbredr__esco__link_1a887a4eadaf634f585f5a1dc706f86342" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 bredr_esco_link::timer0</definition>
+        <argsstring></argsstring>
+        <name>timer0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="373" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="373" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__esco__link_1a0dd6959e150b4b6bf0e0429efdf5358b" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 bredr_esco_link::timer1</definition>
+        <argsstring></argsstring>
+        <name>timer1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="374" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="374" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__esco__link_1a6ae4e7a71bb389dffadb35c8eea491ac" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 bredr_esco_link::slot</definition>
+        <argsstring></argsstring>
+        <name>slot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="375" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="375" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__esco__link_1aa1baf02f277bcc361ec5172bf4efda76" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 bredr_esco_link::link_type</definition>
+        <argsstring></argsstring>
+        <name>link_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="376" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="376" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__esco__link_1a9defa81f7642bd88c646b92c27f70586" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 bredr_esco_link::tws_ind_state[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>tws_ind_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="377" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="377" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__esco__link_1af872fb7cd45c5afd5a29e18d106f8e3d" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 bredr_esco_link::rsvd_state</definition>
+        <argsstring></argsstring>
+        <name>rsvd_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="378" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="378" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__esco__link_1a4892cbac6cbc09222c7a1870aa481797" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 bredr_esco_link::max_slot_cnt</definition>
+        <argsstring></argsstring>
+        <name>max_slot_cnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="379" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="379" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__esco__link_1ae97ff5283a41eb9c29ef3a7110f1bce9" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 bredr_esco_link::esco_dump_cnt</definition>
+        <argsstring></argsstring>
+        <name>esco_dump_cnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="380" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="380" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__esco__link_1a62a077fec968b70cce9662047bbcd84d" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 bredr_esco_link::suspend_rx_data_store</definition>
+        <argsstring></argsstring>
+        <name>suspend_rx_data_store</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="381" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="381" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__esco__link_1a6819445d11a3830fd28e8ac565282c5f" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 bredr_esco_link::rx_remove_esco_req_flag</definition>
+        <argsstring></argsstring>
+        <name>rx_remove_esco_req_flag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="382" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="382" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__esco__link_1afec140c1c8a9c9e1bcf9b1a7d0435a44" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 bredr_esco_link::acl_work_cnt</definition>
+        <argsstring></argsstring>
+        <name>acl_work_cnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="383" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="383" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__esco__link_1a53d1832ff2ba27c4da3897912afbc9d2" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 bredr_esco_link::Wsco_adjust</definition>
+        <argsstring></argsstring>
+        <name>Wsco_adjust</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="384" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="384" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__esco__link_1ac63cf3895ed33ca0a0347e4beb455b6f" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 bredr_esco_link::remote_txtog</definition>
+        <argsstring></argsstring>
+        <name>remote_txtog</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="385" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="385" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__esco__link_1ab56fd1aec5296eb80664fba850ea2d49" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 bredr_esco_link::remote_seqn</definition>
+        <argsstring></argsstring>
+        <name>remote_seqn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="386" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="386" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__esco__link_1a4bb7b1abb642f5af8c54e044370edfd0" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 bredr_esco_link::esco_setp</definition>
+        <argsstring></argsstring>
+        <name>esco_setp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="387" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="387" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__esco__link_1a38c86cae0e6fbb02170b1acafaa36c37" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 bredr_esco_link::esco_try_switch</definition>
+        <argsstring></argsstring>
+        <name>esco_try_switch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="388" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="388" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__esco__link_1a20b85ec2e79171fd2308b470d39fee4e" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 bredr_esco_link::rx_esco_num</definition>
+        <argsstring></argsstring>
+        <name>rx_esco_num</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="389" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="389" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__esco__link_1a23b327c53dc722306c906a8cddbdf1c2" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 bredr_esco_link::esco_role_switch_state</definition>
+        <argsstring></argsstring>
+        <name>esco_role_switch_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="390" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="390" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__esco__link_1a6ab8ec8bd98134314a84cf291227b441" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 bredr_esco_link::esco_acl_resume_t</definition>
+        <argsstring></argsstring>
+        <name>esco_acl_resume_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="391" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="391" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__esco__link_1a269cb872183d8583591cf7bd56ccdb78" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 bredr_esco_link::esco_master_tx_request_cnt</definition>
+        <argsstring></argsstring>
+        <name>esco_master_tx_request_cnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="392" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="392" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__esco__link_1a9c43cebb635e82be3a81ae11c8cc1585" prot="public" static="no" mutable="no">
+        <type>struct list_head</type>
+        <definition>struct list_head bredr_esco_link::tx_esco</definition>
+        <argsstring></argsstring>
+        <name>tx_esco</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="392" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="406" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__esco__link_1ab003ccd795c505b43b03f46561f32bde" prot="public" static="no" mutable="no">
+        <type>struct list_head</type>
+        <definition>struct list_head bredr_esco_link::rx_esco</definition>
+        <argsstring></argsstring>
+        <name>rx_esco</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="392" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="407" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__esco__link_1a4705db5da850df920d9d902bada508b3" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structbredr__rx__bulk" kindref="compound">bredr_rx_bulk</ref> *</type>
+        <definition>struct bredr_rx_bulk* bredr_esco_link::rx_bulk[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>rx_bulk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="408" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="408" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__esco__link_1aba7ce374c5fe5d8770564b2aacf3411e" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structbredr__tx__bulk" kindref="compound">bredr_tx_bulk</ref> *</type>
+        <definition>struct bredr_tx_bulk* bredr_esco_link::tx_bulk[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>tx_bulk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="409" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="409" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__esco__link_1aff5060e16b9b1d3a38d65d72267dc623" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structlmp__esco__pdu" kindref="compound">lmp_esco_pdu</ref></type>
+        <definition>struct lmp_esco_pdu bredr_esco_link::pdu</definition>
+        <argsstring></argsstring>
+        <name>pdu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="409" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="410" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbredr__esco__link_1ad0a5f95695f14573eed4425fbc144c26" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="tws__link_8h_1afbb70e7316d2ca772a1b4dfc0731668c" kindref="member">tws_esco_tx_info_t</ref> *</type>
+        <definition>struct tws_esco_tx_info_t* bredr_esco_link::tws_esco_tx_info</definition>
+        <argsstring></argsstring>
+        <name>tws_esco_tx_info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="412" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="412" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="952">
+        <label>lmp_esco_pdu</label>
+        <link refid="structlmp__esco__pdu"/>
+      </node>
+      <node id="951">
+        <label>__tws_esco_tx_info_t</label>
+        <link refid="struct____tws__esco__tx__info__t"/>
+      </node>
+      <node id="948">
+        <label>bredr_esco_link</label>
+        <link refid="structbredr__esco__link"/>
+        <childnode refid="949" relation="usage">
+          <edgelabel>rx_bulk</edgelabel>
+        </childnode>
+        <childnode refid="950" relation="usage">
+          <edgelabel>tx_bulk</edgelabel>
+        </childnode>
+        <childnode refid="951" relation="usage">
+          <edgelabel>tws_esco_tx_info</edgelabel>
+        </childnode>
+        <childnode refid="952" relation="usage">
+          <edgelabel>pdu</edgelabel>
+        </childnode>
+      </node>
+      <node id="949">
+        <label>bredr_rx_bulk</label>
+        <link refid="structbredr__rx__bulk"/>
+      </node>
+      <node id="950">
+        <label>bredr_tx_bulk</label>
+        <link refid="structbredr__tx__bulk"/>
+      </node>
+    </collaborationgraph>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="372" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="372" bodyend="415"/>
+    <listofallmembers>
+      <member refid="structbredr__esco__link_1afec140c1c8a9c9e1bcf9b1a7d0435a44" prot="public" virt="non-virtual"><scope>bredr_esco_link</scope><name>acl_work_cnt</name></member>
+      <member refid="structbredr__esco__link_1a6ab8ec8bd98134314a84cf291227b441" prot="public" virt="non-virtual"><scope>bredr_esco_link</scope><name>esco_acl_resume_t</name></member>
+      <member refid="structbredr__esco__link_1ae97ff5283a41eb9c29ef3a7110f1bce9" prot="public" virt="non-virtual"><scope>bredr_esco_link</scope><name>esco_dump_cnt</name></member>
+      <member refid="structbredr__esco__link_1a269cb872183d8583591cf7bd56ccdb78" prot="public" virt="non-virtual"><scope>bredr_esco_link</scope><name>esco_master_tx_request_cnt</name></member>
+      <member refid="structbredr__esco__link_1a23b327c53dc722306c906a8cddbdf1c2" prot="public" virt="non-virtual"><scope>bredr_esco_link</scope><name>esco_role_switch_state</name></member>
+      <member refid="structbredr__esco__link_1a4bb7b1abb642f5af8c54e044370edfd0" prot="public" virt="non-virtual"><scope>bredr_esco_link</scope><name>esco_setp</name></member>
+      <member refid="structbredr__esco__link_1a38c86cae0e6fbb02170b1acafaa36c37" prot="public" virt="non-virtual"><scope>bredr_esco_link</scope><name>esco_try_switch</name></member>
+      <member refid="structbredr__esco__link_1aa1baf02f277bcc361ec5172bf4efda76" prot="public" virt="non-virtual"><scope>bredr_esco_link</scope><name>link_type</name></member>
+      <member refid="structbredr__esco__link_1a4892cbac6cbc09222c7a1870aa481797" prot="public" virt="non-virtual"><scope>bredr_esco_link</scope><name>max_slot_cnt</name></member>
+      <member refid="structbredr__esco__link_1aff5060e16b9b1d3a38d65d72267dc623" prot="public" virt="non-virtual"><scope>bredr_esco_link</scope><name>pdu</name></member>
+      <member refid="structbredr__esco__link_1ab56fd1aec5296eb80664fba850ea2d49" prot="public" virt="non-virtual"><scope>bredr_esco_link</scope><name>remote_seqn</name></member>
+      <member refid="structbredr__esco__link_1ac63cf3895ed33ca0a0347e4beb455b6f" prot="public" virt="non-virtual"><scope>bredr_esco_link</scope><name>remote_txtog</name></member>
+      <member refid="structbredr__esco__link_1af872fb7cd45c5afd5a29e18d106f8e3d" prot="public" virt="non-virtual"><scope>bredr_esco_link</scope><name>rsvd_state</name></member>
+      <member refid="structbredr__esco__link_1a4705db5da850df920d9d902bada508b3" prot="public" virt="non-virtual"><scope>bredr_esco_link</scope><name>rx_bulk</name></member>
+      <member refid="structbredr__esco__link_1ab003ccd795c505b43b03f46561f32bde" prot="public" virt="non-virtual"><scope>bredr_esco_link</scope><name>rx_esco</name></member>
+      <member refid="structbredr__esco__link_1a20b85ec2e79171fd2308b470d39fee4e" prot="public" virt="non-virtual"><scope>bredr_esco_link</scope><name>rx_esco_num</name></member>
+      <member refid="structbredr__esco__link_1a6819445d11a3830fd28e8ac565282c5f" prot="public" virt="non-virtual"><scope>bredr_esco_link</scope><name>rx_remove_esco_req_flag</name></member>
+      <member refid="structbredr__esco__link_1a6ae4e7a71bb389dffadb35c8eea491ac" prot="public" virt="non-virtual"><scope>bredr_esco_link</scope><name>slot</name></member>
+      <member refid="structbredr__esco__link_1a62a077fec968b70cce9662047bbcd84d" prot="public" virt="non-virtual"><scope>bredr_esco_link</scope><name>suspend_rx_data_store</name></member>
+      <member refid="structbredr__esco__link_1a887a4eadaf634f585f5a1dc706f86342" prot="public" virt="non-virtual"><scope>bredr_esco_link</scope><name>timer0</name></member>
+      <member refid="structbredr__esco__link_1a0dd6959e150b4b6bf0e0429efdf5358b" prot="public" virt="non-virtual"><scope>bredr_esco_link</scope><name>timer1</name></member>
+      <member refid="structbredr__esco__link_1ad0a5f95695f14573eed4425fbc144c26" prot="public" virt="non-virtual"><scope>bredr_esco_link</scope><name>tws_esco_tx_info</name></member>
+      <member refid="structbredr__esco__link_1a9defa81f7642bd88c646b92c27f70586" prot="public" virt="non-virtual"><scope>bredr_esco_link</scope><name>tws_ind_state</name></member>
+      <member refid="structbredr__esco__link_1aba7ce374c5fe5d8770564b2aacf3411e" prot="public" virt="non-virtual"><scope>bredr_esco_link</scope><name>tx_bulk</name></member>
+      <member refid="structbredr__esco__link_1a9c43cebb635e82be3a81ae11c8cc1585" prot="public" virt="non-virtual"><scope>bredr_esco_link</scope><name>tx_esco</name></member>
+      <member refid="structbredr__esco__link_1a53d1832ff2ba27c4da3897912afbc9d2" prot="public" virt="non-virtual"><scope>bredr_esco_link</scope><name>Wsco_adjust</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

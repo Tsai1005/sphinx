@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structle__ext__secondary__link" kind="struct" language="C++" prot="public">
+    <compoundname>le_ext_secondary_link</compoundname>
+    <includes refid="ll__ext__adv_8h" local="no">ll_ext_adv.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structle__ext__secondary__link_1a9e2b38d6d50fd117a6527f4733ae607a" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* le_ext_secondary_link::hw</definition>
+        <argsstring></argsstring>
+        <name>hw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="148" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__ext__secondary__link_1ab3eb46ea0554850d4b965808e62d52a3" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structle__link" kindref="compound">le_link</ref> *</type>
+        <definition>struct le_link* le_ext_secondary_link::connect_link</definition>
+        <argsstring></argsstring>
+        <name>connect_link</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="150" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__ext__secondary__link_1a9ce8fd20c005a059b6dc70eade998cd6" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structle__ext__periodic__link" kindref="compound">le_ext_periodic_link</ref> *</type>
+        <definition>struct le_ext_periodic_link* le_ext_secondary_link::periodic_link</definition>
+        <argsstring></argsstring>
+        <name>periodic_link</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="151" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__ext__secondary__link_1add659cf48577fd1fd89ac5a691809982" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 le_ext_secondary_link::adv_handle</definition>
+        <argsstring></argsstring>
+        <name>adv_handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="152" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1274">
+        <label>connection_update_parameter_t</label>
+        <link refid="structconnection__update__parameter__t"/>
+      </node>
+      <node id="1276">
+        <label>connection_param_request</label>
+        <link refid="structconnection__param__request"/>
+      </node>
+      <node id="1278">
+        <label>le_link::ble_phy_update</label>
+        <link refid="structle__link_1_1ble__phy__update"/>
+      </node>
+      <node id="1277">
+        <label>data_length</label>
+        <link refid="structdata__length"/>
+      </node>
+      <node id="1281">
+        <label>le_ext_periodic_link</label>
+        <link refid="structle__ext__periodic__link"/>
+      </node>
+      <node id="1271">
+        <label>le_ext_secondary_link</label>
+        <link refid="structle__ext__secondary__link"/>
+        <childnode refid="1272" relation="usage">
+          <edgelabel>connect_link</edgelabel>
+        </childnode>
+        <childnode refid="1281" relation="usage">
+          <edgelabel>periodic_link</edgelabel>
+        </childnode>
+      </node>
+      <node id="1272">
+        <label>le_link</label>
+        <link refid="structle__link"/>
+        <childnode refid="1273" relation="usage">
+          <edgelabel>cte_rx_param</edgelabel>
+        </childnode>
+        <childnode refid="1274" relation="usage">
+          <edgelabel>conn_update_param</edgelabel>
+        </childnode>
+        <childnode refid="1275" relation="usage">
+          <edgelabel>cte_tx_param</edgelabel>
+        </childnode>
+        <childnode refid="1276" relation="usage">
+          <edgelabel>conn_param_req</edgelabel>
+        </childnode>
+        <childnode refid="1277" relation="usage">
+          <edgelabel>pdu_len</edgelabel>
+        </childnode>
+        <childnode refid="1278" relation="usage">
+          <edgelabel>phy</edgelabel>
+        </childnode>
+        <childnode refid="1279" relation="usage">
+          <edgelabel>llcp</edgelabel>
+        </childnode>
+      </node>
+      <node id="1275">
+        <label>cte_tx_param_t</label>
+        <link refid="structcte__tx__param__t"/>
+      </node>
+      <node id="1279">
+        <label>llcp_ctx_t</label>
+        <link refid="structllcp__ctx__t"/>
+        <childnode refid="1280" relation="usage">
+          <edgelabel>pdu</edgelabel>
+        </childnode>
+      </node>
+      <node id="1273">
+        <label>cte_rx_param_t</label>
+        <link refid="structcte__rx__param__t"/>
+      </node>
+      <node id="1280">
+        <label>lctrDataPdu_t</label>
+        <link refid="structlctrDataPdu__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="147" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" bodystart="147" bodyend="153"/>
+    <listofallmembers>
+      <member refid="structle__ext__secondary__link_1add659cf48577fd1fd89ac5a691809982" prot="public" virt="non-virtual"><scope>le_ext_secondary_link</scope><name>adv_handle</name></member>
+      <member refid="structle__ext__secondary__link_1ab3eb46ea0554850d4b965808e62d52a3" prot="public" virt="non-virtual"><scope>le_ext_secondary_link</scope><name>connect_link</name></member>
+      <member refid="structle__ext__secondary__link_1a9e2b38d6d50fd117a6527f4733ae607a" prot="public" virt="non-virtual"><scope>le_ext_secondary_link</scope><name>hw</name></member>
+      <member refid="structle__ext__secondary__link_1a9ce8fd20c005a059b6dc70eade998cd6" prot="public" virt="non-virtual"><scope>le_ext_secondary_link</scope><name>periodic_link</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

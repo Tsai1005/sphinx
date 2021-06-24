@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structcte__connection__tx__param" kind="struct" language="C++" prot="public">
+    <compoundname>cte_connection_tx_param</compoundname>
+    <includes refid="ll__cte_8h" local="no">ll_cte.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcte__connection__tx__param_1a2039054c1bf3616e7f248a2ab417f19c" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 cte_connection_tx_param::Connection_Handle</definition>
+        <argsstring></argsstring>
+        <name>Connection_Handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cte.h" line="39" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cte.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcte__connection__tx__param_1a588553c0ebea22b39e28934d36a9f537" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 cte_connection_tx_param::CTE_Types</definition>
+        <argsstring></argsstring>
+        <name>CTE_Types</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cte.h" line="40" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cte.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcte__connection__tx__param_1acd0e14e853fe20562553de6280e8951c" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 cte_connection_tx_param::Switching_Pattern_Length</definition>
+        <argsstring></argsstring>
+        <name>Switching_Pattern_Length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cte.h" line="41" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cte.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcte__connection__tx__param_1a8374b6e4047c76b000eadde0f31e19b1" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 cte_connection_tx_param::Antenna_ID[0]</definition>
+        <argsstring>[0]</argsstring>
+        <name>Antenna_ID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cte.h" line="42" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cte.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cte.h" line="38" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_cte.h" bodystart="38" bodyend="43"/>
+    <listofallmembers>
+      <member refid="structcte__connection__tx__param_1a8374b6e4047c76b000eadde0f31e19b1" prot="public" virt="non-virtual"><scope>cte_connection_tx_param</scope><name>Antenna_ID</name></member>
+      <member refid="structcte__connection__tx__param_1a2039054c1bf3616e7f248a2ab417f19c" prot="public" virt="non-virtual"><scope>cte_connection_tx_param</scope><name>Connection_Handle</name></member>
+      <member refid="structcte__connection__tx__param_1a588553c0ebea22b39e28934d36a9f537" prot="public" virt="non-virtual"><scope>cte_connection_tx_param</scope><name>CTE_Types</name></member>
+      <member refid="structcte__connection__tx__param_1acd0e14e853fe20562553de6280e8951c" prot="public" virt="non-virtual"><scope>cte_connection_tx_param</scope><name>Switching_Pattern_Length</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

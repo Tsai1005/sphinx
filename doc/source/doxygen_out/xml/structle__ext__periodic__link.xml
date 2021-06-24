@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structle__ext__periodic__link" kind="struct" language="C++" prot="public">
+    <compoundname>le_ext_periodic_link</compoundname>
+    <includes refid="periodic__advertising_8h" local="no">periodic_advertising.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structle__ext__periodic__link_1a3fe230ef16d4d3ffc0466079e9e1ceac" prot="public" static="no" mutable="no">
+        <type>struct list_head</type>
+        <definition>struct list_head le_ext_periodic_link::entry</definition>
+        <argsstring></argsstring>
+        <name>entry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/periodic_advertising.h" line="59" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/periodic_advertising.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__ext__periodic__link_1a21586b2213c30ac5c88235898a85650a" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* le_ext_periodic_link::hw</definition>
+        <argsstring></argsstring>
+        <name>hw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/periodic_advertising.h" line="17" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/periodic_advertising.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__ext__periodic__link_1ac4bf8e0aec83f03c757ba9ab077c483d" prot="public" static="no" mutable="no">
+        <type>struct periodic_hw_info</type>
+        <definition>struct periodic_hw_info le_ext_periodic_link::sync_hw_info</definition>
+        <argsstring></argsstring>
+        <name>sync_hw_info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/periodic_advertising.h" line="17" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/periodic_advertising.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__ext__periodic__link_1aa1f1dedc91d818befdb11b10e446fe80" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 le_ext_periodic_link::adv_handle</definition>
+        <argsstring></argsstring>
+        <name>adv_handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/periodic_advertising.h" line="19" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/periodic_advertising.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/periodic_advertising.h" line="15" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/periodic_advertising.h" bodystart="15" bodyend="20"/>
+    <listofallmembers>
+      <member refid="structle__ext__periodic__link_1aa1f1dedc91d818befdb11b10e446fe80" prot="public" virt="non-virtual"><scope>le_ext_periodic_link</scope><name>adv_handle</name></member>
+      <member refid="structle__ext__periodic__link_1a3fe230ef16d4d3ffc0466079e9e1ceac" prot="public" virt="non-virtual"><scope>le_ext_periodic_link</scope><name>entry</name></member>
+      <member refid="structle__ext__periodic__link_1a21586b2213c30ac5c88235898a85650a" prot="public" virt="non-virtual"><scope>le_ext_periodic_link</scope><name>hw</name></member>
+      <member refid="structle__ext__periodic__link_1ac4bf8e0aec83f03c757ba9ab077c483d" prot="public" virt="non-virtual"><scope>le_ext_periodic_link</scope><name>sync_hw_info</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structlctrDataLen__t" kind="struct" language="C++" prot="public">
+    <compoundname>lctrDataLen_t</compoundname>
+    <includes refid="ll__defines_8h" local="no">ll_defines.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlctrDataLen__t_1aa64052ca175bb4d34d365d6f2129317d" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lctrDataLen_t::maxRxLen</definition>
+        <argsstring></argsstring>
+        <name>maxRxLen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum receive length. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="898" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="898" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrDataLen__t_1adcd07d9c7bdf72c483d06f5901ff452e" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lctrDataLen_t::maxRxTime</definition>
+        <argsstring></argsstring>
+        <name>maxRxTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum receive time. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="899" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="899" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrDataLen__t_1a03f3c73b917fdccf22bc1f109cf1727e" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lctrDataLen_t::maxTxLen</definition>
+        <argsstring></argsstring>
+        <name>maxTxLen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum transmit length. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="900" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="900" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlctrDataLen__t_1af4eb2f42eabd02e4babe29abce9144ee" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t lctrDataLen_t::maxTxTime</definition>
+        <argsstring></argsstring>
+        <name>maxTxTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum transmit time. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="901" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="901" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data length request or response PDU. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="897" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="897" bodyend="902"/>
+    <listofallmembers>
+      <member refid="structlctrDataLen__t_1aa64052ca175bb4d34d365d6f2129317d" prot="public" virt="non-virtual"><scope>lctrDataLen_t</scope><name>maxRxLen</name></member>
+      <member refid="structlctrDataLen__t_1adcd07d9c7bdf72c483d06f5901ff452e" prot="public" virt="non-virtual"><scope>lctrDataLen_t</scope><name>maxRxTime</name></member>
+      <member refid="structlctrDataLen__t_1a03f3c73b917fdccf22bc1f109cf1727e" prot="public" virt="non-virtual"><scope>lctrDataLen_t</scope><name>maxTxLen</name></member>
+      <member refid="structlctrDataLen__t_1af4eb2f42eabd02e4babe29abce9144ee" prot="public" virt="non-virtual"><scope>lctrDataLen_t</scope><name>maxTxTime</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

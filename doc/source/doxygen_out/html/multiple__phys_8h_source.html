@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>JL Adapter SDK: /data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/multiple_phys.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">JL Adapter SDK
+   &#160;<span id="projectnumber">v0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_5aa4d6ccf34d88a270949875c15714e5.html">btctrler</a></li><li class="navelem"><a class="el" href="dir_119de8fbed06b648fc4b1712ddece599.html">include_v2</a></li><li class="navelem"><a class="el" href="dir_11c925b722666962fce8d6f7c0ca7e4f.html">ble</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">multiple_phys.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="multiple__phys_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*********************************************************************************************</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">    *   Filename        : multiple_phys.h</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"></span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">    *   Description     : </span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"></span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">    *   Author          : Bingquan</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"></span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">    *   Email           : caibingquan@zh-jieli.com</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"></span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">    *   Last modifiled  : 2020-12-08 16:29</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"></span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">    *   Copyright:(c)JIELI  2011-2020  @ , All Rights Reserved.</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">*********************************************************************************************/</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#ifndef __MULTIPLE_PHYS_H__</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#define __MULTIPLE_PHYS_H__</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;typedef.h&quot;</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">/**************************************************************************************************</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">  Data Types</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> **************************************************************************************************/</span></div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="multiple__phys_8h.html">   22</a></span>&#160;<span class="keyword">struct </span><a class="code" href="multiple__phys_8h.html#structset__phy__param">set_phy_param</a> {</div><div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="multiple__phys_8h.html#ad5be7b19ba9e4d5a72749ca3916a41ff">   23</a></span>&#160;    u16 <a class="code" href="multiple__phys_8h.html#ad5be7b19ba9e4d5a72749ca3916a41ff">Connection_Handle</a>;</div><div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="multiple__phys_8h.html#ae4e6e414eb1209bd4b4498df6164053f">   24</a></span>&#160;    u8  <a class="code" href="multiple__phys_8h.html#ae4e6e414eb1209bd4b4498df6164053f">ALL_PHYs</a>;</div><div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="multiple__phys_8h.html#a5ff63975a1238ce54db216a155783fa8">   25</a></span>&#160;    u8  <a class="code" href="multiple__phys_8h.html#a5ff63975a1238ce54db216a155783fa8">TX_PHYs</a>;</div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="multiple__phys_8h.html#aa65d57ce2c05ff20087e8c48fbf66aa3">   26</a></span>&#160;    u8  <a class="code" href="multiple__phys_8h.html#aa65d57ce2c05ff20087e8c48fbf66aa3">RX_PHYs</a>;</div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="multiple__phys_8h.html#a219941ac058b19d032d8165806ffbf0f">   27</a></span>&#160;    u16 <a class="code" href="multiple__phys_8h.html#a219941ac058b19d032d8165806ffbf0f">PHY_Options</a>;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;} <a class="code" href="multiple__phys_8h.html#a7fc1f12e7e5015c1fa6760c68354b559">_GNU_PACKED_</a>;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="multiple__phys_8h.html">   30</a></span>&#160;<span class="keyword">struct </span><a class="code" href="multiple__phys_8h.html#struct____default__prefers__phys">__default_prefers_phys</a> {</div><div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="multiple__phys_8h.html#a30cdb2bc6e0e27319fc97ce68f022530">   31</a></span>&#160;    u8 <a class="code" href="multiple__phys_8h.html#a30cdb2bc6e0e27319fc97ce68f022530">tx_phys</a>;</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="multiple__phys_8h.html#a57a3b334f4826a18a7295dfb2b3c57dd">   32</a></span>&#160;    u8 <a class="code" href="multiple__phys_8h.html#a57a3b334f4826a18a7295dfb2b3c57dd">rx_phys</a>;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;} <a class="code" href="multiple__phys_8h.html#a7fc1f12e7e5015c1fa6760c68354b559">_GNU_PACKED_</a>;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="multiple__phys_8h.html">   35</a></span>&#160;<span class="keyword">struct </span><a class="code" href="multiple__phys_8h.html#struct____phy__update__param">__phy_update_param</a> {</div><div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="multiple__phys_8h.html#a12e12f3c4c911efee357bb5cb554b9f4">   36</a></span>&#160;    u8 <a class="code" href="multiple__phys_8h.html#a12e12f3c4c911efee357bb5cb554b9f4">prefers_tx_phys</a>;</div><div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="multiple__phys_8h.html#a5c1b61e4dcb0035f71adfa332810c176">   37</a></span>&#160;    u8 <a class="code" href="multiple__phys_8h.html#a5c1b61e4dcb0035f71adfa332810c176">prefers_rx_phys</a>;</div><div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="multiple__phys_8h.html#a9dc182a3fec2f2786c1aa9de74176705">   38</a></span>&#160;    u16 <a class="code" href="multiple__phys_8h.html#a9dc182a3fec2f2786c1aa9de74176705">phy_options</a>;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;} <a class="code" href="multiple__phys_8h.html#a7fc1f12e7e5015c1fa6760c68354b559">_GNU_PACKED_</a>;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">/**************************************************************************************************</span></div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">  Function Declarations</span></div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">**************************************************************************************************/</span></div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">void</span> <a class="code" href="multiple__phys_8h.html#a7de192dcfe9580576ef623f231a4ac66">ll_default_phys_init</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<a class="code" href="ll__defines_8h.html#a3e11e866bc6d82a804a0ee4740a3a470">bool_t</a> <a class="code" href="multiple__phys_8h.html#a679ab4ff7ea5b29cfae47a4ce4b8c06f">llValidatePhySupport</a>(uint8_t txPhys, uint8_t rxPhys);</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;uint8_t <a class="code" href="multiple__phys_8h.html#aa6ae64d339cc4c87d176738fc3005631">llValidatePhyPreferences</a>(uint8_t allPhys, uint8_t txPhys, uint8_t rxPhys, uint16_t phyOptions);</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;uint8_t <a class="code" href="multiple__phys_8h.html#a1044f83e19d390c1209eb002b869240e">ll_get_preferred_phy</a>(uint8_t phys);</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;u8   <a class="code" href="multiple__phys_8h.html#a87d833652deef90deef918d5cb159c68">ll_read_phy</a>(u16 connection_handle, u8 *tx_phy, u8 *rx_phy);</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;u8   <a class="code" href="multiple__phys_8h.html#a3997c7bb60deb81f3763e8c62057a0b0">ll_set_phy</a>(u16 connection_handle);</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keywordtype">int</span> <a class="code" href="multiple__phys_8h.html#a63c635abc2ff7fbd335c2b69356e637a">le_cmd_set_phy</a>(u16 opcode, <span class="keyword">const</span> u8 *data, u32 size);</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keywordtype">void</span> <a class="code" href="multiple__phys_8h.html#a1c29189b6384b16fe8df1500d35b0656">llcp_mst_phy_update_init</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">void</span> <a class="code" href="multiple__phys_8h.html#a57a7a4fa92bff3548024ac786c7f92a9">llcp_slv_phy_update_init</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;uint8_t <a class="code" href="multiple__phys_8h.html#a458cb172707525deb7d0601610376046">ll_set_phy_update</a>(<span class="keyword">struct</span> <a class="code" href="ll__defines_8h.html#structhci__le__set__phy">hci_le_set_phy</a> *param);</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __MULTIPLE_PHYS_H__ */</span><span class="preprocessor"></span></div><div class="ttc" id="multiple__phys_8h_html_a87d833652deef90deef918d5cb159c68"><div class="ttname"><a href="multiple__phys_8h.html#a87d833652deef90deef918d5cb159c68">ll_read_phy</a></div><div class="ttdeci">u8 ll_read_phy(u16 connection_handle, u8 *tx_phy, u8 *rx_phy)</div></div>
+<div class="ttc" id="multiple__phys_8h_html_a1c29189b6384b16fe8df1500d35b0656"><div class="ttname"><a href="multiple__phys_8h.html#a1c29189b6384b16fe8df1500d35b0656">llcp_mst_phy_update_init</a></div><div class="ttdeci">void llcp_mst_phy_update_init(void)</div><div class="ttdoc">Phy Update Host API. </div><div class="ttdef"><b>Definition:</b> llcp_sm_phy_update.c:993</div></div>
+<div class="ttc" id="multiple__phys_8h_html_a7fc1f12e7e5015c1fa6760c68354b559"><div class="ttname"><a href="multiple__phys_8h.html#a7fc1f12e7e5015c1fa6760c68354b559">_GNU_PACKED_</a></div><div class="ttdeci">struct set_phy_param _GNU_PACKED_</div></div>
+<div class="ttc" id="ll__defines_8h_html_a3e11e866bc6d82a804a0ee4740a3a470"><div class="ttname"><a href="ll__defines_8h.html#a3e11e866bc6d82a804a0ee4740a3a470">bool_t</a></div><div class="ttdeci">#define bool_t</div><div class="ttdef"><b>Definition:</b> ll_defines.h:6</div></div>
+<div class="ttc" id="multiple__phys_8h_html_a7de192dcfe9580576ef623f231a4ac66"><div class="ttname"><a href="multiple__phys_8h.html#a7de192dcfe9580576ef623f231a4ac66">ll_default_phys_init</a></div><div class="ttdeci">void ll_default_phys_init(void)</div></div>
+<div class="ttc" id="multiple__phys_8h_html_a5ff63975a1238ce54db216a155783fa8"><div class="ttname"><a href="multiple__phys_8h.html#a5ff63975a1238ce54db216a155783fa8">set_phy_param::TX_PHYs</a></div><div class="ttdeci">u8 TX_PHYs</div><div class="ttdef"><b>Definition:</b> multiple_phys.h:25</div></div>
+<div class="ttc" id="multiple__phys_8h_html_aa65d57ce2c05ff20087e8c48fbf66aa3"><div class="ttname"><a href="multiple__phys_8h.html#aa65d57ce2c05ff20087e8c48fbf66aa3">set_phy_param::RX_PHYs</a></div><div class="ttdeci">u8 RX_PHYs</div><div class="ttdef"><b>Definition:</b> multiple_phys.h:26</div></div>
+<div class="ttc" id="multiple__phys_8h_html_aa6ae64d339cc4c87d176738fc3005631"><div class="ttname"><a href="multiple__phys_8h.html#aa6ae64d339cc4c87d176738fc3005631">llValidatePhyPreferences</a></div><div class="ttdeci">uint8_t llValidatePhyPreferences(uint8_t allPhys, uint8_t txPhys, uint8_t rxPhys, uint16_t phyOptions)</div></div>
+<div class="ttc" id="multiple__phys_8h_html_structset__phy__param"><div class="ttname"><a href="multiple__phys_8h.html#structset__phy__param">set_phy_param</a></div><div class="ttdef"><b>Definition:</b> multiple_phys.h:22</div></div>
+<div class="ttc" id="multiple__phys_8h_html_a12e12f3c4c911efee357bb5cb554b9f4"><div class="ttname"><a href="multiple__phys_8h.html#a12e12f3c4c911efee357bb5cb554b9f4">__phy_update_param::prefers_tx_phys</a></div><div class="ttdeci">u8 prefers_tx_phys</div><div class="ttdef"><b>Definition:</b> multiple_phys.h:36</div></div>
+<div class="ttc" id="multiple__phys_8h_html_a63c635abc2ff7fbd335c2b69356e637a"><div class="ttname"><a href="multiple__phys_8h.html#a63c635abc2ff7fbd335c2b69356e637a">le_cmd_set_phy</a></div><div class="ttdeci">int le_cmd_set_phy(u16 opcode, const u8 *data, u32 size)</div></div>
+<div class="ttc" id="multiple__phys_8h_html_a57a7a4fa92bff3548024ac786c7f92a9"><div class="ttname"><a href="multiple__phys_8h.html#a57a7a4fa92bff3548024ac786c7f92a9">llcp_slv_phy_update_init</a></div><div class="ttdeci">void llcp_slv_phy_update_init(void)</div><div class="ttdef"><b>Definition:</b> llcp_sm_phy_update.c:1005</div></div>
+<div class="ttc" id="multiple__phys_8h_html_a219941ac058b19d032d8165806ffbf0f"><div class="ttname"><a href="multiple__phys_8h.html#a219941ac058b19d032d8165806ffbf0f">set_phy_param::PHY_Options</a></div><div class="ttdeci">u16 PHY_Options</div><div class="ttdef"><b>Definition:</b> multiple_phys.h:27</div></div>
+<div class="ttc" id="multiple__phys_8h_html_a458cb172707525deb7d0601610376046"><div class="ttname"><a href="multiple__phys_8h.html#a458cb172707525deb7d0601610376046">ll_set_phy_update</a></div><div class="ttdeci">uint8_t ll_set_phy_update(struct hci_le_set_phy *param)</div><div class="ttdef"><b>Definition:</b> llcp_sm_phy_update.c:935</div></div>
+<div class="ttc" id="multiple__phys_8h_html_struct____phy__update__param"><div class="ttname"><a href="multiple__phys_8h.html#struct____phy__update__param">__phy_update_param</a></div><div class="ttdef"><b>Definition:</b> multiple_phys.h:35</div></div>
+<div class="ttc" id="multiple__phys_8h_html_a679ab4ff7ea5b29cfae47a4ce4b8c06f"><div class="ttname"><a href="multiple__phys_8h.html#a679ab4ff7ea5b29cfae47a4ce4b8c06f">llValidatePhySupport</a></div><div class="ttdeci">bool_t llValidatePhySupport(uint8_t txPhys, uint8_t rxPhys)</div></div>
+<div class="ttc" id="multiple__phys_8h_html_a3997c7bb60deb81f3763e8c62057a0b0"><div class="ttname"><a href="multiple__phys_8h.html#a3997c7bb60deb81f3763e8c62057a0b0">ll_set_phy</a></div><div class="ttdeci">u8 ll_set_phy(u16 connection_handle)</div></div>
+<div class="ttc" id="multiple__phys_8h_html_a1044f83e19d390c1209eb002b869240e"><div class="ttname"><a href="multiple__phys_8h.html#a1044f83e19d390c1209eb002b869240e">ll_get_preferred_phy</a></div><div class="ttdeci">uint8_t ll_get_preferred_phy(uint8_t phys)</div></div>
+<div class="ttc" id="ll__defines_8h_html_structhci__le__set__phy"><div class="ttname"><a href="ll__defines_8h.html#structhci__le__set__phy">hci_le_set_phy</a></div><div class="ttdef"><b>Definition:</b> ll_defines.h:1250</div></div>
+<div class="ttc" id="multiple__phys_8h_html_a57a3b334f4826a18a7295dfb2b3c57dd"><div class="ttname"><a href="multiple__phys_8h.html#a57a3b334f4826a18a7295dfb2b3c57dd">__default_prefers_phys::rx_phys</a></div><div class="ttdeci">u8 rx_phys</div><div class="ttdef"><b>Definition:</b> multiple_phys.h:32</div></div>
+<div class="ttc" id="multiple__phys_8h_html_a5c1b61e4dcb0035f71adfa332810c176"><div class="ttname"><a href="multiple__phys_8h.html#a5c1b61e4dcb0035f71adfa332810c176">__phy_update_param::prefers_rx_phys</a></div><div class="ttdeci">u8 prefers_rx_phys</div><div class="ttdef"><b>Definition:</b> multiple_phys.h:37</div></div>
+<div class="ttc" id="multiple__phys_8h_html_a9dc182a3fec2f2786c1aa9de74176705"><div class="ttname"><a href="multiple__phys_8h.html#a9dc182a3fec2f2786c1aa9de74176705">__phy_update_param::phy_options</a></div><div class="ttdeci">u16 phy_options</div><div class="ttdef"><b>Definition:</b> multiple_phys.h:38</div></div>
+<div class="ttc" id="multiple__phys_8h_html_ad5be7b19ba9e4d5a72749ca3916a41ff"><div class="ttname"><a href="multiple__phys_8h.html#ad5be7b19ba9e4d5a72749ca3916a41ff">set_phy_param::Connection_Handle</a></div><div class="ttdeci">u16 Connection_Handle</div><div class="ttdef"><b>Definition:</b> multiple_phys.h:23</div></div>
+<div class="ttc" id="multiple__phys_8h_html_ae4e6e414eb1209bd4b4498df6164053f"><div class="ttname"><a href="multiple__phys_8h.html#ae4e6e414eb1209bd4b4498df6164053f">set_phy_param::ALL_PHYs</a></div><div class="ttdeci">u8 ALL_PHYs</div><div class="ttdef"><b>Definition:</b> multiple_phys.h:24</div></div>
+<div class="ttc" id="multiple__phys_8h_html_struct____default__prefers__phys"><div class="ttname"><a href="multiple__phys_8h.html#struct____default__prefers__phys">__default_prefers_phys</a></div><div class="ttdef"><b>Definition:</b> multiple_phys.h:30</div></div>
+<div class="ttc" id="multiple__phys_8h_html_a30cdb2bc6e0e27319fc97ce68f022530"><div class="ttname"><a href="multiple__phys_8h.html#a30cdb2bc6e0e27319fc97ce68f022530">__default_prefers_phys::tx_phys</a></div><div class="ttdeci">u8 tx_phys</div><div class="ttdef"><b>Definition:</b> multiple_phys.h:31</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

@@ -1,0 +1,269 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="h4__transport_8h" kind="file" language="C++">
+    <compoundname>h4_transport.h</compoundname>
+    <includes local="yes">typedef.h</includes>
+    <includedby refid="hci__ll__cmds_8c" local="yes">/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/hci_ll_cmds.c</includedby>
+    <includedby refid="link__layer_8c" local="yes">/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/link_layer.c</includedby>
+    <includedby refid="ll__adv_8c" local="yes">/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_adv.c</includedby>
+    <includedby refid="ll__data__extension_8c" local="yes">/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_data_extension.c</includedby>
+    <includedby refid="ll__events_8c" local="yes">/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_events.c</includedby>
+    <includedby refid="ll__init_8c" local="yes">/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_init.c</includedby>
+    <includedby refid="ll__master_8c" local="yes">/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_master.c</includedby>
+    <includedby refid="ll__resolve__list_8c" local="yes">/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_resolve_list.c</includedby>
+    <includedby refid="ll__scan_8c" local="yes">/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_scan.c</includedby>
+    <includedby refid="ll__slave_8c" local="yes">/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_slave.c</includedby>
+    <includedby refid="ll__white__list_8c" local="yes">/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_white_list.c</includedby>
+    <includedby refid="tws__ll__adv_8c" local="yes">/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_adv.c</includedby>
+    <includedby refid="tws__ll__scan_8c" local="yes">/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_scan.c</includedby>
+    <incdepgraph>
+      <node id="5692">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/h4_transport.h</label>
+        <link refid="h4_transport.h"/>
+        <childnode refid="5693" relation="include">
+        </childnode>
+      </node>
+      <node id="5693">
+        <label>typedef.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5695">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/hci_ll_cmds.c</label>
+        <link refid="hci__ll__cmds_8c"/>
+      </node>
+      <node id="5704">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_slave.c</label>
+        <link refid="ll__slave_8c"/>
+      </node>
+      <node id="5696">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/link_layer.c</label>
+        <link refid="link__layer_8c"/>
+      </node>
+      <node id="5694">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/h4_transport.h</label>
+        <link refid="h4_transport.h"/>
+        <childnode refid="5695" relation="include">
+        </childnode>
+        <childnode refid="5696" relation="include">
+        </childnode>
+        <childnode refid="5697" relation="include">
+        </childnode>
+        <childnode refid="5698" relation="include">
+        </childnode>
+        <childnode refid="5699" relation="include">
+        </childnode>
+        <childnode refid="5700" relation="include">
+        </childnode>
+        <childnode refid="5701" relation="include">
+        </childnode>
+        <childnode refid="5702" relation="include">
+        </childnode>
+        <childnode refid="5703" relation="include">
+        </childnode>
+        <childnode refid="5704" relation="include">
+        </childnode>
+        <childnode refid="5705" relation="include">
+        </childnode>
+        <childnode refid="5706" relation="include">
+        </childnode>
+        <childnode refid="5707" relation="include">
+        </childnode>
+      </node>
+      <node id="5698">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_data_extension.c</label>
+        <link refid="ll__data__extension_8c"/>
+      </node>
+      <node id="5697">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_adv.c</label>
+        <link refid="ll__adv_8c"/>
+      </node>
+      <node id="5701">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_master.c</label>
+        <link refid="ll__master_8c"/>
+      </node>
+      <node id="5707">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_scan.c</label>
+        <link refid="tws__ll__scan_8c"/>
+      </node>
+      <node id="5702">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_resolve_list.c</label>
+        <link refid="ll__resolve__list_8c"/>
+      </node>
+      <node id="5705">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_white_list.c</label>
+        <link refid="ll__white__list_8c"/>
+      </node>
+      <node id="5700">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_init.c</label>
+        <link refid="ll__init_8c"/>
+      </node>
+      <node id="5699">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_events.c</label>
+        <link refid="ll__events_8c"/>
+      </node>
+      <node id="5706">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/tws/tws_ll_adv.c</label>
+        <link refid="tws__ll__adv_8c"/>
+      </node>
+      <node id="5703">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_scan.c</label>
+        <link refid="ll__scan_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="h4__transport_8h_1af7fcb3a30e04bdac3674407b4f6c8200" prot="public" static="no">
+        <name>REGISTER_H4_HOST</name>
+        <param><defname>fn</defname></param>
+        <initializer>const <ref refid="h4__transport_8h_1abbacd7f219abaa72d1b425841fb3413d" kindref="member">h4_transport_t</ref> <ref refid="h4__transport_8h_1ae075f59c91e7f4effbcfbff64a1ce95a" kindref="member">__h4_packet_handler</ref> \
+			SEC(.h4_const) = fn</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/h4_transport.h" line="13" column="10" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/h4_transport.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="h4__transport_8h_1a169f25a14e8b99d235f85bab1ab36ca3" prot="public" static="no">
+        <name>REGISTER_H4_CONTROLLER</name>
+        <param><defname>fn</defname></param>
+        <initializer><ref refid="h4__transport_8h_1abbacd7f219abaa72d1b425841fb3413d" kindref="member">h4_transport_t</ref> <ref refid="h4__transport_8h_1a507167168d4f1e5d4d9d81becbe71b89" kindref="member">__h4_send_packet</ref> \
+			SEC(.h4_data) = fn</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/h4_transport.h" line="18" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/h4_transport.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="h4__transport_8h_1aa30b2257acdba51ef06f900a619954f8" prot="public" static="no">
+        <name>REGISTER_H4_CONTROLLER_FLOW_CONTROL</name>
+        <param><defname>fn</defname></param>
+        <initializer>const <ref refid="h4__transport_8h_1ae55ca13aeed5c9fdb530c65db0ac3472" kindref="member">h4_flow_control</ref> <ref refid="h4__transport_8h_1a231a3e8ef693e8ef69d7a21f14110c19" kindref="member">__h4_can_send_packet_now</ref> \
+			SEC(.h4_const) = fn</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/h4_transport.h" line="23" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/h4_transport.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="h4__transport_8h_1abbacd7f219abaa72d1b425841fb3413d" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* h4_transport_t) (int type, const u8 *packet, int size)</definition>
+        <argsstring>)(int type, const u8 *packet, int size)</argsstring>
+        <name>h4_transport_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/h4_transport.h" line="8" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/h4_transport.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="h4__transport_8h_1ae55ca13aeed5c9fdb530c65db0ac3472" prot="public" static="no">
+        <type>int(*</type>
+        <definition>typedef int(* h4_flow_control) (u8 packet_type)</definition>
+        <argsstring>)(u8 packet_type)</argsstring>
+        <name>h4_flow_control</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/h4_transport.h" line="10" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/h4_transport.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="h4__transport_8h_1a507167168d4f1e5d4d9d81becbe71b89" prot="public" static="no" mutable="no">
+        <type><ref refid="h4__transport_8h_1abbacd7f219abaa72d1b425841fb3413d" kindref="member">h4_transport_t</ref></type>
+        <definition>h4_transport_t __h4_send_packet</definition>
+        <argsstring></argsstring>
+        <name>__h4_send_packet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/h4_transport.h" line="28" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="h4__transport_8h_1ae075f59c91e7f4effbcfbff64a1ce95a" prot="public" static="no" mutable="no">
+        <type>const <ref refid="h4__transport_8h_1abbacd7f219abaa72d1b425841fb3413d" kindref="member">h4_transport_t</ref></type>
+        <definition>const h4_transport_t __h4_packet_handler</definition>
+        <argsstring></argsstring>
+        <name>__h4_packet_handler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/h4_transport.h" line="30" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="h4__transport_8h_1a231a3e8ef693e8ef69d7a21f14110c19" prot="public" static="no" mutable="no">
+        <type>const <ref refid="h4__transport_8h_1ae55ca13aeed5c9fdb530c65db0ac3472" kindref="member">h4_flow_control</ref></type>
+        <definition>const h4_flow_control __h4_can_send_packet_now</definition>
+        <argsstring></argsstring>
+        <name>__h4_can_send_packet_now</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/h4_transport.h" line="32" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>_H4_TRANSPORT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_H4_TRANSPORT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;typedef.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="h4__transport_8h_1abbacd7f219abaa72d1b425841fb3413d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*<ref refid="h4__transport_8h_1abbacd7f219abaa72d1b425841fb3413d" kindref="member">h4_transport_t</ref>)(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>type,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>*packet,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="h4__transport_8h_1ae55ca13aeed5c9fdb530c65db0ac3472" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int<sp/>(*<ref refid="h4__transport_8h_1ae55ca13aeed5c9fdb530c65db0ac3472" kindref="member">h4_flow_control</ref>)(u8<sp/>packet_type);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="h4__transport_8h_1af7fcb3a30e04bdac3674407b4f6c8200" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>REGISTER_H4_HOST(fn)<sp/>\</highlight></codeline>
+<codeline lineno="14"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>h4_transport_t<sp/>__h4_packet_handler<sp/>\</highlight></codeline>
+<codeline lineno="15"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SEC(.h4_const)<sp/>=<sp/>fn</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//dynamic</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="h4__transport_8h_1a169f25a14e8b99d235f85bab1ab36ca3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>REGISTER_H4_CONTROLLER(fn)<sp/>\</highlight></codeline>
+<codeline lineno="19"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>h4_transport_t<sp/>__h4_send_packet<sp/>\</highlight></codeline>
+<codeline lineno="20"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SEC(.h4_data)<sp/>=<sp/>fn</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="h4__transport_8h_1aa30b2257acdba51ef06f900a619954f8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>REGISTER_H4_CONTROLLER_FLOW_CONTROL(fn)<sp/>\</highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>const<sp/>h4_flow_control<sp/>__h4_can_send_packet_now<sp/>\</highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SEC(.h4_const)<sp/>=<sp/>fn</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="h4__transport_8h_1abbacd7f219abaa72d1b425841fb3413d" kindref="member">h4_transport_t</ref><sp/><ref refid="h4__transport_8h_1a507167168d4f1e5d4d9d81becbe71b89" kindref="member">__h4_send_packet</ref>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="h4__transport_8h_1abbacd7f219abaa72d1b425841fb3413d" kindref="member">h4_transport_t</ref><sp/><ref refid="h4__transport_8h_1ae075f59c91e7f4effbcfbff64a1ce95a" kindref="member">__h4_packet_handler</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="h4__transport_8h_1ae55ca13aeed5c9fdb530c65db0ac3472" kindref="member">h4_flow_control</ref><sp/><ref refid="h4__transport_8h_1a231a3e8ef693e8ef69d7a21f14110c19" kindref="member">__h4_can_send_packet_now</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/common/h4_transport.h"/>
+  </compounddef>
+</doxygen>

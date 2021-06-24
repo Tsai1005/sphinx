@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structll__msg__conn__param__nagative__reply__t" kind="struct" language="C++" prot="public">
+    <compoundname>ll_msg_conn_param_nagative_reply_t</compoundname>
+    <includes refid="llcp_8h" local="no">llcp.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structll__msg__conn__param__nagative__reply__t_1af5a8510305cf15a5b61db33e12aa8593" prot="public" static="no" mutable="no">
+        <type><ref refid="structll__msg__hdr__t" kindref="compound">ll_msg_hdr_t</ref></type>
+        <definition>ll_msg_hdr_t ll_msg_conn_param_nagative_reply_t::hdr</definition>
+        <argsstring></argsstring>
+        <name>hdr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="122" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__msg__conn__param__nagative__reply__t_1af5e93596749cafdff38e1f587d60a6ff" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_msg_conn_param_nagative_reply_t::reason</definition>
+        <argsstring></argsstring>
+        <name>reason</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="124" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1462">
+        <label>ll_msg_hdr_t</label>
+        <link refid="structll__msg__hdr__t"/>
+      </node>
+      <node id="1461">
+        <label>ll_msg_conn_param_nagative_reply_t</label>
+        <link refid="structll__msg__conn__param__nagative__reply__t"/>
+        <childnode refid="1462" relation="usage">
+          <edgelabel>hdr</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="121" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="121" bodyend="125"/>
+    <listofallmembers>
+      <member refid="structll__msg__conn__param__nagative__reply__t_1af5a8510305cf15a5b61db33e12aa8593" prot="public" virt="non-virtual"><scope>ll_msg_conn_param_nagative_reply_t</scope><name>hdr</name></member>
+      <member refid="structll__msg__conn__param__nagative__reply__t_1af5e93596749cafdff38e1f587d60a6ff" prot="public" virt="non-virtual"><scope>ll_msg_conn_param_nagative_reply_t</scope><name>reason</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

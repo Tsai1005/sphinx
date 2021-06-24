@@ -1,0 +1,234 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structle__bis__t" kind="struct" language="C++" prot="public">
+    <compoundname>le_bis_t</compoundname>
+    <includes refid="ll__bis_8h" local="no">ll_bis.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structle__bis__t_1a70873eae66f16c32c46c89dce5b1d6be" prot="public" static="no" mutable="no">
+        <type>struct list_head</type>
+        <definition>struct list_head le_bis_t::entry</definition>
+        <argsstring></argsstring>
+        <name>entry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>List entry </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="175" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__bis__t_1a034a24953b4c3e250ae77ac53a26ea33" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t le_bis_t::bisNum</definition>
+        <argsstring></argsstring>
+        <name>bisNum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>BIS positional sequence number. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="198" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__bis__t_1a370497e11e3e4dda7480b105795d6d80" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t le_bis_t::handle</definition>
+        <argsstring></argsstring>
+        <name>handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>BIS handle. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="199" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__bis__t_1a2741e2c7290825249901e18d3f808b63" prot="public" static="no" mutable="no">
+        <type><ref refid="structle__big__t" kindref="compound">le_big_t</ref> *</type>
+        <definition>le_big_t* le_bis_t::big</definition>
+        <argsstring></argsstring>
+        <name>big</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>BIG context. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="200" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__bis__t_1a8bcaa71c71d32ed5de4cc858a0a82711" prot="public" static="no" mutable="no">
+        <type>struct le_bis_t::@23</type>
+        <definition>struct le_bis_t::@23  le_bis_t::test</definition>
+        <argsstring></argsstring>
+        <name>test</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ISO Test data. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="219" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__bis__t_1a815a53b0c0b710d6663e842ed36731db" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__iso_8h_1ad4a7049340ee84c0b78deb08a375078e" kindref="member">LlIsoDataPath_t</ref></type>
+        <definition>LlIsoDataPath_t le_bis_t::path</definition>
+        <argsstring></argsstring>
+        <name>path</name>
+        <bitfield> 8</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Input audio data path. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="224" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__bis__t_1a737cefcc4f443225825e2d89f472b02c" prot="public" static="no" mutable="no">
+        <type><ref refid="ll__defines_8h_1aa7ad7b5c0167e18a1dd88b4f72431428" kindref="member">LlIsoLlid_t</ref></type>
+        <definition>LlIsoLlid_t le_bis_t::lastLlid</definition>
+        <argsstring></argsstring>
+        <name>lastLlid</name>
+        <bitfield> 8</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Last LLID. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="225" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__bis__t_1a0eada1c6e73515670025da2a67ae07dc" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t le_bis_t::crcErrPkt</definition>
+        <argsstring></argsstring>
+        <name>crcErrPkt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CRC error packets. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="228" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__bis__t_1a5c4444178bf73cfe0a0986f815c63335" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t le_bis_t::rxUnreceivedPkt</definition>
+        <argsstring></argsstring>
+        <name>rxUnreceivedPkt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Packets unreceived by flush point. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="229" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__bis__t_1a4e0cd64fec1a7c68780109284d5926b6" prot="public" static="no" mutable="no">
+        <type>atomic_t</type>
+        <definition>atomic_t le_bis_t::air_sent_iso_num</definition>
+        <argsstring></argsstring>
+        <name>air_sent_iso_num</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="231" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__bis__t_1a7d40ccbaa4c63f30b739c7c83036b354" prot="public" static="no" mutable="no">
+        <type><ref refid="structlctrIsoalRxCtx__t" kindref="compound">lctrIsoalRxCtx_t</ref></type>
+        <definition>lctrIsoalRxCtx_t le_bis_t::isoalRxCtx</definition>
+        <argsstring></argsstring>
+        <name>isoalRxCtx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Partial receive context. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="233" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__bis__t_1a726c659a4bc7d13aabfc303f310331c0" prot="public" static="no" mutable="no">
+        <type><ref refid="structlctrInDataPathCtx__t" kindref="compound">lctrInDataPathCtx_t</ref></type>
+        <definition>lctrInDataPathCtx_t le_bis_t::dataPathInCtx</definition>
+        <argsstring></argsstring>
+        <name>dataPathInCtx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Input data path config. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="236" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__bis__t_1acfb9e9c87a96684b2e169835b23a9143" prot="public" static="no" mutable="no">
+        <type><ref refid="structlctrOutDataPathCtx__t" kindref="compound">lctrOutDataPathCtx_t</ref></type>
+        <definition>lctrOutDataPathCtx_t le_bis_t::dataPathOutCtx</definition>
+        <argsstring></argsstring>
+        <name>dataPathOutCtx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Output data path context. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="237" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Broadcast Isochronous Stream (BIS) context. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1199">
+        <label>le_bis_t</label>
+        <link refid="structle__bis__t"/>
+        <childnode refid="1200" relation="usage">
+          <edgelabel>isoalRxCtx</edgelabel>
+        </childnode>
+        <childnode refid="1201" relation="usage">
+          <edgelabel>dataPathOutCtx</edgelabel>
+        </childnode>
+        <childnode refid="1202" relation="usage">
+          <edgelabel>dataPathInCtx</edgelabel>
+        </childnode>
+        <childnode refid="1203" relation="usage">
+          <edgelabel>big</edgelabel>
+        </childnode>
+      </node>
+      <node id="1200">
+        <label>lctrIsoalRxCtx_t</label>
+        <link refid="structlctrIsoalRxCtx__t"/>
+      </node>
+      <node id="1202">
+        <label>lctrInDataPathCtx_t</label>
+        <link refid="structlctrInDataPathCtx__t"/>
+      </node>
+      <node id="1201">
+        <label>lctrOutDataPathCtx_t</label>
+        <link refid="structlctrOutDataPathCtx__t"/>
+      </node>
+      <node id="1203">
+        <label>le_big_t</label>
+        <link refid="structle__big__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" line="194" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_bis.h" bodystart="194" bodyend="238"/>
+    <listofallmembers>
+      <member refid="structle__bis__t_1a4e0cd64fec1a7c68780109284d5926b6" prot="public" virt="non-virtual"><scope>le_bis_t</scope><name>air_sent_iso_num</name></member>
+      <member refid="structle__bis__t_1a2741e2c7290825249901e18d3f808b63" prot="public" virt="non-virtual"><scope>le_bis_t</scope><name>big</name></member>
+      <member refid="structle__bis__t_1a034a24953b4c3e250ae77ac53a26ea33" prot="public" virt="non-virtual"><scope>le_bis_t</scope><name>bisNum</name></member>
+      <member refid="structle__bis__t_1a0eada1c6e73515670025da2a67ae07dc" prot="public" virt="non-virtual"><scope>le_bis_t</scope><name>crcErrPkt</name></member>
+      <member refid="structle__bis__t_1a726c659a4bc7d13aabfc303f310331c0" prot="public" virt="non-virtual"><scope>le_bis_t</scope><name>dataPathInCtx</name></member>
+      <member refid="structle__bis__t_1acfb9e9c87a96684b2e169835b23a9143" prot="public" virt="non-virtual"><scope>le_bis_t</scope><name>dataPathOutCtx</name></member>
+      <member refid="structle__bis__t_1a70873eae66f16c32c46c89dce5b1d6be" prot="public" virt="non-virtual"><scope>le_bis_t</scope><name>entry</name></member>
+      <member refid="structle__bis__t_1a370497e11e3e4dda7480b105795d6d80" prot="public" virt="non-virtual"><scope>le_bis_t</scope><name>handle</name></member>
+      <member refid="structle__bis__t_1a7d40ccbaa4c63f30b739c7c83036b354" prot="public" virt="non-virtual"><scope>le_bis_t</scope><name>isoalRxCtx</name></member>
+      <member refid="structle__bis__t_1a737cefcc4f443225825e2d89f472b02c" prot="public" virt="non-virtual"><scope>le_bis_t</scope><name>lastLlid</name></member>
+      <member refid="structle__bis__t_1a815a53b0c0b710d6663e842ed36731db" prot="public" virt="non-virtual"><scope>le_bis_t</scope><name>path</name></member>
+      <member refid="structle__bis__t_1a5c4444178bf73cfe0a0986f815c63335" prot="public" virt="non-virtual"><scope>le_bis_t</scope><name>rxUnreceivedPkt</name></member>
+      <member refid="structle__bis__t_1a8bcaa71c71d32ed5de4cc858a0a82711" prot="public" virt="non-virtual"><scope>le_bis_t</scope><name>test</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

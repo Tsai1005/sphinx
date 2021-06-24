@@ -1,0 +1,528 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="ll__multiple__phys_8c" kind="file" language="C++">
+    <compoundname>ll_multiple_phys.c</compoundname>
+    <includes local="yes">sfr.h</includes>
+    <includes refid="link__layer_8h" local="yes">ble/link_layer.h</includes>
+    <includes local="yes">RF_ble.h</includes>
+    <includes local="yes">btcontroller_util.h</includes>
+    <includes local="yes">hci_controller.h</includes>
+    <includes local="yes">common/debug.h</includes>
+    <incdepgraph>
+      <node id="3665">
+        <label>os/os_type.h</label>
+      </node>
+      <node id="3661">
+        <label>common/atomic.h</label>
+      </node>
+      <node id="3675">
+        <label>common/lbuf.h</label>
+      </node>
+      <node id="3658">
+        <label>common/list.h</label>
+      </node>
+      <node id="3664">
+        <label>common/thread.h</label>
+      </node>
+      <node id="3667">
+        <label>ble/ll_adv.h</label>
+        <link refid="ll__adv_8h"/>
+        <childnode refid="3659" relation="include">
+        </childnode>
+      </node>
+      <node id="3655">
+        <label>sfr.h</label>
+      </node>
+      <node id="3683">
+        <label>common/debug.h</label>
+      </node>
+      <node id="3681">
+        <label>btcontroller_util.h</label>
+      </node>
+      <node id="3669">
+        <label>ble/ll_init.h</label>
+        <link refid="ll__init_8h"/>
+        <childnode refid="3659" relation="include">
+        </childnode>
+      </node>
+      <node id="3671">
+        <label>data_extension.h</label>
+        <link refid="data__extension_8h"/>
+        <childnode refid="3657" relation="include">
+        </childnode>
+      </node>
+      <node id="3674">
+        <label>ble/ll_iso.h</label>
+        <link refid="ll__iso_8h"/>
+        <childnode refid="3662" relation="include">
+        </childnode>
+        <childnode refid="3675" relation="include">
+        </childnode>
+        <childnode refid="3664" relation="include">
+        </childnode>
+      </node>
+      <node id="3680">
+        <label>RF_ble.h</label>
+      </node>
+      <node id="3657">
+        <label>typedef.h</label>
+      </node>
+      <node id="3663">
+        <label>white_list.h</label>
+        <link refid="white__list_8h"/>
+        <childnode refid="3657" relation="include">
+        </childnode>
+      </node>
+      <node id="3677">
+        <label>audio_codec.h</label>
+        <link refid="audio__codec_8h"/>
+        <childnode refid="3662" relation="include">
+        </childnode>
+      </node>
+      <node id="3668">
+        <label>ble/ll_scan.h</label>
+        <link refid="ll__scan_8h"/>
+        <childnode refid="3659" relation="include">
+        </childnode>
+      </node>
+      <node id="3666">
+        <label>ble/llcp.h</label>
+        <link refid="llcp_8h"/>
+        <childnode refid="3657" relation="include">
+        </childnode>
+        <childnode refid="3662" relation="include">
+        </childnode>
+      </node>
+      <node id="3672">
+        <label>multiple_phys.h</label>
+        <link refid="multiple__phys_8h"/>
+        <childnode refid="3657" relation="include">
+        </childnode>
+      </node>
+      <node id="3670">
+        <label>resolve_list.h</label>
+        <link refid="resolve__list_8h"/>
+        <childnode refid="3657" relation="include">
+        </childnode>
+      </node>
+      <node id="3659">
+        <label>ble_interface.h</label>
+      </node>
+      <node id="3673">
+        <label>ble/ll_cte.h</label>
+        <link refid="ll__cte_8h"/>
+        <childnode refid="3662" relation="include">
+        </childnode>
+      </node>
+      <node id="3682">
+        <label>hci_controller.h</label>
+      </node>
+      <node id="3660">
+        <label>common/sys_timer.h</label>
+      </node>
+      <node id="3656">
+        <label>ble/link_layer.h</label>
+        <link refid="link__layer_8h"/>
+        <childnode refid="3657" relation="include">
+        </childnode>
+        <childnode refid="3658" relation="include">
+        </childnode>
+        <childnode refid="3659" relation="include">
+        </childnode>
+        <childnode refid="3660" relation="include">
+        </childnode>
+        <childnode refid="3661" relation="include">
+        </childnode>
+        <childnode refid="3662" relation="include">
+        </childnode>
+        <childnode refid="3663" relation="include">
+        </childnode>
+        <childnode refid="3664" relation="include">
+        </childnode>
+        <childnode refid="3665" relation="include">
+        </childnode>
+        <childnode refid="3666" relation="include">
+        </childnode>
+        <childnode refid="3667" relation="include">
+        </childnode>
+        <childnode refid="3668" relation="include">
+        </childnode>
+        <childnode refid="3669" relation="include">
+        </childnode>
+        <childnode refid="3670" relation="include">
+        </childnode>
+        <childnode refid="3671" relation="include">
+        </childnode>
+        <childnode refid="3672" relation="include">
+        </childnode>
+        <childnode refid="3673" relation="include">
+        </childnode>
+        <childnode refid="3674" relation="include">
+        </childnode>
+        <childnode refid="3676" relation="include">
+        </childnode>
+        <childnode refid="3678" relation="include">
+        </childnode>
+        <childnode refid="3679" relation="include">
+        </childnode>
+      </node>
+      <node id="3662">
+        <label>ll_defines.h</label>
+        <link refid="ll__defines_8h"/>
+        <childnode refid="3657" relation="include">
+        </childnode>
+      </node>
+      <node id="3678">
+        <label>ble/ll_cis.h</label>
+        <link refid="ll__cis_8h"/>
+        <childnode refid="3674" relation="include">
+        </childnode>
+        <childnode refid="3656" relation="include">
+        </childnode>
+      </node>
+      <node id="3676">
+        <label>ble/ll_bis.h</label>
+        <link refid="ll__bis_8h"/>
+        <childnode refid="3674" relation="include">
+        </childnode>
+        <childnode refid="3677" relation="include">
+        </childnode>
+      </node>
+      <node id="3654">
+        <label>/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_multiple_phys.c</label>
+        <link refid="ll_multiple_phys.c"/>
+        <childnode refid="3655" relation="include">
+        </childnode>
+        <childnode refid="3656" relation="include">
+        </childnode>
+        <childnode refid="3680" relation="include">
+        </childnode>
+        <childnode refid="3681" relation="include">
+        </childnode>
+        <childnode refid="3682" relation="include">
+        </childnode>
+        <childnode refid="3683" relation="include">
+        </childnode>
+      </node>
+      <node id="3679">
+        <label>ble/ll_pc.h</label>
+        <link refid="ll__pc_8h"/>
+        <childnode refid="3662" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="ll__multiple__phys_8c_1a6c6991cba0e2995d7d9aec73e0324317" prot="public" static="no">
+        <name>LOG_TAG_CONST</name>
+        <initializer>LL_PHY</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_multiple_phys.c" line="7" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_multiple_phys.c" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__multiple__phys_8c_1a7ce0df38eb467e59f209470c8f5ac4e6" prot="public" static="no">
+        <name>LOG_TAG</name>
+        <initializer>&quot;[LL-PHY]&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_multiple_phys.c" line="8" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_multiple_phys.c" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__multiple__phys_8c_1a9eeb6e067100d0dec6e53bce19a403e0" prot="public" static="no">
+        <name>LOG_ERROR_ENABLE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_multiple_phys.c" line="9" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_multiple_phys.c" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__multiple__phys_8c_1a69321c8a2a0b07a07fb5088e82e25eb0" prot="public" static="no">
+        <name>LOG_INFO_ENABLE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_multiple_phys.c" line="10" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_multiple_phys.c" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__multiple__phys_8c_1a04135f631fe91199f05b1d816dda8756" prot="public" static="no">
+        <name>LOG_DUMP_ENABLE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_multiple_phys.c" line="11" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_multiple_phys.c" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__multiple__phys_8c_1a163fc974f6617f7f5c44dec8f5390964" prot="public" static="no">
+        <name>AT_BLE5_LL_CODE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_multiple_phys.c" line="21" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_multiple_phys.c" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ll__multiple__phys_8c_1a533eccbb5f4284123f0ba67115b0a883" prot="public" static="no">
+        <name>AT_BLE5_LL_PROBE_CODE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_multiple_phys.c" line="22" column="9" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_multiple_phys.c" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;sfr.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="link__layer_8h" kindref="compound">ble/link_layer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;RF_ble.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;btcontroller_util.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;hci_controller.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_TAG_CONST<sp/><sp/><sp/><sp/><sp/><sp/><sp/>LL_PHY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_TAG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;[LL-PHY]&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_ERROR_ENABLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_INFO_ENABLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_DUMP_ENABLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;common/debug.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>SUPPORT_MS_EXTENSIONS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>bss_seg(&quot;.ble_ll_bss&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>data_seg(&quot;.ble_ll_data&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>const_seg(&quot;.ble_ll_const&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>code_seg(&quot;.ble_ll_code&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AT_BLE5_LL_CODE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AT_BLE5_LL_PROBE_CODE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>BLUETOOTH_5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">/*************************************************************************************************/</highlight></codeline>
+<codeline lineno="35"><highlight class="comment">/*************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><ref refid="ll__defines_8h_1a3e11e866bc6d82a804a0ee4740a3a470" kindref="member">bool_t</ref><sp/><ref refid="multiple__phys_8h_1a679ab4ff7ea5b29cfae47a4ce4b8c06f" kindref="member">llValidatePhySupport</ref>(uint8_t<sp/>txPhys,<sp/>uint8_t<sp/>rxPhys)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(LE_FEATURES_IS_SUPPORT(LE_2M_PHY)<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((txPhys<sp/>&amp;<sp/><ref refid="ll__defines_8h_1a7cc2e4244ca368f68e5746185eda6c4aa25024a9ce5959259eaa62b41b9f91936" kindref="member">LL_PHYS_LE_2M_BIT</ref>)<sp/>||<sp/>(rxPhys<sp/>&amp;<sp/>LL_PHYS_LE_2M_BIT))<sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>FALSE;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(LE_FEATURES_IS_SUPPORT(LE_CODED_PHY)<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((txPhys<sp/>&amp;<sp/><ref refid="ll__defines_8h_1a7cc2e4244ca368f68e5746185eda6c4aaef9c39a2812cdb95f9bc7ac9aa2706e5" kindref="member">LL_PHYS_LE_CODED_BIT</ref>)<sp/>||<sp/>(rxPhys<sp/>&amp;<sp/>LL_PHYS_LE_CODED_BIT))<sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>FALSE;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>TRUE;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">/*************************************************************************************************/</highlight></codeline>
+<codeline lineno="64"><highlight class="comment">/*************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal">uint8_t<sp/><ref refid="multiple__phys_8h_1aa6ae64d339cc4c87d176738fc3005631" kindref="member">llValidatePhyPreferences</ref>(uint8_t<sp/>allPhys,<sp/>uint8_t<sp/>txPhys,<sp/>uint8_t<sp/>rxPhys,<sp/>uint16_t<sp/>phyOptions)</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>allPhysMask<sp/>=<sp/><ref refid="ll__defines_8h_1aedcf2109f459315e1a7f2af73ec9b603a14968c136935900bfea3eeedb6a946b3" kindref="member">LL_ALL_PHY_TX_PREFERENCE_BIT</ref><sp/>|<sp/><ref refid="ll__defines_8h_1aedcf2109f459315e1a7f2af73ec9b603a0d5a4fa701643e4e52fd7684fd6bc657" kindref="member">LL_ALL_PHY_RX_PREFERENCE_BIT</ref>;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>phyMask<sp/>=<sp/><ref refid="ll__defines_8h_1a7cc2e4244ca368f68e5746185eda6c4aa7f767a88f56fc7669b5e2604ceed1637" kindref="member">LL_PHYS_LE_1M_BIT</ref><sp/>|<sp/>LL_PHYS_LE_2M_BIT<sp/>|<sp/><ref refid="ll__defines_8h_1a7cc2e4244ca368f68e5746185eda6c4aaef9c39a2812cdb95f9bc7ac9aa2706e5" kindref="member">LL_PHYS_LE_CODED_BIT</ref>;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(((allPhys<sp/>&amp;<sp/>~allPhysMask))<sp/>||<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>no<sp/>unknown<sp/>all<sp/>PHYs<sp/>preferences<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((txPhys<sp/>&amp;<sp/>~phyMask))<sp/>||<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>no<sp/>unknown<sp/>Tx<sp/>PHYs<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((rxPhys<sp/>&amp;<sp/>~phyMask))<sp/>||<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>no<sp/>unknown<sp/>Rx<sp/>PHYs<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(phyOptions<sp/>&gt;<sp/><ref refid="ll__defines_8h_1a900dca9b26de42491763226e12dcd47baa61f4cd46e7f508fb15ed3c7ac48a890" kindref="member">LL_PHY_OPTIONS_S8_PREFERRED</ref>))<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>no<sp/>unknown<sp/>PHY<sp/>options<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Error<sp/>code<sp/>is<sp/>unsupported<sp/>feature<sp/>because<sp/>RFU<sp/>bits<sp/>of<sp/>the<sp/>parameters<sp/>are<sp/>considered<sp/>as<sp/>valid.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>UNSUPPORTED_FEATURE_OR_PARAMETER_VALUE;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((<ref refid="link__layer_8h_1ab7e9bfcb19c14e08cc44006d32ed8881" kindref="member">LL_PHY_SYMMETRIC_ENABLE</ref>)<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(allPhys<sp/>==<sp/><ref refid="ll__defines_8h_1aedcf2109f459315e1a7f2af73ec9b603a5f12811fd3672f4c1d23c8c156b7f954" kindref="member">LL_ALL_PHY_ALL_PREFERENCES</ref>)<sp/>&amp;&amp;<sp/>(txPhys<sp/>!=<sp/>rxPhys))<sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>UNSUPPORTED_FEATURE_OR_PARAMETER_VALUE;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((((allPhys<sp/>&amp;<sp/><ref refid="ll__defines_8h_1aedcf2109f459315e1a7f2af73ec9b603a14968c136935900bfea3eeedb6a946b3" kindref="member">LL_ALL_PHY_TX_PREFERENCE_BIT</ref>)<sp/>==<sp/>0)<sp/>&amp;&amp;<sp/>(txPhys<sp/>==<sp/>0))<sp/>||<sp/><sp/></highlight><highlight class="comment">/*<sp/>at<sp/>least<sp/>one<sp/>Tx<sp/>PHY<sp/>if<sp/>preference<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(((allPhys<sp/>&amp;<sp/><ref refid="ll__defines_8h_1aedcf2109f459315e1a7f2af73ec9b603a0d5a4fa701643e4e52fd7684fd6bc657" kindref="member">LL_ALL_PHY_RX_PREFERENCE_BIT</ref>)<sp/>==<sp/>0)<sp/>&amp;&amp;<sp/>(rxPhys<sp/>==<sp/>0)))<sp/>{<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>at<sp/>least<sp/>one<sp/>Rx<sp/>PHY<sp/>if<sp/>preference<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>INVALID_HCI_COMMAND_PARAMETERS;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>SUCCESS;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="comment">/*************************************************************************************************/</highlight></codeline>
+<codeline lineno="95"><highlight class="comment">/*************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal">uint8_t<sp/><ref refid="multiple__phys_8h_1a1044f83e19d390c1209eb002b869240e" kindref="member">ll_get_preferred_phy</ref>(uint8_t<sp/>phys)</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Note:<sp/>A<sp/>different<sp/>scheme<sp/>for<sp/>prioritizing<sp/>PHYs<sp/>could<sp/>be<sp/>offered.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((phys<sp/>&amp;<sp/>LL_PHYS_LE_2M_BIT))<sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="ll__defines_8h_1a7cc2e4244ca368f68e5746185eda6c4aa25024a9ce5959259eaa62b41b9f91936" kindref="member">LL_PHYS_LE_2M_BIT</ref>;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((phys<sp/>&amp;<sp/><ref refid="ll__defines_8h_1a7cc2e4244ca368f68e5746185eda6c4aa7f767a88f56fc7669b5e2604ceed1637" kindref="member">LL_PHYS_LE_1M_BIT</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="ll__defines_8h_1a7cc2e4244ca368f68e5746185eda6c4aa7f767a88f56fc7669b5e2604ceed1637" kindref="member">LL_PHYS_LE_1M_BIT</ref>;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((phys<sp/>&amp;<sp/><ref refid="ll__defines_8h_1a7cc2e4244ca368f68e5746185eda6c4aaef9c39a2812cdb95f9bc7ac9aa2706e5" kindref="member">LL_PHYS_LE_CODED_BIT</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="ll__defines_8h_1a7cc2e4244ca368f68e5746185eda6c4aaef9c39a2812cdb95f9bc7ac9aa2706e5" kindref="member">LL_PHYS_LE_CODED_BIT</ref>;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="ll__defines_8h_1a7cc2e4244ca368f68e5746185eda6c4aa166d280c1ab1923e06a800687318c46f" kindref="member">LL_PHYS_NONE</ref>;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="115"><highlight class="comment"><sp/>*-------------------<sp/><sp/><sp/>Common<sp/>process</highlight></codeline>
+<codeline lineno="116"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><ref refid="ll__multiple__phys_8c_1a533eccbb5f4284123f0ba67115b0a883" kindref="member">AT_BLE5_LL_PROBE_CODE</ref></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="link__layer_8h_1af15c5d82ce2ba25a0555901d3467ff80" kindref="member">__reset_CodedPHY_conn_winsize</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structle__link" kindref="compound">le_link</ref><sp/>*link)</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>LE_FEATURES_IS_SUPPORT_OPTIMIZE(LE_EXTENDED_ADVERTISING);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>LE_FEATURES_IS_SUPPORT_OPTIMIZE(LE_CODED_PHY);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structle__link_1ab4c6e85731c6d157f42e03ca9d0cde67" kindref="member">rx_phy</ref><sp/>=<sp/>LE_1M_UNCODED_PHY;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>__ble5_ops-&gt;ext_ioctrl(link-&gt;<ref refid="structle__link_1aa5f51601aa9fec985c79140bbc6cc139" kindref="member">hw</ref>,<sp/>BLE_GET_PHY,<sp/>NULL,<sp/>&amp;rx_phy);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(rx_phy<sp/>!=<sp/>LE_1M_CODED_PHY)<sp/>{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="link__layer_8h_1ae10f97c34c30ab4d52daa0108608dd2b" kindref="member">ROLE_IS_SLAVE</ref>(link))<sp/>{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__ble_ops-&gt;ioctrl(link-&gt;<ref refid="structle__link_1aa5f51601aa9fec985c79140bbc6cc139" kindref="member">hw</ref>,<sp/>BLE_SET_WINSIZE,<sp/>520,<sp/>link-&gt;<ref refid="structle__link_1ab37919366a48faa1b5e84c8b141cd189" kindref="member">ll_data</ref>.widening<sp/>*<sp/>2<sp/>+<sp/>200);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{<sp/></highlight><highlight class="comment">//master</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__ble_ops-&gt;ioctrl(link-&gt;<ref refid="structle__link_1aa5f51601aa9fec985c79140bbc6cc139" kindref="member">hw</ref>,<sp/>BLE_SET_WINSIZE,<sp/>390,<sp/>0);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><ref refid="ll__multiple__phys_8c_1a163fc974f6617f7f5c44dec8f5390964" kindref="member">AT_BLE5_LL_CODE</ref></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="multiple__phys_8h_1a7de192dcfe9580576ef623f231a4ac66" kindref="member">ll_default_phys_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="141"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>LE_FEATURES_IS_SUPPORT_OPTIMIZE((LE_2M_PHY<sp/>|<sp/>LE_CODED_PHY));</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="hci__ll__cmds_8c_1ae306cbc8d57487606be6ee2a0740747f" kindref="member">ext_le_param</ref>.<ref refid="structext__le__parameter_1adf8d5682d8726a685a1d790adefb30ae" kindref="member">default_prefers_phys</ref>.<ref refid="struct____default__prefers__phys_1a30cdb2bc6e0e27319fc97ce68f022530" kindref="member">tx_phys</ref><sp/>=<sp/>BIT(LE_1M_UNCODED_PHY);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="hci__ll__cmds_8c_1ae306cbc8d57487606be6ee2a0740747f" kindref="member">ext_le_param</ref>.<ref refid="structext__le__parameter_1adf8d5682d8726a685a1d790adefb30ae" kindref="member">default_prefers_phys</ref>.<ref refid="struct____default__prefers__phys_1a57a3b334f4826a18a7295dfb2b3c57dd" kindref="member">rx_phys</ref><sp/>=<sp/>BIT(LE_1M_UNCODED_PHY);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(LE_FEATURES_IS_SUPPORT(LE_2M_PHY))<sp/>{</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="hci__ll__cmds_8c_1ae306cbc8d57487606be6ee2a0740747f" kindref="member">ext_le_param</ref>.<ref refid="structext__le__parameter_1adf8d5682d8726a685a1d790adefb30ae" kindref="member">default_prefers_phys</ref>.<ref refid="struct____default__prefers__phys_1a30cdb2bc6e0e27319fc97ce68f022530" kindref="member">tx_phys</ref><sp/>|=<sp/>BIT(LE_2M_UNCODED_PHY);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="hci__ll__cmds_8c_1ae306cbc8d57487606be6ee2a0740747f" kindref="member">ext_le_param</ref>.<ref refid="structext__le__parameter_1adf8d5682d8726a685a1d790adefb30ae" kindref="member">default_prefers_phys</ref>.<ref refid="struct____default__prefers__phys_1a57a3b334f4826a18a7295dfb2b3c57dd" kindref="member">rx_phys</ref><sp/>|=<sp/>BIT(LE_2M_UNCODED_PHY);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(LE_FEATURES_IS_SUPPORT(LE_CODED_PHY))<sp/>{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="hci__ll__cmds_8c_1ae306cbc8d57487606be6ee2a0740747f" kindref="member">ext_le_param</ref>.<ref refid="structext__le__parameter_1adf8d5682d8726a685a1d790adefb30ae" kindref="member">default_prefers_phys</ref>.<ref refid="struct____default__prefers__phys_1a30cdb2bc6e0e27319fc97ce68f022530" kindref="member">tx_phys</ref><sp/>|=<sp/>BIT(LE_1M_CODED_PHY);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="hci__ll__cmds_8c_1ae306cbc8d57487606be6ee2a0740747f" kindref="member">ext_le_param</ref>.<ref refid="structext__le__parameter_1adf8d5682d8726a685a1d790adefb30ae" kindref="member">default_prefers_phys</ref>.<ref refid="struct____default__prefers__phys_1a57a3b334f4826a18a7295dfb2b3c57dd" kindref="member">rx_phys</ref><sp/>|=<sp/>BIT(LE_1M_CODED_PHY);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><ref refid="ll__multiple__phys_8c_1a163fc974f6617f7f5c44dec8f5390964" kindref="member">AT_BLE5_LL_CODE</ref></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="multiple__phys_8h_1a87d833652deef90deef918d5cb159c68" kindref="member">ll_read_phy</ref>(uint16_t<sp/>connection_handle,<sp/>uint8_t<sp/>*<ref refid="structle__link_1a3dbd4c799d08675a606da2a5f7e70acb" kindref="member">tx_phy</ref>,<sp/>uint8_t<sp/>*rx_phy)</highlight></codeline>
+<codeline lineno="160"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structle__link" kindref="compound">le_link</ref><sp/>*link<sp/>=<sp/><ref refid="link__layer_8c_1ad0cf3cf97fdaf769c891098d100efedc" kindref="member">ll_link_for_handle</ref>(connection_handle);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(link<sp/>==<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_error(</highlight><highlight class="stringliteral">&quot;UNKNOWN_CONNECTION_IDENTIFIER&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>UNKNOWN_CONNECTION_IDENTIFIER;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>__ble5_ops-&gt;ext_ioctrl(link-&gt;<ref refid="structle__link_1aa5f51601aa9fec985c79140bbc6cc139" kindref="member">hw</ref>,<sp/>BLE_GET_PHY,<sp/>tx_phy,<sp/>rx_phy);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>SUCCESS;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint8_t<sp/>le_set_default_phy(uint8_t<sp/><ref refid="structle__link_1a3ff09b17080dd2b967c5fdcfb6032e41" kindref="member">all_phys</ref>,<sp/>uint8_t<sp/>tx_phys,<sp/>uint8_t<sp/>rx_phys)</highlight></codeline>
+<codeline lineno="175"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>status;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="multiple__phys_8h_1a679ab4ff7ea5b29cfae47a4ce4b8c06f" kindref="member">llValidatePhySupport</ref>(tx_phys,<sp/>rx_phys)<sp/>==<sp/>FALSE)<sp/>{</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>UNSUPPORTED_FEATURE_OR_PARAMETER_VALUE;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(LE_PARAM_IS_CHECK())<sp/>{</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status<sp/>=<sp/><ref refid="multiple__phys_8h_1aa6ae64d339cc4c87d176738fc3005631" kindref="member">llValidatePhyPreferences</ref>(all_phys,<sp/>tx_phys,<sp/>rx_phys,<sp/><ref refid="ll__defines_8h_1a900dca9b26de42491763226e12dcd47ba980fa1febb2fef572d8500322b703d02" kindref="member">LL_PHY_OPTIONS_NONE</ref>);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(status<sp/>!=<sp/>SUCCESS)<sp/>{</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>status;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Discard<sp/>Tx<sp/>or<sp/>Rx<sp/>PHYs<sp/>value<sp/>without<sp/>preference.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((all_phys<sp/>&amp;<sp/>LL_ALL_PHY_TX_PREFERENCE_BIT))<sp/>{</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tx_phys<sp/>=<sp/><ref refid="ll__defines_8h_1a7cc2e4244ca368f68e5746185eda6c4aa166d280c1ab1923e06a800687318c46f" kindref="member">LL_PHYS_NONE</ref>;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((all_phys<sp/>&amp;<sp/>LL_ALL_PHY_RX_PREFERENCE_BIT))<sp/>{</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rx_phys<sp/>=<sp/><ref refid="ll__defines_8h_1a7cc2e4244ca368f68e5746185eda6c4aa166d280c1ab1923e06a800687318c46f" kindref="member">LL_PHYS_NONE</ref>;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="hci__ll__cmds_8c_1ae306cbc8d57487606be6ee2a0740747f" kindref="member">ext_le_param</ref>.<ref refid="structext__le__parameter_1adf8d5682d8726a685a1d790adefb30ae" kindref="member">default_prefers_phys</ref>.<ref refid="struct____default__prefers__phys_1a30cdb2bc6e0e27319fc97ce68f022530" kindref="member">tx_phys</ref><sp/>=<sp/>tx_phys;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="hci__ll__cmds_8c_1ae306cbc8d57487606be6ee2a0740747f" kindref="member">ext_le_param</ref>.<ref refid="structext__le__parameter_1adf8d5682d8726a685a1d790adefb30ae" kindref="member">default_prefers_phys</ref>.<ref refid="struct____default__prefers__phys_1a57a3b334f4826a18a7295dfb2b3c57dd" kindref="member">rx_phys</ref><sp/>=<sp/>rx_phys;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>SUCCESS;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="multiple__phys_8h_1a63c635abc2ff7fbd335c2b69356e637a" kindref="member">le_cmd_set_phy</ref>(u16<sp/>opcode,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>*data,<sp/>u32<sp/>size)</highlight></codeline>
+<codeline lineno="204"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>match<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ocf<sp/>=<sp/>opcode<sp/>&amp;<sp/>0x3ff;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>status;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(ocf)<sp/>{</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>HCI_LE_READ_PHY:</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_info(</highlight><highlight class="stringliteral">&quot;HCI_LE_READ_PHY\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structle__link_1a6843fe2a32b8f30d12019f50f0363a91" kindref="member">handle</ref><sp/>=<sp/>READ_CONNECTION_HANDLE(data);</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structle__link_1a3dbd4c799d08675a606da2a5f7e70acb" kindref="member">tx_phy</ref>,<sp/><ref refid="structle__link_1ab4c6e85731c6d157f42e03ca9d0cde67" kindref="member">rx_phy</ref>;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status<sp/>=<sp/><ref refid="multiple__phys_8h_1a87d833652deef90deef918d5cb159c68" kindref="member">ll_read_phy</ref>(handle,<sp/>&amp;tx_phy,<sp/>&amp;rx_phy);</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__hci_emit_event_of_cmd_complete(opcode,<sp/></highlight><highlight class="stringliteral">&quot;1211&quot;</highlight><highlight class="normal">,<sp/>status,</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>handle,<sp/>\</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tx_phy<sp/>+<sp/>1,</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rx_phy<sp/>+<sp/>1);</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>HCI_LE_SET_DEFAULT_PHY:</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_info(</highlight><highlight class="stringliteral">&quot;HCI_LE_SET_DEFAULT_PHY\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status<sp/>=<sp/>le_set_default_phy(data[0],<sp/>data[1],<sp/>data[2]);</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__hci_emit_event_of_cmd_complete(opcode,<sp/></highlight><highlight class="stringliteral">&quot;1&quot;</highlight><highlight class="normal">,<sp/>0);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>HCI_LE_SET_PHY:</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_info(</highlight><highlight class="stringliteral">&quot;HCI_LE_SET_PHY\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status<sp/>=<sp/><ref refid="llcp__sm__phy__update_8c_1a458cb172707525deb7d0601610376046" kindref="member">ll_set_phy_update</ref>(data);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__hci_emit_event_of_cmd_status(opcode,<sp/>status);</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>match<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>match;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>***************************************************************************/</highlight></codeline>
+<codeline lineno="246"><highlight class="comment">/*<sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="link__layer_8h_1ae256d8c6819101ce2cc49f9a7f5872ad" kindref="member">link_phy_init</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structle__link" kindref="compound">le_link</ref><sp/>*link)</highlight></codeline>
+<codeline lineno="248"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>default<sp/>phys<sp/>decided<sp/>by<sp/>Controller<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/>link-&gt;<ref refid="structle__link_1a3ff09b17080dd2b967c5fdcfb6032e41" kindref="member">all_phys</ref><sp/>=<sp/>LL_ALL_PHY_RX_PREFERENCE_BIT<sp/>|<sp/><ref refid="ll__defines_8h_1aedcf2109f459315e1a7f2af73ec9b603a14968c136935900bfea3eeedb6a946b3" kindref="member">LL_ALL_PHY_TX_PREFERENCE_BIT</ref>;</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/>link-&gt;<ref refid="structle__link_1a49c1c3eef1a18ed6ecd7b183885acf40" kindref="member">prefer_tx_phys</ref><sp/>=<sp/><ref refid="ll__defines_8h_1a7cc2e4244ca368f68e5746185eda6c4aa166d280c1ab1923e06a800687318c46f" kindref="member">LL_PHYS_NONE</ref>;</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/>link-&gt;<ref refid="structle__link_1a6b8e2fcdfeccece4048b46d3fa31407d" kindref="member">prefer_rx_phys</ref><sp/>=<sp/><ref refid="ll__defines_8h_1a7cc2e4244ca368f68e5746185eda6c4aa166d280c1ab1923e06a800687318c46f" kindref="member">LL_PHYS_NONE</ref>;</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="llcp__sm__phy__update_8c_1af6bbb9e33c33f0fda510c169d5aa7d46" kindref="member">ll_get_current_phy</ref>(link,<sp/>&amp;link-&gt;<ref refid="structle__link_1a3dbd4c799d08675a606da2a5f7e70acb" kindref="member">tx_phy</ref>,<sp/>&amp;link-&gt;<ref refid="structle__link_1ab4c6e85731c6d157f42e03ca9d0cde67" kindref="member">rx_phy</ref>);</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/>link-&gt;<ref refid="structle__link_1a3dbd4c799d08675a606da2a5f7e70acb" kindref="member">tx_phy</ref>++;</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/>link-&gt;<ref refid="structle__link_1ab4c6e85731c6d157f42e03ca9d0cde67" kindref="member">rx_phy</ref>++;</highlight></codeline>
+<codeline lineno="260"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>BLUETOOTH_5<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/BLE_v2/ll_multiple_phys.c"/>
+  </compounddef>
+</doxygen>

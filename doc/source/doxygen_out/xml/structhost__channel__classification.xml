@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structhost__channel__classification" kind="struct" language="C++" prot="public">
+    <compoundname>host_channel_classification</compoundname>
+    <includes refid="llcp_8h" local="no">llcp.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structhost__channel__classification_1a48e931089b7b71be676b379f41075778" prot="public" static="no" mutable="no">
+        <type><ref refid="structll__msg__hdr__t" kindref="compound">ll_msg_hdr_t</ref></type>
+        <definition>ll_msg_hdr_t host_channel_classification::hdr</definition>
+        <argsstring></argsstring>
+        <name>hdr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="148" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhost__channel__classification_1af85fdbc5d9a465ec44b60bd197cecbe7" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t host_channel_classification::channel_map</definition>
+        <argsstring></argsstring>
+        <name>channel_map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="151" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1080">
+        <label>ll_msg_hdr_t</label>
+        <link refid="structll__msg__hdr__t"/>
+      </node>
+      <node id="1079">
+        <label>host_channel_classification</label>
+        <link refid="structhost__channel__classification"/>
+        <childnode refid="1080" relation="usage">
+          <edgelabel>hdr</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="147" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="147" bodyend="152"/>
+    <listofallmembers>
+      <member refid="structhost__channel__classification_1af85fdbc5d9a465ec44b60bd197cecbe7" prot="public" virt="non-virtual"><scope>host_channel_classification</scope><name>channel_map</name></member>
+      <member refid="structhost__channel__classification_1a48e931089b7b71be676b379f41075778" prot="public" virt="non-virtual"><scope>host_channel_classification</scope><name>hdr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

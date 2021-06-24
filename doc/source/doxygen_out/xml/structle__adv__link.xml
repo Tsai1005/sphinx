@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structle__adv__link" kind="struct" language="C++" prot="public">
+    <compoundname>le_adv_link</compoundname>
+    <includes refid="ll__adv_8h" local="no">ll_adv.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structle__adv__link_1a9e4566deccbc5cb2383f5a63139ff5ef" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* le_adv_link::hw</definition>
+        <argsstring></argsstring>
+        <name>hw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_adv.h" line="7" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_adv.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__adv__link_1a793ffbe91120a25fcaa07f16447bd38b" prot="public" static="no" mutable="no">
+        <type>struct le_addr</type>
+        <definition>struct le_addr le_adv_link::local</definition>
+        <argsstring></argsstring>
+        <name>local</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_adv.h" line="7" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_adv.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__adv__link_1a09bedc02ada9f6e950f2c133a8a1d6a9" prot="public" static="no" mutable="no">
+        <type>struct le_addr</type>
+        <definition>struct le_addr le_adv_link::peer</definition>
+        <argsstring></argsstring>
+        <name>peer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_adv.h" line="7" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_adv.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structle__adv__link_1abf387109522a7c0517b51a11ce3afd51" prot="public" static="no" mutable="no">
+        <type>sys_timer</type>
+        <definition>sys_timer le_adv_link::timeout</definition>
+        <argsstring></argsstring>
+        <name>timeout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_adv.h" line="12" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_adv.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_adv.h" line="6" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_adv.h" bodystart="6" bodyend="13"/>
+    <listofallmembers>
+      <member refid="structle__adv__link_1a9e4566deccbc5cb2383f5a63139ff5ef" prot="public" virt="non-virtual"><scope>le_adv_link</scope><name>hw</name></member>
+      <member refid="structle__adv__link_1a793ffbe91120a25fcaa07f16447bd38b" prot="public" virt="non-virtual"><scope>le_adv_link</scope><name>local</name></member>
+      <member refid="structle__adv__link_1a09bedc02ada9f6e950f2c133a8a1d6a9" prot="public" virt="non-virtual"><scope>le_adv_link</scope><name>peer</name></member>
+      <member refid="structle__adv__link_1abf387109522a7c0517b51a11ce3afd51" prot="public" virt="non-virtual"><scope>le_adv_link</scope><name>timeout</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

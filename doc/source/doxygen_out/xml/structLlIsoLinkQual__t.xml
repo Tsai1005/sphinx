@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structLlIsoLinkQual__t" kind="struct" language="C++" prot="public">
+    <compoundname>LlIsoLinkQual_t</compoundname>
+    <includes refid="ll__iso_8h" local="no">ll_iso.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structLlIsoLinkQual__t_1a77911513487fce2078d313825ef89e7a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t LlIsoLinkQual_t::txUnAckPkt</definition>
+        <argsstring></argsstring>
+        <name>txUnAckPkt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Unacked packets. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="96" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLlIsoLinkQual__t_1a13442a44cacf643dfbcb0e0f3b70d0cc" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t LlIsoLinkQual_t::txFlushedPkt</definition>
+        <argsstring></argsstring>
+        <name>txFlushedPkt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flushed packets. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="97" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLlIsoLinkQual__t_1a83e4405a9d3470648cf2cd37f4c3eba9" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t LlIsoLinkQual_t::txLastSubEventPkt</definition>
+        <argsstring></argsstring>
+        <name>txLastSubEventPkt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The CIS slave transmit CIS Data PDU on it&apos;s last subevent. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="98" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLlIsoLinkQual__t_1a2638ed5d9cdb7fe1ab3eaf291443009c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t LlIsoLinkQual_t::retransmitPkt</definition>
+        <argsstring></argsstring>
+        <name>retransmitPkt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retransmitted packets. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="99" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLlIsoLinkQual__t_1af44368490390780d94817a46b177b486" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t LlIsoLinkQual_t::crcErrPkt</definition>
+        <argsstring></argsstring>
+        <name>crcErrPkt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CRC error packets. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="100" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLlIsoLinkQual__t_1ad77626cd732e0f3f15e48835f0ebd477" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t LlIsoLinkQual_t::rxUnreceivedPkt</definition>
+        <argsstring></argsstring>
+        <name>rxUnreceivedPkt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Packets unreceived by flush point. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="101" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLlIsoLinkQual__t_1a5bbce64916a775e8807ea40377954405" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t LlIsoLinkQual_t::duplicatePkt</definition>
+        <argsstring></argsstring>
+        <name>duplicatePkt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retransmitted CIS data PDUs. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="102" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>ISO link quality statistics. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="95" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="95" bodyend="103"/>
+    <listofallmembers>
+      <member refid="structLlIsoLinkQual__t_1af44368490390780d94817a46b177b486" prot="public" virt="non-virtual"><scope>LlIsoLinkQual_t</scope><name>crcErrPkt</name></member>
+      <member refid="structLlIsoLinkQual__t_1a5bbce64916a775e8807ea40377954405" prot="public" virt="non-virtual"><scope>LlIsoLinkQual_t</scope><name>duplicatePkt</name></member>
+      <member refid="structLlIsoLinkQual__t_1a2638ed5d9cdb7fe1ab3eaf291443009c" prot="public" virt="non-virtual"><scope>LlIsoLinkQual_t</scope><name>retransmitPkt</name></member>
+      <member refid="structLlIsoLinkQual__t_1ad77626cd732e0f3f15e48835f0ebd477" prot="public" virt="non-virtual"><scope>LlIsoLinkQual_t</scope><name>rxUnreceivedPkt</name></member>
+      <member refid="structLlIsoLinkQual__t_1a13442a44cacf643dfbcb0e0f3b70d0cc" prot="public" virt="non-virtual"><scope>LlIsoLinkQual_t</scope><name>txFlushedPkt</name></member>
+      <member refid="structLlIsoLinkQual__t_1a83e4405a9d3470648cf2cd37f4c3eba9" prot="public" virt="non-virtual"><scope>LlIsoLinkQual_t</scope><name>txLastSubEventPkt</name></member>
+      <member refid="structLlIsoLinkQual__t_1a77911513487fce2078d313825ef89e7a" prot="public" virt="non-virtual"><scope>LlIsoLinkQual_t</scope><name>txUnAckPkt</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

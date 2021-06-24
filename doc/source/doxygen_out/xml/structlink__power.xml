@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structlink__power" kind="struct" language="C++" prot="public">
+    <compoundname>link_power</compoundname>
+    <includes refid="bredr__link_8h" local="no">bredr_link.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlink__power_1a9e219702ed75297a2f48732510a8e584" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 link_power::min_power</definition>
+        <argsstring></argsstring>
+        <name>min_power</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="426" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="426" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__power_1a362f0503909c0310fb955d1b88cfb382" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 link_power::max_power</definition>
+        <argsstring></argsstring>
+        <name>max_power</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="427" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="427" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__power_1a48ce752858b6ddd559fb6d8b6a89575a" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 link_power::pwr_txing</definition>
+        <argsstring></argsstring>
+        <name>pwr_txing</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="428" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="428" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__power_1a96066742c464a2f941c7e69c0daef6b4" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 link_power::pwr_tx_cnt</definition>
+        <argsstring></argsstring>
+        <name>pwr_tx_cnt</name>
+        <bitfield> 4</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="429" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="429" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__power_1a798a8a2ec87c476511a587eafa7dbed2" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 link_power::pwr_tx_decr_req</definition>
+        <argsstring></argsstring>
+        <name>pwr_tx_decr_req</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="430" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="430" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__power_1af24d07467cd4941a37931c58cd43dd41" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 link_power::pwr_tx_incr_req</definition>
+        <argsstring></argsstring>
+        <name>pwr_tx_incr_req</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="431" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="431" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__power_1ad0b3e5c0d7ec9c19b968ec2ae47958ea" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 link_power::pwr_set_cnt</definition>
+        <argsstring></argsstring>
+        <name>pwr_set_cnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="432" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="432" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="425" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="425" bodyend="433"/>
+    <listofallmembers>
+      <member refid="structlink__power_1a362f0503909c0310fb955d1b88cfb382" prot="public" virt="non-virtual"><scope>link_power</scope><name>max_power</name></member>
+      <member refid="structlink__power_1a9e219702ed75297a2f48732510a8e584" prot="public" virt="non-virtual"><scope>link_power</scope><name>min_power</name></member>
+      <member refid="structlink__power_1ad0b3e5c0d7ec9c19b968ec2ae47958ea" prot="public" virt="non-virtual"><scope>link_power</scope><name>pwr_set_cnt</name></member>
+      <member refid="structlink__power_1a96066742c464a2f941c7e69c0daef6b4" prot="public" virt="non-virtual"><scope>link_power</scope><name>pwr_tx_cnt</name></member>
+      <member refid="structlink__power_1a798a8a2ec87c476511a587eafa7dbed2" prot="public" virt="non-virtual"><scope>link_power</scope><name>pwr_tx_decr_req</name></member>
+      <member refid="structlink__power_1af24d07467cd4941a37931c58cd43dd41" prot="public" virt="non-virtual"><scope>link_power</scope><name>pwr_tx_incr_req</name></member>
+      <member refid="structlink__power_1a48ce752858b6ddd559fb6d8b6a89575a" prot="public" virt="non-virtual"><scope>link_power</scope><name>pwr_txing</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

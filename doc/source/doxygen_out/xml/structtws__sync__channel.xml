@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structtws__sync__channel" kind="struct" language="C++" prot="public">
+    <compoundname>tws_sync_channel</compoundname>
+    <includes refid="tws__conn_8h" local="no">tws_conn.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtws__sync__channel_1a0de547c5d88ad665cbdc33e7689e2a93" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tws_sync_channel::channel</definition>
+        <argsstring></argsstring>
+        <name>channel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="220" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__sync__channel_1a091b89191c26289a16fecb286b5372bf" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tws_sync_channel::attribute</definition>
+        <argsstring></argsstring>
+        <name>attribute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="221" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__sync__channel_1a6c5768cd756a79c10888a0621e67b270" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* tws_sync_channel::tx_sync_req) (struct lmp_connection *, u8 *txbuffer, int prev_req_err)</definition>
+        <argsstring>)(struct lmp_connection *, u8 *txbuffer, int prev_req_err)</argsstring>
+        <name>tx_sync_req</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="223" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__sync__channel_1a039dc817e594441e1d74a3f7d293c2d5" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* tws_sync_channel::tx_sync_req_suss) ()</definition>
+        <argsstring>)()</argsstring>
+        <name>tx_sync_req_suss</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="224" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__sync__channel_1a0932dffd65dd8849398d4e74216f0196" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* tws_sync_channel::rx_sync_req_and_res) (struct lmp_connection *, u8 *rx, int len, u8 *tx)</definition>
+        <argsstring>)(struct lmp_connection *, u8 *rx, int len, u8 *tx)</argsstring>
+        <name>rx_sync_req_and_res</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="225" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__sync__channel_1a173037ac55496b217a14e66402cdc621" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* tws_sync_channel::tx_sync_res_suss) ()</definition>
+        <argsstring>)()</argsstring>
+        <name>tx_sync_res_suss</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="226" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__sync__channel_1a3d3dae8ae1be2d5cc00094a2dcfae411" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* tws_sync_channel::rx_sync_res) (struct lmp_connection *, u8 *rx, int len)</definition>
+        <argsstring>)(struct lmp_connection *, u8 *rx, int len)</argsstring>
+        <name>rx_sync_res</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="227" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__sync__channel_1a36abbc6f9bf2396023d5606b14bfe4c2" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* tws_sync_channel::event_handler) (struct lmp_connection *conn, int event, int *arg)</definition>
+        <argsstring>)(struct lmp_connection *conn, int event, int *arg)</argsstring>
+        <name>event_handler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="228" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="219" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="219" bodyend="229"/>
+    <listofallmembers>
+      <member refid="structtws__sync__channel_1a091b89191c26289a16fecb286b5372bf" prot="public" virt="non-virtual"><scope>tws_sync_channel</scope><name>attribute</name></member>
+      <member refid="structtws__sync__channel_1a0de547c5d88ad665cbdc33e7689e2a93" prot="public" virt="non-virtual"><scope>tws_sync_channel</scope><name>channel</name></member>
+      <member refid="structtws__sync__channel_1a36abbc6f9bf2396023d5606b14bfe4c2" prot="public" virt="non-virtual"><scope>tws_sync_channel</scope><name>event_handler</name></member>
+      <member refid="structtws__sync__channel_1a0932dffd65dd8849398d4e74216f0196" prot="public" virt="non-virtual"><scope>tws_sync_channel</scope><name>rx_sync_req_and_res</name></member>
+      <member refid="structtws__sync__channel_1a3d3dae8ae1be2d5cc00094a2dcfae411" prot="public" virt="non-virtual"><scope>tws_sync_channel</scope><name>rx_sync_res</name></member>
+      <member refid="structtws__sync__channel_1a6c5768cd756a79c10888a0621e67b270" prot="public" virt="non-virtual"><scope>tws_sync_channel</scope><name>tx_sync_req</name></member>
+      <member refid="structtws__sync__channel_1a039dc817e594441e1d74a3f7d293c2d5" prot="public" virt="non-virtual"><scope>tws_sync_channel</scope><name>tx_sync_req_suss</name></member>
+      <member refid="structtws__sync__channel_1a173037ac55496b217a14e66402cdc621" prot="public" virt="non-virtual"><scope>tws_sync_channel</scope><name>tx_sync_res_suss</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

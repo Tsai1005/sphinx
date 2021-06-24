@@ -1,0 +1,1006 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structtws__connection" kind="struct" language="C++" prot="public">
+    <compoundname>tws_connection</compoundname>
+    <includes refid="tws__conn_8h" local="no">tws_conn.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtws__connection_1a4b344d2f36f8380960c01e75254839f2" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tws_connection::role</definition>
+        <argsstring></argsstring>
+        <name>role</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="121" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1a2e1e70cd89b51f9a52e7b95bf1d34923" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tws_connection::detach</definition>
+        <argsstring></argsstring>
+        <name>detach</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="122" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1a352939f0cab10277d9eaa94f541fed84" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tws_connection::phone_link_detach</definition>
+        <argsstring></argsstring>
+        <name>phone_link_detach</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="123" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1a8a77ae8b2889d6018fe7301cbbb4b5ca" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tws_connection::detach_code</definition>
+        <argsstring></argsstring>
+        <name>detach_code</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="124" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1a88e628be40a71b8d39aa8e90e093c3c1" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tws_connection::esco_super_timeout</definition>
+        <argsstring></argsstring>
+        <name>esco_super_timeout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="125" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1a52122df13740810371550ced755548be" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tws_connection::try_switch</definition>
+        <argsstring></argsstring>
+        <name>try_switch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="126" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1ae11cfbdaec8628a628d7647912ab05d1" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tws_connection::try_switch_2</definition>
+        <argsstring></argsstring>
+        <name>try_switch_2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="127" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1ab9ab8622ff7d207c9d15927acf47251b" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tws_connection::role_switch</definition>
+        <argsstring></argsstring>
+        <name>role_switch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="128" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1aad4b805169c3b6e1e13797d9bf0445d0" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tws_connection::role_switch_lock</definition>
+        <argsstring></argsstring>
+        <name>role_switch_lock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="129" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1af620c645a7d83e4dbb081ac036d3073c" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tws_connection::role_switch_by_power</definition>
+        <argsstring></argsstring>
+        <name>role_switch_by_power</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="130" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1acb7a844461b999c7b73c48d52f82ced6" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tws_connection::tws_wait_tx</definition>
+        <argsstring></argsstring>
+        <name>tws_wait_tx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="131" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1af76d935603d88f576eca3243c44efe8c" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 tws_connection::add_a2dp_delay_time</definition>
+        <argsstring></argsstring>
+        <name>add_a2dp_delay_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="132" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1afe352d450dc4217427b2d6f9657250c9" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tws_connection::monitor_start</definition>
+        <argsstring></argsstring>
+        <name>monitor_start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="141" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1a7fd787b65f6b08cfb352e7ce07713a89" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tws_connection::prev_req_err</definition>
+        <argsstring></argsstring>
+        <name>prev_req_err</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="142" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1a02278e1419943ad99ee380d1695d1802" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tws_connection::esco_status</definition>
+        <argsstring></argsstring>
+        <name>esco_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="143" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1a26efee6d0be997d189e7f10dc5abf352" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tws_connection::esco_setup_flag</definition>
+        <argsstring></argsstring>
+        <name>esco_setup_flag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="144" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1af0eab0c682a2846b31f9b8b2bcc1423b" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 tws_connection::esco_wait_monitor_start</definition>
+        <argsstring></argsstring>
+        <name>esco_wait_monitor_start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="145" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1a847646aaa2702f1539da5aa98344fd71" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tws_connection::link_reset</definition>
+        <argsstring></argsstring>
+        <name>link_reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="146" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1a88e553ce0c03303efdf743e0739ea22d" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tws_connection::lmp_core_data_sync</definition>
+        <argsstring></argsstring>
+        <name>lmp_core_data_sync</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="147" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1ac5e537e1ee3c69bb1b3c055662c8fcef" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tws_connection::run_slot</definition>
+        <argsstring></argsstring>
+        <name>run_slot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="148" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1aa5a55e7cf3bdab31a83e2699d87f9fc7" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tws_connection::history_hash_index</definition>
+        <argsstring></argsstring>
+        <name>history_hash_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="149" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1a40afcfa2a9b8948de502d1b3d87c61bf" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tws_connection::adjust_slave_clkoffset_cnt</definition>
+        <argsstring></argsstring>
+        <name>adjust_slave_clkoffset_cnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="150" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1a704d64bb735779e319b9b1cb8d067c52" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tws_connection::slot_timer</definition>
+        <argsstring></argsstring>
+        <name>slot_timer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="151" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1a8150149526d0afa4a85164559d6cbcb3" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tws_connection::prev_s_go</definition>
+        <argsstring></argsstring>
+        <name>prev_s_go</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="152" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1a43e51c5dc10ffa00a211a1b4ce6e4bfa" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tws_connection::channels</definition>
+        <argsstring></argsstring>
+        <name>channels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="153" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1ae3d157565256cab406da956da33516e8" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tws_connection::update_afh</definition>
+        <argsstring></argsstring>
+        <name>update_afh</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="154" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1a611c6ef93be68d251b309cbc3a7ce988" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tws_connection::send_event</definition>
+        <argsstring></argsstring>
+        <name>send_event</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="155" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1a9c2e9474379dce1ede80a7d32084b6c5" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tws_connection::pure_monitor</definition>
+        <argsstring></argsstring>
+        <name>pure_monitor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="156" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1aa93930690562abfc5e33cc06989d4187" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tws_connection::exit_pure_monitor</definition>
+        <argsstring></argsstring>
+        <name>exit_pure_monitor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="157" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1a63103cc474676bb2177f325a8017cbcf" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tws_connection::ex_tws_adjust</definition>
+        <argsstring></argsstring>
+        <name>ex_tws_adjust</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="158" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1a91c20b4e9fd7229736392995e6b22f30" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tws_connection::tx_tick_res</definition>
+        <argsstring></argsstring>
+        <name>tx_tick_res</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="159" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1a5576968e6b23684cee47692edc69d46e" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tws_connection::rx_seqnum</definition>
+        <argsstring></argsstring>
+        <name>rx_seqnum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="160" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1a38d0124526f7fbe68bb8daaff639a7a8" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tws_connection::tws_box_mode</definition>
+        <argsstring></argsstring>
+        <name>tws_box_mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="161" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1ad79dc6173ee8c26a63f4ebc50d69b52a" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tws_connection::tws_run_slot</definition>
+        <argsstring></argsstring>
+        <name>tws_run_slot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="162" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1a61cd0982aa93dbcc34decd1c58ec0e85" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tws_connection::phone_run_slot</definition>
+        <argsstring></argsstring>
+        <name>phone_run_slot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="163" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1aadc051efca5e826d5049c9fe0697b303" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tws_connection::connect_suss</definition>
+        <argsstring></argsstring>
+        <name>connect_suss</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="164" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1afd1bc5f1adc4ce8f9043d879950165f9" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 tws_connection::code</definition>
+        <argsstring></argsstring>
+        <name>code</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="165" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1a18f8cd8d6472febf245c5b622c5a170c" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 tws_connection::sbc_remain_msec</definition>
+        <argsstring></argsstring>
+        <name>sbc_remain_msec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="166" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1acfd5ce3a6f2dfaa64cb0c4bdcff22666" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 tws_connection::pure_monitor_mod</definition>
+        <argsstring></argsstring>
+        <name>pure_monitor_mod</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="167" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1a9c819c1a9df5a249f8be7af72128eacd" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tws_connection::history_hash[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>history_hash</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="168" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1a054e6bf4ec0d5f8e53b13c16a05c1d99" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tws_connection::rx_clkn</definition>
+        <argsstring></argsstring>
+        <name>rx_clkn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="169" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1aec8bcc37841cf4fbb9a8dc6e2eac53fe" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tws_connection::instant</definition>
+        <argsstring></argsstring>
+        <name>instant</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="170" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1aa5bca16469b357094d948870eb33d3a1" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tws_connection::rs_instant</definition>
+        <argsstring></argsstring>
+        <name>rs_instant</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="171" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1ab7ea9b17e05972e6fa5de3cff07b3bba" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tws_connection::afh_end</definition>
+        <argsstring></argsstring>
+        <name>afh_end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="172" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1a76884f36791293a8c9e23bfe73b1e10c" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 tws_connection::try_switch_work_cnt</definition>
+        <argsstring></argsstring>
+        <name>try_switch_work_cnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="173" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1a44e37582800a57dbe7636fcda3823335" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 tws_connection::try_switch_work_cnt1</definition>
+        <argsstring></argsstring>
+        <name>try_switch_work_cnt1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="174" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1a68ef324653427309faada81e9759967e" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tws_connection::try_switch_mode</definition>
+        <argsstring></argsstring>
+        <name>try_switch_mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="175" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1aa73c66d11c270bad17ac9f011fc3925f" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tws_connection::phone_link_detach_instant</definition>
+        <argsstring></argsstring>
+        <name>phone_link_detach_instant</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="176" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1a91de67d63037d9eab0e54b2053a925fc" prot="public" static="no" mutable="no">
+        <type>OS_SEM *</type>
+        <definition>OS_SEM* tws_connection::sem_phone_detach</definition>
+        <argsstring></argsstring>
+        <name>sem_phone_detach</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="177" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1aebc07b8e61f7015d71ff53ee10dae25a" prot="public" static="no" mutable="no">
+        <type>OS_SEM *</type>
+        <definition>OS_SEM* tws_connection::sem_tws_detach</definition>
+        <argsstring></argsstring>
+        <name>sem_tws_detach</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="178" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1a8899cd0d0bc5ea43e456273ec4a13809" prot="public" static="no" mutable="no">
+        <type>OS_SEM *</type>
+        <definition>OS_SEM* tws_connection::sem_role_req</definition>
+        <argsstring></argsstring>
+        <name>sem_role_req</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="179" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1a8657424d09a19e92cbebbb14403193e0" prot="public" static="no" mutable="no">
+        <type>struct list_head</type>
+        <definition>struct list_head tws_connection::rx_pending</definition>
+        <argsstring></argsstring>
+        <name>rx_pending</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="179" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1a2626f4534e013d6c668a451fcf32986f" prot="public" static="no" mutable="no">
+        <type>struct list_head</type>
+        <definition>struct list_head tws_connection::tx_pending</definition>
+        <argsstring></argsstring>
+        <name>tx_pending</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="179" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1a5cf1c06f1983f0ae8c8b180ed740a298" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structlmp__connection" kindref="compound">lmp_connection</ref> *</type>
+        <definition>struct lmp_connection* tws_connection::lmp_conn</definition>
+        <argsstring></argsstring>
+        <name>lmp_conn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="182" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtws__connection_1aa3f647786544c240cc37309ae1e03b9e" prot="public" static="no" mutable="no">
+        <type>u32 *</type>
+        <definition>u32* tws_connection::bulk_pool</definition>
+        <argsstring></argsstring>
+        <name>bulk_pool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="183" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1687">
+        <label>lmp_core_data</label>
+        <link refid="structlmp__core__data"/>
+      </node>
+      <node id="1676">
+        <label>link_page</label>
+        <link refid="structlink__page"/>
+        <childnode refid="1677" relation="usage">
+          <edgelabel>tws_rx_info</edgelabel>
+          <edgelabel>tws_tx_info</edgelabel>
+        </childnode>
+        <childnode refid="1678" relation="usage">
+          <edgelabel>remote</edgelabel>
+        </childnode>
+        <childnode refid="1679" relation="usage">
+          <edgelabel>task</edgelabel>
+        </childnode>
+      </node>
+      <node id="1682">
+        <label>bredr_dut</label>
+        <link refid="structbredr__dut"/>
+      </node>
+      <node id="1674">
+        <label>link_afh_report</label>
+        <link refid="structlink__afh__report"/>
+      </node>
+      <node id="1675">
+        <label>bredr_role_switch</label>
+        <link refid="structbredr__role__switch"/>
+        <childnode refid="1676" relation="usage">
+          <edgelabel>page</edgelabel>
+        </childnode>
+        <childnode refid="1681" relation="usage">
+          <edgelabel>page_scan</edgelabel>
+        </childnode>
+      </node>
+      <node id="1677">
+        <label>tws_pair_info</label>
+        <link refid="structtws__pair__info"/>
+      </node>
+      <node id="1686">
+        <label>esco_codec_ops</label>
+        <link refid="structesco__codec__ops"/>
+      </node>
+      <node id="1672">
+        <label>lmp_esco_pdu</label>
+        <link refid="structlmp__esco__pdu"/>
+      </node>
+      <node id="1688">
+        <label>lmp_encrypt</label>
+        <link refid="structlmp__encrypt"/>
+      </node>
+      <node id="1671">
+        <label>__tws_esco_tx_info_t</label>
+        <link refid="struct____tws__esco__tx__info__t"/>
+      </node>
+      <node id="1690">
+        <label>lmp_device</label>
+        <link refid="structlmp__device"/>
+      </node>
+      <node id="1679">
+        <label>link_task</label>
+        <link refid="structlink__task"/>
+        <childnode refid="1680" relation="usage">
+          <edgelabel>ops</edgelabel>
+        </childnode>
+      </node>
+      <node id="1678">
+        <label>link_remote</label>
+        <link refid="structlink__remote"/>
+      </node>
+      <node id="1667">
+        <label>lmp_role_switch</label>
+        <link refid="structlmp__role__switch"/>
+      </node>
+      <node id="1669">
+        <label>bredr_esco_link</label>
+        <link refid="structbredr__esco__link"/>
+        <childnode refid="1666" relation="usage">
+          <edgelabel>rx_bulk</edgelabel>
+        </childnode>
+        <childnode refid="1670" relation="usage">
+          <edgelabel>tx_bulk</edgelabel>
+        </childnode>
+        <childnode refid="1671" relation="usage">
+          <edgelabel>tws_esco_tx_info</edgelabel>
+        </childnode>
+        <childnode refid="1672" relation="usage">
+          <edgelabel>pdu</edgelabel>
+        </childnode>
+      </node>
+      <node id="1663">
+        <label>tws_connection</label>
+        <link refid="structtws__connection"/>
+        <childnode refid="1664" relation="usage">
+          <edgelabel>lmp_conn</edgelabel>
+        </childnode>
+      </node>
+      <node id="1681">
+        <label>link_page_scan</label>
+        <link refid="structlink__page__scan"/>
+        <childnode refid="1678" relation="usage">
+          <edgelabel>remote</edgelabel>
+        </childnode>
+        <childnode refid="1679" relation="usage">
+          <edgelabel>task</edgelabel>
+        </childnode>
+      </node>
+      <node id="1673">
+        <label>link_afh</label>
+        <link refid="structlink__afh"/>
+      </node>
+      <node id="1665">
+        <label>lmp_sniff</label>
+        <link refid="structlmp__sniff"/>
+      </node>
+      <node id="1684">
+        <label>lmp_simple_pair</label>
+        <link refid="structlmp__simple__pair"/>
+      </node>
+      <node id="1680">
+        <label>link_task_ops</label>
+        <link refid="structlink__task__ops"/>
+      </node>
+      <node id="1668">
+        <label>link_connection</label>
+        <link refid="structlink__connection"/>
+        <childnode refid="1669" relation="usage">
+          <edgelabel>esco</edgelabel>
+        </childnode>
+        <childnode refid="1673" relation="usage">
+          <edgelabel>afh</edgelabel>
+        </childnode>
+        <childnode refid="1674" relation="usage">
+          <edgelabel>afh_report</edgelabel>
+        </childnode>
+        <childnode refid="1666" relation="usage">
+          <edgelabel>rx_bulk</edgelabel>
+        </childnode>
+        <childnode refid="1670" relation="usage">
+          <edgelabel>tx_bulk</edgelabel>
+        </childnode>
+        <childnode refid="1675" relation="usage">
+          <edgelabel>rs</edgelabel>
+        </childnode>
+        <childnode refid="1682" relation="usage">
+          <edgelabel>dut</edgelabel>
+        </childnode>
+        <childnode refid="1683" relation="usage">
+          <edgelabel>core</edgelabel>
+        </childnode>
+        <childnode refid="1679" relation="usage">
+          <edgelabel>task</edgelabel>
+        </childnode>
+      </node>
+      <node id="1664">
+        <label>lmp_connection</label>
+        <link refid="structlmp__connection"/>
+        <childnode refid="1665" relation="usage">
+          <edgelabel>sniff</edgelabel>
+        </childnode>
+        <childnode refid="1666" relation="usage">
+          <edgelabel>acl_s_bulk</edgelabel>
+        </childnode>
+        <childnode refid="1667" relation="usage">
+          <edgelabel>rs_process</edgelabel>
+        </childnode>
+        <childnode refid="1668" relation="usage">
+          <edgelabel>link</edgelabel>
+        </childnode>
+        <childnode refid="1684" relation="usage">
+          <edgelabel>simple</edgelabel>
+        </childnode>
+        <childnode refid="1685" relation="usage">
+          <edgelabel>esco_conn</edgelabel>
+        </childnode>
+        <childnode refid="1687" relation="usage">
+          <edgelabel>core</edgelabel>
+        </childnode>
+        <childnode refid="1688" relation="usage">
+          <edgelabel>encrypt</edgelabel>
+        </childnode>
+        <childnode refid="1689" relation="usage">
+          <edgelabel>core_s</edgelabel>
+        </childnode>
+      </node>
+      <node id="1689">
+        <label>lmp_core_data_static</label>
+        <link refid="structlmp__core__data__static"/>
+        <childnode refid="1690" relation="usage">
+          <edgelabel>remote</edgelabel>
+        </childnode>
+      </node>
+      <node id="1685">
+        <label>lmp_esco</label>
+        <link refid="structlmp__esco"/>
+        <childnode refid="1672" relation="usage">
+          <edgelabel>pdu</edgelabel>
+        </childnode>
+        <childnode refid="1686" relation="usage">
+          <edgelabel>codec_ops</edgelabel>
+        </childnode>
+        <childnode refid="1664" relation="usage">
+          <edgelabel>acl_link</edgelabel>
+        </childnode>
+      </node>
+      <node id="1683">
+        <label>link_core_data</label>
+        <link refid="structlink__core__data"/>
+      </node>
+      <node id="1666">
+        <label>bredr_rx_bulk</label>
+        <link refid="structbredr__rx__bulk"/>
+      </node>
+      <node id="1670">
+        <label>bredr_tx_bulk</label>
+        <link refid="structbredr__tx__bulk"/>
+      </node>
+    </collaborationgraph>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" line="120" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/tws_conn.h" bodystart="120" bodyend="184"/>
+    <listofallmembers>
+      <member refid="structtws__connection_1af76d935603d88f576eca3243c44efe8c" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>add_a2dp_delay_time</name></member>
+      <member refid="structtws__connection_1a40afcfa2a9b8948de502d1b3d87c61bf" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>adjust_slave_clkoffset_cnt</name></member>
+      <member refid="structtws__connection_1ab7ea9b17e05972e6fa5de3cff07b3bba" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>afh_end</name></member>
+      <member refid="structtws__connection_1aa3f647786544c240cc37309ae1e03b9e" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>bulk_pool</name></member>
+      <member refid="structtws__connection_1a43e51c5dc10ffa00a211a1b4ce6e4bfa" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>channels</name></member>
+      <member refid="structtws__connection_1afd1bc5f1adc4ce8f9043d879950165f9" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>code</name></member>
+      <member refid="structtws__connection_1aadc051efca5e826d5049c9fe0697b303" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>connect_suss</name></member>
+      <member refid="structtws__connection_1a2e1e70cd89b51f9a52e7b95bf1d34923" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>detach</name></member>
+      <member refid="structtws__connection_1a8a77ae8b2889d6018fe7301cbbb4b5ca" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>detach_code</name></member>
+      <member refid="structtws__connection_1a26efee6d0be997d189e7f10dc5abf352" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>esco_setup_flag</name></member>
+      <member refid="structtws__connection_1a02278e1419943ad99ee380d1695d1802" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>esco_status</name></member>
+      <member refid="structtws__connection_1a88e628be40a71b8d39aa8e90e093c3c1" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>esco_super_timeout</name></member>
+      <member refid="structtws__connection_1af0eab0c682a2846b31f9b8b2bcc1423b" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>esco_wait_monitor_start</name></member>
+      <member refid="structtws__connection_1a63103cc474676bb2177f325a8017cbcf" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>ex_tws_adjust</name></member>
+      <member refid="structtws__connection_1aa93930690562abfc5e33cc06989d4187" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>exit_pure_monitor</name></member>
+      <member refid="structtws__connection_1a9c819c1a9df5a249f8be7af72128eacd" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>history_hash</name></member>
+      <member refid="structtws__connection_1aa5a55e7cf3bdab31a83e2699d87f9fc7" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>history_hash_index</name></member>
+      <member refid="structtws__connection_1aec8bcc37841cf4fbb9a8dc6e2eac53fe" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>instant</name></member>
+      <member refid="structtws__connection_1a847646aaa2702f1539da5aa98344fd71" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>link_reset</name></member>
+      <member refid="structtws__connection_1a5cf1c06f1983f0ae8c8b180ed740a298" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>lmp_conn</name></member>
+      <member refid="structtws__connection_1a88e553ce0c03303efdf743e0739ea22d" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>lmp_core_data_sync</name></member>
+      <member refid="structtws__connection_1afe352d450dc4217427b2d6f9657250c9" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>monitor_start</name></member>
+      <member refid="structtws__connection_1a352939f0cab10277d9eaa94f541fed84" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>phone_link_detach</name></member>
+      <member refid="structtws__connection_1aa73c66d11c270bad17ac9f011fc3925f" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>phone_link_detach_instant</name></member>
+      <member refid="structtws__connection_1a61cd0982aa93dbcc34decd1c58ec0e85" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>phone_run_slot</name></member>
+      <member refid="structtws__connection_1a7fd787b65f6b08cfb352e7ce07713a89" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>prev_req_err</name></member>
+      <member refid="structtws__connection_1a8150149526d0afa4a85164559d6cbcb3" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>prev_s_go</name></member>
+      <member refid="structtws__connection_1a9c2e9474379dce1ede80a7d32084b6c5" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>pure_monitor</name></member>
+      <member refid="structtws__connection_1acfd5ce3a6f2dfaa64cb0c4bdcff22666" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>pure_monitor_mod</name></member>
+      <member refid="structtws__connection_1a4b344d2f36f8380960c01e75254839f2" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>role</name></member>
+      <member refid="structtws__connection_1ab9ab8622ff7d207c9d15927acf47251b" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>role_switch</name></member>
+      <member refid="structtws__connection_1af620c645a7d83e4dbb081ac036d3073c" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>role_switch_by_power</name></member>
+      <member refid="structtws__connection_1aad4b805169c3b6e1e13797d9bf0445d0" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>role_switch_lock</name></member>
+      <member refid="structtws__connection_1aa5bca16469b357094d948870eb33d3a1" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>rs_instant</name></member>
+      <member refid="structtws__connection_1ac5e537e1ee3c69bb1b3c055662c8fcef" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>run_slot</name></member>
+      <member refid="structtws__connection_1a054e6bf4ec0d5f8e53b13c16a05c1d99" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>rx_clkn</name></member>
+      <member refid="structtws__connection_1a8657424d09a19e92cbebbb14403193e0" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>rx_pending</name></member>
+      <member refid="structtws__connection_1a5576968e6b23684cee47692edc69d46e" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>rx_seqnum</name></member>
+      <member refid="structtws__connection_1a18f8cd8d6472febf245c5b622c5a170c" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>sbc_remain_msec</name></member>
+      <member refid="structtws__connection_1a91de67d63037d9eab0e54b2053a925fc" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>sem_phone_detach</name></member>
+      <member refid="structtws__connection_1a8899cd0d0bc5ea43e456273ec4a13809" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>sem_role_req</name></member>
+      <member refid="structtws__connection_1aebc07b8e61f7015d71ff53ee10dae25a" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>sem_tws_detach</name></member>
+      <member refid="structtws__connection_1a611c6ef93be68d251b309cbc3a7ce988" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>send_event</name></member>
+      <member refid="structtws__connection_1a704d64bb735779e319b9b1cb8d067c52" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>slot_timer</name></member>
+      <member refid="structtws__connection_1a52122df13740810371550ced755548be" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>try_switch</name></member>
+      <member refid="structtws__connection_1ae11cfbdaec8628a628d7647912ab05d1" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>try_switch_2</name></member>
+      <member refid="structtws__connection_1a68ef324653427309faada81e9759967e" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>try_switch_mode</name></member>
+      <member refid="structtws__connection_1a76884f36791293a8c9e23bfe73b1e10c" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>try_switch_work_cnt</name></member>
+      <member refid="structtws__connection_1a44e37582800a57dbe7636fcda3823335" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>try_switch_work_cnt1</name></member>
+      <member refid="structtws__connection_1a38d0124526f7fbe68bb8daaff639a7a8" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>tws_box_mode</name></member>
+      <member refid="structtws__connection_1ad79dc6173ee8c26a63f4ebc50d69b52a" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>tws_run_slot</name></member>
+      <member refid="structtws__connection_1acb7a844461b999c7b73c48d52f82ced6" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>tws_wait_tx</name></member>
+      <member refid="structtws__connection_1a2626f4534e013d6c668a451fcf32986f" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>tx_pending</name></member>
+      <member refid="structtws__connection_1a91c20b4e9fd7229736392995e6b22f30" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>tx_tick_res</name></member>
+      <member refid="structtws__connection_1ae3d157565256cab406da956da33516e8" prot="public" virt="non-virtual"><scope>tws_connection</scope><name>update_afh</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

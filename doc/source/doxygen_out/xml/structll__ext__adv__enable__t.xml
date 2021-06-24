@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structll__ext__adv__enable__t" kind="struct" language="C++" prot="public">
+    <compoundname>ll_ext_adv_enable_t</compoundname>
+    <includes refid="ll__ext__adv_8h" local="no">ll_ext_adv.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structll__ext__adv__enable__t_1a52fcd04d764c054a1a3c9fa7fda063d6" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_ext_adv_enable_t::handle</definition>
+        <argsstring></argsstring>
+        <name>handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Advertising handle. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="99" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__ext__adv__enable__t_1a295e21d7de63d21da891d99f3bc1a961" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t ll_ext_adv_enable_t::duration</definition>
+        <argsstring></argsstring>
+        <name>duration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Duration. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="100" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__ext__adv__enable__t_1af0baf906d16fa1c5640ff9fe542137b9" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_ext_adv_enable_t::numEvents</definition>
+        <argsstring></argsstring>
+        <name>numEvents</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum number of extended advertising events. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="101" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Extended advertising enable parameters. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" line="98" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_ext_adv.h" bodystart="97" bodyend="102"/>
+    <listofallmembers>
+      <member refid="structll__ext__adv__enable__t_1a295e21d7de63d21da891d99f3bc1a961" prot="public" virt="non-virtual"><scope>ll_ext_adv_enable_t</scope><name>duration</name></member>
+      <member refid="structll__ext__adv__enable__t_1a52fcd04d764c054a1a3c9fa7fda063d6" prot="public" virt="non-virtual"><scope>ll_ext_adv_enable_t</scope><name>handle</name></member>
+      <member refid="structll__ext__adv__enable__t_1af0baf906d16fa1c5640ff9fe542137b9" prot="public" virt="non-virtual"><scope>ll_ext_adv_enable_t</scope><name>numEvents</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

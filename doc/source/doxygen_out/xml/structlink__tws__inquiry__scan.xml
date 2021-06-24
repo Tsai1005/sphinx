@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structlink__tws__inquiry__scan" kind="struct" language="C++" prot="public">
+    <compoundname>link_tws_inquiry_scan</compoundname>
+    <includes refid="bredr__link_8h" local="no">bredr_link.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlink__tws__inquiry__scan_1ab68d61e2810b9054d996a83c26ef6ba1" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 link_tws_inquiry_scan::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="356" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="356" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__tws__inquiry__scan_1a9734914d52e5f56d1257f27b24913ccd" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structlink__task" kindref="compound">link_task</ref></type>
+        <definition>struct link_task link_tws_inquiry_scan::task</definition>
+        <argsstring></argsstring>
+        <name>task</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="356" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="357" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__tws__inquiry__scan_1a1092ad5dc8fe530d62d48fcabc53b853" prot="public" static="no" mutable="no">
+        <type>struct ctrl_frame *</type>
+        <definition>struct ctrl_frame* link_tws_inquiry_scan::frame</definition>
+        <argsstring></argsstring>
+        <name>frame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="358" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="358" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1408">
+        <label>link_task</label>
+        <link refid="structlink__task"/>
+        <childnode refid="1409" relation="usage">
+          <edgelabel>ops</edgelabel>
+        </childnode>
+      </node>
+      <node id="1409">
+        <label>link_task_ops</label>
+        <link refid="structlink__task__ops"/>
+      </node>
+      <node id="1407">
+        <label>link_tws_inquiry_scan</label>
+        <link refid="structlink__tws__inquiry__scan"/>
+        <childnode refid="1408" relation="usage">
+          <edgelabel>task</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" line="355" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/classic/bredr_link.h" bodystart="355" bodyend="359"/>
+    <listofallmembers>
+      <member refid="structlink__tws__inquiry__scan_1a1092ad5dc8fe530d62d48fcabc53b853" prot="public" virt="non-virtual"><scope>link_tws_inquiry_scan</scope><name>frame</name></member>
+      <member refid="structlink__tws__inquiry__scan_1ab68d61e2810b9054d996a83c26ef6ba1" prot="public" virt="non-virtual"><scope>link_tws_inquiry_scan</scope><name>state</name></member>
+      <member refid="structlink__tws__inquiry__scan_1a9734914d52e5f56d1257f27b24913ccd" prot="public" virt="non-virtual"><scope>link_tws_inquiry_scan</scope><name>task</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

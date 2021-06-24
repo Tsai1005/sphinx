@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structbis__pdu__hdr__t" kind="struct" language="C++" prot="public">
+    <compoundname>bis_pdu_hdr_t</compoundname>
+    <includes refid="ll__defines_8h" local="no">ll_defines.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structbis__pdu__hdr__t_1a098990f5d28fd6d8418cd74566182572" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 bis_pdu_hdr_t::llid</definition>
+        <argsstring></argsstring>
+        <name>llid</name>
+        <bitfield> 2</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="778" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="778" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbis__pdu__hdr__t_1acc1397eb20df81b601b3f251668ee7be" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 bis_pdu_hdr_t::cssn</definition>
+        <argsstring></argsstring>
+        <name>cssn</name>
+        <bitfield> 3</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="779" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="779" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbis__pdu__hdr__t_1a44dad2f3f22e0695dc72233844137776" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 bis_pdu_hdr_t::cstf</definition>
+        <argsstring></argsstring>
+        <name>cstf</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="780" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="780" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbis__pdu__hdr__t_1a2fd99ec1b4dc5d9e88e1d02e22907c21" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 bis_pdu_hdr_t::rfu</definition>
+        <argsstring></argsstring>
+        <name>rfu</name>
+        <bitfield> 2</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="781" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="781" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbis__pdu__hdr__t_1ae9cdd9aebaf31f2cb2094041c3f7be73" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 bis_pdu_hdr_t::length</definition>
+        <argsstring></argsstring>
+        <name>length</name>
+        <bitfield> 8</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="782" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="782" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbis__pdu__hdr__t_1ae76c0e90c150a58be82a5843a4e08dfc" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 bis_pdu_hdr_t::payload[0]</definition>
+        <argsstring>[0]</argsstring>
+        <name>payload</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="784" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="784" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" line="773" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_defines.h" bodystart="773" bodyend="785"/>
+    <listofallmembers>
+      <member refid="structbis__pdu__hdr__t_1acc1397eb20df81b601b3f251668ee7be" prot="public" virt="non-virtual"><scope>bis_pdu_hdr_t</scope><name>cssn</name></member>
+      <member refid="structbis__pdu__hdr__t_1a44dad2f3f22e0695dc72233844137776" prot="public" virt="non-virtual"><scope>bis_pdu_hdr_t</scope><name>cstf</name></member>
+      <member refid="structbis__pdu__hdr__t_1ae9cdd9aebaf31f2cb2094041c3f7be73" prot="public" virt="non-virtual"><scope>bis_pdu_hdr_t</scope><name>length</name></member>
+      <member refid="structbis__pdu__hdr__t_1a098990f5d28fd6d8418cd74566182572" prot="public" virt="non-virtual"><scope>bis_pdu_hdr_t</scope><name>llid</name></member>
+      <member refid="structbis__pdu__hdr__t_1ae76c0e90c150a58be82a5843a4e08dfc" prot="public" virt="non-virtual"><scope>bis_pdu_hdr_t</scope><name>payload</name></member>
+      <member refid="structbis__pdu__hdr__t_1a2fd99ec1b4dc5d9e88e1d02e22907c21" prot="public" virt="non-virtual"><scope>bis_pdu_hdr_t</scope><name>rfu</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

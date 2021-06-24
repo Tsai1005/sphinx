@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structll__msg__start__encryption__parameter__t" kind="struct" language="C++" prot="public">
+    <compoundname>ll_msg_start_encryption_parameter_t</compoundname>
+    <includes refid="llcp_8h" local="no">llcp.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structll__msg__start__encryption__parameter__t_1a59dfa4d26b043e55985b6e8aec6c482f" prot="public" static="no" mutable="no">
+        <type><ref refid="structll__msg__hdr__t" kindref="compound">ll_msg_hdr_t</ref></type>
+        <definition>ll_msg_hdr_t ll_msg_start_encryption_parameter_t::hdr</definition>
+        <argsstring></argsstring>
+        <name>hdr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="134" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__msg__start__encryption__parameter__t_1ae2ad4d00eacb20b94201d7fee51c0034" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_msg_start_encryption_parameter_t::random_number[LL_RAND_LEN]</definition>
+        <argsstring>[LL_RAND_LEN]</argsstring>
+        <name>random_number</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="136" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__msg__start__encryption__parameter__t_1a0916e15a6d4a3864293450b47dcdb949" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t ll_msg_start_encryption_parameter_t::encrypted_diversifier</definition>
+        <argsstring></argsstring>
+        <name>encrypted_diversifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="137" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structll__msg__start__encryption__parameter__t_1a5bdff056b373a5b17dd08fed457e059e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ll_msg_start_encryption_parameter_t::long_term_key[LL_KEY_LEN]</definition>
+        <argsstring>[LL_KEY_LEN]</argsstring>
+        <name>long_term_key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="138" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1510">
+        <label>ll_msg_hdr_t</label>
+        <link refid="structll__msg__hdr__t"/>
+      </node>
+      <node id="1509">
+        <label>ll_msg_start_encryption_parameter_t</label>
+        <link refid="structll__msg__start__encryption__parameter__t"/>
+        <childnode refid="1510" relation="usage">
+          <edgelabel>hdr</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" line="133" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/llcp.h" bodystart="133" bodyend="139"/>
+    <listofallmembers>
+      <member refid="structll__msg__start__encryption__parameter__t_1a0916e15a6d4a3864293450b47dcdb949" prot="public" virt="non-virtual"><scope>ll_msg_start_encryption_parameter_t</scope><name>encrypted_diversifier</name></member>
+      <member refid="structll__msg__start__encryption__parameter__t_1a59dfa4d26b043e55985b6e8aec6c482f" prot="public" virt="non-virtual"><scope>ll_msg_start_encryption_parameter_t</scope><name>hdr</name></member>
+      <member refid="structll__msg__start__encryption__parameter__t_1a5bdff056b373a5b17dd08fed457e059e" prot="public" virt="non-virtual"><scope>ll_msg_start_encryption_parameter_t</scope><name>long_term_key</name></member>
+      <member refid="structll__msg__start__encryption__parameter__t_1ae2ad4d00eacb20b94201d7fee51c0034" prot="public" virt="non-virtual"><scope>ll_msg_start_encryption_parameter_t</scope><name>random_number</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

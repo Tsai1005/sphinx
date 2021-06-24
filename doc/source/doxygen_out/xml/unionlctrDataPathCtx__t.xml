@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="unionlctrDataPathCtx__t" kind="union" language="C++" prot="public">
+    <compoundname>lctrDataPathCtx_t</compoundname>
+    <includes refid="ll__iso_8h" local="no">ll_iso.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unionlctrDataPathCtx__t_1a107403f0fe33a5d3077a72e81330c0cb" prot="public" static="no" mutable="no">
+        <type><ref refid="structlctrInDataPathCtx__t" kindref="compound">lctrInDataPathCtx_t</ref></type>
+        <definition>lctrInDataPathCtx_t lctrDataPathCtx_t::in</definition>
+        <argsstring></argsstring>
+        <name>in</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Input context. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="175" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlctrDataPathCtx__t_1a65bd4dc4a58be13b337134ba55cee36e" prot="public" static="no" mutable="no">
+        <type><ref refid="structlctrOutDataPathCtx__t" kindref="compound">lctrOutDataPathCtx_t</ref></type>
+        <definition>lctrOutDataPathCtx_t lctrDataPathCtx_t::out</definition>
+        <argsstring></argsstring>
+        <name>out</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Output context. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="176" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Datapath context. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1112">
+        <label>lctrDataPathCtx_t</label>
+        <link refid="unionlctrDataPathCtx__t"/>
+        <childnode refid="1113" relation="usage">
+          <edgelabel>out</edgelabel>
+        </childnode>
+        <childnode refid="1114" relation="usage">
+          <edgelabel>in</edgelabel>
+        </childnode>
+      </node>
+      <node id="1114">
+        <label>lctrInDataPathCtx_t</label>
+        <link refid="structlctrInDataPathCtx__t"/>
+      </node>
+      <node id="1113">
+        <label>lctrOutDataPathCtx_t</label>
+        <link refid="structlctrOutDataPathCtx__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" line="174" column="1" bodyfile="/data/bingquan/repo/repo_adapter/adapter_sdk/lib/btctrler/include_v2/ble/ll_iso.h" bodystart="174" bodyend="177"/>
+    <listofallmembers>
+      <member refid="unionlctrDataPathCtx__t_1a107403f0fe33a5d3077a72e81330c0cb" prot="public" virt="non-virtual"><scope>lctrDataPathCtx_t</scope><name>in</name></member>
+      <member refid="unionlctrDataPathCtx__t_1a65bd4dc4a58be13b337134ba55cee36e" prot="public" virt="non-virtual"><scope>lctrDataPathCtx_t</scope><name>out</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
